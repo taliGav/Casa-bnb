@@ -31,7 +31,7 @@ import CustomLabel from "./custom-label.vue";
 import stayPreview from "./stay-preview.vue";
 
 // import CustomLabel from './custom-label.vue'
-import stayPreview from './stay-preview.vue'
+// import stayPreview from './stay-preview.vue'
 
 export default {
   name: "stay-list",
@@ -39,7 +39,7 @@ export default {
     stays: Array,
   },
   components: {
-    stayPreview,
+    // stayPreview,
     // CustomLabel,
   },
 };
