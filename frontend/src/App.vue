@@ -1,5 +1,5 @@
 <template>
-  <section class="app-container container flex flex-col">
+  <section class = "main-layout" >
     <app-header />
     <router-view class="flex-1" />
     <app-footer />
