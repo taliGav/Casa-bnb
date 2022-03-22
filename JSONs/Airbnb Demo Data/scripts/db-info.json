@@ -1,0 +1,6 @@
+{
+    "stayCollection" : "stay",
+    "userCollection" : "user",
+    "db" : "AirBnb",
+    "connectionStr" : "mongodb+srv://<username>:<password>@cluster0.tu61v.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}
