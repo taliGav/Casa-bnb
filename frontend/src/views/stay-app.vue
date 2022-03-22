@@ -1,12 +1,12 @@
 <template>
   <section class="stay-app">
-    <stay-filter @setFilter="setFilter" />
+    <!-- <stay-filter @setFilter="setFilter" /> -->
     <stay-list :stays="stays" />
   </section>
 </template>
 
 <script>
-// import stayList from '../components/stay-list.vue'
+import stayList from '../components/stay-list.vue'
 // import stayFilter from '../components/stay-filter.vue'
 export default {
   name: 'stay-app',
@@ -25,7 +25,7 @@ export default {
     },
   },
   components: {
-    // stayList,
+    stayList,
     // stayFilter,
   },
 }

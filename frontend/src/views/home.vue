@@ -1,8 +1,5 @@
 <template>
   <section class="home flex flex-col gap-2 items-center justify-center">
-    <div class="img">
-      <img src="@/assets/stay.svg" alt="" />
-    </div>
     <div class="info text-center flex flex-col gap-3 items-star">
       <div>
         <h1>Welcome to my stay shop</h1>
