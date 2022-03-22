@@ -1,11 +1,12 @@
 <template>
   <section>
-    <slot></slot>
+
+    <!-- <slot></slot> -->
   </section>
 </template>
 
 <script>
-import customLabel from './custom-label.vue'
+// import customLabel from './custom-label.vue'
 
 export default {
   name: 'stay-preview',
@@ -13,7 +14,7 @@ export default {
     stay: Object,
   },
   components: {
-    customLabel,
+    // customLabel,
   },
 }
 </script>
