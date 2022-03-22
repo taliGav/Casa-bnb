@@ -12,20 +12,14 @@
           <h3 class="uppercase">{{ stay.name }}</h3>
           <p class="clr-teal fw-bold">${{ stay.price }}</p>
         </div>
-        <div class="labels flex flex-wrap items-center gap-1">
-          <!-- <custom-label
-            v-for="label in stay.labels"
-            :key="label"
-            :label="label"
-          /> -->
-        </div>
+        <div class="labels flex flex-wrap items-center gap-1"></div>
       </li>
     </stay-preview>
   </ul>
 </template>
 
 <script>
-import CustomLabel from './custom-label.vue'
+// import CustomLabel from './custom-label.vue'
 import stayPreview from './stay-preview.vue'
 
 export default {
@@ -35,7 +29,7 @@ export default {
   },
   components: {
     stayPreview,
-    CustomLabel,
+    // CustomLabel,
   },
 }
 </script>
