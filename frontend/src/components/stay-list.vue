@@ -13,11 +13,11 @@
           <p class="clr-teal fw-bold">${{ stay.price }}</p>
         </div>
         <div class="labels flex flex-wrap items-center gap-1">
-          <custom-label
+          <!-- <custom-label
             v-for="label in stay.labels"
             :key="label"
             :label="label"
-          />
+          /> -->
         </div>
       </li>
     </stay-preview>
