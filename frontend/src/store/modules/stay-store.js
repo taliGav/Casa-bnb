@@ -4,7 +4,6 @@ export default {
   state: {
     stays: [],
     filterBy: { name: '', inStock: '', labels: [], sortBy: '' },
-    labels: stayService.getlabels(),
   },
   getters: {
     stays({ stays }) {
@@ -13,9 +12,6 @@ export default {
     staysToShow({ stays, filterBy }) {
       const copyStays = JSON.parse(JSON.stringify(stays))
       return copyStays
-    },
-    labels({ labels }) {
-      return labels
     },
   },
   mutations: {
