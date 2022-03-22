@@ -84,26 +84,26 @@ export default {
   methods: {
     getPrices() {
       const lables = this.$store.getters.labels
-      const toys = this.$store.getters.toys
+      const stays = this.$store.getters.stays
       lables.forEach((label) => {
-        let sumPrice = toys.reduce((acc, toy) => {
-          if (toy.labels.includes(label)) acc += toy.price
+        let sumPrice = stays.reduce((acc, stay) => {
+          if (stay.labels.includes(label)) acc += stay.price
           return acc
         }, 0)
         this.dataDoughnut.push(sumPrice)
       })
     },
     getPrecentage() {
-      const toys = this.$store.getters.toys
+      const stays = this.$store.getters.stays
       const labelCountMap = {}
-      toys.forEach((toy) => {
-        toy.labels.forEach((label) => {
+      stays.forEach((stay) => {
+        stay.labels.forEach((label) => {
           labelCountMap[label] = labelCountMap[label] ? labelCountMap[label] + 1 : 1
         })
       })
       for (const key in labelCountMap) {
         this.labelsPie.push(key)
-        this.dataPie.push((labelCountMap[key] / toys.length) * 100)
+        this.dataPie.push((labelCountMap[key] / stays.length) * 100)
       }
     },
   },

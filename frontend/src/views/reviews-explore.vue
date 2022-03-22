@@ -4,7 +4,7 @@
     <article class="review p-2" v-for="review in reviews" :key="review._id">
       <h1>
         by <span class="clr-teal">{{ review.user.username }}</span> about
-        <span class="clr-teal">{{ review.toy.name }}</span>
+        <span class="clr-teal">{{ review.stay.name }}</span>
       </h1>
       <p>{{ review.content }}</p>
       <p>{{ review.rate }}⭐</p>
