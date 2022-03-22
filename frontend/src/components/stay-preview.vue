@@ -5,7 +5,7 @@
         <preview-carousel> </preview-carousel>
       </div>
       <div class="flex items-center justify-between gap-2">
-        <!-- <p>{{ stay.type }} in {{ stay.loc.country }}</p> -->
+        <p>{{ stay.type }} in {{ stay.loc.city }}, {{ stay.loc.country }}</p>
         <!-- <p>{{stay.type}} in {{stay.loc.country}}</p> -->
         <h3 class="uppercase">{{ stay.name }}</h3>
 
@@ -43,9 +43,7 @@ export default {
   },
   computed: {
     avgRating() {
-      let ratingSum = this.stay.reviews.reduce((a,b) => (a.rate + b.rate));
-      console.log("ratingSum", ratingSum);
-      console.log("stay.reviews.length", this.stay.reviews.length);
+      let ratingSum = this.stay.reviews.reduce((acc,x) => (acc + x.rate),0);
       let avgRating = ratingSum / this.stay.reviews.length;
       return avgRating;
     },
