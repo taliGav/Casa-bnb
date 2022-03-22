@@ -30,6 +30,9 @@
 import CustomLabel from "./custom-label.vue";
 import stayPreview from "./stay-preview.vue";
 
+// import CustomLabel from './custom-label.vue'
+import stayPreview from './stay-preview.vue'
+
 export default {
   name: "stay-list",
   props: {
@@ -37,9 +40,10 @@ export default {
   },
   components: {
     stayPreview,
-    CustomLabel,
+    // CustomLabel,
   },
 };
 </script>
 
-<style></style>
+<style>
+</style>

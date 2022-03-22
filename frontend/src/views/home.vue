@@ -1,6 +1,6 @@
 <template>
-  <section class="home flex flex-col gap-2 items-center justify-center">
-    <div class="info text-center flex flex-col gap-3 items-star">
+  <section class="home flex col">
+    <div class="info">
       <div>
         <h1>Welcome to my stay shop</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
