@@ -2,12 +2,7 @@
 	{
 		"name": "Westin Kaanapali KORVN 2BR",
 		"summary": "Westin Kaanapali Ocean Resort Villas North timeshare - Pay resort: $14-20/day, stays under 7 night $38/res - Inquire about availability, I review then offer/approve if available :) - READ \"The Space\" for cleaning/etc AND brief explanation about timeshare reservations - Want guaranteed view for additional cost? Must be weekly rental, other restrictions - Wheelchair accessible / ADA, call resort directly to ensure U receive. If U need ADA U MUST inform us BEFORE booking.",
-		"interaction": "There are activities programs and concierge activities booking services at this resort.",
-		"houseRules": "No smoking; No Pets; This resort's rules apply. Please call the resort directly to verify details.",
-		"propertyType": "Serviced apartment",
-		"roomType": "Entire home/apt",
-		"bedType": "Real Bed",
-		"cancellationPolicy": "strict_14_with_grace_period",
+		"type": "Serviced apartment",
 		"capacity": 8,
 		"bedrooms": 2,
 		"beds": 4,
@@ -73,13 +68,7 @@
 		"host": {
 			"_id": "622f3403e36c59e6164faf93",
 			"fullname": "Patty And Beckett",
-			"location": "Eureka, California, United States",
-			"about": "Adventurous couple loves to travel :)",
-			"responseTime": "within an hour",
-			"thumbnailUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small",
-			"pictureUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_x_medium",
-			"isSuperhost": true,
-			"id": "36133410"
+			"imgUrl": "https://a0.muscache.com/im/pictures/542dba0c-eb1b-4ab3-85f3-94d3cc8f87a4.jpg?aki_policy=profile_small"
 		},
 		"address": {
 			"street": "Lahaina, HI, United States",
@@ -94,27 +83,15 @@
 		"id": "12223067",
 		"bathrooms": 2,
 		"price": 595,
-		"securityDeposit": 500,
-		"cleaningFee": null,
-		"extraPeople": 0,
-		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 10,
-			"checkin": 10,
-			"communication": 10,
-			"location": 10,
-			"value": 10,
-			"rating": 98
-		},
 		"reviews": [
 			{
 				"at": "2016-06-12T04:00:00.000Z",
 				"by": {
 					"_id": "622f3407e36c59e6164fc004",
 					"fullname": "Kiesha",
-					"imgUrl": "https://robohash.org/10711825?set=set1",
-					"id": "10711825"
+					"imgUrl": "https://robohash.org/10711825?set=set1"
 				},
+				"rate": 4,
 				"txt": "I had a great experience working with Patty and Peter.  Both were very attentive in sorting out the booking details and following up directly when I had questions.  I rented a 2 bedroom unit at the Westin Villas  in Maui and both the unit and property was absolutely amazing.  I think we had the best unit on the resort complete with 2 outdoor patios with direct access  to  the  beach.  I would HIGHLY recommend renting with Patty and Peter."
 			},
 			{
@@ -205,17 +182,13 @@
 			"153.jpeg",
 			"093.jpeg",
 			"094.jpeg"
-		]
+		],
+		"likedByUsers": []
 	},
 	{
 		"name": "Belle chambre à côté Metro Papineau",
 		"summary": "Chambre dans un bel appartement moderne avec balcon, ascenseur et terrasse. Private room in a beautiful modern apartment  with balcony, elevator and patio. La chambre est fermée avec une lit double. Vous aurez accès à une salle de bain avec une douche, terrasse. L'appartement est climatisé.  Votre chambre est équipé d'une connexion Wi-Fi illimité. Vous serez proche du centre ville, au pied du pont Jacques Cartier et à distance de marche de toutes les commodités (métro, supermarché, pharmacie",
-		"interaction": "J'adore recevoir mes invités personnellement mais il arrive que je ne puis être sur place lors de votre arrivée.",
-		"houseRules": "",
-		"propertyType": "Apartment",
-		"roomType": "Private room",
-		"bedType": "Real Bed",
-		"cancellationPolicy": "moderate",
+		"type": "Apartment",
 		"capacity": 2,
 		"bedrooms": 1,
 		"beds": 1,
@@ -240,12 +213,7 @@
 		"host": {
 			"_id": "622f3401e36c59e6164fabab",
 			"fullname": "Angel",
-			"location": "Montreal, Québec, Canada",
-			"about": "",
-			"thumbnailUrl": "https://a0.muscache.com/im/pictures/12be1141-74de-4f04-bf28-82c3ed589d11.jpg?aki_policy=profile_small",
-			"pictureUrl": "https://a0.muscache.com/im/pictures/12be1141-74de-4f04-bf28-82c3ed589d11.jpg?aki_policy=profile_x_medium",
-			"isSuperhost": false,
-			"id": "80344827"
+			"imglUrl": "https://a0.muscache.com/im/pictures/12be1141-74de-4f04-bf28-82c3ed589d11.jpg?aki_policy=profile_small"
 		},
 		"address": {
 			"street": "Montréal, QC, Canada",
@@ -257,21 +225,8 @@
 			"countryCode": "CA",
 			"city": "Montreal"
 		},
-		"id": "13732894",
 		"bathrooms": 1,
 		"price": 30,
-		"securityDeposit": 150,
-		"cleaningFee": 8,
-		"extraPeople": 15,
-		"reviewScores": {
-			"accuracy": 10,
-			"cleanliness": 9,
-			"checkin": 10,
-			"communication": 10,
-			"location": 9,
-			"value": 10,
-			"rating": 100
-		},
 		"reviews": [
 			{
 				"at": "2016-07-07T04:00:00.000Z",
