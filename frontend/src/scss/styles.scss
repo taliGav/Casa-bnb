@@ -5,22 +5,21 @@
 @import 'setup/typography';
 
 // BASE
-
-@import 'base/helpers.scss';
-@import 'base/base.scss';
+@import 'base/base';
+@import 'base/helpers';
 @import 'base/fonts';
 @import 'base/util';
 @import 'base/layout';
 
 // VIEWS
-@import 'views/app';
 @import 'views/home';
+@import 'views/app';
 @import 'views/login';
 @import 'views/stay-details';
 
 // COMPONENTS
-@import 'components/app-footer';
 @import 'components/app-header';
+@import 'components/app-footer';
 @import 'components/stay-filter';
 @import 'components/stay-list';
 @import 'components/stay-preview';
