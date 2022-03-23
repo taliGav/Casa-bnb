@@ -1,12 +1,12 @@
 // import axios from 'axios'
-import { utilService } from './util-service'
-import { httpService } from './http-service'
-import { storageService } from './async-storage-service'
+import { utilService } from './util-service';
+import { httpService } from './http-service';
+import { storageService } from './async-storage-service';
 
 
 
-const KEY = 'stays_db'
-const ENDPOINT = 'stay'
+const KEY = 'stays_db';
+const ENDPOINT = 'stay';
 // const BASE_URL =
 //   process.env.NODE_ENV !== 'development' ? '/api/stay' : '//localhost:3030/api/stay/'
 
@@ -16,9 +16,9 @@ export const stayService = {
   remove,
   save,
   getEmptyStay,
-}
+};
 
-_createStays()
+_createStays();
 
 async function query(filterBy = {}) {
   // return await httpService.get(ENDPOINT, filterBy)
@@ -48,20 +48,20 @@ async function query(filterBy = {}) {
 async function getById(id) {
   // return await httpService.get(`${ENDPOINT}/${id}`)
   // return axios.get(BASE_URL + id).then((res) => res.data)
-  return storageService.getById(KEY, id)
+  return storageService.getById(KEY, id);
 }
 
 async function remove(id) {
   // return await httpService.delete(`${ENDPOINT}/${id}`)
   // return axios.delete(BASE_URL + id).then((res) => res.data)
-  return storageService.remove(KEY, id)
+  return storageService.remove(KEY, id);
 }
 
 async function save(stay) {
   // return stay._id
   // ? await httpService.put(`${ENDPOINT}/${stay._id}`, stay)
   // : await httpService.post(ENDPOINT, stay)
-  return stay._id ? storageService.put(KEY, stay) : storageService.post(KEY, stay)
+  return stay._id ? storageService.put(KEY, stay) : storageService.post(KEY, stay);
 }
 
 function getEmptyStay() {
@@ -72,7 +72,7 @@ function getEmptyStay() {
     createdAt: new Date(),
     inStock: true,
     reviews: [],
-  })
+  });
 }
 
 // function getlabels() {
@@ -89,14 +89,18 @@ function getEmptyStay() {
 
 
 function _createStays() {
-  let stays = utilService.loadFromStorage(KEY)
+  let stays = utilService.loadFromStorage(KEY);
   if (!stays || !stays.length) {
     stays = [
       {
         "_id": "10006546",
         "name": "Ribeira Charming Duplex",
         "type": "House",
-        "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+        "imgUrls": ['/src/assets/images/001.jpeg',
+          '/src/assets/images/002.jpeg',
+          '/src/assets/images/003.jpeg',
+          '/src/assets/images/004.jpeg',
+          '/src/assets/images/005.jpeg'],
         "price": 50.00,
         "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
         "capacity": 8,
@@ -194,7 +198,11 @@ function _createStays() {
         "_id": "10006547",
         "name": "Belle chambre à côté Metro Papineau",
         "type": "Apartment",
-        "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+        "imgUrls": ['/src/assets/images/006.jpeg',
+          '/src/assets/images/007.jpeg',
+          '/src/assets/images/008.jpeg',
+          '/src/assets/images/009.jpeg',
+          '/src/assets/images/010.jpeg'],
         "price": 80.00,
         "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
         "capacity": 5,
@@ -251,7 +259,11 @@ function _createStays() {
         "_id": "10006548",
         "name": "M&M Space MM2  Apartamento no centro da cidade",
         "type": "Apartment",
-        "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+        "imgUrls": ['/src/assets/images/011.jpeg',
+          '/src/assets/images/012.jpeg',
+          '/src/assets/images/013.jpeg',
+          '/src/assets/images/014.jpeg',
+          '/src/assets/images/015.jpeg'],
         "price": 200.00,
         "summary": "O apartamento fica perto de arte e cultura e dos mais belos monumentos da cidade. Belos jardins e paisagens da cidade e do rio Douro ficam perto e podem ser apreciadas.  Existem restaurantes típicos e de comida internacional ao redor do apartamento.   O espaço fica numa rua típica da cidade, cheia da sua magia e magnetismo e é muito pratico e confortável. O espaço é excelente para quem pretende visitar e conhecer a zona histórica e turística do Porto. Transportes públicos ficam próximos.",
         "capacity": 2,
@@ -346,7 +358,11 @@ function _createStays() {
         "_id": "10006531",
         "name": "Fresh and modern 1BR in Bed-Stuy",
         "type": "House",
-        "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+        "imgUrls": ['/src/assets/images/016.jpeg',
+          '/src/assets/images/017.jpeg',
+          '/src/assets/images/018.jpeg',
+          '/src/assets/images/019.jpeg',
+          '/src/assets/images/020.jpeg'],
         "price": 133.00,
         "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
         "capacity": 2,
@@ -407,7 +423,11 @@ function _createStays() {
         "_id": "10006588",
         "name": "Habitación centro de Barcelona",
         "type": "House",
-        "imgUrls": ["https://a0.muscache.com/im/pictures/e83e702f-ef49-40fb-8fa0-6512d7e26e9b.jpg?aki_policy=large", "otherImg.jpg"],
+        "imgUrls": ['/src/assets/images/021.jpeg',
+          '/src/assets/images/022.jpeg',
+          '/src/assets/images/023.jpeg',
+          '/src/assets/images/024.jpeg',
+          '/src/assets/images/025.jpeg'],
         "price": 80.00,
         "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
         "capacity": 8,
@@ -456,10 +476,10 @@ function _createStays() {
         ],
         "likedByUsers": ['mini-user'] // for user-wishlist : use $in
       },
-    ]
-    utilService.saveToStorage(KEY, stays)
+    ];
+    utilService.saveToStorage(KEY, stays);
   }
-  return stays
+  return stays;
 }
 
 
