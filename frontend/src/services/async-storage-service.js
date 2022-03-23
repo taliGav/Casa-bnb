@@ -8,6 +8,12 @@ export const storageService = {
 
 function query(entityType, delay = 1000) {
   var entities = JSON.parse(localStorage.getItem(entityType)) || []
+
+  // if (filterBy.destination) {
+  //   const regex = new RegExp(filterBy.destination, 'i')
+  //   entities = entities.filter(entitie => {regex.test(entitie.name)})
+  //   }
+
   return new Promise((resolve) => {
     // setTimeout(() => {
     resolve(entities)

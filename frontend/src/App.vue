@@ -1,5 +1,5 @@
 <template>
-  <section class = "main-layout" >
+  <section class="main-layout">
     <app-header />
     <router-view class="flex-1" />
     <app-footer />
@@ -13,7 +13,7 @@ import appFooter from './components/app-footer.vue'
 export default {
   name: 'app',
   created() {
-    this.$store.dispatch({ type: 'loadStays' })
+    // this.$store.dispatch({ type: 'loadStays' })
   },
   components: {
     appHeader,
