@@ -1,5 +1,5 @@
 <template>
-  <section class="home flex col">
+  <section class="home flex col main-app">
     <div class="info">
       <div>
         <h1>Welcome to my stay shop</h1>
