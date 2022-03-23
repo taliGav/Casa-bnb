@@ -1,17 +1,17 @@
 <template>
-  <section class="stay-preview">
-    <article class="preview-card">
-      <div class="stay-imgs-container">
+  <section class="stay-preview flex col space">
+    <!-- <article class="preview-card"> -->
+      <div class="stay-images-container">
         <preview-carousel :urls="this.stay.imgUrls" />
       </div>
-      <div class="flex column items-center justify-between gap-1">
+      <div class="preview-data flex col space">
         <div class="rating">⭐{{ avgRating }} ({{ reviewsCount }} reviews)</div>
         <p>{{ stay.type }} in {{ stay.loc.city }}, {{ stay.loc.country }}</p>
         <p class="preview-stay-title">{{ stay.name }}</p>
         <p class="clr-teal fw-bold">${{ stay.price }} /NIGHT</p>
       </div>
-    </article>
-    <div class="labels flex flex-wrap items-center gap-1">
+    <!-- </article> -->
+    <div class="">
       <!-- <custom-label
             v-for="label in stay.labels"
             :key="label"
@@ -53,14 +53,6 @@ export default {
   },
 };
 </script>
-
-<style>
-
-stay-preview {
-  min-width:250px;
-  padding:15px
-}
-</style>
 
 
 

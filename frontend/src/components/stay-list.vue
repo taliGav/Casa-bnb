@@ -1,10 +1,10 @@
 <template>
-  <section class = "stay-list main-app">
-    <button @click="$router.push('/stay/edit')" class="btn btn-secondary">
-      add a new stay
-    </button>
-    <div class="list-container items-center justify-between">
-      <ul class="stay-list flex clean-list">
+  <section class = "main-app">
+    <!-- <button @click="$router.push('/stay/edit')" class="btn btn-secondary"> -->
+      <!-- add a new stay -->
+    <!-- </button> -->
+    <!-- <div class=""> -->
+      <ul class="stay-list flex wrap space ">
         <li
           v-for="stay in stays"
           :key="stay._id"
@@ -14,7 +14,7 @@
           <stay-preview :stay="stay" />
         </li>
       </ul>
-    </div>
+    <!-- </div> -->
   </section>
 </template>
 
