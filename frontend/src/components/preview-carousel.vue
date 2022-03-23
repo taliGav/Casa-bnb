@@ -1,44 +1,37 @@
 <template>
-	<section class="carousel">
-		<el-carousel
-			:autoplay="false"
-      indicator-position = "none"
-			:interval="2000"
-			height="200px"
-			width="250px"
-			arrow="hover"
-			class="img-container"
-		>
-			<el-carousel-item v-for="(url, idx) in urls" :key="idx">
-				<img :src="url" class="img-in-card" alt="" />
-			</el-carousel-item>
-		</el-carousel>
-	</section>
+  <section class="carousel">
+    <el-carousel
+      :autoplay="false"
+      indicator-position="none"
+      :interval="2000"
+      height="200px"
+      width="250px"
+      arrow="hover"
+      class="img-container"
+    >
+      <el-carousel-item v-for="(url, idx) in urls" :key="idx">
+        <img :src="url" class="img-in-card" alt="" />
+      </el-carousel-item>
+    </el-carousel>
+  </section>
 </template>
 
 <script>
 export default {
-	name: 'carousel',
-	props: {
-		urls: Array,
-	},
+  name: "carousel",
+  props: {
+    urls: Array,
+  },
 
-	data() {
-		return {};
-	},
-	created() {
-	
-	},
+  data() {
+    return {};
+  },
+  created() {},
 
-	computed: {
-	
-	},
-	methods:{
-
-	}
+  computed: {},
+  methods: {},
 };
 </script>
 
 <style scoped>
-
 </style>

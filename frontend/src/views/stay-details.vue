@@ -3,7 +3,7 @@
     <h2 class="uppercase">{{ stay.name }}</h2>
 
     <div class="rating">
-      ⭐{{ avgRating }} ({{ reviewsCount }} reviews)
+      ⭐ {{ avgRating }} ({{ reviewsCount }} reviews) 
       <div class="needs-to-be-completed">
         host type (superhost) + google location city+country
         {{ stay.loc.city }}, {{ stay.loc.country }}
@@ -11,15 +11,15 @@
     </div>
 
     <section
-      class="details-img-container stay-images-container"
+      class="stay-details-img-container"
       v-for="(imgUrl, idx) in this.stay.imgUrls"
       :key="idx"
     >
-      <img :src="imgUrl" :class="imgClass" alt="" />
-      <!-- <img :src="imgUrl" :class="imgClass" alt="" • /> -->
+      <!-- <img :src="imgUrl" :class="imgClass(idx)" alt="" /> -->
+      <img :src="imgUrl" :class="'img-card-' + idx" alt="" />
     </section>
 
-    <div class="details-data flex col space">
+    <section class="host-section flex col space">
       <div class="host-details flex">
         <div class="host-main-details">
           <h3>{{ stay.type }} hosted by {{ stay.host.fullname }}</h3>
@@ -32,68 +32,70 @@
           <img :src="hostImg" alt="" srcset="" />
         </div>
       </div>
+    </section>
 
-      <hr />
+    <hr />
 
-      <p class="preview-stay-title">{{ stay.name }}</p>
-      <p class="clr-teal fw-bold">${{ stay.price }} /NIGHT</p>
-    </div>
+    <p class="preview-stay-summary">{{ stay.summary }}</p>
+    <hr />
 
-    <h2 class="clr-teal">Reviews</h2>
+    <section class="reviews-section">
+      <h2>⭐ {{ avgRating }} · ({{ reviewsCount }} reviews)</h2>
 
-    <form v-if="reviewToAdd && user" @submit.prevent="addReview" class="form">
-      <div class="form-control my-1">
-        <label for="txt" class="form-label fw-600">Your review</label>
-        <textarea
-          name="txt"
-          id="txt"
-          rows="3"
-          class="form-input"
-          v-model="reviewToAdd.content"
-          required
-        ></textarea>
+      <form v-if="reviewToAdd && user" @submit.prevent="addReview" class="form">
         <div class="form-control my-1">
-          <label for="rate" class="form-label">Rate</label>
-          <input
-            id="rate"
-            type="number"
+          <label for="txt" class="form-label fw-600">Your review</label>
+          <textarea
+            name="txt"
+            id="txt"
+            rows="3"
             class="form-input"
-            min="0"
-            max="5"
-            v-model.number="reviewToAdd.rate"
-          />
-        </div>
-      </div>
-      <button class="btn btn-info">Add Review</button>
-    </form>
-
-    <div v-if="reviews?.length" class="my-1 flex">
-      <article
-        class="review flex gap-1 items-start p-3"
-        v-for="review in reviews"
-        :key="review.id"
-      >
-        <div class="reviewer-dets flex">
-          <img :src="review.by.imgUrl" alt="" />
-          <div class="reviewer-name">
-            <h4>{{ review.by.fullname }}</h4>
-            <p>{{ review.createdAt }}</p>
+            v-model="reviewToAdd.content"
+            required
+          ></textarea>
+          <div class="form-control my-1">
+            <label for="rate" class="form-label">Rate</label>
+            <input
+              id="rate"
+              type="number"
+              class="form-input"
+              min="0"
+              max="5"
+              v-model.number="reviewToAdd.rate"
+            />
           </div>
         </div>
-        <p class="fw-600">{{ review.txt }}</p>
-        <!-- <button
+        <button class="btn btn-info">Add Review</button>
+      </form>
+
+      <div v-if="reviews?.length" class="flex col">
+        <article
+          class="review flex col items-start"
+          v-for="review in reviews"
+          :key="review.id"
+        >
+          <div class="reviewer-dets flex">
+            <img :src="review.by.imgUrl" alt="" />
+            <div class="reviewer-name">
+              <h4>{{ review.by.fullname }}</h4>
+              <p>{{ review.createdAt }}</p>
+            </div>
+          </div>
+          <p class="fw-600">{{ review.txt }}</p>
+          <!-- <button
           v-if="user?.isAdmin"
           class="btn btn-danger"
           @click="removeReview(review._id)"
         >
           Delete review
         </button> -->
-      </article>
-    </div>
-    <div class="p-2 flex flex-col gap-1" v-else>
-      <h4>No reviews yet.</h4>
-      <p>Be the first...</p>
-    </div>
+        </article>
+      </div>
+      <div class="p-2 flex flex-col gap-1" v-else>
+        <h4>No reviews yet.</h4>
+        <p>Be the first...</p>
+      </div>
+    </section>
 
     <div v-if="user?.isAdmin" class="btn-group gap-1">
       <button
@@ -108,7 +110,13 @@
       </button>
     </div>
   </section>
+
+  <!-- <p class="clr-teal fw-bold">${{ stay.price }} /NIGHT</p> -->
 </template>
+
+
+
+
 
 <script>
 import { stayService } from "../services/stay-service";
@@ -141,6 +149,15 @@ export default {
     }
   },
   computed: {
+    avgRating() {
+      let ratingSum = this.stay.reviews.reduce((acc, x) => acc + x.rate, 0);
+      let avgRating = ratingSum / this.stay.reviews.length;
+      return avgRating;
+    },
+    reviewsCount() {
+      return this.stay.reviews.length;
+    },
+
     imgClass() {
       return "img-card";
     },
@@ -187,5 +204,17 @@ export default {
 <style>
 .stay-details {
   padding-top: 100px;
+}
+
+.stay-details-img-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 8px;
+}
+
+.img-card-0 {
+  grid-column: 1/3;
+  grid-row: 1/3;
 }
 </style>

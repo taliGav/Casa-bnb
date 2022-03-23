@@ -184,6 +184,17 @@ function _createStays() {
         "reviews": [
           {
             "id": "madeId",
+            "createdAt": "May 2020",
+            "txt": "Super clean! Great service",
+            "rate": 5,
+            "by": {
+              "_id": "u101",
+              "fullname": "user1",
+              "imgUrl": "https://robohash.org/10711825?set=set1"
+            }
+          },
+          {
+            "id": "madeId",
             "createdAt": "May 2021",
             "txt": "Very helpful hosts. Cooked traditional...",
             "rate": 4,
@@ -352,6 +363,16 @@ function _createStays() {
               "fullname": "user3",
               "imgUrl": "/img/img2.jpg"
             }
+          },
+          {
+            "id": "madeId",
+            "txt": "The place was great, as was the host! I would recommend staying here.",
+            "rate": 5,
+            "by": {
+              "_id": "u103",
+              "fullname": "Rowan",
+              "imgUrl": "/img/img2.jpg"
+            }
           }
         ],
         "likedByUsers": ['mini-user'] // for user-wishlist : use $in
@@ -411,10 +432,20 @@ function _createStays() {
           {
             "id": "madeId",
             "txt": "Very helpful hosts. Cooked traditional...",
-            "rate": 4,
+            "rate": 3,
             "by": {
               "_id": "u102",
               "fullname": "user2",
+              "imgUrl": "/img/img2.jpg"
+            }
+          },
+          {
+            "id": "madeId",
+            "txt": "The place was great, as was the host! I would recommend staying here.",
+            "rate": 4,
+            "by": {
+              "_id": "u103",
+              "fullname": "Rowan",
               "imgUrl": "/img/img2.jpg"
             }
           }
