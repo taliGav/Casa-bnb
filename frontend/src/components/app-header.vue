@@ -1,26 +1,30 @@
 <template>
-	<header class="main-header full" ref="header">
-		<div class="main-layout flex space">
-			<div class="header-content flex space">
-				<div class="logo flex just align">
-					<h2>casa<span class = "casa-symbol">⌂</span><span class="clr-teal">bnb</span></h2>
-				</div>
-				<nav class="nav-bar flex just align space">
-					<!-- <router-link class="link" to="/">Explore</router-link> -->
-					<div class = "explore-link flex just align">
-					<router-link to="/stay">Explore</router-link>
-					</div>
+  <header class="main-header full" ref="header">
+    <div class="main-layout flex space">
+      <div class="header-content flex space">
+        <div class="logo flex just align">
+          <h2>
+            casa<span class="casa-symbol">⌂</span
+            ><span class="clr-teal">bnb</span>
+          </h2>
+        </div>
+        <stay-search />
+        <nav class="nav-bar flex just align space">
+          <!-- <router-link class="link" to="/">Explore</router-link> -->
+          <div class="explore-link flex just align">
+            <router-link to="/stay">Explore</router-link>
+          </div>
 
-					<user-badge></user-badge>
-				</nav>
-			</div>
-		</div>
-	</header>
+          <user-badge></user-badge>
+        </nav>
+      </div>
+    </div>
+  </header>
 </template>
 <script>
 
 import userBadge from "./user-badge.vue";
-
+import staySearch from '../components/stay-search.vue'
 export default {
 	name:'header',
 	data() {
@@ -45,7 +49,8 @@ export default {
 	},
 	computed: {},
 	components:{
-		userBadge
+		userBadge,
+		staySearch
 	}
 };
 </script>

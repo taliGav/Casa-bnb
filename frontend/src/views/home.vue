@@ -4,7 +4,6 @@
       <div>
         <h1>Welcome to my stay shop</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <stay-search />
       </div>
       <button @click="$router.push('/stay')" class="btn btn-info">
         explore now
@@ -14,7 +13,7 @@
 </template>
 
 <script>
-import staySearch from '../components/stay-search.vue'
+// import staySearch from '../components/stay-search.vue'
 export default {
   name: 'home',
   data() {
@@ -31,7 +30,7 @@ export default {
 
   },
   components: {
-    staySearch
+    // staySearch
   },
 }
 </script>
