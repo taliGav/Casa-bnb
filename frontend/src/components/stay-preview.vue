@@ -54,6 +54,13 @@ export default {
 };
 </script>
 
+<style>
+
+stay-preview {
+  min-width:250px;
+  padding:15px
+}
+</style>
 
 
 
