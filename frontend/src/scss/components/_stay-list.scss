@@ -1,27 +1,5 @@
-// .stay-list {
-// 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-// 	.stay-preview {
-// 		border: 2px solid black;
-// 		border-radius: 8px;
-// 		background-color: #fff;
-// 		cursor: pointer;
-// 		transition: $transition;
-
-// 		&:hover {
-// 			border-color: black;
-// 		}
-
-// 		div {
-// 			h3 {
-// 				font-size: 1em;
-// 				font-family: 'Lato-Regular';
-// 			}
-// 		}
-// 	}
-// }
-
-
-.stay-list{
-    
+.stay-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 20px;
 }

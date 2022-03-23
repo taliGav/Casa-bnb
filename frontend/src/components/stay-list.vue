@@ -4,11 +4,11 @@
       <!-- add a new stay -->
     <!-- </button> -->
     <!-- <div class=""> -->
-      <ul class="stay-list flex wrap space ">
+      <ul class="stay-list">
         <li
           v-for="stay in stays"
           :key="stay._id"
-          class="stay-preview-container flex flex-col"
+          
           @click="$router.push(`/stay/${stay._id}`)"
         >
           <stay-preview :stay="stay" />
@@ -34,6 +34,8 @@ export default {
 </script>
 
 <style>
+
+
 /* ul.stay-list { */
 /* display: grid;
   grid-template-columns: repeat(4, auto);
