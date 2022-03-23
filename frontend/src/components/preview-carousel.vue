@@ -5,7 +5,7 @@
       indicator-position = "none"
 			:interval="2000"
 			height="200px"
-			width="100%"
+			width="250px"
 			arrow="hover"
 			class="img-container"
 		>
@@ -27,39 +27,18 @@ export default {
 		return {};
 	},
 	created() {
-		// console.log('imgUrls',this.urls);
+	
 	},
 
 	computed: {
-		// imgUrl(){
-		//   let imgNum = this.idx+1
-		//   return '/src/assets/images/00' + imgNum + '.jpeg'
-		// }
+	
 	},
+	methods:{
+
+	}
 };
 </script>
 
 <style scoped>
-/* el-carousel-item {
-  width: 300px;
-  height: 200px;
 
-} */
-
-/* .el-carousel__item h3 {
-  color: #475669;
-  font-size: 18px;
-  opacity: 0.75;
-  line-height: 300px;
-  margin: 0;
-  text-align: center;
-}
-
-.el-carousel__item:nth-child(2n) {
-  background-color: #99a9bf;
-}
-
-.el-carousel__item:nth-child(2n + 1) {
-  background-color: #d3dce6;
-} */
 </style>

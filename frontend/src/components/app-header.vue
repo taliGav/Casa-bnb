@@ -45,12 +45,12 @@ export default {
 		// },
 		// v-bind:style="{ height: stickyNav ? '80px' : '160px' }"
 	},
-	mounted() {
-		// this.headerObserver = new IntersectionObserver(this.onHeaderObserved, {
-		// 	root: '-80px 0px 0px',
-		// });
-		// this.headerObserver.observe(this.$refs.header);
-	},
+	// mounted() {
+	// 	this.headerObserver = new IntersectionObserver(this.onHeaderObserved, {
+	// 		rootMargin: '-80px 0px 0px',
+	// 	});
+	// 	this.headerObserver.observe(this.$refs.header);
+	// },
 	computed: {},
 	components: {
 		userBadge,
