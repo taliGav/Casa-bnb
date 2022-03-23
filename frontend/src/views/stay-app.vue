@@ -1,5 +1,6 @@
 <template>
   <section class="stay-app">
+    <stay-search />
     <!-- <stay-filter @setFilter="setFilter" /> -->
     <stay-list :stays="stays" />
   </section>
@@ -7,6 +8,7 @@
 
 <script>
 import stayList from '../components/stay-list.vue'
+import staySearch from '../components/stay-search.vue'
 // import stayFilter from '../components/stay-filter.vue'
 export default {
   name: 'stay-app',
@@ -16,8 +18,7 @@ export default {
     }
   },
   created() {
-    var filterBy = this.$route.params
-    // console.log('app',filterBy);
+    var filterBy = this.$route.query
     this.setFilter(filterBy)
     
     // this.$store.dispatch({ type: 'loadStays' })
@@ -35,6 +36,7 @@ export default {
   },
   components: {
     stayList,
+    staySearch,
     // stayFilter,
   },
 }
