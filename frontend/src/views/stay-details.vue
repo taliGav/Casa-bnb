@@ -1,7 +1,7 @@
 <template>
-  <section v-if="stay" class="stay-detalis">
+  <section v-if="stay" class="stay-details">
     <stay-preview :stay="stay">
-      <section class="py-3 flex flex-col gap-1">
+      <!-- <section class="flex flex-col">
         <div class="flex flex-col gap-1">
           <h3 class="uppercase">{{ stay.name }}</h3>
           <p class="clr-teal fw-bold">Price: ${{ stay.price }}</p>
@@ -11,14 +11,7 @@
             {{ $filters.formatTime(stay.createdAt) }}
           </p>
         </div>
-        <div class="labels flex flex-wrap items-center gap-1">
-          <custom-label
-            v-for="label in stay.labels"
-            :key="label"
-            :label="label"
-          />
-        </div>
-      </section>
+      </section> -->
     </stay-preview>
 
     <h2 class="clr-teal">Reviews</h2>
@@ -79,7 +72,7 @@
       >
         edit stay
       </button>
-      <button @click="removeStay" class="btn btn-danger">delete stay</button>
+      <!-- <button @click="removeStay" class="btn btn-danger">delete stay</button> -->
       <button @click="$router.push('/stay')" class="btn btn-secondary">
         go back
       </button>
@@ -90,11 +83,10 @@
 <script>
 import { stayService } from '../services/stay-service'
 import { reviewService } from '../services/review-service'
-import CustomLabel from '../components/custom-label.vue'
 import stayPreview from '../components/stay-preview.vue'
 
 export default {
-  components: { stayPreview, CustomLabel },
+  components: { stayPreview },
   name: 'stay-detail',
   data() {
     return {
@@ -125,11 +117,11 @@ export default {
     },
   },
   methods: {
-    removeStay() {
-      this.$store.dispatch({ type: 'removeStay', stayId: this.stay._id }).then(() => {
-        this.$router.push('/stay')
-      })
-    },
+    // removeStay() {
+    //   this.$store.dispatch({ type: 'removeStay', stayId: this.stay._id }).then(() => {
+    //     this.$router.push('/stay')
+    //   })
+    // },
     async addReview() {
       if (!this.reviewToAdd.content) return
       await this.$store.dispatch({ type: 'addReview', review: this.reviewToAdd })
