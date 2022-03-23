@@ -1,18 +1,25 @@
 .main-header {
 	background-color: $theme-red;
+	width: 100%;
+	// position: fixed;
 }
 
 .header-content {
-	// height: 80px;    
+	// height: 80px;
 }
 
-.logo{
-    width:102px;
-    height:80px;
+.logo {
+	width: 102px;
+	height: 80px;
 }
 
-.nav-bar{
-    width: 356px;
-    height: 80px;
-    // background-color: blue;
+.nav-bar {
+	width: 356px;
+	height: 80px;
+	// background-color: blue;
+}
+
+.change {
+	height: 80px;
+	position: fixed;
 }
