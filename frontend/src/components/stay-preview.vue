@@ -2,15 +2,13 @@
   <section class="stay-preview">
     <article class="preview-card">
       <div class="stay-imgs-container">
-        <preview-carousel> </preview-carousel>
+        <preview-carousel :urls="this.stay.imgUrls" />
       </div>
       <div class="flex items-center justify-between gap-2">
         <p>{{ stay.type }} in {{ stay.loc.city }}, {{ stay.loc.country }}</p>
-        <!-- <p>{{stay.type}} in {{stay.loc.country}}</p> -->
         <h3 class="uppercase">{{ stay.name }}</h3>
 
         <div class="rating">⭐{{ avgRating }} ({{ reviewsCount }} reviews)</div>
-
         <p class="clr-teal fw-bold">${{ stay.price }} /NIGHT</p>
       </div>
     </article>
@@ -50,6 +48,9 @@ export default {
     reviewsCount() {
       return this.stay.reviews.length;
     },
+    imgUrls() {
+      return this.stay.imgUrls;
+    }
   },
 };
 </script>
