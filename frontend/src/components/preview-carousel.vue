@@ -1,7 +1,7 @@
 <template>
   <section class="carousel">
-    <el-carousel :interval="1000" height="200px" width="300px" arrow="hover">
-      <el-carousel-item v-for="(url, idx) in urls" :key="idx">
+    <el-carousel :interval="2000" height="200px" width="300px" arrow="hover">
+      <el-carousel-item class="img-container" v-for="(url, idx) in urls" :key="idx">
         <img :src="url" class="img-in-card" alt="" />
       </el-carousel-item>
     </el-carousel>
@@ -18,7 +18,7 @@ export default {
   data() {
     return {};
   },
-    created() {
+  created() {
     // console.log('imgUrls',this.urls);
   },
 
@@ -32,6 +32,19 @@ export default {
 </script>
 
 <style scoped>
+
+el-carousel-item {
+  width: 300px;
+  height: 200px;
+
+}
+
+.img-in-card {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
 /* .el-carousel__item h3 {
   color: #475669;
   font-size: 18px;
