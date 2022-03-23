@@ -6,6 +6,31 @@ import { storageService } from './async-storage-service';
 
 
 const KEY = 'stays_db';
+const amenities = [
+  "TV",
+  "Internet",
+  "Wifi",
+  "Air conditioning",
+  "Wheelchair accessible",
+  "Pool",
+  "Kitchen",
+  "Free parking on premises",
+  "Gym",
+  "Elevator",
+  "Hot tub",
+  "Washer",
+  "Smoke detector",
+  "Self check-in",
+  "Waterfront",
+  "Beachfront"
+]
+const lessAmenities = [
+  "Free cancellation",
+  "Wifi",
+  "Kitchen",
+  "Air conditioning",
+  "Washer",
+]
 const ENDPOINT = 'stay';
 // const BASE_URL =
 //   process.env.NODE_ENV !== 'development' ? '/api/stay' : '//localhost:3030/api/stay/'
@@ -16,29 +41,55 @@ export const stayService = {
   remove,
   save,
   getEmptyStay,
+  getAmenities,
+  getLessAmenities,
 };
 
 _createStays();
+
+function getAmenities() {
+  return amenities
+}
+function getLessAmenities() {
+  return lessAmenities
+}
 
 async function query(filterBy = {}) {
   // return await httpService.get(ENDPOINT, filterBy)
   // return axios.get(BASE_URL, { params: { filterBy } }).then((res) => res.data)
   try {
     var stays = await storageService.query(KEY)
-    console.log('stays:', stays);
+    // console.log('serv filter:', filterBy.amenities);
     if (filterBy.destination) {
-      console.log('regex', filterBy.destination);
+      // console.log('regex', filterBy.destination);
       const regex = new RegExp(filterBy.destination, 'i')
       stays = stays.filter((stay) => regex.test(stay.loc.country) || regex.test(stay.loc.city))
     }
     if (filterBy.guests) {
-      console.log('guests', filterBy.guests);
+      // console.log('guests', filterBy.guests);
       stays = stays.filter((stay) => stay.capacity >= filterBy.guests)
+    }
+    if (filterBy.amenities) {
+      if (typeof (filterBy.amenities) === 'object')
+        var amenitiesToFilter = Object.values(filterBy.amenities)
+      else var amenitiesToFilter = filterBy.amenities
+
+      console.log('serv amenities', amenitiesToFilter)
+
+      // stays = stays.filter((stay) => {
+      //   amenitiesToFilter.every((amenitie) => {
+      //     return stay.amenities.includes(amenitie)
+      //   })
+      // })
+
+      // stays = stays.filter((stay) => {
+      //   return stay.amenities.every((amenitie) => amenitiesToFilter.includes(amenitie))
+      // })
     }
     return stays
   }
   finally {
-    console.log('stays:', stays);
+    // console.log('f stays:', stays);
   }
 
   // console.log('stay service filter: ', filterBy);
@@ -212,7 +263,6 @@ function _createStays() {
         "amenities": [
           "TV",
           "Wifi",
-          "Air conditioning",
           "Kitchen",
           "Elevator",
           "Buzzer/wireless intercom",

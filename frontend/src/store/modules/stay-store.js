@@ -3,7 +3,9 @@ import { stayService } from '@/services/stay-service.js'
 export default {
   state: {
     stays: [],
-    filterBy: { destination: '', dates: '', guests: 0 },
+    filterBy: { destination: '', dates: '', guests: 0, amenities: [], },
+    amenities: stayService.getAmenities(),
+    lessAmenities: stayService.getLessAmenities(),
   },
   getters: {
     stays({ stays }) {
@@ -12,6 +14,12 @@ export default {
     staysToShow({ stays, filterBy }) {
       const copyStays = JSON.parse(JSON.stringify(stays))
       return copyStays
+    },
+    amenities({ amenities }) {
+      return amenities
+    },
+    lessAmenities({ lessAmenities }) {
+      return lessAmenities
     },
   },
   mutations: {
@@ -36,6 +44,7 @@ export default {
   },
   actions: {
     loadStays({ commit, state }) {
+      console.log('store filter', state.filterBy);
       stayService.query(state.filterBy).then((stays) => {
         console.log('store', stays);
         commit({ type: 'setStays', stays })

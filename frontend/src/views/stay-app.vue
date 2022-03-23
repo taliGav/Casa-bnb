@@ -1,6 +1,6 @@
 <template>
   <section class="stay-app">
-    <!-- <stay-filter @setFilter="setFilter" /> -->
+    <stay-filter @setFilter="setFilter" />
     <stay-list :stays="stays" />
   </section>
 </template>
@@ -8,7 +8,7 @@
 <script>
 import stayList from '../components/stay-list.vue'
 // import staySearch from '../components/stay-search.vue'
-// import stayFilter from '../components/stay-filter.vue'
+import stayFilter from '../components/stay-filter.vue'
 export default {
   name: 'stay-app',
   data() {
@@ -18,7 +18,7 @@ export default {
   },
   created() {
     // var filterBy = this.filterBy
-    this.setFilter(this.filterBy)
+    this.setFilter()
     
     // this.$store.dispatch({ type: 'loadStays' })
   },
@@ -29,6 +29,7 @@ export default {
     stays() {
       return this.$store.getters.staysToShow
     },
+    
     filterBy(){
       return this.$route.query
     }
@@ -43,7 +44,7 @@ export default {
   components: {
     stayList,
     // staySearch,
-    // stayFilter,
+    stayFilter,
   },
 }
 </script>

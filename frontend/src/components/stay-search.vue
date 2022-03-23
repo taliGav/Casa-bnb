@@ -36,16 +36,17 @@ export default {
   name: 'search',
   data() {
     return {
-      filterBy: { destination: '', dates: '0', guests: 0 },
+      filterBy: { destination: '', dates: '0', guests: 0 ,amenities:[]},
       value1:0,
 
     }
   },
   created() {
-    this.filterBy = this.curFilterBy
+    // this.filterBy = this.curFilterBy
   },
   computed: {
     curFilterBy(){
+      this.filterBy = this.$route.query
       return this.$route.query
     },
     // value1(){
