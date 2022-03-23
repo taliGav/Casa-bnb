@@ -3,7 +3,9 @@
     <button @click="$router.push('/stay/edit')" class="btn btn-secondary">
       add a new stay
     </button>
-    <div class="list-container flex flex-wrap items-center gap-1">
+    <div
+      class="list-container flex flex-wrap items-center justify-between gap-2"
+    >
       <ul class="stay-list py-1 clean-list grid gap-2">
         <li
           v-for="stay in stays"
@@ -34,4 +36,18 @@ export default {
 </script>
 
 <style>
+/* .stay-list {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid
+  grid-template-rows: repeat(3, auto);
+} */
+
+/* .el-carousel__item:nth-child(2n) {
+  background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n + 1) {
+  background-color: #d3dce6;
+} */
 </style>

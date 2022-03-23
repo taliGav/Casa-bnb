@@ -4,11 +4,10 @@
       <div class="stay-imgs-container">
         <preview-carousel :urls="this.stay.imgUrls" />
       </div>
-      <div class="flex items-center justify-between gap-2">
-        <p>{{ stay.type }} in {{ stay.loc.city }}, {{ stay.loc.country }}</p>
-        <h3 class="uppercase">{{ stay.name }}</h3>
-
+      <div class="flex column items-center justify-between gap-1">
         <div class="rating">⭐{{ avgRating }} ({{ reviewsCount }} reviews)</div>
+        <p>{{ stay.type }} in {{ stay.loc.city }}, {{ stay.loc.country }}</p>
+        <p class="preview-stay-title">{{ stay.name }}</p>
         <p class="clr-teal fw-bold">${{ stay.price }} /NIGHT</p>
       </div>
     </article>
@@ -41,7 +40,7 @@ export default {
   },
   computed: {
     avgRating() {
-      let ratingSum = this.stay.reviews.reduce((acc,x) => (acc + x.rate),0);
+      let ratingSum = this.stay.reviews.reduce((acc, x) => acc + x.rate, 0);
       let avgRating = ratingSum / this.stay.reviews.length;
       return avgRating;
     },
@@ -50,10 +49,12 @@ export default {
     },
     imgUrls() {
       return this.stay.imgUrls;
-    }
+    },
   },
 };
 </script>
+
+
 
 
 // import customLabel from './custom-label.vue'

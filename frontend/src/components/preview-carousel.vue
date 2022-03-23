@@ -19,7 +19,7 @@ export default {
     return {};
   },
     created() {
-    console.log('imgUrls',this.urls);
+    // console.log('imgUrls',this.urls);
   },
 
   computed: {
