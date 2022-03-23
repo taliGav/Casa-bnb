@@ -24,18 +24,14 @@ export default {
     }
   },
   created() {
-    
+    this.filterBy = this.curFilterBy
   },
   computed: {
-    
+    curFilterBy(){
+      return this.$route.query
+    }
   },
   methods: {
-//    search(){
-//     //  <button @click="$router.push('/stay')" class="btn btn-info">
-//     //     explore now
-//     //   </button>
-//      this.$router.push(`/stay/${this.filterBy.destination}/${this.filterBy.dates}/${this.filterBy.guests}`)
-//    }
   },
 }
 </script>

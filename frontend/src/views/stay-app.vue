@@ -18,19 +18,26 @@ export default {
     }
   },
   created() {
-    var filterBy = this.$route.query
-    this.setFilter(filterBy)
+    // var filterBy = this.filterBy
+    this.setFilter(this.filterBy)
     
     // this.$store.dispatch({ type: 'loadStays' })
   },
+  watch: {
+        '$route': 'setFilter'
+    },
   computed: {
     stays() {
       return this.$store.getters.staysToShow
     },
+    filterBy(){
+      return this.$route.query
+    }
   },
   methods: {
-    setFilter(filterBy) {
-      const copyfilter = JSON.parse(JSON.stringify(filterBy))
+    setFilter() {
+      console.log('app set filter:',this.filterBy);
+      const copyfilter = JSON.parse(JSON.stringify(this.filterBy))
       this.$store.dispatch({ type: 'setFilter', filterBy: copyfilter })
     },
   },
