@@ -1,7 +1,7 @@
 <template>
   <section class="carousel">
-    <el-carousel :interval="2000" height="200px" width="300px" arrow="hover">
-      <el-carousel-item class="img-container" v-for="(url, idx) in urls" :key="idx">
+    <el-carousel :interval="2000" height="200px" width="300px" arrow="hover" class="img-container">
+      <el-carousel-item  v-for="(url, idx) in urls" :key="idx">
         <img :src="url" class="img-in-card" alt="" />
       </el-carousel-item>
     </el-carousel>
@@ -39,12 +39,7 @@ el-carousel-item {
 
 }
 
-.img-in-card {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-}
+
 /* .el-carousel__item h3 {
   color: #475669;
   font-size: 18px;

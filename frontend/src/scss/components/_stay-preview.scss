@@ -1,0 +1,27 @@
+.stay-preview {
+	// max-width: 330px;
+	width: 330px;
+	height: 365px;
+	margin: 10px;
+	padding: 0;
+    border-radius:10px;
+	.stay-images-container {
+		width: 100%;
+		
+	}
+	.preview-data {
+		height: 100px;
+
+	}
+}
+
+.img-in-card {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.img-container{
+    border-radius: 10px;
+    // min-width: 250px;
+}
