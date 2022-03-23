@@ -3,14 +3,12 @@
     <button @click="$router.push('/stay/edit')" class="btn btn-secondary">
       add a new stay
     </button>
-    <div
-      class="list-container flex flex-wrap items-center justify-between gap-2"
-    >
-      <ul class="stay-list py-1 clean-list grid gap-2">
+    <div class="list-container items-center justify-between">
+      <ul class="stay-list flex clean-list">
         <li
           v-for="stay in stays"
           :key="stay._id"
-          class="stay-preview-container p-2 flex flex-col gap-1"
+          class="stay-preview-container flex flex-col"
           @click="$router.push(`/stay/${stay._id}`)"
         >
           <stay-preview :stay="stay" />
@@ -36,18 +34,35 @@ export default {
 </script>
 
 <style>
-/* .stay-list {
-  display: grid;
-  grid-template-columns: repeat(3, 250px);
-  grid
-  grid-template-rows: repeat(3, auto);
-} */
+/* ul.stay-list { */
+/* display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-auto-flow: row;
+  align-items: stretch;
+  grid-gap: 20px; */
 
-/* .el-carousel__item:nth-child(2n) {
-  background-color: #99a9bf;
-}
 
-.el-carousel__item:nth-child(2n + 1) {
-  background-color: #d3dce6;
-} */
+
+  /* font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif; */
+/* } */
+
+
+/* placeholder search-bar: gray #717171;
+font size 14 px 
+font:
+ */
+/* placeholder search-bar: gray #717171;
+font size 14 px 
+font:
+
+
+--dls19-brand-gradient-radial: radial-gradient(circle at center,
+  #FF385C 0%,
+  #E61E4D 27.5%,
+  #E31C5F 40%,
+  #D70466 57.5%,
+  #BD1E59 75%,
+  #BD1E59 100%
+) !important;
+ */
 </style>
