@@ -6,8 +6,9 @@
 					<h2 class="uppercase">Casa<span class="clr-teal">BNB</span></h2>
 				</div>
 				<nav class="nav-bar flex just align even">
-					<router-link class="link" to="/">Explore</router-link>
-					<router-link class="link" to="/stay">Stay</router-link>
+					<!-- <router-link class="link" to="/">Explore</router-link> -->
+					<router-link class="link" to="/stay">Explore</router-link>
+					<user-badge></user-badge>
 				</nav>
 				<!-- <router-link class="link" to="/dashboard">Dashboard</router-link>
             <router-link class="link" to="/about">About</router-link>
@@ -19,7 +20,11 @@
 	</header>
 </template>
 <script>
+
+import userBadge from "./user-badge.vue";
+
 export default {
+	name:'header',
 	data() {
 		return {
 			// headerObserver: null,
@@ -41,5 +46,8 @@ export default {
 		// this.headerObserver.observe(this.$refs.header);
 	},
 	computed: {},
+	components:{
+		userBadge
+	}
 };
 </script>

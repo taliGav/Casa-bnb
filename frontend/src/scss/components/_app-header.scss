@@ -1,5 +1,5 @@
 .main-header {
-	background-color: $theme-red;
+	background-color: $white;
 	width: 100%;
 	// position: fixed;
 }
@@ -9,6 +9,7 @@
 }
 
 .logo {
+	color: $theme-red;
 	width: 102px;
 	height: 80px;
 }
@@ -22,4 +23,26 @@
 .change {
 	height: 80px;
 	position: fixed;
+}
+
+.user-badge {
+	width: 77px;
+	height: 42px;
+	background-color: white;
+	border-radius: 21px;
+	align-items: center;
+	border: 1px solid #dddddd;
+	cursor: pointer;
+
+	.badge-image {
+		border-radius: 50%;
+		display: block;
+		height: 30px;
+		width: 30px;
+		margin-right: 5px;
+	}
+	.badge-hamburger {
+		font-weight: 600;
+		margin-left: 10px;
+	}
 }
