@@ -1,5 +1,8 @@
 .stay-list {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(250px, 310px));
 	grid-gap: 20px;
+	justify-content: space-between;
+    // grid-template-columns: repeat(auto-, minmax(9vw, 0fr));
+    // grid-auto-rows: 9vh;
 }
