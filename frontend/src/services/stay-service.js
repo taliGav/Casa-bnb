@@ -23,7 +23,26 @@ _createStays()
 async function query(filterBy = {}) {
   // return await httpService.get(ENDPOINT, filterBy)
   // return axios.get(BASE_URL, { params: { filterBy } }).then((res) => res.data)
-  return storageService.query(KEY)
+  try {
+    var stays = await storageService.query(KEY)
+    console.log('stays:', stays);
+    if (filterBy.destination) {
+      console.log('regex', filterBy.destination);
+      const regex = new RegExp(filterBy.destination, 'i')
+      stays = stays.filter((stay) => regex.test(stay.loc.country) || regex.test(stay.loc.city))
+    }
+    if (filterBy.guests) {
+      console.log('guests', filterBy.guests);
+      stays = stays.filter((stay) => stay.capacity >= filterBy.guests)
+    }
+    return stays
+  }
+  finally {
+    console.log('stays:', stays);
+  }
+
+  // console.log('stay service filter: ', filterBy);
+
 }
 
 async function getById(id) {

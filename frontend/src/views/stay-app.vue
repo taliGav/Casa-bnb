@@ -17,8 +17,10 @@ export default {
   },
   created() {
     var filterBy = this.$route.params
-    console.log(filterBy);
-    this.$store.dispatch({ type: 'loadStays' }, filterBy)
+    // console.log('app',filterBy);
+    this.setFilter(filterBy)
+    
+    // this.$store.dispatch({ type: 'loadStays' })
   },
   computed: {
     stays() {
