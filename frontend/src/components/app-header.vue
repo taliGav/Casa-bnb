@@ -12,7 +12,6 @@
 				</div>
 				<stay-search />
 				<nav class="nav-bar flex just align space">
-					<!-- <router-link class="link" to="/">Explore</router-link> -->
 					<div class="explore-link flex just align">
 						<router-link to="/stay">Explore</router-link>
 					</div>
