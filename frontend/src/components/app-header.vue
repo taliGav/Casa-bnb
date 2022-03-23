@@ -3,18 +3,16 @@
 		<div class="main-layout flex space">
 			<div class="header-content flex space">
 				<div class="logo flex just align">
-					<h2 class="uppercase">Casa<span class="clr-teal">BNB</span></h2>
+					<h2>casa<span class = "casa-symbol">⌂</span><span class="clr-teal">bnb</span></h2>
 				</div>
-				<nav class="nav-bar flex just align even">
+				<nav class="nav-bar flex just align space">
 					<!-- <router-link class="link" to="/">Explore</router-link> -->
-					<router-link class="link" to="/stay">Explore</router-link>
+					<div class = "explore-link flex just align">
+					<router-link to="/stay">Explore</router-link>
+					</div>
+
 					<user-badge></user-badge>
 				</nav>
-				<!-- <router-link class="link" to="/dashboard">Dashboard</router-link>
-            <router-link class="link" to="/about">About</router-link>
-            <router-link class="link" to="/login">Login</router-link>
-            <router-link class="link" to="/user">User</router-link>
-            <router-link class="link" to="/review">Reviews</router-link> -->
 			</div>
 		</div>
 	</header>

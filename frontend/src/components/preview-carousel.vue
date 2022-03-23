@@ -1,6 +1,6 @@
 <template>
   <section class="carousel">
-    <el-carousel :interval="2000" height="200px" width="300px" arrow="hover">
+    <el-carousel :interval="1000" height="200px" width="300px" arrow="hover">
       <el-carousel-item v-for="(url, idx) in urls" :key="idx">
         <img :src="url" class="img-in-card" alt="" />
       </el-carousel-item>

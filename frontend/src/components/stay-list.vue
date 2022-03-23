@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class = "stay-list main-app">
     <button @click="$router.push('/stay/edit')" class="btn btn-secondary">
       add a new stay
     </button>
