@@ -1,18 +1,43 @@
 <template>
   <section v-if="stay" class="stay-details">
-    <stay-preview :stay="stay">
-      <!-- <section class="flex flex-col">
-        <div class="flex flex-col gap-1">
-          <h3 class="uppercase">{{ stay.name }}</h3>
-          <p class="clr-teal fw-bold">Price: ${{ stay.price }}</p>
-          <p><span class="fw-bold">In Stock:</span> {{ stay.inStock }}</p>
+    <h2 class="uppercase">{{ stay.name }}</h2>
+
+    <div class="rating">
+      ⭐{{ avgRating }} ({{ reviewsCount }} reviews)
+      <div class="needs-to-be-completed">
+        host type (superhost) + google location city+country
+        {{ stay.loc.city }}, {{ stay.loc.country }}
+      </div>
+    </div>
+
+    <section
+      class="details-img-container stay-images-container"
+      v-for="(imgUrl, idx) in this.stay.imgUrls"
+      :key="idx"
+    >
+      <img :src="imgUrl" :class="imgClass" alt="" />
+      <!-- <img :src="imgUrl" :class="imgClass" alt="" • /> -->
+    </section>
+
+    <div class="preview-data flex col space">
+      <div class="host-details flex">
+        <div class="host-main-details">
+          <h3>{{ stay.type }} hosted by {{ stay.host.fullname }}</h3>
           <p>
-            <span class="fw-bold">Created At:</span>
-            {{ $filters.formatTime(stay.createdAt) }}
+            {{ stay.capacity }} guests · {{ stay.bedrooms }} bedroom ·
+            {{ stay.beds }} bed · {{ stay.bathrooms }} bath
           </p>
         </div>
-      </section> -->
-    </stay-preview>
+        <div class="host-img">
+          <img :src="hostImg" alt="" srcset="" />
+        </div>
+      </div>
+
+      <hr />
+
+      <p class="preview-stay-title">{{ stay.name }}</p>
+      <p class="clr-teal fw-bold">${{ stay.price }} /NIGHT</p>
+    </div>
 
     <h2 class="clr-teal">Reviews</h2>
 
@@ -42,22 +67,27 @@
       <button class="btn btn-info">Add Review</button>
     </form>
 
-    <div v-if="reviews?.length" class="my-1 flex flex-col gap-1">
+    <div v-if="reviews?.length" class="my-1 flex">
       <article
-        class="review flex flex-col gap-1 items-start p-3"
+        class="review flex gap-1 items-start p-3"
         v-for="review in reviews"
-        :key="review._id"
+        :key="review.id"
       >
-        <p class="fw-600">{{ review.content }}</p>
-        <p>Rate: {{ review.rate }}⭐</p>
-        <p>By: {{ review.user?.username }}</p>
-        <button
+        <div class="reviewer-dets flex">
+          <img :src="review.by.imgUrl" alt="" />
+          <div class="reviewer-name">
+            <h4>{{ review.by.fullname }}</h4>
+            <p>{{ review.createdAt }}</p>
+          </div>
+        </div>
+        <p class="fw-600">{{ review.txt }}</p>
+        <!-- <button
           v-if="user?.isAdmin"
           class="btn btn-danger"
           @click="removeReview(review._id)"
         >
           Delete review
-        </button>
+        </button> -->
       </article>
     </div>
     <div class="p-2 flex flex-col gap-1" v-else>
@@ -81,39 +111,49 @@
 </template>
 
 <script>
-import { stayService } from '../services/stay-service'
-import { reviewService } from '../services/review-service'
-import stayPreview from '../components/stay-preview.vue'
+import { stayService } from "../services/stay-service";
+// import { reviewService } from "../services/review-service";
 
 export default {
-  components: { stayPreview },
-  name: 'stay-detail',
+  components: {},
+  name: "stay-detail",
   data() {
     return {
       stay: null,
       reviewToAdd: null,
-    }
+    };
   },
   async created() {
-    const { id } = this.$route.params
-    this.stay = await stayService.getById(id)
-    const user = this.$store.getters.user
+    const { id } = this.$route.params;
+    this.stay = await stayService.getById(id);
+    const user = this.$store.getters.user;
 
     // review-store
-    await this.$store.dispatch({ type: 'getReviews', filterBy: { stayId: this.stay._id } })
+    await this.$store.dispatch({
+      type: "getReviews",
+      filterBy: { stayId: this.stay._id },
+    });
 
     if (user) {
-      this.reviewToAdd = await reviewService.getEmptyReview()
-      this.reviewToAdd.userId = user._id
-      this.reviewToAdd.stayId = this.stay._id
+      this.reviewToAdd = await reviewService.getEmptyReview();
+      this.reviewToAdd.userId = user._id;
+      this.reviewToAdd.stayId = this.stay._id;
     }
   },
   computed: {
+    imgClass() {
+      return "img-card";
+    },
+    hostImg() {
+      var url = this.stay.host.imgUrl;
+      console.log("host img url", url);
+      return url;
+    },
     user() {
-      return this.$store.getters.user
+      // return this.$store.getters.user;
     },
     reviews() {
-      return this.$store.getters.reviews
+      return this.stay.reviews;
     },
   },
   methods: {
@@ -123,14 +163,29 @@ export default {
     //   })
     // },
     async addReview() {
-      if (!this.reviewToAdd.content) return
-      await this.$store.dispatch({ type: 'addReview', review: this.reviewToAdd })
-      await this.$store.dispatch({ type: 'getReviews', filterBy: { stayId: this.stay._id } })
+      if (!this.reviewToAdd.content) return;
+      await this.$store.dispatch({
+        type: "addReview",
+        review: this.reviewToAdd,
+      });
+      await this.$store.dispatch({
+        type: "getReviews",
+        filterBy: { stayId: this.stay._id },
+      });
     },
     async removeReview(reviewId) {
-      await this.$store.dispatch({ type: 'removeReview', reviewId })
-      await this.$store.dispatch({ type: 'getReviews', filterBy: { stayId: this.stay._id } })
+      await this.$store.dispatch({ type: "removeReview", reviewId });
+      await this.$store.dispatch({
+        type: "getReviews",
+        filterBy: { stayId: this.stay._id },
+      });
     },
   },
-}
+};
 </script>
+
+<style>
+.stay-details {
+  padding-top: 100px;
+}
+</style>

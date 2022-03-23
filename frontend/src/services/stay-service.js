@@ -24,18 +24,18 @@ async function query(filterBy = {}) {
   // return await httpService.get(ENDPOINT, filterBy)
   // return axios.get(BASE_URL, { params: { filterBy } }).then((res) => res.data)
   try {
-    var stays = await storageService.query(KEY)
+    var stays = await storageService.query(KEY);
     console.log('stays:', stays);
     if (filterBy.destination) {
       console.log('regex', filterBy.destination);
-      const regex = new RegExp(filterBy.destination, 'i')
-      stays = stays.filter((stay) => regex.test(stay.loc.country) || regex.test(stay.loc.city))
+      const regex = new RegExp(filterBy.destination, 'i');
+      stays = stays.filter((stay) => regex.test(stay.loc.country) || regex.test(stay.loc.city));
     }
     if (filterBy.guests) {
       console.log('guests', filterBy.guests);
-      stays = stays.filter((stay) => stay.capacity >= filterBy.guests)
+      stays = stays.filter((stay) => stay.capacity >= filterBy.guests);
     }
-    return stays
+    return stays;
   }
   finally {
     console.log('stays:', stays);
@@ -166,9 +166,10 @@ function _createStays() {
           "Beachfront"
         ],
         "host": {
-          "_id": "51399391",
+          "_id": "5139939s1",
           "fullname": "Patty And Beckett",
-          "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+          "imgUrl": "/src/assets/images/profilePics/1.jpg",
+          // "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
         },
         "loc": {
           "street": "Lahaina, HI, United States",
@@ -183,6 +184,7 @@ function _createStays() {
         "reviews": [
           {
             "id": "madeId",
+            "createdAt": "May 2021",
             "txt": "Very helpful hosts. Cooked traditional...",
             "rate": 4,
             "by": {
