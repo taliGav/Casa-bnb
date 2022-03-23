@@ -19,7 +19,7 @@
       <!-- <img :src="imgUrl" :class="imgClass" alt="" • /> -->
     </section>
 
-    <div class="preview-data flex col space">
+    <div class=" flex col space">
       <div class="host-details flex">
         <div class="host-main-details">
           <h3>{{ stay.type }} hosted by {{ stay.host.fullname }}</h3>

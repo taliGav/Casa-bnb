@@ -12,15 +12,11 @@
 				<span class = "stay-price">${{ stay.price }}</span> /night
 			</p>
 		</div>
-		<!-- </article> -->
-		<div class="">
-			<!-- <custom-label
-            v-for="label in stay.labels"
-            :key="label"
-            :label="label"
-          /> -->
+	
+		<div >
+		
 		</div>
-		<!-- <slot></slot> -->
+		
 	</section>
 </template>
 
