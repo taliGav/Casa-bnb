@@ -4,13 +4,12 @@
 
     <div class="demo-date-picker">
       <div class="block">
-        <span class="demonstration">Default</span>
         <el-date-picker
           v-model="value1"
           type="daterange"
-          range-separator="To"
-          start-placeholder="Start date"
-          end-placeholder="End date"
+          range-separator="|"
+          start-placeholder="Add dates"
+          end-placeholder="Add dates"
         />
       </div>
     </div>
@@ -29,12 +28,17 @@
     >
   </form>
 </template>
+
+
 <script>
+import { ref } from 'vue'
 export default {
   name: 'search',
   data() {
     return {
-      filterBy: { destination: '', dates: '0', guests: 0 }
+      filterBy: { destination: '', dates: '0', guests: 0 },
+      value1:0,
+
     }
   },
   created() {
@@ -43,7 +47,10 @@ export default {
   computed: {
     curFilterBy(){
       return this.$route.query
-    }
+    },
+    // value1(){
+    //   return ref('')
+    // }
   },
   methods: {
   },
