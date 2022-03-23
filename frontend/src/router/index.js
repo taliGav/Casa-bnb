@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import home from '@/views/home.vue'
 import about from '@/views/about.vue'
 import stayApp from '@/views/stay-app.vue'
-// import stayDetails from '@/views/stay-details.vue'
+import stayDetails from '@/views/stay-details.vue'
 // import stayEdit from '@/views/stay-edit.vue'
 // import dashboard from '@/views/dashboard.vue'
 // import login from '@/views/login.vue'
@@ -23,11 +23,11 @@ const router = createRouter({
       name: 'stay',
       component: stayApp,
     },
-    // {
-    //   path: '/stay/:id',
-    //   name: 'stay-details',
-    //   component: stayDetails,
-    // },
+    {
+      path: '/stay/:id',
+      name: 'stay-details',
+      component: stayDetails,
+    },
     // {
     //   path: '/stay/edit/:id?',
     //   name: 'stay-edit',
