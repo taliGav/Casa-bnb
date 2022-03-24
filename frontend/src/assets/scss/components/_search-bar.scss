@@ -82,11 +82,24 @@
 			left: 32px;
 			bottom: 8px;
 		}
-
-		.guests-input {
+		.guests-input-modal{
+			margin-top: 70px;
 			position: absolute;
-			height: 32px;
-			bottom: 0;
+			width: 175px;
+			height: 50px;
+			background-color: $white;
+			border-radius: 50px;
+
+			button{
+				width: 30px;
+				height: 30px;
+				border-radius: 50px;
+				font-size:16px;
+				font-weight: bold;
+			}
+			div{
+				font-size:16px;
+			}
 		}
 	}
 }
