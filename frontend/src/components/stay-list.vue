@@ -1,9 +1,5 @@
 <template>
   <section class = "main-app">
-    <!-- <button @click="$router.push('/stay/edit')" class="btn btn-secondary"> -->
-      <!-- add a new stay -->
-    <!-- </button> -->
-    <!-- <div class=""> -->
       <ul class="stay-list">
         <li
           v-for="stay in stays"
@@ -14,7 +10,6 @@
           <stay-preview :stay="stay" />
         </li>
       </ul>
-    <!-- </div> -->
   </section>
 </template>
 

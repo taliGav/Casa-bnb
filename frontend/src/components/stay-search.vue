@@ -10,7 +10,7 @@
 					<span>Location</span>
 					<input
 						class="search-input"
-						v-model="filterBy.destination"
+						v-model="destination"
 						type="text"
 						placeholder="Where are you going?"
 						ref="input"
@@ -24,7 +24,6 @@
 						v-if="dateMenu"
 						v-model="date"
 						inline
-						
 						autoApply
 					/>
 				</div>
@@ -35,7 +34,7 @@
 				<div class="search-guests" @click="addGuests">
 					<div class="guests-container">
 						<span>Guests</span>
-						<p>{{ filterBy.guests }}</p>
+						<p>{{ guests }}</p>
 						<div
 							v-if="addGuestsMenu"
 							class="guests-input-modal flex around align"
@@ -43,7 +42,7 @@
 							<button @click.stop="changeGuests(-1)" class="btn-round">
 								-
 							</button>
-							<div>{{ filterBy.guests }}</div>
+							<div>{{ guests }}</div>
 							<button @click.stop="changeGuests(+1)" class="btn-round">
 								+
 							</button>
@@ -65,7 +64,7 @@
 				</div>
 			</div>
 		</form>
-		<pre>{{date}}</pre>
+		<pre>{{ date }}</pre>
 	</div>
 </template>
 
@@ -85,38 +84,49 @@ export default {
 	name: 'search',
 	data() {
 		return {
-			filterBy: { destination: '', dates: '0', guests: null, amenities: [] },
-			value1: 0,
 			isSearchOpen: false,
 			addGuestsMenu: false,
-			dateMenu: false,
+			destination: '',
+			dates: '0',
+			guests: null,
+			amenities: [],
 		};
 	},
 	created() {
-		this.filterBy = this.$route.query;
-		this.filterBy.guests = 'Add guests';
+		// console.log('search created',this.$route);
+		// this.filterBy.guests = 'Add guests';
+		this.destination = this.$store.getters.filterBy.destination;
+		this.guests = this.$store.getters.filterBy.guests;
 	},
 	mounted() {
 		window.addEventListener('click', this.clickCheck);
+		//
 	},
 	unmounted() {
 		window.removeEventListener('click', this.clickCheck);
 	},
 	computed: {
 		curFilterBy() {
-			this.filterBy = this.$route.query;
-			return this.$route.query;
+			console.log('getter', this.$store.getters.filterBy);
+			//   this.destination=this.$store.getters.filterBy.destination
+			//   this.guests=this.$store.getters.filterBy.guests
+			return this.$store.getters.filterBy;
 		},
 	},
 	methods: {
-		doFilter() {
+		async doFilter() {
+			const filterBy = await this.$store.dispatch({
+				type: 'setFilter',
+				destination: this.destination,
+				guests: this.guests,
+			});
 			this.$router.push({
 				name: 'stay',
 				query: {
-					destination: this.filterBy.destination,
-					dates: this.filterBy.dates,
-					guests: this.filterBy.guests,
-					amenities: this.filterBy.amenities,
+					destination: filterBy.destination,
+					// dates: filterBy.dates,
+					guests: filterBy.guests,
+					// amenities: filterBy.amenities,
 				},
 			});
 		},
@@ -157,13 +167,13 @@ export default {
 			this.addGuestsMenu = !this.addGuestsMenu;
 		},
 		changeGuests(num) {
-			if (typeof this.filterBy.guests === 'string') this.filterBy.guests = 0;
+			if (typeof this.guests === 'string') this.guests = 0;
 
-			if (num < 0 && this.filterBy.guests < 1.5) {
-				this.filterBy.guests = 'Add guests';
+			if (num < 0 && this.guests < 1.5) {
+				this.guests = 'Add guests';
 				return;
 			}
-			this.filterBy.guests += num;
+			this.guests += num;
 		},
 	},
 	components: { Datepicker },

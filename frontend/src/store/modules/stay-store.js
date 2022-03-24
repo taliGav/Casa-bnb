@@ -5,8 +5,7 @@ export default {
     stays: [],
     filterBy: {
       destination: '',
-      dates: '',
-      guests: 0,
+      guests: '',
       amenities: [],
     },
     amenities: stayService.getAmenities(),
@@ -14,6 +13,10 @@ export default {
   },
 
   getters: {
+    filterBy({ filterBy }) {
+      // if (!filterBy) return
+      return filterBy;
+    },
     stays({ stays }) {
       return stays;
     },
@@ -42,14 +45,16 @@ export default {
       const idx = state.stays.findIndex((t) => t._id === stayId);
       state.stays.splice(idx, 1);
     },
-    setFilter(state, { filterBy }) {
-      state.filterBy = filterBy;
+    setFilter(state, { destination, guests, amenities }) {
+      state.filterBy.destination = destination ? destination : '';
+      state.filterBy.guests = guests ? guests : 0;
+      state.filterBy.amenities = amenities ? amenities : [];
     },
     setSort(state, { sortBy }) {
       state.sortBy = sortBy;
     },
   },
-  
+
   actions: {
     loadStays({ commit, state }) {
       console.log('store filter', state.filterBy);
@@ -68,10 +73,13 @@ export default {
         commit({ type: 'removeStay', stayId });
       });
     },
-    setFilter({ dispatch, commit }, { filterBy }) {
-      // console.log('store', filterBy);
-      commit({ type: 'setFilter', filterBy });
-      dispatch({ type: 'loadStays' });
+    setFilter({ dispatch, commit, state }, { destination, guests, amenities }) {
+      // console.log('store', destination, guests);
+      commit({ type: 'setFilter', destination, guests, amenities });
+      dispatch({ type: 'loadStays' })
+      return Promise.resolve(state.filterBy)
+
+      // dispatch({ type: 'loadStays' });
     },
   },
 };

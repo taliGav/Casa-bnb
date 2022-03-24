@@ -1,15 +1,15 @@
 <template>
-  <section v-if="stay" class="stay-details">
+  <section v-if="stay" class="stay-details-header">
     <h1 class="details-header-name">{{ stay.name }}</h1>
 
-    <div class="rating">
+    <div class="rating flex">
       <img src="./../../assets/icons/star.png" class="rate-icon" />
-      <span class="rate-span"> {{ avgRating }} </span>
-      ({{ reviewsCount }} reviews)
-      <div class="needs-to-be-completed">
-        host type (superhost) + google location city+country
-        {{ stay.loc.city }}, {{ stay.loc.country }}
-      </div>
+      <span class="rate-span"> {{ avgRating }} </span> ·
+      <u>{{ reviewsCount }} reviews</u>  
+      <span class="details-header-location">
+          · google location city+country
+        <u> {{ stay.loc.city }}, {{ stay.loc.country }} </u>
+      </span>
     </div>
   </section>
 </template>
@@ -45,7 +45,6 @@ export default {
 
 <style>
 .details-header-name {
-  color: inherit !important;
   font-size: 1em !important;
   font-size: 26px !important;
   font-weight: inherit !important;
@@ -53,6 +52,14 @@ export default {
   margin: 0px !important;
   padding: 0px !important;
   display: inline !important;
+}
+
+.rating {
+  margin-top:4px;
+  font-size: 14px;
+  color: #222222;
+  align-items:center;
+  gap:5px;
 }
 
 .rate-span {
@@ -75,5 +82,9 @@ export default {
 .rate-icon {
   height: 14px;
   width: 14px;
+}
+
+.details-header-location {
+  color: #717171;
 }
 </style>

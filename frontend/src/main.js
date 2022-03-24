@@ -16,8 +16,14 @@ import 'element-plus/dist/index.css';
 
 
 
+//price range
+import HistogramSlider from 'vue-histogram-slider';
+import 'vue-histogram-slider/dist/histogram-slider.css';
+
+
 const app = createApp(App);
 
+app.component(HistogramSlider.name, HistogramSlider);
 
 app.config.globalProperties.$filters = {
   formatTime(time) {
