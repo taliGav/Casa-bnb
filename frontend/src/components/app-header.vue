@@ -1,31 +1,33 @@
 <template>
 	<header class="main-header main-layout" ref="header">
-			<div class="header-content flex space">
-				<div class="logo flex just align">
-					<h2>
-						<router-link to="/">
-							casa<span class="casa-symbol">⌂</span
-							><span class="clr-teal">bnb</span>
-						</router-link>
-					</h2>
-				</div>
-				<nav class="nav-bar flex just align space">
-					<div class="explore-link flex just align">
-						<router-link to="/stay">Explore</router-link>
-					</div>
-					<div class="host-link flex just align">
-						<router-link to="/">Become a Host</router-link>
-					</div>
-
-					<user-badge></user-badge>
-				</nav>
+		<div class="header-content flex space">
+			<div class="logo flex just align">
+				<h2>
+					<router-link to="/">
+						casa<span class="casa-symbol">⌂</span
+						><span class="clr-teal">bnb</span>
+					</router-link>
+				</h2>
 			</div>
-				<stay-search />
+			<nav class="nav-bar flex just align space">
+				<div class="explore-link flex just align">
+					<router-link to="/stay">Explore</router-link>
+				</div>
+				<div class="host-link flex just align">
+					<router-link to="/">Become a Host</router-link>
+				</div>
+
+				<user-badge></user-badge>
+			</nav>
+		</div>
+		<stay-search />
 	</header>
 </template>
 <script>
 import userBadge from './user-badge.vue';
 import staySearch from '../components/stay-search.vue';
+import datePicker from '../components/date-picker.vue';
+
 export default {
 	name: 'app-header',
 	data() {
@@ -52,6 +54,7 @@ export default {
 	components: {
 		userBadge,
 		staySearch,
+		datePicker,
 	},
 };
 </script>

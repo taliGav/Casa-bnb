@@ -12,8 +12,6 @@
 
 .img-in-card {
 	object-fit: cover;
-	// min-height: 200px;
-	// height: 250px;
 	width: 100%;
 	height:100%
 }
@@ -44,11 +42,8 @@
     }
 }
 
-// .el-carousel-item{
-//     height: 200px;
-// }
-
-// .carousel{
-//     height: 200px;i
-// }
-
+.el-carousel__button {
+height: 6px !important;
+border-radius: 50% !important;
+width: 6px !important;
+}
