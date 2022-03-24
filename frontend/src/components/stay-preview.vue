@@ -1,6 +1,5 @@
 <template>
   <section class="stay-preview flex col space">
-    <!-- <article class="preview-card"> -->
     <div class="stay-images-container">
       <preview-carousel :urls="this.stay.imgUrls" />
     </div>
@@ -36,15 +35,6 @@
         ></path>
       </svg>
     </div>
-    <!-- </article> -->
-    <div class="">
-      <!-- <custom-label
-            v-for="label in stay.labels"
-            :key="label"
-            :label="label"
-          /> -->
-    </div>
-    <!-- <slot></slot> -->
   </section>
 </template>
 
@@ -62,7 +52,6 @@ export default {
 
   components: {
     PreviewCarousel,
-    // customLabel,
   },
   computed: {
     avgRating() {
@@ -86,9 +75,3 @@ export default {
   width: 14px;
 }
 </style>
-
-// import customLabel from './custom-label.vue' // stay specifics needed on stay
-card/preview- // imgs carousle // type in place // title : name //
-max-cap,bedrooms, bed num , bath num \\ לא מופיע בתצוגה קטנה // amenities:
-kitchen, free parking , Wifi \\ לא מופיע בתצוגה קטנה // avg rating (reviews
-count) price + currency/night
