@@ -6,8 +6,7 @@
     <div class="preview-data flex col even">
       <div class="rating">
         <img src="./../assets/icons/star.png" class="rate-icon" />
-        {{ avgRating }} (<span>{{ reviewsCount }}</span>
-        reviews)
+        {{ avgRating }} (<span>{{ reviewsCount }}</span> reviews)
       </div>
       <p>{{ stay.type }} in {{ stay.loc.city }}, {{ stay.loc.country }}</p>
       <p class="preview-stay-title">{{ stay.name }}</p>

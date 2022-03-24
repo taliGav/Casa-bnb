@@ -92,10 +92,7 @@ export default {
 		};
 	},
 	created() {
-		// console.log('search created',this.$route);
-		// this.filterBy.guests = 'Add guests';
-		this.destination = this.$store.getters.filterBy.destination;
-		this.guests = this.$store.getters.filterBy.guests;
+		
 	},
 	mounted() {
 		window.addEventListener('click', this.clickCheck);
@@ -106,26 +103,21 @@ export default {
 	},
 	computed: {
 		curFilterBy() {
-			console.log('getter', this.$store.getters.filterBy);
-			//   this.destination=this.$store.getters.filterBy.destination
-			//   this.guests=this.$store.getters.filterBy.guests
-			return this.$store.getters.filterBy;
+      console.log('getter', this.$store.getters.filterBy);
+			return this.$store.getters.filterBy
 		},
 	},
 	methods: {
 		async doFilter() {
-			const filterBy = await this.$store.dispatch({
-				type: 'setFilter',
-				destination: this.destination,
-				guests: this.guests,
-			});
+			this.amenities = this.curFilterBy.amenities
+      const filterBy = await this.$store.dispatch({ type: 'setFilter', destination: this.destination, guests:this.guests ,amenities:this.amenities})
 			this.$router.push({
 				name: 'stay',
 				query: {
 					destination: filterBy.destination,
 					// dates: filterBy.dates,
 					guests: filterBy.guests,
-					// amenities: filterBy.amenities,
+					amenities: filterBy.amenities,
 				},
 			});
 		},

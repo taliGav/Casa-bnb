@@ -15,7 +15,8 @@ export default {
   getters: {
     filterBy({ filterBy }) {
       // if (!filterBy) return
-      return filterBy;
+      var filterToSend = JSON.parse(JSON.stringify(filterBy))
+      return filterToSend;
     },
     stays({ stays }) {
       return stays;
@@ -28,7 +29,8 @@ export default {
       return amenities;
     },
     lessAmenities({ lessAmenities }) {
-      return lessAmenities;
+      var lessAmenities1 = JSON.parse(JSON.stringify(lessAmenities))
+      return lessAmenities1;
     },
   },
 

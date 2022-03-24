@@ -30,8 +30,10 @@ export default {
   },
   computed: {
     curFilterBy() {
+      console.log(this)
       this.destination=this.$store.getters.filterBy.destination
       this.guests=this.$store.getters.filterBy.guests
+      console.log(this)
 			return this.$store.getters.filterBy
 		},
     lessAmenities() {
@@ -41,6 +43,7 @@ export default {
   methods: {
     async doFilter() {
       console.log('filter do');
+      var temp = this.curFilterBy
       const copyAmenities = JSON.parse(JSON.stringify(this.amenities))
       const filterBy = await this.$store.dispatch({ type: 'setFilter', destination: this.destination, guests:this.guests,amenities:copyAmenities })
       // console.log('filter do :',filterBy);
