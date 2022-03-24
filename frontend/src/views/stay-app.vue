@@ -19,9 +19,6 @@ export default {
     this.setFilter()
     this.$store.dispatch({ type: 'loadStays' })
   },
-  // watch: {
-  //       '$route': 'setFilter'
-  //   },
   computed: {
     stays() {
       return this.$store.getters.staysToShow

@@ -73,7 +73,9 @@ async function query(filterBy = {}) {
       if (typeof (filterBy.amenities) === 'object')
         var amenitiesToFilter = Object.values(filterBy.amenities)
       else var amenitiesToFilter = filterBy.amenities
-
+      if (typeof (amenitiesToFilter) === 'string') {
+        amenitiesToFilter = [amenitiesToFilter]
+      }
       console.log('serv amenities', amenitiesToFilter)
 
       stays = stays.filter((stay) => {
