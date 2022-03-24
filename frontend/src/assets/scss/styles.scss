@@ -1,14 +1,13 @@
 // SETUP
+@import 'setup/typography';
 @import 'setup/mixins';
 @import 'setup/functions';
 @import 'setup/variables';
-@import 'setup/typography';
 @import 'material-icons/iconfont/material-icons.scss';
 
 // BASE
 @import 'base/base';
 @import 'base/helpers';
-@import 'base/fonts';
 @import 'base/util';
 @import 'base/layout';
 
