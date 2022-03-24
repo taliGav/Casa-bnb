@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Circular-Light';
-    src: url('./../../fonts/Circular/CircularStd-Light.otf');
+    src: url('@/assets/fonts/Circular/CircularStd-Light.otf');
 }
 
 @font-face {
     font-family: 'Circular-Book';
-    src: url('@/assets/fonts/Circular/CircularStd-Book.otf');
+    src: url('@/assets/fonts/Circular/CircularStd-Book.otf')
 }
 
 @font-face {
@@ -20,50 +20,51 @@
 
 @font-face {
     font-family: 'Circular-Black';
-    src: url('@/assets/fonts/Circular/CircularStd-Black.otf');
+    src: url('./../../fonts/Circular/CircularStd-Black.otf');
 }
 
 @font-face {
     font-family: 'Montserrat-Regular';
-    src: url('@/assets/fonts/Montserrat/Montserrat-Regular.ttf');
+    src: url('./../../fonts/Montserrat/Montserrat-Regular.ttf');
 }
   
 @font-face {
     font-family: 'Montserrat-Bold';
-    src: url('@/assets/fonts/Montserrat/Montserrat-Bold.ttf');
+    src: url('./../../fonts/Montserrat/Montserrat-Bold.ttf');
 }
   
 @font-face {
     font-family: 'Playfair-Regular';
-    src: url('@/assets/fonts/playfair/PlayfairDisplay-Regular.ttf');
+    src: url('./../../fonts/playfair/PlayfairDisplay-Regular.ttf');
 }
   
 @font-face {
     font-family: 'Playfair-Bold';
-    src: url('@/assets/fonts/playfair/PlayfairDisplay-Bold.ttf');
+    src: url('./../../fonts/playfair/PlayfairDisplay-Bold.ttf');
 }
   
 @font-face {
     font-family: 'Lato-Regular';
-    src: url('@/assets/fonts/Lato/Lato-Regular.ttf');
+    src: url('./../../fonts/Lato/Lato-Regular.ttf');
 }
   
 @font-face {
     font-family: 'Lato-Bold';
-    src: url('@/assets/fonts/lato/Lato-Bold.ttf');
+    src: url('./../../fonts/lato/Lato-Bold.ttf');
 }
   
 @font-face {
     font-family: 'Roboto-Regular';
-    src: url('@/assets/fonts/Roboto/Roboto-Regular.ttf');
+    src: url('./../../fonts/Roboto/Roboto-Regular.ttf');
 }
   
 @font-face {
     font-family: 'Roboto-Bold';
-    src: url('@/assets/fonts/Roboto/Roboto-Bold.ttf');
+    src: url('./../../fonts/Roboto/Roboto-Bold.ttf');
 }
   
 @font-face {
     font-family: 'Roboto-Medium';
-    src: url('@/assets/fonts/Roboto/Roboto-Medium.ttf');
+    src: url('./../../fonts/Roboto/Roboto-Medium.ttf');
 }
+

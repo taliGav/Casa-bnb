@@ -3,14 +3,14 @@
     <h2 class="uppercase">{{ stay.name }}</h2>
 
     <div class="rating">
-      ⭐ {{ avgRating }} ({{ reviewsCount }} reviews) 
+      <img src="./../assets/icons/star.png" class="rate-icon" />
+      {{ avgRating }} ({{ reviewsCount }} reviews)
       <div class="needs-to-be-completed">
         host type (superhost) + google location city+country
         {{ stay.loc.city }}, {{ stay.loc.country }}
       </div>
     </div>
   </section>
-
 </template>
 
 
@@ -18,19 +18,16 @@
 
 
 <script>
-
 export default {
   components: {},
   name: "stay-details-header",
-    props: {
+  props: {
     stay: Object,
   },
   data() {
-    return {
-    };
+    return {};
   },
-  async created() {
-  },
+  async created() {},
   computed: {
     avgRating() {
       let ratingSum = this.stay.reviews.reduce((acc, x) => acc + x.rate, 0);
@@ -40,16 +37,16 @@ export default {
     reviewsCount() {
       return this.stay.reviews.length;
     },
-
   },
-  methods: {
-  },
+  methods: {},
 };
 </script>
 
 <style>
-.stay-details {
-  padding-top: 100px;
+
+.rate-icon {
+  height: 14px;
+  width: 14px;
 }
 
 </style>
