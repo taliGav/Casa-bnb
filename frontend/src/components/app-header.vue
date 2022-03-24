@@ -30,7 +30,7 @@
 import userBadge from './user-badge.vue';
 import staySearch from '../components/stay-search.vue';
 export default {
-	name: 'header',
+	name: 'app-header',
 	data() {
 		return {
 			// headerObserver: null,
