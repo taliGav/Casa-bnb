@@ -2,7 +2,7 @@
 	<section class="carousel">
 		<el-carousel
 			:autoplay="false"
-      indicator-position = "none"
+			indicator-position="none"
 			:interval="2000"
 			height="200px"
 			width="100%"
@@ -26,19 +26,11 @@ export default {
 	data() {
 		return {};
 	},
-	created() {
-	
-	},
+	created() {},
 
-	computed: {
-	
-	},
-	methods:{
-
-	}
+	computed: {},
+	methods: {},
 };
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

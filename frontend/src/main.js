@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import { focusDirective } from './directives'
+import 'material-icons/iconfont/material-icons.css';
+
 import './scss/styles.scss'
 
 import { formatRelative } from 'date-fns'
