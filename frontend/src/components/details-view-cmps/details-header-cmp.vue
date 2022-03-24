@@ -3,7 +3,7 @@
     <h2 class="uppercase">{{ stay.name }}</h2>
 
     <div class="rating">
-      <img src="./../assets/icons/star.png" class="rate-icon" />
+      <img src="./../../assets/icons/star.png" class="rate-icon" />
       {{ avgRating }} ({{ reviewsCount }} reviews)
       <div class="needs-to-be-completed">
         host type (superhost) + google location city+country

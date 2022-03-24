@@ -1,5 +1,5 @@
 <template>
-    <section  class="stay-details-img-container">
+    <section class="stay-details-img-container">
       <!-- <img :src="imgUrl" :class="imgClass(idx)" alt="" /> -->
       <img v-for="(imgUrl, idx) in this.stay.imgUrls"
       :key="idx" :src="imgUrl" :class="'img-card-' + idx" alt="" />
