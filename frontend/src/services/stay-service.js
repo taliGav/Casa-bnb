@@ -81,10 +81,6 @@ async function query(filterBy = {}) {
           return stay.amenities.includes(amenitie)
         })
       })
-
-      // stays = stays.filter((stay) => {
-      //   return stay.amenities.every((amenitie) => amenitiesToFilter.includes(amenitie))
-      // })
     }
     return stays
   }
