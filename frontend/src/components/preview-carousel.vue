@@ -5,7 +5,7 @@
       indicator-position = "none"
 			:interval="2000"
 			height="200px"
-			width="250px"
+			width="100%"
 			arrow="hover"
 			class="img-container"
 		>

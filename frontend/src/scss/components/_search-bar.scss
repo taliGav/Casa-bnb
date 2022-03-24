@@ -1,0 +1,150 @@
+.filter {
+	height: 64px;
+	width: 850px;
+	background-color: $white;
+	border-radius: 32px;
+	display: flex;
+	justify-content: space-between;
+	// position: relative;
+	left: 100px;
+	font-family: 'Circular-Light';
+	font-size: 14px;
+}
+
+.search-container {
+	position: relative;
+	width: 270px;
+	height: 64px;
+	background-color: $white;
+	border-radius: 32px 32px 32px 32px;
+	background-color: $white;
+	&:hover {
+		background-color: darken($white, 4%);
+		cursor: pointer;
+	}
+	&:hover .search-input {
+		background-color: darken($white, 4%);
+	}
+
+	span {
+		position: absolute;
+		left: 32px;
+		top: 12px;
+		font-weight: 700;
+	}
+
+	.search-input {
+		width: 210px;
+		height: 28px;
+		position: absolute;
+		left: 30px;
+		bottom: 8px;
+		border: none;
+		outline: none;
+	}
+}
+
+.search-guests {
+	display: flex;
+	align-items: center;
+	width: 230px;
+	height: 64px;
+	background-color: $white;
+	border-radius: 32px 32px 32px 32px;
+	&:hover {
+		background-color: darken($white, 5%);
+	}
+	&:hover .search-guests {
+		background-color: darken($white, 5%);
+	}
+
+	.guests-container {
+		position: relative;
+		background-color: $white;
+		width: 170px;
+		height: 64px;
+		border-radius: 32px 0 0 32px;
+
+		&:hover {
+			background-color: darken($white, 5%);
+			cursor: pointer;
+		}
+
+		&:hover .search-guests {
+			background-color: darken($white, 5%);
+		}
+
+		span {
+			position: absolute;
+			left: 32px;
+			top: 12px;
+			font-weight: 700;
+		}
+		p {
+			position: absolute;
+			left: 32px;
+			bottom: 8px;
+		}
+
+		.guests-input {
+			position: absolute;
+			height: 32px;
+			bottom: 0;
+		}
+	}
+	.search-btn-container {
+		border-radius: 30px;
+		background-color: $theme-red;
+		width: 50px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.date-start {
+	background-color: $white;
+	width: 178px;
+	height: 64px;
+	border-radius: 32px 32px 32px 32px;
+	position: relative;
+	span {
+		position: absolute;
+		left: 32px;
+		top: 12px;
+		font-weight: 700;
+	}
+	p {
+		position: absolute;
+		left: 32px;
+		bottom: 8px;
+	}
+	&:hover {
+		background-color: darken($white, 5%);
+		cursor: pointer;
+	}
+}
+
+.date-end {
+	background-color: $white;
+	width: 178px;
+	height: 64px;
+	border-radius: 32px 32px 32px 32px;
+	position: relative;
+	span {
+		position: absolute;
+		left: 32px;
+		top: 12px;
+		font-weight: 700;
+	}
+	p {
+		position: absolute;
+		left: 32px;
+		bottom: 8px;
+	}
+	&:hover {
+		background-color: darken($white, 5%);
+		cursor: pointer;
+	}
+}

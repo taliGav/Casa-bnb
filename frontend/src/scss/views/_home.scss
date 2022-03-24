@@ -1,8 +1,7 @@
-
-
-.hero-image {
-	// background-image: url("../imgs/hero.jpg");
+.hero {
+	background-image: url("@/assets/Images/logos/hero3.jpg");
 	width: 100%;
-	height: 750px;
-    object-fit: cover;
+	height: 80vh;
+	// background-color: red;
+	background-size: cover;
 }

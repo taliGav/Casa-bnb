@@ -10,7 +10,6 @@
 						</router-link>
 					</h2>
 				</div>
-				<stay-search />
 				<nav class="nav-bar flex just align space">
 					<div class="explore-link flex just align">
 						<router-link to="/stay">Explore</router-link>
@@ -22,6 +21,8 @@
 					<user-badge></user-badge>
 				</nav>
 			</div>
+
+				<stay-search />
 		</div>
 	</header>
 </template>
