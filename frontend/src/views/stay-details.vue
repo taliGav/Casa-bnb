@@ -188,9 +188,3 @@ export default {
 };
 </script>
 
-<style>
-.stay-details {
-  padding-top: 100px;
-}
-
-</style>
