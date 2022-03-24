@@ -1,33 +1,36 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
-import { focusDirective } from './directives'
-import { formatRelative } from 'date-fns'
-import ElementPlus from 'element-plus'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import store from './store';
+import { focusDirective } from './directives';
+import { formatRelative } from 'date-fns';
+import ElementPlus from 'element-plus';
+import Datepicker from '@vuepic/vue-datepicker';
+import '@vuepic/vue-datepicker/dist/main.css';
 // import VueGoogleMaps from '@fawmi/vue-google-maps'
 
 
-import './assets/scss/styles.scss'
+import './assets/scss/styles.scss';
 import 'material-icons/iconfont/material-icons.css';
-import 'element-plus/dist/index.css'
+import 'element-plus/dist/index.css';
 
 
 
-const app = createApp(App)
+const app = createApp(App);
 
 
 app.config.globalProperties.$filters = {
   formatTime(time) {
-    return formatRelative(new Date(time), new Date())
+    return formatRelative(new Date(time), new Date());
   },
-}
+};
 
-app.directive('focus', focusDirective)
+app.directive('focus', focusDirective);
 
-app.use(ElementPlus)
-app.use(router)
-app.use(store)
+app.use(ElementPlus);
+app.use(router);
+app.use(store);
+app.use(Datepicker);
 
 // app.use(VueGoogleMaps, {
 //   load: {
@@ -35,4 +38,4 @@ app.use(store)
 //   },
 // })
 
-app.mount('#app')
+app.mount('#app');

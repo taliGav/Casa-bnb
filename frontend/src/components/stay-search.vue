@@ -1,18 +1,4 @@
 <template>
-	<!-- <input v-model="filterBy.destination" type="text" placeholder="dest" /> -->
-
-	<!-- <div class="demo-date-picker">
-			<div class="block">
-				<el-date-picker
-					v-model="value1"
-					type="daterange"
-					range-separator="|"
-					start-placeholder="Add dates"
-					end-placeholder="Add dates"
-					size="small"
-				/>
-			</div>
-		</div> -->
 	<div class="filter-container main-layot full flex align just">
 		<form>
 			<div class="filter">
@@ -33,6 +19,14 @@
 				<div class="date-start" @click="addDates">
 					<span>Check in</span>
 					<p>Add dates</p>
+					<Datepicker
+						class="date-picker"
+						v-if="dateMenu"
+						v-model="date"
+						inline
+						
+						autoApply
+					/>
 				</div>
 				<div class="date-end" @click="addDates">
 					<span>Check out</span>
@@ -42,18 +36,10 @@
 					<div class="guests-container">
 						<span>Guests</span>
 						<p>{{ filterBy.guests }}</p>
-						<!-- <input v-model="filterBy.guests" type="number" /> -->
-						<!-- <input
-						class="guests-input"
-						v-model="filterBy.guests"
-						type="number"
-						placeholder="guests"
-					/> -->
 						<div
 							v-if="addGuestsMenu"
 							class="guests-input-modal flex around align"
 						>
-							<!-- <div class="guests-counter flex space"> -->
 							<button @click.stop="changeGuests(-1)" class="btn-round">
 								-
 							</button>
@@ -61,7 +47,6 @@
 							<button @click.stop="changeGuests(+1)" class="btn-round">
 								+
 							</button>
-							<!-- </div> -->
 						</div>
 					</div>
 				</div>
@@ -78,15 +63,25 @@
 						Search
 					</p>
 				</div>
-				<!-- <pre>{{ isSearchOpen }}</pre> -->
 			</div>
 		</form>
+		<pre>{{date}}</pre>
 	</div>
 </template>
 
 <script>
 import { ref } from 'vue';
+import Datepicker from '@vuepic/vue-datepicker';
+import '@vuepic/vue-datepicker/dist/main.css';
+
 export default {
+	setup() {
+		const date = ref(new Date());
+		return {
+			date,
+		};
+	},
+
 	name: 'search',
 	data() {
 		return {
@@ -94,18 +89,14 @@ export default {
 			value1: 0,
 			isSearchOpen: false,
 			addGuestsMenu: false,
+			dateMenu: false,
 		};
 	},
 	created() {
-		// console.log('created query:', this.$route.query);
 		this.filterBy = this.$route.query;
-		// document.addEventListener('click', this.onClick);
-		// this.filterBy.amenities=[this.$route.query.amenities]
-		// this.filterBy = this.curFilterBy
 		this.filterBy.guests = 'Add guests';
 	},
 	mounted() {
-		// document.querySelector('.stay-app')
 		window.addEventListener('click', this.clickCheck);
 	},
 	unmounted() {
@@ -119,9 +110,6 @@ export default {
 	},
 	methods: {
 		doFilter() {
-			// var amenitiesToFilter=Object.values(this.amenities)
-			// this.filterBy.amenities=amenitiesToFilter;
-			// console.log('yyyyyy',this.filterBy);
 			this.$router.push({
 				name: 'stay',
 				query: {
@@ -162,6 +150,7 @@ export default {
 		},
 		addDates() {
 			this.isSearchOpen = true;
+			this.dateMenu = !this.dateMenu;
 		},
 		addGuests() {
 			this.isSearchOpen = true;
@@ -177,5 +166,6 @@ export default {
 			this.filterBy.guests += num;
 		},
 	},
+	components: { Datepicker },
 };
 </script>

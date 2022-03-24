@@ -22,13 +22,16 @@
 				</nav>
 			</div>
 
-				<stay-search />
+		<!-- <date-picker></date-picker> -->
+			<stay-search />
 		</div>
 	</header>
 </template>
 <script>
 import userBadge from './user-badge.vue';
 import staySearch from '../components/stay-search.vue';
+import datePicker from '../components/date-picker.vue';
+
 export default {
 	name: 'app-header',
 	data() {
@@ -55,6 +58,7 @@ export default {
 	components: {
 		userBadge,
 		staySearch,
+		datePicker,
 	},
 };
 </script>
