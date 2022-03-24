@@ -39,7 +39,7 @@ export default {
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 8px;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 .img-card-0 {

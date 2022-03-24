@@ -41,14 +41,28 @@
 				<div class="search-guests" @click="addGuests">
 					<div class="guests-container">
 						<span>Guests</span>
-						<p>Add guests</p>
-						<input v-model="filterBy.guests" type="number" />
+						<p>{{ filterBy.guests }}</p>
+						<!-- <input v-model="filterBy.guests" type="number" /> -->
 						<!-- <input
 						class="guests-input"
 						v-model="filterBy.guests"
 						type="number"
 						placeholder="guests"
 					/> -->
+						<div
+							v-if="addGuestsMenu"
+							class="guests-input-modal flex around align"
+						>
+							<!-- <div class="guests-counter flex space"> -->
+							<button @click.stop="changeGuests(-1)" class="btn-round">
+								-
+							</button>
+							<div>{{ filterBy.guests }}</div>
+							<button @click.stop="changeGuests(+1)" class="btn-round">
+								+
+							</button>
+							<!-- </div> -->
+						</div>
 					</div>
 				</div>
 				<div
@@ -76,17 +90,19 @@ export default {
 	name: 'search',
 	data() {
 		return {
-			filterBy: { destination: '', dates: '0', guests: 0, amenities: [] },
+			filterBy: { destination: '', dates: '0', guests: null, amenities: [] },
 			value1: 0,
 			isSearchOpen: false,
+			addGuestsMenu: false,
 		};
 	},
 	created() {
-		console.log('created query:', this.$route.query);
+		// console.log('created query:', this.$route.query);
 		this.filterBy = this.$route.query;
 		// document.addEventListener('click', this.onClick);
 		// this.filterBy.amenities=[this.$route.query.amenities]
 		// this.filterBy = this.curFilterBy
+		this.filterBy.guests = 'Add guests';
 	},
 	mounted() {
 		// document.querySelector('.stay-app')
@@ -139,16 +155,24 @@ export default {
 				el === 'guests-container'
 			)
 				return;
-			else this.isSearchOpen = false;	
+			else {
+				this.isSearchOpen = false;
+				this.addGuestsMenu = false;
+			}
 		},
 		addDates() {
 			this.isSearchOpen = true;
 		},
 		addGuests() {
 			this.isSearchOpen = true;
+			this.addGuestsMenu = !this.addGuestsMenu;
+		},
+		changeGuests(num) {
+			if (typeof this.filterBy.guests === 'string') this.filterBy.guests = 0;
+
+			if (num < 0 && this.filterBy.guests === 0) return;
+			this.filterBy.guests += num;
 		},
 	},
 };
 </script>
-
-
