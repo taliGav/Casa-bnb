@@ -14,7 +14,6 @@
 </template>
 
 <script>
-import CustomLabel from "./custom-label.vue";
 import stayPreview from "./stay-preview.vue";
 
 export default {

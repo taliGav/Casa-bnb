@@ -64,13 +64,14 @@ export default {
 .gallery-img {
   cursor: pointer;
   opacity: 1;
-  transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .gallery-img:hover {
   /* background: rgba(0, 0, 0, 0.5) */
   /* background-color: hwb(0 0% 100% / 0.664); */
   opacity: 0.7;
+  filter:brightness(70%)
 }
 
 .img-card-0 {

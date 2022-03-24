@@ -60,6 +60,3 @@ export default {
   fill: rgba(0, 0, 0, 0.5);
 }
 </style>
-
-
-      <!-- indicator-position="none" -->
