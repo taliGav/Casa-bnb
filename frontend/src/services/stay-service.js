@@ -213,9 +213,10 @@ function _createStays() {
           "Beachfront"
         ],
         "host": {
-          "_id": "51399391",
+          "_id": "5139939s1",
           "fullname": "Patty And Beckett",
-          "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+          "imgUrl": "/src/assets/images/profilePics/1.jpg",
+          // "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
         },
         "loc": {
           "street": "Lahaina, HI, United States",
@@ -230,6 +231,18 @@ function _createStays() {
         "reviews": [
           {
             "id": "madeId",
+            "createdAt": "May 2020",
+            "txt": "Super clean! Great service",
+            "rate": 5,
+            "by": {
+              "_id": "u101",
+              "fullname": "user1",
+              "imgUrl": "https://robohash.org/10711825?set=set1"
+            }
+          },
+          {
+            "id": "madeId",
+            "createdAt": "May 2021",
             "txt": "Very helpful hosts. Cooked traditional...",
             "rate": 4,
             "by": {
@@ -396,6 +409,16 @@ function _createStays() {
               "fullname": "user3",
               "imgUrl": "/img/img2.jpg"
             }
+          },
+          {
+            "id": "madeId",
+            "txt": "The place was great, as was the host! I would recommend staying here.",
+            "rate": 5,
+            "by": {
+              "_id": "u103",
+              "fullname": "Rowan",
+              "imgUrl": "/img/img2.jpg"
+            }
           }
         ],
         "likedByUsers": ['mini-user'] // for user-wishlist : use $in
@@ -455,10 +478,20 @@ function _createStays() {
           {
             "id": "madeId",
             "txt": "Very helpful hosts. Cooked traditional...",
-            "rate": 4,
+            "rate": 3,
             "by": {
               "_id": "u102",
               "fullname": "user2",
+              "imgUrl": "/img/img2.jpg"
+            }
+          },
+          {
+            "id": "madeId",
+            "txt": "The place was great, as was the host! I would recommend staying here.",
+            "rate": 4,
+            "by": {
+              "_id": "u103",
+              "fullname": "Rowan",
               "imgUrl": "/img/img2.jpg"
             }
           }

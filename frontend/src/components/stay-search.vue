@@ -1,27 +1,60 @@
 <template>
   <form>
-    <input v-model="filterBy.destination" type="text" placeholder="dest" />
+    <!-- <input v-model="filterBy.destination" type="text" placeholder="dest" /> -->
 
-    <div class="demo-date-picker">
-      <div class="block">
-        <el-date-picker
-          v-model="value1"
-          type="daterange"
-          range-separator="|"
-          start-placeholder="Add dates"
-          end-placeholder="Add dates"
+    <!-- <div class="demo-date-picker">
+			<div class="block">
+				<el-date-picker
+					v-model="value1"
+					type="daterange"
+					range-separator="|"
+					start-placeholder="Add dates"
+					end-placeholder="Add dates"
+					size="small"
+				/>
+			</div>
+		</div> -->
+    <div class="filter">
+      <div class="search-container">
+        <span>Location</span>
+        <input
+          class="search-input"
+          v-model="filterBy.destination"
+          type="text"
+          placeholder="Where are you going?"
         />
       </div>
-    </div>
+      <div class="date-start">
+        <span>Check in</span>
+        <p>Add dates</p>
+      </div>
+      <div class="date-end">
+        <span>Check out</span>
+        <p>Add dates</p>
+      </div>
+      <div class="search-guests">
+        <div class="guests-container">
+          <span>Guests</span>
+          <p>Add guests</p>
+          <input v-model="filterBy.guests" type="number" />
+          <!-- <input
+						class="guests-input"
+						v-model="filterBy.guests"
+						type="number"
+						placeholder="guests"
+					/> -->
+        </div>
 
-    <input v-model="filterBy.guests" type="number" />
-    <button @click="doFilter">search</button>
+        <div @click="doFilter" class="search-btn-container">
+          <img src="../assets/Images/logos/search-icon.svg" alt="" />
+        </div>
+      </div>
+    </div>
   </form>
 </template>
 
-
 <script>
-import { ref } from 'vue'
+import { ref } from 'vue';
 export default {
   name: 'search',
   data() {

@@ -1,76 +1,101 @@
 <template>
-  <section v-if="stay" class="stay-detalis">
-    <stay-preview :stay="stay">
-      <section class="py-3 flex flex-col gap-1">
-        <div class="flex flex-col gap-1">
-          <h3 class="uppercase">{{ stay.name }}</h3>
-          <p class="clr-teal fw-bold">Price: ${{ stay.price }}</p>
-          <p><span class="fw-bold">In Stock:</span> {{ stay.inStock }}</p>
+  <section v-if="stay" class="stay-details">
+    <h2 class="uppercase">{{ stay.name }}</h2>
+
+    <div class="rating">
+      ⭐ {{ avgRating }} ({{ reviewsCount }} reviews) 
+      <div class="needs-to-be-completed">
+        host type (superhost) + google location city+country
+        {{ stay.loc.city }}, {{ stay.loc.country }}
+      </div>
+    </div>
+
+    <section
+      class="stay-details-img-container"
+      v-for="(imgUrl, idx) in this.stay.imgUrls"
+      :key="idx"
+    >
+      <!-- <img :src="imgUrl" :class="imgClass(idx)" alt="" /> -->
+      <img :src="imgUrl" :class="'img-card-' + idx" alt="" />
+    </section>
+
+    <section class="host-section flex col space">
+      <div class="host-details flex">
+        <div class="host-main-details">
+          <h3>{{ stay.type }} hosted by {{ stay.host.fullname }}</h3>
           <p>
-            <span class="fw-bold">Created At:</span>
-            {{ $filters.formatTime(stay.createdAt) }}
+            {{ stay.capacity }} guests · {{ stay.bedrooms }} bedroom ·
+            {{ stay.beds }} bed · {{ stay.bathrooms }} bath
           </p>
         </div>
-        <div class="labels flex flex-wrap items-center gap-1">
-          <custom-label
-            v-for="label in stay.labels"
-            :key="label"
-            :label="label"
-          />
-        </div>
-      </section>
-    </stay-preview>
-
-    <h2 class="clr-teal">Reviews</h2>
-
-    <form v-if="reviewToAdd && user" @submit.prevent="addReview" class="form">
-      <div class="form-control my-1">
-        <label for="txt" class="form-label fw-600">Your review</label>
-        <textarea
-          name="txt"
-          id="txt"
-          rows="3"
-          class="form-input"
-          v-model="reviewToAdd.content"
-          required
-        ></textarea>
-        <div class="form-control my-1">
-          <label for="rate" class="form-label">Rate</label>
-          <input
-            id="rate"
-            type="number"
-            class="form-input"
-            min="0"
-            max="5"
-            v-model.number="reviewToAdd.rate"
-          />
+        <div class="host-img">
+          <img :src="hostImg" alt="" srcset="" />
         </div>
       </div>
-      <button class="btn btn-info">Add Review</button>
-    </form>
+    </section>
 
-    <div v-if="reviews?.length" class="my-1 flex flex-col gap-1">
-      <article
-        class="review flex flex-col gap-1 items-start p-3"
-        v-for="review in reviews"
-        :key="review._id"
-      >
-        <p class="fw-600">{{ review.content }}</p>
-        <p>Rate: {{ review.rate }}⭐</p>
-        <p>By: {{ review.user?.username }}</p>
-        <button
+    <hr />
+
+    <p class="preview-stay-summary">{{ stay.summary }}</p>
+    <hr />
+
+    <section class="reviews-section">
+      <h2>⭐ {{ avgRating }} · ({{ reviewsCount }} reviews)</h2>
+
+      <form v-if="reviewToAdd && user" @submit.prevent="addReview" class="form">
+        <div class="form-control my-1">
+          <label for="txt" class="form-label fw-600">Your review</label>
+          <textarea
+            name="txt"
+            id="txt"
+            rows="3"
+            class="form-input"
+            v-model="reviewToAdd.content"
+            required
+          ></textarea>
+          <div class="form-control my-1">
+            <label for="rate" class="form-label">Rate</label>
+            <input
+              id="rate"
+              type="number"
+              class="form-input"
+              min="0"
+              max="5"
+              v-model.number="reviewToAdd.rate"
+            />
+          </div>
+        </div>
+        <button class="btn btn-info">Add Review</button>
+      </form>
+
+      <div v-if="reviews?.length" class="flex col">
+        <article
+          class="review flex col items-start"
+          v-for="review in reviews"
+          :key="review.id"
+        >
+          <div class="reviewer-dets flex">
+            <img :src="review.by.imgUrl" alt="" />
+            <div class="reviewer-name">
+              <h4>{{ review.by.fullname }}</h4>
+              <p>{{ review.createdAt }}</p>
+            </div>
+          </div>
+          <p class="fw-600">{{ review.txt }}</p>
+          <!-- <button
           v-if="user?.isAdmin"
           class="btn btn-danger"
           @click="removeReview(review._id)"
         >
           Delete review
-        </button>
-      </article>
-    </div>
-    <div class="p-2 flex flex-col gap-1" v-else>
-      <h4>No reviews yet.</h4>
-      <p>Be the first...</p>
-    </div>
+        </button> -->
+        </article>
+      </div>
+      <div class="p-2 flex flex-col gap-1" v-else>
+        <h4>No reviews yet.</h4>
+        <p>Be the first...</p>
+      </div>
+    </section>
 
     <div v-if="user?.isAdmin" class="btn-group gap-1">
       <button
@@ -79,66 +104,117 @@
       >
         edit stay
       </button>
-      <button @click="removeStay" class="btn btn-danger">delete stay</button>
+      <!-- <button @click="removeStay" class="btn btn-danger">delete stay</button> -->
       <button @click="$router.push('/stay')" class="btn btn-secondary">
         go back
       </button>
     </div>
   </section>
+
+  <!-- <p class="clr-teal fw-bold">${{ stay.price }} /NIGHT</p> -->
 </template>
 
+
+
+
+
 <script>
-import { stayService } from '../services/stay-service'
-import { reviewService } from '../services/review-service'
-import CustomLabel from '../components/custom-label.vue'
-import stayPreview from '../components/stay-preview.vue'
+import { stayService } from "../services/stay-service";
+// import { reviewService } from "../services/review-service";
 
 export default {
-  components: { stayPreview, CustomLabel },
-  name: 'stay-detail',
+  components: {},
+  name: "stay-detail",
   data() {
     return {
       stay: null,
       reviewToAdd: null,
-    }
+    };
   },
   async created() {
-    const { id } = this.$route.params
-    this.stay = await stayService.getById(id)
-    const user = this.$store.getters.user
+    const { id } = this.$route.params;
+    this.stay = await stayService.getById(id);
+    const user = this.$store.getters.user;
 
     // review-store
-    await this.$store.dispatch({ type: 'getReviews', filterBy: { stayId: this.stay._id } })
+    await this.$store.dispatch({
+      type: "getReviews",
+      filterBy: { stayId: this.stay._id },
+    });
 
     if (user) {
-      this.reviewToAdd = await reviewService.getEmptyReview()
-      this.reviewToAdd.userId = user._id
-      this.reviewToAdd.stayId = this.stay._id
+      this.reviewToAdd = await reviewService.getEmptyReview();
+      this.reviewToAdd.userId = user._id;
+      this.reviewToAdd.stayId = this.stay._id;
     }
   },
   computed: {
+    avgRating() {
+      let ratingSum = this.stay.reviews.reduce((acc, x) => acc + x.rate, 0);
+      let avgRating = ratingSum / this.stay.reviews.length;
+      return avgRating;
+    },
+    reviewsCount() {
+      return this.stay.reviews.length;
+    },
+
+    imgClass() {
+      return "img-card";
+    },
+    hostImg() {
+      var url = this.stay.host.imgUrl;
+      console.log("host img url", url);
+      return url;
+    },
     user() {
-      return this.$store.getters.user
+      // return this.$store.getters.user;
     },
     reviews() {
-      return this.$store.getters.reviews
+      return this.stay.reviews;
     },
   },
   methods: {
-    removeStay() {
-      this.$store.dispatch({ type: 'removeStay', stayId: this.stay._id }).then(() => {
-        this.$router.push('/stay')
-      })
-    },
+    // removeStay() {
+    //   this.$store.dispatch({ type: 'removeStay', stayId: this.stay._id }).then(() => {
+    //     this.$router.push('/stay')
+    //   })
+    // },
     async addReview() {
-      if (!this.reviewToAdd.content) return
-      await this.$store.dispatch({ type: 'addReview', review: this.reviewToAdd })
-      await this.$store.dispatch({ type: 'getReviews', filterBy: { stayId: this.stay._id } })
+      if (!this.reviewToAdd.content) return;
+      await this.$store.dispatch({
+        type: "addReview",
+        review: this.reviewToAdd,
+      });
+      await this.$store.dispatch({
+        type: "getReviews",
+        filterBy: { stayId: this.stay._id },
+      });
     },
     async removeReview(reviewId) {
-      await this.$store.dispatch({ type: 'removeReview', reviewId })
-      await this.$store.dispatch({ type: 'getReviews', filterBy: { stayId: this.stay._id } })
+      await this.$store.dispatch({ type: "removeReview", reviewId });
+      await this.$store.dispatch({
+        type: "getReviews",
+        filterBy: { stayId: this.stay._id },
+      });
     },
   },
-}
+};
 </script>
+
+<style>
+.stay-details {
+  padding-top: 100px;
+}
+
+.stay-details-img-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 8px;
+}
+
+.img-card-0 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+</style>

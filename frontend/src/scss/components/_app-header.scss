@@ -1,7 +1,8 @@
 .main-header {
-	background-color: $white;
+	background-color: rgba(255, 255, 255, 0);
 	width: 100%;
-	// position: fixed;
+	position: fixed;
+	// opacity: 0;
 }
 
 .header-content {
@@ -12,10 +13,18 @@
 }
 
 .logo {
+	// flex-direction: start;
 	color: $theme-red;
 	width: 102px;
 	height: 80px;
-	font-family: Montserrat, 'Helvetica Neue', Helvetica;
+	// font-family: Montserrat, 'Helvetica Neue', Helvetica;
+
+	a {
+		text-decoration: none;
+		color: $white;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
 	h2 {
 		cursor: pointer;
 	}
@@ -26,22 +35,42 @@
 }
 
 .nav-bar {
-	width: 340px;
+	width: 380px;
 	height: 80px;
-	// background-color: blue;
+
 	.explore-link {
-		margin-left: 98px;
 		height: 42px;
 		width: 123px;
+		border-radius: 22px;
+		transition: 0.25s;
+		cursor: pointer;
+
+		a {
+			text-decoration: none;
+			font-family: roboto, arial, helvetica, sans-serif;
+			// text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+			color: $white;
+		}
+
+		&:hover {
+			background-color: darken(rgba(255, 255, 255, 0.288), 3.5%);
+		}
+	}
+	.host-link {
+		height: 42px;
+		width: 132px;
 		border-radius: 22px;
 		transition: 0.25s;
 		cursor: pointer;
 		a {
 			text-decoration: none;
 			font-family: roboto, arial, helvetica, sans-serif;
+			// text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+			color: $white;
 		}
 		&:hover {
-			background-color: darken($white, 3.5%);
+			background-color: darken(rgba(255, 255, 255, 0.288), 3.5%);
+
 		}
 	}
 }
