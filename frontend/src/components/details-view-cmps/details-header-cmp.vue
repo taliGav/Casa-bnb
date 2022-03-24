@@ -1,5 +1,5 @@
 <template>
-  <section v-if="stay" class="stay-details">
+  <section v-if="stay" class="stay-details-header">
     <h1 class="details-header-name">{{ stay.name }}</h1>
 
     <div class="rating">
@@ -45,7 +45,7 @@ export default {
 
 <style>
 .details-header-name {
-  color: inherit !important;
+  color: #222222;
   font-size: 1em !important;
   font-size: 26px !important;
   font-weight: inherit !important;

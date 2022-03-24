@@ -1,19 +1,16 @@
 <template>
   <section class="stay-details-img-container">
-    <div class="img-container">
-      <!-- <img :src="imgUrl" :class="imgClass(idx)" alt="" /> -->
+    <div class="gallery-imgs-container">
       <img
         v-for="(imgUrl, idx) in this.stay.imgUrls"
         :key="idx"
         :src="imgUrl"
-        :class="'img-card-' + idx"
+        :class="'gallery-img img-card-' + idx"
         alt=""
       />
     </div>
   </section>
 </template>
-
-
 
 
 
@@ -33,6 +30,7 @@ export default {
 };
 </script>
 
+
 <style>
 .stay-details-img-container {
   padding-top: 24px;
@@ -40,7 +38,7 @@ export default {
 }
 
 /* ._z80d2i */
-.img-container {
+.gallery-imgs-container {
   display: grid;
   max-width: 1120px;
   max-height: 560px;
@@ -85,7 +83,7 @@ export default {
     outline: none !important;
     } */
 
-img {
+.gallery-img {
   object-fit: cover;
   vertical-align: bottom;
   width: 100%;
