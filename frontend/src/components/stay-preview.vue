@@ -6,8 +6,6 @@
     </div>
     <div class="preview-data flex col even">
       <div class="rating">
-        <!-- <img src="./../assets/icons/star_black_24dp.svg" class="rate-icon" /> -->
-        <!-- <span class="material-icons">star</span> -->
         <img src="./../assets/icons/star.png" class="rate-icon" />
         {{ avgRating }} (<span>{{ reviewsCount }}</span>
         reviews)
