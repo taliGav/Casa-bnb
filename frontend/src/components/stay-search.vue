@@ -17,11 +17,12 @@
     <input v-model="filterBy.guests" type="number" />
     <RouterLink
       :to="{
-        name: 'stay',
+        path: 'stay',
         query: {
           destination: filterBy.destination,
           dates: filterBy.dates,
-          guests: filterBy.guests,
+          guests: +filterBy.guests,
+          amenities: filterBy.amenities,
         },
       }"
       >search</RouterLink
@@ -42,6 +43,8 @@ export default {
     }
   },
   created() {
+    this.filterBy = this.$route.query
+    // this.filterBy.amenities=[this.$route.query.amenities]
     // this.filterBy = this.curFilterBy
   },
   computed: {
@@ -49,9 +52,6 @@ export default {
       this.filterBy = this.$route.query
       return this.$route.query
     },
-    // value1(){
-    //   return ref('')
-    // }
   },
   methods: {
   },
