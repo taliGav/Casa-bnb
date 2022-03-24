@@ -1,5 +1,5 @@
 <template>
-  <section class="stay-filter py-2">
+  <section class="stay-filter flex space align">
     <div v-for="amenitie in lessAmenities" :key="amenitie">
       <button @click="setAmenities(amenitie)">{{ amenitie }}</button>
     </div>

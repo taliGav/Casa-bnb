@@ -13,7 +13,7 @@
 
 .search-container {
 	position: relative;
-	width: 270px;
+	// width: 270px;
 	height: 64px;
 	background-color: $white;
 	border-radius: 32px 32px 32px 32px;
@@ -53,8 +53,9 @@
 	border-radius: 32px 32px 32px 32px;
 	&:hover {
 		background-color: darken($white, 5%);
+        cursor: pointer;
 	}
-	&:hover .search-guests {
+	&:hover .guests-container {
 		background-color: darken($white, 5%);
 	}
 
@@ -68,10 +69,6 @@
 		&:hover {
 			background-color: darken($white, 5%);
 			cursor: pointer;
-		}
-
-		&:hover .search-guests {
-			background-color: darken($white, 5%);
 		}
 
 		span {
@@ -92,15 +89,33 @@
 			bottom: 0;
 		}
 	}
-	.search-btn-container {
-		border-radius: 30px;
-		background-color: $theme-red;
-		width: 50px;
-		height: 50px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+}
+.search-btn-container {
+    align-self: center;
+    border-radius: 50px;
+    background-color: $theme-red;
+    width: 49px;
+    height: 49px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+    transition: 0.05s;
+    cursor: pointer;
+    
+    &:hover .search-guests{
+        background-color: darken($white, 5%);
+        cursor: pointer;
+    }
+    p{
+        color: $white;
+        font-family: "Circular-Bold";
+        font-size: 16px;
+        margin-right: 4px;
+        // transition-delay: 1s;
+        // transition: 1s;
+        
+    }
 }
 
 .date-start {
@@ -148,3 +163,4 @@
 		cursor: pointer;
 	}
 }
+
