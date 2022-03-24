@@ -170,7 +170,10 @@ export default {
 		changeGuests(num) {
 			if (typeof this.filterBy.guests === 'string') this.filterBy.guests = 0;
 
-			if (num < 0 && this.filterBy.guests === 0) return;
+			if (num < 0 && this.filterBy.guests < 1.5) {
+				this.filterBy.guests = 'Add guests';
+				return;
+			}
 			this.filterBy.guests += num;
 		},
 	},
