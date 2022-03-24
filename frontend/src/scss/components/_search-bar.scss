@@ -34,7 +34,7 @@
 	}
 
 	.search-input {
-		width: 210px;
+		width: 200px;
 		height: 28px;
 		position: absolute;
 		left: 30px;
@@ -115,6 +115,10 @@
         // transition-delay: 1s;
         // transition: 1s;
         
+    }
+    img{
+        height: 30px;
+        width: 30px;
     }
 }
 

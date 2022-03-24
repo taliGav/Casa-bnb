@@ -18,6 +18,7 @@
 			<div class="filter">
 				<div
 					class="search-container"
+					@click="focusSearch"
 					:style="{ width: isSearchOpen ? '250px' : '270px' }"
 				>
 					<span>Location</span>
@@ -26,17 +27,18 @@
 						v-model="filterBy.destination"
 						type="text"
 						placeholder="Where are you going?"
+						ref="input"
 					/>
 				</div>
-				<div class="date-start">
+				<div class="date-start" @click="addDates">
 					<span>Check in</span>
 					<p>Add dates</p>
 				</div>
-				<div class="date-end">
+				<div class="date-end" @click="addDates">
 					<span>Check out</span>
 					<p>Add dates</p>
 				</div>
-				<div class="search-guests">
+				<div class="search-guests" @click="addGuests">
 					<div class="guests-container">
 						<span>Guests</span>
 						<p>Add guests</p>
@@ -88,10 +90,10 @@ export default {
 	},
 	mounted() {
 		// document.querySelector('.stay-app')
-		window.addEventListener('click', this.onClick);
+		window.addEventListener('click', this.clickCheck);
 	},
 	unmounted() {
-		window.removeEventListener('click', this.onClick);
+		window.removeEventListener('click', this.clickCheck);
 	},
 	computed: {
 		curFilterBy() {
@@ -119,18 +121,38 @@ export default {
 			if (this.isSearchOpen) this.doFilter();
 			this.isSearchOpen = true;
 		},
-		onClick(ev) {
-			const btn = ev.target.className;
-			const img = ev.target.localName;
-			if (btn === 'search-btn-container' || img === 'img') return;
-			else this.isSearchOpen = false;
+		focusSearch() {
+			console.log('clicked search');
+			this.$refs.input.focus();
+			this.isSearchOpen = true;
+		},
+		clickCheck(ev) {
 			console.log(ev);
-
-			// if(x < 889  )
-			// if (!this.isSearchOpen) return;
+			const el = ev.target.className;
+			console.log(el);
+			const local = ev.target.localName;
+			if (
+				local === 'img' ||
+				local === 'p' ||
+				local === 'span' ||
+				el === 'search-btn-container' ||
+				el === 'search-container' ||
+				el === 'search-input' ||
+				el === 'date-start' ||
+				el === 'date-end' ||
+				el === 'guests-container'
+			)
+				return;
+			else this.isSearchOpen = false;	
+		},
+		addDates() {
+			this.isSearchOpen = true;
+		},
+		addGuests() {
+			this.isSearchOpen = true;
 		},
 	},
 };
 </script>
 
-// v-bind:style="{ height: stickyNav ? '80px' : '160px' }"
+
