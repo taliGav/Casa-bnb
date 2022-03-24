@@ -103,7 +103,6 @@ export default {
 	},
 	methods: {
 		doFilter() {
-			console.log('yyyyyy');
 			// var amenitiesToFilter=Object.values(this.amenities)
 			// this.filterBy.amenities=amenitiesToFilter;
 			// console.log('yyyyyy',this.filterBy);
@@ -122,14 +121,11 @@ export default {
 			this.isSearchOpen = true;
 		},
 		focusSearch() {
-			console.log('clicked search');
 			this.$refs.input.focus();
 			this.isSearchOpen = true;
 		},
 		clickCheck(ev) {
-			console.log(ev);
 			const el = ev.target.className;
-			console.log(el);
 			const local = ev.target.localName;
 			if (
 				local === 'img' ||
