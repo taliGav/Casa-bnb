@@ -7,7 +7,6 @@
 
 <script>
 import stayList from '../components/stay-list.vue'
-// import staySearch from '../components/stay-search.vue'
 import stayFilter from '../components/stay-filter.vue'
 export default {
   name: 'stay-app',
@@ -17,15 +16,12 @@ export default {
     }
   },
   created() {
-    console.log('app created query:', this.$route);
-    // var filterBy = this.filterBy
-    // this.setFilter()
-    
-    // this.$store.dispatch({ type: 'loadStays' })
+    this.setFilter()
+    this.$store.dispatch({ type: 'loadStays' })
   },
-  watch: {
-        '$route': 'setFilter'
-    },
+  // watch: {
+  //       '$route': 'setFilter'
+  //   },
   computed: {
     stays() {
       return this.$store.getters.staysToShow
@@ -36,15 +32,15 @@ export default {
     }
   },
   methods: {
-    setFilter() {
-      console.log('app set filter:',this.filterBy);
-      const copyfilter = JSON.parse(JSON.stringify(this.filterBy))
-      this.$store.dispatch({ type: 'setFilter', filterBy: copyfilter })
+    async setFilter() {
+      await this.$store.dispatch({ type: 'setFilter', destination: this.filterBy.destination, guests:this.filterBy.guests,amenities:this.filterBy.amenities })
+      // console.log('app set filter:',this.filterBy);
+      // const copyfilter = JSON.parse(JSON.stringify(this.filterBy))
+      // this.$store.dispatch({ type: 'setFilter', filterBy: copyfilter })
     },
   },
   components: {
     stayList,
-    // staySearch,
     stayFilter,
   },
 }

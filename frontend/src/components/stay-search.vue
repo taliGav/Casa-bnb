@@ -10,7 +10,7 @@
           <span>Location</span>
           <input
             class="search-input"
-            v-model="filterBy.destination"
+            v-model="destination"
             type="text"
             placeholder="Where are you going?"
             ref="input"
@@ -27,7 +27,7 @@
         <div class="search-guests" @click="addGuests">
           <div class="guests-container">
             <span>Guests</span>
-            <p>{{ filterBy.guests }}</p>
+            <p>{{ guests }}</p>
             <!-- <input v-model="filterBy.guests" type="number" /> -->
             <!-- <input
 						class="guests-input"
@@ -43,7 +43,7 @@
               <button @click.stop="changeGuests(-1)" class="btn-round">
                 -
               </button>
-              <div>{{ filterBy.guests }}</div>
+              <div>{{ guests }}</div>
               <button @click.stop="changeGuests(+1)" class="btn-round">
                 +
               </button>
@@ -76,46 +76,46 @@ export default {
 	name: 'search',
 	data() {
 		return {
-			filterBy: { destination: '', dates: '0', guests: null, amenities: [] },
-			value1: 0,
 			isSearchOpen: false,
 			addGuestsMenu: false,
+      destination: '',
+      dates: '0',
+      guests: null,
+      amenities:[],
 		};
 	},
 	created() {
-		console.log('search created query:', this.$route);
-		// console.log('created query:', this.$route.query);
-		this.filterBy = this.$route.query;
-		// document.addEventListener('click', this.onClick);
-		// this.filterBy.amenities=[this.$route.query.amenities]
-		// this.filterBy = this.curFilterBy
-		this.filterBy.guests = 'Add guests';
+    // console.log('search created',this.$route);
+		// this.filterBy.guests = 'Add guests';
+		this.destination=this.$store.getters.filterBy.destination
+      this.guests=this.$store.getters.filterBy.guests
 	},
 	mounted() {
 		// document.querySelector('.stay-app')
 		window.addEventListener('click', this.clickCheck);
+// 
 	},
 	unmounted() {
 		window.removeEventListener('click', this.clickCheck);
 	},
 	computed: {
 		curFilterBy() {
-			this.filterBy = this.$route.query;
-			return this.$route.query;
+      console.log('getter', this.$store.getters.filterBy);
+    //   this.destination=this.$store.getters.filterBy.destination
+    //   this.guests=this.$store.getters.filterBy.guests
+			return this.$store.getters.filterBy
 		},
 	},
 	methods: {
-		doFilter() {
-			// var amenitiesToFilter=Object.values(this.amenities)
-			// this.filterBy.amenities=amenitiesToFilter;
-			// console.log('yyyyyy',this.filterBy);
+		async doFilter() {
+      const filterBy = await this.$store.dispatch({ type: 'setFilter', destination: this.destination, guests:this.guests })
 			this.$router.push({
 				name: 'stay',
 				query: {
-					destination: this.filterBy.destination,
-					dates: this.filterBy.dates,
-					guests: this.filterBy.guests,
-					amenities: this.filterBy.amenities,
+					destination: filterBy.destination,
+					// dates: filterBy.dates,
+					guests: filterBy.guests,
+					// amenities: filterBy.amenities,
 				},
 			});
 		},
@@ -155,13 +155,13 @@ export default {
 			this.addGuestsMenu = !this.addGuestsMenu;
 		},
 		changeGuests(num) {
-			if (typeof this.filterBy.guests === 'string') this.filterBy.guests = 0;
+			if (typeof this.guests === 'string') this.guests = 0;
 
-			if (num < 0 && this.filterBy.guests < 1.5) {
-				this.filterBy.guests = 'Add guests';
+			if (num < 0 && this.guests < 1.5) {
+				this.guests = 'Add guests';
 				return;
 			}
-			this.filterBy.guests += num;
+			this.guests += num;
 		},
 	},
 };

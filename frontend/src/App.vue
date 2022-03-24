@@ -14,13 +14,13 @@ export default {
   name: 'app',
   data() {
 		return {
-			filterBy: { destination: '', dates: '0', guests: 0, amenities: [] },
-			value1: 0,
+			// filterBy: { destination: '', dates: '0', guests: 0, amenities: [] },
+			// value1: 0,
 		};
 	},
   created() {
-    console.log('Apppp created query:', this.$route);
-    this.filterBy = this.$route.query;
+    // console.log('Apppp created query:', this.$route);
+    // this.filterBy = this.$route.query;
     // this.$store.dispatch({ type: 'loadStays' })
   },
   components: {
