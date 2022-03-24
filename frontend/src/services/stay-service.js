@@ -76,11 +76,11 @@ async function query(filterBy = {}) {
 
       console.log('serv amenities', amenitiesToFilter)
 
-      // stays = stays.filter((stay) => {
-      //   amenitiesToFilter.every((amenitie) => {
-      //     return stay.amenities.includes(amenitie)
-      //   })
-      // })
+      stays = stays.filter((stay) => {
+        return amenitiesToFilter.every((amenitie) => {
+          return stay.amenities.includes(amenitie)
+        })
+      })
 
       // stays = stays.filter((stay) => {
       //   return stay.amenities.every((amenitie) => amenitiesToFilter.includes(amenitie))

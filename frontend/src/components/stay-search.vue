@@ -15,18 +15,7 @@
     </div>
 
     <input v-model="filterBy.guests" type="number" />
-    <RouterLink
-      :to="{
-        path: 'stay',
-        query: {
-          destination: filterBy.destination,
-          dates: filterBy.dates,
-          guests: +filterBy.guests,
-          amenities: filterBy.amenities,
-        },
-      }"
-      >search</RouterLink
-    >
+    <button @click="doFilter">search</button>
   </form>
 </template>
 
@@ -43,6 +32,7 @@ export default {
     }
   },
   created() {
+    console.log('created query:',this.$route.query);
     this.filterBy = this.$route.query
     // this.filterBy.amenities=[this.$route.query.amenities]
     // this.filterBy = this.curFilterBy
@@ -54,6 +44,17 @@ export default {
     },
   },
   methods: {
+    doFilter() {
+      console.log('yyyyyy');
+      // var amenitiesToFilter=Object.values(this.amenities)
+      // this.filterBy.amenities=amenitiesToFilter;
+      // console.log('yyyyyy',this.filterBy);
+      this.$router.push({ name: 'stay', query: {
+          destination: this.filterBy.destination,
+          dates: this.filterBy.dates,
+          guests: this.filterBy.guests,
+          amenities:this.filterBy.amenities } })
+    },
   },
 }
 </script>

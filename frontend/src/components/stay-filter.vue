@@ -18,7 +18,7 @@ export default {
   },
   created() {
     this.filterBy = this.$route.query
-    console.log('created',this.$route.query);
+    // console.log('created',this.$route.query);
     if(this.$route.query.amenities && typeof(this.$route.query.amenities)==='string'){
       this.filterBy.amenities=this.$route.query.amenities.split(',')||[]
     }
@@ -43,26 +43,26 @@ export default {
   },
   methods: {
     doFilter() {
-      console.log('yyyyyy');
+      // console.log('yyyyyy');
       // var amenitiesToFilter=Object.values(this.amenities)
       // this.filterBy.amenities=amenitiesToFilter;
       // console.log('yyyyyy',this.filterBy);
       this.$router.push({ name: 'stay', query: {
           destination: this.filterBy.destination,
           dates: this.filterBy.dates,
-          guests: +this.filterBy.guests,
+          guests: this.filterBy.guests,
           amenities:this.filterBy.amenities } })
     },
     setAmenities(amenitie){
-      console.log('set amn amenitie', amenitie,this.filterBy.amenities);
+      // console.log('set amn amenitie', amenitie,this.filterBy.amenities);
       if(!this.filterBy.amenities){
-        console.log('no amn');
+        // console.log('no amn');
         this.filterBy.amenities=[amenitie]
         this.doFilter()
         return
       }
       const idx = this.filterBy.amenities.findIndex(am=>am===amenitie)
-      console.log('set amn idx', idx);
+      // console.log('set amn idx', idx);
       if(idx===-1){
         this.filterBy.amenities.push(amenitie)
       }
