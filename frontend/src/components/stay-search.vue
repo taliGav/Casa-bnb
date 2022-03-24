@@ -82,7 +82,7 @@ export default {
 		};
 	},
 	created() {
-		console.log('created query:', this.$route.query);
+		console.log('search created query:', this.$route);
 		this.filterBy = this.$route.query;
 		// document.addEventListener('click', this.onClick);
 		// this.filterBy.amenities=[this.$route.query.amenities]

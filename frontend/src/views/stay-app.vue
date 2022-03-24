@@ -17,8 +17,9 @@ export default {
     }
   },
   created() {
+    console.log('app created query:', this.$route);
     // var filterBy = this.filterBy
-    this.setFilter()
+    // this.setFilter()
     
     // this.$store.dispatch({ type: 'loadStays' })
   },

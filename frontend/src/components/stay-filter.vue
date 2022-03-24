@@ -18,6 +18,7 @@ export default {
     }
   },
   created() {
+    console.log('filter created query:', this.$route);
     this.filterBy = this.$route.query
     // console.log('created',this.$route.query);
     if(this.$route.query.amenities && typeof(this.$route.query.amenities)==='string'){
@@ -45,7 +46,7 @@ export default {
   methods: {
     doFilter() {
       // console.log('yyyyyy');
-      
+
       // console.log('yyyyyy',this.filterBy);
       this.$router.push({ name: 'stay', query: {
           destination: this.filterBy.destination,
