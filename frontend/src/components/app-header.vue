@@ -1,6 +1,5 @@
 <template>
-	<header class="main-header" ref="header">
-		<div class="main-layout flex space">
+	<header class="main-header main-layout" ref="header">
 			<div class="header-content flex space">
 				<div class="logo flex just align">
 					<h2>
@@ -21,9 +20,7 @@
 					<user-badge></user-badge>
 				</nav>
 			</div>
-
 				<stay-search />
-		</div>
 	</header>
 </template>
 <script>
