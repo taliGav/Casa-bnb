@@ -1,5 +1,19 @@
 <template>
-  <div class="filter-container main-layot full flex align just">
+  <!-- <input v-model="filterBy.destination" type="text" placeholder="dest" /> -->
+
+  <!-- <div class="demo-date-picker">
+			<div class="block">
+				<el-date-picker
+					v-model="value1"
+					type="daterange"
+					range-separator="|"
+					start-placeholder="Add dates"
+					end-placeholder="Add dates"
+					size="small"
+				/>
+			</div>
+		</div> -->
+  <div class="filter-container full flex align just">
     <form>
       <div class="filter">
         <div

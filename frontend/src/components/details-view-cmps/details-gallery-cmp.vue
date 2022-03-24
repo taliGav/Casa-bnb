@@ -1,21 +1,16 @@
 <template>
   <section class="stay-details-img-container">
-    <div class="img-container">
-      <!-- <img :src="imgUrl" :class="imgClass(idx)" alt="" /> -->
+    <div class="gallery-imgs-container">
       <img
         v-for="(imgUrl, idx) in this.stay.imgUrls"
         :key="idx"
         :src="imgUrl"
-        :class="'img-card-' + idx"
+        :class="'gallery-img img-card-' + idx"
         alt=""
       />
     </div>
   </section>
 </template>
-
-
-
-
 
 <script>
 export default {
@@ -33,17 +28,29 @@ export default {
 };
 </script>
 
+
 <style>
 .stay-details-img-container {
   padding-top: 24px;
   border-radius: 12px;
 }
 
+
+.snip0016 {
+  height: 4rem;
+  width: 4rem;
+  border: 1 solid #000;
+  background-color: tomato;
+}
+.snip0016:hover {
+  background-color: rgba(0, 235, 125, 0.3);
+}
+
+
 /* ._z80d2i */
-.img-container {
+.gallery-imgs-container {
   display: grid;
-  max-width: 1120px;
-  max-height: 560px;
+  max-height: 374px;
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: 50% 50%;
   grid-gap: 8px;
@@ -53,6 +60,18 @@ export default {
 ._88xxct {
     display: block !important;
 } */
+
+.gallery-img {
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.gallery-img:hover {
+  /* background: rgba(0, 0, 0, 0.5) */
+  /* background-color: hwb(0 0% 100% / 0.664); */
+  opacity: 0.7;
+}
 
 .img-card-0 {
   grid-column: 1;
@@ -85,7 +104,7 @@ export default {
     outline: none !important;
     } */
 
-img {
+.gallery-img {
   object-fit: cover;
   vertical-align: bottom;
   width: 100%;
