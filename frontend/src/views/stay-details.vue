@@ -126,16 +126,16 @@ export default {
     const user = this.$store.getters.user;
 
     // review-store
-    await this.$store.dispatch({
-      type: "getReviews",
-      filterBy: { stayId: this.stay._id },
-    });
+    // await this.$store.dispatch({
+    //   type: "getReviews",
+    //   filterBy: { stayId: this.stay._id },
+    // });
 
-    if (user) {
-      this.reviewToAdd = await reviewService.getEmptyReview();
-      this.reviewToAdd.userId = user._id;
-      this.reviewToAdd.stayId = this.stay._id;
-    }
+    // if (user) {
+    //   this.reviewToAdd = await reviewService.getEmptyReview();
+    //   this.reviewToAdd.userId = user._id;
+    //   this.reviewToAdd.stayId = this.stay._id;
+    // }
   },
   computed: {
     avgRating() {
@@ -151,9 +151,7 @@ export default {
       return "img-card";
     },
     hostImg() {
-      var url = this.stay.host.imgUrl;
-      console.log("host img url", url);
-      return url;
+      return this.stay.host.imgUrl;
     },
     user() {
       // return this.$store.getters.user;
