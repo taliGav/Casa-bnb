@@ -19,13 +19,6 @@
 				<div class="date-start" @click="addDates">
 					<span>Check in</span>
 					<p>Add dates</p>
-					<Datepicker
-						class="date-picker"
-						v-if="dateMenu"
-						v-model="date"
-						inline
-						autoApply
-					/>
 				</div>
 				<div class="date-end" @click="addDates">
 					<span>Check out</span>
@@ -64,18 +57,24 @@
 				</div>
 			</div>
 		</form>
-		<pre>{{ date }}</pre>
 	</div>
 </template>
 
 <script>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import Datepicker from '@vuepic/vue-datepicker';
 import '@vuepic/vue-datepicker/dist/main.css';
 
 export default {
 	setup() {
-		const date = ref(new Date());
+		const date = ref();
+
+		onMounted(() => {
+			const startDate = new Date();
+			const endDate = new Date(new Date().setDate(startDate.getDate() + 7));
+			date.value = [startDate, endDate];
+		});
+
 		return {
 			date,
 		};
