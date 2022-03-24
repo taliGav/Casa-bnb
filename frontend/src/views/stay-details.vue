@@ -1,23 +1,7 @@
 <template>
   <section v-if="stay" class="stay-details">
-    <h2 class="uppercase">{{ stay.name }}</h2>
-
-    <div class="rating">
-      ⭐ {{ avgRating }} ({{ reviewsCount }} reviews) 
-      <div class="needs-to-be-completed">
-        host type (superhost) + google location city+country
-        {{ stay.loc.city }}, {{ stay.loc.country }}
-      </div>
-    </div>
-
-    <section
-      class="stay-details-img-container"
-      v-for="(imgUrl, idx) in this.stay.imgUrls"
-      :key="idx"
-    >
-      <!-- <img :src="imgUrl" :class="imgClass(idx)" alt="" /> -->
-      <img :src="imgUrl" :class="'img-card-' + idx" alt="" />
-    </section>
+    <details-header :stay="stay" />
+    <details-gallery :stay="stay" />
 
     <section class="host-section flex col space">
       <div class="host-details flex">
@@ -119,12 +103,17 @@
 
 
 <script>
-import { stayService } from "../services/stay-service";
-// import { reviewService } from "../services/review-service";
+import detailsHeader from "./../components/details-view-cmps/details-header-cmp.vue";
+import detailsGallery from "./../components/details-view-cmps/details-gallery-cmp.vue";
+import { stayService } from "./../services/stay-service.js";
 
 export default {
-  components: {},
-  name: "stay-detail",
+  components: {
+    detailsHeader,
+    detailsGallery,
+  },
+
+  name: "stay-details",
   data() {
     return {
       stay: null,
@@ -206,15 +195,4 @@ export default {
   padding-top: 100px;
 }
 
-.stay-details-img-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 8px;
-}
-
-.img-card-0 {
-  grid-column: 1/3;
-  grid-row: 1/3;
-}
 </style>
