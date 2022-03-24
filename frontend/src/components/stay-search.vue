@@ -60,8 +60,6 @@ export default {
   data() {
     return {
       filterBy: { destination: '', dates: '0', guests: 0 ,amenities:[]},
-      value1:0,
-
     }
   },
   created() {

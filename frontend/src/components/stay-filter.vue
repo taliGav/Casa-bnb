@@ -1,5 +1,6 @@
 <template>
   <section class="stay-filter flex space align">
+    <!-- <stay-filter-price /> -->
     <div v-for="amenitie in lessAmenities" :key="amenitie">
       <button @click="setAmenities(amenitie)">{{ amenitie }}</button>
     </div>
@@ -8,7 +9,7 @@
 
 <script>
 import { utilService } from '../services/util-service'
-import { ref } from 'vue'
+import stayFilterPrice from './stay-filter-price.vue'
 export default {
   name: 'stay-filter',
   data() {
@@ -44,8 +45,7 @@ export default {
   methods: {
     doFilter() {
       // console.log('yyyyyy');
-      // var amenitiesToFilter=Object.values(this.amenities)
-      // this.filterBy.amenities=amenitiesToFilter;
+      
       // console.log('yyyyyy',this.filterBy);
       this.$router.push({ name: 'stay', query: {
           destination: this.filterBy.destination,
@@ -71,6 +71,9 @@ export default {
       }
       this.doFilter()
     }
+  },
+  components: {
+    stayFilterPrice,
   },
 }
 </script>
