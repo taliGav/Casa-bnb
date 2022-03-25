@@ -2,7 +2,7 @@
   <section v-if="stay" class="stay-details">
     <details-header :stay="stay" />
     <details-gallery :stay="stay" />
-    <div class="main-container flex">
+    <div class="details-main-container flex">
       <div class="main-inner-container">
         <details-host-main :stay="stay" />
       </div>
@@ -11,67 +11,10 @@
       </div>
     </div>
     <hr />
+    <details-reviews :stay="stay" />
 
-    <section class="reviews-section">
-      <h2>⭐ {{ avgRating }} · ({{ reviewsCount }} reviews)</h2>
+    <details-map :stay="stay" />
 
-      <form v-if="reviewToAdd && user" @submit.prevent="addReview" class="form">
-        <div class="form-control my-1">
-          <label for="txt" class="form-label fw-600">Your review</label>
-          <textarea
-            name="txt"
-            id="txt"
-            rows="3"
-            class="form-input"
-            v-model="reviewToAdd.content"
-            required
-          ></textarea>
-          <div class="form-control my-1">
-            <label for="rate" class="form-label">Rate</label>
-            <input
-              id="rate"
-              type="number"
-              class="form-input"
-              min="0"
-              max="5"
-              v-model.number="reviewToAdd.rate"
-            />
-          </div>
-        </div>
-        <button class="btn btn-info">Add Review</button>
-      </form>
-
-      <div v-if="reviews?.length" class="flex col">
-        <article
-          class="review flex col items-start"
-          v-for="review in reviews"
-          :key="review.id"
-        >
-          <div class="reviewer-dets flex">
-            <img :src="review.by.imgUrl" alt="" />
-            <div class="reviewer-name">
-              <h4>{{ review.by.fullname }}</h4>
-              <p>{{ review.createdAt }}</p>
-            </div>
-          </div>
-          <p class="fw-600">{{ review.txt }}</p>
-          <!-- <button
-          v-if="user?.isAdmin"
-          class="btn btn-danger"
-          @click="removeReview(review._id)"
-        >
-          Delete review
-        </button> -->
-        </article>
-      </div>
-      <div class="p-2 flex flex-col gap-1" v-else>
-        <h4>No reviews yet.</h4>
-        <p>Be the first...</p>
-      </div>
-    </section>
-
-          <details-map :stay="stay" />
-          
     <div v-if="user?.isAdmin" class="btn-group gap-1">
       <button
         @click="$router.push(`/stay/edit/${stay._id}`)"
@@ -79,12 +22,10 @@
       >
         edit stay
       </button>
-      <!-- <button @click="removeStay" class="btn btn-danger">delete stay</button> -->
       <button @click="$router.push('/stay')" class="btn btn-secondary">
         go back
       </button>
-
-
+      <!-- <button @click="removeStay" class="btn btn-danger">delete stay</button> -->
     </div>
   </section>
 
@@ -93,13 +34,12 @@
 
 
 
-
-
 <script>
 import detailsHeader from "./../components/details-view-cmps/details-header-cmp.vue";
 import detailsGallery from "./../components/details-view-cmps/details-gallery-cmp.vue";
 import detailsHostMain from "./../components/details-view-cmps/details-host-main-cmp.vue";
 import detailsCheckout from "./../components/details-view-cmps/details-checkout-cmp.vue";
+import detailsReviews from "./../components/details-view-cmps/details-reviews-cmp.vue";
 import detailsMap from "./../components/details-view-cmps/details-map-cmp.vue";
 import { stayService } from "./../services/stay-service.js";
 
@@ -109,7 +49,8 @@ export default {
     detailsGallery,
     detailsHostMain,
     detailsCheckout,
-    detailsMap
+    detailsReviews,
+    detailsMap,
   },
 
   name: "stay-details",
@@ -137,19 +78,8 @@ export default {
     // }
   },
   computed: {
-    avgRating() {
-      let ratingSum = this.stay.reviews.reduce((acc, x) => acc + x.rate, 0);
-      let avgRating = ratingSum / this.stay.reviews.length;
-      return avgRating;
-    },
-    reviewsCount() {
-      return this.stay.reviews.length;
-    },
     user() {
       // return this.$store.getters.user;
-    },
-    reviews() {
-      return this.stay.reviews;
     },
   },
   methods: {
@@ -158,39 +88,12 @@ export default {
     //     this.$router.push('/stay')
     //   })
     // },
-    async addReview() {
-      if (!this.reviewToAdd.content) return;
-      await this.$store.dispatch({
-        type: "addReview",
-        review: this.reviewToAdd,
-      });
-      await this.$store.dispatch({
-        type: "getReviews",
-        filterBy: { stayId: this.stay._id },
-      });
-    },
-    async removeReview(reviewId) {
-      await this.$store.dispatch({ type: "removeReview", reviewId });
-      await this.$store.dispatch({
-        type: "getReviews",
-        filterBy: { stayId: this.stay._id },
-      });
-    },
   },
 };
 </script>
 
 
 <style>
-
-.main-container{
-    align-items: stretch !important;
-    justify-content: flex-start !important;
-    flex-wrap: wrap !important;
-    width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
 
 /* .reserve-btn {
   background-color: #ff385c;
