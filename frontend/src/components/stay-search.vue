@@ -16,13 +16,20 @@
 						ref="input"
 					/>
 				</div>
-				<div class="date-start" @click="addDates">
+				<div class="date-start" @click="showDatePicker">
 					<span>Check in</span>
-					<p>Add dates</p>
+					<p>{{ startDate }}</p>
 				</div>
-				<div class="date-end" @click="addDates">
+				<div class="date-end" @click="showDatePicker">
 					<span>Check out</span>
-					<p>Add dates</p>
+					<p>{{ endDate }}</p>
+					<el-date-picker
+						v-model="pickedDates"
+						type="daterange"
+						range-separator="To"
+						start-placeholder="Start date"
+						end-placeholder="End date"
+					/>
 				</div>
 				<div class="search-guests" @click="addGuests">
 					<div class="guests-container">
@@ -62,24 +69,19 @@
 
 <script>
 import { ref, onMounted } from 'vue';
-import Datepicker from '@vuepic/vue-datepicker';
-import '@vuepic/vue-datepicker/dist/main.css';
 
 export default {
-	setup() {
-		const date = ref();
-
-		onMounted(() => {
-			const startDate = new Date();
-			const endDate = new Date(new Date().setDate(startDate.getDate() + 7));
-			date.value = [startDate, endDate];
-		});
-
-		return {
-			date,
-		};
-	},
-
+	// setup() {
+	// 	const date = ref();
+	// 	onMounted(() => {
+	// 		const startDate = new Date();
+	// 		const endDate = new Date(new Date().setDate(startDate.getDate() + 7));
+	// 		date.value = [startDate, endDate];
+	// 	});
+	// 	return {
+	// 		pickedDates: null,
+	// 	};
+	// },
 	name: 'search',
 	data() {
 		return {
@@ -89,6 +91,7 @@ export default {
 			dates: '0',
 			guests: null,
 			amenities: [],
+			pickedDates: null,
 		};
 	},
 	created() {},
@@ -103,6 +106,32 @@ export default {
 		curFilterBy() {
 			console.log('getter', this.$store.getters.filterBy);
 			return this.$store.getters.filterBy;
+		},
+		startDate() {
+			if (this.pickedDates) {
+				const startDate = new Date(this.pickedDates[0]);
+				return (
+					new Intl.DateTimeFormat('en-US', { month: 'long' }).format(
+						startDate
+					) +
+					' ' +
+					startDate.getDate()
+				);
+			} else {
+				return 'Add dates';
+			}
+		},
+		endDate() {
+			if (this.pickedDates) {
+				const endDate = new Date(this.pickedDates[1]);
+				return (
+					new Intl.DateTimeFormat('en-US', { month: 'long' }).format(endDate) +
+					' ' +
+					endDate.getDate()
+				);
+			} else {
+				return 'Add dates';
+			}
 		},
 	},
 	methods: {
@@ -123,6 +152,11 @@ export default {
 					amenities: filterBy.amenities,
 				},
 			});
+		},
+		showDatePicker() {
+			this.$el.querySelector('.el-range-editor').click();
+			// console.log(this.pickedDates);
+			console.log('picked dates', this.startDate);
 		},
 		openSearch() {
 			if (this.isSearchOpen) this.doFilter();
@@ -170,6 +204,8 @@ export default {
 			this.guests += num;
 		},
 	},
-	components: { Datepicker },
+	components: {},
 };
 </script>
+
+<style></style>

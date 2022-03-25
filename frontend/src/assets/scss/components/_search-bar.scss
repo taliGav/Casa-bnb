@@ -186,3 +186,52 @@
 	position: absolute;
 	margin-top:400px;
 }
+
+
+// DATEPICKER
+
+
+.el-date-range-picker__content {
+	border-radius: 25px;
+
+	height: 350px;
+	width: 350px !important;
+	border: none !important;
+}
+
+.el-popper {
+	border-radius: 25px !important;
+}
+.el-picker-panel {
+	background: white !important;
+	border-radius: 25px !important;
+	width: 700px !important;
+}
+.el-picker-panel_body {
+	background: white !important;
+	border-radius: 25px !important;
+	width: 300px !important;
+}
+.el-popper {
+	transform: translate(-50%, -50%) !important;
+	left: 50% !important;
+	top: 35% !important;
+}
+.el-popper[data-popper-placement^='bottom'] > .el-popper__arrow {
+	display: none !important;
+}
+.el-range-editor {
+	display: none !important;
+}
+.el-date-table td.start-date .el-date-table-cell__text {
+	background-color: black !important;
+}
+.el-date-table td.end-date .el-date-table-cell__text {
+	background-color: black !important;
+}
+.el-date-table td.today .el-date-table-cell__text {
+	color: #020202 !important;
+}
+.el-date-table td.in-range .el-date-table-cell{
+	background-color: rgb(235, 235, 235);
+}
