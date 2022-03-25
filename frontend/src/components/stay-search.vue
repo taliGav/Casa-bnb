@@ -19,13 +19,6 @@
 				<div class="date-start" @click="addDates">
 					<span>Check in</span>
 					<p>Add dates</p>
-					<Datepicker
-						class="date-picker"
-						v-if="dateMenu"
-						v-model="date"
-						inline
-						autoApply
-					/>
 				</div>
 				<div class="date-end" @click="addDates">
 					<span>Check out</span>
@@ -64,18 +57,24 @@
 				</div>
 			</div>
 		</form>
-		<pre>{{ date }}</pre>
 	</div>
 </template>
 
 <script>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import Datepicker from '@vuepic/vue-datepicker';
 import '@vuepic/vue-datepicker/dist/main.css';
 
 export default {
 	setup() {
-		const date = ref(new Date());
+		const date = ref();
+
+		onMounted(() => {
+			const startDate = new Date();
+			const endDate = new Date(new Date().setDate(startDate.getDate() + 7));
+			date.value = [startDate, endDate];
+		});
+
 		return {
 			date,
 		};
@@ -93,10 +92,7 @@ export default {
 		};
 	},
 	created() {
-		// console.log('search created',this.$route);
-		// this.filterBy.guests = 'Add guests';
-		this.destination = this.$store.getters.filterBy.destination;
-		this.guests = this.$store.getters.filterBy.guests;
+		
 	},
 	mounted() {
 		window.addEventListener('click', this.clickCheck);
@@ -107,26 +103,21 @@ export default {
 	},
 	computed: {
 		curFilterBy() {
-			console.log('getter', this.$store.getters.filterBy);
-			//   this.destination=this.$store.getters.filterBy.destination
-			//   this.guests=this.$store.getters.filterBy.guests
-			return this.$store.getters.filterBy;
+      console.log('getter', this.$store.getters.filterBy);
+			return this.$store.getters.filterBy
 		},
 	},
 	methods: {
 		async doFilter() {
-			const filterBy = await this.$store.dispatch({
-				type: 'setFilter',
-				destination: this.destination,
-				guests: this.guests,
-			});
+			this.amenities = this.curFilterBy.amenities
+      const filterBy = await this.$store.dispatch({ type: 'setFilter', destination: this.destination, guests:this.guests ,amenities:this.amenities})
 			this.$router.push({
 				name: 'stay',
 				query: {
 					destination: filterBy.destination,
 					// dates: filterBy.dates,
 					guests: filterBy.guests,
-					// amenities: filterBy.amenities,
+					amenities: filterBy.amenities,
 				},
 			});
 		},
