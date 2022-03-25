@@ -23,14 +23,14 @@ const amenities = [
   "Self check-in",
   "Waterfront",
   "Beachfront"
-]
+];
 const lessAmenities = [
   "Free cancellation",
   "Wifi",
   "Kitchen",
   "Air conditioning",
   "Washer",
-]
+];
 const ENDPOINT = 'stay';
 // const BASE_URL =
 //   process.env.NODE_ENV !== 'development' ? '/api/stay' : '//localhost:3030/api/stay/'
@@ -48,43 +48,43 @@ export const stayService = {
 _createStays();
 
 function getAmenities() {
-  return amenities
+  return amenities;
 }
 function getLessAmenities() {
-  return lessAmenities
+  return lessAmenities;
 }
 
 async function query(filterBy = {}) {
   // return await httpService.get(ENDPOINT, filterBy)
   // return axios.get(BASE_URL, { params: { filterBy } }).then((res) => res.data)
   try {
-    var stays = await storageService.query(KEY)
+    var stays = await storageService.query(KEY);
     // console.log('serv filter:', filterBy.amenities);
     if (filterBy.destination) {
       // console.log('regex', filterBy.destination);
-      const regex = new RegExp(filterBy.destination, 'i')
-      stays = stays.filter((stay) => regex.test(stay.loc.country) || regex.test(stay.loc.city))
+      const regex = new RegExp(filterBy.destination, 'i');
+      stays = stays.filter((stay) => regex.test(stay.loc.country) || regex.test(stay.loc.city));
     }
     if (filterBy.guests) {
       // console.log('guests', filterBy.guests);
-      stays = stays.filter((stay) => stay.capacity >= filterBy.guests)
+      stays = stays.filter((stay) => stay.capacity >= filterBy.guests);
     }
     if (filterBy.amenities) {
       if (typeof (filterBy.amenities) === 'object')
-        var amenitiesToFilter = Object.values(filterBy.amenities)
-      else var amenitiesToFilter = filterBy.amenities
+        var amenitiesToFilter = Object.values(filterBy.amenities);
+      else var amenitiesToFilter = filterBy.amenities;
       if (typeof (amenitiesToFilter) === 'string') {
-        amenitiesToFilter = [amenitiesToFilter]
+        amenitiesToFilter = [amenitiesToFilter];
       }
-      console.log('serv amenities', amenitiesToFilter)
+      console.log('serv amenities', amenitiesToFilter);
 
       stays = stays.filter((stay) => {
         return amenitiesToFilter.every((amenitie) => {
-          return stay.amenities.includes(amenitie)
-        })
-      })
+          return stay.amenities.includes(amenitie);
+        });
+      });
     }
-    return stays
+    return stays;
   }
   finally {
     // console.log('f stays:', stays);
@@ -553,10 +553,178 @@ function _createStays() {
               "fullname": "user77",
               "imgUrl": "/src/assets/images/profilePics/1.jpg",
             }
-          }
+          },
         ],
         "likedByUsers": ['mini-user'] // for user-wishlist : use $in
       },
+      {
+        "_id": "622f337a75c7d36e498aaafd",
+        "name": "DOUBLE ROOM IN THE HEART OF BCN",
+        "summary": "Lit room with balcony. The apartment is in the center, just meters from the Palau de la Musica Catalana. Well connected, a few minutes from Las Ramblas and the Born. Very close to the beach and Ciutadella Park",
+        "interaction": "Te proporcionaré sábanas y toallas, para que no te preocupes de traerlas tú.",
+        "houseRules": "-Mantener el espacio limpio y recogido. -No está permitido invitar a gente al apartamento. -Respetar el descanso de los vecinos. -No hacer ruido en la escalera. Apelo al sentido común de los inquilinos para una convivencia relajada y fluída. No hay normas en la casa más allá de las que dicte el sentido común.",
+        "type": "Apartment",
+        // "roomType": "Private room",
+        // "bedType": "Real Bed",
+        "cancellationPolicy": "strict_14_with_grace_period",
+        "capacity": 2,
+        "bedrooms": 1,
+        "beds": 1,
+        "bathrooms": 1,
+        "numOfReviews": 108,
+        "amenities": [
+          "Wifi",
+          "Kitchen",
+          "Paid parking off premises",
+          "Smoking allowed",
+          "Heating",
+          "Washer",
+          "Essentials",
+          "Shampoo",
+          "Lock on bedroom door",
+          "Hangers",
+          "Hair dryer",
+          "Iron",
+          "translation missing: en.hosting_amenity_49",
+          "translation missing: en.hosting_amenity_50",
+          "Hot water",
+          "Bed linens",
+          "Host greets you"
+        ],
+        "host": {
+          "_id": "622f3404e36c59e6164fb63a",
+          "fullname": "Isabel",
+          "location": "Barcelona, Catalonia, Spain",
+          "about": "Mi nombre es Isabel, pero me llamo Isa. Nací en Vigo (Galicia). Con 20 años me fuí a vivir a Madrid con intención de ser actriz; ahora resido en Barcelona desde los 28. Soy una joven de 43 años, cantante de Jazz. Me gusta salir, pero también quedarme en casa a leer o ver alguna buena película.\r\nHe compartido piso muchos años, pero estas serán mis primeras experiencias como anfitriona.\r\n\r\n¡Sed bienvenidos!\r\n",
+          "responseTime": "within an hour",
+          "thumbnailUrl": "https://a0.muscache.com/im/pictures/72a579ce-37d7-466e-9c25-9876ee8de037.jpg?aki_policy=profile_small",
+          "pictureUrl": "https://a0.muscache.com/im/pictures/72a579ce-37d7-466e-9c25-9876ee8de037.jpg?aki_policy=profile_x_medium",
+          "isSuperhost": false,
+          "id": "35858044"
+        },
+        "loc": {
+          "street": "Barcelona, Catalonia, Spain",
+          "country": "Spain",
+          "location": {
+            "lan": 2.17561,
+            "lat": 41.38701
+          },
+          "countryCode": "ES",
+          "city": "Barcelona"
+        },
+        "price": 25,
+        "securityDeposit": null,
+        "cleaningFee": 25,
+        "extraPeople": 20,
+        "reviewScores": {
+          "accuracy": 9,
+          "cleanliness": 9,
+          "checkin": 9,
+          "communication": 10,
+          "location": 10,
+          "value": 9,
+          "rating": 90
+        },
+        "reviews": [
+          {
+            "id": "madeId",
+            "at": "2016-02-24T05:00:00.000Z",
+            "rate": 4,
+            "by": {
+              "_id": "622f3405e36c59e6164fb95e",
+              "fullname": "Pierre",
+              "imgUrl": "https://robohash.org/58999873?set=set1",
+            },
+            "txt": "Una instancia muy céntrica en uno de estos edificios antiguos del Barri Gotic. No es poco haber conseguido estar en el centro de Barcelona en la misma semana del Mobile World Congress. Isabel es un encanto de anfitrión."
+          },
+          {
+            "id": "madeId",
+            "rate": 1,
+            "at": "2016-03-24T04:00:00.000Z",
+            "by": {
+              "_id": "622f3403e36c59e6164fafa6",
+              "fullname": "Isabelle",
+              "imgUrl": "https://robohash.org/26247027?set=set1",
+              "id": "26247027"
+            },
+            "txt": "The host canceled this reservation 2 days before arrival. This is an automated posting."
+          },
+          {
+            "id": "madeId",
+            "rate": 5,
+            "at": "2016-04-07T04:00:00.000Z",
+            "by": {
+              "_id": "622f3406e36c59e6164fbaf2",
+              "fullname": "Hélène",
+              "imgUrl": "https://robohash.org/46103953?set=set1",
+              "id": "46103953"
+            },
+            "txt": "Chambre très bien située et hôtesse très sympathique. Merci encore Isabel pour l'accueil !"
+          },
+          {
+            "id": "madeId",
+            "rate": 2,
+            "at": "2016-04-13T04:00:00.000Z",
+            "by": {
+              "_id": "622f3407e36c59e6164fbdc3",
+              "fullname": "Daniel",
+              "imgUrl": "https://robohash.org/25801559?set=set1",
+            },
+            "txt": "Sheets weren't clean... Shower has very low water pressure. Room is only good for sleeping. It's in a good location but that's about it. Isabel could've provided more information about what's around the house during check in... Overall just decent enough to sleep"
+          },
+          {
+            "id": "madeId",
+            "rate": 4,
+            "at": "2016-04-25T04:00:00.000Z",
+            "by": {
+              "_id": "622f3401e36c59e6164fabad",
+              "fullname": "Maria Isabel",
+              "imgUrl": "https://robohash.org/60712702?set=set1",
+            },
+            "txt": "Isabel est accueillante. L'appartement est charmant, correspond aux images. Très bien situé, à côté de Palau de la musica, dans un vieil immeuble plein de charme un peu désuet. Amateurs de confort et décor \"tendance\" s'abstenir. Chez Isabel on se trouve dans une authentique ambiance d'artiste. Merci beaucoup, je garderai le souvenir de cet accueil lié aux souvenirs de Barcelone."
+          },
+          {
+            "id": "53206905",
+            "rate": 4,
+            "at": "2016-05-04T04:00:00.000Z",
+            "by": {
+              "_id": "622f3405e36c59e6164fb967",
+              "fullname": "Aitana",
+              "imgUrl": "https://robohash.org/53206905?set=set1",
+            },
+            "txt": "Es un piso con mucho encanto, muy tranquilo y en un lugar inmejorable. La anfitriona, Isabel, es amable y facilitadora. El piso es una construcción antigua, lo que le da un ambiente genial pero también hace que el agua de la ducha salga con poquísima presión y sea un poco incómodo a veces. A parte de esto, si tuviese que poner alguna queja sería la hora del chekout, ya que las diez de la mañana me parece un poco pronto. \r\nEn conjunto tuvimos una muy buena experiencia y repetiríamos sin duda."
+          },
+          {
+            "id": "69740054",
+            "rate": 5,
+            "at": "2016-05-12T04:00:00.000Z",
+            "by": {
+              "_id": "622f3406e36c59e6164fbb88",
+              "fullname": "Valentina",
+              "imgUrl": "https://robohash.org/69740054?set=set1",
+            },
+            "txt": "Isabel was a wonderful host even if she was not there. She was in touch with me by mobile constantly. Thank you so much!\r\nThe house it's nice and was very clean and quite in the night.Perfect location. All you need for few days in Barcelona!"
+          },
+          {
+            "id": "53581405",
+            "rate": 5,
+            "at": "2016-05-16T04:00:00.000Z",
+            "by": {
+              "_id": "622f3405e36c59e6164fb715",
+              "fullname": "Jeremy",
+              "imgUrl": "https://robohash.org/53581405?set=set1",
+            },
+            "txt": "Isabel's place was perfect. It was cozy, clean and quiet. She was a very gracious host and was always there to answer my questions about getting around Barcelona. "
+          }
+        ],
+        "imgUrls": ['/src/assets/images/026.jpeg',
+          '/src/assets/images/027.jpeg',
+          '/src/assets/images/028.jpeg',
+          '/src/assets/images/029.jpeg',
+          '/src/assets/images/030.jpeg'],
+        "likedByUsers": ['mini-user'] // for user-wishlist : use $in
+      },
+
     ];
     utilService.saveToStorage(KEY, stays);
   }
