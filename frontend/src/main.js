@@ -5,10 +5,9 @@ import store from './store';
 import { focusDirective } from './directives';
 import { formatRelative } from 'date-fns';
 import ElementPlus from 'element-plus';
-import Datepicker from '@vuepic/vue-datepicker';
-import '@vuepic/vue-datepicker/dist/main.css';
-// import VueGoogleMaps from '@fawmi/vue-google-maps'
-
+import VueGoogleMaps from '@fawmi/vue-google-maps';
+// import Datepicker from '@vuepic/vue-datepicker';
+// import '@vuepic/vue-datepicker/dist/main.css';
 
 import './assets/scss/styles.scss';
 import 'material-icons/iconfont/material-icons.css';
@@ -36,12 +35,13 @@ app.directive('focus', focusDirective);
 app.use(ElementPlus);
 app.use(router);
 app.use(store);
-app.use(Datepicker);
+// app.use(Datepicker);
 
-// app.use(VueGoogleMaps, {
-//   load: {
-//     key: 'AIzaSyCCw7udchhbe1ycD5KUE-vB3DUbOi1gnoY',
-//   },
-// })
+app.use(VueGoogleMaps, {
+  load: {
+    key: 'AIzaSyBshrF2SW5c1FqFPoDUnBoIBpoQps7jU10',
+  },
+});
+
 
 app.mount('#app');

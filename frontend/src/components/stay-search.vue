@@ -91,9 +91,7 @@ export default {
 			amenities: [],
 		};
 	},
-	created() {
-		
-	},
+	created() {},
 	mounted() {
 		window.addEventListener('click', this.clickCheck);
 		//
@@ -103,14 +101,19 @@ export default {
 	},
 	computed: {
 		curFilterBy() {
-      console.log('getter', this.$store.getters.filterBy);
-			return this.$store.getters.filterBy
+			console.log('getter', this.$store.getters.filterBy);
+			return this.$store.getters.filterBy;
 		},
 	},
 	methods: {
 		async doFilter() {
-			this.amenities = this.curFilterBy.amenities
-      const filterBy = await this.$store.dispatch({ type: 'setFilter', destination: this.destination, guests:this.guests ,amenities:this.amenities})
+			this.amenities = this.curFilterBy.amenities;
+			const filterBy = await this.$store.dispatch({
+				type: 'setFilter',
+				destination: this.destination,
+				guests: this.guests,
+				amenities: this.amenities,
+			});
 			this.$router.push({
 				name: 'stay',
 				query: {
