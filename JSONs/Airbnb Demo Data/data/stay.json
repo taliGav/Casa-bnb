@@ -85,8 +85,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.6917,
-				"lan": 20.93792
+				"lan": -156.6917,
+				"lat": 20.93792
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -251,8 +251,8 @@
 			"street": "Montréal, QC, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.54985,
-				"lan": 45.52797
+				"lan": -73.54985,
+				"lat": 45.52797
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -406,8 +406,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.60154,
-				"lan": 41.14834
+				"lan": -8.60154,
+				"lat": 41.14834
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -667,8 +667,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.92922,
-				"lan": 40.68683
+				"lan": -73.92922,
+				"lat": 40.68683
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -939,8 +939,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.16685,
-				"lan": 41.38371
+				"lan": 2.16685,
+				"lat": 41.38371
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -1038,8 +1038,8 @@
 			"street": "Barcelona, Catalonia, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.17561,
-				"lan": 41.38701
+				"lan": 2.17561,
+				"lat": 41.38701
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -1326,8 +1326,8 @@
 			"street": "New York, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.93955,
-				"lan": 40.79733
+				"lan": -73.93955,
+				"lat": 40.79733
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -1618,8 +1618,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.59275,
-				"lan": 41.1462
+				"lan": -8.59275,
+				"lat": 41.1462
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -1898,8 +1898,8 @@
 			"street": "Porto, Porto District, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.63082,
-				"lan": 41.18075
+				"lan": -8.63082,
+				"lat": 41.18075
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -2020,8 +2020,8 @@
 			"street": "Taksim, Cihangir, Istanbul , Beyoğlu, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.98648,
-				"lan": 41.03376
+				"lan": 28.98648,
+				"lat": 41.03376
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -2340,8 +2340,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.68034,
-				"lan": 20.97104
+				"lan": -156.68034,
+				"lat": 20.97104
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -2589,8 +2589,8 @@
 			"street": "Fatih, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.96755,
-				"lan": 41.00488
+				"lan": 28.96755,
+				"lat": 41.00488
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -2870,8 +2870,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.18146,
-				"lan": 41.39716
+				"lan": 2.18146,
+				"lat": 41.39716
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -3183,8 +3183,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.15566,
-				"lan": 41.37479
+				"lan": 2.15566,
+				"lat": 41.37479
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -3468,8 +3468,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.94854,
-				"lan": 40.70998
+				"lan": -73.94854,
+				"lat": 40.70998
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -3744,8 +3744,8 @@
 			"street": "香港, 九龍, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.17545,
-				"lan": 22.29643
+				"lan": 114.17545,
+				"lat": 22.29643
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -4057,8 +4057,8 @@
 			"street": "Wailuku, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.5039,
-				"lan": 20.79664
+				"lan": -156.5039,
+				"lat": 20.79664
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -4202,8 +4202,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.98057,
-				"lan": 40.67549
+				"lan": -73.98057,
+				"lat": 40.67549
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -4320,8 +4320,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.17877,
-				"lan": 41.37903
+				"lan": 2.17877,
+				"lat": 41.37903
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -4477,8 +4477,8 @@
 			"street": "Istanbul, Istanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.98158,
-				"lan": 41.0314
+				"lan": 28.98158,
+				"lat": 41.0314
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -4636,8 +4636,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.69171,
-				"lan": 20.936890000000002
+				"lan": -156.69171,
+				"lat": 20.936890000000002
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -4766,8 +4766,8 @@
 			"street": "TR, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 29.06648,
-				"lan": 40.87794
+				"lan": 29.06648,
+				"lat": 40.87794
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -5059,8 +5059,8 @@
 			"street": "Montreal, QC, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.58256,
-				"lan": 45.51664
+				"lan": -73.58256,
+				"lat": 45.51664
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -5336,8 +5336,8 @@
 			"street": "New York, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.95854,
-				"lan": 40.7664
+				"lan": -73.95854,
+				"lat": 40.7664
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -5510,8 +5510,8 @@
 			"street": "Queens, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.9474,
-				"lan": 40.74771
+				"lan": -73.9474,
+				"lat": 40.74771
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -5795,8 +5795,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.17434,
-				"lan": 41.39137
+				"lan": 2.17434,
+				"lat": 41.39137
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -6081,8 +6081,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.15691,
-				"lan": 41.37475
+				"lan": 2.15691,
+				"lat": 41.37475
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -6367,8 +6367,8 @@
 			"street": "Darlington, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.1965,
-				"lan": -33.88848
+				"lan": 151.1965,
+				"lat": -33.88848
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -6473,8 +6473,8 @@
 			"street": "Montreal, QC, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.58677,
-				"lan": 45.52572
+				"lan": -73.58677,
+				"lat": 45.52572
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -6777,8 +6777,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.182736348008305,
-				"lan": -22.9106385343457
+				"lan": -43.182736348008305,
+				"lat": -22.9106385343457
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -7060,8 +7060,8 @@
 			"street": "Barcelona, CT, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.17935,
-				"lan": 41.43038
+				"lan": 2.17935,
+				"lat": 41.43038
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -7256,8 +7256,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.37035220190699,
-				"lan": -22.91636184358952
+				"lan": -43.37035220190699,
+				"lat": -22.91636184358952
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -7351,8 +7351,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.57981,
-				"lan": 45.51702
+				"lan": -73.57981,
+				"lat": 45.51702
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -7638,8 +7638,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.1998455458952,
-				"lan": -22.980051683700506
+				"lan": -43.1998455458952,
+				"lat": -22.980051683700506
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -7961,8 +7961,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.68832,
-				"lan": 20.95134
+				"lan": -156.68832,
+				"lat": 20.95134
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -8241,8 +8241,8 @@
 			"street": "New York, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.98763,
-				"lan": 40.72808
+				"lan": -73.98763,
+				"lat": 40.72808
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -8507,8 +8507,8 @@
 			"street": "Rio de Janeiro, RJ, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.4186896742968,
-				"lan": -22.96840021041473
+				"lan": -43.4186896742968,
+				"lat": -22.96840021041473
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -8599,8 +8599,8 @@
 			"street": "Hong Kong, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.15096,
-				"lan": 22.284
+				"lan": 114.15096,
+				"lat": 22.284
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -8814,8 +8814,8 @@
 			"street": "Şişli, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 29.01145,
-				"lan": 41.06423
+				"lan": 29.01145,
+				"lat": 41.06423
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -8898,8 +8898,8 @@
 			"street": "Hong Kong, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.15202,
-				"lan": 22.28582
+				"lan": 114.15202,
+				"lat": 22.28582
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -9197,8 +9197,8 @@
 			"street": "Hawi, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -155.87199,
-				"lan": 20.23256
+				"lan": -155.87199,
+				"lat": 20.23256
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -9289,8 +9289,8 @@
 			"street": "Barcelona, Catalonia, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.15307,
-				"lan": 41.3866
+				"lan": 2.15307,
+				"lat": 41.3866
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -9453,8 +9453,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.21291,
-				"lan": 41.40308
+				"lan": 2.21291,
+				"lat": 41.40308
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -9733,8 +9733,8 @@
 			"street": "Hong Kong , Causeway Bay, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.18976,
-				"lan": 22.27983
+				"lan": 114.18976,
+				"lat": 22.27983
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -9842,8 +9842,8 @@
 			"street": "Sheung Wan, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.15241,
-				"lan": 22.28351
+				"lan": 114.15241,
+				"lat": 22.28351
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -10043,8 +10043,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.61279,
-				"lan": 41.14106
+				"lan": -8.61279,
+				"lat": 41.14106
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -10342,8 +10342,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.58359,
-				"lan": 45.52143
+				"lan": -73.58359,
+				"lat": 45.52143
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -10499,8 +10499,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.98102,
-				"lan": 40.69406
+				"lan": -73.98102,
+				"lat": 40.69406
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -10580,8 +10580,8 @@
 			"street": "Tai Kok Tsui, Kowloon, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.15992,
-				"lan": 22.32324
+				"lan": 114.15992,
+				"lat": 22.32324
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -10710,8 +10710,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.364530263111185,
-				"lan": -23.008791637258927
+				"lan": -43.364530263111185,
+				"lat": -23.008791637258927
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -10849,8 +10849,8 @@
 			"street": "Elizabeth Bay, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.22674,
-				"lan": -33.87226
+				"lan": 151.22674,
+				"lat": -33.87226
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -11160,8 +11160,8 @@
 			"street": "Wailuku, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.50456,
-				"lan": 20.79559
+				"lan": -156.50456,
+				"lat": 20.79559
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -11347,8 +11347,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.58664,
-				"lan": 45.47348
+				"lan": -73.58664,
+				"lat": 45.47348
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -11457,8 +11457,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.58208,
-				"lan": 45.49165
+				"lan": -73.58208,
+				"lat": 45.49165
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -11750,8 +11750,8 @@
 			"street": "Avalon Beach, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.31642,
-				"lan": -33.62564
+				"lan": 151.31642,
+				"lat": -33.62564
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -12039,8 +12039,8 @@
 			"street": "Hong Kong, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.18207,
-				"lan": 22.28096
+				"lan": 114.18207,
+				"lat": 22.28096
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -12331,8 +12331,8 @@
 			"street": "Wan Chai, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.16853,
-				"lan": 22.2751
+				"lan": 114.16853,
+				"lat": 22.2751
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -12522,8 +12522,8 @@
 			"street": "Espinho, Aveiro, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.64343,
-				"lan": 40.99568
+				"lan": -8.64343,
+				"lat": 40.99568
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -12800,8 +12800,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.67559,
-				"lan": 41.15223
+				"lan": -8.67559,
+				"lat": 41.15223
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -13092,8 +13092,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.6311,
-				"lan": 41.16087
+				"lan": -8.6311,
+				"lat": 41.16087
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -13332,8 +13332,8 @@
 			"street": "Istanbul, Istanbul Province, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.91629,
-				"lan": 41.06038
+				"lan": 28.91629,
+				"lat": 41.06038
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -13610,8 +13610,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.57711,
-				"lan": 45.5084
+				"lan": -73.57711,
+				"lat": 45.5084
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -13852,8 +13852,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.59906,
-				"lan": 45.54521
+				"lan": -73.59906,
+				"lat": 45.54521
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -14134,8 +14134,8 @@
 			"street": "Montréal, QC, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.57646,
-				"lan": 45.53347
+				"lan": -73.57646,
+				"lat": 45.53347
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -14209,8 +14209,8 @@
 			"street": "Queens, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.91932,
-				"lan": 40.71112
+				"lan": -73.91932,
+				"lat": 40.71112
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -14312,8 +14312,8 @@
 			"street": "Fatih, Istanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.96792,
-				"lan": 41.0063
+				"lan": 28.96792,
+				"lat": 41.0063
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -14486,8 +14486,8 @@
 			"street": "Wailuku, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.50624,
-				"lan": 20.79562
+				"lan": -156.50624,
+				"lat": 20.79562
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -14762,8 +14762,8 @@
 			"street": "Hawi, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -155.83491,
-				"lan": 20.24861
+				"lan": -155.83491,
+				"lat": 20.24861
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -15043,8 +15043,8 @@
 			"street": "Istanbul, Istanbul Province, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.99543,
-				"lan": 41.05987
+				"lan": 28.99543,
+				"lat": 41.05987
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -15237,8 +15237,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.67817,
-				"lan": 20.97214
+				"lan": -156.67817,
+				"lat": 20.97214
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -15520,8 +15520,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.1643,
-				"lan": 41.40211
+				"lan": 2.1643,
+				"lat": 41.40211
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -15824,8 +15824,8 @@
 			"street": "Darlinghurst, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.21346,
-				"lan": -33.87603
+				"lan": 151.21346,
+				"lat": -33.87603
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -16094,8 +16094,8 @@
 			"street": "Kihei, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.44864,
-				"lan": 20.7264
+				"lan": -156.44864,
+				"lat": 20.7264
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -16198,8 +16198,8 @@
 			"street": "Dangar Island, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.23946,
-				"lan": -33.53785
+				"lan": 151.23946,
+				"lat": -33.53785
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -16476,8 +16476,8 @@
 			"street": "Montreal, QC, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.55591,
-				"lan": 45.50488
+				"lan": -73.55591,
+				"lat": 45.50488
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -16772,8 +16772,8 @@
 			"street": "Montreal, QC, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.56244,
-				"lan": 45.51006
+				"lan": -73.56244,
+				"lat": 45.51006
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -17038,8 +17038,8 @@
 			"street": "Sydney , NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.16994,
-				"lan": -33.86771
+				"lan": 151.16994,
+				"lat": -33.86771
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -17234,8 +17234,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.56646,
-				"lan": 45.51778
+				"lan": -73.56646,
+				"lat": 45.51778
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -17434,8 +17434,8 @@
 			"street": "Barcelona, Catalonia, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.16365,
-				"lan": 41.39416
+				"lan": 2.16365,
+				"lat": 41.39416
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -17716,8 +17716,8 @@
 			"street": "New York, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.95735,
-				"lan": 40.78465
+				"lan": -73.95735,
+				"lat": 40.78465
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -17869,8 +17869,8 @@
 			"street": "Tsim Sha Tsui, Kowloon, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.17366,
-				"lan": 22.2982
+				"lan": 114.17366,
+				"lat": 22.2982
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -18166,8 +18166,8 @@
 			"street": "Hong Kong, Kowloon, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.17308,
-				"lan": 22.30039
+				"lan": 114.17308,
+				"lat": 22.30039
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -18457,8 +18457,8 @@
 			"street": "New York, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.9648,
-				"lan": 40.80732
+				"lan": -73.9648,
+				"lat": 40.80732
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -18760,8 +18760,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.55208,
-				"lan": 45.55157
+				"lan": -73.55208,
+				"lat": 45.55157
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -19049,8 +19049,8 @@
 			"street": "Beyoğlu, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.97477,
-				"lan": 41.03735
+				"lan": 28.97477,
+				"lat": 41.03735
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -19340,8 +19340,8 @@
 			"street": "Randwick, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.24591,
-				"lan": -33.91446
+				"lan": 151.24591,
+				"lat": -33.91446
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -19622,8 +19622,8 @@
 			"street": "Paia, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.37272,
-				"lan": 20.90555
+				"lan": -156.37272,
+				"lat": 20.90555
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -19903,8 +19903,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.15836,
-				"lan": 41.41582
+				"lan": 2.15836,
+				"lat": 41.41582
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -20187,8 +20187,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.69275,
-				"lan": 45.44423
+				"lan": -73.69275,
+				"lat": 45.44423
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -20282,8 +20282,8 @@
 			"street": "Monterey, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.15248,
-				"lan": -33.96822
+				"lan": 151.15248,
+				"lat": -33.96822
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -20554,8 +20554,8 @@
 			"street": "Burgazada , İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 29.06121,
-				"lan": 40.88288
+				"lan": 29.06121,
+				"lat": 40.88288
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -20670,8 +20670,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.16622,
-				"lan": 41.3719
+				"lan": 2.16622,
+				"lat": 41.3719
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -20961,8 +20961,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.17481,
-				"lan": 41.39243
+				"lan": 2.17481,
+				"lat": 41.39243
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -21263,8 +21263,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.94883,
-				"lan": 40.6536
+				"lan": -73.94883,
+				"lat": 40.6536
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -21545,8 +21545,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.55985,
-				"lan": 45.53481
+				"lan": -73.55985,
+				"lat": 45.53481
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -21674,8 +21674,8 @@
 			"street": "Montreal, QC, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.5671,
-				"lan": 45.53713
+				"lan": -73.5671,
+				"lat": 45.53713
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -21957,8 +21957,8 @@
 			"street": "Paia, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.37856,
-				"lan": 20.91356
+				"lan": -156.37856,
+				"lat": 20.91356
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -22246,8 +22246,8 @@
 			"street": "New York, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.93943,
-				"lan": 40.79805
+				"lan": -73.93943,
+				"lat": 40.79805
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -22533,8 +22533,8 @@
 			"street": "Sydney Olympic Park, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.07343,
-				"lan": -33.84673
+				"lan": 151.07343,
+				"lat": -33.84673
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -22813,8 +22813,8 @@
 			"street": "Kihei, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.45205,
-				"lan": 20.76124
+				"lan": -156.45205,
+				"lat": 20.76124
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -23016,8 +23016,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.67924,
-				"lan": 20.971
+				"lan": -156.67924,
+				"lat": 20.971
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -23301,8 +23301,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.61289,
-				"lan": 41.14501
+				"lan": -8.61289,
+				"lat": 41.14501
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -23595,8 +23595,8 @@
 			"street": "Kihei, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.43514,
-				"lan": 20.68934
+				"lan": -156.43514,
+				"lat": 20.68934
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -23769,8 +23769,8 @@
 			"street": "Montréal, QC, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.649,
-				"lan": 45.55174
+				"lan": -73.649,
+				"lat": 45.55174
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -24061,8 +24061,8 @@
 			"street": "New York, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.99482,
-				"lan": 40.76438
+				"lan": -73.99482,
+				"lat": 40.76438
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -24352,8 +24352,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.16424,
-				"lan": 41.39139
+				"lan": 2.16424,
+				"lat": 41.39139
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -24465,8 +24465,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.17645081249057,
-				"lan": -22.93848268819496
+				"lan": -43.17645081249057,
+				"lat": -22.93848268819496
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -24558,8 +24558,8 @@
 			"street": "Narrabeen, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.29792,
-				"lan": -33.71472
+				"lan": 151.29792,
+				"lat": -33.71472
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -24839,8 +24839,8 @@
 			"street": "Newport Beach, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.32223,
-				"lan": -33.662
+				"lan": 151.32223,
+				"lat": -33.662
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -24975,8 +24975,8 @@
 			"street": "Darlinghurst, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.21476,
-				"lan": -33.87586
+				"lan": 151.21476,
+				"lat": -33.87586
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -25168,8 +25168,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.57179,
-				"lan": 45.51028
+				"lan": -73.57179,
+				"lat": 45.51028
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -25458,8 +25458,8 @@
 			"street": "New York, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.98717,
-				"lan": 40.72665
+				"lan": -73.98717,
+				"lat": 40.72665
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -25770,8 +25770,8 @@
 			"street": "Wailuku, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.50643,
-				"lan": 20.79652
+				"lan": -156.50643,
+				"lat": 20.79652
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -26071,8 +26071,8 @@
 			"street": "Sydney, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.20637,
-				"lan": -33.86903
+				"lan": 151.20637,
+				"lat": -33.86903
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -26367,8 +26367,8 @@
 			"street": "Hong Kong, Kowloon, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.17131,
-				"lan": 22.31832
+				"lan": 114.17131,
+				"lat": 22.31832
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -26531,8 +26531,8 @@
 			"street": "Kowloon, Hong Kong, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.17509,
-				"lan": 22.29879
+				"lan": 114.17509,
+				"lat": 22.29879
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -26822,8 +26822,8 @@
 			"street": "İstanbul, Istanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.93204,
-				"lan": 41.00193
+				"lan": 28.93204,
+				"lat": 41.00193
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -26927,8 +26927,8 @@
 			"street": "Barcelona, Catalonia, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.15533,
-				"lan": 41.40686
+				"lan": 2.15533,
+				"lat": 41.40686
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -27207,8 +27207,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.58889,
-				"lan": 45.54424
+				"lan": -73.58889,
+				"lat": 45.54424
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -27313,8 +27313,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.58715,
-				"lan": 45.5221
+				"lan": -73.58715,
+				"lat": 45.5221
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -27599,8 +27599,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.32005231206098,
-				"lan": -23.010668604567265
+				"lan": -43.32005231206098,
+				"lat": -23.010668604567265
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -27694,8 +27694,8 @@
 			"street": "Darlinghurst, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.21345,
-				"lan": -33.87552
+				"lan": 151.21345,
+				"lat": -33.87552
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -27815,8 +27815,8 @@
 			"street": "Beşiktaş, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 29.04246,
-				"lan": 41.06944
+				"lan": 29.04246,
+				"lat": 41.06944
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -27947,8 +27947,8 @@
 			"street": "Sydney, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.20828,
-				"lan": -33.86397
+				"lan": 151.20828,
+				"lat": -33.86397
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -28249,8 +28249,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.62518,
-				"lan": 41.16032
+				"lan": -8.62518,
+				"lat": 41.16032
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -28557,8 +28557,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.60106,
-				"lan": 41.14684
+				"lan": -8.60106,
+				"lat": 41.14684
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -28840,8 +28840,8 @@
 			"street": "HK, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.14238,
-				"lan": 22.28737
+				"lan": 114.14238,
+				"lat": 22.28737
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -28946,8 +28946,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.60033,
-				"lan": 41.14543
+				"lan": -8.60033,
+				"lat": 41.14543
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -29053,8 +29053,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.99438,
-				"lan": 40.69263
+				"lan": -73.99438,
+				"lat": 40.69263
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -29336,8 +29336,8 @@
 			"street": "North Sydney, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.21491,
-				"lan": -33.84125
+				"lan": 151.21491,
+				"lat": -33.84125
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -29634,8 +29634,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.64867,
-				"lan": 21.00432
+				"lan": -156.64867,
+				"lat": 21.00432
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -29901,8 +29901,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.247421907135774,
-				"lan": -22.936203246553816
+				"lan": -43.247421907135774,
+				"lat": -22.936203246553816
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -30002,8 +30002,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.59399,
-				"lan": 41.15757
+				"lan": -8.59399,
+				"lat": 41.15757
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -30304,8 +30304,8 @@
 			"street": "Barcelona, Catalonia, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.14733,
-				"lan": 41.39932
+				"lan": 2.14733,
+				"lat": 41.39932
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -30610,8 +30610,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.15413,
-				"lan": 41.39982
+				"lan": 2.15413,
+				"lat": 41.39982
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -30695,8 +30695,8 @@
 			"street": "Barcelona, Catalonia, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.16896,
-				"lan": 41.417
+				"lan": 2.16896,
+				"lat": 41.417
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -30974,8 +30974,8 @@
 			"street": "Vila Nova de Gaia, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.60605,
-				"lan": 41.13534
+				"lan": -8.60605,
+				"lat": 41.13534
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -31149,8 +31149,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.95646,
-				"lan": 40.72804
+				"lan": -73.95646,
+				"lat": 40.72804
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -31433,8 +31433,8 @@
 			"street": "Tamarama, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.26982,
-				"lan": -33.89741
+				"lan": 151.26982,
+				"lat": -33.89741
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -31720,8 +31720,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.20056249420509,
-				"lan": -22.98034625363379
+				"lan": -43.20056249420509,
+				"lat": -22.98034625363379
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -31996,8 +31996,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.55889,
-				"lan": 45.51891
+				"lan": -73.55889,
+				"lat": 45.51891
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -32123,8 +32123,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.207314073514915,
-				"lan": -22.98217661277284
+				"lan": -43.207314073514915,
+				"lat": -22.98217661277284
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -32289,8 +32289,8 @@
 			"street": "Barcelona, Catalonia, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.15761,
-				"lan": 41.39922
+				"lan": 2.15761,
+				"lat": 41.39922
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -32560,8 +32560,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.1990101137809,
-				"lan": -22.982413191528178
+				"lan": -43.1990101137809,
+				"lat": -22.982413191528178
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -32787,8 +32787,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.60827,
-				"lan": 41.14542
+				"lan": -8.60827,
+				"lat": 41.14542
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -33065,8 +33065,8 @@
 			"street": "Beyoğlu, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.98387,
-				"lan": 41.03315
+				"lan": 28.98387,
+				"lat": 41.03315
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -33181,8 +33181,8 @@
 			"street": "Bondi Beach, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.27448,
-				"lan": -33.8872
+				"lan": 151.27448,
+				"lat": -33.8872
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -33478,8 +33478,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.201524243404165,
-				"lan": -22.816717211926136
+				"lan": -43.201524243404165,
+				"lat": -22.816717211926136
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -33757,8 +33757,8 @@
 			"street": "Rio, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.32473578931987,
-				"lan": -23.001941778015905
+				"lan": -43.32473578931987,
+				"lat": -23.001941778015905
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -33875,8 +33875,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.57051,
-				"lan": 45.45091
+				"lan": -73.57051,
+				"lat": 45.45091
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -34154,8 +34154,8 @@
 			"street": "Hong Kong , 九龍, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.1669,
-				"lan": 22.3314
+				"lan": 114.1669,
+				"lat": 22.3314
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -34452,8 +34452,8 @@
 			"street": "Hong Kong, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.19362,
-				"lan": 22.28933
+				"lan": 114.19362,
+				"lat": 22.28933
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -34604,8 +34604,8 @@
 			"street": "Arncliffe, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.15274,
-				"lan": -33.937
+				"lan": 151.15274,
+				"lat": -33.937
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -34897,8 +34897,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.5571,
-				"lan": 45.52621
+				"lan": -73.5571,
+				"lat": 45.52621
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -35014,8 +35014,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.92745,
-				"lan": 40.70186
+				"lan": -73.92745,
+				"lat": 40.70186
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -35287,8 +35287,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.61184,
-				"lan": 41.14791
+				"lan": -8.61184,
+				"lat": 41.14791
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -35570,8 +35570,8 @@
 			"street": "Cihangir-Beyoglu , İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.98381,
-				"lan": 41.03154
+				"lan": 28.98381,
+				"lat": 41.03154
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -35863,8 +35863,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.190849194463404,
-				"lan": -22.984339360067814
+				"lan": -43.190849194463404,
+				"lat": -22.984339360067814
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -36154,8 +36154,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.1899284846398,
-				"lan": -22.920478977773982
+				"lan": -43.1899284846398,
+				"lat": -22.920478977773982
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -36313,8 +36313,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.175214261015086,
-				"lan": -22.95162577090241
+				"lan": -43.175214261015086,
+				"lat": -22.95162577090241
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -36596,8 +36596,8 @@
 			"street": "Kihei, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.44917,
-				"lan": 20.73013
+				"lan": -156.44917,
+				"lat": 20.73013
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -36851,8 +36851,8 @@
 			"street": "New York, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.9696,
-				"lan": 40.78558
+				"lan": -73.9696,
+				"lat": 40.78558
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -37161,8 +37161,8 @@
 			"street": "Barcelona, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.16963,
-				"lan": 41.39726
+				"lan": 2.16963,
+				"lat": 41.39726
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -37446,8 +37446,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.1653,
-				"lan": 41.39294
+				"lan": 2.1653,
+				"lat": 41.39294
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -37758,8 +37758,8 @@
 			"street": "Rio de Janeiro, RJ, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.22076222600562,
-				"lan": -22.96448811710617
+				"lan": -43.22076222600562,
+				"lat": -22.96448811710617
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -37919,8 +37919,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.17963,
-				"lan": 41.40087
+				"lan": 2.17963,
+				"lat": 41.40087
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -38025,8 +38025,8 @@
 			"street": "Istanbul, Istanbul Province, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.97604,
-				"lan": 41.02976
+				"lan": 28.97604,
+				"lat": 41.02976
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -38321,8 +38321,8 @@
 			"street": "Montreal, QC, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.58774,
-				"lan": 45.52028
+				"lan": -73.58774,
+				"lat": 45.52028
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -38603,8 +38603,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.61181,
-				"lan": 41.14464
+				"lan": -8.61181,
+				"lat": 41.14464
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -38900,8 +38900,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.343027190397,
-				"lan": -23.00878356989572
+				"lan": -43.343027190397,
+				"lat": -23.00878356989572
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -39180,8 +39180,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.21889444085009,
-				"lan": -22.980690335847203
+				"lan": -43.21889444085009,
+				"lat": -22.980690335847203
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -39383,8 +39383,8 @@
 			"street": "Montreal, QC, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.55553,
-				"lan": 45.52006
+				"lan": -73.55553,
+				"lat": 45.52006
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -39654,8 +39654,8 @@
 			"street": "Fairlight, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.26969,
-				"lan": -33.79629
+				"lan": 151.26969,
+				"lat": -33.79629
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -39786,8 +39786,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.68401,
-				"lan": 20.89045
+				"lan": -156.68401,
+				"lat": 20.89045
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -39994,8 +39994,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.97713,
-				"lan": 40.68675
+				"lan": -73.97713,
+				"lat": 40.68675
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -40278,8 +40278,8 @@
 			"street": "Bakırköy, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.78406,
-				"lan": 40.97867
+				"lan": 28.78406,
+				"lat": 40.97867
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -40522,8 +40522,8 @@
 			"street": "Pyrmont, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.1971,
-				"lan": -33.8708
+				"lan": 151.1971,
+				"lat": -33.8708
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -40807,8 +40807,8 @@
 			"street": "Barcelona, Catalonia, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.16851,
-				"lan": 41.3791
+				"lan": 2.16851,
+				"lat": 41.3791
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -41084,8 +41084,8 @@
 			"street": "Woollahra, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.23526,
-				"lan": -33.88944
+				"lan": 151.23526,
+				"lat": -33.88944
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -41365,8 +41365,8 @@
 			"street": "New York, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.9666,
-				"lan": 40.75489
+				"lan": -73.9666,
+				"lat": 40.75489
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -41664,8 +41664,8 @@
 			"street": "Beyoğlu, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.98195,
-				"lan": 41.02808
+				"lan": 28.98195,
+				"lat": 41.02808
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -41848,8 +41848,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.56526,
-				"lan": 45.51424
+				"lan": -73.56526,
+				"lat": 45.51424
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -42127,8 +42127,8 @@
 			"street": "Barcelona, Catalonia, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.17502,
-				"lan": 41.40995
+				"lan": 2.17502,
+				"lat": 41.40995
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -42435,8 +42435,8 @@
 			"street": "Maui County, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.26062,
-				"lan": 20.93195
+				"lan": -156.26062,
+				"lat": 20.93195
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -42704,8 +42704,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.17534,
-				"lan": 41.3843
+				"lan": 2.17534,
+				"lat": 41.3843
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -42987,8 +42987,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.19006,
-				"lan": 41.37787
+				"lan": 2.19006,
+				"lat": 41.37787
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -43072,8 +43072,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.60757,
-				"lan": 41.14562
+				"lan": -8.60757,
+				"lat": 41.14562
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -43354,8 +43354,8 @@
 			"street": "Kihei, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.44392,
-				"lan": 20.70799
+				"lan": -156.44392,
+				"lat": 20.70799
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -43641,8 +43641,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.61602,
-				"lan": 41.14295
+				"lan": -8.61602,
+				"lat": 41.14295
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -43971,8 +43971,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.69268,
-				"lan": 20.93999
+				"lan": -156.69268,
+				"lat": 20.93999
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -44052,8 +44052,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.19057,
-				"lan": 41.41254
+				"lan": 2.19057,
+				"lat": 41.41254
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -44150,8 +44150,8 @@
 			"street": "铜锣湾, 香港岛, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.18651,
-				"lan": 22.28186
+				"lan": 114.18651,
+				"lat": 22.28186
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -44388,8 +44388,8 @@
 			"street": "Hong Kong, Kowloon, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.17082,
-				"lan": 22.31871
+				"lan": 114.17082,
+				"lat": 22.31871
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -44682,8 +44682,8 @@
 			"street": "Hong Kong, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.17694,
-				"lan": 22.27757
+				"lan": 114.17694,
+				"lat": 22.27757
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -44966,8 +44966,8 @@
 			"street": "Marrickville, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.15036,
-				"lan": -33.90318
+				"lan": 151.15036,
+				"lat": -33.90318
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -45249,8 +45249,8 @@
 			"street": "Fatih, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.9754,
-				"lan": 41.01388
+				"lan": 28.9754,
+				"lat": 41.01388
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -45433,8 +45433,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.95321,
-				"lan": 40.69034
+				"lan": -73.95321,
+				"lat": 40.69034
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -45712,8 +45712,8 @@
 			"street": "Vila Nova de Gaia, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.60844,
-				"lan": 41.13442
+				"lan": -8.60844,
+				"lat": 41.13442
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -46011,8 +46011,8 @@
 			"street": "Mosman, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.23421,
-				"lan": -33.82085
+				"lan": 151.23421,
+				"lat": -33.82085
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -46284,8 +46284,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.18015675229857,
-				"lan": -22.92638234778768
+				"lan": -43.18015675229857,
+				"lat": -22.92638234778768
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -46372,8 +46372,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.31345955372205,
-				"lan": -23.013440373155003
+				"lan": -43.31345955372205,
+				"lat": -23.013440373155003
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -46505,8 +46505,8 @@
 			"street": "Hong Kong, Kowloon, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.17073,
-				"lan": 22.31723
+				"lan": 114.17073,
+				"lat": 22.31723
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -46799,8 +46799,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.5851,
-				"lan": 45.52408
+				"lan": -73.5851,
+				"lat": 45.52408
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -47125,8 +47125,8 @@
 			"street": "Rio de Janeiro, RJ, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.47716330794789,
-				"lan": -23.030647771247256
+				"lan": -43.47716330794789,
+				"lat": -23.030647771247256
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -47228,8 +47228,8 @@
 			"street": "Barcelona, Catalonia, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.12421,
-				"lan": 41.3784
+				"lan": 2.12421,
+				"lat": 41.3784
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -47513,8 +47513,8 @@
 			"street": "Coogee, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.25541,
-				"lan": -33.92398
+				"lan": 151.25541,
+				"lat": -33.92398
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -47673,8 +47673,8 @@
 			"street": "Porto, Porto District, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.61825,
-				"lan": 41.14366
+				"lan": -8.61825,
+				"lat": 41.14366
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -47960,8 +47960,8 @@
 			"street": "Brooklyn , NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.94247,
-				"lan": 40.672
+				"lan": -73.94247,
+				"lat": 40.672
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -48243,8 +48243,8 @@
 			"street": "Kihei, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.43694,
-				"lan": 20.68948
+				"lan": -156.43694,
+				"lat": 20.68948
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -48447,8 +48447,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.65856,
-				"lan": 21.00054
+				"lan": -156.65856,
+				"lat": 21.00054
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -48735,8 +48735,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.66885,
-				"lan": 20.86114
+				"lan": -156.66885,
+				"lat": 20.86114
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -49016,8 +49016,8 @@
 			"street": "Bondi Beach, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.27247,
-				"lan": -33.88875
+				"lan": 151.27247,
+				"lat": -33.88875
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -49302,8 +49302,8 @@
 			"street": "Alexandria, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.20377,
-				"lan": -33.90017
+				"lan": 151.20377,
+				"lat": -33.90017
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -49592,8 +49592,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.5702,
-				"lan": 45.46794
+				"lan": -73.5702,
+				"lat": 45.46794
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -49877,8 +49877,8 @@
 			"street": "Barra da Tijuca - Rio de Janeiro, RJ, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.30252917595476,
-				"lan": -23.01558513917358
+				"lan": -43.30252917595476,
+				"lat": -23.01558513917358
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -49983,8 +49983,8 @@
 			"street": "Hong Kong, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.13627,
-				"lan": 22.28544
+				"lan": 114.13627,
+				"lat": 22.28544
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -50066,8 +50066,8 @@
 			"street": "Kennedy Town, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.13005,
-				"lan": 22.28392
+				"lan": 114.13005,
+				"lat": 22.28392
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -50303,8 +50303,8 @@
 			"street": "Kihei, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.45649,
-				"lan": 20.76438
+				"lan": -156.45649,
+				"lat": 20.76438
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -50597,8 +50597,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.183,
-				"lan": 41.39142
+				"lan": 2.183,
+				"lat": 41.39142
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -50726,8 +50726,8 @@
 			"street": "Bundeena, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.15761,
-				"lan": -34.08087
+				"lan": 151.15761,
+				"lat": -34.08087
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -51037,8 +51037,8 @@
 			"street": "Leça da Palmeira, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.70481,
-				"lan": 41.18844
+				"lan": -8.70481,
+				"lat": 41.18844
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -51315,8 +51315,8 @@
 			"street": "Beaconsfield, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.2009,
-				"lan": -33.90987
+				"lan": 151.2009,
+				"lat": -33.90987
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -51414,8 +51414,8 @@
 			"street": "Fatih, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.97622,
-				"lan": 41.00359
+				"lan": 28.97622,
+				"lat": 41.00359
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -51707,8 +51707,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.17714541632985,
-				"lan": -22.96270793328072
+				"lan": -43.17714541632985,
+				"lat": -22.96270793328072
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -51862,8 +51862,8 @@
 			"street": "Beşiktaş, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.99883,
-				"lan": 41.04854
+				"lan": 28.99883,
+				"lat": 41.04854
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -52164,8 +52164,8 @@
 			"street": "İstanbul, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.97047,
-				"lan": 41.05901
+				"lan": 28.97047,
+				"lat": 41.05901
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -52272,8 +52272,8 @@
 			"street": "Hong Kong, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.14315,
-				"lan": 22.28855
+				"lan": 114.14315,
+				"lat": 22.28855
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -52454,8 +52454,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.61723,
-				"lan": 41.14839
+				"lan": -8.61723,
+				"lat": 41.14839
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -52753,8 +52753,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.60559,
-				"lan": 41.14586
+				"lan": -8.60559,
+				"lat": 41.14586
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -53052,8 +53052,8 @@
 			"street": "Istanbul, Istanbul Province, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.91804,
-				"lan": 41.05908
+				"lan": 28.91804,
+				"lat": 41.05908
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -53331,8 +53331,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.93981,
-				"lan": 40.70687
+				"lan": -73.93981,
+				"lat": 40.70687
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -53618,8 +53618,8 @@
 			"street": "Kihei, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.45699,
-				"lan": 20.75577
+				"lan": -156.45699,
+				"lat": 20.75577
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -53878,8 +53878,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.66475,
-				"lan": 20.99009
+				"lan": -156.66475,
+				"lat": 20.99009
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -54175,8 +54175,8 @@
 			"street": "sydney, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.20677,
-				"lan": -33.8671
+				"lan": 151.20677,
+				"lat": -33.8671
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -54470,8 +54470,8 @@
 			"street": "Montreal, QC, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.57803,
-				"lan": 45.50165
+				"lan": -73.57803,
+				"lat": 45.50165
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -54767,8 +54767,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.19177327893577,
-				"lan": -22.93691870901323
+				"lan": -43.19177327893577,
+				"lat": -22.93691870901323
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -55055,8 +55055,8 @@
 			"street": "Beyoğlu, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.95825,
-				"lan": 41.03777
+				"lan": 28.95825,
+				"lat": 41.03777
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -55340,8 +55340,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.66581,
-				"lan": 20.98825
+				"lan": -156.66581,
+				"lat": 20.98825
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -55609,8 +55609,8 @@
 			"street": "Hong Kong, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.14609,
-				"lan": 22.2853
+				"lan": 114.14609,
+				"lat": 22.2853
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -55730,8 +55730,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.15395,
-				"lan": 41.38005
+				"lan": 2.15395,
+				"lat": 41.38005
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -56006,8 +56006,8 @@
 			"street": "Hong Kong, Kowloon, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.17546,
-				"lan": 22.29937
+				"lan": 114.17546,
+				"lat": 22.29937
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -56132,8 +56132,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.175,
-				"lan": 41.40604
+				"lan": 2.175,
+				"lat": 41.40604
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -56411,8 +56411,8 @@
 			"street": "Barcelona, CT, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.12933,
-				"lan": 41.38665
+				"lan": 2.12933,
+				"lat": 41.38665
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -56666,8 +56666,8 @@
 			"street": "Tamarama, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.26412,
-				"lan": -33.90304
+				"lan": 151.26412,
+				"lat": -33.90304
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -56964,8 +56964,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.57605,
-				"lan": 45.53617
+				"lan": -73.57605,
+				"lat": 45.53617
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -57138,8 +57138,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.96053,
-				"lan": 40.71577
+				"lan": -73.96053,
+				"lat": 40.71577
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -57401,8 +57401,8 @@
 			"street": "Montréal, QC, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.59462,
-				"lan": 45.54566
+				"lan": -73.59462,
+				"lat": 45.54566
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -57628,8 +57628,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.98307,
-				"lan": 40.6651
+				"lan": -73.98307,
+				"lat": 40.6651
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -57932,8 +57932,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.97527,
-				"lan": 40.6884
+				"lan": -73.97527,
+				"lat": 40.6884
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -58212,8 +58212,8 @@
 			"street": "Vila do Conde, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.75383,
-				"lan": 41.3596
+				"lan": -8.75383,
+				"lat": 41.3596
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -58419,8 +58419,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.18822800527058,
-				"lan": -22.97000440296209
+				"lan": -43.18822800527058,
+				"lat": -22.97000440296209
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -58714,8 +58714,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.6836,
-				"lan": 20.96104
+				"lan": -156.6836,
+				"lat": 20.96104
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -58804,8 +58804,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.55863,
-				"lan": 45.49665
+				"lan": -73.55863,
+				"lat": 45.49665
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -58888,8 +58888,8 @@
 			"street": "Hong Kong, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.21303,
-				"lan": 22.21846
+				"lan": 114.21303,
+				"lat": 22.21846
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -59193,8 +59193,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.38281341435767,
-				"lan": -22.98369162798043
+				"lan": -43.38281341435767,
+				"lat": -22.98369162798043
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -59285,8 +59285,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.19321647887779,
-				"lan": -22.957538646861146
+				"lan": -43.19321647887779,
+				"lat": -22.957538646861146
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -59404,8 +59404,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.62354,
-				"lan": 41.14958
+				"lan": -8.62354,
+				"lat": 41.14958
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -59647,8 +59647,8 @@
 			"street": "Beyoğlu, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.98641,
-				"lan": 41.04177
+				"lan": 28.98641,
+				"lat": 41.04177
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -59758,8 +59758,8 @@
 			"street": "Kihei, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.45098,
-				"lan": 20.72891
+				"lan": -156.45098,
+				"lat": 20.72891
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -60060,8 +60060,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.52985,
-				"lan": 45.58603
+				"lan": -73.52985,
+				"lat": 45.58603
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -60182,8 +60182,8 @@
 			"street": "Mongkok, Kowloon, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.16885,
-				"lan": 22.31463
+				"lan": 114.16885,
+				"lat": 22.31463
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -60480,8 +60480,8 @@
 			"street": "Hong Kong, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.14292,
-				"lan": 22.28634
+				"lan": 114.14292,
+				"lat": 22.28634
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -60776,8 +60776,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.93285,
-				"lan": 40.70126
+				"lan": -73.93285,
+				"lat": 40.70126
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -61056,8 +61056,8 @@
 			"street": "Queens, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.82257,
-				"lan": 40.71485
+				"lan": -73.82257,
+				"lat": 40.71485
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -61369,8 +61369,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.32809919833523,
-				"lan": -23.011657136740638
+				"lan": -43.32809919833523,
+				"lat": -23.011657136740638
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -61656,8 +61656,8 @@
 			"street": "Fatih , İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.97325,
-				"lan": 41.00353
+				"lan": 28.97325,
+				"lat": 41.00353
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -61912,8 +61912,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.95375,
-				"lan": 40.68604
+				"lan": -73.95375,
+				"lat": 40.68604
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -62055,8 +62055,8 @@
 			"street": "büyükada, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 29.11608,
-				"lan": 40.862
+				"lan": 29.11608,
+				"lat": 40.862
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -62323,8 +62323,8 @@
 			"street": "Wailea-Makena, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.43536,
-				"lan": 20.69012
+				"lan": -156.43536,
+				"lat": 20.69012
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -62456,8 +62456,8 @@
 			"street": "Jamaica , NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.77835,
-				"lan": 40.68135
+				"lan": -73.77835,
+				"lat": 40.68135
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -62742,8 +62742,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.15255,
-				"lan": 41.39193
+				"lan": 2.15255,
+				"lat": 41.39193
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -62833,8 +62833,8 @@
 			"street": "Queens, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.79248,
-				"lan": 40.59058
+				"lan": -73.79248,
+				"lat": 40.59058
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -63126,8 +63126,8 @@
 			"street": "Fatih, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.97887,
-				"lan": 41.00318
+				"lan": 28.97887,
+				"lat": 41.00318
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -63229,8 +63229,8 @@
 			"street": "Elizabeth Bay, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.22488,
-				"lan": -33.87049
+				"lan": 151.22488,
+				"lat": -33.87049
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -63504,8 +63504,8 @@
 			"street": "Beyoğlu, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.97312,
-				"lan": 41.03485
+				"lan": 28.97312,
+				"lat": 41.03485
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -63798,8 +63798,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.61123,
-				"lan": 41.15225
+				"lan": -8.61123,
+				"lat": 41.15225
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -64090,8 +64090,8 @@
 			"street": "Wailea-Makena, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.43546,
-				"lan": 20.69055
+				"lan": -156.43546,
+				"lat": 20.69055
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -64378,8 +64378,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.16524,
-				"lan": 41.39478
+				"lan": 2.16524,
+				"lat": 41.39478
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -64671,8 +64671,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -74.02972,
-				"lan": 40.63199
+				"lan": -74.02972,
+				"lat": 40.63199
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -64878,8 +64878,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.15573,
-				"lan": 41.37249
+				"lan": 2.15573,
+				"lat": 41.37249
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -65169,8 +65169,8 @@
 			"street": "Şişli, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.99363,
-				"lan": 41.05261
+				"lan": 28.99363,
+				"lat": 41.05261
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -65315,8 +65315,8 @@
 			"street": "Fatih, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.97218,
-				"lan": 41.00755
+				"lan": 28.97218,
+				"lat": 41.00755
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -65596,8 +65596,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.60865,
-				"lan": 41.14441
+				"lan": -8.60865,
+				"lat": 41.14441
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -65907,8 +65907,8 @@
 			"street": "Balgowlah, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.26108,
-				"lan": -33.7975
+				"lan": 151.26108,
+				"lat": -33.7975
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -66186,8 +66186,8 @@
 			"street": "New York, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.99442,
-				"lan": 40.7113
+				"lan": -73.99442,
+				"lat": 40.7113
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -66467,8 +66467,8 @@
 			"street": "Queens, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.88025,
-				"lan": 40.74953
+				"lan": -73.88025,
+				"lat": 40.74953
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -66759,8 +66759,8 @@
 			"street": "Queens, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.92117,
-				"lan": 40.76964
+				"lan": -73.92117,
+				"lat": 40.76964
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -67052,8 +67052,8 @@
 			"street": "McMahons Point, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.20197,
-				"lan": -33.84212
+				"lan": 151.20197,
+				"lat": -33.84212
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -67326,8 +67326,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.58595,
-				"lan": 45.49039
+				"lan": -73.58595,
+				"lat": 45.49039
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -67430,8 +67430,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.61308,
-				"lan": 41.1413
+				"lan": -8.61308,
+				"lat": 41.1413
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -67610,7 +67610,7 @@
 					"imgUrl": "https://robohash.org/108507776?set=set1",
 					"id": "108507776"
 				},
-				"txt": "We spend a really good time in Porto, the flat is so well situated. The bridge is just next door, the view on the river is amazing, and plenty of restaurants and pubs, transport are just around.\nGonzalo is very kind to wait for us, also lat, for the check in, thank you.\n"
+				"txt": "We spend a really good time in Porto, the flat is so well situated. The bridge is just next door, the view on the river is amazing, and plenty of restaurants and pubs, transport are just around.\nGonzalo is very kind to wait for us, also lan, for the check in, thank you.\n"
 			},
 			{
 				"at": "2017-05-29T04:00:00.000Z",
@@ -67706,8 +67706,8 @@
 			"street": "Surry Hills, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.21272,
-				"lan": -33.88189
+				"lan": 151.21272,
+				"lat": -33.88189
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -67987,8 +67987,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.61205,
-				"lan": 41.14404
+				"lan": -8.61205,
+				"lat": 41.14404
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -68260,8 +68260,8 @@
 			"street": "Tai Hang (Causeway Bay), Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.19243,
-				"lan": 22.27928
+				"lan": 114.19243,
+				"lat": 22.27928
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -68466,8 +68466,8 @@
 			"street": "Mont-Royal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.65637,
-				"lan": 45.5169
+				"lan": -73.65637,
+				"lat": 45.5169
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -68562,8 +68562,8 @@
 			"street": "Şişli, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.98476,
-				"lan": 41.04177
+				"lan": 28.98476,
+				"lat": 41.04177
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -68661,8 +68661,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.91365,
-				"lan": 40.68174
+				"lan": -73.91365,
+				"lat": 40.68174
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -68949,8 +68949,8 @@
 			"street": "Istanbul maltepe cevizli , İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 29.15816,
-				"lan": 40.91311
+				"lan": 29.15816,
+				"lat": 40.91311
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -69063,8 +69063,8 @@
 			"street": "Beyoğlu, Istanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.97583,
-				"lan": 41.03393
+				"lan": 28.97583,
+				"lat": 41.03393
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -69369,8 +69369,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.49085154894161,
-				"lan": -23.02338692141779
+				"lan": -43.49085154894161,
+				"lat": -23.02338692141779
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -69666,8 +69666,8 @@
 			"street": "Makawao, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.31183,
-				"lan": 20.86967
+				"lan": -156.31183,
+				"lat": 20.86967
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -69960,8 +69960,8 @@
 			"street": "Taksim, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.97665,
-				"lan": 41.03661
+				"lan": 28.97665,
+				"lat": 41.03661
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -70250,8 +70250,8 @@
 			"street": "Istanbul, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 29.10343,
-				"lan": 40.95698
+				"lan": 29.10343,
+				"lat": 40.95698
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -70393,8 +70393,8 @@
 			"street": "Redfern, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.21378,
-				"lan": -33.89373
+				"lan": 151.21378,
+				"lat": -33.89373
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -70705,8 +70705,8 @@
 			"street": "Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.62513,
-				"lan": 41.15138
+				"lan": -8.62513,
+				"lat": 41.15138
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -70994,8 +70994,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.19254931342515,
-				"lan": -22.95295957541284
+				"lan": -43.19254931342515,
+				"lat": -22.95295957541284
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -71119,8 +71119,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.34708354191269,
-				"lan": -22.89507854707165
+				"lan": -43.34708354191269,
+				"lat": -22.89507854707165
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -71249,8 +71249,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.177902111552875,
-				"lan": -22.934426116531974
+				"lan": -43.177902111552875,
+				"lat": -22.934426116531974
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -71565,8 +71565,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.6495,
-				"lan": 41.1555
+				"lan": -8.6495,
+				"lat": 41.1555
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -71773,8 +71773,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.59285,
-				"lan": 45.52707
+				"lan": -73.59285,
+				"lat": 45.52707
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -71973,8 +71973,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.61302,
-				"lan": 41.15292
+				"lan": -8.61302,
+				"lat": 41.15292
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -72282,8 +72282,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.61492,
-				"lan": 41.14228
+				"lan": -8.61492,
+				"lat": 41.14228
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -72576,8 +72576,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.19423588543599,
-				"lan": -22.984148254337534
+				"lan": -43.19423588543599,
+				"lat": -22.984148254337534
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -72809,8 +72809,8 @@
 			"street": "Montreal, QC, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.57517,
-				"lan": 45.51623
+				"lan": -73.57517,
+				"lat": 45.51623
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -73092,8 +73092,8 @@
 			"street": "Mongkok, Kowloon, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.17094,
-				"lan": 22.32074
+				"lan": 114.17094,
+				"lat": 22.32074
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -73384,8 +73384,8 @@
 			"street": "North Sydney, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.21478,
-				"lan": -33.84297
+				"lan": 151.21478,
+				"lat": -33.84297
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -73665,8 +73665,8 @@
 			"street": "Hong Kong, New Territories, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.25503,
-				"lan": 22.30296
+				"lan": 114.25503,
+				"lat": 22.30296
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -73804,8 +73804,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.60701,
-				"lan": 41.14987
+				"lan": -8.60701,
+				"lat": 41.14987
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -74108,8 +74108,8 @@
 			"street": "Paddington, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.23062,
-				"lan": -33.88743
+				"lan": 151.23062,
+				"lat": -33.88743
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -74385,8 +74385,8 @@
 			"street": "Porto, Grande Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.60849,
-				"lan": 41.14186
+				"lan": -8.60849,
+				"lat": 41.14186
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -74661,8 +74661,8 @@
 			"street": "Şişli, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.98507,
-				"lan": 41.0674
+				"lan": 28.98507,
+				"lat": 41.0674
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -74819,8 +74819,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.69236,
-				"lan": 20.93646
+				"lan": -156.69236,
+				"lat": 20.93646
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -74934,8 +74934,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.19841687233581,
-				"lan": -22.98376501071312
+				"lan": -43.19841687233581,
+				"lat": -22.98376501071312
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -75051,8 +75051,8 @@
 			"street": "Brooklyn, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.98517,
-				"lan": 40.68779
+				"lan": -73.98517,
+				"lat": 40.68779
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -75323,8 +75323,8 @@
 			"street": "Istanbul, Istanbul Province, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.97994,
-				"lan": 41.03406
+				"lan": 28.97994,
+				"lat": 41.03406
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -75576,8 +75576,8 @@
 			"street": "Vila do Conde, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.75216,
-				"lan": 41.36439
+				"lan": -8.75216,
+				"lat": 41.36439
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -75789,8 +75789,8 @@
 			"street": "Fatih, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.97082,
-				"lan": 41.00611
+				"lan": 28.97082,
+				"lat": 41.00611
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -75922,8 +75922,8 @@
 			"street": "Kihei, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.45006,
-				"lan": 20.72946
+				"lan": -156.45006,
+				"lat": 20.72946
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -76218,8 +76218,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.58359,
-				"lan": 45.49633
+				"lan": -73.58359,
+				"lat": 45.49633
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -76390,8 +76390,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.62705,
-				"lan": 41.17498
+				"lan": -8.62705,
+				"lat": 41.17498
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -76618,8 +76618,8 @@
 			"street": "Matosinhos, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.68887,
-				"lan": 41.17544
+				"lan": -8.68887,
+				"lat": 41.17544
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -76844,8 +76844,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.175966118975914,
-				"lan": -22.964922391816017
+				"lan": -43.175966118975914,
+				"lat": -22.964922391816017
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -77141,8 +77141,8 @@
 			"street": "New York, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -73.96776,
-				"lan": 40.75482
+				"lan": -73.96776,
+				"lat": 40.75482
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -77445,8 +77445,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.32984175609327,
-				"lan": -23.011124595436097
+				"lan": -43.32984175609327,
+				"lat": -23.011124595436097
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -77659,8 +77659,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.20314,
-				"lan": 41.40951
+				"lan": 2.20314,
+				"lat": 41.40951
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -77930,8 +77930,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.22120070184858,
-				"lan": -22.984162872106157
+				"lan": -43.22120070184858,
+				"lat": -22.984162872106157
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -78013,8 +78013,8 @@
 			"street": "Hong Kong, Kowloon, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.17034,
-				"lan": 22.31655
+				"lan": 114.17034,
+				"lat": 22.31655
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -78184,8 +78184,8 @@
 			"street": "Manly, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.29282,
-				"lan": -33.80031
+				"lan": 151.29282,
+				"lat": -33.80031
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -78460,8 +78460,8 @@
 			"street": "Hong Kong, Kowloon, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.1714,
-				"lan": 22.30635
+				"lan": 114.1714,
+				"lat": 22.30635
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -78756,8 +78756,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.6868,
-				"lan": 20.95465
+				"lan": -156.6868,
+				"lat": 20.95465
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -79037,8 +79037,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.356043748726336,
-				"lan": -22.93881029842621
+				"lan": -43.356043748726336,
+				"lat": -22.93881029842621
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -79163,8 +79163,8 @@
 			"street": "Causeway Bay, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.18445,
-				"lan": 22.27878
+				"lan": 114.18445,
+				"lat": 22.27878
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -79456,8 +79456,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.16589,
-				"lan": 41.39002
+				"lan": 2.16589,
+				"lat": 41.39002
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -79733,8 +79733,8 @@
 			"street": "Hong Kong, Kowloon, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.17296,
-				"lan": 22.30547
+				"lan": 114.17296,
+				"lat": 22.30547
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -79962,8 +79962,8 @@
 			"street": "Hong Kong, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.15103,
-				"lan": 22.28109
+				"lan": 114.15103,
+				"lat": 22.28109
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -80118,8 +80118,8 @@
 			"street": "Hong Kong, Kowloon, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.17088,
-				"lan": 22.29663
+				"lan": 114.17088,
+				"lat": 22.29663
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -80391,8 +80391,8 @@
 			"street": "Hong Kong, Kowloon, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.16984,
-				"lan": 22.31915
+				"lan": 114.16984,
+				"lat": 22.31915
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -80474,8 +80474,8 @@
 			"street": "İstanbul, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.97675,
-				"lan": 41.03782
+				"lan": 28.97675,
+				"lat": 41.03782
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -80753,8 +80753,8 @@
 			"street": "Surry Hills, NSW, Australia",
 			"country": "Australia",
 			"location": {
-				"lat": 151.21554,
-				"lan": -33.88029
+				"lan": 151.21554,
+				"lat": -33.88029
 			},
 			"countryCode": "AU",
 			"city": "Sydney"
@@ -81055,8 +81055,8 @@
 			"street": "Kihei, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.4587,
-				"lan": 20.76445
+				"lan": -156.4587,
+				"lat": 20.76445
 			},
 			"countryCode": "US",
 			"city": "Maui"
@@ -81348,8 +81348,8 @@
 			"street": "Rio de Janeiro, Rio de Janeiro, Brazil",
 			"country": "Brazil",
 			"location": {
-				"lat": -43.192410876968225,
-				"lan": -22.982475758445254
+				"lan": -43.192410876968225,
+				"lat": -22.982475758445254
 			},
 			"countryCode": "BR",
 			"city": "Rio De Janeiro"
@@ -81481,8 +81481,8 @@
 			"street": "Hong Kong, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.15315,
-				"lan": 22.28028
+				"lan": 114.15315,
+				"lat": 22.28028
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -81765,8 +81765,8 @@
 			"street": "Quarry Bay, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.20854,
-				"lan": 22.29099
+				"lan": 114.20854,
+				"lat": 22.29099
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -82044,8 +82044,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.6114,
-				"lan": 41.16093
+				"lan": -8.6114,
+				"lat": 41.16093
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -82318,8 +82318,8 @@
 			"street": "Hong Kong, Hong Kong Island, Hong Kong",
 			"country": "Hong Kong",
 			"location": {
-				"lat": 114.15007,
-				"lan": 22.28422
+				"lan": 114.15007,
+				"lat": 22.28422
 			},
 			"countryCode": "HK",
 			"city": "Hong Kong"
@@ -82409,8 +82409,8 @@
 			"street": "Istanbul, İstanbul, Turkey",
 			"country": "Turkey",
 			"location": {
-				"lat": 28.98327,
-				"lan": 41.05766
+				"lan": 28.98327,
+				"lat": 41.05766
 			},
 			"countryCode": "TR",
 			"city": "Istanbul"
@@ -82524,8 +82524,8 @@
 			"street": "Barcelona, Catalunya, Spain",
 			"country": "Spain",
 			"location": {
-				"lat": 2.14449,
-				"lan": 41.39264
+				"lan": 2.14449,
+				"lat": 41.39264
 			},
 			"countryCode": "ES",
 			"city": "Barcelona"
@@ -82666,8 +82666,8 @@
 			"street": "Porto, Porto, Portugal",
 			"country": "Portugal",
 			"location": {
-				"lat": -8.59097,
-				"lan": 41.1541
+				"lan": -8.59097,
+				"lat": 41.1541
 			},
 			"countryCode": "PT",
 			"city": "Porto"
@@ -82936,8 +82936,8 @@
 			"street": "New York, NY, United States",
 			"country": "United States",
 			"location": {
-				"lat": -74.00074,
-				"lan": 40.74577
+				"lan": -74.00074,
+				"lat": 40.74577
 			},
 			"countryCode": "US",
 			"city": "New York"
@@ -83023,8 +83023,8 @@
 			"street": "Montréal, Québec, Canada",
 			"country": "Canada",
 			"location": {
-				"lat": -73.58022,
-				"lan": 45.48979
+				"lan": -73.58022,
+				"lat": 45.48979
 			},
 			"countryCode": "CA",
 			"city": "Montreal"
@@ -83129,8 +83129,8 @@
 			"street": "Lahaina, HI, United States",
 			"country": "United States",
 			"location": {
-				"lat": -156.66917,
-				"lan": 20.98857
+				"lan": -156.66917,
+				"lat": 20.98857
 			},
 			"countryCode": "US",
 			"city": "Maui"
