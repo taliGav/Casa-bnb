@@ -6,8 +6,7 @@ import { focusDirective } from './directives';
 import { formatRelative } from 'date-fns';
 import ElementPlus from 'element-plus';
 import VueGoogleMaps from '@fawmi/vue-google-maps';
-// import Datepicker from '@vuepic/vue-datepicker';
-// import '@vuepic/vue-datepicker/dist/main.css';
+
 
 import './assets/scss/styles.scss';
 import 'material-icons/iconfont/material-icons.css';
@@ -35,7 +34,7 @@ app.directive('focus', focusDirective);
 app.use(ElementPlus);
 app.use(router);
 app.use(store);
-// app.use(Datepicker);
+
 
 app.use(VueGoogleMaps, {
   load: {

@@ -2,7 +2,7 @@
 	<div v-if="center" >
 		<GMapMap
 			:center="center"
-			:zoom="8"
+			:zoom="12"
 			map-type-id="roadmap"
 			style="width: 100%; height: 480px"
 		>
