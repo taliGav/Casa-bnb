@@ -1,0 +1,64 @@
+.details-header-name {
+  color: $gray-3;
+  font-family: 'Cereal-Book';
+    font-size: 26px !important;
+    font-weight: 600 !important;
+    // line-height: inherit !important;
+    // display: inline !important;
+}
+  
+.details-sub-header-2{
+  font-size: 14px;
+  align-items: center;
+  line-height: 20px !important;
+}
+
+.rating {
+  margin-top: 4px;
+  color: $gray-3;
+  align-items: center;
+  gap: 10px;
+}
+  
+.ratings {
+  align-items: center;
+}
+  
+.rate-span {
+    overflow: clip !important;
+    font-weight: 600 !important;
+    text-overflow: ellipsis !important;
+    position: relative !important;
+  }
+  
+  
+.rate-icon {
+    height: 13px;
+    width: 13px;
+  }
+  
+.bullet{
+  margin: 8px 8px 0;
+}
+
+.details-header-location {
+  color: $gray-1;
+  // font-family: 'Cereal-medium';
+  font-weight: 600 !important;
+}
+  
+  .share-btn,
+  .save-btn {
+    border: none;
+    padding:8px
+  }
+  
+  span.save, span.share{
+    margin-right:8px;
+  }
+  
+.btn-text {
+    align-items: center;
+    cursor: pointer;
+  }
+  
