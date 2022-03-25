@@ -13,7 +13,7 @@
     <hr />
     <details-reviews :stay="stay" />
 
-    <!-- <details-map :stay="stay" /> -->
+    <details-map :stay="stay" />
 
     <div v-if="user?.isAdmin" class="btn-group gap-1">
       <button
