@@ -224,8 +224,8 @@ function _createStays() {
           "street": "Lahaina, HI, United States",
           "country": "United States",
           "location": {
-            "lat": -156.6917,
-            "lan": 20.93792
+            "lan": -156.6917,
+            "lat": 20.93792
           },
           "countryCode": "US",
           "city": "Maui"
@@ -250,7 +250,7 @@ function _createStays() {
             "by": {
               "_id": "u102",
               "fullname": "user2",
-              "imgUrl": "https://robohash.org/10711825?set=set1"
+              "imgUrl": "/src/assets/images/profilePics/1.jpg",
             }
           }
         ],
@@ -290,14 +290,14 @@ function _createStays() {
         "host": {
           "_id": "51399392",
           "fullname": "Angel",
-          "imgUrl": "https://a0.muscache.com/im/pictures/12be1141-74de-4f04-bf28-82c3ed589d11.jpg?aki_policy=profile_small",
+          "imgUrl": "/src/assets/images/profilePics/1.jpg",
         },
         "loc": {
           "street": "Montréal, QC, Canada",
           "country": "Canada",
           "location": {
-            "lat": -73.54985,
-            "lan": 45.52797
+            "lan": -73.54985,
+            "lat": 45.52797
           },
           "countryCode": "CA",
           "city": "Montreal"
@@ -310,7 +310,7 @@ function _createStays() {
             "by": {
               "_id": "u103",
               "fullname": "Rowan",
-              "imgUrl": "/img/img2.jpg"
+              "imgUrl": "/src/assets/images/profilePics/1.jpg",
             }
           }
         ],
@@ -389,14 +389,14 @@ function _createStays() {
         "host": {
           "_id": "51399391",
           "fullname": "Maria",
-          "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg?aki_policy=profile_small",
+          "imgUrl": "/src/assets/images/profilePics/1.jpg",
         },
         "loc": {
           "street": "Porto, Porto, Portugal",
           "country": "Portugal",
           "location": {
-            "lat": -8.60154,
-            "lan": 41.14834
+            "lan": -8.60154,
+            "lat": 41.14834
           },
           "countryCode": "PT",
           "city": "Porto"
@@ -409,7 +409,7 @@ function _createStays() {
             "by": {
               "_id": "u104",
               "fullname": "user3",
-              "imgUrl": "/img/img2.jpg"
+              "imgUrl": "/src/assets/images/profilePics/1.jpg",
             }
           },
           {
@@ -419,7 +419,7 @@ function _createStays() {
             "by": {
               "_id": "u103",
               "fullname": "Rowan",
-              "imgUrl": "/img/img2.jpg"
+              "imgUrl": "/src/assets/images/profilePics/1.jpg",
             }
           }
         ],
@@ -470,8 +470,8 @@ function _createStays() {
           "street": "Brooklyn, NY, United States",
           "country": "United States",
           "location": {
-            "lat": -73.92922,
-            "lan": 40.68683
+            "lan": -73.92922,
+            "lat": 40.68683
           },
           "countryCode": "US",
           "city": "New York"
@@ -484,7 +484,7 @@ function _createStays() {
             "by": {
               "_id": "u102",
               "fullname": "user2",
-              "imgUrl": "/img/img2.jpg"
+              "imgUrl": "/src/assets/images/profilePics/1.jpg",
             }
           },
           {
@@ -494,7 +494,7 @@ function _createStays() {
             "by": {
               "_id": "u103",
               "fullname": "Rowan",
-              "imgUrl": "/img/img2.jpg"
+              "imgUrl": "/src/assets/images/profilePics/1.jpg",
             }
           }
         ],
@@ -537,8 +537,8 @@ function _createStays() {
           "street": "Barcelona, Catalunya, Spain",
           "country": "Spain",
           "location": {
-            "lat": 2.16685,
-            "lan": 41.38371
+            "lan": 2.16685,
+            "lat": 41.38371
           },
           "countryCode": "ES",
           "city": "Barcelona"
@@ -551,7 +551,7 @@ function _createStays() {
             "by": {
               "_id": "u177",
               "fullname": "user77",
-              "imgUrl": "https://robohash.org/65117711?set=set1"
+              "imgUrl": "/src/assets/images/profilePics/1.jpg",
             }
           }
         ],
