@@ -1,15 +1,18 @@
 <template>
   <section v-if="stay" class="details-checkout">
     <div class="checkout-modal">
-      <div class="price-and-rate flex">
+      <div class="price-and-rate flex space">
         <div class="price-per-night">
           <span class="price">${{ stay.price }}</span>
           <span class="night">/night</span>
         </div>
-        <div class="rating flex"></div>
+        <ratings-reviews :stay="stay" />
       </div>
 
-      <div class="calender-checkout-container"></div>
+      <div class="calender-checkout-container">
+        <!-- <calender-cmp /> -->
+      </div>
+
       <div class="reserve-btn-cmp">
         <reserve-btn />
       </div>
@@ -22,10 +25,12 @@
 
 
 <script>
+import ratingsReviews from "./../reusable-cmps/ratings-reviews-cmp.vue";
 import reserveBtn from "./../reusable-cmps/reserve-btn-cmp.vue";
 
 export default {
   components: {
+    ratingsReviews,
     reserveBtn,
   },
   name: "details-checkout",
@@ -40,13 +45,3 @@ export default {
   methods: {},
 };
 </script>
-
-
-<style>
-.checkout-modal {
-  border: 1px solid rgb(221, 221, 221);
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
-}
-</style>

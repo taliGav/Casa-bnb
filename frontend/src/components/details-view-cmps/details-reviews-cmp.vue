@@ -28,12 +28,11 @@
       <button class="btn btn-info">Add Review</button>
     </form> -->
 
-    <div v-if="reviews?.length" class="flex col">
+    <div v-if="!noReviews" class="flex col">
       <article
         class="review flex col items-start"
-        v-for="review in reviews"
-        :key="review.id"
-      >
+        v-for="review in this.reviews"
+        :key="review.id" >
         <div class="reviewer-dets flex">
           <img :src="review.by.imgUrl" alt="" />
           <div class="reviewer-name">
@@ -51,7 +50,7 @@
         </button> -->
       </article>
     </div>
-    <div v-if="noReviews" class="p-2 flex flex-col gap-1">
+    <div v-else class="p-2 flex flex-col gap-1">
       <h4>No reviews yet.</h4>
       <p>Be the first...</p>
     </div>
@@ -64,30 +63,33 @@
 import ratingsReviews from "./../reusable-cmps/ratings-reviews-cmp.vue";
 
 export default {
-  components: {
-    ratingsReviews,
-  },
   name: "stay-details-reviews",
   props: {
     stay: Object,
   },
   data() {
     return {
+      reviews: this.stay.reviews,
       noReviews: false,
     };
   },
+  components: {
+    ratingsReviews,
+  },
   async created() {
-    checkReviews();
+    await updateReviews();
+    await checkReviews();
   },
-  computed: {
-    reviews() {
-      return this.stay.reviews;
-    },
-    checkReviews() {
-      if (!reviews || reviews === []) this.noReviews = true;
-    },
-  },
+  computed: {},
   methods: {
+    async updateReviews() {
+      this.reviews = this.stay.reviews;
+    },
+
+    async checkReviews() {
+      if (!this.reviews || this.reviews === []) this.noReviews = true;
+    },
+
     //       async addReview() {
     //   if (!this.reviewToAdd.content) return;
     //   await this.$store.dispatch({
