@@ -1,10 +1,10 @@
 <template>
-	<div class="stay-details-map flex justify-content align-items main-app">
+	<div v-if="center">
 		<GMapMap
 			:center="center"
-			:zoom="14"
-			map-type-id="terrain"
-			style="width: 100vw; height: 20rem"
+			:zoom="8"
+			map-type-id="roadmap"
+			style="width: 100%; height: 480px"
 		>
 			<GMapMarker
 				:key="index"
@@ -24,19 +24,6 @@
 			</GMapMarker>
 		</GMapMap>
 	</div>
-
-	<!-- <h3>Our Shops Locations</h3> -->
-	<!-- <div class="cities flex align-items justify-content space">
-		<div class="city-box" @click="moveTo({ lat: 32.0853, lng: 34.7818 })">
-			Tel-Aviv
-		</div>
-		<div class="city-box" @click="moveTo({ lat: 32.1624, lng: 34.8447 })">
-			Herzeliya
-		</div>
-		<div class="city-box" @click="moveTo({ lat: 32.1848, lng: 34.8713 })">
-			Raanana
-		</div>
-	</div> -->
 </template>
 
 <script>
@@ -48,31 +35,24 @@ export default {
 	data() {
 		return {
 			openedMarkerID: null,
-			center: { lat: 31.7683, lng: 35.2137 },
+			// stayLocation: this.locations,
+			center: { lat: null, lng: null },
 			markers: [
 				{
 					id: 1,
 					position: {
-						lat: 32.0853,
-						lng: 34.7818,
-					},
-				},
-				{
-					id: 2,
-					position: {
-						lat: 32.1624,
-						lng: 34.8447,
-					},
-				},
-				{
-					id: 3,
-					position: {
-						lat: 32.1848,
-						lng: 34.8713,
+						lat: null,
+						lng: null,
 					},
 				},
 			],
 		};
+	},
+	created() {
+		this.center.lat = this.stay.loc.location.lat;
+		this.center.lng = this.stay.loc.location.lan;
+		this.markers[0].position.lat = this.stay.loc.location.lat;
+		this.markers[0].position.lng = this.stay.loc.location.lan;
 	},
 	methods: {
 		openMarker(id) {
@@ -82,6 +62,7 @@ export default {
 			this.center = cords;
 		},
 	},
+	computed: {},
 };
 </script>
 
