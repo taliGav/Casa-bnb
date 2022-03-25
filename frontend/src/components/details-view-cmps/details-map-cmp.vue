@@ -1,5 +1,5 @@
 <template>
-	<div v-if="center">
+	<div v-if="center" >
 		<GMapMap
 			:center="center"
 			:zoom="8"
@@ -66,4 +66,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+
+</style>
