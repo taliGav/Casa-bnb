@@ -85,27 +85,11 @@
 			left: 32px;
 			bottom: 8px;
 		}
-		.guests-input-modal {
-			margin-top: 70px;
-			position: absolute;
-			width: 175px;
-			height: 50px;
-			background-color: $white;
-			border-radius: 50px;
-
-			button {
-				width: 30px;
-				height: 30px;
-				border-radius: 50px;
-				font-size: 16px;
-				font-weight: bold;
-			}
-			div {
-				font-size: 16px;
-			}
-		}
 	}
 }
+
+
+
 .search-btn-container {
 	align-self: center;
 	border-radius: 50px;
@@ -219,9 +203,9 @@
 .el-popper {
 	// margin-top: 200px;
 	position: fixed !important;
-	top: 39% !important;
+	top: 340px !important;
 	left: 50% !important;
-	transform: translate(-50%, -40%) !important;
+	transform: translate(-50%, -50%) !important;
 	// height: 33% !important;
 	// margin: 0 auto;
 	// transform: translate(50%, 50%) !important;
