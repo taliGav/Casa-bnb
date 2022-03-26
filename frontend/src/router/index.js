@@ -19,7 +19,7 @@ const router = createRouter({
       component: home,
     },
     {
-      path: '/stay/:destination?/:dates?/:guests?/:amenities?',
+      path: '/stay/:destination?/:dates?/:guests?/:amenities?/:minPrice?/:maxPrice?',
       name: 'stay',
       component: stayApp,
     },

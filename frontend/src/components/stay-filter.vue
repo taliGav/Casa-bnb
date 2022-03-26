@@ -18,29 +18,34 @@ export default {
   },
   data() {
     return {
-      destination: '',
-      dates: '0',
-      guests: null,
-      amenities:[],
-      priceRange:null,
+      filterBy: {
+        destination: '',
+        guests: '',
+        amenities: [],
+        priceRange: null,
+      },
       openPrice:false,
     }
   },
   created() {
+    console.log('created fil 1:',this.filterBy);
+    this.setFilter()
+    console.log('created fil 2:',this.filterBy);
     if(this.$route.query.amenities && typeof(this.$route.query.amenities)==='string'){
-      this.amenities=this.$route.query.amenities.split(',')||[]
+      this.filterBy.amenities=this.$route.query.amenities.split(',')||[]
     }
     else{
-      this.amenities=this.$route.query.amenities
+      this.filterBy.amenities=this.$route.query.amenities
     }
+    console.log('created fil 3:',this.filterBy);
   },
   computed: {
     curFilterBy() {
-      console.log(this)
-      this.destination=this.$store.getters.filterBy.destination
-      this.guests=this.$store.getters.filterBy.guests
-      this.priceRange=this.$store.getters.filterBy.priceRange
-      console.log(this)
+      // console.log(this)
+      // this.destination=this.$store.getters.filterBy.destination
+      // this.guests=this.$store.getters.filterBy.guests
+      // this.priceRange=this.$store.getters.filterBy.priceRange
+      // console.log(this)
 			return this.$store.getters.filterBy
 		},
     lessAmenities() {
@@ -48,39 +53,34 @@ export default {
     },
   },
   methods: {
-    async doFilter() {
-      console.log('filter do');
-      var temp = this.curFilterBy
-      console.log('filter do amn',this.amenities)
-      const copyAmenities = JSON.parse(JSON.stringify(this.amenities))
-      const filterBy = await this.$store.dispatch({ type: 'setFilter', destination: this.destination, guests:this.guests,amenities:copyAmenities,priceRange:this.priceRange })
-      // console.log('filter do :',filterBy);
+    setFilter(){
+      this.filterBy = this.curFilterBy
+    },
+    doFilter() {
+      // const copyAmenities = JSON.parse(JSON.stringify(this.filterBy.amenities))
 			this.$router.push({
 				name: 'stay',
 				query: {
-					destination: this.destination,
-					// dates: filterBy.dates,
-					guests: this.guests,
-					amenities: filterBy.amenities,
-          priceRange:this.priceRange
+					destination: this.filterBy.destination,
+					guests: this.filterBy.guests,
+          amenities: this.filterBy.amenities,
+          minPrice:this.filterBy.priceRange.min,
+          maxPrice:this.filterBy.priceRange.max,
 				},
 			});
       },
     setAmenities(amenitie){
-      // console.log('set amn amenitie', amenitie,this.filterBy.amenities);
-      if(!this.amenities){
-        // console.log('no amn');
-        this.amenities=[amenitie]
+      if(!this.filterBy.amenities){
+        this.filterBy.amenities=[amenitie]
         this.doFilter()
         return
       }
-      const idx = this.amenities.findIndex(am=>am===amenitie)
-      // console.log('set amn idx', idx);
+      const idx = this.filterBy.amenities.findIndex(am=>am===amenitie)
       if(idx===-1){
-        this.amenities.push(amenitie)
+        this.filterBy.amenities.push(amenitie)
       }
       else{
-        this.amenities.splice(idx, 1,)
+        this.filterBy.amenities.splice(idx, 1,)
       }
       this.doFilter()
     },
@@ -88,8 +88,9 @@ export default {
       this.openPrice=!this.openPrice
     },
     setPrice(priceRange){
+      this.togglePrice()
       console.log('priceRange',priceRange);
-      this.priceRange=priceRange;
+      this.filterBy.priceRange=priceRange;
       this.doFilter()
     }
   },

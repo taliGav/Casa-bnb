@@ -17,8 +17,11 @@ export default {
   },
   created() {
     this.setFilter()
-    this.$store.dispatch({ type: 'loadStays' })
+    
   },
+  watch: {
+        '$route': 'setFilter'
+    },
   computed: {
     stays() {
       return this.$store.getters.staysToShow
@@ -30,10 +33,8 @@ export default {
   },
   methods: {
     async setFilter() {
-      await this.$store.dispatch({ type: 'setFilter', destination: this.filterBy.destination, guests:this.filterBy.guests,amenities:this.filterBy.amenities,priceRange:this.filterBy.priceRange })
-      // console.log('app set filter:',this.filterBy);
-      // const copyfilter = JSON.parse(JSON.stringify(this.filterBy))
-      // this.$store.dispatch({ type: 'setFilter', filterBy: copyfilter })
+      await this.$store.commit({ type: 'setFilter', filterBy:this.filterBy });
+      this.$store.dispatch({ type: 'loadStays' })
     },
   },
   components: {
