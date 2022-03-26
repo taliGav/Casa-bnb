@@ -55,18 +55,14 @@ function getLessAmenities() {
 }
 
 async function query(filterBy = {}) {
-  // return await httpService.get(ENDPOINT, filterBy)
-  // return axios.get(BASE_URL, { params: { filterBy } }).then((res) => res.data)
+
   try {
     var stays = await storageService.query(KEY);
-    // console.log('serv filter:', filterBy.amenities);
     if (filterBy.destination) {
-      // console.log('regex', filterBy.destination);
       const regex = new RegExp(filterBy.destination, 'i');
       stays = stays.filter((stay) => regex.test(stay.loc.country) || regex.test(stay.loc.city));
     }
     if (filterBy.guests) {
-      // console.log('guests', filterBy.guests);
       stays = stays.filter((stay) => stay.capacity >= filterBy.guests);
     }
     if (filterBy.amenities) {
@@ -83,6 +79,10 @@ async function query(filterBy = {}) {
           return stay.amenities.includes(amenitie);
         });
       });
+    }
+    if (filterBy.maxPrice && filterBy.minPrice) {
+      console.log('serv price', filterBy.minPrice, filterBy.maxPrice);
+      stays = stays.filter((stay) => (stay.price >= filterBy.minPrice) && (stay.price <= filterBy.maxPrice));
     }
     return stays;
   }

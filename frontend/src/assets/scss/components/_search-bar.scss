@@ -1,5 +1,5 @@
 .filter {
-	height: 64px;
+	height: 66px;
 	width: 850px;
 	background-color: $white;
 	border-radius: 32px;
@@ -9,6 +9,9 @@
 	left: 100px;
 	font-family: 'Circular-Light';
 	font-size: 14px;
+	border: 1px solid rgba(0, 0, 0, 0.158);
+	margin-top: 10px;
+	margin-bottom: 26px;
 }
 
 .search-container {
@@ -195,7 +198,7 @@
 .el-date-range-picker__content {
 	border-radius: 25px;
 
-	height: 35vh;
+	height: 350px;
 	width: 350px !important;
 	border: none !important;
 }
@@ -215,10 +218,15 @@
 }
 .el-popper {
 	// margin-top: 200px;
-	position: absolute;
+	position: fixed !important;
+	top: 38% !important;
+	left: 45% !important;
 	transform: translate(-50%, -50%) !important;
-	left: 50% !important;
-	top: 35vh !important;
+	width: 50% !important;
+	// margin: 0 auto;
+	// transform: translate(50%, 50%) !important;
+	// left: 50% !important;
+	// top: 50% !important;
 }
 .el-popper[data-popper-placement^='bottom'] > .el-popper__arrow {
 	display: none !important;

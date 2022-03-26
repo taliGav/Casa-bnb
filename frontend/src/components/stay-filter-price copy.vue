@@ -1,20 +1,10 @@
 <template>
   <section class="price-modal">
-    <div class="slider">
-      <HistogramSlider
-        :width="250"
-        :bar-height="100"
-        :data="prices"
-        :min="0"
-        :max="maxPrice"
-        @change="slider"
-      />
+    <div class="slider-demo-block">
+      <el-slider v-model="value" range show-stops :max="maxPrice" />
     </div>
-    <hr />
-    <div class="price-modal-btns">
-      <button>clear</button>
-      <button @click="set">set</button>
-    </div>
+    <div>{{ value[0] }}</div>
+    <div>{{ value[1] }}</div>
   </section>
 </template>
 
@@ -28,12 +18,11 @@ export default {
   data() {
     return {
       prices: this.stays.map(stay => stay.price),
-      minPrice:0,
-      maxPrice:this.maxPrice,
+      value : ref([0, 200]),
     }
   },
   created() {
-    this.max = this.maxPrice
+
   },
   watch: {
     },
@@ -43,13 +32,7 @@ export default {
     }
   },
   methods: {
-    slider(event){
-      this.minPrice = event.from;
-      this.maxPrice = event.to;
-    },
-    set(){
-      this.$emit("setPrice", this.minPrice,this.maxPrice)
-    }
+
   },
 }
 </script>

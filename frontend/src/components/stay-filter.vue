@@ -1,9 +1,14 @@
 <template>
-  <section class="stay-filter flex space align">
+  <section class="stay-filter flex align">
     <button @click="togglePrice">price</button>
-    <stay-filter-price v-if="openPrice" :stays="stays" />
+    <stay-filter-price v-if="openPrice" :stays="stays" @setPrice="setPrice" />
     <div v-for="amenitie in lessAmenities" :key="amenitie">
-      <button @click="setAmenities(amenitie)">{{ amenitie }}</button>
+      <button
+        :class="{ 'active-btn': classes[amenitie] }"
+        @click="setAmenities(amenitie)"
+      >
+        {{ amenitie }}
+      </button>
     </div>
   </section>
 </template>
@@ -18,27 +23,30 @@ export default {
   },
   data() {
     return {
-      destination: '',
-      dates: '0',
-      guests: null,
-      amenities:[],
+      filterBy: {
+        destination: '',
+        guests: '',
+        amenities: [],
+        minPrice:null,
+        maxPrice:null
+      },
       openPrice:false,
+      classes:{
+        price:false,
+        'free cancellation':false,
+      }
     }
   },
   created() {
     if(this.$route.query.amenities && typeof(this.$route.query.amenities)==='string'){
-      this.amenities=this.$route.query.amenities.split(',')||[]
+      this.filterBy.amenities=this.$route.query.amenities.split(',')||[]
     }
     else{
-      this.amenities=this.$route.query.amenities
+      this.filterBy.amenities=this.$route.query.amenities
     }
   },
   computed: {
     curFilterBy() {
-      console.log(this)
-      this.destination=this.$store.getters.filterBy.destination
-      this.guests=this.$store.getters.filterBy.guests
-      console.log(this)
 			return this.$store.getters.filterBy
 		},
     lessAmenities() {
@@ -46,43 +54,50 @@ export default {
     },
   },
   methods: {
-    async doFilter() {
-      console.log('filter do');
-      var temp = this.curFilterBy
-      const copyAmenities = JSON.parse(JSON.stringify(this.amenities))
-      const filterBy = await this.$store.dispatch({ type: 'setFilter', destination: this.destination, guests:this.guests,amenities:copyAmenities })
-      // console.log('filter do :',filterBy);
+    setFilter(){
+      this.filterBy = this.curFilterBy
+    },
+    doFilter() {
 			this.$router.push({
 				name: 'stay',
 				query: {
-					destination: this.destination,
-					// dates: filterBy.dates,
-					guests: this.guests,
-					amenities: filterBy.amenities,
+					destination: this.filterBy.destination,
+					guests: this.filterBy.guests,
+          amenities: this.filterBy.amenities,
+          minPrice:this.filterBy.minPrice,
+          maxPrice:this.filterBy.maxPrice,
 				},
 			});
       },
     setAmenities(amenitie){
-      // console.log('set amn amenitie', amenitie,this.filterBy.amenities);
-      if(!this.amenities){
-        // console.log('no amn');
-        this.amenities=[amenitie]
+      if(!this.filterBy.amenities){
+        this.filterBy.amenities=[amenitie]
         this.doFilter()
         return
       }
-      const idx = this.amenities.findIndex(am=>am===amenitie)
-      // console.log('set amn idx', idx);
+      const idx = this.filterBy.amenities.findIndex(am=>am===amenitie)
       if(idx===-1){
-        this.amenities.push(amenitie)
+        this.filterBy.amenities.push(amenitie)
       }
       else{
-        this.amenities.splice(idx, 1,)
+        this.filterBy.amenities.splice(idx, 1,)
       }
+      // this.classes[amenitie]= !this.classes[amenitie]
+      // console.log('classsss!!!!',this.classes[amenitie]);
       this.doFilter()
     },
     togglePrice(){
       this.openPrice=!this.openPrice
     },
+    setPrice(minPrice,maxPrice){
+      this.togglePrice()
+      this.filterBy.minPrice=minPrice;
+      this.filterBy.maxPrice=maxPrice;
+      this.doFilter()
+    },
+    class(){
+
+    }
   },
   components: {
     stayFilterPrice,
