@@ -1,6 +1,7 @@
 <template>
   <section class="stay-filter flex space align">
-    <!-- <stay-filter-price /> -->
+    <button @click="togglePrice">price</button>
+    <stay-filter-price v-if="openPrice" :stays="stays" />
     <div v-for="amenitie in lessAmenities" :key="amenitie">
       <button @click="setAmenities(amenitie)">{{ amenitie }}</button>
     </div>
@@ -12,12 +13,16 @@ import { utilService } from '../services/util-service'
 import stayFilterPrice from './stay-filter-price.vue'
 export default {
   name: 'stay-filter',
+  props: {
+    stays: Array,
+  },
   data() {
     return {
       destination: '',
       dates: '0',
       guests: null,
       amenities:[],
+      openPrice:false,
     }
   },
   created() {
@@ -74,7 +79,10 @@ export default {
         this.amenities.splice(idx, 1,)
       }
       this.doFilter()
-    }
+    },
+    togglePrice(){
+      this.openPrice=!this.openPrice
+    },
   },
   components: {
     stayFilterPrice,
