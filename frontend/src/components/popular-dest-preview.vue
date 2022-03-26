@@ -1,9 +1,8 @@
 <template>
   <section class="popular-preview">
-    <img :src="stay.imgUrl" />
+    <img :src="destination.imgUrl" />
     <div class="preview-data">
-      <p>{{ stay.name }},</p>
-      <p>{{ stay.country }}</p>
+      <p>{{ destination.name }},</p>
     </div>
   </section>
 </template>
@@ -12,9 +11,9 @@
 export default {
   components: {
   },
-  name: "stay-preview",
+  name: "destination-preview",
   props: {
-    stay: Object,
+    destination: Object,
   },
   data() {
     return {};

@@ -71,6 +71,7 @@ const PopularStays = [
     imgUrl: "/src/assets/images/011.jpeg"
   },
   {
+    "_id": "10006531",
     name: "Fresh and modern 1BR in Bed-Stuy",
     "country": "United States",
     imgUrl: "/src/assets/images/016.jpeg"

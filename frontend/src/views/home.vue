@@ -2,6 +2,7 @@
   <section class="home full main-app">
     <div class="hero full main-layout"></div>
     <div class="main-layout">
+      <popular-dest-list :popularDest="popularDest" />
       <popular-stays-list :popularStays="popularStays" />
     </div>
   </section>
@@ -10,6 +11,7 @@
 <script>
 import staySearch from "../components/stay-search.vue";
 import popularStaysList from '../components/popular-stays-list.vue'
+import popularDestList from '../components/popular-dest-list.vue'
 export default {
   name: "home",
   data() {
@@ -30,7 +32,8 @@ export default {
   methods: {},
   components: {
     staySearch,
-    popularStaysList
+    popularStaysList,
+    popularDestList,
   },
 };
 </script>
