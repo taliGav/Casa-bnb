@@ -3,7 +3,12 @@
     <button @click="togglePrice">price</button>
     <stay-filter-price v-if="openPrice" :stays="stays" @setPrice="setPrice" />
     <div v-for="amenitie in lessAmenities" :key="amenitie">
-      <button @click="setAmenities(amenitie)">{{ amenitie }}</button>
+      <button
+        :class="{ 'active-btn': classes[amenitie] }"
+        @click="setAmenities(amenitie)"
+      >
+        {{ amenitie }}
+      </button>
     </div>
   </section>
 </template>
@@ -22,30 +27,26 @@ export default {
         destination: '',
         guests: '',
         amenities: [],
-        priceRange: null,
+        minPrice:null,
+        maxPrice:null
       },
       openPrice:false,
+      classes:{
+        price:false,
+        'free cancellation':false,
+      }
     }
   },
   created() {
-    console.log('created fil 1:',this.filterBy);
-    this.setFilter()
-    console.log('created fil 2:',this.filterBy);
     if(this.$route.query.amenities && typeof(this.$route.query.amenities)==='string'){
       this.filterBy.amenities=this.$route.query.amenities.split(',')||[]
     }
     else{
       this.filterBy.amenities=this.$route.query.amenities
     }
-    console.log('created fil 3:',this.filterBy);
   },
   computed: {
     curFilterBy() {
-      // console.log(this)
-      // this.destination=this.$store.getters.filterBy.destination
-      // this.guests=this.$store.getters.filterBy.guests
-      // this.priceRange=this.$store.getters.filterBy.priceRange
-      // console.log(this)
 			return this.$store.getters.filterBy
 		},
     lessAmenities() {
@@ -57,15 +58,14 @@ export default {
       this.filterBy = this.curFilterBy
     },
     doFilter() {
-      // const copyAmenities = JSON.parse(JSON.stringify(this.filterBy.amenities))
 			this.$router.push({
 				name: 'stay',
 				query: {
 					destination: this.filterBy.destination,
 					guests: this.filterBy.guests,
           amenities: this.filterBy.amenities,
-          minPrice:this.filterBy.priceRange.min,
-          maxPrice:this.filterBy.priceRange.max,
+          minPrice:this.filterBy.minPrice,
+          maxPrice:this.filterBy.maxPrice,
 				},
 			});
       },
@@ -82,16 +82,21 @@ export default {
       else{
         this.filterBy.amenities.splice(idx, 1,)
       }
+      // this.classes[amenitie]= !this.classes[amenitie]
+      // console.log('classsss!!!!',this.classes[amenitie]);
       this.doFilter()
     },
     togglePrice(){
       this.openPrice=!this.openPrice
     },
-    setPrice(priceRange){
+    setPrice(minPrice,maxPrice){
       this.togglePrice()
-      console.log('priceRange',priceRange);
-      this.filterBy.priceRange=priceRange;
+      this.filterBy.minPrice=minPrice;
+      this.filterBy.maxPrice=maxPrice;
       this.doFilter()
+    },
+    class(){
+
     }
   },
   components: {

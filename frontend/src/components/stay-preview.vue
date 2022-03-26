@@ -15,6 +15,7 @@
         </span>
       </div>
       <div class="stay-loc">
+        <!-- <ol class="l7n4lsf dir dir-ltr"><li class="len26si dir dir-ltr">Entire rental unit</li><li class="len26si dir dir-ltr"><span class="sxjq0r dir dir-ltr" aria-hidden="true"> · </span>Merkaz HaIr</li></ol> -->
       <p>{{ stay.type }} in {{ stay.loc.city }}, {{ stay.loc.country }}</p>
       </div>
       <p class="preview-stay-title">{{ stay.name }}</p>
