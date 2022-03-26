@@ -2,7 +2,8 @@
   <section v-if="stay" class="stay-details">
     <details-header :stay="stay" />
     <details-gallery :stay="stay" />
-    <div class="details-main-container full flex">
+
+    <div class="details-main-container full flex space">
       <div class="main-inner-container">
         <details-host-main :stay="stay" />
       </div>
