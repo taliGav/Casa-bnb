@@ -2,6 +2,7 @@
 	background-color: rgba(255, 255, 255, 0);
 	width: 100%;
 	position: fixed;
+	transition: 0.3s;
 	// opacity: 0;
 }
 
@@ -9,20 +10,26 @@
 	// height: 80px;
 }
 .casa-symbol {
-	font-size: 2.5rem;
+	font-size: 2.7rem;
 }
 
 .logo {
 	// flex-direction: start;
 	color: $theme-red;
-	width: 102px;
-	height: 80px;
+	width: 120px;
+	height: 70px;
 	// font-family: Montserrat, 'Helvetica Neue', Helvetica;
 
 	a {
 		text-decoration: none;
 		color: $white;
 		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		transition: 0.4s;
+	}
+
+	.color-theme {
+		color: $theme-red;
+		text-shadow: none;
 	}
 
 	h2 {
@@ -43,6 +50,7 @@
 		width: 123px;
 		border-radius: 22px;
 		transition: 0.25s;
+		margin-left: 25px;
 		cursor: pointer;
 
 		a {
@@ -50,6 +58,10 @@
 			font-family: roboto, arial, helvetica, sans-serif;
 			// text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 			color: $white;
+			transition: 0.3s;
+		}
+		.color-black {
+			color: black;
 		}
 
 		&:hover {
@@ -67,10 +79,14 @@
 			font-family: roboto, arial, helvetica, sans-serif;
 			// text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 			color: $white;
+			transition: 0.3s;
 		}
+		.color-black {
+			color: black;
+		}
+
 		&:hover {
 			background-color: darken(rgba(255, 255, 255, 0.288), 3.5%);
-
 		}
 	}
 }
@@ -100,4 +116,8 @@
 		font-weight: 600;
 		margin-left: 12px;
 	}
+}
+
+.visible {
+	background-color: $white;
 }
