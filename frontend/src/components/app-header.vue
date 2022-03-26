@@ -1,34 +1,34 @@
 <template>
-	<header
-		class="main-header main-layout"
-		ref="header"
-		:class="{ visible: !isOpen }"
-	>
-		<div class="header-content flex space">
-			<div class="logo flex just align just">
-				<h2>
-					<router-link :class="{ 'color-theme': !isOpen }" to="/">
-						casa<span class="casa-symbol">⌂</span
-						><span class="clr-teal">bnb</span>
-					</router-link>
-				</h2>
-			</div>
-			<nav class="nav-bar flex just align space">
-				<div class="explore-link flex just align">
-					<router-link :class="{ 'color-black': !isOpen }" to="/stay"
-						>Explore</router-link
-					>
-				</div>
-				<div class="host-link flex just align">
-					<router-link :class="{ 'color-black': !isOpen }" to="/"
-						>Become a Host</router-link
-					>
-				</div>
-				<user-badge></user-badge>
-			</nav>
-		</div>
-		<stay-search v-if="isOpen"></stay-search>
-	</header>
+  <header
+    class="main-header main-layout"
+    ref="header"
+    :class="{ visible: !isOpen }"
+  >
+    <div class="header-content flex space">
+      <div class="logo flex just align just">
+        <h2>
+          <router-link :class="{ 'color-theme': !isOpen }" to="/">
+            casa<span class="casa-symbol">⌂</span
+            ><span class="clr-teal">bnb</span>
+          </router-link>
+        </h2>
+      </div>
+      <nav class="nav-bar flex just align space">
+        <div class="explore-link flex just align">
+          <router-link :class="{ 'color-black': !isOpen }" to="/stay"
+            >Explore</router-link
+          >
+        </div>
+        <div class="host-link flex just align">
+          <router-link :class="{ 'color-black': !isOpen }" to="/"
+            >Become a Host</router-link
+          >
+        </div>
+        <user-badge></user-badge>
+      </nav>
+    </div>
+    <stay-search v-if="isOpen"></stay-search>
+  </header>
 </template>
 <script>
 import userBadge from './user-badge.vue';
@@ -52,7 +52,7 @@ export default {
 	},
 	methods: {
 		handleScroll() {
-			console.log('scroll: ', window.scrollY);
+			// console.log('scroll: ', window.scrollY);
 			if (window.scrollY === 0) {
 				this.isOpen = true;
 				console.log('open search bar');
