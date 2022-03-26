@@ -1,9 +1,11 @@
 <template>
-  <div class="price-modal slider-demo-block">
-    <el-slider v-model="value" range show-stops :max="maxPrice" />
-  </div>
-  <div>{{ value[0] }}</div>
-  <div>{{ value[1] }}</div>
+  <section class="price-modal">
+    <div class="slider-demo-block">
+      <el-slider v-model="value" range show-stops :max="maxPrice" />
+    </div>
+    <div>{{ value[0] }}</div>
+    <div>{{ value[1] }}</div>
+  </section>
 </template>
 
 <script>

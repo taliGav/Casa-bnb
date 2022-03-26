@@ -1,5 +1,5 @@
 <template>
-  <section class="stay-filter flex space align">
+  <section class="stay-filter flex align">
     <button @click="togglePrice">price</button>
     <stay-filter-price v-if="openPrice" :stays="stays" />
     <div v-for="amenitie in lessAmenities" :key="amenitie">
