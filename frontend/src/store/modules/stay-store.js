@@ -7,6 +7,7 @@ export default {
       destination: '',
       guests: '',
       amenities: [],
+      priceRange: null,
     },
     amenities: stayService.getAmenities(),
     lessAmenities: stayService.getLessAmenities(),
@@ -47,10 +48,11 @@ export default {
       const idx = state.stays.findIndex((t) => t._id === stayId);
       state.stays.splice(idx, 1);
     },
-    setFilter(state, { destination, guests, amenities }) {
+    setFilter(state, { destination, guests, amenities, priceRange }) {
       state.filterBy.destination = destination ? destination : '';
       state.filterBy.guests = guests ? guests : 0;
       state.filterBy.amenities = amenities ? amenities : [];
+      state.filterBy.priceRange = priceRange ? priceRange : null;
     },
     setSort(state, { sortBy }) {
       state.sortBy = sortBy;
@@ -75,9 +77,9 @@ export default {
         commit({ type: 'removeStay', stayId });
       });
     },
-    setFilter({ dispatch, commit, state }, { destination, guests, amenities }) {
+    setFilter({ dispatch, commit, state }, { destination, guests, amenities, priceRange }) {
       // console.log('store', destination, guests);
-      commit({ type: 'setFilter', destination, guests, amenities });
+      commit({ type: 'setFilter', destination, guests, amenities, priceRange });
       dispatch({ type: 'loadStays' })
       return Promise.resolve(state.filterBy)
 

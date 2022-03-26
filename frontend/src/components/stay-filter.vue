@@ -1,7 +1,7 @@
 <template>
   <section class="stay-filter flex align">
     <button @click="togglePrice">price</button>
-    <stay-filter-price v-if="openPrice" :stays="stays" />
+    <stay-filter-price v-if="openPrice" :stays="stays" @setPrice="setPrice" />
     <div v-for="amenitie in lessAmenities" :key="amenitie">
       <button @click="setAmenities(amenitie)">{{ amenitie }}</button>
     </div>
@@ -22,6 +22,7 @@ export default {
       dates: '0',
       guests: null,
       amenities:[],
+      priceRange:null,
       openPrice:false,
     }
   },
@@ -38,6 +39,7 @@ export default {
       console.log(this)
       this.destination=this.$store.getters.filterBy.destination
       this.guests=this.$store.getters.filterBy.guests
+      this.priceRange=this.$store.getters.filterBy.priceRange
       console.log(this)
 			return this.$store.getters.filterBy
 		},
@@ -49,8 +51,9 @@ export default {
     async doFilter() {
       console.log('filter do');
       var temp = this.curFilterBy
+      console.log('filter do amn',this.amenities)
       const copyAmenities = JSON.parse(JSON.stringify(this.amenities))
-      const filterBy = await this.$store.dispatch({ type: 'setFilter', destination: this.destination, guests:this.guests,amenities:copyAmenities })
+      const filterBy = await this.$store.dispatch({ type: 'setFilter', destination: this.destination, guests:this.guests,amenities:copyAmenities,priceRange:this.priceRange })
       // console.log('filter do :',filterBy);
 			this.$router.push({
 				name: 'stay',
@@ -59,6 +62,7 @@ export default {
 					// dates: filterBy.dates,
 					guests: this.guests,
 					amenities: filterBy.amenities,
+          priceRange:this.priceRange
 				},
 			});
       },
@@ -83,6 +87,11 @@ export default {
     togglePrice(){
       this.openPrice=!this.openPrice
     },
+    setPrice(priceRange){
+      console.log('priceRange',priceRange);
+      this.priceRange=priceRange;
+      this.doFilter()
+    }
   },
   components: {
     stayFilterPrice,

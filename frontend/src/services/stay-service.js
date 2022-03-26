@@ -84,6 +84,10 @@ async function query(filterBy = {}) {
         });
       });
     }
+    if (filterBy.priceRange) {
+      console.log('serv price');
+      stays = stays.filter((stay) => (stay.price >= filterBy.priceRange.min) && (stay.price <= filterBy.priceRange.max));
+    }
     return stays;
   }
   finally {
