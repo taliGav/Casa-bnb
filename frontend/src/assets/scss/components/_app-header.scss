@@ -3,7 +3,8 @@
 	width: 100%;
 	position: fixed;
 	transition: 0.3s;
-	z-index: 4;
+	z-index: 100 !important;
+
 	// opacity: 0;
 }
 
@@ -121,4 +122,5 @@
 
 .visible {
 	background-color: $white;
+	// border-bottom: 1px solid rgba(0, 0, 0, 0.158);
 }

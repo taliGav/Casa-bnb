@@ -1,70 +1,70 @@
 <template>
-  <div class="filter-container main-layot full flex align just">
-    <form>
-      <div class="filter">
-        <div
-          class="search-container"
-          @click="focusSearch"
-          :style="{ width: isSearchOpen ? '250px' : '270px' }"
-        >
-          <span>Location</span>
-          <input
-            class="search-input"
-            v-model="filterBy.destination"
-            type="text"
-            placeholder="Where are you going?"
-            ref="input"
-          />
-        </div>
-        <div class="date-start" @click="showDatePicker">
-          <span>Check in</span>
-          <p>{{ startDate }}</p>
-        </div>
-        <div class="date-end" @click="showDatePicker">
-          <span>Check out</span>
-          <p>{{ endDate }}</p>
-          <el-date-picker
-            v-model="pickedDates"
-            type="daterange"
-            range-separator="To"
-            start-placeholder="Start date"
-            end-placeholder="End date"
-          />
-        </div>
-        <div class="search-guests" @click="addGuests">
-          <div class="guests-container">
-            <span>Guests</span>
-            <p>{{ filterBy.guests }}</p>
-            <div
-              v-if="addGuestsMenu"
-              class="guests-input-modal flex around align"
-            >
-              <button @click.stop="changeGuests(-1)" class="btn-round">
-                -
-              </button>
-              <div>{{ filterBy.guests }}</div>
-              <button @click.stop="changeGuests(+1)" class="btn-round">
-                +
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          @click="openSearch"
-          class="search-btn-container"
-          :style="{ width: isSearchOpen ? '130px' : '50px' }"
-        >
-          <img src="../assets/Images/logos/search-icon.svg" alt="" />
-          <p
-            v-if="isSearchOpen"
-            :style="{ opacity: isSearchOpen ? '100%' : '0%' }"
-          >
-            Search
-          </p>
-        </div>
-      </div>
-    </form>
-  </div>
+	<div class="filter-container main-layot full flex align just">
+		<form>
+			<div class="filter">
+				<div
+					class="search-container"
+					@click="focusSearch"
+					:style="{ width: isSearchOpen ? '250px' : '270px' }"
+				>
+					<span>Location</span>
+					<input
+						class="search-input"
+						v-model="filterBy.destination"
+						type="text"
+						placeholder="Where are you going?"
+						ref="input"
+					/>
+				</div>
+				<div class="date-start" @click="showDatePicker">
+					<span>Check in</span>
+					<p>{{ startDate }}</p>
+				</div>
+				<div class="date-end" @click="showDatePicker">
+					<span>Check out</span>
+					<p>{{ endDate }}</p>
+					<el-date-picker
+						v-model="pickedDates"
+						type="daterange"
+						range-separator="To"
+						start-placeholder="Start date"
+						end-placeholder="End date"
+					/>
+				</div>
+				<div class="search-guests" @click="addGuests">
+					<div class="guests-container">
+						<span>Guests</span>
+						<p>{{ filterBy.guests }}</p>
+						<div
+							v-if="addGuestsMenu"
+							class="guests-input-modal flex around align"
+						>
+							<button @click.stop="changeGuests(-1)" class="btn-round">
+								-
+							</button>
+							<div>{{ filterBy.guests }}</div>
+							<button @click.stop="changeGuests(+1)" class="btn-round">
+								+
+							</button>
+						</div>
+					</div>
+				</div>
+				<div
+					@click="openSearch"
+					class="search-btn-container"
+					:style="{ width: isSearchOpen ? '130px' : '50px' }"
+				>
+					<img src="../assets/Images/logos/search-icon.svg" alt="" />
+					<p
+						v-if="isSearchOpen"
+						:style="{ opacity: isSearchOpen ? '100%' : '0%' }"
+					>
+						Search
+					</p>
+				</div>
+			</div>
+		</form>
+	</div>
 </template>
 
 <script>
@@ -95,7 +95,7 @@ export default {
 		};
 	},
 	created() {
-		this.setFilter()
+		this.setFilter();
 	},
 	mounted() {
 		window.addEventListener('click', this.clickCheck);
@@ -106,7 +106,7 @@ export default {
 	},
 	computed: {
 		curFilterBy() {
-			return this.$store.getters.filterBy
+			return this.$store.getters.filterBy;
 		},
 		startDate() {
 			if (this.pickedDates) {
@@ -136,10 +136,10 @@ export default {
 		},
 	},
 	methods: {
-		setFilter(){
-			console.log('set search',this.curFilterBy);
-			this.filterBy.destination = this.curFilterBy.destination
-			this.filterBy.guests= this.curFilterBy.guests
+		setFilter() {
+			console.log('set search', this.curFilterBy);
+			this.filterBy.destination = this.curFilterBy.destination;
+			this.filterBy.guests = this.curFilterBy.guests;
 		},
 		doFilter() {
 			this.$router.push({
