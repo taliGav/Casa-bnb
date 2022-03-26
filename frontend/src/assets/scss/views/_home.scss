@@ -5,3 +5,25 @@
 	// background-color: red;
 	background-size: cover;
 }
+
+.popular-list{
+	display: grid;
+	column-gap: 20px;
+	grid-template-columns: repeat(4,minmax(0,1fr));
+	padding: 50px;
+
+	.popular-preview{
+		// display: block;
+		text-transform: capitalize;
+		font-family: airbnb-regular,sans-serif;
+		font-size: 22px;
+		color: #222;
+		img{
+			width: 100%;
+			border-radius: 10px;
+			aspect-ratio: 1/1;
+			-o-object-fit: cover;
+			object-fit: cover;
+		}
+	}
+}

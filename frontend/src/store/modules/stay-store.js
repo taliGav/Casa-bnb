@@ -11,6 +11,8 @@ export default {
     },
     amenities: stayService.getAmenities(),
     lessAmenities: stayService.getLessAmenities(),
+    popularDest: stayService.getPopularDest(),
+    popularStays: stayService.getPopularStays(),
   },
 
   getters: {
@@ -30,9 +32,17 @@ export default {
       return amenities;
     },
     lessAmenities({ lessAmenities }) {
-      var lessAmenities1 = JSON.parse(JSON.stringify(lessAmenities))
-      return lessAmenities1;
+      var lessAmenitiesCopy = JSON.parse(JSON.stringify(lessAmenities))
+      return lessAmenitiesCopy;
     },
+    popularDest({ popularDest }) {
+      var popularDestCopy = JSON.parse(JSON.stringify(popularDest))
+      return popularDestCopy;
+    },
+    popularStays({ popularStays }) {
+      var popularStaysCopy = JSON.parse(JSON.stringify(popularStays))
+      return popularStaysCopy;
+    }
   },
 
   mutations: {

@@ -31,6 +31,52 @@ const lessAmenities = [
   "Air conditioning",
   "Washer",
 ];
+
+const PopularDest = [
+  {
+    name: "Tel Aviv",
+    imgUrl: "https://static.timesofisrael.com/www/uploads/2012/06/F100801MS97-1024x640.jpg"
+  },
+  {
+    name: "Montreal",
+    imgUrl: "https://www.tripsavvy.com/thmb/j322QK4_BTfNYj7D8LHCtjMCHl0=/735x0/montreal-observatory-au-sommet-pvm-place-ville-marie-naibank-getty-576db2935f9b585875a7a1f6-3f29e92afb7545b1a422e75564c6b8b3.jpg"
+  },
+  {
+    name: "Porto",
+    imgUrl: "https://travelfoot.com/wp-content/uploads/2020/10/airbnb-in-porto.jpg"
+  },
+  {
+    name: "New York",
+    imgUrl: "https://travelfoot.com/wp-content/uploads/2020/09/airbnb-new-york.jpg"
+  },
+]
+
+const PopularStays = [
+  {
+    "_id": "10006546",
+    name: "Ribeira Charming Duplex",
+    "country": "United States",
+    imgUrl: "/src/assets/images/001.jpeg"
+  },
+  {
+    "_id": "10006547",
+    name: "Belle chambre à côté Metro Papineau",
+    "country": "Canada",
+    imgUrl: "/src/assets/images/006.jpeg"
+  },
+  {
+    "_id": "10006548",
+    name: "M&M Space MM2  Apartamento no centro da cidade",
+    "country": "Portugal",
+    imgUrl: "/src/assets/images/011.jpeg"
+  },
+  {
+    name: "Fresh and modern 1BR in Bed-Stuy",
+    "country": "United States",
+    imgUrl: "/src/assets/images/016.jpeg"
+  },
+]
+
 const ENDPOINT = 'stay';
 // const BASE_URL =
 //   process.env.NODE_ENV !== 'development' ? '/api/stay' : '//localhost:3030/api/stay/'
@@ -43,9 +89,18 @@ export const stayService = {
   getEmptyStay,
   getAmenities,
   getLessAmenities,
+  getPopularDest,
+  getPopularStays,
 };
 
 _createStays();
+
+function getPopularDest() {
+  return PopularDest;
+}
+function getPopularStays() {
+  return PopularStays;
+}
 
 function getAmenities() {
   return amenities;
