@@ -22,6 +22,7 @@ import 'vue-histogram-slider/dist/histogram-slider.css';
 const app = createApp(App);
 
 app.component(HistogramSlider.name, HistogramSlider);
+app.config.productionTip = false;
 
 app.config.globalProperties.$filters = {
   formatTime(time) {
@@ -34,6 +35,8 @@ app.directive('focus', focusDirective);
 app.use(ElementPlus);
 app.use(router);
 app.use(store);
+app.use(HistogramSlider);
+// app.use(Datepicker);
 
 
 app.use(VueGoogleMaps, {
