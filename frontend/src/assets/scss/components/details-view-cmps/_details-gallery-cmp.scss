@@ -21,7 +21,7 @@
   .gallery-img {
     cursor: pointer;
     opacity: 1;
-    transition: opacity 0.4s ease-in-out;
+    transition: filter 0.4s ease-in-out;
     object-fit: cover;
     vertical-align: bottom;
     width: 100%;
@@ -32,10 +32,11 @@
   .gallery-img:hover {
     /* background: rgba(0, 0, 0, 0.5) */
     /* background-color: hwb(0 0% 100% / 0.664); */
-    opacity: 0.7;
-    // filter:brightness(70%);
+    // opacity: 0.7;
+    filter:brightness(80%);
+    // filter:contrast(50%);
     // filter: drop-shadow(100%);
-    filter:grayscale(30%);
+    // filter:grayscale(30%);
     // filter:blur(30%);
   }
   
