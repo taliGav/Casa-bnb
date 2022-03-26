@@ -28,26 +28,13 @@
 					<div class="guests-container">
 						<span>Guests</span>
 						<p>{{ filterBy.guests }}</p>
-						<div
-							v-if="addGuestsMenu"
-							class="guests-input-modal flex around align"
-						>
-							<button @click.stop="changeGuests(-1)" class="btn-round">
-								-
-							</button>
-							<div>{{ filterBy.guests }}</div>
-							<button @click.stop="changeGuests(+1)" class="btn-round">
-								+
-							</button>
-						</div>
-						<el-date-picker
-							v-model="pickedDates"
-							type="daterange"
-							range-separator="To"
-							start-placeholder="Start date"
-							end-placeholder="End date"
-						/>
 					</div>
+					<add-guests-count
+						v-if="addGuestsMenu"
+						:guests="filterBy.guests"
+						@addGuests="changeGuests"
+					/>
+					<!-- </add-guests-count> -->
 				</div>
 				<div
 					@click="openSearch"
@@ -64,25 +51,20 @@
 				</div>
 			</div>
 		</form>
-		<div></div>
+		<el-date-picker
+			v-model="pickedDates"
+			type="daterange"
+			range-separator="To"
+			start-placeholder="Start date"
+			end-placeholder="End date"
+		/>
 	</div>
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
+import addGuestsCount from './add-guests-count.vue';
 
 export default {
-	// setup() {
-	// 	const date = ref();
-	// 	onMounted(() => {
-	// 		const startDate = new Date();
-	// 		const endDate = new Date(new Date().setDate(startDate.getDate() + 7));
-	// 		date.value = [startDate, endDate];
-	// 	});
-	// 	return {
-	// 		pickedDates: null,
-	// 	};
-	// },
 	name: 'search',
 	data() {
 		return {
@@ -90,13 +72,14 @@ export default {
 			addGuestsMenu: false,
 			filterBy: {
 				destination: '',
-				guests: '',
+				guests: null,
 			},
 			pickedDates: null,
 		};
 	},
 	created() {
 		this.setFilter();
+		if (!this.filterBy.guests) this.filterBy.guests = 'Add guests';
 	},
 	mounted() {
 		window.addEventListener('click', this.clickCheck);
@@ -153,7 +136,6 @@ export default {
 		},
 		showDatePicker() {
 			this.$el.querySelector('.el-range-editor').click();
-			// console.log(this.pickedDates);
 			console.log('picked dates', this.startDate);
 		},
 		openSearch() {
@@ -194,7 +176,8 @@ export default {
 		},
 		changeGuests(num) {
 			if (typeof this.filterBy.guests === 'string') this.filterBy.guests = 0;
-
+			console.log('adding guest', num);
+			// this.filterBy.guests += num;
 			if (num < 0 && this.filterBy.guests < 1.5) {
 				this.filterBy.guests = 'Add guests';
 				return;
@@ -202,7 +185,9 @@ export default {
 			this.filterBy.guests += num;
 		},
 	},
-	components: {},
+	components: {
+		addGuestsCount,
+	},
 };
 </script>
 
