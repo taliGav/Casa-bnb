@@ -1,7 +1,7 @@
 <template>
   <section class="home full main-app">
     <div class="hero full main-layout"></div>
-    <div class="">
+    <div class="main-layout">
       <popular-stays-list :popularStays="popularStays" />
     </div>
   </section>
