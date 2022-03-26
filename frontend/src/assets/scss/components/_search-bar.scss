@@ -5,7 +5,7 @@
 	border-radius: 32px;
 	display: flex;
 	justify-content: space-between;
-	// position: relative;
+	// position: absolute;
 	left: 100px;
 	font-family: 'Circular-Light';
 	font-size: 14px;
@@ -53,7 +53,7 @@
 	border-radius: 32px 32px 32px 32px;
 	&:hover {
 		background-color: darken($white, 5%);
-        cursor: pointer;
+		cursor: pointer;
 	}
 	&:hover .guests-container {
 		background-color: darken($white, 5%);
@@ -82,7 +82,7 @@
 			left: 32px;
 			bottom: 8px;
 		}
-		.guests-input-modal{
+		.guests-input-modal {
 			margin-top: 70px;
 			position: absolute;
 			width: 175px;
@@ -90,49 +90,52 @@
 			background-color: $white;
 			border-radius: 50px;
 
-			button{
+			button {
 				width: 30px;
 				height: 30px;
 				border-radius: 50px;
-				font-size:16px;
+				font-size: 16px;
 				font-weight: bold;
 			}
-			div{
-				font-size:16px;
+			div {
+				font-size: 16px;
 			}
 		}
 	}
 }
 .search-btn-container {
-    align-self: center;
-    border-radius: 50px;
-    background-color: $theme-red;
-    width: 49px;
-    height: 49px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-right: 10px;
-    transition: 0.05s;
-    cursor: pointer;
-    
-    &:hover .search-guests{
-        background-color: darken($white, 5%);
-        cursor: pointer;
-    }
-    p{
-        color: $white;
-        font-family: "Circular-Bold";
-        font-size: 16px;
-        margin-right: 4px;
-        // transition-delay: 1s;
-        // transition: 1s;
-        
-    }
-    img{
-        height: 30px;
-        width: 30px;
-    }
+	align-self: center;
+	border-radius: 50px;
+	background-color: $theme-red;
+	width: 49px;
+	height: 49px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-right: 10px;
+	transition: 0.05s;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $theme-hover;
+	}
+
+	&:hover .search-guests {
+		background-color: darken($white, 5%);
+		cursor: pointer;
+	}
+	p {
+		color: $white;
+		font-family: 'Circular-Bold';
+		font-size: 16px;
+		margin-right: 4px;
+		// transition-delay: 1s;
+		// transition: 1s;
+	}
+	img {
+		height: 30px;
+		width: 30px;
+	}
 }
 
 .date-start {
@@ -181,8 +184,57 @@
 	}
 }
 
-.date-picker{
+.date-picker {
 	margin-top: 100px;
 	position: absolute;
-	margin-top:400px;
+	margin-top: 400px;
+}
+
+// DATEPICKER
+
+.el-date-range-picker__content {
+	border-radius: 25px;
+
+	height: 35vh;
+	width: 350px !important;
+	border: none !important;
+}
+
+.el-popper {
+	border-radius: 25px !important;
+}
+.el-picker-panel {
+	background: white !important;
+	border-radius: 25px !important;
+	width: 700px !important;
+}
+.el-picker-panel_body {
+	background: white !important;
+	border-radius: 25px !important;
+	width: 300px !important;
+}
+.el-popper {
+	// margin-top: 200px;
+	position: absolute;
+	transform: translate(-50%, -50%) !important;
+	left: 50% !important;
+	top: 35vh !important;
+}
+.el-popper[data-popper-placement^='bottom'] > .el-popper__arrow {
+	display: none !important;
+}
+.el-range-editor {
+	display: none !important;
+}
+.el-date-table td.start-date .el-date-table-cell__text {
+	background-color: black !important;
+}
+.el-date-table td.end-date .el-date-table-cell__text {
+	background-color: black !important;
+}
+.el-date-table td.today .el-date-table-cell__text {
+	color: #020202 !important;
+}
+.el-date-table td.in-range .el-date-table-cell {
+	background-color: rgb(235, 235, 235);
 }
