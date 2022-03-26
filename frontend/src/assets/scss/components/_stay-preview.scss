@@ -1,3 +1,9 @@
+// .stay-preview {
+//     display: grid;
+//     grid-template-columns: 100%;
+//     isolation: isolate;
+// }
+
 .stay-preview {
 	height: 365px;
     font-size: 1rem;
@@ -10,6 +16,40 @@
 	}
 }
 
+.stay-images-container{
+margin-bottom: 10px;
+}
+
+.preview-data{
+    .rating{ 
+        margin:0 0 6px 0;
+        font-size: 14px;
+        line-height: 18px;
+        
+        span{
+            font-weight: 100;
+        }
+
+        .span-main-prev-rating{
+            -webkit-box-align: center;
+
+            .img{
+                margin-right: 4px;
+            }
+
+            .reviews-count{
+                color: $gray-1;
+            }
+        }
+        
+    }
+.stay-loc{
+    margin:0 0 2px 0;
+    font-size: 18px;
+    line-height: 24px;
+    }
+}
+    
 .img-in-card {
 	object-fit: cover;
 	width: 100%;
@@ -34,13 +74,6 @@
     font-weight: 700;
 }
 
-.rating{ 
-    margin-bottom: 5px;
-
-    span{
-        font-weight: 100;
-    }
-}
 
 .el-carousel__button {
 height: 6px !important;

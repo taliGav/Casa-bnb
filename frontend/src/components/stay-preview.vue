@@ -1,14 +1,22 @@
 <template>
-  <section class="stay-preview flex col space">
+  <section class="stay-preview">
+    <!-- <section class="stay-preview flex col space"> -->
     <div class="stay-images-container">
       <preview-carousel :urls="this.stay.imgUrls" />
     </div>
-    <div class="preview-data flex col even">
+    <div class="preview-data">
+      <!-- <div class="preview-data flex col even"> -->
+      <ratings-reviews :stay="stay" />
+
       <div class="rating">
-        <img src="./../assets/icons/star.png" class="rate-icon" />
-        {{ avgRating }} (<span>{{ reviewsCount }}</span> reviews)
+        <span class="span-main-prev-rating flex align">
+          <img src="./../assets/icons/star.png" class="rate-icon" />
+          {{ avgRating }} <span class="reviews-count">&nbsp;({{ reviewsCount }})</span>
+        </span>
       </div>
+      <div class="stay-loc">
       <p>{{ stay.type }} in {{ stay.loc.city }}, {{ stay.loc.country }}</p>
+      </div>
       <p class="preview-stay-title">{{ stay.name }}</p>
       <p>
         <span class="stay-price">${{ stay.price }}</span> /night
@@ -40,17 +48,19 @@
 <script>
 import PreviewCarousel from "./preview-carousel.vue";
 
+// import ratingsReviews from "./reusable-cmps/ratings-reviews-cmp.vue";
+
 export default {
+  components: {
+    // ratingsReviews,
+    PreviewCarousel,
+  },
   name: "stay-preview",
   props: {
     stay: Object,
   },
   data() {
     return {};
-  },
-
-  components: {
-    PreviewCarousel,
   },
   computed: {
     avgRating() {
