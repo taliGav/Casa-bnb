@@ -23,13 +23,6 @@
 				<div class="date-end" @click="showDatePicker">
 					<span>Check out</span>
 					<p>{{ endDate }}</p>
-					<el-date-picker
-						v-model="pickedDates"
-						type="daterange"
-						range-separator="To"
-						start-placeholder="Start date"
-						end-placeholder="End date"
-					/>
 				</div>
 				<div class="search-guests" @click="addGuests">
 					<div class="guests-container">
@@ -47,6 +40,13 @@
 								+
 							</button>
 						</div>
+						<el-date-picker
+							v-model="pickedDates"
+							type="daterange"
+							range-separator="To"
+							start-placeholder="Start date"
+							end-placeholder="End date"
+						/>
 					</div>
 				</div>
 				<div
@@ -64,6 +64,7 @@
 				</div>
 			</div>
 		</form>
+		<div></div>
 	</div>
 </template>
 
