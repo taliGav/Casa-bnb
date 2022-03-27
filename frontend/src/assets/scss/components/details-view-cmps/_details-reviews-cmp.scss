@@ -19,9 +19,11 @@
 
     .reviews-list {
         color: $gray-3;
+        
 
         .preview-data {
             margin-bottom: 40px;
+            flex-grow: 50%;
 
             .reviewer-dets {
                 margin-bottom: 12px;

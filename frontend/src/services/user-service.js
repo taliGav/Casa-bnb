@@ -17,17 +17,18 @@ _createUsers();
 
 async function login(cred) {
   try {
+    console.log('service login cred:', cred);
     const user = await getByUsername(cred.username)
     if (!user) {
       return Promise.reject('Invalid username or password')
     }
 
-    const match = user.password.localCompare(cred.password)
-    if (match !== 0) {
+    const match = user.password === cred.password
+    if (!match) {
       return Promise.reject('Invalid username or password')
     }
     delete user.password
-    utilService.saveToStorage(LOGED_KEY, user);
+    utilService.saveToSessionStorage(LOGED_KEY, user);
     return user
   }
   finally { }
