@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import stayList from '../components/stay-list.vue'
+import stayList from '../components/details-app-list-cmps/stay-list.vue'
 import stayFilter from '../components/stay-filter.vue'
 export default {
   name: 'stay-app',
