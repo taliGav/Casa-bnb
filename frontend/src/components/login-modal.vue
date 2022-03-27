@@ -7,7 +7,7 @@
         class="login form px-3 py-2"
       >
         <div class="text-center my-2">
-          <h2 class="clr-teal">Hello Again!</h2>
+          <h2 class="clr-teal">Login</h2>
         </div>
         <div class="form-control">
           <label for="username" class="form-label fw-600">Username</label>
@@ -36,7 +36,7 @@
         </div>
 
         <button @click="isSignup = !isSignup" class="my-1 btn btn-info-text">
-          Don't have an account? Sign up now!
+          Sign up now!
         </button>
       </form>
 
