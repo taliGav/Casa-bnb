@@ -7,11 +7,12 @@
 					<p>Ages 13 or above</p>
 				</div>
 				<div class="guests-buttons flex space">
-					<button @click.stop.prevent="changeGuests(-1)" class="btn-round">
+					<button @click.stop.prevent="addAdult(-1)" class="btn-round">
 						-
 					</button>
-					<div>1</div>
-					<button @click.stop.prevent="changeGuests(+1)" class="btn-round">
+					<div>{{ adults }}</div>
+					<div v-if="!adults">0</div>
+					<button @click.stop.prevent="addAdult(+1)" class="btn-round">
 						+
 					</button>
 				</div>
@@ -30,15 +31,45 @@ export default {
 
 		data() {
 			return {
-				top: null,
-				left: null,
+				adults: null,
+				children: null,
+				infants: null,
+				totalGuests: this.guestsCount(),
 			};
 		},
+		created(){
+			this.adults = 0;
+		}
 	},
 	methods: {
-		changeGuests(num) {
-			this.$emit('addGuests', num);
+		guestsReservation() {
+			// this.$emit('addGuests', this.totalGuests);
 		},
+
+		addAdult(num) {
+			this.$emit('addGuests', num);
+			// if (!this.adults) this.adults = null;
+			this.adults += num;
+
+			// if (!this.adults && num < 0) return;
+			// if (!!this.adults) this.adults = 0;
+			// console.log(this.adults);
+			// // else
+			// this.adults + num;
+
+			// // console.log(num);
+			// console.log(this.adults);
+		},
+	},
+
+	computed: {
+		// guestsCount() {
+		// 	const sum = this.adults + this.children + this.infants;
+		// 	return sum;
+		// },
+	},
+	watch: {
+		// totalGuests: 'guestsReservation',
 	},
 };
 </script>

@@ -56,15 +56,7 @@ export default {
 };
 </script>
 <style>
-.el-popper-order {
-	/* background-color: v-bind(redColor); */
-	transform: translate(-50%, -50%) !important;
-	position: absolute !important;
-	/* top: v-bind(topPos) ; */
-	/* left: v-bind(leftPos); */
-	top: 100% !important;
-	left: 66.5% !important;
-}
+
 
 .father {
 	/* position: relative !important; */

@@ -107,7 +107,7 @@
 		background-color: $theme-hover;
 	}
 
-	&:hover .search-guests {
+	&:hover  {
 		background-color: darken($white, 5%);
 		cursor: pointer;
 	}
