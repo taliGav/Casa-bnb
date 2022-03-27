@@ -1,64 +1,65 @@
 <template>
-	<div class="filter-container main-layot full flex align just">
-		<form>
-			<div class="filter">
-				<div
-					class="search-container"
-					@click="focusSearch"
-					:style="{ width: isSearchOpen ? '250px' : '270px' }"
-				>
-					<span>Location</span>
-					<input
-						class="search-input"
-						v-model="filterBy.destination"
-						type="text"
-						placeholder="Where are you going?"
-						ref="input"
-					/>
-				</div>
-				<div class="date-start" @click="showDatePicker">
-					<span>Check in</span>
-					<p>{{ startDate }}</p>
-				</div>
-				<div class="date-end" @click="showDatePicker">
-					<span>Check out</span>
-					<p>{{ endDate }}</p>
-				</div>
-				<div class="search-guests" @click="addGuests">
-					<div class="guests-container">
-						<span>Guests</span>
-						<p>{{ filterBy.guests }}</p>
-					</div>
-					<add-guests-count
-						v-if="addGuestsMenu"
-						:guests="filterBy.guests"
-						@addGuests="changeGuests"
-					/>
-					<!-- </add-guests-count> -->
-				</div>
-				<div
-					@click="openSearch"
-					class="search-btn-container"
-					:style="{ width: isSearchOpen ? '130px' : '50px' }"
-				>
-					<img src="../assets/Images/logos/search-icon.svg" alt="" />
-					<p
-						v-if="isSearchOpen"
-						:style="{ opacity: isSearchOpen ? '100%' : '0%' }"
-					>
-						Search
-					</p>
-				</div>
-			</div>
-		</form>
-		<el-date-picker
-			v-model="pickedDates"
-			type="daterange"
-			range-separator="To"
-			start-placeholder="Start date"
-			end-placeholder="End date"
-		/>
-	</div>
+  <div class="filter-container main-layot full flex align just">
+    <form>
+      <div class="filter">
+        <div
+          class="search-container"
+          @click="focusSearch"
+          :style="{ width: isSearchOpen ? '250px' : '270px' }"
+        >
+          <span>Location</span>
+          <input
+            class="search-input"
+            v-model="filterBy.destination"
+            type="text"
+            placeholder="Where are you going?"
+            ref="input"
+          />
+        </div>
+        <div class="date-start" @click="showDatePicker">
+          <span>Check in</span>
+          <p>{{ startDate }}</p>
+        </div>
+        <div class="date-end" @click="showDatePicker">
+          <span>Check out</span>
+          <p>{{ endDate }}</p>
+        </div>
+        <div class="search-guests" @click="addGuests">
+          <div class="guests-container">
+            <span>Guests</span>
+            <p v-if="!filterBy.guests">Add guests</p>
+            <p v-else>{{ filterBy.guests }}</p>
+          </div>
+          <add-guests-count
+            v-if="addGuestsMenu"
+            :guests="filterBy.guests"
+            @addGuests="changeGuests"
+          />
+          <!-- </add-guests-count> -->
+        </div>
+        <div
+          @click="openSearch"
+          class="search-btn-container"
+          :style="{ width: isSearchOpen ? '130px' : '50px' }"
+        >
+          <img src="../assets/Images/logos/search-icon.svg" alt="" />
+          <p
+            v-if="isSearchOpen"
+            :style="{ opacity: isSearchOpen ? '100%' : '0%' }"
+          >
+            Search
+          </p>
+        </div>
+      </div>
+    </form>
+    <el-date-picker
+      v-model="pickedDates"
+      type="daterange"
+      range-separator="To"
+      start-placeholder="Start date"
+      end-placeholder="End date"
+    />
+  </div>
 </template>
 
 <script>
@@ -79,11 +80,9 @@ export default {
 	},
 	created() {
 		this.setFilter();
-		if (!this.filterBy.guests) this.filterBy.guests = 'Add guests';
 	},
 	mounted() {
 		window.addEventListener('click', this.clickCheck);
-		//
 	},
 	unmounted() {
 		window.removeEventListener('click', this.clickCheck);
@@ -175,13 +174,7 @@ export default {
 			this.addGuestsMenu = !this.addGuestsMenu;
 		},
 		changeGuests(num) {
-			if (typeof this.filterBy.guests === 'string') this.filterBy.guests = 0;
-			console.log('adding guest', num);
-			// this.filterBy.guests += num;
-			if (num < 0 && this.filterBy.guests < 1.5) {
-				this.filterBy.guests = 'Add guests';
-				return;
-			}
+			if (!this.filterBy.guests) this.filterBy.guests = 0;
 			this.filterBy.guests += num;
 		},
 	},
