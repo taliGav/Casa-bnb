@@ -1,17 +1,11 @@
-.checkout-container{
-//    margin-left:80px; 
-}
-
 .details-checkout {
-    border: 1px solid $gray-4;
-    border-radius: 12px;
-    padding: 24px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+  margin: 48px 0 0 50px;
+  border: 1px solid $gray-4;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+
+  .price-and-rate {
+    flex-flow: row wrap !important;
   }
-// .checkout-modal {
-//     border: 1px solid $gray-4;
-//     border-radius: 12px;
-//     padding: 24px;
-//     box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
-//   }
-  
+}

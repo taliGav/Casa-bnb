@@ -9,7 +9,7 @@
 
       <div class="rating">
         <span class="span-main-prev-rating flex align">
-          <img src="./../assets/icons/star.png" class="rate-icon" />
+          <img src="./../../assets/icons/star.png" class="rate-icon" />
           {{ avgRating }}
           <span class="reviews-count">&nbsp;({{ reviewsCount }})</span>
         </span>
