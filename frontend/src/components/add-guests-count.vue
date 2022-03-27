@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<div class="guests-input-modal flex aling just">
+		<div class="guests-input-modal flex aling just col space">
 			<div class="guests-details flex align just space">
 				<div>
 					<span>Adults</span>
@@ -10,9 +10,43 @@
 					<button @click.stop.prevent="addAdult(-1)" class="btn-round">
 						-
 					</button>
-					<div>{{ adults }}</div>
-					<div v-if="!adults">0</div>
+					<div class="flex align just">{{ adults }}</div>
+					<!-- <div v-if="!adults">0</div> -->
 					<button @click.stop.prevent="addAdult(+1)" class="btn-round">
+						+
+					</button>
+				</div>
+			</div>
+			<hr />
+			<div class="guests-details flex align just space">
+				<div>
+					<span>Children</span>
+					<p>Ages 2-12</p>
+				</div>
+				<div class="guests-buttons flex space">
+					<button @click.stop.prevent="addChild(-1)" class="btn-round">
+						-
+					</button>
+					<div class="flex align just">{{ children }}</div>
+					<!-- <div v-if="!adults">0</div> -->
+					<button @click.stop.prevent="addChild(+1)" class="btn-round">
+						+
+					</button>
+				</div>
+			</div>
+			<hr />
+			<div class="guests-details flex align just space">
+				<div>
+					<span>Infants</span>
+					<p>Under 2</p>
+				</div>
+				<div class="guests-buttons flex space">
+					<button @click.stop.prevent="addInfant(-1)" class="btn-round">
+						-
+					</button>
+					<div class="flex align just">{{ infants }}</div>
+					<!-- <div v-if="!adults">0</div> -->
+					<button @click.stop.prevent="addInfant(+1)" class="btn-round">
 						+
 					</button>
 				</div>
@@ -28,19 +62,21 @@ export default {
 		guests: {
 			type: Number,
 		},
-
-		data() {
-			return {
-				adults: null,
-				children: null,
-				infants: null,
-				totalGuests: this.guestsCount(),
-			};
-		},
-		created(){
-			this.adults = 0;
-		}
 	},
+	data() {
+		return {
+			adults: null,
+			children: null,
+			infants: null,
+			// totalGuests: this.guestsCount(),
+		};
+	},
+	created() {
+		this.adults = 0;
+		this.children = 0;
+		this.infants = 0;
+	},
+
 	methods: {
 		guestsReservation() {
 			// this.$emit('addGuests', this.totalGuests);
@@ -48,17 +84,18 @@ export default {
 
 		addAdult(num) {
 			this.$emit('addGuests', num);
-			// if (!this.adults) this.adults = null;
+			if (this.adults < 1 && num < 0) return;
 			this.adults += num;
-
-			// if (!this.adults && num < 0) return;
-			// if (!!this.adults) this.adults = 0;
-			// console.log(this.adults);
-			// // else
-			// this.adults + num;
-
-			// // console.log(num);
-			// console.log(this.adults);
+		},
+		addChild(num) {
+			this.$emit('addGuests', num);
+			if (this.children < 1 && num < 0) return;
+			this.children += num;
+		},
+		addInfant(num) {
+			this.$emit('addGuests', num);
+			if (this.infants < 1 && num < 0) return;
+			this.infants += num;
 		},
 	},
 
