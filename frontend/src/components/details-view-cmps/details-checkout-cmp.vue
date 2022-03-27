@@ -1,5 +1,5 @@
 <template>
-	<section v-if="stay" class="details-checkout ">
+	<section v-if="stay" class="details-checkout">
 		<div class="checkout-modal">
 			<div class="price-and-rate flex space">
 				<div class="price-per-night">
@@ -21,20 +21,32 @@
 						<div class="check-out-title title">CHECKOUT</div>
 						<div class="check-out-value">
 							<p>{{ endDate }}</p>
-							</div>
+						</div>
 					</div>
 				</div>
 
-				<div class="guests flex space" @click="openGuests">
+				<div class="guests flex space" @click.stop.prevent="openGuestsMenu">
 					<div class="guests-container">
 						<div class="guests-title title">GUESTS</div>
-						<div class="guests-value"></div>
+						<div class="guests-value flex">
+						<p>{{ guestsCount }} &ensp;</p> 
+	
+							<p v-if="guestsNumber">guest</p>
+							<p v-else>guests</p>
+						</div>
 					</div>
 					<div class="calender-checkout-container">
 						<date-picker
 							:isOpen="isCalendar"
 							@orders="orderDates"
 						></date-picker>
+						<div class="relative">
+							<add-guests-count
+								v-if="openGuests"
+								@guests="guests"
+								@addGuests="addGuests"
+							></add-guests-count>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -50,12 +62,14 @@
 import datePicker from '../date-picker.vue';
 import ratingsReviews from './../reusable-cmps/ratings-reviews-cmp.vue';
 import reserveBtn from './../reusable-cmps/reserve-btn-cmp.vue';
+import addGuestsCount from '../add-guests-count.vue';
 
 export default {
 	components: {
 		ratingsReviews,
 		reserveBtn,
 		datePicker,
+		addGuestsCount,
 	},
 	name: 'details-checkout',
 	props: {
@@ -63,11 +77,15 @@ export default {
 	},
 	data() {
 		return {
+			guestsCount: 1,
 			isCalendar: false,
 			resirvationDates: null,
+			openGuests: false,
 		};
 	},
-	created() {},
+	created() {
+		window.addEventListener('click', this.closeGuests);
+	},
 	computed: {
 		startDate() {
 			if (this.resirvationDates) {
@@ -95,14 +113,36 @@ export default {
 				return 'Add dates';
 			}
 		},
+		guestsNumber() {
+			return this.guestsCount > 1 ? false : true;
+		},
 	},
 	methods: {
+		addGuests(guest) {
+			// if (!guestsCount) this.guestsCount = 1;
+			this.guestsCount += guest;
+			console.log(guest);
+		},
 		openCalender() {
 			this.isCalendar = !this.isCalendar;
 		},
 		orderDates(dates) {
 			this.resirvationDates = dates;
 			console.log(dates);
+		},
+		openGuestsMenu() {
+			this.openGuests = true;
+		},
+		closeGuests(ev) {
+			const el = ev.target.className;
+			if (
+				el !== 'hguests-input-modal flex aling just col space' ||
+				el !== 'guests-details flex align just space'
+			) {
+				this.openGuests = false;
+			} else {
+				return;
+			}
 		},
 	},
 };

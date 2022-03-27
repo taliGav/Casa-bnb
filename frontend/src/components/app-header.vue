@@ -1,39 +1,39 @@
 <template>
-  <header
-    class="main-header main-layout"
-    ref="header"
-    :class="{ visible: !isOpen }"
-    :style="{ backgroundColor: searchStatus }"
-  >
-    <div class="header-content flex space">
-      <div class="logo flex just align just">
-        <h2>
-          <router-link :class="{ 'color-theme': colorsChange }" to="/">
-            casa<span class="casa-symbol">⌂</span
-            ><span class="clr-teal">bnb</span>
-          </router-link>
-        </h2>
-      </div>
-      <small-search-bar
-        :isOpen="isOpen"
-        @openSearch="openSearch"
-      ></small-search-bar>
-      <nav class="nav-bar flex just align space">
-        <div class="explore-link flex just align">
-          <router-link :class="{ 'color-black': colorsChange }" to="/stay"
-            >Explore</router-link
-          >
-        </div>
-        <div class="host-link flex just align">
-          <router-link :class="{ 'color-black': colorsChange }" to="/"
-            >Become a Host</router-link
-          >
-        </div>
-        <user-badge></user-badge>
-      </nav>
-    </div>
-    <stay-search v-if="isOpen"></stay-search>
-  </header>
+	<header
+		class="main-header main-layout"
+		ref="header"
+		:class="{ visible: !isOpen }"
+		:style="{ backgroundColor: searchStatus }"
+	>
+		<div class="header-content flex space">
+			<div class="logo flex just align just">
+				<h2>
+					<router-link :class="{ 'color-theme': colorsChange }" to="/">
+						casa<span class="casa-symbol">⌂</span
+						><span class="clr-teal">bnb</span>
+					</router-link>
+				</h2>
+			</div>
+			<small-search-bar
+				:isOpen="isOpen"
+				@openSearch="openSearch"
+			></small-search-bar>
+			<nav class="nav-bar flex just align space">
+				<div class="explore-link flex just align">
+					<router-link :class="{ 'color-black': colorsChange }" to="/stay"
+						>Explore</router-link
+					>
+				</div>
+				<div class="host-link flex just align">
+					<router-link :class="{ 'color-black': colorsChange }" to="/"
+						>Become a Host</router-link
+					>
+				</div>
+				<user-badge></user-badge>
+			</nav>
+		</div>
+		<stay-search v-if="isOpen"></stay-search>
+	</header>
 </template>
 <script>
 import userBadge from './user-badge.vue';

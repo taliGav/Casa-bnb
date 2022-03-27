@@ -46,11 +46,6 @@
             Search
           </p>
         </div>
-        <add-guests-count
-          v-if="addGuestsMenu"
-          :guests="filterBy.guests"
-          @addGuests="changeGuests"
-        />
       </div>
     </form>
     <!-- <div id="picker"> -->
@@ -62,6 +57,13 @@
       end-placeholder="End date"
     />
     <!-- </div> -->
+    <div class="relative">
+      <add-guests-count
+        v-if="addGuestsMenu"
+        :guests="filterBy.guests"
+        @addGuests="changeGuests"
+      />
+    </div>
   </div>
 </template>
 
@@ -152,6 +154,7 @@ export default {
 		clickCheck(ev) {
 			const el = ev.target.className;
 			const local = ev.target.localName;
+			console.log(el);
 			if (
 				local === 'img' ||
 				local === 'p' ||
@@ -161,7 +164,10 @@ export default {
 				el === 'search-input' ||
 				el === 'date-start' ||
 				el === 'date-end' ||
-				el === 'guests-container'
+				el === 'guests-container' ||
+				el === 'guests-input-modal flex aling just col space'||
+				el === 'guests-details flex align just space'||
+				el === ''
 			)
 				return;
 			else {
@@ -179,6 +185,8 @@ export default {
 		},
 		changeGuests(num) {
 			if (!this.filterBy.guests) this.filterBy.guests = 0;
+			if (typeof this.filterBy.guests === 'string')
+				this.filterBy.guests = parseInt(this.filterBy.guests);
 			if (num < 0 && this.filterBy.guests === 0) return;
 			this.filterBy.guests += num;
 		},
