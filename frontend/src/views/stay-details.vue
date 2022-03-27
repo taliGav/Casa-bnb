@@ -11,7 +11,7 @@
         <details-checkout :stay="stay" />
       </div>
     </div>
-    <hr />
+    <!-- <hr /> -->
     <details-reviews :stay="stay" />
 
     <details-map :stay="stay" />

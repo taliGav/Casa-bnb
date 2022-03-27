@@ -10,8 +10,9 @@
 
 body {
 	margin: 0;
-	font-family: 'Cereal-Book';
+	font-family: "Cereal-Book";
 	color: $gray-1;
+	height: max-content;
 }
 html {
 	margin: 0;
@@ -38,4 +39,21 @@ img {
 
 p {
 	margin: 0;
+}
+
+.rating {
+	margin-top: 4px;
+	color: $gray-3;
+	align-items: center;
+	gap: 10px;
+}
+
+.ratings {
+	align-items: center;
+}
+
+.rate-icon {
+	height: 13px;
+	width: 13px;
+	margin-right: 3px;
 }

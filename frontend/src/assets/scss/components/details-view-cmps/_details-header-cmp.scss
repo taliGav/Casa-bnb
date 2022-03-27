@@ -1,66 +1,68 @@
-.details-header-name {
-  color: $gray-3;
-  font-family: 'Cereal-Book';
-    font-size: 26px !important;
-    font-weight: 600 !important;
-    // line-height: inherit !important;
-    // display: inline !important;
-}
-  
-.details-sub-header-2{
-  font-size: 14px;
-  align-items: center;
-  line-height: 20px !important;
-  margin: 4px 0 0;
-}
+.stay-details-header{
 
-.rating {
-  margin-top: 4px;
-  color: $gray-3;
-  align-items: center;
-  gap: 10px;
-}
-  
-.ratings {
-  align-items: center;
-}
-  
-.rate-span {
-    overflow: clip !important;
-    font-weight: 600 !important;
-    text-overflow: ellipsis !important;
-    position: relative !important;
+  .details-header-name {
+    color: $gray-3;
+    font-family: 'Cereal-Book';
+      font-size: 26px !important;
+      font-weight: 600 !important;
+      // line-height: inherit !important;
+      // display: inline !important;
   }
-  
-  
-.rate-icon {
-    height: 13px;
-    width: 13px;
-    margin-right: 3px;
-  }
-  
-.bullet{
-  margin: 8px 8px 0;
-}
-
-.details-header-location {
-  color: $gray-1;
-  // font-family: 'Cereal-medium';
-  font-weight: 600 !important;
-}
-  
-  .share-btn,
-  .save-btn {
-    border: none;
-    padding:8px
-  }
-  
-  span.save, span.share{
-    margin-right:8px;
-  }
-  
-.btn-text {
+    
+  .details-sub-header-2{
+    font-size: 14px;
     align-items: center;
-    cursor: pointer;
+    line-height: 20px !important;
+    margin: 4px 0 0;
   }
-  
+
+  .rating {
+    margin-top: 4px;
+    color: $gray-3;
+    align-items: center;
+    gap: 10px;
+  }
+    
+  .ratings {
+    align-items: center;
+  }
+    
+  .rate-span {
+      overflow: clip !important;
+      font-weight: 600 !important;
+      text-overflow: ellipsis !important;
+      position: relative !important;
+    }
+    
+    
+  .rate-icon {
+      height: 13px;
+      width: 13px;
+      margin-right: 3px;
+    }
+    
+  .bullet{
+    margin: 8px 8px 0;
+  }
+
+  .details-header-location {
+    color: $gray-1;
+    font-weight: 600 !important;
+  }
+    
+    .share-btn,
+    .save-btn {
+      border: none;
+      padding:8px;
+      background-color: #ffffff;
+    }
+    
+    span.save, span.share{
+      margin-right:8px;
+    }
+    
+  .btn-text {
+      align-items: center;
+      cursor: pointer;
+    }
+} 
