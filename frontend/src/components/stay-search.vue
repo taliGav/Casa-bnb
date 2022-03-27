@@ -1,65 +1,67 @@
 <template>
-  <div class="filter-container main-layot full flex align just">
-    <form>
-      <div class="filter">
-        <div
-          class="search-container"
-          @click="focusSearch"
-          :style="{ width: isSearchOpen ? '250px' : '270px' }"
-        >
-          <span>Location</span>
-          <input
-            class="search-input"
-            v-model="filterBy.destination"
-            type="text"
-            placeholder="Where are you going?"
-            ref="input"
-          />
-        </div>
-        <div class="date-start" @click="showDatePicker">
-          <span>Check in</span>
-          <p>{{ startDate }}</p>
-        </div>
-        <div class="date-end" @click="showDatePicker">
-          <span>Check out</span>
-          <p>{{ endDate }}</p>
-        </div>
-        <div class="search-guests" @click="addGuests">
-          <div class="guests-container">
-            <span>Guests</span>
-            <p v-if="!filterBy.guests">Add guests</p>
-            <p v-else>{{ filterBy.guests }}</p>
-          </div>
-          <add-guests-count
-            v-if="addGuestsMenu"
-            :guests="filterBy.guests"
-            @addGuests="changeGuests"
-          />
-          <!-- </add-guests-count> -->
-        </div>
-        <div
-          @click="openSearch"
-          class="search-btn-container"
-          :style="{ width: isSearchOpen ? '130px' : '50px' }"
-        >
-          <img src="../assets/Images/logos/search-icon.svg" alt="" />
-          <p
-            v-if="isSearchOpen"
-            :style="{ opacity: isSearchOpen ? '100%' : '0%' }"
-          >
-            Search
-          </p>
-        </div>
-      </div>
-    </form>
-    <el-date-picker
-      v-model="pickedDates"
-      type="daterange"
-      range-separator="To"
-      start-placeholder="Start date"
-      end-placeholder="End date"
-    />
-  </div>
+	<div class="filter-container main-layot full flex align just">
+		<form>
+			<div class="filter">
+				<div
+					class="search-container"
+					@click="focusSearch"
+					:style="{ width: isSearchOpen ? '250px' : '270px' }"
+				>
+					<span>Location</span>
+					<input
+						class="search-input"
+						v-model="filterBy.destination"
+						type="text"
+						placeholder="Where are you going?"
+						ref="input"
+					/>
+				</div>
+				<div class="date-start" @click="showDatePicker">
+					<span>Check in</span>
+					<p>{{ startDate }}</p>
+				</div>
+				<div class="date-end" @click="showDatePicker">
+					<span>Check out</span>
+					<p>{{ endDate }}</p>
+				</div>
+				<div class="search-guests" @click="addGuests">
+					<div class="guests-container">
+						<span>Guests</span>
+						<p v-if="!filterBy.guests">Add guests</p>
+						<p v-else>{{ filterBy.guests }}</p>
+					</div>
+					<add-guests-count
+						v-if="addGuestsMenu"
+						:guests="filterBy.guests"
+						@addGuests="changeGuests"
+					/>
+					<!-- </add-guests-count> -->
+				</div>
+				<div
+					@click="openSearch"
+					class="search-btn-container"
+					:style="{ width: isSearchOpen ? '130px' : '50px' }"
+				>
+					<img src="../assets/Images/logos/search-icon.svg" alt="" />
+					<p
+						v-if="isSearchOpen"
+						:style="{ opacity: isSearchOpen ? '100%' : '0%' }"
+					>
+						Search
+					</p>
+				</div>
+			</div>
+		</form>
+		<!-- <div id="picker"> -->
+		<el-date-picker
+			v-model="pickedDates"
+			type="daterange"
+			range-separator="To"
+			start-placeholder="Start date"
+			end-placeholder="End date"
+		/>
+		<!-- </div> -->
+	</div>
 </template>
 
 <script>
@@ -135,7 +137,8 @@ export default {
 		},
 		showDatePicker() {
 			this.$el.querySelector('.el-range-editor').click();
-			console.log('picked dates', this.startDate);
+			// window.document.querySelector('.el-popper').classList.add('el-popper-search')
+			console.log('date picker search-bar', this.startDate);
 		},
 		openSearch() {
 			if (this.isSearchOpen) this.doFilter();
@@ -175,6 +178,7 @@ export default {
 		},
 		changeGuests(num) {
 			if (!this.filterBy.guests) this.filterBy.guests = 0;
+			if (num < 0 && this.filterBy.guests === 0) return;
 			this.filterBy.guests += num;
 		},
 	},
@@ -184,4 +188,13 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.el-popper {
+	top: 340px !important;
+	left: 50% !important;
+	transform: translate(-50%, -50%) !important;
+	position: fixed !important;
+	/* top: 340px !important;
+	left: 50% !important; */
+}
+</style>

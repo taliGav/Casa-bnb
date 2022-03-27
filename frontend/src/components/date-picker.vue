@@ -1,28 +1,72 @@
 <template>
-	<!-- <div> -->
-	<Datepicker v-model="date" range multiCalendars multiCalendarsSolo />
-	<!-- </div> -->
+	<div>
+		<el-date-picker
+			class="father"
+			v-model="orderDates"
+			type="daterange"
+			range-separator="To"
+			start-placeholder="Start date"
+			end-placeholder="End date"
+		/>
+	</div>
 </template>
 <script>
-import { ref, onMounted } from 'vue';
-import Datepicker from '@vuepic/vue-datepicker';
-import '@vuepic/vue-datepicker/dist/main.css';
-
 export default {
-	setup() {
-		const date = ref();
-
-		onMounted(() => {
-			const startDate = new Date();
-			const endDate = new Date(new Date().setDate(startDate.getDate() + 7));
-			date.value = [startDate, endDate];
-		});
-
+	emits:['orders'],
+	name: 'date-picker',
+	props: {
+		isOpen: {
+			type: Boolean,
+		},
+	},
+	created() {
+		// console.log(this.isOpen);
+	},
+	data() {
 		return {
-			date,
+			orderDates: null,
+		};
+	},
+	methods: {
+		openCalender() {
+			this.$el.querySelector('.el-range-editor').click();
+			window.document
+				.querySelector('.el-popper')
+				.classList.add('el-popper-order');
+		},
+		sendOrderDates(){
+			this.$emit('orders', this.orderDates)
 		}
 	},
-    components: { Datepicker },
+	computed: {
+		// checkOpen(){
+		// 	if(this.isOpen) this.openCalender();
+		// }
+	},
+	watch: {
+		isOpen: 'openCalender',
+		orderDates: 'sendOrderDates'
+	},
+	unmounted() {
+		window.document
+			.querySelector('.el-popper')
+			.classList.remove('el-popper-order');
+		// this.$emit('orderDates', this.orderDates);
+	},
 };
 </script>
-<style></style>
+<style>
+.el-popper-order {
+	/* background-color: v-bind(redColor); */
+	transform: translate(-50%, -50%) !important;
+	position: absolute !important;
+	/* top: v-bind(topPos) ; */
+	/* left: v-bind(leftPos); */
+	top: 100% !important;
+	left: 66.5% !important;
+}
+
+.father {
+	/* position: relative !important; */
+}
+</style>
