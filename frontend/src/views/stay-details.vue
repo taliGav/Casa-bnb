@@ -16,7 +16,7 @@
 
     <details-map :stay="stay" />
 
-    <div v-if="user?.isAdmin" class="btn-group gap-1">
+    <!-- <div v-if="user?.isAdmin" class="btn-group gap-1">
       <button
         @click="$router.push(`/stay/edit/${stay._id}`)"
         class="btn btn-primary"
@@ -25,9 +25,9 @@
       </button>
       <button @click="$router.push('/stay')" class="btn btn-secondary">
         go back
-      </button>
+      </button> -->
       <!-- <button @click="removeStay" class="btn btn-danger">delete stay</button> -->
-    </div>
+    <!-- </div> -->
   </section>
 
   <!-- <p class="clr-teal fw-bold">${{ stay.price }} /NIGHT</p> -->
