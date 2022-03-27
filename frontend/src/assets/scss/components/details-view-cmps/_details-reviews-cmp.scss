@@ -1,0 +1,46 @@
+.details-reviews-section {
+    .rating-reviews-section {
+        padding-bottom: 32px;
+        font-size: 22px;
+        color: $gray-3;
+        line-height: 26px;
+        font-family: 'Cereal-Medium';
+        font-weight: 500;
+
+        .rating {
+            .rate-icon {
+                margin-right: 8px;
+            }
+            u {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .reviews-list {
+        color: $gray-3;
+
+        .preview-data {
+            margin-bottom: 40px;
+
+            .reviewer-dets {
+                margin-bottom: 12px;
+
+                img {
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .reviewer-name {
+                    margin-left: 12px;
+
+                    p {
+                        color: $gray-1;
+                    }
+                }
+            }
+        }
+    }
+}

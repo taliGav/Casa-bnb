@@ -1,13 +1,8 @@
 <template>
   <section class="single-review-section">
-    <div class="stay-images-container">
-      <preview-carousel :urls="this.stay.imgUrls" />
-    </div>
     <div class="preview-data">
-
-
       <div class="reviewer-dets flex">
-        <img :src="review.by.imgUrl" alt="" />
+          <img :src="review.by.imgUrl" alt="" />
         <div class="reviewer-name">
           <h4>{{ review.by.fullname }}</h4>
           <p>{{ review.createdAt }}</p>
@@ -20,11 +15,12 @@
 
 <script>
 export default {
-  components: {
-  },
+  components: {},
   name: "single-review",
   props: {
     stay: Object,
+    review: Object,
+    // reviews: Array,
   },
   data() {
     return {};
