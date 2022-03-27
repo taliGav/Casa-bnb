@@ -1,5 +1,5 @@
 <template>
-	<section v-if="stay" class="reviews-section">
+	<section v-if="stay" class="details-reviews-section">
 		<ratings-reviews :stay="stay" />
 
 		<!-- <form v-if="reviewToAdd && user" @submit.prevent="addReview" class="form">

@@ -5,22 +5,24 @@
       <preview-carousel :urls="this.stay.imgUrls" />
     </div>
     <div class="preview-data">
-      <!-- <div class="preview-data flex col even"> -->
       <ratings-reviews :stay="stay" />
 
       <div class="rating">
         <span class="span-main-prev-rating flex align">
-          <img src="./../assets/icons/star.png" class="rate-icon" />
-          {{ avgRating }} <span class="reviews-count">&nbsp;({{ reviewsCount }})</span>
+          <img src="./../../assets/icons/star.png" class="rate-icon" />
+          {{ avgRating }}
+          <span class="reviews-count">&nbsp;({{ reviewsCount }})</span>
         </span>
       </div>
+
       <div class="stay-loc">
-        <!-- <ol class="l7n4lsf dir dir-ltr"><li class="len26si dir dir-ltr">Entire rental unit</li><li class="len26si dir dir-ltr"><span class="sxjq0r dir dir-ltr" aria-hidden="true"> · </span>Merkaz HaIr</li></ol> -->
-      <p>{{ stay.type }} in {{ stay.loc.city }}, {{ stay.loc.country }}</p>
+        <p>{{ stay.type }} in {{ stay.loc.city }}, {{ stay.loc.country }}</p>
       </div>
+
       <p class="preview-stay-title">{{ stay.name }}</p>
       <p>
-        <span class="stay-price">${{ stay.price }}</span> /night
+        <span class="stay-price">${{ stay.price }}</span>
+        <span class="per-night"> / &nbsp;night </span>
       </p>
       <svg
         viewBox="0 0 32 32"
@@ -78,10 +80,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.rate-icon {
-  height: 14px;
-  width: 14px;
-}
-</style>

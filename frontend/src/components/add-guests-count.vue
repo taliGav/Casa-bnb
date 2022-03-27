@@ -1,13 +1,23 @@
 <template>
 	<section>
-		<div class="guests-input-modal flex around align">
-			<button @click.stop.prevent="changeGuests(-1)" class="btn-round">
-				-
-			</button>
-			<!-- <div>{{ filterBy.guests }}</div> -->
-			<button @click.stop.prevent="changeGuests(+1)" class="btn-round">
-				+
-			</button>
+		<div class="guests-input-modal flex col even align">
+            
+            <div class = "guests-container flex ">
+            <div class = "guests-details flex col">
+                <span>Adults</span>
+                <p>Ages 13 or above</p>
+            </div>
+			<div class = "guests-buttons flex">
+				<button @click.stop.prevent="changeGuests(-1)" class="btn-round">
+					-
+				</button>
+				<div>1</div>
+				<button @click.stop.prevent="changeGuests(+1)" class="btn-round">
+					+
+				</button>
+			</div>
+            </div>
+            <hr>
 		</div>
 	</section>
 </template>

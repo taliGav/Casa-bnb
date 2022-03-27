@@ -1,60 +1,81 @@
-// .stay-preview {
-//     display: grid;
-//     grid-template-columns: 100%;
-//     isolation: isolate;
-// }
-
 .stay-preview {
-	height: 365px;
+	// height: 365px;
     font-size: 1rem;
 	padding: 0;
 	border-radius: 10px;
 	font-family: 'Cereal-Book';
+    
+    .stay-images-container{
+        margin-bottom: 10px;
+    }
+    
+    .preview-data{
+        height: 100%;
 
-	.preview-data {
-		// height: 100px;
-	}
-}
 
-.stay-images-container{
-margin-bottom: 10px;
-}
-
-.preview-data{
-    .rating{ 
-        margin:0 0 6px 0;
-        font-size: 14px;
-        line-height: 18px;
-        
-        span{
-            font-weight: 100;
+        p{
+            // height: 20px;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 400;    
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
+    
+        .rating{ 
+            margin:0 0 6px 0;
+            font-size: 14px;
+            line-height: 18px;
 
-        .span-main-prev-rating{
-            -webkit-box-align: center;
-
-            .img{
-                margin-right: 4px;
+            .rate-icon {
+                height: 14px;
+                width: 14px;
+            }  
+    
+            span{
+                font-weight: 100;
             }
-
-            .reviews-count{
-                color: $gray-1;
+    
+            .span-main-prev-rating{
+                -webkit-box-align: center;
+    
+                .img{
+                    margin-right: 4px;
+                }
+    
+                .reviews-count{
+                    color: $gray-1;
+                }
             }
+            
+        }
+    
+        .stay-loc{
+        margin:0 0 2px 0;
+        font-size: 18px;
+        line-height: 24px;
+        }
+    
+        .preview-stay-title{
+        margin:0 ;
+        font-size: 16px;
+        line-height: 20px;
+        }
+        
+        .stay-price{
+        margin-top:8px ;
+        font-family: "Circular-Bold";
+        font-weight: 800;    
+        // font-size: 16px;
         }
         
     }
-.stay-loc{
-    margin:0 0 2px 0;
-    font-size: 18px;
-    line-height: 24px;
-    }
-
-    p{
-        height: 20px;
-        text-overflow: ellipsis;
-        overflow: clip;
-    }
+     
 }
+
+
+
     
 .img-in-card {
 	object-fit: cover;

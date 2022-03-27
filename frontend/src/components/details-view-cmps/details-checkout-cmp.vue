@@ -9,13 +9,33 @@
         <ratings-reviews :stay="stay" />
       </div>
 
-      <div class="calender-checkout-container">
-        <!-- <calender-cmp /> -->
+      <div class="dates-guests">
+        <div class="dates flex space" @click="openCalender">
+          <div class="check-in-container">
+            <div class="check-in-title title">CHECK-IN</div>
+            <div class="check-in-value"></div>
+          </div>
+          <div class="check-out-container">
+            <div class="check-out-title title">CHECKOUT</div>
+            <div class="check-out-value"></div>
+          </div>
+        </div>
+
+        <div class="guests flex space" @click="openGuests">
+          <div class="guests-container">
+            <div class="guests-title title">GUESTS</div>
+            <div class="guests-value"></div>
+          </div>
+        </div>
+
+        <div class="calender-checkout-container">
+          <!-- <calender-cmp /> -->
+        </div>
       </div>
 
-      <div class="reserve-btn-cmp">
-        <reserve-btn />
-      </div>
+        <div class="reserve-btn-cmp">
+          <reserve-btn />
+        </div>
     </div>
   </section>
 </template>
