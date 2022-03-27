@@ -3,32 +3,42 @@
 	position: absolute;
 	top: 160px;
 	right: 260px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 32px 32px 32px 32px;
 	width: 375px;
-	height: 364px;
+	height: 300px;
 	background-color: $white;
 	border-radius: 50px;
 	border: 1px solid rgba(0, 0, 0, 0.158);
 
+	hr {
+		color: red;
+	}
 
 	button {
-		width: 30px;
-		height: 30px;
-		border-radius: 50px;
+		width: 33px;
+		height: 33px;
+		border-radius: 50%;
 		font-size: 16px;
 		font-weight: bold;
+		background-color: $white;
+		color: #8f8d8d;
+		border: 0.5px solid #8f8d8d;
+		transition: 0.2s;
+		&:hover {
+			cursor: pointer;
+			color: #615f5f;
+			border: 0.5px solid #615f5f;
+		}
 	}
 	div {
 		font-size: 16px;
 	}
-	.guests-details{
+	.guests-details {
 		// padding-top:30px;
 		width: 300px;
 		height: 50px;
-		
 	}
-	.guests-buttons{
-		width: 104px;	
+	.guests-buttons {
+		width: 104px;
 	}
 }

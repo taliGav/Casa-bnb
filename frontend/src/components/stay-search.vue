@@ -76,7 +76,7 @@ export default {
 			addGuestsMenu: false,
 			filterBy: {
 				destination: '',
-				guests: 0,
+				guests: null,
 			},
 			pickedDates: null,
 		};
