@@ -12,7 +12,7 @@
 </template>
 <script>
 export default {
-	emits:['orders'],
+	emits: ['orders'],
 	name: 'date-picker',
 	props: {
 		isOpen: {
@@ -34,9 +34,9 @@ export default {
 				.querySelector('.el-popper')
 				.classList.add('el-popper-order');
 		},
-		sendOrderDates(){
-			this.$emit('orders', this.orderDates)
-		}
+		sendOrderDates() {
+			this.$emit('orders', this.orderDates);
+		},
 	},
 	computed: {
 		// checkOpen(){
@@ -45,19 +45,17 @@ export default {
 	},
 	watch: {
 		isOpen: 'openCalender',
-		orderDates: 'sendOrderDates'
+		orderDates: 'sendOrderDates',
 	},
-	unmounted() {
-		window.document
-			.querySelector('.el-popper')
-			.classList.remove('el-popper-order');
-		// this.$emit('orderDates', this.orderDates);
-	},
+	// unmounted() {
+	// 	// window.document
+	// 	// 	.querySelector('.el-popper')
+	// 	// 	.classList.remove('el-popper-order');
+	// 	// this.$emit('orderDates', this.orderDates);
+	// },
 };
 </script>
 <style>
-
-
 .father {
 	/* position: relative !important; */
 }
