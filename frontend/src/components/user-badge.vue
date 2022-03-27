@@ -10,7 +10,7 @@
     </div>
     <div v-if="isOpen">
       <p @click="openLogInModal">Log in</p>
-      <p>Sing up</p>
+      <p @click="logout">Log out</p>
     </div>
     <login-modal @closeModal="isModalOpen = false" v-if="isModalOpen" />
   </section>
@@ -36,6 +36,9 @@ export default {
 		openLogInModal() {
 			this.isModalOpen = !this.isModalOpen;
 		},
+		async logout() {
+      		await this.$store.dispatch({ type: 'logout' })
+    	},
 		
 	},
 	computed: {

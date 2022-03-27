@@ -37,10 +37,31 @@ async function login(cred) {
 }
 
 async function signup(cred) {
+  // try {
+  //   console.log('signup 1', cred.username);
+  //   await signupChack(cred.username)
+  //   console.log('signup 4');
+  return storageService.post(KEY, cred)
+  // } catch (err) {
+  //   console.error(`user: ${username} already exists`, err)
+  //   throw err
+  // }
   // return await httpService.post(ENDPOINT + '/signup', cred)
 }
 
+async function signupChack(username) {
+  console.log('signup 2', username);
+  const user = await getByUsername(username)
+  console.log('signup 3', user);
+  if (user) {
+    console.log('signup user ex', user);
+    return false
+  }
+  return true
+}
+
 async function logout() {
+  sessionStorage.removeItem(LOGED_KEY);
   // return await httpService.post(ENDPOINT + '/logout')
 }
 
@@ -56,7 +77,7 @@ async function getByUsername(username) {
     const user = users.find(user => user.username === username)
     return user
   } catch (err) {
-    logger.error(`while finding user ${username}`, err)
+    console.error(`while finding user ${username}`, err)
     throw err
   }
 }

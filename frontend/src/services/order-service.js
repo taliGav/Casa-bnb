@@ -85,8 +85,8 @@ async function save(order) {
 }
 
 async function getEmptyOrder(order) {
-  const buyer = await userService.getById(order.buyer._id);
-  const stay = await stayService.getById(order.stay._id);
+  const buyer = await userService.getById(order.buyerId);
+  const stay = await stayService.getById(order.stayId);
   return Promise.resolve({
     "_id": '',
     "hostId": order.hostId,

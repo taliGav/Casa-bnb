@@ -1,14 +1,14 @@
 <template>
-	<div>
-		<el-date-picker
-			class="father"
-			v-model="orderDates"
-			type="daterange"
-			range-separator="To"
-			start-placeholder="Start date"
-			end-placeholder="End date"
-		/>
-	</div>
+  <div>
+    <el-date-picker
+      class="father"
+      v-model="orderDates"
+      type="daterange"
+      range-separator="To"
+      start-placeholder="Start date"
+      end-placeholder="End date"
+    />
+  </div>
 </template>
 <script>
 export default {
@@ -48,17 +48,15 @@ export default {
 		orderDates: 'sendOrderDates'
 	},
 	unmounted() {
-		window.document
-			.querySelector('.el-popper')
-			.classList.remove('el-popper-order');
+		// window.document
+		// 	.querySelector('.el-popper')
+		// 	.classList.remove('el-popper-order');
 		// this.$emit('orderDates', this.orderDates);
 	},
 };
 </script>
 <style>
-
-
 .father {
-	/* position: relative !important; */
+  /* position: relative !important; */
 }
 </style>

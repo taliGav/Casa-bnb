@@ -20,7 +20,7 @@ export default {
       try {
         const user = await userService.login(cred)
         commit({ type: 'setUser', user })
-        utilService.saveToSessionStorage('user', user)
+        // utilService.saveToSessionStorage('user', user)
       } catch (err) {
         console.log(err)
       }
@@ -29,7 +29,6 @@ export default {
       try {
         const user = await userService.signup(cred)
         commit({ type: 'setUser', user })
-        utilService.saveToSessionStorage('user', user)
       } catch (err) {
         console.log(err)
       }
@@ -38,7 +37,7 @@ export default {
       try {
         await userService.logout()
         commit({ type: 'setUser', user: null })
-        sessionStorage.removeItem('user')
+        sessionStorage.removeItem('loged_user')
       } catch (err) {
         console.log(err)
       }

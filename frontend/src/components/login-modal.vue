@@ -118,12 +118,11 @@ export default {
   },
   methods: {
     async login() {
-      // userService.login(this.newUser)
       await this.$store.dispatch({ type: 'login', cred: this.newUser })
       this.$emit('closeModal')
     },
     async signup() {
-      // await this.$store.dispatch({ type: 'signup', cred: this.newUser })
+      await this.$store.dispatch({ type: 'signup', cred: this.newUser })
       // this.$emit('closeModal')
     },
     async logout() {
