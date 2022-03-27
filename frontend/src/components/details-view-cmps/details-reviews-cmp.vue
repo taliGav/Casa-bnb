@@ -1,6 +1,6 @@
 <template>
 	<section v-if="stay" class="details-reviews-section">
-		<ratings-reviews :stay="stay" />
+		<ratings-reviews class="rating-reviews-section" :stay="stay" />
 
 		<!-- <form v-if="reviewToAdd && user" @submit.prevent="addReview" class="form">
       <div class="form-control my-1">
@@ -32,20 +32,11 @@
 			<h4>No reviews yet.</h4>
 			<p>Be the first...</p>
 		</div>
-		<div v-else class="flex col">
-			<article
+		<div v-else class="reviews-list flex col">
+			    <details-single-review
 				class="review flex col items-start"
-				v-for="review in this.reviews"
-				:key="review.id"
-			>
-				<div class="reviewer-dets flex">
-					<img :src="review.by.imgUrl" alt="" />
-					<div class="reviewer-name">
-						<h4>{{ review.by.fullname }}</h4>
-						<p>{{ review.createdAt }}</p>
-					</div>
-				</div>
-				<p class="fw-600">{{ review.txt }}</p>
+				v-for="review in this.reviews" :key="review.id"
+				:stay="stay" :review="review" />
 				<!-- <button
           v-if="user?.isAdmin"
           class="btn btn-danger"
@@ -53,62 +44,63 @@
         >
           Delete review
         </button> -->
-			</article>
 		</div>
 	</section>
 </template>
 
 <script>
-import ratingsReviews from './../reusable-cmps/ratings-reviews-cmp.vue';
+import ratingsReviews from "./../reusable-cmps/ratings-reviews-cmp.vue";
+import detailsSingleReview from "./details-single-review-cmp.vue";
 
 export default {
-	name: 'stay-details-reviews',
-	props: {
-		stay: Object,
-	},
-	data() {
-		return {
-			reviews: this.reviewsToShow(),
-			noReviews: this.checkReviews(),
-		};
-	},
-	components: {
-		ratingsReviews,
-	},
-	async created() {},
-	computed: {},
-	methods: {
-		async updateReviews() {
-			this.reviews = this.stay.reviews;
-		},
+  name: "stay-details-reviews",
+  props: {
+    stay: Object,
+  },
+  data() {
+    return {
+      reviews: this.reviewsToShow(),
+      noReviews: this.checkReviews(),
+    };
+  },
+  components: {
+    ratingsReviews,
+    detailsSingleReview,
+  },
+  async created() {},
+  computed: {},
+  methods: {
+    async updateReviews() {
+      this.reviews = this.stay.reviews;
+    },
 
-		reviewsToShow() {
-			return this.stay.reviews;
-		},
-		checkReviews() {
-			if (!this.stay.reviews.length || this.stay.reviews.length === 0)
-				return true;
-			else return false;
-		},
+    reviewsToShow() {
+      return this.stay.reviews;
+    },
+    checkReviews() {
+      if (!this.stay.reviews.length || this.stay.reviews.length === 0)
+        return true;
+      else return false;
+    },
 
-		//       async addReview() {
-		//   if (!this.reviewToAdd.content) return;
-		//   await this.$store.dispatch({
-		//     type: "addReview",
-		//     review: this.reviewToAdd,
-		//   });
-		//   await this.$store.dispatch({
-		//     type: "getReviews",
-		//     filterBy: { stayId: this.stay._id },
-		//   });
-		// },
-		// async removeReview(reviewId) {
-		//   await this.$store.dispatch({ type: "removeReview", reviewId });
-		//   await this.$store.dispatch({
-		//     type: "getReviews",
-		//     filterBy: { stayId: this.stay._id },
-		//   });
-		// },
-	},
+    //       async addReview() {
+    //   if (!this.reviewToAdd.content) return;
+    //   await this.$store.dispatch({
+    //     type: "addReview",
+    //     review: this.reviewToAdd,
+    //   });
+    //   await this.$store.dispatch({
+    //     type: "getReviews",
+    //     filterBy: { stayId: this.stay._id },
+    //   });
+    // },
+    // async removeReview(reviewId) {
+    //   await this.$store.dispatch({ type: "removeReview", reviewId });
+    //   await this.$store.dispatch({
+    //     type: "getReviews",
+    //     filterBy: { stayId: this.stay._id },
+    //   });
+    // },
+  },
 };
 </script>

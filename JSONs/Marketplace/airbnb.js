@@ -29,6 +29,7 @@ const db = {
       },
       "loc": {
         "country": "Portugal",
+        "city": "Porto",
         "countryCode": "PT",
         "address": "Porto, Portugal",
         "lat": -8.61308,
@@ -37,6 +38,7 @@ const db = {
       "reviews": [
         {
           "id": "madeId",
+          "createdAt": "August 2021",
           "txt": "Very helpful hosts. Cooked traditional...",
           "rate": 4,
           "by": {

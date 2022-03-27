@@ -1,59 +1,97 @@
 .details-checkout {
-  margin: 48px 0 0 50px;
-  border: 1px solid $gray-4;
-  border-radius: 12px;
-  padding: 24px;
-  min-width: 215px;
-  color: $gray-3;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+	// margin: 48px 0 0 50px;
+	border: 1px solid $gray-4;
+	border-radius: 12px;
+	padding: 24px;
+	width: 400px;
+	height: 300px;
+	// max-width: 370px;
+	color: $gray-3;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
 
-  .price-and-rate {
-    flex-flow: row wrap !important;
-    padding-bottom: 24px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
+	.price-and-rate {
+		flex-flow: row wrap !important;
+		padding-bottom: 24px;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
 
-    .price{
-      font-size: 22px;
-      font-weight: 600;
-      line-height: 26px;
-    }
-  }
+		.price {
+			font-size: 22px;
+			font-weight: 600;
+			line-height: 26px;
+		}
+	}
 
-  .dates-guests {
-    border-radius: 8px;
-    border: .5px solid $gray-3;
+	.dates-guests {
+		border-radius: 8px;
+		border: 0.5px solid $gray-3;
+		margin-bottom: 16px;
+		.dates {
+			align-items: center;
+			.check-in-container {
+				align-content: center;
+				flex-grow: 1;
+			}
 
-    .dates {
-      align-items: center;
-      .check-in-container {
-        align-content: center;
-        flex-grow: 1;
-      }
-      .check-in-title {
-      }
-      .check-in-value {
-        padding: 26px 12px 10px;
-      }
-      .check-out-title {
-      }
-      .check-out-value {
-        padding: 26px 12px 10px;
-      }
-      .check-out-container {
-        flex-grow: 1;
-      }
-    }
+			.check-in-container {
+				border-right: 0.5px solid $gray-3;
+				border-bottom: 0.5px solid $gray-3;
+				height: 56px;
 
-    .title {
-      font-size: 10px;
-      font-weight: 800;
-      line-height: 12px;
-    }
+				&:hover {
+					cursor: pointer;
+				}
 
-    .guests-value {
-      padding: 26px 36px 10px 12px;
-    }
-  }
+				.check-in-title {
+				}
+				.check-in-value {
+					// padding: 26px 12px 10px;
+				}
+			}
+			.check-out-container {
+				border-bottom: 0.5px solid $gray-3;
+				height: 56px;
+				&:hover {
+					cursor: pointer;
+				}
+			}
+
+			.check-out-title {
+			}
+			.check-out-value {
+				// padding: 26px 12px 10px;
+			}
+			.check-out-container {
+				flex-grow: 1;
+			}
+		}
+		.title {
+			font-size: 10px;
+			font-weight: 800;
+			line-height: 12px;
+		}
+
+		.guests-value {
+			// padding: 26px 36px 10px 12px;
+			
+		}
+	}
+}
+
+.guests{
+	height: 56px;
+	// margin-bottom: 16px;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.reserve-btn-cmp{
+	
+
+
+	&:hover{
+		cursor: pointer;
+	}
 }

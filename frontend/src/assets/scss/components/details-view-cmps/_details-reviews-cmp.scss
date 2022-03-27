@@ -1,30 +1,46 @@
-// <template>
-//   <section class = "details-review-list">
-//       <ul class="review-list">
-//         <li
-//           v-for="review in reviews"
-//           :key="stay._id"
-          
-//           @click="$router.push(`/stay/${stay._id}`)"
-//         >
-//           <stay-preview :stay="stay" />
-//         </li>
-//       </ul>
-//   </section>
-// </template>
+.details-reviews-section {
+    .rating-reviews-section {
+        padding-bottom: 32px;
+        font-size: 22px;
+        color: $gray-3;
+        line-height: 26px;
+        font-family: 'Cereal-Medium';
+        font-weight: 500;
 
-// <script>
-// import detailsSingleReview from "./details-preview-cmp.vue";
+        .rating {
+            .rate-icon {
+                margin-right: 8px;
+            }
+            u {
+                text-decoration: none;
+            }
+        }
+    }
 
-// export default {
-//   name: "details-review-list",
-//   props: {
-//     stay: Object,
-//   },
-//   components: {
-//     detailsSingleReview,
-//   },
-// };
-// </script>
+    .reviews-list {
+        color: $gray-3;
 
+        .preview-data {
+            margin-bottom: 40px;
 
+            .reviewer-dets {
+                margin-bottom: 12px;
+
+                img {
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .reviewer-name {
+                    margin-left: 12px;
+
+                    p {
+                        color: $gray-1;
+                    }
+                }
+            }
+        }
+    }
+}
