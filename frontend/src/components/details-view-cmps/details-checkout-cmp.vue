@@ -29,8 +29,8 @@
 					<div class="guests-container">
 						<div class="guests-title title">GUESTS</div>
 						<div class="guests-value flex">
-						<p>{{ guestsCount }} &ensp;</p> 
-	
+							<p>{{ guestsCount }} &ensp;</p>
+
 							<p v-if="guestsNumber">guest</p>
 							<p v-else>guests</p>
 						</div>
@@ -153,3 +153,8 @@ export default {
 	/* position: relative; */
 }
 </style>
+
+// // "hostId": order.hostId, // // "buyer": { // "_id": buyer._id, // // }, //
+"totalPrice": order.totalPrice, // "startDate": order.startDate, // "endDate":
+order.endDate, // "guests": order.guests, // "stay": { // "_id": stay._id, // //
+}, //

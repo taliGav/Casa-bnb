@@ -20,10 +20,10 @@ export const orderService = {
   remove,
   save,
   getEmptyOrder,
-  getAmenities,
-  getLessAmenities,
-  getPopularDest,
-  getPopularOrders,
+  // getAmenities,
+  // getLessAmenities,
+  // getPopularDest,
+  // getPopularOrders,
 };
 
 // _createOrders();
