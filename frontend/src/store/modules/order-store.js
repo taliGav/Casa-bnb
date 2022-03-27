@@ -32,6 +32,7 @@ export default {
             }
         },
         async addOrder({ commit }, { order }) {
+            console.log(order);
             try {
                 const addedOrder = await orderService.save(order)
                 commit({ type: 'addOrder', order: addedOrder })

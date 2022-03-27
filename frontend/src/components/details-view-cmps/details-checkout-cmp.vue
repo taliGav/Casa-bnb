@@ -8,7 +8,6 @@
 				</div>
 				<ratings-reviews :stay="stay" />
 			</div>
-
 			<div class="dates-guests">
 				<div class="dates flex space" @click="openCalender">
 					<div class="check-in-container">
@@ -24,13 +23,11 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="guests flex space" @click.stop.prevent="openGuestsMenu">
 					<div class="guests-container">
 						<div class="guests-title title">GUESTS</div>
 						<div class="guests-value flex">
-						<p>{{ guestsCount }} &ensp;</p> 
-	
+							<p>{{ guestsCount }} &ensp;</p>
 							<p v-if="guestsNumber">guest</p>
 							<p v-else>guests</p>
 						</div>
@@ -50,9 +47,8 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="reserve-btn-cmp">
-				<reserve-btn />
+				<reserve-btn @click="makeReservation" />
 			</div>
 		</div>
 	</section>
@@ -81,10 +77,12 @@ export default {
 			isCalendar: false,
 			resirvationDates: null,
 			openGuests: false,
+			loggedUser: null,
 		};
 	},
 	created() {
 		window.addEventListener('click', this.closeGuests);
+		this.loggedUser = this.checkLoggedUser;
 	},
 	computed: {
 		startDate() {
@@ -116,12 +114,40 @@ export default {
 		guestsNumber() {
 			return this.guestsCount > 1 ? false : true;
 		},
+		checkLoggedUser() {
+			const user = this.$store.getters.user;
+			if (user) return user;
+			// return
+		},
 	},
 	methods: {
+		makeReservation() {
+			const timeDelta =
+				new Date(`${this.resirvationDates[1]}`).getTime() -
+				new Date(`${this.resirvationDates[0]}`).getTime();
+			const days = Math.floor(timeDelta / 86400000);
+
+			const order = {
+				hostId: this.stay.host._id,
+				buyerId: this.loggedUser._id,
+				stayId: this.stay._id,
+				guests: this.guestsCount,
+				startDate: this.resirvationDates[0],
+				endDate: this.resirvationDates[1],
+				totalPrice: days * this.stay.price,
+			};
+			this.$store.dispatch({type:'addOrder', order})
+			console.log('makin reservations', order);
+
+			// var days = Math.floor(delta / 86400);
+		},
 		addGuests(guest) {
 			// if (!guestsCount) this.guestsCount = 1;
+			if (this.guestsCount < 1.5 && guest < 0) return;
+			if (this.guestsCount === this.stay.capacity && guest > 0) return;
+
 			this.guestsCount += guest;
-			console.log(guest);
+			// console.log(guest);
 		},
 		openCalender() {
 			this.isCalendar = !this.isCalendar;
@@ -136,7 +162,7 @@ export default {
 		closeGuests(ev) {
 			const el = ev.target.className;
 			if (
-				el !== 'hguests-input-modal flex aling just col space' ||
+				el !== 'guests-input-modal flex aling just col space' ||
 				el !== 'guests-details flex align just space'
 			) {
 				this.openGuests = false;
@@ -153,3 +179,8 @@ export default {
 	/* position: relative; */
 }
 </style>
+
+// // "hostId": order.hostId, // // "buyer": { // "_id": buyer._id, // // }, //
+"totalPrice": order.totalPrice, // "startDate": order.startDate, // "endDate":
+order.endDate, // "guests": order.guests, // "stay": { // "_id": stay._id, // //
+}, //
