@@ -1,7 +1,7 @@
 <template>
-  <section class="main-layout main-app flex col space">
+  <section class="main-layout  flex col space">
     <app-header />
-    <router-view />
+    <router-view  />
     <app-footer />
   </section>
 </template>
