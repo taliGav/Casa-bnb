@@ -20,10 +20,6 @@ export const orderService = {
   remove,
   save,
   getEmptyOrder,
-  getAmenities,
-  getLessAmenities,
-  getPopularDest,
-  getPopularOrders,
 };
 
 // _createOrders();
@@ -81,7 +77,7 @@ async function remove(id) {
 }
 
 async function save(order) {
-  var orderToSave = await getEmptyOrder(order)
+  var orderToSave = order._id ? order : await getEmptyOrder(order)
   // return order._id
   // ? await httpService.put(`${ENDPOINT}/${order._id}`, order)
   // : await httpService.post(ENDPOINT, order)
