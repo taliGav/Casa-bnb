@@ -38,14 +38,14 @@
 				v-for="review in this.reviews"
 				:key="review.id"
 			>
-				<div class="reviewer-dets flex">
+				<!-- <div class="reviewer-dets flex">
 					<img :src="review.by.imgUrl" alt="" />
 					<div class="reviewer-name">
 						<h4>{{ review.by.fullname }}</h4>
 						<p>{{ review.createdAt }}</p>
 					</div>
 				</div>
-				<p class="fw-600">{{ review.txt }}</p>
+				<p class="fw-600">{{ review.txt }}</p> -->
 				<!-- <button
           v-if="user?.isAdmin"
           class="btn btn-danger"
@@ -60,6 +60,7 @@
 
 <script>
 import ratingsReviews from './../reusable-cmps/ratings-reviews-cmp.vue';
+import detailsSingleReview from './details-single-review-cmp.vue';
 
 export default {
 	name: 'stay-details-reviews',
@@ -74,6 +75,7 @@ export default {
 	},
 	components: {
 		ratingsReviews,
+		detailsSingleReview
 	},
 	async created() {},
 	computed: {},
