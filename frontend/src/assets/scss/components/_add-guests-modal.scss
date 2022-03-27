@@ -1,14 +1,17 @@
 .guests-input-modal {
-	// margin-top: 200px;
 	position: absolute;
-	top: 160px;
-	right: 260px;
 	padding: 32px 32px 32px 32px;
 	width: 375px;
 	height: 300px;
 	background-color: $white;
 	border-radius: 50px;
 	border: 1px solid rgba(0, 0, 0, 0.158);
+	transform: translate(0, 0%);
+	top: 36px;
+	right: -13px;
+	&:hover{
+		cursor: default;
+	}
 
 	hr {
 		color: red;
@@ -42,3 +45,9 @@
 		width: 104px;
 	}
 }
+
+
+// .stay-search-position{
+// 	top: 100px;
+// 	right: 200px;
+// }

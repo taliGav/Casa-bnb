@@ -21,13 +21,17 @@
 	flex-direction: column;
 }
 
-.flex.wrap{
+.flex.wrap {
 	flex-wrap: wrap;
 }
 
-.flex.around{ 
+.flex.around {
 	justify-content: space-around;
 }
-.txt-align{ 
+.txt-align {
 	text-align: center;
+}
+
+.relative {
+	position: relative;
 }

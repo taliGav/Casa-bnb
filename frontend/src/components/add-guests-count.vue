@@ -68,14 +68,11 @@ export default {
 			adults: null,
 			children: null,
 			infants: null,
+
 			// totalGuests: this.guestsCount(),
 		};
 	},
-	created() {
-		this.adults = 0;
-		this.children = 0;
-		this.infants = 0;
-	},
+	created() {},
 
 	methods: {
 		guestsReservation() {
@@ -99,15 +96,8 @@ export default {
 		},
 	},
 
-	computed: {
-		// guestsCount() {
-		// 	const sum = this.adults + this.children + this.infants;
-		// 	return sum;
-		// },
-	},
-	watch: {
-		// totalGuests: 'guestsReservation',
-	},
+	computed: {},
+	watch: {},
 };
 </script>
 <style></style>
