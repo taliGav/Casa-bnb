@@ -2,7 +2,7 @@ import { orderService } from '../../services/order-service'
 
 export default {
     state: {
-        orders: null,
+        orders: [],
     },
     getters: {
         orders(state) {
@@ -34,8 +34,11 @@ export default {
         async addOrder({ commit }, { order }) {
             console.log(order);
             try {
+                console.log('order store add 1');
                 const addedOrder = await orderService.save(order)
+                console.log('order store add 2', addedOrder);
                 commit({ type: 'addOrder', order: addedOrder })
+                console.log('order store add 3', addedOrder);
             } catch (err) {
                 console.log('err :>> ', err)
             }
