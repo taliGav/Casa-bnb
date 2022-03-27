@@ -12,7 +12,9 @@
   .details-sub-header-2{
     font-size: 14px;
     align-items: center;
-    line-height: 20px !important;
+    font-family:  'Circular-Light';
+    font-weight: 500;
+    line-height: 20px ;
     margin: 4px 0 0;
   }
 
@@ -21,15 +23,22 @@
     color: $gray-3;
     align-items: center;
     gap: 10px;
+
+    u{
+      // font-family:  'Circular-Light';
+      // font-family:  'Cereal-Book';
+      font-weight: 600;
+    }
   }
     
   .ratings {
     align-items: center;
+    font-family:  'Cereal-Medium';
+    // font-weight: 500;
   }
     
   .rate-span {
       overflow: clip !important;
-      font-weight: 600 !important;
       text-overflow: ellipsis !important;
       position: relative !important;
     }
