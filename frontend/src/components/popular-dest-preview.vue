@@ -2,7 +2,7 @@
   <section class="popular-preview">
     <img :src="destination.imgUrl" />
     <div class="preview-data">
-      <p>{{ destination.name }},</p>
+      <p>{{ destination.name }}</p>
     </div>
   </section>
 </template>
