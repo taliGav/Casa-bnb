@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="user-badge flex align just space">
+    <div @click="openUserBar" class="user-badge flex align just space">
       <span class="badge-hamburger">☰</span>
       <img
         class="badge-image"
@@ -8,10 +8,45 @@
         alt=""
       />
     </div>
+    <div v-if="isOpen">
+      <p @click="openLogInModal">Log in</p>
+      <p>Sing up</p>
+    </div>
+    <login-modal @closeModal="isModalOpen = false" v-if="isModalOpen" />
   </section>
 </template>
 <script>
-export default {};
+import loginModal from './login-modal.vue'
+export default {
+	name: 'user-badge',
+	data() {
+		return {
+			isOpen: false,
+			isModalOpen: false,
+		};
+	},
+	created() {
+	},
+	destroyed() {
+	},
+	methods: {
+		openUserBar() {
+			this.isOpen = !this.isOpen;
+		},
+		openLogInModal() {
+			this.isModalOpen = !this.isModalOpen;
+		},
+		
+	},
+	computed: {
+	},
+	watch: {
+		
+	},
+	components: {
+		loginModal
+	},
+};
 </script>
 <style>
 </style>
