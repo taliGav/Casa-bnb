@@ -11,6 +11,7 @@ export const userService = {
   signup,
   logout,
   getGuestUser,
+  getById,
 }
 
 _createUsers();
@@ -41,6 +42,12 @@ async function signup(cred) {
 
 async function logout() {
   // return await httpService.post(ENDPOINT + '/logout')
+}
+
+async function getById(id) {
+  // return await httpService.get(`${ENDPOINT}/${id}`)
+  // return axios.get(BASE_URL + id).then((res) => res.data)
+  return storageService.getById(KEY, id);
 }
 
 async function getByUsername(username) {

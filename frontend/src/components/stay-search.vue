@@ -1,68 +1,68 @@
 <template>
-	<div class="filter-container main-layot full flex align just">
-		<form>
-			<div class="filter">
-				<div
-					class="search-container"
-					@click="focusSearch"
-					:style="{ width: isSearchOpen ? '250px' : '270px' }"
-				>
-					<span>Location</span>
-					<input
-						class="search-input"
-						v-model="filterBy.destination"
-						type="text"
-						placeholder="Where are you going?"
-						ref="input"
-					/>
-				</div>
-				<div class="date-start" @click="showDatePicker">
-					<span>Check in</span>
-					<p>{{ startDate }}</p>
-				</div>
-				<div class="date-end" @click="showDatePicker">
-					<span>Check out</span>
-					<p>{{ endDate }}</p>
-				</div>
-				<div class="search-guests" @click="addGuests">
-					<div class="guests-container">
-						<span>Guests</span>
-						<p v-if="!filterBy.guests">Add guests</p>
-						<p v-else>{{ filterBy.guests }}</p>
-					</div>
+  <div class="filter-container main-layot full flex align just">
+    <form>
+      <div class="filter">
+        <div
+          class="search-container"
+          @click="focusSearch"
+          :style="{ width: isSearchOpen ? '250px' : '270px' }"
+        >
+          <span>Location</span>
+          <input
+            class="search-input"
+            v-model="filterBy.destination"
+            type="text"
+            placeholder="Where are you going?"
+            ref="input"
+          />
+        </div>
+        <div class="date-start" @click="showDatePicker">
+          <span>Check in</span>
+          <p>{{ startDate }}</p>
+        </div>
+        <div class="date-end" @click="showDatePicker">
+          <span>Check out</span>
+          <p>{{ endDate }}</p>
+        </div>
+        <div class="search-guests" @click="addGuests">
+          <div class="guests-container">
+            <span>Guests</span>
+            <p v-if="!filterBy.guests">Add guests</p>
+            <p v-else>{{ filterBy.guests }}</p>
+          </div>
 
-					<!-- </add-guests-count> -->
-				</div>
-				<div
-					@click="openSearch"
-					class="search-btn-container"
-					:style="{ width: isSearchOpen ? '130px' : '50px' }"
-				>
-					<img src="../assets/Images/logos/search-icon.svg" alt="" />
-					<p
-						v-if="isSearchOpen"
-						:style="{ opacity: isSearchOpen ? '100%' : '0%' }"
-					>
-						Search
-					</p>
-				</div>
-				<add-guests-count
-					v-if="addGuestsMenu"
-					:guests="filterBy.guests"
-					@addGuests="changeGuests"
-				/>
-			</div>
-		</form>
-		<!-- <div id="picker"> -->
-		<el-date-picker
-			v-model="pickedDates"
-			type="daterange"
-			range-separator="To"
-			start-placeholder="Start date"
-			end-placeholder="End date"
-		/>
-		<!-- </div> -->
-	</div>
+          <!-- </add-guests-count> -->
+        </div>
+        <div
+          @click="openSearch"
+          class="search-btn-container"
+          :style="{ width: isSearchOpen ? '130px' : '50px' }"
+        >
+          <img src="../assets/Images/logos/search-icon.svg" alt="" />
+          <p
+            v-if="isSearchOpen"
+            :style="{ opacity: isSearchOpen ? '100%' : '0%' }"
+          >
+            Search
+          </p>
+        </div>
+        <add-guests-count
+          v-if="addGuestsMenu"
+          :guests="filterBy.guests"
+          @addGuests="changeGuests"
+        />
+      </div>
+    </form>
+    <!-- <div id="picker"> -->
+    <el-date-picker
+      v-model="pickedDates"
+      type="daterange"
+      range-separator="To"
+      start-placeholder="Start date"
+      end-placeholder="End date"
+    />
+    <!-- </div> -->
+  </div>
 </template>
 
 <script>
@@ -191,11 +191,11 @@ export default {
 
 <style>
 .el-popper {
-	top: 340px !important;
-	left: 50% !important;
-	transform: translate(-50%, -50%) !important;
-	position: fixed !important;
-	/* top: 340px !important;
+  top: 340px !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  position: fixed !important;
+  /* top: 340px !important;
 	left: 50% !important; */
 }
 </style>
