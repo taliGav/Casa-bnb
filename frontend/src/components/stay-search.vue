@@ -30,11 +30,7 @@
 						<p v-if="!filterBy.guests">Add guests</p>
 						<p v-else>{{ filterBy.guests }}</p>
 					</div>
-					<add-guests-count
-						v-if="addGuestsMenu"
-						:guests="filterBy.guests"
-						@addGuests="changeGuests"
-					/>
+
 					<!-- </add-guests-count> -->
 				</div>
 				<div
@@ -50,6 +46,11 @@
 						Search
 					</p>
 				</div>
+				<add-guests-count
+					v-if="addGuestsMenu"
+					:guests="filterBy.guests"
+					@addGuests="changeGuests"
+				/>
 			</div>
 		</form>
 		<!-- <div id="picker"> -->
@@ -75,7 +76,7 @@ export default {
 			addGuestsMenu: false,
 			filterBy: {
 				destination: '',
-				guests: null,
+				guests: 0,
 			},
 			pickedDates: null,
 		};
