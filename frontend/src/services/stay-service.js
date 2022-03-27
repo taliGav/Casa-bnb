@@ -344,7 +344,7 @@ function _createStays() {
           "translation missing: en.hosting_amenity_50"
         ],
         "host": {
-          "_id": "51399392",
+          "_id": "51399391",
           "fullname": "Angel",
           "imgUrl": "/src/assets/images/profilePics/1.jpg",
         },
@@ -443,7 +443,7 @@ function _createStays() {
           "Fixed grab bars for shower"
         ],
         "host": {
-          "_id": "51399391",
+          "_id": "51399392",
           "fullname": "Maria",
           "imgUrl": "/src/assets/images/profilePics/1.jpg",
         },
@@ -518,7 +518,7 @@ function _createStays() {
           "Lockbox"
         ],
         "host": {
-          "_id": "51399391",
+          "_id": "51399393",
           "fullname": "Shaila & Alex",
           "imgUrl": "https://a0.muscache.com/im/users/6334250/profile_pic/1368287493/original.jpg?aki_policy=profile_small",
         },
@@ -585,7 +585,7 @@ function _createStays() {
           "translation missing: en.hosting_amenity_50"
         ],
         "host": {
-          "_id": "51399391",
+          "_id": "51399394",
           "fullname": "Marián",
           "imgUrl": "https://a0.muscache.com/im/users/31635864/profile_pic/1429604852/original.jpg?aki_policy=profile_small",
         },
@@ -620,14 +620,10 @@ function _createStays() {
         "interaction": "Te proporcionaré sábanas y toallas, para que no te preocupes de traerlas tú.",
         "houseRules": "-Mantener el espacio limpio y recogido. -No está permitido invitar a gente al apartamento. -Respetar el descanso de los vecinos. -No hacer ruido en la escalera. Apelo al sentido común de los inquilinos para una convivencia relajada y fluída. No hay normas en la casa más allá de las que dicte el sentido común.",
         "type": "Apartment",
-        // "roomType": "Private room",
-        // "bedType": "Real Bed",
-        "cancellationPolicy": "strict_14_with_grace_period",
         "capacity": 2,
         "bedrooms": 1,
         "beds": 1,
         "bathrooms": 1,
-        "numOfReviews": 108,
         "amenities": [
           "Wifi",
           "Kitchen",
@@ -635,28 +631,13 @@ function _createStays() {
           "Smoking allowed",
           "Heating",
           "Washer",
-          "Essentials",
-          "Shampoo",
-          "Lock on bedroom door",
-          "Hangers",
-          "Hair dryer",
-          "Iron",
-          "translation missing: en.hosting_amenity_49",
-          "translation missing: en.hosting_amenity_50",
-          "Hot water",
           "Bed linens",
           "Host greets you"
         ],
         "host": {
-          "_id": "622f3404e36c59e6164fb63a",
+          "_id": "51399395",
           "fullname": "Isabel",
-          "location": "Barcelona, Catalonia, Spain",
-          "about": "Mi nombre es Isabel, pero me llamo Isa. Nací en Vigo (Galicia). Con 20 años me fuí a vivir a Madrid con intención de ser actriz; ahora resido en Barcelona desde los 28. Soy una joven de 43 años, cantante de Jazz. Me gusta salir, pero también quedarme en casa a leer o ver alguna buena película.\r\nHe compartido piso muchos años, pero estas serán mis primeras experiencias como anfitriona.\r\n\r\n¡Sed bienvenidos!\r\n",
-          "responseTime": "within an hour",
-          "thumbnailUrl": "https://a0.muscache.com/im/pictures/72a579ce-37d7-466e-9c25-9876ee8de037.jpg?aki_policy=profile_small",
-          "pictureUrl": "https://a0.muscache.com/im/pictures/72a579ce-37d7-466e-9c25-9876ee8de037.jpg?aki_policy=profile_x_medium",
-          "isSuperhost": false,
-          "id": "35858044"
+          "imgUrl": "https://a0.muscache.com/im/users/31635864/profile_pic/1429604852/original.jpg?aki_policy=profile_small",
         },
         "loc": {
           "street": "Barcelona, Catalonia, Spain",

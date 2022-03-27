@@ -12,6 +12,8 @@
 import staySearch from "../components/stay-search.vue";
 import popularStaysList from '../components/popular-stays-list.vue'
 import popularDestList from '../components/popular-dest-list.vue'
+import {userService} from '../services/user-service.js'
+
 export default {
   name: "home",
   data() {
