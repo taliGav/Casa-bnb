@@ -84,6 +84,12 @@ export default {
         commit({ type: 'removeStay', stayId });
       });
     },
+    async getStayById({state},{stayId}){
+      console.log('getting stay', stayId )
+      const stay = await stayService.getById(stayId);
+        return stay
+        
+    }
     // setFilter({ dispatch, commit, state }, { filterBy }) {
     //   // console.log('store', destination, guests);
     //   commit({ type: 'setFilter', filterBy });
