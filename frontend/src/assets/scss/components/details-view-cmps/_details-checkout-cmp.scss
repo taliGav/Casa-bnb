@@ -1,17 +1,14 @@
 .details-checkout {
-	// position: fixed;
-	// margin: 48px 0 0 50px;
 	border: 1px solid $gray-4;
 	border-radius: 12px;
 	padding: 24px;
 	width: 100%;
 	height: 300px;
-	// max-width: 370px;
 	color: $gray-3;
 	box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
 
 	.price-and-rate {
-		flex-flow: row wrap ;
+		flex-flow: row wrap;
 		padding-bottom: 24px;
 		font-size: 16px;
 		font-weight: 400;
@@ -39,7 +36,8 @@
 				border-right: 0.5px solid $gray-3;
 				border-bottom: 0.5px solid $gray-3;
 				height: 56px;
-				
+				padding-left: 10px;
+				// align-items: start;
 
 				&:hover {
 					cursor: pointer;
@@ -54,6 +52,8 @@
 			.check-out-container {
 				border-bottom: 0.5px solid $gray-3;
 				height: 56px;
+				padding-left: 10px;
+
 				&:hover {
 					cursor: pointer;
 				}
@@ -85,6 +85,12 @@
 	// margin-bottom: 16px;
 	&:hover {
 		cursor: pointer;
+	}
+	.guests-value {
+		// padding: 26px 36px 10px 12px;
+	}
+	.guests-container {
+		padding-left: 10px;
 	}
 }
 

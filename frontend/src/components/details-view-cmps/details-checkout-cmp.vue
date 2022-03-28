@@ -10,13 +10,13 @@
 			</div>
 			<div class="dates-guests">
 				<div class="dates flex space" @click="openCalender">
-					<div class="check-in-container flex col align just">
+					<div class="check-in-container flex col just">
 						<div class="check-in-title title">CHECK-IN</div>
 						<div class="check-in-value">
 							<p>{{ startDate }}</p>
 						</div>
 					</div>
-					<div class="check-out-container">
+					<div class="check-out-container flex just col">
 						<div class="check-out-title title">CHECKOUT</div>
 						<div class="check-out-value">
 							<p>{{ endDate }}</p>
@@ -24,7 +24,7 @@
 					</div>
 				</div>
 				<div class="guests flex space" @click.stop.prevent="openGuestsMenu">
-					<div class="guests-container">
+					<div class="guests-container flex col just">
 						<div class="guests-title title">GUESTS</div>
 						<div class="guests-value flex">
 							<p>{{ guestsCount }} &ensp;</p>
