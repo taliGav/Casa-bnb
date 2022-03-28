@@ -6,6 +6,8 @@
 	height: 300px;
 	color: $gray-3;
 	box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+	position: sticky;
+	top: 100px;
 
 	.price-and-rate {
 		flex-flow: row wrap;
@@ -37,7 +39,6 @@
 				border-bottom: 0.5px solid $gray-3;
 				height: 56px;
 				padding-left: 10px;
-				// align-items: start;
 
 				&:hover {
 					cursor: pointer;
@@ -46,7 +47,6 @@
 				.check-in-title {
 				}
 				.check-in-value {
-					// padding: 26px 12px 10px;
 				}
 			}
 			.check-out-container {
@@ -62,7 +62,6 @@
 			.check-out-title {
 			}
 			.check-out-value {
-				// padding: 26px 12px 10px;
 			}
 			.check-out-container {
 				flex-grow: 1;
@@ -75,19 +74,17 @@
 		}
 
 		.guests-value {
-			// padding: 26px 36px 10px 12px;
 		}
 	}
 }
 
 .guests {
 	height: 56px;
-	// margin-bottom: 16px;
+
 	&:hover {
 		cursor: pointer;
 	}
 	.guests-value {
-		// padding: 26px 36px 10px 12px;
 	}
 	.guests-container {
 		padding-left: 10px;
