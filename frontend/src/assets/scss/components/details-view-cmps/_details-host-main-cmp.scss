@@ -1,75 +1,72 @@
 .details-main-container {
-    box-shadow: inset 0 -0.5px 0 0 #ddd;
+	.host-section {
+		min-width: 380px;
 
-    .main-inner-container {
-        flex-grow: 2;
-        // box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+		.host-details {
+			padding-top: 48px;
+			padding-bottom: 24px;
+			box-shadow: inset 0 -0.5px 0 0 rgb(199, 199, 199);
 
-        .host-section {
-            min-width: 380px;
+			.host-main-details {
+				color: $gray-3;
 
-            .host-details {
-                padding-top: 48px;
-                padding-bottom: 24px;
-                box-shadow: inset 0 -0.5px 0 0 #ddd;
+				.host-main-title {
+					margin-bottom: 8px;
+				}
+			}
 
-                .host-main-details {
-                    color: $gray-3;
+			.host-img-container {
+				margin-left: 16px;
+				width: 56px;
+				height: 56px;
+				border-radius: 50%;
 
-                    .host-main-title {
-                        margin-bottom: 8px;
-                    }
-                }
+				.host-img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
 
-                .host-img-container {
-                    margin-left: 16px;
-                    width: 56px;
-                    height: 56px;
-                    border-radius: 50%;
+		.host-highlights-container {
+			padding-top: 32px;
+			padding-bottom: 24px;
+			box-shadow: inset 0 -0.5px 0 0 rgb(199, 199, 199);
+		}
 
-                    .host-img {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-            }
+		.host-highlight-category-container {
+			display: flex;
+			margin-bottom: 24px;
+		}
 
-            .host-highlights-container {
-                padding-top: 32px;
-                padding-bottom: 24px;
-                box-shadow: inset 0 -0.5px 0 0 #ddd;
-            }
+		.highlight-container {
+			margin-left: 16px;
+		}
 
-            .host-highlight-category-container {
-                display: flex !important;
-                margin-bottom: 24px !important;
-            }
+		.host-highlights-category {
+			color: rgb(34, 34, 34);
+			font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+				'Helvetica Neue', sans-serif;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 4px;
+		}
 
-            .highlight-container {
-                margin-left: 16px;
-            }
+		.host-highlight-text {
+			color: rgb(113, 113, 113);
+			font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+				'Helvetica Neue', sans-serif;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
 
-            .host-highlights-category {
-                color: rgb(34, 34, 34) !important;
-                font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
-                font-weight: 600 !important;
-                font-size: 16px !important;
-                line-height: 20px !important;
-                margin-bottom: 4px !important;
-            }
-
-            .host-highlight-text {
-                color: rgb(113, 113, 113) !important;
-                font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
-                font-weight: 400 !important;
-                font-size: 14px !important;
-                line-height: 20px !important;
-            }
-        }
-
-        .preview-stay-container {
-            padding-top: 32px;
-            padding-bottom: 48px;
-        }
-    }
+	.preview-stay-container {
+		padding-top: 32px;
+		padding-bottom: 32px;
+        box-shadow: inset 0 -0.5px 0 0 rgb(199, 199, 199);
+        margin-bottom: 48px;
+	}
 }

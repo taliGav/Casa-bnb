@@ -7,7 +7,24 @@
 //     color: var(--gray-400);
 //   }
 // }
-.checkout-container{
-    width: 30vw;
-    margin-top:48px;
+.checkout-container {
+	width: 30%;
+    margin-left: 10%;
+	margin-top: 48px;
+}
+
+.details-main-container {
+	width: 100%;
+}
+
+.stay-details {
+	padding-top: 100px;
+}
+
+// box-shadow: inset 0 -0.5px 0 0 #ddd;
+
+.main-inner-container {
+    width: 60%;
+	// flex-grow: 2;
+	// box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
 }

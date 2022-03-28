@@ -10,7 +10,7 @@
 			</div>
 			<div class="dates-guests">
 				<div class="dates flex space" @click="openCalender">
-					<div class="check-in-container">
+					<div class="check-in-container flex col align just">
 						<div class="check-in-title title">CHECK-IN</div>
 						<div class="check-in-value">
 							<p>{{ startDate }}</p>
@@ -136,7 +136,7 @@ export default {
 				endDate: this.resirvationDates[1],
 				totalPrice: days * this.stay.price,
 			};
-			this.$store.dispatch({type:'addOrder', order})
+			this.$store.dispatch({ type: 'addOrder', order });
 			console.log('makin reservations', order);
 
 			// var days = Math.floor(delta / 86400);
@@ -179,8 +179,3 @@ export default {
 	/* position: relative; */
 }
 </style>
-
-// // "hostId": order.hostId, // // "buyer": { // "_id": buyer._id, // // }, //
-"totalPrice": order.totalPrice, // "startDate": order.startDate, // "endDate":
-order.endDate, // "guests": order.guests, // "stay": { // "_id": stay._id, // //
-}, //
