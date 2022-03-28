@@ -29,6 +29,7 @@
 						>Become a Host</router-link
 					>
 				</div>
+				<!-- <router-link></router-link> -->
 				<user-badge></user-badge>
 			</nav>
 		</div>

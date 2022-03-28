@@ -2,6 +2,26 @@
 	display: grid;
 	grid-template-columns: $layoutPadding 1fr $layoutPadding;
 
+	// @include for-narrow-layout {
+	//     @include layoutGTC($break-narrow);
+	// }
+
+	@include for-sm-layout {
+		@include layoutGTC($small);
+	}
+	@include for-md-layout {
+		@include layoutGTC($medium);
+	}
+	@include for-lg-layout {
+		@include layoutGTC($large);
+	}
+	@include for-xl-layout {
+		@include layoutGTC($x-large);
+	}
+	@include for-home-layout {
+		@include layoutGTC($home-page-large);
+	}
+
 	> * {
 		grid-column: 2;
 	}
@@ -15,14 +35,11 @@
 	// 	grid-auto-flow: dense;
 	// 	grid-template-columns: repeat(6, 1fr);
 	// }
-	
 }
 
-.main-app{
-	min-height: 85vh;
+.main-app {
+	min-height: 90vh;
 }
 
-
-.details-layout{
-	
+.details-layout {
 }

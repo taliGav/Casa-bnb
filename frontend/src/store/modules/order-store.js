@@ -12,6 +12,7 @@ export default {
     mutations: {
         setOrders(state, { orders }) {
             state.orders = orders
+            console.log(state.orders);
         },
         addOrder(state, { order }) {
             state.orders.push(order)
@@ -23,6 +24,7 @@ export default {
     },
     actions: {
         async getOrders({ commit }, { filterBy }) {
+            console.log(filterBy);
             try {
                 const orders = await orderService.query(filterBy)
                 commit({ type: 'setOrders', orders })
@@ -51,5 +53,8 @@ export default {
                 console.log('err :>> ', err)
             }
         },
+        // async getHostOrders(){
+
+        // }
     },
 }

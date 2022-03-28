@@ -23,6 +23,12 @@
     @content;
   }
 }
+@mixin for-home-layout {
+  @media (min-width: $home-page-large) {
+    @content;
+  }
+}
+
 
 @mixin layoutGTC($max) {
   grid-template-columns:
@@ -129,3 +135,16 @@
     font-variation-settings: 'wght' 200;
   }
 }
+
+
+@mixin layoutGTC($max) {
+  grid-template-columns:
+    minmax($layoutPadding, 1fr) minmax(auto, $max) minmax($layoutPadding, 1fr);
+}
+
+@mixin for-normal-layout {
+  @media (min-width: $break-normal) {
+    @content;
+  }
+}
+

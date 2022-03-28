@@ -28,6 +28,8 @@ async function query(filterBy = {}) {
 
   try {
     var orders = await storageService.query(KEY);
+
+    orders = orders.filter((order) => order.hostId === filterBy._id);
     // if (filterBy.destination) {
     //   const regex = new RegExp(filterBy.destination, 'i');
     //   orders = orders.filter((order) => regex.test(order.loc.country) || regex.test(order.loc.city));
@@ -77,7 +79,7 @@ async function remove(id) {
 }
 
 async function save(order) {
-  var orderToSave = order._id ? order : await getEmptyOrder(order)
+  var orderToSave = order._id ? order : await getEmptyOrder(order);
   // return order._id
   // ? await httpService.put(`${ENDPOINT}/${order._id}`, order)
   // : await httpService.post(ENDPOINT, order)
@@ -113,7 +115,7 @@ async function getEmptyOrder(order) {
 function _createOrders() {
   let orders = utilService.loadFromStorage(KEY);
   if (!orders || !orders.length) {
-    orders = []
+    orders = [];
     utilService.saveToStorage(KEY, orders);
   }
   return orders;

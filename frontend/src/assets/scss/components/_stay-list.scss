@@ -1,28 +1,8 @@
-// .stay-list {
-//     display: grid !important;
-//     grid-template-columns: repeat(12, 1fr) !important;
-//     grid-column-gap: var(48px, 12px)  !important;
-//     grid-row-gap: 32px, 8px  !important;
-// 	color: $gray-3;
-// }
-
-
 .stay-list {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	grid-gap: 24px;
 	justify-content: space-between;
-    padding-top: 160px;
+	padding-top: 160px;
 	color: $gray-3;
-
-    // grid-template-columns: repeat(auto-, minmax(9vw, 0fr));
-    // grid-auto-rows: 9vh;
 }
-
-// .stay-list{
-// 	display: grid;
-// 		column-gap: 20px;
-// 		grid-template-columns: repeat(4,minmax(0,1fr));
-// 		padding-top: 50px;
-// 		padding-bottom: 50px;
-// }
