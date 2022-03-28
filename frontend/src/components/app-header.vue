@@ -37,70 +37,70 @@
 	</header>
 </template>
 <script>
-import userBadge from './app-header-cmps/user-badge.vue';
-import staySearch from '../components/stay-search.vue';
-import datePicker from '../components/date-picker.vue';
-import smallSearchBar from '../components/small-search-bar.vue';
+import userBadge from "./app-header-cmps/user-badge.vue";
+import staySearch from "../components/stay-search.vue";
+import datePicker from "../components/date-picker.vue";
+import smallSearchBar from "../components/small-search-bar.vue";
 
 export default {
-	name: 'app-header',
-	data() {
-		return {
-			isOpen: null,
-			colorsChange: null,
-			isSearchClicked: false,
-		};
-	},
-	created() {
-		window.addEventListener('scroll', this.handleScroll);
-	},
-	destroyed() {
-		window.removeEventListener('scroll', this.handleScroll);
-	},
-	methods: {
-		handleScroll() {
-			if (window.scrollY === 0 && this.$route.path === '/') {
-				this.colorsChange = false;
-				this.isOpen = true;
-			}
-			if (window.scrollY !== 0) {
-				this.colorsChange = true;
-				this.isOpen = false;
-				this.isSearchClicked = false;
-			}
-		},
-		openSearch() {
-			console.log('header opening search');
-			this.isOpen = true;
-			this.isSearchClicked = true;
-		},
-		checkPagePath() {
-			if (this.$route.path !== '/') {
-				this.isOpen = false;
-				this.colorsChange = true;
-			} else {
-				this.isOpen = true;
-				this.colorsChange = false;
-				this.isSearchClicked = false;
-			}
-		},
-	},
+  name: "app-header",
+  data() {
+    return {
+      isOpen: null,
+      colorsChange: null,
+      isSearchClicked: false,
+    };
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      if (window.scrollY === 0 && this.$route.path === "/") {
+        this.colorsChange = false;
+        this.isOpen = true;
+      }
+      if (window.scrollY !== 0) {
+        this.colorsChange = true;
+        this.isOpen = false;
+        this.isSearchClicked = false;
+      }
+    },
+    openSearch() {
+      console.log("header opening search");
+      this.isOpen = true;
+      this.isSearchClicked = true;
+    },
+    checkPagePath() {
+      if (this.$route.path !== "/") {
+        this.isOpen = false;
+        this.colorsChange = true;
+      } else {
+        this.isOpen = true;
+        this.colorsChange = false;
+        this.isSearchClicked = false;
+      }
+    },
+  },
 
-	computed: {
-		searchStatus() {
-			if (this.isSearchClicked) return 'rgba(255, 255, 255)';
-		},
-	},
-	watch: {
-		$route(to, from) {
-			this.checkPagePath();
-		},
-	},
-	components: {
-		userBadge,
-		staySearch,
-		datePicker,
-		smallSearchBar,
-	},
+  computed: {
+    searchStatus() {
+      if (this.isSearchClicked) return "rgba(255, 255, 255)";
+    },
+  },
+  watch: {
+    $route(to, from) {
+      this.checkPagePath();
+    },
+  },
+  components: {
+    userBadge,
+    staySearch,
+    datePicker,
+    smallSearchBar,
+  },
 };
 </script>
