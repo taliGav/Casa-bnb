@@ -15,8 +15,11 @@
     <login-modal @closeModal="isModalOpen = false" v-if="isModalOpen" />
   </section>
 </template>
+
+
 <script>
 import loginModal from './login-modal.vue'
+
 export default {
 	name: 'user-badge',
 	data() {

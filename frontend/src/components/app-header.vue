@@ -36,7 +36,7 @@
 	</header>
 </template>
 <script>
-import userBadge from './user-badge.vue';
+import userBadge from './app-header-cmps/user-badge.vue';
 import staySearch from '../components/stay-search.vue';
 import datePicker from '../components/date-picker.vue';
 import smallSearchBar from '../components/small-search-bar.vue';
