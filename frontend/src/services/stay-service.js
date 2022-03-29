@@ -1,6 +1,6 @@
 // import axios from 'axios'
 import { utilService } from './util-service';
-// import { httpService } from './http-service';
+import { httpService } from './http-service';
 import { storageService } from './async-storage-service';
 
 
@@ -111,7 +111,7 @@ function getLessAmenities() {
 }
 
 async function query(filterBy = {}) {
-
+  return await httpService.get(`${ENDPOINT}`, filterBy)
   try {
     var stays = await storageService.query(KEY);
     if (filterBy.destination) {
@@ -151,22 +151,22 @@ async function query(filterBy = {}) {
 }
 
 async function getById(id) {
-  // return await httpService.get(`${ENDPOINT}/${id}`)
+  return await httpService.get(`${ENDPOINT}/${id}`)
   // return axios.get(BASE_URL + id).then((res) => res.data)
-  return storageService.getById(KEY, id);
+  // return storageService.getById(KEY, id);
 }
 
 async function remove(id) {
-  // return await httpService.delete(`${ENDPOINT}/${id}`)
+  return await httpService.delete(`${ENDPOINT}/${id}`)
   // return axios.delete(BASE_URL + id).then((res) => res.data)
-  return storageService.remove(KEY, id);
+  // return storageService.remove(KEY, id);
 }
 
 async function save(stay) {
-  // return stay._id
-  // ? await httpService.put(`${ENDPOINT}/${stay._id}`, stay)
-  // : await httpService.post(ENDPOINT, stay)
-  return stay._id ? storageService.put(KEY, stay) : storageService.post(KEY, stay);
+  return stay._id
+    ? await httpService.put(`${ENDPOINT}/${stay._id}`, stay)
+    : await httpService.post(ENDPOINT, stay)
+  // return stay._id ? storageService.put(KEY, stay) : storageService.post(KEY, stay);
 }
 
 function getEmptyStay() {
@@ -310,7 +310,7 @@ function _createStays() {
             }
           }
         ],
-        "likedByUsers": ['mini-user'] // for user-wishlist : use $in
+        "likedByUsers": ['mini-user']
       },
       {
         "_id": "10006547",
@@ -371,7 +371,7 @@ function _createStays() {
             }
           }
         ],
-        "likedByUsers": ['mini-user'] // for user-wishlist : use $in
+        "likedByUsers": ['mini-user']
       },
       {
         "_id": "10006548",
@@ -482,7 +482,7 @@ function _createStays() {
             }
           }
         ],
-        "likedByUsers": ['mini-user'] // for user-wishlist : use $in
+        "likedByUsers": ['mini-user']
       },
       {
         "_id": "10006531",
@@ -494,7 +494,7 @@ function _createStays() {
           '/src/assets/images/019.jpeg',
           '/src/assets/images/020.jpeg'],
         "price": 133.00,
-        "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
+        "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
         "capacity": 2,
         "bedrooms": 1,
         "beds": 1,
@@ -560,7 +560,7 @@ function _createStays() {
             }
           }
         ],
-        "likedByUsers": ['mini-user'] // for user-wishlist : use $in
+        "likedByUsers": ['mini-user']
       },
       {
         "_id": "10006588",
@@ -617,7 +617,7 @@ function _createStays() {
             }
           },
         ],
-        "likedByUsers": ['mini-user'] // for user-wishlist : use $in
+        "likedByUsers": ['mini-user']
       },
       {
         "_id": "622f337a75c7d36e498aaafd",
@@ -773,7 +773,7 @@ function _createStays() {
           '/src/assets/images/028.jpeg',
           '/src/assets/images/029.jpeg',
           '/src/assets/images/030.jpeg'],
-        "likedByUsers": ['mini-user'] // for user-wishlist : use $in
+        "likedByUsers": ['mini-user']
       },
 
     ];

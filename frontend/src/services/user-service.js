@@ -1,5 +1,5 @@
 import { utilService } from './util-service';
-// import { httpService } from './http-service';
+import { httpService } from './http-service';
 import { storageService } from './async-storage-service';
 
 const ENDPOINT = 'auth'
@@ -17,36 +17,31 @@ export const userService = {
 _createUsers();
 
 async function login(cred) {
-  try {
-    console.log('service login cred:', cred);
-    const user = await getByUsername(cred.username)
-    if (!user) {
-      return Promise.reject('Invalid username or password')
-    }
+  return await httpService.post(ENDPOINT + '/login', cred)
 
-    const match = user.password === cred.password
-    if (!match) {
-      return Promise.reject('Invalid username or password')
-    }
-    delete user.password
-    utilService.saveToSessionStorage(LOGED_KEY, user);
-    return user
-  }
-  finally { }
-  // return await httpService.post(ENDPOINT + '/login', cred)
+  // try {
+  //   console.log('service login cred:', cred);
+  //   const user = await getByUsername(cred.username)
+  //   if (!user) {
+  //     return Promise.reject('Invalid username or password')
+  //   }
+
+  //   const match = user.password === cred.password
+  //   if (!match) {
+  //     return Promise.reject('Invalid username or password')
+  //   }
+  //   delete user.password
+  //   utilService.saveToSessionStorage(LOGED_KEY, user);
+  //   return user
+  // }
+  // finally { }
 }
 
 async function signup(cred) {
-  // try {
-  //   console.log('signup 1', cred.username);
-  //   await signupChack(cred.username)
-  //   console.log('signup 4');
-  return storageService.post(KEY, cred)
-  // } catch (err) {
-  //   console.error(`user: ${username} already exists`, err)
-  //   throw err
-  // }
-  // return await httpService.post(ENDPOINT + '/signup', cred)
+  return await httpService.post(ENDPOINT + '/signup', cred)
+
+  // return storageService.post(KEY, cred)
+
 }
 
 async function signupChack(username) {
@@ -61,14 +56,14 @@ async function signupChack(username) {
 }
 
 async function logout() {
-  sessionStorage.removeItem(LOGED_KEY);
-  // return await httpService.post(ENDPOINT + '/logout')
+  // sessionStorage.removeItem(LOGED_KEY);
+  return await httpService.post(ENDPOINT + '/logout')
 }
 
 async function getById(id) {
-  // return await httpService.get(`${ENDPOINT}/${id}`)
+  return await httpService.get(`${ENDPOINT}/${id}`)
   // return axios.get(BASE_URL + id).then((res) => res.data)
-  return storageService.getById(KEY, id);
+  // return storageService.getById(KEY, id);
 }
 
 async function getByUsername(username) {

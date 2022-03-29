@@ -20,7 +20,7 @@ export default {
       try {
         const user = await userService.login(cred)
         commit({ type: 'setUser', user })
-        // utilService.saveToSessionStorage('user', user)
+        utilService.saveToSessionStorage('loged_user', user)
       } catch (err) {
         console.log(err)
       }
