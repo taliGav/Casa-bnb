@@ -42,4 +42,16 @@
 }
 
 .details-layout {
+	@include for-sm-layout {
+		@include layoutGTC($small);
+	}
+	@include for-md-layout {
+		@include layoutGTC($medium);
+	}
+	@include for-lg-layout {
+		@include layoutGTC($large);
+	}
+	@include for-xl-layout {
+		@include layoutGTC($x-large);
+	}
 }
