@@ -1,10 +1,10 @@
 <template>
 	<!-- <div> -->
 	<section>
-		<li class="table-row">
+		<li class="table-row" v-if="order">
 			<div class="col col-1">
 				<p>Check in-{{ startDate }}</p>
-				
+
 				<p>Check out-{{ endDate }}</p>
 			</div>
 			<div class="col col-2">

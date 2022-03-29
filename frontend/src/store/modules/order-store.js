@@ -28,6 +28,7 @@ export default {
             try {
                 const orders = await orderService.query(filterBy)
                 commit({ type: 'setOrders', orders })
+                console.log(orders);
                 return orders
             } catch (err) {
                 console.log('err :>> ', err)

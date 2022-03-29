@@ -39,7 +39,8 @@
       </div>
       <div class="reg-host-actions">
         <div class="host-your-home-label info label" @click="goToListings">
-          <p>Manage listings</p>
+          <router-link to="/reservations">Manage listings</router-link>
+          <!-- <p>Manage listings</p> -->
         </div>
         <div class="host-your-home-label info label" @click="goToAccount">
           <p>Account</p>
