@@ -4,7 +4,7 @@ import about from '@/views/about.vue';
 import stayApp from '@/views/stay-app.vue';
 import stayDetails from '@/views/stay-details.vue';
 import reservationsOffice from '@/views/reservations-office.vue';
-import becomeHost from '@/views/host/become-host.vue';
+import addStay from '@/views/host/add-stay.vue';
 // import stayEdit from '@/views/stay-edit.vue'
 // import dashboard from '@/views/dashboard.vue'
 // import login from '@/views/login.vue'
@@ -36,9 +36,9 @@ const router = createRouter({
       component: reservationsOffice,
     },
     {
-      path: '/become-host',
-      name: 'become-host',
-      component: becomeHost,
+      path: '/add-stay',
+      name: 'add-stay',
+      component: addStay,
     },
     // {
     //   path: '/dashboard',

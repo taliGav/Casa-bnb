@@ -9,7 +9,7 @@
 </template>
 
 <script>
-  import {uploadImg} from '../services/imgUpload.service.js';
+  import {uploadImg} from './../../services/imgUpload.service.js';
   export default {
     data() {
       return {

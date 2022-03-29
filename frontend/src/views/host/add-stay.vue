@@ -11,9 +11,10 @@
 </template>
 
 <script>
-  import imgUpload from './../components/host/img-upload.vue';
+  import imgUpload from './../../components/host/img-upload.vue'
 
   export default {
+    name: 'add-stay',
     components: {imgUpload},
     data() {
       return {
