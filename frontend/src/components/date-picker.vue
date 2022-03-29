@@ -1,14 +1,14 @@
 <template>
-	<div>
-		<el-date-picker
-			class="father"
-			v-model="orderDates"
-			type="daterange"
-			range-separator="To"
-			start-placeholder="Start date"
-			end-placeholder="End date"
-		/>
-	</div>
+  <div>
+    <el-date-picker
+      class="father"
+      v-model="orderDates"
+      type="daterange"
+      range-separator="To"
+      start-placeholder="Start date"
+      end-placeholder="End date"
+    />
+  </div>
 </template>
 <script>
 export default {

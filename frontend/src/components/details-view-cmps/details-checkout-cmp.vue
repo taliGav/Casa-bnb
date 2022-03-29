@@ -37,7 +37,7 @@
 
 					</div> -->
           <div class="calender-checkout-container">
-            <div class="relative">
+            <div id="date-container" class="relative">
               <date-picker
                 :isOpen="isCalendar"
                 @orders="orderDates"
@@ -168,7 +168,14 @@ export default {
 			// console.log(guest);
 		},
 		openCalender() {
+
+			var d = window.document.querySelector('.el-popper')
+			var container = this.$el.querySelector('#date-container')
+			console.log('date picker:',d,container);
+			container.append(d)
 			this.isCalendar = !this.isCalendar;
+			
+
 		},
 		orderDates(dates) {
 			this.resirvationDates = dates;
