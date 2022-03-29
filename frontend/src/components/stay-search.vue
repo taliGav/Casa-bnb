@@ -1,5 +1,5 @@
 <template>
-  <div class="filter-container main-layot full flex align just">
+  <div class="filter-container main-layout full flex align just">
     <form>
       <div class="filter">
         <div

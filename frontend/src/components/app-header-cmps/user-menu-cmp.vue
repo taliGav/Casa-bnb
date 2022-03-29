@@ -3,7 +3,7 @@
     <div class="guest-user-menu" v-if="isGuest">
       <div class="guest-user-actions">
         <div @click="openLogInModal" class="sign-up-action-label action label">
-          <p>Sign up</p>
+          <p class="sign-up">Sign up</p>
         </div>
         <div class="log-in-action-label action label" @click="openLogInModal">
           <p>Log in</p>

@@ -2,7 +2,7 @@
   <section class="price-modal">
     <div class="slider">
       <HistogramSlider
-        :width="250"
+        :width="200"
         :bar-height="100"
         :data="prices"
         :min="0"

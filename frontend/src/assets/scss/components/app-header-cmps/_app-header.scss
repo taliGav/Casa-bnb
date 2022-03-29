@@ -126,6 +126,8 @@
 }
 
 .user-menu-sec {
+	font-family: airbnb-regular, sans-serif;
+	font-size: 15px;
 	color: #222;
 	z-index: 2000;
 	display: flex;
@@ -138,11 +140,14 @@
 	width: 240px;
 	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.18);
 
-	.guest-user-info , .reg-user-actions {
+	.guest-user-info,
+	.reg-user-actions {
 		margin: 8px 0;
 	}
 
-	.guest-user-actions, .reg-host-actions, .reg-user-info {
+	.guest-user-actions,
+	.reg-host-actions,
+	.reg-user-info {
 		margin-top: 8px;
 		padding-bottom: 8px;
 		border-bottom: 1px solid #dddddd;
@@ -151,7 +156,6 @@
 	// .reg-user-actions {
 	// 	margin: 8px 0;
 	// }
-
 
 	.label {
 		cursor: pointer;
@@ -162,9 +166,15 @@
 			background-color: rgb(248, 246, 246);
 		}
 	}
+
+	.sign-up {
+		font-family: airbnb-light, sans-serif;
+		font-weight: 600;
+	}
 }
 
 .login-modal-container {
+	font-family: airbnb-light, sans-serif;
 	position: fixed;
 	transform: translate(-50%, -50%);
 	top: 50%;
@@ -195,23 +205,103 @@
 		border-top-right-radius: 12px !important;
 
 		header {
+			// font-family: airbnb-light, sans-serif;
 			min-height: 48px;
 			padding: 0 24px;
-			// align-items: center;
+			align-items: center;
 			text-align: center;
 			align-content: center;
 			justify-content: center;
 			justify-items: center;
 			// text-justify: auto;
 			// padding-bottom: 20px;
+			font-family: cereal-bold, sans-serif;
 			font-size: 16px;
-			font-weight: 800;
 			line-height: 20px;
+			font-weight: 800;
 			border-bottom: 1px solid rgb(235, 235, 235);
+
+			.login-header {
+				display: flex;
+				width: 500px;
+				height: 64px;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				text-justify: auto;
+			}
 		}
 
 		form {
 			padding: 24px;
+
+			h1 {
+				margin: 8px 0 24px 0;
+				font-size: 22px;
+				line-height: 26px;
+				font-weight: 600;
+			}
+
+			.input-main-container {
+				border-radius: 12px;
+				border: 1px solid rgb(235, 235, 235);
+
+				.username-con{
+					border-bottom: 1px solid rgb(235, 235, 235);
+				}
+
+				.input-container {
+					padding: 10px 20px;
+
+					&:hover {
+						cursor: pointer;
+					}
+					
+					label {
+						font-family: circular-bold;
+						font-size: 14px;
+						font-weight: 800;
+						line-height: 18px;
+					}
+			
+
+					input {
+						border: none;
+					}
+				}
+			}
+
+			button {
+				position: relative;
+				appearance: none;
+				background: #f72359;
+				padding: 1em 2em;
+				border: none;
+				color: white;
+				font-size: 1.2em;
+				cursor: pointer;
+				outline: none;
+				overflow: hidden;
+				border-radius: 100px;
+				span {
+					position: relative;
+				}
+				&::before {
+					--size: 0;
+					content: "";
+					position: absolute;
+					left: var(--x);
+					top: var(--y);
+					width: var(--size);
+					height: var(--size);
+					background: radial-gradient(circle closest-side, #ffffff, transparent);
+					transform: translate(-50%, -50%);
+					transition: width 0.2s ease, height 0.2s ease;
+				}
+				&:hover::before {
+					--size: 400px;
+				}
+			}
 		}
 	}
 }
