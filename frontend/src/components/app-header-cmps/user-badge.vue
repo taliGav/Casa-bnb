@@ -1,5 +1,5 @@
 <template>
-	<section>
+	<section class = "relative">
 		<div @click="openUserBar" class="user-badge flex align just space">
 			<span class="badge-hamburger">☰</span>
 			<img
@@ -8,14 +8,14 @@
 				alt=""
 			/>
 		</div>
-		<div class="relative">
+		<!-- <div class="relative"> -->
 			<user-menu
 				@closeMenu="closeMenu"
 				:user="user"
 				v-if="isMenuOpen"
 				class="open-user-menu"
 			></user-menu>
-		</div>
+		<!-- </div> -->
 	</section>
 </template>
 

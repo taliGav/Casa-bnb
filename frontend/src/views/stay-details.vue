@@ -13,7 +13,10 @@
 			</div>
 			<!-- <hr /> -->
 			<div class="amenities-container">
-				<h2>What this place offers</h2>
+				<div class="amenities-header flex">
+					<h2>What this place offers</h2>
+				</div>
+
 				<div class="amenities-content">
 					<div
 						v-for="amenitie in amenities"

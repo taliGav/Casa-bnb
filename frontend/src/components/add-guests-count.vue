@@ -72,7 +72,11 @@ export default {
 			// totalGuests: this.guestsCount(),
 		};
 	},
-	created() {},
+	created() {
+		this.adutls = 0;
+		this.children = 0;
+		this.infants = 0;
+	},
 
 	methods: {
 		guestsReservation() {

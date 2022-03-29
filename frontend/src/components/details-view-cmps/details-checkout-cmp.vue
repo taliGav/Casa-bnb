@@ -1,63 +1,63 @@
 <template>
-  <section v-if="stay" class="details-checkout">
-    <div class="checkout-modal">
-      <div class="price-and-rate flex space">
-        <div class="price-per-night">
-          <span class="price">${{ stay.price }}</span
-          >&nbsp;
-          <span class="night">/&nbsp;night</span>
-        </div>
-        <ratings-reviews :stay="stay" />
-      </div>
-      <div class="dates-guests">
-        <div class="dates flex space" @click="openCalender">
-          <div class="check-in-container flex col just">
-            <div class="check-in-title title">CHECK-IN</div>
-            <div class="check-in-value">
-              <p>{{ startDate }}</p>
-            </div>
-          </div>
-          <div class="check-out-container flex just col">
-            <div class="check-out-title title">CHECKOUT</div>
-            <div class="check-out-value">
-              <p>{{ endDate }}</p>
-            </div>
-          </div>
-        </div>
-        <div class="guests flex space" @click.stop.prevent="openGuestsMenu">
-          <div class="guests-container flex col just">
-            <div class="guests-title title">GUESTS</div>
-            <div class="guests-value flex">
-              <p>{{ guestsCount }} &nbsp;</p>
-              <p v-if="guestsNumber">guest</p>
-              <p v-else>guests</p>
-            </div>
-          </div>
-          <!-- <div class="relative">
+	<section v-if="stay" class="details-checkout">
+		<div class="checkout-modal">
+			<div class="price-and-rate flex space">
+				<div class="price-per-night">
+					<span class="price">${{ stay.price }}</span
+					>&nbsp;
+					<span class="night">/&nbsp;night</span>
+				</div>
+				<ratings-reviews :stay="stay" />
+			</div>
+			<div class="dates-guests">
+				<div class="dates flex space" @click="openCalender">
+					<div class="check-in-container flex col just">
+						<div class="check-in-title title">CHECK-IN</div>
+						<div class="check-in-value">
+							<p>{{ startDate }}</p>
+						</div>
+					</div>
+					<div class="check-out-container flex just col">
+						<div class="check-out-title title">CHECKOUT</div>
+						<div class="check-out-value">
+							<p>{{ endDate }}</p>
+						</div>
+					</div>
+				</div>
+				<div class="guests flex " @click.stop.prevent="openGuestsMenu">
+						<div class="relative">
+							<add-guests-count
+								v-if="openGuests"
+								@guests="guests"
+								@addGuests="addGuests"
+							></add-guests-count>
+						</div>
+					<div class="guests-container flex col just">
+						<div class="guests-title title">GUESTS</div>
+						<div class="guests-value flex">
+							<p>{{ guestsCount }} &nbsp;</p>
+							<p v-if="guestsNumber">guest</p>
+							<p v-else>guests</p>
+						</div>
+					</div>
+					<!-- <div class="relative">
 
 					</div> -->
-          <div class="calender-checkout-container">
-            <div class="relative">
-              <date-picker
-                :isOpen="isCalendar"
-                @orders="orderDates"
-              ></date-picker>
-            </div>
-            <div class="relative">
-              <add-guests-count
-                v-if="openGuests"
-                @guests="guests"
-                @addGuests="addGuests"
-              ></add-guests-count>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="reserve-btn-cmp">
-        <reserve-btn @click="makeReservation" />
-      </div>
-    </div>
-  </section>
+					<div class="calender-checkout-container">
+						<div class="relative">
+							<date-picker
+								:isOpen="isCalendar"
+								@orders="orderDates"
+							></date-picker>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="reserve-btn-cmp">
+				<reserve-btn @click="makeReservation" />
+			</div>
+		</div>
+	</section>
 </template>
 
 <script>
@@ -141,20 +141,20 @@ export default {
 				createdAt: Date.now(),
 				buyer: {
 					_id: this.loggedUser._id,
-					fullname: this.loggedUser.fullname
-					},
+					fullname: this.loggedUser.fullname,
+				},
 				// stayId: this.stay._id,
 				stay: {
 					_id: this.stay._id,
 					name: this.stay.name,
-					price: this.stay.price
-					},
+					price: this.stay.price,
+				},
 				guests: this.guestsCount,
 				startDate: this.resirvationDates[0],
 				endDate: this.resirvationDates[1],
 				totalPrice: days * this.stay.price,
 			};
-			this.$store.dispatch({ type: 'addOrder', order:order });
+			this.$store.dispatch({ type: 'addOrder', order: order });
 			console.log('makin reservations', order);
 
 			// var days = Math.floor(delta / 86400);
@@ -194,6 +194,6 @@ export default {
 
 <style>
 .calender-checkout-container {
-  /* position: relative; */
+	/* position: relative; */
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
 	<div class="filter-container main-layout full flex align just">
-		<form class = "flex align just">
+		<form class="flex align just">
 			<div class="filter">
 				<div
 					class="search-container"
@@ -24,14 +24,20 @@
 					<span>Check out</span>
 					<p>{{ endDate }}</p>
 				</div>
+					<div class="relative">
+						<!-- </add-guests-count> -->
+						<add-guests-count
+							v-if="addGuestsMenu"
+							:guests="filterBy.guests"
+							@addGuests="changeGuests"
+						/>
+					</div>
 				<div class="search-guests" @click="addGuests">
 					<div class="guests-container">
 						<span>Guests</span>
 						<p v-if="!filterBy.guests">Add guests</p>
 						<p v-else>{{ filterBy.guests }}</p>
 					</div>
-
-					<!-- </add-guests-count> -->
 				</div>
 				<div
 					@click="openSearch"
@@ -57,13 +63,6 @@
 			end-placeholder="End date"
 		/>
 		<!-- </div> -->
-		<div class="relative">
-			<add-guests-count
-				v-if="addGuestsMenu"
-				:guests="filterBy.guests"
-				@addGuests="changeGuests"
-			/>
-		</div>
 	</div>
 </template>
 

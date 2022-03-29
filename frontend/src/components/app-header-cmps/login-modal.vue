@@ -16,6 +16,7 @@
 							class="form-input"
 							placeholder="Enter you username"
 							v-model="user.username"
+              v-focus
 							autocomplete="off"
 						/>
 					</div>
@@ -69,6 +70,7 @@ export default {
 	},
 	mounted() {
 		window.addEventListener('click', this.onLoginCheck);
+		// this.$refs.user.$el.focus();
 	},
 	unmounted() {
 		window.removeEventListener('click', this.onLoginCheck);
