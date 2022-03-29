@@ -11,7 +11,7 @@
 
     <user-menu
       @closeMenu="isMenuOpen = false"
-      :isGuest="isGuest"
+      :user="user"
       v-if="isMenuOpen"
       class="open-user-menu"
     ></user-menu>
@@ -26,7 +26,7 @@ export default {
   name: "user-badge",
   data() {
     return {
-      isGuest: true,
+      user: null,
       isMenuOpen: false,
     };
   },
@@ -34,14 +34,15 @@ export default {
   destroyed() {},
   methods: {
     openUserBar() {
-      this.isGuest = this.$store.getters.guest;
+      this.user = this.$store.getters.user;
+      console.log('badge user:',this.user);
       this.isMenuOpen = !this.isMenuOpen;
       console.log("this.isMenuOpen", this.isMenuOpen);
-      console.log("this.isGuest", this.isGuest);
+      // console.log("this.isGuest", this.isGuest);
     },
-    updateUser() {
-      this.isGuest = this.$store.getters.guest;
-    },
+    // updateUser() {
+    //   this.isGuest = this.$store.getters.guest;
+    // },
     async logout() {
       await this.$store.dispatch({ type: "logout" });
     },

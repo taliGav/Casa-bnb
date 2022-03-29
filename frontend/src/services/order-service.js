@@ -17,6 +17,7 @@ export const orderService = {
 };
 
 async function query(filterBy = {}) {
+  console.log('order serv filter:', filterBy);
   return await httpService.post(`${ENDPOINT}` + '/')
 
   try {
@@ -70,7 +71,6 @@ async function remove(id) {
 }
 
 async function save(order) {
-<<<<<<< HEAD
   console.log('order serv add order1:', order);
 
   // var orderToSave = order._id ? order : await getEmptyOrder(order)
@@ -79,13 +79,6 @@ async function save(order) {
     ? await httpService.put(`${ENDPOINT}/${order._id}`, order)
     : await httpService.post(`${ENDPOINT}`, order)
   // return orderToSave._id ? storageService.put(KEY, orderToSave) : storageService.post(KEY, orderToSave);
-=======
-  var orderToSave = order._id ? order : await getEmptyOrder(order);
-  // return order._id
-  // ? await httpService.put(`${ENDPOINT}/${order._id}`, order)
-  // : await httpService.post(ENDPOINT, order)
-  return orderToSave._id ? storageService.put(KEY, orderToSave) : storageService.post(KEY, orderToSave);
->>>>>>> 441f077e225351083442c2b23f5d0b87bbda443a
 }
 
 async function getEmptyOrder(order) {
@@ -117,17 +110,3 @@ async function getEmptyOrder(order) {
 }
 
 
-<<<<<<< HEAD
-=======
-
-function _createOrders() {
-  let orders = utilService.loadFromStorage(KEY);
-  if (!orders || !orders.length) {
-    orders = [];
-    utilService.saveToStorage(KEY, orders);
-  }
-  return orders;
-}
-
-
->>>>>>> 441f077e225351083442c2b23f5d0b87bbda443a

@@ -4,7 +4,7 @@ import { utilService } from '../../services/util-service';
 export default {
   state: {
     loggedinUser: utilService.loadFromSessionStorage('loged_user') || null,
-    isGuest: true,
+    // isGuest: true,
   },
   getters: {
     user(state) {
@@ -17,7 +17,7 @@ export default {
   mutations: {
     setUser(state, { user }) {
       state.loggedinUser = user;
-      state.isGuest = !state.isGuest;
+      // state.isGuest = !state.isGuest;
     }
 
   },

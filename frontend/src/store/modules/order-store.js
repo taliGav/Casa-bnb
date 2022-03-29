@@ -24,7 +24,7 @@ export default {
     },
     actions: {
         async getOrders({ commit }, { filterBy }) {
-            console.log(filterBy);
+            console.log('order store filter:', filterBy);
             try {
                 const orders = await orderService.query(filterBy)
                 commit({ type: 'setOrders', orders })

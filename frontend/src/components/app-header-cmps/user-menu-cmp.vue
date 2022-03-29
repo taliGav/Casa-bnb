@@ -1,6 +1,6 @@
 <template>
   <section class="user-menu-sec">
-    <div class="guest-user-menu" v-if="isGuest">
+    <div class="guest-user-menu" v-if="!user">
       <div class="guest-user-actions">
         <div @click="openLogInModal" class="sign-up-action-label action label">
           <p class="sign-up">Sign up</p>
@@ -70,8 +70,8 @@ import loginModal from "./login-modal.vue";
 export default {
   name: "user-menu",
   props: {
-    isGuest: {
-      type: Boolean,
+    user: {
+      type: Object,
     },
   },
   data() {
