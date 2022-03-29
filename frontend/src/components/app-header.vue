@@ -1,16 +1,20 @@
 <template>
 	<header
-		class="main-header main-layout"
+		class="main-header"
 		ref="header"
-		:class="{ visible: !isOpen }"
+		:class="{
+			visible: !isOpen,
+			'details-layout': isDetailsPage,
+			'main-layout': !isDetailsPage,
+		}"
 		:style="{ backgroundColor: searchStatus }"
 	>
 		<div class="header-content flex space">
 			<div class="logo flex align">
 				<h2>
 					<router-link :class="{ 'color-theme': colorsChange }" to="/">
-						<span class = 'logo-txt'>casa</span>
-						<span class="casa-symbol">⌂</span><span class = "logo-txt">bnb</span>
+						<span class="logo-txt">casa</span>
+						<span class="casa-symbol">⌂</span><span class="logo-txt">bnb</span>
 					</router-link>
 				</h2>
 			</div>
@@ -49,10 +53,12 @@ export default {
 			isOpen: null,
 			colorsChange: null,
 			isSearchClicked: false,
+			isDetailsPage: false,
 		};
 	},
 	created() {
 		window.addEventListener('scroll', this.handleScroll);
+
 		// window.addEventListener("scroll", this.handleScroll);
 	},
 	destroyed() {
@@ -73,16 +79,22 @@ export default {
 		openSearch() {
 			console.log('header opening search');
 			this.isOpen = true;
+			this.isDetailsPage = false;
 			this.isSearchClicked = true;
 		},
 		checkPagePath() {
+			const stayPath = this.$route.path.substring(1, 5);
+			console.log(stayPath);
 			if (this.$route.path !== '/') {
 				this.isOpen = false;
 				this.colorsChange = true;
+			} else if (stayPath === 'stay') {
+				this.isDetailsPage = true;
 			} else {
 				this.isOpen = true;
 				this.colorsChange = false;
 				this.isSearchClicked = false;
+				this.isDetailsPage = false;
 			}
 		},
 	},

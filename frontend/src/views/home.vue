@@ -1,5 +1,5 @@
 <template>
-  <section class="home full main-app">
+  <section class="main-layout home full main-app">
     <div class="hero full main-layout"></div>
     <div class="main-layout">
       <popular-dest-list :popularDest="popularDest" />

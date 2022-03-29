@@ -7,20 +7,25 @@
 	// }
 
 	@include for-sm-layout {
-		@include layoutGTC($small);
+		@include layoutSmallGTC($small);
 	}
 	@include for-md-layout {
-		@include layoutGTC($medium);
+		@include layoutSmallGTC($medium);
 	}
 	@include for-lg-layout {
-		@include layoutGTC($large);
+		@include layoutSmallGTC($large);
 	}
 	@include for-xl-layout {
 		@include layoutGTC($x-large);
 	}
-	@include for-home-layout {
-		@include layoutGTC($home-page-large);
-	}
+	// @include for-home-layout {
+	// 	@include layoutGTC($home-page-large);
+	// }
+
+	// @media (min-width: 1460px) {
+	// 	max-width: 1460px;
+	// 	margin: 0 auto;
+	// }
 
 	> * {
 		grid-column: 2;
@@ -43,15 +48,17 @@
 
 .details-layout {
 	@include for-sm-layout {
-		@include layoutGTC($small);
+		@include layoutSmallGTC($small);
 	}
 	@include for-md-layout {
-		@include layoutGTC($medium);
+		@include layoutSmallGTC($medium);
 	}
 	@include for-lg-layout {
 		@include layoutGTC($large);
 	}
-	@include for-xl-layout {
-		@include layoutGTC($x-large);
+
+	@media (min-width: 1120px) {
+		max-width: 1120px;
+		margin: 0 auto;
 	}
 }

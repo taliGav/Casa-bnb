@@ -17,6 +17,7 @@
 							<p>{{ startDate }}</p>
 						</div>
 					</div>
+					<div class="calender-checkout-container"></div>
 					<div class="check-out-container flex just col">
 						<div class="check-out-title title">CHECKOUT</div>
 						<div class="check-out-value">
@@ -24,14 +25,16 @@
 						</div>
 					</div>
 				</div>
-				<div class="guests flex " @click.stop.prevent="openGuestsMenu">
-						<div class="relative">
-							<add-guests-count
-								v-if="openGuests"
-								@guests="guests"
-								@addGuests="addGuests"
-							></add-guests-count>
-						</div>
+			
+				<div class="guests flex" @click.stop.prevent="openGuestsMenu">
+					<add-guests-count
+						v-if="openGuests"
+						@guests="guests"
+						@addGuests="addGuests"
+					></add-guests-count>
+						<div id="date-container" class="relative">
+					<date-picker :isOpen="isCalendar" @orders="orderDates"></date-picker>
+				</div>
 					<div class="guests-container flex col just">
 						<div class="guests-title title">GUESTS</div>
 						<div class="guests-value flex">
@@ -43,28 +46,13 @@
 					<!-- <div class="relative">
 
 					</div> -->
-          <div class="calender-checkout-container">
-            <div id="date-container" class="relative">
-              <date-picker
-                :isOpen="isCalendar"
-                @orders="orderDates"
-              ></date-picker>
-            </div>
-            <div class="relative">
-              <add-guests-count
-                v-if="openGuests"
-                @guests="guests"
-                @addGuests="addGuests"
-              ></add-guests-count>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="reserve-btn-cmp">
-        <reserve-btn @click="makeReservation" />
-      </div>
-    </div>
-  </section>
+				</div>
+			</div>
+			<div class="reserve-btn-cmp">
+				<reserve-btn @click="makeReservation" />
+			</div>
+		</div>
+	</section>
 </template>
 
 <script>
@@ -175,14 +163,11 @@ export default {
 			// console.log(guest);
 		},
 		openCalender() {
-
-			var d = window.document.querySelector('.el-popper')
-			var container = this.$el.querySelector('#date-container')
-			console.log('date picker:',d,container);
-			container.append(d)
+			var d = window.document.querySelector('.el-popper');
+			var container = this.$el.querySelector('#date-container');
+			console.log('date picker:', d, container);
+			container.append(d);
 			this.isCalendar = !this.isCalendar;
-			
-
 		},
 		orderDates(dates) {
 			this.resirvationDates = dates;
