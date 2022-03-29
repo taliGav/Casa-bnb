@@ -1,6 +1,6 @@
 <template>
   <section class="host-section flex col space">
-    <div class="host-details flex">
+    <div class="host-details flex space">
       <div class="host-main-details">
         <h2 class="host-main-title">
           {{ stay.type }} hosted by {{ stay.host.fullname }}

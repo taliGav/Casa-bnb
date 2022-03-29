@@ -20,29 +20,29 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: 'user-details',
-  data() {
-    return {
-      userReviews: null,
-    }
-  },
-  async created() {
-    const userId = this.$store.getters.user?._id
-    if (userId) {
-      this.userReviews = await this.$store.dispatch({
-        type: 'getReviews',
-        filterBy: { userId },
-      })
-    }
-  },
-  computed: {
-    user() {
-      return this.$store.getters.user
-    },
-  },
-}
-</script>
+// <script>
+// export default {
+//   name: 'user-details',
+//   data() {
+//     return {
+//       userReviews: null,
+//     }
+//   },
+//   async created() {
+//     const userId = this.$store.getters.user?._id
+//     if (userId) {
+//       this.userReviews = await this.$store.dispatch({
+//         type: 'getReviews',
+//         filterBy: { userId },
+//       })
+//     }
+//   },
+//   computed: {
+//     user() {
+//       return this.$store.getters.user
+//     },
+//   },
+// }
+// </script>
 
 <style></style>

@@ -19,13 +19,41 @@ export const orderService = {
 async function query(filterBy = {}) {
   return await httpService.post(`${ENDPOINT}` + '/')
 
-  // try {
-  //   var orders = await storageService.query(KEY);
-  //   return orders;
-  // }
-  // finally {
-  // console.log('f orders:', orders);
-  // }
+  try {
+    var orders = await storageService.query(KEY);
+
+    orders = orders.filter((order) => order.hostId === filterBy._id);
+    // if (filterBy.destination) {
+    //   const regex = new RegExp(filterBy.destination, 'i');
+    //   orders = orders.filter((order) => regex.test(order.loc.country) || regex.test(order.loc.city));
+    // }
+    // if (filterBy.guests) {
+    //   orders = orders.filter((order) => order.capacity >= filterBy.guests);
+    // }
+    // if (filterBy.amenities) {
+    //   if (typeof (filterBy.amenities) === 'object')
+    //     var amenitiesToFilter = Object.values(filterBy.amenities);
+    //   else var amenitiesToFilter = filterBy.amenities;
+    //   if (typeof (amenitiesToFilter) === 'string') {
+    //     amenitiesToFilter = [amenitiesToFilter];
+    //   }
+    //   console.log('serv amenities', amenitiesToFilter);
+
+    //   orders = orders.filter((order) => {
+    //     return amenitiesToFilter.every((amenitie) => {
+    //       return order.amenities.includes(amenitie);
+    //     });
+    //   });
+    // }
+    // if (filterBy.maxPrice && filterBy.minPrice) {
+    //   console.log('serv price', filterBy.minPrice, filterBy.maxPrice);
+    //   orders = orders.filter((order) => (order.price >= filterBy.minPrice) && (order.price <= filterBy.maxPrice));
+    // }
+    return orders;
+  }
+  finally {
+    // console.log('f orders:', orders);
+  }
 
   // console.log('order service filter: ', filterBy);
 
@@ -42,6 +70,7 @@ async function remove(id) {
 }
 
 async function save(order) {
+<<<<<<< HEAD
   console.log('order serv add order1:', order);
 
   // var orderToSave = order._id ? order : await getEmptyOrder(order)
@@ -50,6 +79,13 @@ async function save(order) {
     ? await httpService.put(`${ENDPOINT}/${order._id}`, order)
     : await httpService.post(`${ENDPOINT}`, order)
   // return orderToSave._id ? storageService.put(KEY, orderToSave) : storageService.post(KEY, orderToSave);
+=======
+  var orderToSave = order._id ? order : await getEmptyOrder(order);
+  // return order._id
+  // ? await httpService.put(`${ENDPOINT}/${order._id}`, order)
+  // : await httpService.post(ENDPOINT, order)
+  return orderToSave._id ? storageService.put(KEY, orderToSave) : storageService.post(KEY, orderToSave);
+>>>>>>> 441f077e225351083442c2b23f5d0b87bbda443a
 }
 
 async function getEmptyOrder(order) {
@@ -81,3 +117,17 @@ async function getEmptyOrder(order) {
 }
 
 
+<<<<<<< HEAD
+=======
+
+function _createOrders() {
+  let orders = utilService.loadFromStorage(KEY);
+  if (!orders || !orders.length) {
+    orders = [];
+    utilService.saveToStorage(KEY, orders);
+  }
+  return orders;
+}
+
+
+>>>>>>> 441f077e225351083442c2b23f5d0b87bbda443a

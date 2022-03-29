@@ -32,7 +32,7 @@
 			<h4>No reviews yet.</h4>
 			<p>Be the first...</p>
 		</div>
-		<div v-else class="reviews-list flex col">
+		<div v-else class="reviews-list flex">
 			    <details-single-review
 				class="review flex col"
 				v-for="review in this.reviews" :key="review.id"

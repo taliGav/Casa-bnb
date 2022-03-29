@@ -1,17 +1,16 @@
 .details-checkout {
-	// position: fixed;
-	// margin: 48px 0 0 50px;
 	border: 1px solid $gray-4;
 	border-radius: 12px;
 	padding: 24px;
 	width: 100%;
 	height: 300px;
-	// max-width: 370px;
 	color: $gray-3;
 	box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+	position: sticky;
+	top: 100px;
 
 	.price-and-rate {
-		flex-flow: row wrap ;
+		flex-flow: row wrap;
 		padding-bottom: 24px;
 		font-size: 16px;
 		font-weight: 400;
@@ -21,6 +20,13 @@
 			font-size: 22px;
 			font-weight: 600;
 			line-height: 26px;
+		}
+
+		.rating {
+			u {
+				// font-family: 'cereal-bold';
+				font-weight: 600;
+			}
 		}
 	}
 
@@ -39,7 +45,7 @@
 				border-right: 0.5px solid $gray-3;
 				border-bottom: 0.5px solid $gray-3;
 				height: 56px;
-				
+				padding-left: 10px;
 
 				&:hover {
 					cursor: pointer;
@@ -48,12 +54,13 @@
 				.check-in-title {
 				}
 				.check-in-value {
-					// padding: 26px 12px 10px;
 				}
 			}
 			.check-out-container {
 				border-bottom: 0.5px solid $gray-3;
 				height: 56px;
+				padding-left: 10px;
+
 				&:hover {
 					cursor: pointer;
 				}
@@ -62,34 +69,111 @@
 			.check-out-title {
 			}
 			.check-out-value {
-				// padding: 26px 12px 10px;
 			}
 			.check-out-container {
 				flex-grow: 1;
 			}
 		}
 		.title {
+			font-family: circular-bold;
 			font-size: 10px;
 			font-weight: 800;
 			line-height: 12px;
 		}
 
 		.guests-value {
-			// padding: 26px 36px 10px 12px;
 		}
 	}
 }
 
 .guests {
 	height: 56px;
-	// margin-bottom: 16px;
+
+	&:hover {
+		cursor: pointer;
+	}
+	.guests-value {
+	}
+	.guests-container {
+		padding-left: 10px;
+	}
+}
+
+//reserve-btn-cmp
+.reserve-btn-cmp {
 	&:hover {
 		cursor: pointer;
 	}
 }
+.btn-container {
+	position: relative;
+	width: 100%;
+	height: 48px;
+	padding: 0 0;
+	margin: 0 0;
+	cursor: pointer;
+	border: none;
+	display: grid;
+	grid-template: repeat(10, 1fr) / repeat(10, 1fr);
 
-.reserve-btn-cmp {
-	&:hover {
-		cursor: pointer;
+	@for $i from 0 to 10 {
+		.cell:nth-child(10n + #{$i + 1}):hover ~ .content {
+			--positionX: #{$i};
+		}
+
+		.cell:nth-child(n + #{10 * $i + 1}):nth-child(-n + #{10 * ($i + 1)}):hover
+			~ .content {
+			--positionY: #{$i};
+		}
+	}
+}
+
+.cell {
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	// border: 1px solid rgba(128, 128, 128, 0.753);
+}
+
+.content {
+	--positionX: 0;
+	--positionY: 1;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	border-radius: 8px;
+
+	background-image: radial-gradient(
+		circle at calc((0 + var(--positionX, 0)) * 10%)
+			calc((0 + var(--positionY, 0)) * 5%),
+		rgb(241, 37, 75) 0%,
+		rgb(230, 30, 77) 27.5%,
+		rgb(227, 28, 95) 40%,
+		rgb(215, 4, 102) 57.5%,
+		rgb(189, 30, 89) 75%,
+		rgb(189, 30, 89) 100%
+	);
+}
+
+.action-btn {
+	padding: 0 0;
+	margin: 0 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border: none;
+
+	span {
+		font-size: 16px;
+		font-weight: 600;
+		color: $white;
+		font-family: 'Circular-Bold';
 	}
 }

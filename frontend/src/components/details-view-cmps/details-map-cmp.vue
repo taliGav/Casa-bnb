@@ -47,7 +47,6 @@ export default {
   data() {
     return {
       openedMarkerID: null,
-      // stayLocation: this.locations,
       center: { lat: null, lng: null },
       markers: [
         {
