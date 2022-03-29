@@ -93,10 +93,10 @@
 
 .search-btn-container {
 	align-self: center;
-	border-radius: 50px;
+	border-radius: 50%;
 	background-color: $theme-red;
 	width: 49px;
-	height: 49px;
+	height: 48px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -117,8 +117,7 @@
 		font-family: 'Circular-Bold';
 		font-size: 16px;
 		margin-right: 4px;
-		// transition-delay: 1s;
-		// transition: 1s;
+		
 	}
 	img {
 		height: 30px;

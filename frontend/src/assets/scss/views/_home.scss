@@ -18,7 +18,7 @@
 
 		display: grid;
 		column-gap: 20px;
-		grid-template-columns: repeat(4,minmax(0,1fr));
+		grid-template-columns: repeat(4,minmax(200px,1fr));
 		padding-top: 50px;
 		padding-bottom: 50px;
 	

@@ -3,7 +3,7 @@
 	width: 100%;
 	position: fixed;
 	transition: 0.3s;
-	z-index: 100 ;
+	z-index: 100;
 
 	// opacity: 0;
 }
@@ -101,7 +101,6 @@
 }
 //user-badge
 
-
 .user-badge {
 	width: 77px;
 	height: 42px;
@@ -127,8 +126,12 @@
 
 .visible {
 	background-color: $white;
-	// border-bottom: 1px solid rgba(0, 0, 0, 0.158);
 }
+.invisible {
+	visibility: hidden;
+}
+
+//login and signup
 
 .user-menu-sec {
 	// position: absolute;
@@ -139,8 +142,8 @@
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: 70px;
-	right: 80px;
+	top: 10px;
+	right: 0;
 	background-color: #fff;
 	border-radius: 12px;
 	width: 240px;
@@ -185,101 +188,71 @@
 	transform: translate(-50%, -50%);
 	top: 50%;
 	left: 50%;
-	background-color: rgba(97, 96, 96, 0.616);
+	background-color: rgba(156, 156, 156, 0.507);
 	width: 100%;
 	height: 100%;
 	z-index: 100;
+}
+.login-modal {
+	background-color: rgb(255, 255, 255);
+	width: 60%;
+	max-width: 570px;
+	height: 650px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 
-	.login-modal {
-		background-color: rgb(255, 255, 255);
-		width: 60%;
-		max-width: 570px;
-		height: 40%;
-		// position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		-webkit-box-direction: normal !important;
-		-webkit-box-orient: vertical !important;
-		position: relative !important;
-		display: flex !important;
-		// align-items: center;
-		// justify-content: center;
-		flex-direction: column !important;
-		box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 28px !important;
-		border-radius: 12px !important;
-		border-top-right-radius: 12px !important;
+	position: fixed;
 
-		header {
-			// font-family: airbnb-light, sans-serif;
-			min-height: 48px;
-			padding: 0 24px;
-			align-items: center;
-			text-align: center;
-			align-content: center;
-			justify-content: center;
-			justify-items: center;
-			// text-justify: auto;
-			// padding-bottom: 20px;
-			font-family: cereal-bold, sans-serif;
-			font-size: 16px;
-			line-height: 20px;
-			font-weight: 800;
-			border-bottom: 1px solid rgb(235, 235, 235);
+	box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 28px !important;
+	border-radius: 12px;
 
-			.login-header {
-				display: flex;
-				width: 500px;
-				height: 64px;
-				justify-content: center;
-				align-items: center;
-				text-align: center;
-				text-justify: auto;
-			}
+	header {
+		height: 64px;
+		border-bottom: 1px solid rgb(235, 235, 235);
+	}
+
+	form {
+		padding: 24px;
+
+		h1 {
+			margin: 8px 0 24px 0;
+			font-size: 22px;
+			line-height: 26px;
+			font-weight: 600;
 		}
 
-		form {
-			padding: 24px;
+		.input-main-container {
+			border-radius: 12px;
+			border: 1px solid rgb(235, 235, 235);
 
-			h1 {
-				margin: 8px 0 24px 0;
-				font-size: 22px;
-				line-height: 26px;
-				font-weight: 600;
+			.username-con {
+				border-bottom: 1px solid rgb(235, 235, 235);
 			}
 
-			.input-main-container {
-				border-radius: 12px;
-				border: 1px solid rgb(235, 235, 235);
+			.input-container {
+				padding: 10px 20px;
 
-				.username-con{
-					border-bottom: 1px solid rgb(235, 235, 235);
+				&:hover {
+					cursor: pointer;
 				}
 
-				.input-container {
-					padding: 10px 20px;
-
-					&:hover {
-						cursor: pointer;
-					}
-					
-					label {
-						font-family: circular-bold;
-						font-size: 14px;
-						font-weight: 800;
-						line-height: 18px;
-					}
-			
-
-					input {
-						border: none;
-					}
+				label {
+					font-family: circular-bold;
+					font-size: 14px;
+					font-weight: 800;
+					line-height: 18px;
+				}
+				input {
+					border: none;
+					height: 30px;
+					outline: none;
 				}
 			}
-
+		}
+		.buttons-container {
+			margin: 20px 0;
 			button {
-				position: relative;
-				appearance: none;
 				background: #f72359;
 				padding: 1em 2em;
 				border: none;
@@ -288,26 +261,85 @@
 				cursor: pointer;
 				outline: none;
 				overflow: hidden;
-				border-radius: 100px;
-				span {
-					position: relative;
+				border-radius: 10px;
+				z-index: 200;
+			}
+		}
+	}
+}
+.signup-modal {
+	background-color: rgb(255, 255, 255);
+	width: 60%;
+	max-width: 570px;
+	height: 430px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: fixed;
+	box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 28px !important;
+	border-radius: 12px;
+
+	header {
+		height: 64px;
+		border-bottom: 1px solid rgb(235, 235, 235);
+	}
+
+	form {
+		padding: 24px;
+
+		h1 {
+			margin: 8px 0 24px 0;
+			font-size: 22px;
+			line-height: 26px;
+			font-weight: 600;
+		}
+
+		.input-main-container {
+			border-radius: 12px;
+			border: 1px solid rgb(235, 235, 235);
+			width: 100%;
+
+			.username-con {
+				border-bottom: 1px solid rgb(235, 235, 235);
+			}
+
+			.input-container {
+				padding: 10px 20px;
+				// width: 100%;
+
+				&:hover {
+					cursor: pointer;
 				}
-				&::before {
-					--size: 0;
-					content: "";
-					position: absolute;
-					left: var(--x);
-					top: var(--y);
-					width: var(--size);
-					height: var(--size);
-					background: radial-gradient(circle closest-side, #ffffff, transparent);
-					transform: translate(-50%, -50%);
-					transition: width 0.2s ease, height 0.2s ease;
+
+				label {
+					font-family: circular-bold;
+					font-size: 14px;
+					font-weight: 800;
+					line-height: 18px;
 				}
-				&:hover::before {
-					--size: 400px;
+				input {
+					border: none;
+					height: 30px;
+					outline: none;
 				}
 			}
+		}
+	}
+	.buttons-container {
+		margin: 20px 0;
+		width: 100%;
+		button {
+			background: #f72359;
+			padding: 1em 2em;
+			border: none;
+			color: white;
+			font-size: 1.2em;
+			cursor: pointer;
+			outline: none;
+			overflow: hidden;
+			border-radius: 10px;
+			z-index: 200;
+			width: 100%;
 		}
 	}
 }

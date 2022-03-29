@@ -30,11 +30,12 @@
 }
 .el-range-editor {
 	// display: !important;
-    position: relative !important;
-    z-index:-100000 !important;
-    width: 0 !important;
-    height: 0 !important;
-    visibility: hidden !important;
+	// position: relative !important;
+	z-index: -110 !important;
+	width: 0 !important;
+	height: 0 !important;
+	visibility: hidden !important;
+	opacity: 0;
 }
 .el-date-table td.start-date .el-date-table-cell__text {
 	background-color: black !important;
@@ -50,7 +51,6 @@
 }
 
 .el-popper-order {
-	
 	transform: translate(-50%, -50%) !important;
 	top: 98% !important;
 	left: 67.5% !important;
