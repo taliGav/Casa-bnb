@@ -44,6 +44,8 @@ async function remove(id) {
 }
 
 async function save(order) {
+  console.log('add order serv',order);
+  order.status= order.status?order.status:"Panding"
   // var orderToSave = order._id ? order : await getEmptyOrder(order);
   return order._id
     ? await httpService.put(`${ENDPOINT}/${order._id}`, order)

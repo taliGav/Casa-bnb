@@ -62,10 +62,12 @@ async function add(order) {
 
 async function update(order) {
   try {
+    // console.log('update order');
     var id = ObjectId(order._id);
     delete order._id;
     const collection = await dbService.getCollection('order');
     await collection.updateOne({ _id: id }, { $set: { ...order } });
+    order._id = id;
     return order;
   } catch (err) {
     logger.error(`cannot update order ${order._id}`, err);

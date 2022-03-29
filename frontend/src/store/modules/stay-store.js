@@ -50,7 +50,7 @@ export default {
       state.stays = stays;
     },
     saveStay(state, { stay }) {
-      const idx = state.stays.findIndex((t) => t._id === stay._id);
+      const idx = state.stays.findIndex((s) => s._id === stay._id);
       if (idx !== -1) state.stays.splice(idx, 1, stay);
       else state.stays.push(stay);
     },
@@ -84,11 +84,11 @@ export default {
         commit({ type: 'removeStay', stayId });
       });
     },
-    async getStayById({state},{stayId}){
-      console.log('getting stay', stayId )
+    async getStayById({ state }, { stayId }) {
+      console.log('getting stay', stayId)
       const stay = await stayService.getById(stayId);
-        return stay
-        
+      return stay
+
     }
     // setFilter({ dispatch, commit, state }, { filterBy }) {
     //   // console.log('store', destination, guests);

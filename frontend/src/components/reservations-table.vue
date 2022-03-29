@@ -1,20 +1,29 @@
 <template>
-	<!-- <div> -->
-	<section>
-		<li class="table-row" v-if="order">
-			<div class="col col-1">
-				<p>Check in-{{ startDate }}</p>
-
-				<p>Check out-{{ endDate }}</p>
-			</div>
-			<div class="col col-2">
-				<p>{{ order.buyer.fullname }}</p>
-			</div>
-			<div class="col col-3">${{ order.totalPrice }}</div>
-			<div class="col col-4" :style="status">{{ order.status }}</div>
-		</li>
-	</section>
-	<!-- </div> -->
+  <!-- <div> -->
+  <section>
+    <li class="table-row" v-if="order">
+      <div class="col col-1" :style="status">{{ order.status }}</div>
+      <div class="col col-2">
+        <div class="details">
+          <p>Check in: {{ startDate }}</p>
+          <p>Check out: {{ endDate }}</p>
+          <p class="stay-name">{{ order.stay.name }}</p>
+          <p>${{ order.totalPrice }} total</p>
+        </div>
+      </div>
+      <div class="col col-3">
+        <p>{{ order.buyer.fullname }}</p>
+      </div>
+      <div class="col col-3">
+        <div class="row-btns">
+          <button @click="changeStatus('Declined')">Decline</button>
+          <button @click="changeStatus('Accepted')">Accept</button>
+          <button>Contact Guest</button>
+        </div>
+      </div>
+    </li>
+  </section>
+  <!-- </div> -->
 </template>
 <script>
 export default {
@@ -26,6 +35,16 @@ export default {
 	},
 	created() {
 		console.log(this.order);
+	},
+	methods: {
+		changeStatus(status){
+			// if(boolean){
+				this.$emit("changeStatus", status)
+			// }
+			// else{
+				// this.$emit("decline")
+			// }
+		}
 	},
 	computed: {
 		startDate() {
@@ -49,9 +68,9 @@ export default {
 			return humanDateFormat;
 		},
 		status() {
-			if (this.order.status === 'pending') return { color: 'orange' };
-			if (this.order.status === 'confirmed') return { color: 'green' };
-			if (this.order.status === 'canceled') return { color: 'red' };
+			if (this.order.status === 'Panding') return { color: 'orange' };
+			if (this.order.status === 'Accepted') return { color: '#3fb34f' };
+			if (this.order.status === 'Declined') return { color: '#992323' };
 		},
 	},
 };

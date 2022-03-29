@@ -13,7 +13,7 @@ module.exports = {
 async function getStays(req, res) {
   try {
     const filterBy = req.query
-    console.log('stay ctrl filter:', filterBy);
+    // console.log('stay ctrl filter:', filterBy);
     const stays = await stayService.query(filterBy)
     res.json(stays)
   } catch (err) {
