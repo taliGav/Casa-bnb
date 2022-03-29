@@ -3,8 +3,8 @@
 		<div class="checkout-modal">
 			<div class="price-and-rate flex space">
 				<div class="price-per-night">
-					<span class="price">${{ stay.price }}</span>
-					<span class="night">/night</span>
+					<span class="price">${{ stay.price }}</span>&nbsp;
+					<span class="night">/&nbsp;night</span>
 				</div>
 				<ratings-reviews :stay="stay" />
 			</div>
@@ -27,7 +27,7 @@
 					<div class="guests-container flex col just">
 						<div class="guests-title title">GUESTS</div>
 						<div class="guests-value flex">
-							<p>{{ guestsCount }} &ensp;</p>
+							<p>{{ guestsCount }} &nbsp;</p>
 							<p v-if="guestsNumber">guest</p>
 							<p v-else>guests</p>
 						</div>

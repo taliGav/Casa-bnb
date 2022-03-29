@@ -6,16 +6,13 @@ import { focusDirective } from './directives';
 import { formatRelative } from 'date-fns';
 import ElementPlus from 'element-plus';
 import VueGoogleMaps from '@fawmi/vue-google-maps';
+//price range
+import HistogramSlider from "vue3-histogram-slider";
 
 
 import './assets/scss/styles.scss';
 import 'material-icons/iconfont/material-icons.css';
 import 'element-plus/dist/index.css';
-
-
-
-//price range
-import HistogramSlider from "vue3-histogram-slider";
 import "vue3-histogram-slider/dist/histogram-slider.css";
 
 
@@ -35,7 +32,7 @@ app.directive('focus', focusDirective);
 app.use(ElementPlus);
 app.use(router);
 app.use(store);
-app.use(HistogramSlider);
+// app.use(HistogramSlider);
 // app.use(Datepicker);
 
 

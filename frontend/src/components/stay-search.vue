@@ -1,5 +1,5 @@
 <template>
-  <div class="filter-container main-layot full flex align just">
+  <div class="filter-container main-layout full flex align just">
     <form>
       <div class="filter">
         <div
@@ -154,7 +154,9 @@ export default {
 		clickCheck(ev) {
 			const el = ev.target.className;
 			const local = ev.target.localName;
-			console.log(el);
+			// console.log('ev' , ev);
+			// console.log('el' , el);
+			// console.log('local',local)
 			if (
 				local === 'img' ||
 				local === 'p' ||
