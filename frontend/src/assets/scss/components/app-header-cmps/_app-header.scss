@@ -3,12 +3,13 @@
 	width: 100%;
 	position: fixed;
 	transition: 0.3s;
-	z-index: 100 !important;
+	z-index: 100 ;
 
 	// opacity: 0;
 }
 
 .header-content {
+	position: relative;
 	// height: 80px;
 }
 .casa-symbol {
@@ -44,15 +45,16 @@
 }
 
 .nav-bar {
-	width: 380px;
+	width: 320px;
 	height: 80px;
+	justify-content: space;
 
 	.explore-link {
 		height: 42px;
-		width: 123px;
+		width: 70px;
 		border-radius: 22px;
 		transition: 0.25s;
-		margin-left: 25px;
+		// margin-left: 25px;
 		cursor: pointer;
 
 		a {
@@ -72,7 +74,7 @@
 	}
 	.host-link {
 		height: 42px;
-		width: 132px;
+		width: 120px;
 		border-radius: 22px;
 		transition: 0.25s;
 		cursor: pointer;
