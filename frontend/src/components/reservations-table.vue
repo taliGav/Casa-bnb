@@ -4,13 +4,14 @@
 		<li class="table-row">
 			<div class="col col-1">
 				<p>Check in-{{ startDate }}</p>
+				
 				<p>Check out-{{ endDate }}</p>
 			</div>
 			<div class="col col-2">
 				<p>{{ order.buyer.fullname }}</p>
 			</div>
 			<div class="col col-3">${{ order.totalPrice }}</div>
-			<div class="col col-4" :class = "status">{{ order.status }}</div>
+			<div class="col col-4" :style="status">{{ order.status }}</div>
 		</li>
 	</section>
 	<!-- </div> -->
@@ -47,9 +48,11 @@ export default {
 				dateObject.getFullYear();
 			return humanDateFormat;
 		},
-		status(){
-			
-		}
+		status() {
+			if (this.order.status === 'pending') return { color: 'orange' };
+			if (this.order.status === 'confirmed') return { color: 'green' };
+			if (this.order.status === 'canceled') return { color: 'red' };
+		},
 	},
 };
 </script>

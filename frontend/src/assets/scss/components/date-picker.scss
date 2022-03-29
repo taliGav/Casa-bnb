@@ -8,9 +8,6 @@
 	border: none !important;
 }
 
-.el-popper {
-	border-radius: 25px !important;
-}
 .el-picker-panel {
 	background: white !important;
 	border-radius: 25px !important;
@@ -22,16 +19,11 @@
 	width: 300px !important;
 }
 .el-popper {
-	// margin-top: 200px;
-	// position: fixed !important;
-	// top: 340px !important;
-	// left: 50% !important;
-	// transform: translate(-50%, -50%) !important;
-	// height: 33% !important;
-	// margin: 0 auto;
-	// transform: translate(50%, 50%) !important;
-	// left: 50% !important;
-	// top: 50% !important;
+	top: 340px !important;
+	left: 50% !important;
+	transform: translate(-50%, -50%) !important;
+	position: fixed !important;
+	border-radius: 25px !important;
 }
 .el-popper[data-popper-placement^='bottom'] > .el-popper__arrow {
 	display: none !important;
@@ -58,11 +50,10 @@
 }
 
 .el-popper-order {
-	/* background-color: v-bind(redColor); */
+	
 	transform: translate(-50%, -50%) !important;
-	position: absolute !important;
-	/* top: v-bind(topPos) ; */
-	/* left: v-bind(leftPos); */
 	top: 98% !important;
 	left: 67.5% !important;
+	position: absolute !important;
+	// position: sticky !important;
 }

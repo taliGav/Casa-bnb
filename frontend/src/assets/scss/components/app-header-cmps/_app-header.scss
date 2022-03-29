@@ -97,6 +97,8 @@
 	height: 80px;
 	position: fixed;
 }
+//user-badge
+
 
 .user-badge {
 	width: 77px;
@@ -106,6 +108,7 @@
 	align-items: center;
 	border: 1px solid #dddddd;
 	cursor: pointer;
+	position: relative;
 
 	.badge-image {
 		border-radius: 50%;
@@ -126,6 +129,7 @@
 }
 
 .user-menu-sec {
+	// position: absolute;
 	font-family: airbnb-regular, sans-serif;
 	font-size: 15px;
 	color: #222;

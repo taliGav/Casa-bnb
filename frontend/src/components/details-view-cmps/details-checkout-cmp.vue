@@ -3,7 +3,8 @@
 		<div class="checkout-modal">
 			<div class="price-and-rate flex space">
 				<div class="price-per-night">
-					<span class="price">${{ stay.price }}</span>&nbsp;
+					<span class="price">${{ stay.price }}</span
+					>&nbsp;
 					<span class="night">/&nbsp;night</span>
 				</div>
 				<ratings-reviews :stay="stay" />
@@ -32,11 +33,16 @@
 							<p v-else>guests</p>
 						</div>
 					</div>
+					<!-- <div class="relative">
+
+					</div> -->
 					<div class="calender-checkout-container">
-						<date-picker
-							:isOpen="isCalendar"
-							@orders="orderDates"
-						></date-picker>
+						<div class="relative">
+							<date-picker
+								:isOpen="isCalendar"
+								@orders="orderDates"
+							></date-picker>
+						</div>
 						<div class="relative">
 							<add-guests-count
 								v-if="openGuests"
