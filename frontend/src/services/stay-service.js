@@ -94,7 +94,7 @@ export const stayService = {
   getPopularStays,
 };
 
-_createStays();
+// _createStays();
 
 function getPopularDest() {
   return PopularDest;

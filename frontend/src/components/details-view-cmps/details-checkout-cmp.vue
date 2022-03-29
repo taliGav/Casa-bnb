@@ -43,21 +43,28 @@
 					<!-- <div class="relative">
 
 					</div> -->
-					<div class="calender-checkout-container">
-						<div class="relative">
-							<date-picker
-								:isOpen="isCalendar"
-								@orders="orderDates"
-							></date-picker>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="reserve-btn-cmp">
-				<reserve-btn @click="makeReservation" />
-			</div>
-		</div>
-	</section>
+          <div class="calender-checkout-container">
+            <div id="date-container" class="relative">
+              <date-picker
+                :isOpen="isCalendar"
+                @orders="orderDates"
+              ></date-picker>
+            </div>
+            <div class="relative">
+              <add-guests-count
+                v-if="openGuests"
+                @guests="guests"
+                @addGuests="addGuests"
+              ></add-guests-count>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reserve-btn-cmp">
+        <reserve-btn @click="makeReservation" />
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -168,7 +175,14 @@ export default {
 			// console.log(guest);
 		},
 		openCalender() {
+
+			var d = window.document.querySelector('.el-popper')
+			var container = this.$el.querySelector('#date-container')
+			console.log('date picker:',d,container);
+			container.append(d)
 			this.isCalendar = !this.isCalendar;
+			
+
 		},
 		orderDates(dates) {
 			this.resirvationDates = dates;
