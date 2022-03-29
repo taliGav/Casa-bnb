@@ -18,16 +18,15 @@
             @changeStatus="changeStatus($event, order)"
           ></reservations-table>
         </ul>
-        <!-- <pre>{{ orders }}</pre> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import reservationsTable from '../components/reservations-table.vue';
+import reservationsTable from './reservations-table.vue';
 export default {
-	name: 'reservations-list',
+	name: 'reservations-office',
 	data() {
 		return {
 			user: null,

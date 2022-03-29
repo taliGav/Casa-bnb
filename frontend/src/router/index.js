@@ -3,7 +3,7 @@ import home from '@/views/home.vue';
 import about from '@/views/about.vue';
 import stayApp from '@/views/stay-app.vue';
 import stayDetails from '@/views/stay-details.vue';
-import reservationsOffice from '@/views/reservations-office.vue';
+import userPage from '@/views/user-page.vue';
 import addStay from '@/views/host/add-stay.vue';
 // import stayEdit from '@/views/stay-edit.vue'
 // import dashboard from '@/views/dashboard.vue'
@@ -31,9 +31,9 @@ const router = createRouter({
       component: stayDetails,
     },
     {
-      path: '/reservations',
-      name: 'reservations-list',
-      component: reservationsOffice,
+      path: '/user',
+      name: 'user-page',
+      component: userPage,
     },
     {
       path: '/add-stay',
