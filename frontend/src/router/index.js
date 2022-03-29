@@ -4,6 +4,7 @@ import about from '@/views/about.vue';
 import stayApp from '@/views/stay-app.vue';
 import stayDetails from '@/views/stay-details.vue';
 import reservationsOffice from '@/views/reservations-office.vue';
+import addStay from '@/views/host/add-stay.vue';
 // import stayEdit from '@/views/stay-edit.vue'
 // import dashboard from '@/views/dashboard.vue'
 // import login from '@/views/login.vue'
@@ -33,12 +34,12 @@ const router = createRouter({
       path: '/reservations',
       name: 'reservations-list',
       component: reservationsOffice,
-    }
-    // {
-    //   path: '/stay/edit/:id?',
-    //   name: 'stay-edit',
-    //   component: stayEdit,
-    // },
+    },
+    {
+      path: '/add-stay',
+      name: 'add-stay',
+      component: addStay,
+    },
     // {
     //   path: '/dashboard',
     //   name: 'dashboard',
