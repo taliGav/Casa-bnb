@@ -1,15 +1,17 @@
 <template>
   <section class="login-modal-container">
-    <div class="login-modal">
+    <div class="login-modal flex col">
+      <header class="login-modal-header">
+        <p class="login-header">Log in or sign up</p>
+      </header>
+
       <form
         v-if="!isSignup"
         @submit.prevent="login"
-        class="login form px-3 py-2"
+        class="login-form flex col"
       >
-        <div class="text-center my-2">
-          <h2 class="clr-teal">Login</h2>
-        </div>
         <div class="form-control">
+          <h1>Welcome to Casabnb</h1>
           <label for="username" class="form-label fw-600">Username</label>
           <input
             id="username"
@@ -96,21 +98,21 @@
 </template>
 
 <script>
-import {userService} from '../../services/user-service.js'
+import { userService } from "../../services/user-service.js";
 export default {
-  name: 'login',
+  name: "login",
   data() {
     return {
       isSignup: false,
-      newUser: { fullname: '', username: '', password: '' },
-    }
+      newUser: { fullname: "", username: "", password: "" },
+    };
   },
   mounted() {
-		window.addEventListener('click', this.clickCheck);
-	},
-	unmounted() {
-		window.removeEventListener('click', this.clickCheck);
-	},
+    window.addEventListener("click", this.onLoginCheck);
+  },
+  unmounted() {
+    window.removeEventListener("click", this.onLoginCheck);
+  },
   computed: {
     // user() {
     //   return this.$store.getters.user
@@ -118,24 +120,29 @@ export default {
   },
   methods: {
     async login() {
-      await this.$store.dispatch({ type: 'login', cred: this.newUser })
-      this.$emit('closeModal')
+      await this.$store.dispatch({ type: "login", cred: this.newUser });
+      // this.$emit("updateUser");
+      this.$emit("closeMenu");
+      this.$emit("closeModal");
     },
     async signup() {
-      await this.$store.dispatch({ type: 'signup', cred: this.newUser })
+      await this.$store.dispatch({ type: "signup", cred: this.newUser });
       // this.$emit('closeModal')
     },
     async logout() {
       // await this.$store.dispatch({ type: 'logout' })
     },
-    clickCheck(ev) {
-			const el = ev.target.className;
-			if (el === 'login-modal-container' ){
-        this.$emit('closeModal')
-				return;
+    onLoginCheck(ev) {
+      const el = ev.target.className;
+      console.log("onlogin check", ev);
+      console.log("onlogin check el", el);
+      if (el === "login-modal-container") {
+        this.$emit("closeModal");
+        this.$emit("closeMenu");
+        return;
       }
-			return;
-		},
+      return;
+    },
   },
-}
+};
 </script>
