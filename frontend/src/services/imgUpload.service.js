@@ -1,19 +1,18 @@
 export const uploadImg = (ev) => {
-  //Defining our variables
-  const UPLOAD_PRESET = 'cajan_22'; //insert yours
-  const CLOUD_NAME = 'cajan22'; //insert yours
+
+  const UPLOAD_PRESET = 'casabnb-imgs'; 
+  const CLOUD_NAME = 'cajan-22'; 
   const UPLOAD_URL = `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`;
   const FORM_DATA = new FormData();
-  //Building the request body
-  FORM_DATA.append('file', ev.target.files[0]); // form data kind of key : file, add the file we get
-  FORM_DATA.append('upload_preset', UPLOAD_PRESET); // add the upload_preset
-  //Sending a post method request to Cloudinary`s API
+
+  FORM_DATA.append('file', ev.target.files[0]); 
+  FORM_DATA.append('upload_preset', UPLOAD_PRESET); 
+
   return fetch(UPLOAD_URL, {
-    // add the img to Cloudinary
     method: 'POST',
     body: FORM_DATA,
   })
     .then((res) => res.json())
-    .then((res) => res) //return the res
+    .then((res) => res)
     .catch((err) => console.error(err));
 };

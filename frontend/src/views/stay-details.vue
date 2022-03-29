@@ -1,5 +1,5 @@
 <template>
-	<section v-if="stay" class="stay-details">
+	<section v-if="stay" class="details-layout stay-details">
 		<details-header :stay="stay" />
 		<details-gallery :stay="stay" />
 		<div class="details-grid">
@@ -82,6 +82,7 @@ export default {
 	},
 	async created() {
 		const { id } = this.$route.params;
+		console.log('stay-details',this.$route.params);
 		this.stay = await this.$store.dispatch({ type: 'getStayById', stayId: id });
 		const user = this.$store.getters.user;
 		this.amenities = this.amenetiesForDispaly;

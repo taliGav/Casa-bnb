@@ -1,6 +1,6 @@
 <template>
-  <section class="dashboard py-2">
-  <div class="app">
+  <section class="add-stay-section">
+  <div class="img-up-sec">
     <h1>Let's upload some images!</h1>
     <img-upload @save="saveImg" />
     <section>

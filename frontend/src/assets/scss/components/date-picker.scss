@@ -34,7 +34,8 @@
 	z-index: -110 !important;
 	width: 0 !important;
 	height: 0 !important;
-	visibility: hidden !important;
+	// visibility: hidden !important;
+	display: none;
 	opacity: 0;
 }
 .el-date-table td.start-date .el-date-table-cell__text {
@@ -51,9 +52,9 @@
 }
 
 .el-popper-order {
-	transform: translate(-50%, -50%) !important;
-	top: 175px !important;
-	left: -300px !important;
+	transform: translate(-61.6%, 0) !important;
+	top: 0 !important;
+	left: 0!important;
 	position: absolute !important;
 	// position: sticky !important;
 }
