@@ -1,5 +1,5 @@
 .hero {
-	background-image: url('@/assets/Images/logos/hero4.jpg');
+	background-image: url("https://res.cloudinary.com/cajan-22/image/upload/v1648589544/casaBnb/web-assets/oso9kjuhpitdex9io0pg.jpg");
 	width: 100%;
 	height: 80vh;
 	// background-color: red;
@@ -16,7 +16,7 @@
 	.popular-list {
 		display: grid;
 		column-gap: 20px;
-		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 		padding-top: 50px;
 		padding-bottom: 50px;
 	
