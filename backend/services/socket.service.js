@@ -40,6 +40,22 @@ function connectSockets(http, session) {
             delete socket.userId
         })
 
+
+        socket.on('topic', topic => {
+            if (socket.myTopic === topic) return;
+            if (socket.myTopic) {
+                socket.leave(socket.myTopic)
+            }
+            socket.join(topic)
+            socket.myTopic = topic
+        })
+        socket.on('new order', order => {
+            console.log('Emitting order', order);
+            // emits to all sockets:
+            // gIo.emit('chat addMsg', msg)
+            // emits only to sockets in the same room
+            gIo.to(socket.myTopic).emit('add order', order)
+        })
     })
 }
 

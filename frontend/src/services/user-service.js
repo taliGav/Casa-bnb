@@ -44,17 +44,6 @@ async function signup(cred) {
 
 }
 
-async function signupChack(username) {
-  console.log('signup 2', username);
-  const user = await getByUsername(username)
-  console.log('signup 3', user);
-  if (user) {
-    console.log('signup user ex', user);
-    return false
-  }
-  return true
-}
-
 async function logout() {
   // sessionStorage.removeItem(LOGED_KEY);
   return await httpService.post(ENDPOINT + '/logout')
@@ -88,7 +77,6 @@ function getGuestUser() {
 
 
 function _createUsers() {
-  console.log('userssssssss');
   let users = utilService.loadFromStorage(KEY);
   if (!users || !users.length) {
     const users = [

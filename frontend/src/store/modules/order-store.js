@@ -12,15 +12,12 @@ export default {
     mutations: {
         setOrders(state, { orders }) {
             state.orders = orders
-            console.log(state.orders);
         },
         addOrder(state, { order }) {
             state.orders.push(order)
         },
         saveOrder(state, { order }) {
-            console.log('store', order);
             const idx = state.orders.findIndex((o) => o._id === order._id);
-            console.log('store', idx);
             if (idx !== -1) state.orders.splice(idx, 1, order);
             else state.orders.push(order);
         },
@@ -31,24 +28,19 @@ export default {
     },
     actions: {
         async getOrders({ commit }, { filterBy }) {
-            console.log('order store filter:', filterBy);
             try {
                 const orders = await orderService.query(filterBy)
                 commit({ type: 'setOrders', orders })
-                console.log(orders);
                 return orders
             } catch (err) {
                 console.log('err :>> ', err)
             }
         },
         async addOrder({ commit }, { order }) {
-            console.log('order store disp:', order._id);
             try {
-                // console.log('order store add 1');
                 const addedOrder = await orderService.save(order)
-                console.log('order store add 2', addedOrder._id);
                 commit({ type: 'saveOrder', order: addedOrder })
-                // console.log('order store add 3', addedOrder);
+                return addedOrder;
             } catch (err) {
                 console.log('err :>> ', err)
             }
@@ -61,8 +53,5 @@ export default {
                 console.log('err :>> ', err)
             }
         },
-        // async getHostOrders(){
-
-        // }
     },
 }

@@ -34,23 +34,30 @@ export default {
 		};
 	},
 	async created() {
+		
 		this.user = this.loggedUser;
-		// console.log(this.user);
 		await this.$store.dispatch({
 			type: 'getOrders',
 			filterBy: { _id: this.user._id },
 		});
 		this.orders = this.ordersToShow;
-		console.log(this.orders);
+		socketService.emit('topic', this.user._id)
+    	socketService.on('add order', this.addOrder)
 	},
+	destroyed() {
+    	socketService.off('add order', this.addOrder)
+  },
 	methods: {
 		changeStatus(status,order){
 			var orderToSave = JSON.parse(JSON.stringify(order));
 			orderToSave.status = status;
-			console.log('cmp:',order._id);
 			this.$store.dispatch({ type: 'addOrder', order: orderToSave})
 
-		}
+		},
+		addOrder(order){
+			console.log('socket add order',order);
+			this.$store.commit({ type: 'addOrder', order})
+		},
 	},
 	computed: {
 		loggedUser() {
@@ -59,9 +66,6 @@ export default {
 		ordersToShow() {
 			return this.$store.getters.orders;
 		},
-		buyer() {
-			
-		}
 	},
 	components: {
 		reservationsTable,
