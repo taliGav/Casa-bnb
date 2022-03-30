@@ -1,4 +1,4 @@
-<template>
+<template xmlns:v-gmaps-searchbox="http://www.w3.org/1999/xhtml">
   <div class="reservations-container main-app top-pad">
     <form @submit.prevent="signup" class="signup flex col just align">
       <div class="">
@@ -51,6 +51,31 @@
             autocomplete="off"
           />
         </div>
+        <div style="display: inline-block">
+          <p style="margin: 10px">Amenities</p>
+          <el-select-v2
+            v-model="stay.amenities"
+            :options="amenities"
+            placeholder="Please select"
+            style="width: 240px"
+            multiple
+            collapse-tags
+          />
+        </div>
+        <img-upload @save="saveImg" />
+        <section>
+          <img
+            v-for="imgUrl in stay.imgUrls"
+            :key="imgUrl"
+            :src="imgUrl"
+            alt=""
+          />
+        </section>
+        <GMapAutocomplete
+          placeholder="This is a placeholder"
+          @place_changed="setPlace"
+        >
+        </GMapAutocomplete>
       </div>
       <div class="buttons-container flex col space">
         <button type="submit" class="btn btn-primary" @click="signUp">
@@ -62,14 +87,29 @@
 </template>
 
 <script>
+import imgUpload from './../../components/host/img-upload.vue'
 export default {
 	name: 'add-stay',
 	data() {
 		return {
+			amenities : [
+				{value:"Free cancellation",label:"Free cancellation"},
+				{value:"Wifi",label:"Wifi"},
+				{value:"Kitchen",label:"Kitchen"},
+				{value:"Air conditioning",label:"Air conditioning"},
+				{value:"Washer",label:"Washer"},
+					],
 			user: null,
 			stay:{
 				name:'',
+				amenities:[],
+				imgUrls: [],
 			},
+			vm: {
+                    searchPlace: '',
+                    location: {}
+
+                },
 		};
 	},
 	async created() {
@@ -78,7 +118,17 @@ export default {
 
 	},
 	methods: {
-
+		saveImg(imgUrl) {
+        this.stay.imgUrls.push(imgUrl);
+        console.log('imgUrls', this.stay.imgUrls);
+      },
+	  setPlace(event) {
+		  var lat = event.geometry.location.lat()
+		  var lng = event.geometry.location.lng()
+		  console.log('mapsss:',lat);
+		  console.log('mapsss:',lng);
+		  console.log('mapsss:',event);
+    }
 	},
 	computed: {
 		loggedUser() {
@@ -87,6 +137,7 @@ export default {
 
 	},
 	components: {
+		imgUpload
 	},
 };
 </script>
