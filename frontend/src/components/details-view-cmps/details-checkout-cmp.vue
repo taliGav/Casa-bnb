@@ -10,8 +10,8 @@
 				<ratings-reviews :stay="stay" />
 			</div>
 			<div class="dates-guests">
-				<div class="dates flex space" @click="openCalender">
-					<div class="check-in-container flex col just">
+				<div class="dates flex space"  @click="openCalender">
+					<div class="check-in-container flex col just" >
 						<div class="check-in-title title">CHECK-IN</div>
 						<div class="check-in-value">
 							<p>{{ startDate }}</p>
@@ -27,15 +27,12 @@
 				</div>
 			
 				<div class="guests flex" @click.stop.prevent="openGuestsMenu">
+					<div class="guests-container flex col just">
 					<add-guests-count
 						v-if="openGuests"
-						@guests="guests"
+						@guests="guestsCount"
 						@addGuests="addGuests"
 					></add-guests-count>
-						<div id="date-container" class="relative">
-					<date-picker :isOpen="isCalendar" @orders="orderDates"></date-picker>
-				</div>
-					<div class="guests-container flex col just">
 						<div class="guests-title title">GUESTS</div>
 						<div class="guests-value flex">
 							<p>{{ guestsCount }} &nbsp;</p>
@@ -46,6 +43,9 @@
 					<!-- <div class="relative">
 
 					</div> -->
+						<div id="date-container" class="relative">
+					<date-picker :isOpen="isCalendar" @orders="orderDates"></date-picker>
+				</div>
 				</div>
 			</div>
 			<div class="reserve-btn-cmp">
@@ -165,7 +165,6 @@ export default {
 		openCalender() {
 			var d = window.document.querySelector('.el-popper');
 			var container = this.$el.querySelector('#date-container');
-			console.log('date picker:', d, container);
 			container.append(d);
 			this.isCalendar = !this.isCalendar;
 		},
@@ -175,6 +174,7 @@ export default {
 		},
 		openGuestsMenu() {
 			this.openGuests = true;
+			console.log(this.openGuests);
 		},
 		closeGuests(ev) {
 			const el = ev.target.className;

@@ -11,9 +11,9 @@
 		left: 50%;
 		border-radius: 50px;
 		background-color: #f7f7f7;
-        &:hover{
-            cursor:pointer
-        }
+		&:hover {
+			cursor: pointer;
+		}
 		img {
 			height: 23px;
 			width: 23px;
@@ -27,26 +27,23 @@
 	}
 }
 
-
-@media (max-width:780px){ 
-    .user-badge{
-        display: none;
-    }
-    .filter-container {
-        display: none;
-    }
-    .small-search-bar{
-        display: none;
-    }
-    .logo{
-        display: none;
-
-    }
+@media (max-width: 780px) {
+	.user-badge {
+		display: none;
+	}
+	.filter-container {
+		display: none;
+	}
+	.small-search-bar {
+		display: none;
+	}
+	.logo {
+		display: none;
+	}
 }
 
 @media (min-width: 780px) {
-	.search-bar{
-        display: none;
-    }
-
+	.mobile-search-bar-container {
+		display: none;
+	}
 }

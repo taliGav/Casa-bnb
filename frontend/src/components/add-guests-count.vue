@@ -73,7 +73,7 @@ export default {
 		};
 	},
 	created() {
-		this.adutls = 0;
+		this.adults = 0;
 		this.children = 0;
 		this.infants = 0;
 	},

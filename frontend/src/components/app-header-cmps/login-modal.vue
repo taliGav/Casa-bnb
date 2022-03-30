@@ -16,7 +16,7 @@
 							class="form-input"
 							placeholder="Enter you username"
 							v-model="user.username"
-              v-focus
+							v-focus
 							autocomplete="off"
 						/>
 					</div>
@@ -83,10 +83,15 @@ export default {
 	methods: {
 		async login() {
 			if (!this.user.username || !this.user.password) return;
-			await this.$store.dispatch({ type: 'login', cred: this.user });
+			try{
+				await this.$store.dispatch({ type: 'login', cred: this.user });
+				console.log('Loged in successfully');
+			}catch (err){
+				console.log('Faled to login', err);
+			}
+			this.$emit('closeLogin');
 			// this.$emit("updateUser");
-			this.$emit('closeMenu');
-			this.$emit('closeModal');
+			// this.$emit('closeMenu');
 		},
 		async signup() {
 			await this.$store.dispatch({ type: 'signup', cred: this.user });
@@ -97,6 +102,7 @@ export default {
 		},
 		onLoginCheck(ev) {
 			const el = ev.target.className;
+			console.log(el);
 			if (el === 'login-modal-container') {
 				this.$emit('closeLogin');
 				// this.$emit('closeMenu');

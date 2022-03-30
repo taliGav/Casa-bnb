@@ -1,9 +1,142 @@
 .mobile-search-menu {
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	position: fixed;
-	background-color: red;
-	transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+	background-color: $white;
+	// transform: translate(-50%, -50%);
+	top: 100%;
+	left: 0;
+	transition: 0.3s;
+
+	.mobile-search-container {
+		position: relative;
+		height: 48px;
+		width: 85%;
+		background-color: $white;
+		margin-top: 64px;
+		margin-bottom: 48px;
+	}
+	input {
+		width: 60%;
+		justify-self: center;
+		align-self: center;
+		text-align: center;
+		height: 40px;
+		position: absolute;
+		border: none;
+	}
+	// img{
+	//     position:absolute;
+	//     left: 0%;
+	//     top: 50%;
+	//     transform: translate(-50%,-50%)
+	// //    align-self:start;
+	// //    justify-self: start;
+	// }
+	.back-button {
+		height: 35px;
+		width: 35px;
+		border-radius: 50%;
+		position: absolute;
+		left: 0%;
+		bottom: 15%;
+		// transform: translate(-50%,-50%);
+		transition: 0.2s;
+
+		&:hover {
+			background-color: rgba(172, 172, 172, 0.411);
+			cursor: pointer;
+		}
+	}
+
+	.mobile-filters {
+		width: 100%;
+        // border-radius: 50px;
+		// height: 100px;
+
+		background-color: white;
+        // border: 1px solid rgba(0, 0, 0, 0.075);
+
+		.mobile-date-start {
+			background-color: $white;
+			width: 25%;
+			height: 64px;
+			border-radius: 32px 32px 32px 32px;
+			position: relative;
+            background-color: darken($white,3%);
+			span {
+				transform: translate(-50%, -50%);
+				position: absolute;
+				left: 50%;
+				top: 20%;
+				font-weight: 700;
+			}
+			p {
+				position: absolute;
+				transform: translate(-50%, -50%);
+				left: 50%;
+				bottom: 3%;
+			}
+			&:hover {
+				background-color: darken($white, 5%);
+				cursor: pointer;
+			}
+		}
+
+		.mobile-date-end {
+			background-color: $white;
+			width: 25%;
+			height: 64px;
+			border-radius: 32px 32px 32px 32px;
+			position: relative;
+            background-color: darken($white,3%);
+            margin: 10px;
+			span {
+				transform: translate(-50%, -50%);
+				position: absolute;
+				left: 50%;
+				top: 20%;
+				font-weight: 700;
+			}
+			p {
+				position: absolute;
+				transform: translate(-50%, -50%);
+				left: 50%;
+				bottom: 3%;
+			}
+			&:hover {
+				background-color: darken($white, 5%);
+				cursor: pointer;
+			}
+		}
+		.mobile-search-guests {
+			background-color: $white;
+			width: 25%;
+			height: 64px;
+			border-radius: 32px 32px 32px 32px;
+			position: relative;
+            background-color: darken($white,3%);
+			span {
+				transform: translate(-50%, -50%);
+				position: absolute;
+				left: 50%;
+				top: 20%;
+				font-weight: 700;
+			}
+			p {
+				position: absolute;
+				transform: translate(-50%, -50%);
+				left: 50%;
+				bottom: 3%;
+			}
+			&:hover {
+				background-color: darken($white, 5%);
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.bottom-slide {
+	top: 0;
 }

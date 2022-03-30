@@ -79,11 +79,13 @@
 	background-color: rgb(255, 255, 255);
 	width: 60%;
 	max-width: 570px;
-	height: 650px;
+	height: 430px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
+	position: fixed;
+	box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 28px !important;
+	border-radius: 12px;
 	position: fixed;
 
 	box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 28px ;

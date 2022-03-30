@@ -23,8 +23,11 @@
 				:isOpen="isOpen"
 				@openSearch="openSearch"
 			></small-search-bar>
-			<mobile-search-bar></mobile-search-bar>
-			<mobile-search-menu></mobile-search-menu>
+			<mobile-search-bar @click="mobileMenu"></mobile-search-bar>
+			<mobile-search-menu
+				@closeMobileMenu = "mobileMenu"
+				:class="{ 'bottom-slide': isMobileSearch }"
+			></mobile-search-menu>
 			<nav class="nav-bar flex just align space">
 				<div class="explore-link flex just align">
 					<router-link :class="{ 'color-black': colorsChange }" to="/stay"
@@ -50,7 +53,7 @@ import staySearch from '../components/stay-search.vue';
 import datePicker from '../components/date-picker.vue';
 import smallSearchBar from '../components/small-search-bar.vue';
 import mobileSearchBar from './app-header-cmps/mobile-search-bar.vue';
-import mobileSearchMenu from './app-header-cmps/mobile-search-bar.vue';
+import mobileSearchMenu from './app-header-cmps/mobiel-search-menu.vue';
 
 export default {
 	name: 'app-header',
@@ -60,6 +63,7 @@ export default {
 			colorsChange: null,
 			isSearchClicked: false,
 			isDetailsPage: false,
+			isMobileSearch: false,
 		};
 	},
 	created() {
@@ -103,6 +107,10 @@ export default {
 				this.isDetailsPage = false;
 			}
 		},
+		mobileMenu() {
+			console.log('openin search menu');
+			this.isMobileSearch = !this.isMobileSearch;
+		},
 	},
 
 	computed: {
@@ -121,7 +129,7 @@ export default {
 		datePicker,
 		smallSearchBar,
 		mobileSearchBar,
-		mobileSearchMenu
+		mobileSearchMenu,
 	},
 };
 </script>

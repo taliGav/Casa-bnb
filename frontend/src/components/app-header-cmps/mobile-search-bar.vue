@@ -1,25 +1,19 @@
 <template>
-	<section class="mobile-search-bar-container" @click = 'openMobileSearch'>
-        <div class="search-bar flex align just">
-            <img src="../../assets/Images/logos/search-icon-red.svg" alt="" />
-            <p>Where are you going?</p>
-        </div>
-    </section>
+	<section class="mobile-search-bar-container">
+		<div class="search-bar flex align just">
+			<img src="../../assets/Images/logos/search-icon-red.svg" alt="" />
+			<p>Where are you going?</p>
+		</div>
+	</section>
 </template>
 <script>
 export default {
-    name: 'mobile-search-bar', 
+	name: 'mobile-search-bar',
 
-    data(){
-        return{
-            
-        }
-    },
-    methods:{
-        openMobileSearch(){ 
-            console.log('hello')
-        }
-    }
+	data() {
+		return {};
+	},
+	methods: {},
 };
 </script>
 <style></style>

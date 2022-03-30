@@ -27,6 +27,7 @@ export default {
 	},
 	methods: {
 		openCalender() {
+			console.log('opening form check out', this.isOpen);
 			this.$el.querySelector('.el-range-editor').click();
 			window.document
 				.querySelector('.el-popper')
@@ -35,6 +36,8 @@ export default {
 		sendOrderDates() {
 			this.$emit('orders', this.orderDates);
 		},
+	
+	
 	},
 	computed: {},
 	watch: {
