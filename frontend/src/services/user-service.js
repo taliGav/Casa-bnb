@@ -44,7 +44,7 @@ async function signup(cred) {
 
 }
 
-async function signupChack(username) {
+async function signupCheck(username) {
   console.log('signup 2', username);
   const user = await getByUsername(username)
   console.log('signup 3', user);

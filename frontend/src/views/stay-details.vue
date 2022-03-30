@@ -85,7 +85,7 @@ export default {
 		console.log('stay-details',this.$route.params);
 		this.stay = await this.$store.dispatch({ type: 'getStayById', stayId: id });
 		const user = this.$store.getters.user;
-		this.amenities = this.amenetiesForDispaly;
+		this.amenities = this.amenitiesForDispaly;
 		console.log(this.amenities);
 
 		// review-store
@@ -104,7 +104,7 @@ export default {
 		user() {
 			// return this.$store.getters.user;
 		},
-		amenetiesForDispaly() {
+		amenitiesForDispaly() {
 			return this.stay.amenities.slice(0, 10);
 		},
 	},
