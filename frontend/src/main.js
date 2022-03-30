@@ -6,9 +6,7 @@ import { focusDirective } from './directives';
 import { formatRelative } from 'date-fns';
 import ElementPlus from 'element-plus';
 import VueGoogleMaps from '@fawmi/vue-google-maps';
-//price range
 import HistogramSlider from "vue3-histogram-slider";
-// import VueGmaps from 'vue-gmaps'
 
 
 import './assets/scss/styles.scss';
@@ -20,7 +18,7 @@ import "vue3-histogram-slider/dist/histogram-slider.css";
 const app = createApp(App);
 
 app.component(HistogramSlider.name, HistogramSlider);
-// app.config.productionTip = false;
+
 
 app.config.globalProperties.$filters = {
   formatTime(time) {
@@ -33,8 +31,7 @@ app.directive('focus', focusDirective);
 app.use(ElementPlus);
 app.use(router);
 app.use(store);
-// app.use(HistogramSlider);
-// app.use(Datepicker);
+
 
 
 app.use(VueGoogleMaps, {
@@ -44,10 +41,5 @@ app.use(VueGoogleMaps, {
   },
 });
 
-// app.use(VueGmaps, {
-//   load: {
-//     key: 'AIzaSyBshrF2SW5c1FqFPoDUnBoIBpoQps7jU10',
-//   },
-// });
 
 app.mount('#app');

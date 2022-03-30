@@ -40,31 +40,6 @@ const router = createRouter({
       name: 'add-stay',
       component: addStay,
     },
-    // {
-    //   path: '/dashboard',
-    //   name: 'dashboard',
-    //   component: dashboard,
-    // },
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   component: about,
-    // },
-    // {
-    //   path: '/login',
-    //   name: 'login',
-    //   component: login,
-    // },
-    // {
-    //   path: '/user',
-    //   name: 'user',
-    //   component: userDetails,
-    // },
-    // {
-    //   path: '/review',
-    //   name: 'review',
-    //   component: reviewsExplore,
-    // },
   ],
 });
 

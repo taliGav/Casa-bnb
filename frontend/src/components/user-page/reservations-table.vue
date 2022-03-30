@@ -34,16 +34,10 @@ export default {
 		},
 	},
 	created() {
-		console.log(this.order);
 	},
 	methods: {
 		changeStatus(status){
-			// if(boolean){
 				this.$emit("changeStatus", status)
-			// }
-			// else{
-				// this.$emit("decline")
-			// }
 		}
 	},
 	computed: {

@@ -12,14 +12,9 @@ module.exports = {
 
 async function query(filterBy) {
   try {
-    // console.log('back order serv filter:', filterBy);
     const criteria = _buildCriteria(filterBy);
-    // const criteria = {}
-    // console.log('back order serv criteria:', criteria);
     const collection = await dbService.getCollection('order');
     var orders = await collection.find(criteria).toArray();
-    console.log('order service', orders);
-    // console.log('back order serv orders:', orders);
     return orders;
   } catch (err) {
     logger.error('cannot find orders', err);
@@ -62,7 +57,6 @@ async function add(order) {
 
 async function update(order) {
   try {
-    // console.log('update order');
     var id = ObjectId(order._id);
     delete order._id;
     const collection = await dbService.getCollection('order');
