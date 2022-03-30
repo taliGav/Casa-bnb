@@ -1,5 +1,18 @@
 <template>
-  <footer class="main-footer main-layout full">
-    <p>&copy; CaJan22</p>
-  </footer>
+<section class = "main-layout full">
+
+	<footer class="main-footer">
+		<p>&copy; CaJan22</p>
+	</footer>
+  <mobile-footer></mobile-footer>
+</section>
 </template>
+<script>
+import mobileFooter from './mobile-footer.vue';
+export default {
+	name: 'app-footer',
+	components: {
+		mobileFooter,
+	},
+};
+</script>

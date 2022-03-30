@@ -5,7 +5,7 @@
 	width: 375px;
 	height: 300px;
 	background-color: $white;
-	border-radius: 50px;
+	border-radius: 15px;
 	border: 1px solid rgba(0, 0, 0, 0.158);
 	transform: translate(0%, 0%);
 	top: 80px;
@@ -18,9 +18,9 @@
 		color: red;
 	}
 
-	button {
-		width: 33px;
-		height: 33px;
+	.btn-round {
+		width: 35px;
+		height: 35px;
 		border-radius: 50%;
 		font-size: 16px;
 		font-weight: bold;
@@ -28,6 +28,8 @@
 		color: #8f8d8d;
 		border: 0.5px solid #8f8d8d;
 		transition: 0.2s;
+		
+
 		&:hover {
 			cursor: pointer;
 			color: #615f5f;
