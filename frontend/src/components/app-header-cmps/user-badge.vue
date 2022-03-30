@@ -45,24 +45,23 @@
 
 <script>
 import userMenu from './user-menu-cmp.vue';
-import Signupmodal from './signup-modal.vue';
+import SignupModal from './signup-modal.vue';
 import loginModal from './login-modal.vue';
 
 export default {
-	name: 'user-badge',
-	data() {
-		return {
-			user: null,
-			isMenuOpen: false,
-			isLoginModal: false,
-			isSignupModal: false,
-		};
-	},
-	created() {
-		this.user = this.$store.getters.user;
-	},
-	methods: {
-		openUserBar() {
+  name: "user-badge",
+  data() {
+    return {
+      user: null,
+      isMenuOpen: false,
+    };
+  },
+  created() {
+    this.user = this.$store.getters.user;
+  },
+  methods: {
+    openUserBar() {
+      this.user = this.$store.getters.user;
       console.log('opening');
 			this.user = this.$store.getters.user;
 			this.isMenuOpen = true;
@@ -101,7 +100,7 @@ export default {
 	watch: {},
 	components: {
 		userMenu,
-		Signupmodal,
+		SignupModal,
 		loginModal,
 	},
 };
