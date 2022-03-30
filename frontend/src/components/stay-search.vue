@@ -1,11 +1,11 @@
 <template>
-	<div class="filter-container main-layout full flex align just">
+	<div class="filter-container main-layout flex align just">
 		<form class="flex align just">
 			<div class="filter">
 				<div
 					class="search-container"
 					@click="focusSearch"
-					:style="{ width: isSearchOpen ? '250px' : '270px' }"
+					:style="{ width: isSearchOpen ? '25%' : '30%' }"
 				>
 					<span>Location</span>
 					<input
