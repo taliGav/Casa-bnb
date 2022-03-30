@@ -13,7 +13,6 @@ module.exports = {
 async function getOrders(req, res) {
   try {
     const filterBy = req.query
-    // console.log('order ctrl filter:', filterBy);
     const orders = await orderService.query(filterBy)
     res.json(orders)
   } catch (err) {
@@ -38,7 +37,9 @@ async function getOrderById(req, res) {
 async function addOrder(req, res) {
   try {
     const order = req.body
-    const addedOrder = await orderService.add(order)
+    const addedOrderId = await orderService.add(order)
+    const addedOrder = await orderService.getById(addedOrderId.insertedId)
+
     res.json(addedOrder)
   } catch (err) {
     logger.error('Failed to add order', err)
@@ -50,9 +51,7 @@ async function addOrder(req, res) {
 async function updateOrder(req, res) {
   try {
     const order = req.body
-    // console.log('order1 ctrl', order);
     const updatedOrder = await orderService.update(order)
-    // console.log('order2 ctrl', order);
     res.json(updatedOrder)
   } catch (err) {
     logger.error('Failed to update order', err)

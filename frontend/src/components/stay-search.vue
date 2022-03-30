@@ -139,7 +139,7 @@ export default {
 		},
 		showDatePicker() {
 			this.$el.querySelector('.el-range-editor').click();
-			// window.document.querySelector('.el-popper').classList.add('el-popper-search')
+			
 			console.log('date picker search-bar', this.startDate);
 		},
 		openSearch() {
@@ -153,9 +153,6 @@ export default {
 		clickCheck(ev) {
 			const el = ev.target.className;
 			const local = ev.target.localName;
-			// console.log('ev' , ev);
-			// console.log('el' , el);
-			// console.log('local',local)
 			if (
 				local === 'img' ||
 				local === 'p' ||

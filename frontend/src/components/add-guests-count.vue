@@ -23,7 +23,7 @@
 					<span>Children</span>
 					<p>Ages 2-12</p>
 				</div>
-				<div class="guests-buttons flex space">
+				<div class="guests-buttons flex space ">
 					<button @click.stop.prevent="addChild(-1)" class="btn-round">
 						-
 					</button>
@@ -73,7 +73,7 @@ export default {
 		};
 	},
 	created() {
-		this.adutls = 0;
+		this.adults = 0;
 		this.children = 0;
 		this.infants = 0;
 	},

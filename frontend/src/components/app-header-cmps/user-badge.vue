@@ -1,5 +1,5 @@
 <template>
-	<section class="relative" @click="openUserBar">
+	<section class="relative" >
 		<div @click="openUserBar" class="user-badge flex align just space">
 			<span class="badge-hamburger">☰</span>
 			<svg
@@ -34,7 +34,7 @@
 			@closeLogin="closeLogin"
 			@closeMenu="closeMenu"
 		/>
-		<Signupmodal
+		<signup-modal
 			v-if="isSignupModal"
 			@closeSignup="closeSignup"
 			@closeMenu="closeMenu"
@@ -49,20 +49,22 @@ import SignupModal from './signup-modal.vue';
 import loginModal from './login-modal.vue';
 
 export default {
-  name: "user-badge",
-  data() {
-    return {
-      user: null,
-      isMenuOpen: false,
-    };
-  },
-  created() {
-    this.user = this.$store.getters.user;
-  },
-  methods: {
-    openUserBar() {
-      this.user = this.$store.getters.user;
-      console.log('opening');
+	name: 'user-badge',
+	data() {
+		return {
+			user: null,
+			isMenuOpen: false,
+			isLoginModal:false,
+			isSignupModal:false
+		};
+	},
+	created() {
+		this.user = this.$store.getters.user;
+	},
+	methods: {
+		openUserBar() {
+			this.user = this.$store.getters.user;
+			console.log('opening');
 			this.user = this.$store.getters.user;
 			this.isMenuOpen = true;
 		},
@@ -73,22 +75,22 @@ export default {
 			await this.$store.dispatch({ type: 'logout' });
 		},
 		closeMenu() {
-      console.log('closing');
+			console.log('closing');
 			this.isMenuOpen = false;
 		},
 		openLogin() {
 			this.isLoginModal = true;
 			this.isMenuOpen = false;
-      
 		},
 		openSignup() {
 			this.isSignupModal = true;
-      this.isMenuOpen = false;
+			this.isMenuOpen = false;
 		},
 		closeSignup() {
 			this.isSignupModal = false;
 		},
-		closeLogin() {	
+		closeLogin() {
+			console.log('closing');
 			this.isLoginModal = false;
 		},
 	},

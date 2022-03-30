@@ -88,7 +88,6 @@ function getGuestUser() {
 
 
 function _createUsers() {
-  console.log('userssssssss');
   let users = utilService.loadFromStorage(KEY);
   if (!users || !users.length) {
     const users = [

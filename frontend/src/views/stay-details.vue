@@ -1,42 +1,42 @@
 <template>
-	<section v-if="stay" class="details-layout stay-details">
-		<details-header :stay="stay" />
-		<details-gallery :stay="stay" />
-		<div class="details-grid">
-			<div class="details-main-container full flex">
-				<div class="main-inner-container">
-					<details-host-main :stay="stay" />
-				</div>
-			</div>
-			<div class="checkout-container">
-				<details-checkout :stay="stay" />
-			</div>
-			<!-- <hr /> -->
-			<div class="amenities-container">
-				<div class="amenities-header flex">
-					<h2>What this place offers</h2>
-				</div>
+  <section v-if="stay" class="details-layout stay-details">
+    <details-header :stay="stay" />
+    <details-gallery :stay="stay" />
+    <div class="details-grid">
+      <div class="details-main-container full flex">
+        <div class="main-inner-container">
+          <details-host-main :stay="stay" />
+        </div>
+      </div>
+      <div class="checkout-container">
+        <details-checkout :stay="stay" />
+      </div>
+      <!-- <hr /> -->
+      <div class="amenities-container">
+        <div class="amenities-header flex">
+          <h2>What this place offers</h2>
+        </div>
 
-				<div class="amenities-content">
-					<div
-						v-for="amenitie in amenities"
-						:key="amenitie"
-						class="amenitie flex"
-					>
-						<div class="amenitie-icon"></div>
-						<div class="amenitie-info flex align">
-							<p>{{ amenitie }}</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<details-reviews :stay="stay" />
+        <div class="amenities-content">
+          <div
+            v-for="amenitie in amenities"
+            :key="amenitie"
+            class="amenitie flex"
+          >
+            <div class="amenitie-icon"></div>
+            <div class="amenitie-info flex align">
+              <p>{{ amenitie }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <details-reviews :stay="stay" />
 
-		<!-- <pre>{{ stay.amenities }}</pre> -->
-		<details-map :stay="stay" />
+    <!-- <pre>{{ stay.amenities }}</pre> -->
+    <details-map :stay="stay" />
 
-		<!-- <div v-if="user?.isAdmin" class="btn-group gap-1">
+    <!-- <div v-if="user?.isAdmin" class="btn-group gap-1">
       <button
         @click="$router.push(`/stay/edit/${stay._id}`)"
         class="btn btn-primary"
@@ -46,11 +46,11 @@
       <button @click="$router.push('/stay')" class="btn btn-secondary">
         go back
       </button> -->
-		<!-- <button @click="removeStay" class="btn btn-danger">delete stay</button> -->
-		<!-- </div> -->
-	</section>
+    <!-- <button @click="removeStay" class="btn btn-danger">delete stay</button> -->
+    <!-- </div> -->
+  </section>
 
-	<!-- <p class="clr-teal fw-bold">${{ stay.price }} /NIGHT</p> -->
+  <!-- <p class="clr-teal fw-bold">${{ stay.price }} /NIGHT</p> -->
 </template>
 
 <script>
@@ -61,6 +61,7 @@ import detailsCheckout from './../components/details-view-cmps/details-checkout-
 import detailsReviews from './../components/details-view-cmps/details-reviews-cmp.vue';
 import detailsMap from './../components/details-view-cmps/details-map-cmp.vue';
 import { stayService } from './../services/stay-service.js';
+
 
 export default {
 	components: {
