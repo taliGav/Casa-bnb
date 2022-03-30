@@ -1,7 +1,7 @@
 <template>
   <div class="reservations-container main-app top-pad">
-    <!-- <reservations-office /> -->
-    <add-stay />
+    <reservations-office />
+    <!-- <add-stay /> -->
   </div>
 </template>
 <script>

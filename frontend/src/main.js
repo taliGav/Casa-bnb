@@ -8,6 +8,7 @@ import ElementPlus from 'element-plus';
 import VueGoogleMaps from '@fawmi/vue-google-maps';
 //price range
 import HistogramSlider from "vue3-histogram-slider";
+// import VueGmaps from 'vue-gmaps'
 
 
 import './assets/scss/styles.scss';
@@ -38,9 +39,15 @@ app.use(store);
 
 app.use(VueGoogleMaps, {
   load: {
-    key: 'AIzaSyBshrF2SW5c1FqFPoDUnBoIBpoQps7jU10',
+    key: 'AIzaSyCKzNT2YpgIvKoDvFxzu0Mjob7W04jiQV0',
+    libraries: "places"
   },
 });
 
+// app.use(VueGmaps, {
+//   load: {
+//     key: 'AIzaSyBshrF2SW5c1FqFPoDUnBoIBpoQps7jU10',
+//   },
+// });
 
 app.mount('#app');
