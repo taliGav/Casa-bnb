@@ -18,7 +18,6 @@
       </svg>
 
       <img v-else class="badge-image" :src="userImg" alt="" />
-      <!-- src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1rfdGOYPCcbada6QNqTauI3LH-SpptOXVrA&usqp=CAU" -->
     </div>
     <!-- <div class="relative"> -->
     <user-menu
@@ -60,8 +59,8 @@ export default {
       await this.$store.dispatch({ type: "logout" });
     },
     closeMenu() {
-      // console.log('closing');
-      // this.isMenuOpen = false;
+    //   console.log('closing');
+    //   this.isMenuOpen = false;
     },
   },
   computed: {
