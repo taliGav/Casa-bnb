@@ -125,11 +125,7 @@ export default {
 		amenitiesForDisplay() {
 			//   console.log("amenitiesForDisplay", this.stay.amenities.slice(0, 10));
 			return this.stay.amenities.slice(0, 10);
-		},
-		replaceByDefault(e) {
-			console.log(e);
-			e.target.src = `../../`;
-		},
+		}
 	},
 	methods: {
 		openChat(topic) {
@@ -137,6 +133,25 @@ export default {
 			this.topic = topic;
 			this.isChatOpen = true;
 		},
+				replaceByDefault(e) {
+			// console.log(e);
+			// console.log("e.target",e.target);
+		// 	        <div class="highlight-icon">
+        //   <svg
+        //     viewBox="0 0 32 32"
+        //     xmlns="http://www.w3.org/2000/svg"
+        //     aria-hidden="true"
+        //     role="presentation"
+        //     focusable="false"
+        //     style="display: block; height: 24px; width: 24px; fill: #222222"
+        //   >
+        //     <path
+        //       d="m24.6666 1.66675h-17.33335c-1.65685475 0-3 1.34314525-3 3v26.4709039l11.66575-7.2926539 11.6676 7.2926539v-26.4709039c0-1.65686279-1.3431233-3-3-3zm0 2 .1166244.00672754c.4973508.05776355.8833756.48042438.8833756.99327246l-.0006 22.86225-9.6661012-6.041549-9.6668988 6.041549.00025-22.86225c0-.55228525.44771475-1 1-1z"
+        //     ></path>
+        //   </svg>
+        // </div>
+			e.target.src = `src/assets/icons/amenities/other.svg`;
+		}
 	},
 };
 </script>
