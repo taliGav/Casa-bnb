@@ -16,6 +16,8 @@ export default {
   data() {
     return {
       isLoading: false,
+      // stays:null,
+      // filterBy:null
     };
   },
   created() {
@@ -40,6 +42,14 @@ export default {
       // this.isLoading = false;
       this.$store.dispatch({ type: "loadStays" });
     },
+      // getStays() {
+      // this.stays = this.$store.getters.staysToShow;
+    // },
+
+      // getFilterBy() {
+      // this.stays = this.$route.query;
+    // },
+
   },
   components: {
     stayList,
@@ -48,4 +58,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.filter-count {
+  height: 42px;
+  line-height: 20px;
+}
+</style>

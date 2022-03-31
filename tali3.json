@@ -1,0 +1,1793 @@
+[{
+        "name": "Monte dos Burgos - Cosy Room",
+        "summary": "The neighbourhood is a quiet, family residential area, 20 minutes by bus from the historic center of Porto and 20 minutes from the beach (Matosinhos - where you may eat very GOOD fish!). You will love to stay in a very spacious, familiar and bright room, where you can enjoy a large and flowery garden, comfortable kitchen and laundry with washer and dryer machine. My space is good for couples, solo adventures, and business travelers!",
+        "interaction": "Our guests will be treated like friends and family",
+        "houseRules": "Do not smoke at home and not make noise",
+        "type": "House",
+        "roomType": "Private room",
+        "bedType": "Real Bed",
+        "cancellationPolicy": "moderate",
+        "capacity": 4.0,
+        "bedrooms": 1.0,
+        "beds": 3.0,
+        "numOfReviews": 391.0,
+        "amenities": [
+            "TV",
+            "Wifi",
+            "Free cancellation",
+            "Kitchen",
+            "Doorman",
+            "Gym",
+            "Breakfast",
+            "Pets live on this property",
+            "Cat(s)",
+            "Indoor fireplace",
+            "Family/kid friendly",
+            "Suitable for events",
+            "Washer",
+            "First aid kit",
+            "Safety card",
+            "Fire extinguisher",
+            "Essentials",
+            "Lock on bedroom door",
+            "24-hour check-in",
+            "Hangers",
+            "Hair dryer",
+            "Laptop friendly workspace",
+            "Private entrance"
+        ],
+        "host": {
+            "_id": "6241ae7f0927e9ee1531afc2",
+			"fullname": "Patrícia Sousa Casimiro",
+			"location": "Senhora da Hora, Porto, Portugal",
+            "about": "Me and my husband are from Oporto,  we are yoga teachers and ayurvedic and bowl sound masseurs. We like contact and talk with interesting people and helping them to know better the Oporto city. We enjoy to go for a walk around  our city and  we like travel to know new cultures and peoples. ",
+            "responseTime": "within an hour",
+			"thumbnailUrl": "https://a0.muscache.com/im/pictures/87b9ccba-154a-4546-8cbe-8bdb25ddb36c.jpg?aki_policy=profile_small",
+        },
+        "loc": {
+            "street": "Porto, Porto, Portugal",
+            "country": "Portugal",
+            "location": {
+                "lan": -8.59097,
+                "lat": 41.1541
+            },
+            "countryCode": "PT",
+            "city": "Porto"
+        },
+        "bathrooms": 2.0,
+        "price": 25.0,
+        "securityDeposit": null,
+        "cleaningFee": 10.0,
+        "extraPeople": 10.0,
+        "reviewScores": {
+            "accuracy": 10.0,
+            "cleanliness": 10.0,
+            "checkin": 10.0,
+            "communication": 10.0,
+            "location": 9.0,
+            "value": 10.0,
+            "rating": 97.0
+        },
+        "reviews": [{
+                "createdAt": "2011-10-29T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3407e36c59e6164fbe6a",
+                    "fullname": "Mike",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/47.jpg"
+                },
+                "txt": "We had a very lovely time with Patrícia and Alberto in their beautifull home in the Bom Fin area. We felt very welcome and A & A gave us a lot of usefu tips on what to do and see in Porto. They surprised us with a nice breakfast, the second day even in the garden.\r\nVery fine, trustworthy and fun to talk with people!"
+            },
+            {
+                "createdAt": "2012-06-13T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3406e36c59e6164fbcad",
+                    "fullname": "Michael",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/48.jpg"
+                },
+                "txt": "Patrícia and Alberto were very welcoming hosts and we really enjoyed our time at their beautiful place in Porto. They are helpful and kind and also prepared breakfast for us with fresh fruits from their wonderful garden."
+            },
+            {
+                "createdAt": "2012-09-20T04:00:00.000Z",
+                "rate": 4.0,
+                "by": {
+                    "_id": "622f3405e36c59e6164fb93f",
+                    "fullname": "David",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/49.jpg"
+                },
+                "txt": "We really would like to put 6/5. We felt very very well welcomed by Maria and Alberto, who receive you in a charming house with caractere, originality and calm. \r\nTraveling with our little daughter (2 months) could have raised some issues, being hosted but I didn't at all."
+            },
+            {
+                "createdAt": "2012-10-11T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3402e36c59e6164fae4c",
+                    "fullname": "Walid",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/50.jpg"
+                },
+                "txt": "I had a great experience at Maria's home. Maria and Alberto are extremely nice people who will make you feel at home, are very helpful, considerate and are fun to be around.  "
+            },
+            {
+                "createdAt": "2012-11-11T05:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3405e36c59e6164fb65d",
+                    "fullname": "Valeria",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/44.jpg"
+                },
+                "txt": "Beautiful cosy house! Full of armony and with an outstanding decoration.  Maria and her Husband were extremly kind. They even took us to a restaurant and explained all the activities in oporto. 100% recommended, and is a great value for money opportunity  :)"
+            },
+            {
+                "createdAt": "2013-03-30T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3402e36c59e6164fad19",
+                    "fullname": "Aminata",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/51.jpg"
+                },
+                "txt": "We had a great time at Maria's, both her and her husband were really nice and made us feel just like at home. They gave us useful tips on what to see in Porto and how to get around which was very much appreciated. The room was very comfortable and the house was especially cozy and well located close to the metro and train station. My first airbnb experience was an amazing short stay thanks to both of them, definitely recommended!"
+            },
+            {
+                "createdAt": "2013-04-14T04:00:00.000Z",
+                "rate": 4.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fb17b",
+                    "fullname": "Matthias",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/51.jpg"
+                },
+                "txt": "Maria and Alberto were the nicest and sweetest hosts ever. They invited us to an inspiring yoga class, were dedicated to help us discovering Porto and Alberto even took us to a great local restaurant.\r\nThe room (and the house and the garden) is beautiful, cozy, clean and silent.\r\nThis is the best place you can stay in Porto. We will definitely come back!\r\n\r\n"
+            },
+            {
+                "createdAt": "2013-05-11T04:00:00.000Z",
+                "rate": 4.0,
+                "by": {
+                    "_id": "622f3402e36c59e6164faca9",
+                    "fullname": "Karin",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/45.jpg"
+                },
+                "txt": "If you are searching for a place tot stay near centre of Porto, I can recommend the place of Maria and Alberto.\r\n\r\nThe place is calm and lovely, has a very nice garden with you can use, a served breakfast every day, lovely, nice decorated room and even more lovely bathroom of your own. They have lots of tips what to visit in Porto and are always wiling to help."
+            },
+            {
+                "createdAt": "2013-05-20T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3406e36c59e6164fbb94",
+                    "fullname": "David",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/56.jpg"
+                },
+                "txt": "AMAZING room in an AMAZING house with AMAZING hosts. I had a great time at Maria's house. She offered me breakfast and her husband helped me during 45 minutes to circle the best locations in Porto on a map. I strongly recommend this place and the center of Porto is a 20 minute walk away. Very comfortable and truly memorable. Thanks for everything :)"
+            },
+            {
+                "createdAt": "2013-05-22T04:00:00.000Z",
+                "rate": 4.0,
+                "by": {
+                    "_id": "622f3404e36c59e6164fb2d0",
+                    "fullname": "María Paula",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/48.jpg"
+                },
+                "txt": "Maria and Alberto are the best! they give you tips and make you a lovely breakfast, but most of all, they open up their house and live style to you. Very calm, elegant, simple and caring. Besides, they have the most beautiful garden that makes you breath and fall in love with the house. Great place, lovely people, osom shower and bed. Walking distance from everything. It was the perfect home to get to know Porto. "
+            },
+            {
+                "createdAt": "2013-05-27T04:00:00.000Z",
+                "rate": 4.0,
+                "by": {
+                    "_id": "622f3402e36c59e6164fada7",
+                    "fullname": "Dirk",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/80.jpg"
+                },
+                "txt": "Our stay at Maria and Alborto was fantastic. They are very friendly. Their house is spacious and in a quiet neighnourhood, though close enough for a walk to the city centre. They have a nice bathroom wit ha bath and a beautiful garden full of fruit trees, flowers and a o so nice hammock :)\r\nI would almost forget to say about the really good breakfast which is included. Could highly recommend.\r\n\r\nThanks again!\r\nDirk and Hilde"
+            },
+            {
+                "createdAt": "2013-06-19T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fb011",
+                    "fullname": "Fara",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/55.jpg"
+                },
+                "txt": "Nous avons été très satisfaits de notre séjour chez Maria et Alberto. Ils sont juste adorables, au petit soin des invités. \r\nLa maison est très propre, lumineux et possède un jardin sympathique. Elle est 1000 fois mieux que sur les photos (je n'exagère pas :) )\r\n\r\nVous pouvez y aller les yeux fermés. Ils sont formidables.\r\n\r\nEncore un GRAND MERCI!!! "
+            },
+            {
+                "createdAt": "2013-06-23T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3407e36c59e6164fbf8f",
+                    "fullname": "Charles",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/83.jpg"
+                },
+                "txt": "Un séjour au top ! Maria et son mari ont été très accueillant ! Ils nous ont donné beaucoup de conseils pour notre séjour pour tout ce qui est lieux à visiter, bonnes adresses... \r\nLa maison est superbe, la salle de bain ultra spacieuse, le lit est spacieux et on y dort très bien. Le luxe : un petit déjeuner complet et vraiment bon dans un jardin très agréable ! \r\nUne superbe adresse pour visiter la magnifique ville de Porto ! \r\nCharles&Constance"
+            },
+            {
+                "createdAt": "2013-06-24T04:00:00.000Z",
+                "rate": 4.0,
+                "by": {
+                    "_id": "622f3404e36c59e6164fb5ae",
+                    "fullname": "Wee Sian",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/80.jpg"
+                },
+                "txt": "Conveniently located near the Campanha station, easy for us travelling by train from porto to lisboa. Maria and her husband were extremely helpful!! They gave wonderful recommendations for things to do in porto and told us about the history and culture of portugal. Delicious and generous breakfast. clean and comfortable rooms and toilets. Maria even went the extra mile to get us pasteis de natas for breakfast simply because we enquired the day before on where we could find some in Porto. Highly recommended!!"
+            },
+            {
+                "createdAt": "2013-06-26T04:00:00.000Z",
+                "rate": 4.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fb08f",
+                    "fullname": "Yvonne",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/81.jpg"
+                },
+                "txt": "Maria & Alberto are such lovely and kind hosts!!! The house is very beautyful and cute furnished, the garden seems to be a small wellness oasis :). I enjoyed my stay in Porto so much and had a great time and fun at St.Johns Festival with lovely people. Definetely I recommend this wonderful place and I'm sure, I will come back!\r\nThank you so much! Yvonne"
+            }
+        ],
+        "imgUrls": [
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561318/casaBnb/021_ljsyum.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561319/casaBnb/022_zezz3r.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561321/casaBnb/028_cvocz6.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561321/casaBnb/029_j2gouq.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561326/casaBnb/039_nw4rrk.jpg"
+        ]
+    }
+
+    /* 9 */
+    {
+        "_id": ObjectId("6245160310295c27b8ff8a4c"),
+        "name": "Heroísmo IV",
+        "summary": "If the dates you wish are not available, we have other options in the same location. You can find them on my profile. My goal is for you to have your days with the most comfort i can propose. I want you to taste all the feelings in Porto, as our food, as our best places, our best pointviews. I just love to help you enjoying this beautiful city :)",
+        "interaction": "I'm always available to help as much as I can for my guests to spend a wonderful time in Porto.",
+        "houseRules": "I ask all the care with: - Noise from the 22 hours, especially when it comes to reach the apartment. - With decorative objects, furniture, bedding and bath, care in the handling of kitchen equipment. I am always available to answer any questions.",
+        "type": "Apartment",
+        "roomType": "Entire home/apt",
+        "bedType": "Real Bed",
+        "cancellationPolicy": "moderate",
+        "capacity": 2.0,
+        "bedrooms": 0.0,
+        "beds": 1.0,
+        "numOfReviews": 31.0,
+        "amenities": [
+            "TV",
+            "Cable TV",
+            "Internet",
+            "Wifi",
+            "Kitchen",
+            "Free street parking",
+            "Heating",
+            "First aid kit",
+            "Safety card",
+            "Fire extinguisher",
+            "Essentials",
+            "Shampoo",
+            "24-hour check-in",
+            "Hangers",
+            "Hair dryer",
+            "translation missing: en.hosting_amenity_49",
+            "translation missing: en.hosting_amenity_50",
+            "Room-darkening shades",
+            "Hot water",
+            "Bed linens",
+            "Extra pillows and blankets",
+            "Microwave",
+            "Refrigerator",
+            "Dishes and silverware",
+            "Cooking basics",
+            "Stove",
+            "Single level home",
+            "Long term stays allowed",
+            "Host greets you",
+            "Handheld shower head"
+        ],
+        "host": {
+            "_id": "6241ae7f0927e9ee1531afc5",
+            "fullname": "Isabel",
+            "location": "Porto, Porto District, Portugal",
+            "about": "Welcome!\r\nThe apartments has all the things to provide you a perfect days in Porto. It is located in a very central area, inside a typical oporto building. \r\nI will give you lots of informations about Porto, my personal tips, and I'll always be available to help you with anything. All I want is for you to go home knowing Porto and inevitably loving the city! :)\r\n\r\n",
+            "responseTime": "within a day",
+            "thumbnailUrl": "https://a0.muscache.com/im/pictures/f3e85f0c-e28d-4698-9da9-2f203aea1f3d.jpg?aki_policy=profile_small",
+            "imgUrl": "https://a0.muscache.com/im/pictures/f3e85f0c-e28d-4698-9da9-2f203aea1f3d.jpg?aki_policy=profile_x_medium",
+            "isSuperhost": true
+        },
+        "loc": {
+            "street": "Porto, Porto, Portugal",
+            "country": "Portugal",
+            "location": {
+                "lan": -8.59275,
+                "lat": 41.1462
+            },
+            "countryCode": "PT",
+            "city": "Porto"
+        },
+        "bathrooms": 1.0,
+        "price": 29.0,
+        "securityDeposit": 0.0,
+        "cleaningFee": 10.0,
+        "extraPeople": 0.0,
+        "reviewScores": {
+            "accuracy": 9.0,
+            "cleanliness": 9.0,
+            "checkin": 9.0,
+            "communication": 9.0,
+            "location": 9.0,
+            "value": 9.0,
+            "rating": 89.0
+        },
+        "reviews": [{
+                "createdAt": "2016-02-21T05:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fafcc",
+                    "fullname": "Sara",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/10.jpg"
+                },
+                "txt": "Muito simpáticos e atenciosos. O apartamento é muito confortável e com pequenos detalhes que fazem a diferença. Muito perto do metro, o que é óptimo para deslocações necessárias."
+            },
+            {
+                "createdAt": "2016-03-06T05:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164faf68",
+                    "fullname": "Jennifer",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/11.jpg"
+                },
+                "txt": "Bonjour, Notre séjour a été très agréable. Nous avons été très bien accueillies. Nuno nous a donné de nombreux conseils, lieux de visites... Le logement était également très bien. Nous avons vraiment pu profiter de Porto. Le métro est tout proche du logement. C'était vraiment un très bon séjour. Merci encore. "
+            },
+            {
+                "createdAt": "2016-04-30T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fb0c1",
+                    "fullname": "Marlene",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/12.jpg"
+                },
+                "txt": "A nice litte appartement. We arrived very late but were kindly greeted by the host. She showed us arround and gave us very useful tips (where to go/ where to eat/ etc.). The appartement is located directly to a metro station and has a Lidl and other grocery stores very near by.  It was a perfect stay!"
+            },
+            {
+                "createdAt": "2016-08-05T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3404e36c59e6164fb3e7",
+                    "fullname": "Teresa",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/13.jpg"
+                },
+                "txt": "Desde o primeiro contacto, a comunicação foi muito fácil e clara. Colocaram à nossa disposição uma série de hipóteses de transporte a partir do aeroporto, bem como a possibilidade de termos em casa cabazes de alimentos. Assim que chegamos, com toda a sua simpatia, tinhamos a Mariana à nossa espera, recebeu-nos explicando os vários  pontos importantes para quem chega: locais a visitar, restaurantes, transportes...\r\nGostámos muito do espaço, do Porto, fazemos questão de voltar em breve. Local excelente!"
+            },
+            {
+                "createdAt": "2016-08-11T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3407e36c59e6164fbf5b",
+                    "fullname": "Joyce",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/14.jpg"
+                },
+                "txt": "Francisca was very friendly and was waiting for us, she took the time to explain us everything about the flat, she even let us good adresses of restaurants, coffees and places to visit in Porto.\r\nThe flat is 10 minutes by foot from the center, with no stairs to climb, good for our heavy luggages! It is very calm and we even had a table outside where we took our breakfasts. The flat is tiny but very functional, clean, and well equipped.\r\nIt is perfect for a short time in Porto."
+            },
+            {
+                "createdAt": "2016-08-27T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3406e36c59e6164fbaad",
+                    "fullname": "Jess",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/15.jpg"
+                },
+                "txt": "The apartment is great value for money and the location is fantastic. We arrived before the check in time but were greeted promptly and could leave our luggage to explore the city straight away. Francisca gave us a lot of good advice and recommendations for the city, which was very helpful. "
+            },
+            {
+                "createdAt": "2016-09-27T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3402e36c59e6164faeed",
+                    "fullname": "Jennifer",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/16.jpg"
+                },
+                "txt": "Thank you for hosting us Nuno. Our trip was perfect. The host was very kind. And the apartment is beautiful, near the center and is well think : it has everything for a few days."
+            },
+            {
+                "createdAt": "2016-12-11T05:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3401e36c59e6164fab65",
+                    "fullname": "Joana",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/17.jpg"
+                },
+                "txt": "Estúdio muito simpático e limpo. Ideal para uma ou duas pessoas, para explorar o Porto durante um par de dias. Estação de metro à porta. Perto da zona histórica do Porto — faz-se bem a pé. Pastelaria ideal para pequeno almoço mesmo à porta."
+            }
+        ],
+        "imgUrls": [
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561324/casaBnb/032_o9lfg9.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561330/casaBnb/041_l4v4kd.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561327/casaBnb/042_llg4la.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561329/casaBnb/043_tyxnkt.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561328/casaBnb/045_yiwd6b.jpg"
+        ]
+    }
+
+    /* 10 */
+    {
+        "_id": ObjectId("6245174610295c27b8ff8a4d"),
+        "name": "Monte dos Burgos - Cosy Room",
+        "summary": "The neighbourhood is a quiet, family residential area, 20 minutes by bus from the historic center of Porto and 20 minutes from the beach (Matosinhos - where you may eat very GOOD fish!). You will love to stay in a very spacious, familiar and bright room, where you can enjoy a large and flowery garden, comfortable kitchen and laundry with washer and dryer machine. My space is good for couples, solo adventures, and business travelers!",
+        "interaction": "Respect and confidance is the key to our hosts!!!",
+        "houseRules": "",
+        "type": "House",
+        "bedType": "Real Bed",
+        "cancellationPolicy": "strict_14_with_grace_period",
+        "capacity": 2.0,
+        "bedrooms": 1.0,
+        "beds": 1.0,
+        "numOfReviews": 5.0,
+        "amenities": [
+            "Wifi",
+            "Kitchen",
+            "Free parking on premises",
+            "Pets live on this property",
+            "Cat(s)",
+            "Washer",
+            "Dryer",
+            "First aid kit",
+            "Fire extinguisher",
+            "Essentials",
+            "Shampoo",
+            "Lock on bedroom door",
+            "Hangers",
+            "Hair dryer",
+            "Iron",
+            "Laptop friendly workspace",
+            "translation missing: en.hosting_amenity_49",
+            "translation missing: en.hosting_amenity_50"
+        ],
+        "host": {
+            "_id": "6241ae7f0927e9ee1531afc5",
+            "fullname": "Isabel",
+            "location": "Senhora da Hora, Porto, Portugal",
+            "about": "",
+            "responseTime": "a few days or more",
+            "imgUrl": "https://randomuser.me/api/portraits/women/37.jpg",
+            "isSuperhost": false
+        },
+        "loc": {
+            "street": "Porto, Porto District, Portugal",
+            "country": "Portugal",
+            "location": {
+                "lan": -8.63082,
+                "lat": 41.18075
+            },
+            "countryCode": "PT",
+            "city": "Porto"
+        },
+        "id": "13750579",
+        "bathrooms": 1.0,
+        "price": 26.0,
+        "securityDeposit": null,
+        "cleaningFee": 8.0,
+        "extraPeople": 5.0,
+        "reviewScores": {
+            "accuracy": 10.0,
+            "cleanliness": 10.0,
+            "checkin": 10.0,
+            "communication": 10.0,
+            "location": 9.0,
+            "value": 10.0,
+            "rating": 96.0
+        },
+        "reviews": [{
+                "createdAt": "2016-08-11T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3402e36c59e6164fad68",
+                    "fullname": "Celeste",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/17.jpg"
+                },
+                "txt": "We had a very nice stay in the house and felt at home. The room is big and light, we had a private bathroom, could use the kitchen and the nice garden. Patricia picked us up at the station of the metro, the bus is near. Patricia and Chris are very open and welcoming people, we talked about Portugal, Fado, Porto ... Also, they gave us several tips to see in Porto. When we are in Porto again we will come back!! We really recommand to stay here. Thanks Patricia and Casimiro!"
+            },
+            {
+                "createdAt": "2016-08-14T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3402e36c59e6164fadf0",
+                    "fullname": "Martin",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/14.jpg"
+                },
+                "txt": "Patricia and Chris has been wonderful hosts. They help us very much with all questions we had. We enjoyed our stay very much."
+            },
+            {
+                "createdAt": "2016-08-15T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3402e36c59e6164faedf",
+                    "fullname": "Sandra",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/18.jpg"
+                },
+                "txt": "Une chambre très spacieuse et une salle de bain privée : au top ! \r\nChristian et Patricia ont été très accueillants et nous nous sommes tout de suite sentis comme chez nous ! "
+            },
+            {
+                "createdAt": "2016-08-20T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3404e36c59e6164fb3ed",
+                    "fullname": "Erika",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/19.jpg"
+                },
+                "txt": "Des hôtes très accueillant et à l'écoute de leurs invités! De supers adresses à conseiller. \r\nUne maison décorée avec goût et avec une sublime salle de bain privée.\r\nLe centre est très facile d'accès en bus car inaccessible en voiture. \r\nTrès facile de se garer dans la rue de nos hôtes.\r\nUn excellent rapport qualité prix!"
+            },
+            {
+                "createdAt": "2016-08-22T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3405e36c59e6164fb9bd",
+                    "fullname": "Guy",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/18.jpg"
+                },
+                "txt": "Patricia et Casimir ont été très accueillants et nous ont donné toutes les informations pratiques pour se rendre au centre de Porto en bus. La chambre est spacieuse et la salle de bain privée est juste à coté. Le quartier est très calme et le séjour était très agréable."
+            }
+        ],
+        "imgUrls": [
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561328/casaBnb/044_rr0itz.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561329/casaBnb/047_i8erfq.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561330/casaBnb/048_ht2es7.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561329/casaBnb/046_b3lezo.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561330/casaBnb/049_lu7whd.jpg"
+        ]
+    }
+
+    /* 11 */
+    {
+        "_id": ObjectId("6245192110295c27b8ff8a4e"),
+        "name": "Penthouse Sands of Kahana Sandy Swimmable Beach",
+        "summary": "Price includes nightly rate & 14.42% tax.  Our fully remodeled 9th floor Penthouse unit offers the most amazing views.  The entire front of the condo is windows offering you a fantastic view of beautiful Pacific Ocean, Molokai & Lana'i.  Perfect location for watching beautiful sunsets, see our resident sea turtles & an excellent place for spotting whales during the whale migration season. This spacious two level 3 bedroom and 3 full bath Penthouse unit has over 2,050 sq ft of living space w/ AC.",
+        "interaction": "As your host I will be available via phone for any questions or concerns.  I am always happy to answer any questions or give assistance prior to your arrival.",
+        "houseRules": "Resort fee of $75 collected by front desk at time of check in.  One time fee. - Rates are for 6 guests.  An additional $25 per night per person for up to 2 more guests. - Resort Quiet Hours 10:00 p.m. - 8:00 a.m. - No smoking on the lanai or in unit per Hawaii state law",
+        "type": "Condominium",
+        "bedType": "Real Bed",
+        "cancellationPolicy": "strict_14_with_grace_period",
+        "capacity": 9.0,
+        "bedrooms": 3.0,
+        "beds": 6.0,
+        "numOfReviews": 17.0,
+        "amenities": [
+            "TV",
+            "Cable TV",
+            "Internet",
+            "Wifi",
+            "Air conditioning",
+            "Pool",
+            "Kitchen",
+            "Free parking on premises",
+            "Gym",
+            "Elevator",
+            "Hot tub",
+            "Family/kid friendly",
+            "Washer",
+            "Dryer",
+            "Smoke detector",
+            "Carbon monoxide detector",
+            "First aid kit",
+            "Safety card",
+            "Fire extinguisher",
+            "Essentials",
+            "Shampoo",
+            "Lock on bedroom door",
+            "24-hour check-in",
+            "Hangers",
+            "Hair dryer",
+            "Iron",
+            "Laptop friendly workspace",
+            "Self check-in",
+            "Building staff",
+            "Private entrance",
+            "Bathtub",
+            "Baby bath",
+            "High chair",
+            "Children’s books and toys",
+            "Crib",
+            "Pack ’n Play/travel crib",
+            "Children’s dinnerware",
+            "Hot water",
+            "Bed linens",
+            "Extra pillows and blankets",
+            "Microwave",
+            "Coffee maker",
+            "Refrigerator",
+            "Dishwasher",
+            "Dishes and silverware",
+            "Cooking basics",
+            "Oven",
+            "Stove",
+            "BBQ grill",
+            "Patio or balcony",
+            "Beach essentials",
+            "Step-free access",
+            "Disabled parking spot",
+            "Step-free access",
+            "Step-free access",
+            "Step-free access",
+            "Beachfront",
+            "Pool with pool hoist"
+        ],
+        "host": {
+            "_id": "6241ae7f0927e9ee1531afc3",
+            "fullname": "Shaila & Alex",
+            "location": "California, United States",
+            "about": "My husband and I are Real Estate Investors.  We enjoy traveling and no matter where we go, we always find ourselves looking at properties.  Since we still have school age children I have found that a beach vacation is usually the most enjoyable for everyone.  Living on the West Coast, Hawaii continued to be a place that we would return to time and time again.",
+            "responseTime": "within an hour",
+            "imgUrl": "https://res.cloudinary.com/cajan-22/image/upload/v1648564925/casaBnb/users/c2-2_i4tvjd.jpg"
+        },
+        "loc": {
+            "street": "Lahaina, HI, United States",
+            "country": "United States",
+            "location": {
+                "lan": -156.68034,
+                "lat": 20.97104
+            },
+            "countryCode": "US",
+            "city": "Maui"
+        },
+        "id": "13934996",
+        "bathrooms": 3.0,
+        "price": 800.0,
+        "securityDeposit": 2000.0,
+        "cleaningFee": 325.0,
+        "extraPeople": 50.0,
+        "reviewScores": {
+            "accuracy": 10.0,
+            "cleanliness": 10.0,
+            "checkin": 10.0,
+            "communication": 10.0,
+            "location": 10.0,
+            "value": 10.0,
+            "rating": 100.0
+        },
+        "reviews": [{
+                "createdAt": "2017-03-23T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3406e36c59e6164fbb9b",
+                    "fullname": "Alexandra",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/19.jpg"
+                },
+                "txt": "The location was great and the view was incredible! You are right on the beach and it is a great place for families with kids. Highly recommend staying here!"
+            },
+            {
+                "createdAt": "2017-04-28T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fb19f",
+                    "fullname": "Daisy",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/20.jpg"
+                },
+                "txt": "This place was beyond my expectations. There were no hidden surprises. Knew exactly what to expect, and Shaila was always there to answer any quesions. The view is spectacular. Beautiful location. I highly recommend this place."
+            },
+            {
+                "createdAt": "2017-07-29T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3402e36c59e6164fac44",
+                    "fullname": "Peter",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/20.jpg"
+                },
+                "txt": "Very nice location with good beach. Penthouse is nice sized and comfortable. Amenities are good. Location is very good with close proximity to Lahaina and Kapalua."
+            },
+            {
+                "createdAt": "2018-05-19T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3406e36c59e6164fba90",
+                    "fullname": "Stacey",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/21.jpg"
+                },
+                "txt": "This place is amazing. We will be back!"
+            },
+            {
+                "createdAt": "2018-06-03T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3406e36c59e6164fbb28",
+                    "fullname": "Rebekah",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/22.jpg"
+                },
+                "txt": "What an amazing place to stay with a spectacular view!! The beach out front is awesome and we saw turtles daily! Shaila was great with communication and making our stay feel just like home. Hope to stay here again!!"
+            },
+            {
+                "createdAt": "2018-08-25T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3407e36c59e6164fbda0",
+                    "fullname": "Chris",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/24.jpg"
+                },
+                "txt": "Fantastic unit. Amazing sunsets."
+            },
+            {
+                "createdAt": "2018-09-13T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3406e36c59e6164fbc74",
+                    "fullname": "Esther",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/25.jpg"
+                },
+                "txt": "Enjoyed our stay very much! The condo was clean, spacious and with all the amenities of a home away from home. Shaila was very responsive, even checking up on us when the tropical storm warnings went out. Thankfully, the storm didn’t dampen our stay. Enjoyed many beautiful Maui sunsets from the home!"
+            },
+            {
+                "createdAt": "2018-10-18T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fb016",
+                    "fullname": "Elaine",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/43.jpg"
+                },
+                "txt": "The place has amazing ocean views!!! Shaila provided beach chairs, gears, and toys for the kids. The entire condo is well organized and our family had such a great time. Appreciate all the little touches you provided for your guests. Will definitely stay there again when we return on Maui! :)"
+            },
+            {
+                "createdAt": "2019-01-11T05:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fb239",
+                    "fullname": "Dan",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/27.jpg"
+                },
+                "txt": "This condo was very spacious.  We had eight people (ages 5-85) and there was plenty of space for everyone.  Shaila was readily accessible if we needed anything.  The view from the lanai was breathtaking and we watched whales every morning.  The condo was stocked with plenty of snorkel gear, boogie boards, beach chairs, sand toys for the kids, board games, puzzles, etc.  The kitchen had plenty of pots, pans, dishes, utensils, etc.  Thanks for the great stay!"
+            },
+            {
+                "createdAt": "2019-01-22T05:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164faf7d",
+                    "fullname": "Jess",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/49.jpg"
+                },
+                "txt": "Very clean. Cleanest Airbnb we have stayed at. Beautiful home and beautiful view of the sunset from the apartment. Loved that they had binoculars to see the whales jumping out in the distance."
+            },
+            {
+                "createdAt": "2019-02-14T05:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fb1af",
+                    "fullname": "Anna-Mae",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/48.jpg"
+                },
+                "txt": "I cannot say enough good things about this condo. There was more than enough space for my friends and I to spread out. Each room was beautifully decorated. the bathrooms we're impeccably remodeled, I even took inspiration pictures! Shaila thought of everything to make this a home away from home. AC was in every room, but with the trade winds, we never needed it. Don't hesitate, book this place now!!!"
+            }
+        ],
+        "imgUrls": [
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561332/casaBnb/055_advjhc.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561333/casaBnb/054_cg6hql.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561333/casaBnb/053_ysunwm.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561332/casaBnb/052_daoqax.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561333/casaBnb/050_njo72l.jpg"
+        ]
+    }
+
+    /* 12 */
+    {
+        "_id": ObjectId("62451d1010295c27b8ff8a4f"),
+        "name": "Grand apartment Sagrada Familia",
+        "summary": "4 rooms apartment in the heart of the right “Eixample” broadening. Perfect location in the notorious area of Sagrada Familia that will ensure and unforgettable stay in Barcelona. HUTB-003275",
+        "interaction": "24h",
+        "houseRules": "Check-in: from 14:00 pm.  Check-out: till 11:00 am. Charges for electricity, gas, water and community included. Any noises that could disturb the neighbors is not allowed. Certainly from the 22: 00h.  Smoking in the apartment is not allowed. Any parties are strictly prohibited.",
+        "type": "Apartment",
+        "roomType": "Entire home/apt",
+        "bedType": "Real Bed",
+        "cancellationPolicy": "strict_14_with_grace_period",
+        "capacity": 8.0,
+        "bedrooms": 4.0,
+        "beds": 6.0,
+        "numOfReviews": 77.0,
+        "amenities": [
+            "TV",
+            "Internet",
+            "Wifi",
+            "Air conditioning",
+            "Kitchen",
+            "Paid parking off premises",
+            "Smoking allowed",
+            "Buzzer/wireless intercom",
+            "Family/kid friendly",
+            "Washer",
+            "Dryer",
+            "Essentials",
+            "Shampoo",
+            "Hangers",
+            "Hair dryer",
+            "Iron",
+            "Laptop friendly workspace",
+            "Hot water",
+            "Host greets you"
+        ],
+        "host": {
+            "_id": "622f3406e36c59e6164fbbf5",
+            "fullname": "Alexandra Y Juan",
+            "location": "Barcelona, Catalonia, Spain",
+            "about": "Hola, \r\n\r\nSomos Alexandra y Juan dos amigos que estamos enamorados de Barcelona, nuestras pasiones son viajar y conocer gente por lo que nos encantaría compartir con vosotros nuestros espacios  para que disfrutéis a vuestro gusto de toda la cultura, actualidad y diversidad de ofertas que la ciudad os ofrece.\r\nPara nosotros lo mas importante es que nuestros huéspedes puedan aprovechar al máximo su estancia en Barcelona,  que viváis vuestra historia  reflejada en  rincones únicos de la ciudad y por supuesto nuestra mayor satisfacción es que os sintáis como en casa según lo que busquéis.\r\n\r\nHello, \r\n\r\nWe are Alexandra and Juan two friends who are in love with Barcelona, our passion is to travel and meet new people so we would love to share our spaces with you and that you can enjoy the culture, the present and the diversity of offers that the city has to offer. \r\nFor us the most important thing is that our guests can make the most of their stay in Barcelona, that you live our history full of unique places and of course our greatest satisfaction is that you feel as if you where at home according to what you are looking for.",
+            "responseTime": "within an hour",
+            "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/3fceba9a-ce84-4841-88df-b699105119b4.jpg?aki_policy=profile_small",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/3fceba9a-ce84-4841-88df-b699105119b4.jpg?aki_policy=profile_x_medium",
+            "isSuperhost": false
+        },
+        "loc": {
+            "street": "Barcelona, Catalunya, Spain",
+            "country": "Spain",
+            "location": {
+                "lan": 2.18146,
+                "lat": 41.39716
+            },
+            "countryCode": "ES",
+            "city": "Barcelona"
+        },
+        "bathrooms": 2.0,
+        "price": 169.0,
+        "securityDeposit": 200.0,
+        "cleaningFee": 60.0,
+        "extraPeople": 0.0,
+        "reviewScores": {
+            "accuracy": 10.0,
+            "cleanliness": 9.0,
+            "checkin": 9.0,
+            "communication": 9.0,
+            "location": 9.0,
+            "value": 9.0,
+            "rating": 90.0
+        },
+        "reviews": [{
+                "createdAt": "2016-03-30T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3402e36c59e6164faec0",
+                    "fullname": "Lenny",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/18.jpg"
+                },
+                "txt": "L'accès au logement est pratique. Il y a un parking à 10 mètres (20€ par jour).\r\nLa résidence est bien tenue. Deux ascenseurs pour accéder au 6ème étage. L'appartement est parfaitement silencieux, pas de bruit sur la rue.\r\nLe logement est idéal pour les groupes, il est propre, en très bon état. Deux jeux de clés sont à disposition. Je recommande vivement ce logement.\r\nPour se rendre en ville, il est situé à 15 minutes de sites à voir, les taxis passent dans la rue, tout est pratique.\r\nEnfin la terrasse est superbe, avec vue sur la tour AGBAR.\r\n\r\nMerci pour votre accueil, on revient bientôt!"
+            },
+            {
+                "createdAt": "2016-04-05T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fb082",
+                    "fullname": "Albe Birio",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/19.jpg"
+                },
+                "txt": "The apartment is really amazing, in the city centre and with everything we needed. Regina was really helpful we our needs."
+            },
+            {
+                "createdAt": "2016-04-17T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3402e36c59e6164faeeb",
+                    "fullname": "Daniel",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/12.jpg"
+                },
+                "txt": "Great stay, very nice flat as described. Nice balcony and well located! Host was nice and easy to communicate to"
+            },
+            {
+                "createdAt": "2016-04-30T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3402e36c59e6164fad11",
+                    "fullname": "Bram",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/14.jpg"
+                },
+                "txt": "Everything was fine.\r\nApartment was clean.\r\nA couple useful items weren't available, like a trash can or a drying rack fro the dishes. But obviously thats an easy thing to buy.\r\nOverall a nice place.\r\n\r\nNothing to do with the host, but the walls are paper thin. You can hear what the neighbours are doing on every side of the flat."
+            },
+            {
+                "createdAt": "2016-05-08T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3407e36c59e6164fbcec",
+                    "fullname": "Joel",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/17.jpg"
+                },
+                "txt": "Bon accueil et appartement propre et conforme à la description"
+            },
+            {
+                "createdAt": "2016-05-16T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3405e36c59e6164fb73f",
+                    "fullname": "Paul",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/18.jpg"
+                },
+                "txt": "Superbe appartement! Un parking à deux pas qui nous a été d'une grande utilité. Regina est très accueillante, je recommande cet appartement. "
+            },
+            {
+                "createdAt": "2016-05-23T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3406e36c59e6164fba01",
+                    "fullname": "Daniel",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/19.jpg"
+                },
+                "txt": "We has a great time at Regina's place. The flat is clean and as shown on the pictures.\r\n"
+            },
+            {
+                "createdAt": "2016-07-10T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3406e36c59e6164fbb75",
+                    "fullname": "Guowei",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/13.jpg"
+                },
+                "txt": "The apartment and the location is good, but the service is not as good as expect. \n\nI have booked a pick-up service from the householder, but there are some problems happened about the plane causing the flight delayed. I have informed the householder at once. When we arrived at the airport, we could not find the driver waiting for us at the arrival with our name. Then, I tried to ask for the help from the householder to meet the driver at the airport. After almost one-hour waiting, we are refused by the driver to meet at the airport and He asked us to find his car at the park. How ridiculous! This service costs 20 euro each person but we cannot even have the right to be picked up. We were so angry and chose to take the taxi. At the same time, I texted the householder that we were tired of waiting for the driver and we were on the way to ur apartment by taxi.\n\nThe householder didn't tell me that I should phone another guy to tell him that we were on the way to the apartment until We arrived. What all she talked about were the money of the pick-up service. We spent another 45 minutes to wait for the guy to send the key. Again, when he came, he talked about the money. We asked for the service, but u did not provide it with us. How dare u to ask for the payment? Besides, do u know what? We are totally seven people, so this service should cost 140 euro totally. But two taxis only cost us 70 euro. The driver knows the guy and the householder. I doubt that they are on the business to play trick with me.\n\nBarcelona is a really nice city to travel, but this experience does make a bad impression on me. \n "
+            },
+            {
+                "createdAt": "2016-07-16T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3407e36c59e6164fbf02",
+                    "fullname": "Glen",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/11.jpg"
+                },
+                "txt": "The apartment has a good location convenient to metro and walking distance to Sagrada Familia and many good eating options. Spacious with a nice balcony. Air conditioning units are in the main hallway and the dining/living room, but the rooms are hard to cool down (it was hot when we were there). "
+            },
+            {
+                "createdAt": "2016-07-23T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3407e36c59e6164fbd6b",
+                    "fullname": "Andrea",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/18.jpg"
+                },
+                "txt": "Hola todo muy bien, excelente ubicacion y el trato my amable. El unico comentario es el de reparar la "
+            },
+            {
+                "createdAt": "2016-07-29T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3402e36c59e6164fad90",
+                    "fullname": "Jacob",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/10.jpg"
+                },
+                "txt": "What an amazing place to stay! It is a very roomy and comfortable place, that is in a great location. The deck area is amazing and we spent most of our time there just hanging out taking in the views. Reginan had great communication and made it very simple for us to arrive. If i ever go back to Barcelona, i would 100% stay here again! "
+            },
+            {
+                "createdAt": "2016-08-08T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fb0e3",
+                    "fullname": "Yuri",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/30.jpg"
+                },
+                "txt": "Tutto andava molto bene ,l'appartamento corrispondeva esattamente alle foto del sito. Le stanze ed i bagni erano puliti , come pure la cucina. La terrazza era molto bella e la vista era apprezzabile. Oltre ai vari letti vi era anche la possibilità di dormire su un divano letto particolarmente comodo. L'aria condizionata funzionava e rinfrescava bene tutto l'appartamento. L'unico problemino c'è stato con la porta del bagno che è stato facile chiudere, ma non più riaprire, ma c'è stato subito un pronto intervento da parte dei responsabili dell'appartamento, che hanno aiutato ad uscire la persona che era rimasta chiusa all'interno. Salvo questo però Il quartiere era tranquillo , c'erano vari baretti attorno e anche dei piccoli centri commerciali ( di tipo alimentare ). Era in oltre possibile raggiungere a piedi vari bar dove potersi divertire. I taxi per arrivare nel centro della movida variano con i prezzi dai 5 ai 7 euro a corsa. La fermata della metro era a 5 min a piedi dall'appartamento. Dal centro partiva una navetta che portava direttamente all'aeroporto per soli 4 euro e 90. "
+            },
+            {
+                "createdAt": "2016-08-28T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3406e36c59e6164fbc92",
+                    "fullname": "Anne-Sophie",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/19.jpg"
+                },
+                "txt": "Regina is a really nice host and the apartment is perfect for big group due to its perfect location, 5 min drive or 15 min walk for the beach and near the perfect tourist places !\nI recommend 100% this clean and well decorated apartment !\n"
+            },
+            {
+                "createdAt": "2016-09-19T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3405e36c59e6164fb647",
+                    "fullname": "Julie",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/23.jpg"
+                },
+                "txt": "Regina was a great host- first she replied very quickly to my booking inquiry, and was always very responsive with queries/ messages.\r\nThe flat is HUGE and very well located, very modern and nicely decorated. Regina had organised someone to meet us on arrival so check in was easy. Check out was easy  llew as we just had to leave the flat at the agreed time. I would only say that the check out time of 11am is a bit early, especially for a city when you can have dinner quite late... although upon our request, Regina allowed us nicely to stay until 12pm.\r\nThey were two sets of keys which was very convenient for a big group. \r\nI have suggested to regina that it would be great to have a few more amenities provided such as toilet paper and coffee/tea for example, but overall we were very pleased with our stay at Regina's place. Thank you Regina!\r\n\r\n"
+            },
+            {
+                "createdAt": "2016-09-23T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fb09e",
+                    "fullname": "Manuel",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/9.jpg"
+                },
+                "txt": "El departamento es fantástico y tiene una terraza bastante amplia para disfrutar. Tanto los anfitriones como Maks (el concierge) fueron muy amables y dispuestos a ayudar."
+            },
+            {
+                "createdAt": "2016-10-21T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3408e36c59e6164fc065",
+                    "fullname": "Maxim",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/79.jpg"
+                },
+                "txt": "Very good location.\r\n\r\nReally close to all major attractions. Plenty of shops and restaurants nearby. ( BTW you can go to the sushi bar - 5 minutes walk - Kyoka II, with unlimited food. Menu in Spanish only :) )\r\n\r\nApartments are comfortable and clean. I think it should be really good for a family vacations.\r\n\r\nIMHO some minimal improvements must be made (broken shower hose support, etc) but it's truly minor. \r\n\r\nOverall - pleasant experience."
+            },
+            {
+                "createdAt": "2016-10-24T04:00:00.000Z",
+                "rate": 4.0,
+                "by": {
+                    "_id": "622f3401e36c59e6164fab87",
+                    "fullname": "Rebecca",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/79.jpg"
+                },
+                "txt": "Regina's apartment was as listed on her profile - there was sufficient space for all 8 of us, and had all of the amenities listed on the page. It was a very good area. I would recommend anyone in a bigger group looking to stay in a central location. "
+            },
+            {
+                "createdAt": "2016-10-31T04:00:00.000Z",
+                "rate": 4.0,
+                "by": {
+                    "_id": "622f3407e36c59e6164fbfe5",
+                    "fullname": "Luke",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/38.jpg"
+                },
+                "txt": "Great apartment if you are a larger group and need more space. The bedrooms are all great and as described, plus having two bathrooms was good. The terrace is a fantastic bonus, with amazing views! "
+            },
+            {
+                "createdAt": "2016-11-02T04:00:00.000Z",
+                "rate": 4.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fafc3",
+                    "fullname": "Karla",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/38.jpg"
+                },
+                "txt": "El apartamento es incluso mejor a como aparece en las fotos. La ubicación excelente. Queda cerca de todo y se puede ir caminando a diferentes puntos de interes como la sagrada familia y la marina o para los que prefieren el metro tiene cerca varias paradas de metro lo que resulta muy conveniente.  Lo recomendamos cien por ciento. Si volvemos a Barcelona definitivamente nos quedariamos nuevamente aqui."
+            },
+            {
+                "createdAt": "2016-11-14T05:00:00.000Z",
+                "rate": 4.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164faf4f",
+                    "fullname": "Katherine",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/40.jpg"
+                },
+                "txt": "We stayed here with 8 people for a fun weekend in Barcelona and this apartment was a great home base for us. The apartment is exactly what the pictures showed and Regina and Juan were great hosts. Location is a little bit out of the way if you want to be central but proximity to la Sagrada Familia was nice!"
+            }
+        ],
+        "imgUrls": [
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561334/casaBnb/057_da83b5.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561334/casaBnb/058_rlvzxr.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561333/casaBnb/056_azfs3u.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561335/casaBnb/059_tfxw3v.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561332/casaBnb/052_daoqax.jpg"
+        ]
+    }
+
+    /* 13 */
+    {
+        "_id": ObjectId("624520b010295c27b8ff8a50"),
+        "name": "Spacious and quiet duplex apartment in Poble Sec",
+        "summary": "Spacious apartment in a peculiar building in the central neighbourhood of Poble Sec, with patio and terrace, ideal for families with children or groups. Walking distance from center, Montjuïc, Plaza España, Fira Montjuïc/Gran Vía, Sant Antoni, Raval.",
+        "interaction": "Yamila lives in the neighborhood. Should you need it she will be near! Before your arrival, you might interact by e-mail either with Yamila or with me (Cristina, the apartment's owner).",
+        "houseRules": "RIGHT AFTER RESERVATION: 1. Send us your e-mail address so that we can send you a PDF file with all the info. 2. Send us by e-mail the following personal data FOR ALL GUESTS (children included), for the compulsory tourist registration with the local authorities: ID number*  Type of document (national ID or passport)* Date of issue (if visible)* Family name*  First name*   M/F* Birth date*  Nationality*  Date of arrival* Personal address  Phone number  Expected days of stay BEFORE YOUR ARRIVAL: 1. Make sure you provide us your arrival's details (time of arrival and mean of transportation) and a phone number so that we can contact you in case of need. 2. Let us know your preferences regarding the beds according to your group's composition: ex. if you are a family of 2 parents + 2 kids we will prepare the main room and the bulk beds; if you are 2 couples we will prepare the main room and the other double bed room; if there is a child we will prepare the baby bed or the little bed, etc.  3",
+        "type": "Apartment",
+        "roomType": "Entire home/apt",
+        "bedType": "Real Bed",
+        "cancellationPolicy": "moderate",
+        "capacity": 7.0,
+        "bedrooms": 3.0,
+        "beds": 7.0,
+        "numOfReviews": 129.0,
+        "amenities": [
+            "TV",
+            "Cable TV",
+            "Internet",
+            "Wifi",
+            "Air conditioning",
+            "Kitchen",
+            "Paid parking off premises",
+            "Buzzer/wireless intercom",
+            "Heating",
+            "Family/kid friendly",
+            "Washer",
+            "Smoke detector",
+            "Carbon monoxide detector",
+            "First aid kit",
+            "Safety card",
+            "Fire extinguisher",
+            "Essentials",
+            "Shampoo",
+            "24-hour check-in",
+            "Hangers",
+            "Hair dryer",
+            "Iron",
+            "Laptop friendly workspace",
+            "Outlet covers",
+            "Bathtub",
+            "High chair",
+            "Stair gates",
+            "Children’s books and toys",
+            "Crib",
+            "Pack ’n Play/travel crib",
+            "Room-darkening shades",
+            "Children’s dinnerware",
+            "Hot water",
+            "Bed linens",
+            "Extra pillows and blankets",
+            "Ethernet connection",
+            "Microwave",
+            "Coffee maker",
+            "Refrigerator",
+            "Dishwasher",
+            "Dishes and silverware",
+            "Cooking basics",
+            "Oven",
+            "Stove",
+            "Patio or balcony",
+            "Luggage dropoff allowed",
+            "Long term stays allowed",
+            "Wide doorway",
+            "Well-lit path to entrance",
+            "Wide entryway",
+            "Host greets you"
+        ],
+        "host": {
+            "_id": "622f3403e36c59e6164fb08c",
+            "fullname": "Cristina",
+            "location": "Barcelona, Catalonia, Spain",
+            "about": "(ES) Soy mujer, mamá y traductora. Me gusta tener tiempo para pensar, viajar, jugar con mis hijas y descubrir algo nuevo cada día. A veces por trabajo tengo que viajar, y entonces mi amiga Yamila, gran mujer y fantástica anfitriona, amante del campo y fotógrafa de profesión, me ayuda con los huéspedes.\r\n\r\n(EN) I am a woman, a mother and a translator. I like having time to think, to travel, to play with my daughters and to discover something new every day. Sometimes I have to travel because of my job: in those occasions my friend Yamila, great woman and fantastic host, outdoor lover and photographer, helps me out with guests.",
+            "responseTime": "within an hour",
+            "thumbnailUrl": "https://a0.muscache.com/im/users/6107595/profile_pic/1442432675/original.jpg?aki_policy=profile_small",
+            "imgUrl": "https://a0.muscache.com/im/users/6107595/profile_pic/1442432675/original.jpg?aki_policy=profile_x_medium",
+            "isSuperhost": true,
+            "id": "6107595"
+        },
+        "loc": {
+            "street": "Barcelona, Catalunya, Spain",
+            "country": "Spain",
+            "location": {
+                "lan": 2.15566,
+                "lat": 41.37479
+            },
+            "countryCode": "ES",
+            "city": "Barcelona"
+        },
+        "id": "1112838",
+        "bathrooms": 2.0,
+        "price": 130.0,
+        "securityDeposit": 300.0,
+        "cleaningFee": 65.0,
+        "extraPeople": 35.0,
+        "reviewScores": {
+            "accuracy": 10.0,
+            "cleanliness": 10.0,
+            "checkin": 10.0,
+            "communication": 10.0,
+            "location": 10.0,
+            "value": 10.0,
+            "rating": 95.0
+        },
+        "reviews": [{
+                "createdAt": "2013-05-12T04:00:00.000Z",
+                "rate": 4.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fb132",
+                    "fullname": "Jean-Pierre",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/40.jpg"
+                },
+                "txt": "Yamila appartement was just perfect for us!\r\nThe location in Poble sec is very close to BCN city center and the neighborhood is so quiet without any traffic like everywhere else in the city\r\nThe appartement is very clean, well equipped with very recent furniture, 2 bathrooms, 3 bedrooms, 2 balconies, 1 terrace, large kitchen and lounge.\r\nYamila was a perfect host with us also.\r\nI fully recommend this appartment"
+            },
+            {
+                "createdAt": "2013-06-17T04:00:00.000Z",
+                "rate": 4.0,
+                "by": {
+                    "_id": "622f3402e36c59e6164fadce",
+                    "fullname": "Ove M.",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/41.jpg"
+                },
+                "txt": "El piso esta muy guay, en una zona muy bien comunicada y con muchos restaurantes y bares cerca. Lo hemos pasado muy bien en este piso y volveriamos a alquilarlo."
+            },
+            {
+                "createdAt": "2013-07-12T04:00:00.000Z",
+                "rate": 4.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fb078",
+                    "fullname": "Andrew",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/42.jpg"
+                },
+                "txt": "Awesome accommodations! Huge apartment that was obviously recently renovated and well maintained. The building is in a residential (read: non-touristy) part of Spain so if you are looking for a real taste of local culture this is the place to stay. 2 blocks from the subway and we were downtown in just a couple stops. The apartment is in building with a common courtyard (common for the style). The other people that live in the building were very friendly and helpful answering any questions we had. My son was even able to play with the other children (despite the language barrier). Awesome experience -- would definietly rent again."
+            },
+            {
+                "createdAt": "2013-08-06T04:00:00.000Z",
+                "rate": 4.0,
+                "by": {
+                    "_id": "622f3407e36c59e6164fbce7",
+                    "fullname": "Juan Daniel",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/42.jpg"
+                },
+                "txt": "Experiencia bastante agradable, puntuales, el piso muy limpio, ordenado y esta genial, muy bien situado, muy recomendable."
+            },
+            {
+                "createdAt": "2013-08-09T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3406e36c59e6164fba44",
+                    "fullname": "Carey",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/43.jpg"
+                },
+                "txt": "The apartment is exactly as pictured. Very spacious, comfortable, and clean with a well equipped kitchen and nice terraces on both levels. The neighborhood is well situated - it is not at all touristy but close to transportation at Plaza España and Poble Sec metro stops so you can easily get to all the places you want to visit. We stayed here for 3 nights with our two children and found it perfect. We were able to walk or take the metro everywhere we wanted to go, but have a quieter place to sleep and relax. There is a park down the street and a supermarket directly across. Xavi met us on arrival and was very nice and helpful throughout our stay. When my husband accidentally left a few things in the apartment, Xavi collected them and met us upon our return to Barcelona a few days later to return them. Thanks, Xavi! It was a great stay in Barcelona and I would definitely recommend the apartment to anyone looking for space and comfort in a close but quieter neighborhood. "
+            },
+            {
+                "createdAt": "2013-08-25T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3407e36c59e6164fbfa0",
+                    "fullname": "Julie",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/44.jpg"
+                },
+                "txt": "Great flat in a very good location, very close from subway which brings you to wherever you want in a few minutes. Xabi has been really nice and we didn't miss anything in the flat. Thank you"
+            },
+            {
+                "createdAt": "2013-09-16T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3402e36c59e6164fae47",
+                    "fullname": "Ron",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/44.jpg"
+                },
+                "txt": "Yamila is a great hostess, the apartment is very comfortable.\r\nVery close to the metro. And a convenient store. A tv was missed, otherwise everything was great."
+            },
+            {
+                "createdAt": "2013-10-27T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3407e36c59e6164fc002",
+                    "fullname": "Christine",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/54.jpg"
+                },
+                "txt": "Appartement conforme aux indications, très propre. Le quartier est calme mais tout de même assez proche de tout (2 stations de métro de la rambla et des plages...). Super Bon séjour !\r\n"
+            },
+            {
+                "createdAt": "2013-11-05T05:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3405e36c59e6164fb814",
+                    "fullname": "Jeremie",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/64.jpg"
+                },
+                "txt": "Una estancia perfecta, el piso es muy grande y muy bien equipado. La descripción corresponde perfectamente a la casa. 100% recomendable."
+            },
+            {
+                "createdAt": "2014-02-27T05:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3404e36c59e6164fb306",
+                    "fullname": "Kirstin",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/55.jpg"
+                },
+                "txt": "Super apartement, clean, spacios, great located and pretty quiet. Yamila is very nice, polite and helpful. I strongly can recommend the apartement. "
+            },
+            {
+                "createdAt": "2014-03-04T05:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3406e36c59e6164fbbcc",
+                    "fullname": "Oliver",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/55.jpg"
+                },
+                "txt": "A very nice place and a great host!\r\nThe apartment is exactly as you can see in the pictures, everthing is clean and Yamila is just a call (or e-mail) away if you need help."
+            },
+            {
+                "createdAt": "2014-03-18T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3404e36c59e6164fb476",
+                    "fullname": "Okan",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/56.jpg"
+                },
+                "txt": "EVERYTHING WAS GREAT. Yamila is very hospitable, very helpful. You can find everything you need at home.We will rent this House again barcelona 2015 Marathon."
+            },
+            {
+                "createdAt": "2014-03-25T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3404e36c59e6164fb510",
+                    "fullname": "Lisa",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/58.jpg"
+                },
+                "txt": "Cristina and her friend Yamilia did a wonderful job of making us feel at home and were also very helpful with other miscellaneous necessities (calling us a taxi to take us to the airport on departure).  The duplex was very nice and spacious, clean, charming, outfitted with everything we needed, with comfortable beds and a very nice kitchen (with an induction cooktop!).    Overall, the apartment was a nice, comfortable bargain for family travel - not the most modern, but charming and fully met our needs."
+            },
+            {
+                "createdAt": "2014-04-12T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3404e36c59e6164fb5a8",
+                    "fullname": "Danielle",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/56.jpg"
+                },
+                "txt": "Appartement trés agréable et trés bien situé à 2 pas d'une station de métro et de la place d'Espagne.\r\nToutes les pièces sont très agréables et les terrasses aussi.\r\nSupermarché en face et excellente boulangerie au pied de l'immeuble.\r\nImmeuble très calme.\r\nPas de cafetière électrique ni d'essoreuse à salade mais l'électroménager est top.\r\nDéco soignée.\r\nMerci, nous avons passé une excellente semaine !  "
+            }
+        ],
+        "imgUrls": [
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561334/casaBnb/060_aqamjb.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561334/casaBnb/061_nwd9tg.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561335/casaBnb/062_ajmhzl.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561336/casaBnb/063_js4q3k.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561332/casaBnb/052_daoqax.jpg"
+        ]
+    }
+
+    /* 15 */
+    {
+        "name": "302 Kanai A Nalu Ocean front/view",
+        "summary": "Welcome to Kana'i A Nalu a quiet resort that sits on the ocean away from the road. This property has the BEST ocean front views of Molokini Crater and Kaho'Olawe Island. There is a resort swimming pool and BBQs next to the ocean. This gorgeous 2 bed 2 bath unit is on the third floor look over the Pacific Ocean with views of Sugar Beach and Mount Haleakalea!  The condo is light and bright with all the creature comforts of home.  The beds are very comfortable.",
+        "interaction": "We will email you PDF check-in letter and documents at least 60 days prior to check-in.",
+        "houseRules": "MVFA LLC dba Maui Vision Rentals (Agent) Cancellation, Deposit & Booking Policies Rental Rules: Guest agrees to abide by the Rental Rules.  Guest shall cause all members of the rental party and anyone else Guest permits on the property to abide by the following rules at all times while at the property including rules posted at the condominium complex.  By accepting this reservation and paying for the rental, guest enters the condo agreeing to all terms and conditions of this agreement and accepts responsibility for all guests of the property. Guest shall not permit any use of the pool by unsupervised children.  An adult Guest must accompany children and be present at all times. Guest and other invitees shall use the pool at their own risk.  Please respect the posted rules. Mandatory Occupancy Disclosures: You must disclose to us the exact number and names of guests (subject to maximum) who will be occupying the Property during the rental term.  You must immediately notify us, by phone ",
+        "type": "Condominium",
+        "roomType": "Entire home/apt",
+        "bedType": "Real Bed",
+        "cancellationPolicy": "super_strict_60",
+        "capacity": 6.0,
+        "bedrooms": 2.0,
+        "beds": 3.0,
+        "numOfReviews": 7.0,
+        "amenities": [
+            "TV",
+            "Cable TV",
+            "Internet",
+            "Wifi",
+            "Air conditioning",
+            "Pool",
+            "Kitchen",
+            "Free parking on premises",
+            "Elevator",
+            "Free street parking",
+            "Family/kid friendly",
+            "Washer",
+            "Dryer",
+            "Smoke detector",
+            "First aid kit",
+            "Essentials",
+            "Hangers",
+            "Hair dryer",
+            "Iron",
+            "Laptop friendly workspace",
+            "Self check-in",
+            "Lockbox",
+            "Babysitter recommendations",
+            "Hot water",
+            "Bed linens",
+            "Extra pillows and blankets",
+            "Microwave",
+            "Coffee maker",
+            "Refrigerator",
+            "Dishwasher",
+            "Dishes and silverware",
+            "Cooking basics",
+            "Oven",
+            "Stove",
+            "Single level home",
+            "BBQ grill",
+            "Patio or balcony",
+            "Garden or backyard",
+            "Beach essentials",
+            "Long term stays allowed",
+            "Wide hallway clearance",
+            "Step-free access",
+            "Wide doorway",
+            "Flat path to front door",
+            "Well-lit path to entrance",
+            "Disabled parking spot",
+            "Step-free access",
+            "Step-free access",
+            "Step-free access",
+            "Waterfront",
+            "Beachfront"
+        ],
+        "host": {
+            "_id": "622f3402e36c59e6164faf2c",
+            "fullname": "Kathy",
+            "location": "Hawaii, United States",
+            "about": "I am the owner of Maui Vision Rental. Maui Vision became a reality and a business starting with my personal condo at the Kihei Akahi Resort C618.\r\n\r\nMaui Vision is a business I love because I get to share the Aloha Spirit, the beauty of the land, and talk story with people from around the world. It is nice to know that we can contribute to someone’s Hawaiian vacation experience in a positive way. We love to hear back from our happy guests.\r\n\r\nI used to live on the island of Oahu with my US Navy family when I was young.  We later moved to Southern California.  I knew one day I would return to Hawaii, the place I fell in love with long ago. I took a leap of faith and purchased my Maui condo June 2002 this was the beginning of fulfilling her prophecy to once again return to Hawaii soil.\r\n\r\nI am a tropical expression artist who paints on canvas and etched metal.  My work is inspired by the beauty of the islands and has been displayed in several Maui art galleries over the years.  I am a writer and have my first book on Amazon.  I recently took up hula dancing and love to immerse myself in the culture and grace of this island.\r\n\r\nI have over 25 years of business administration and customer service experience working for large corporations and high tech startups.\r\n\r\nIf you are in need of a caring Realtor here on Maui, please contact Kathy McCartney RS#77317 of La Costa Realty Hawai’i, LLC Brokerage Lic #18349 .",
+            "responseTime": "within an hour",
+            "imgUrl": "https://randomuser.me/api/portraits/women/20.jpg"
+        },
+        "loc": {
+            "street": "Wailuku, HI, United States",
+            "country": "United States",
+            "location": {
+                "lan": -156.5039,
+                "lat": 20.79664
+            },
+            "countryCode": "US",
+            "city": "Maui"
+        },
+        "id": "11207193",
+        "bathrooms": 2.0,
+        "price": 400.0,
+        "securityDeposit": 200.0,
+        "cleaningFee": 270.0,
+        "extraPeople": 20.0,
+        "reviewScores": {
+            "accuracy": 10.0,
+            "cleanliness": 10.0,
+            "checkin": 10.0,
+            "communication": 10.0,
+            "location": 10.0,
+            "value": 9.0,
+            "rating": 97.0
+        },
+        "reviews": [{
+                "createdAt": "2016-09-03T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3407e36c59e6164fbf63",
+                    "fullname": "Mony",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/70.jpg"
+                },
+                "txt": "We were the group of five, each of us was so in love with this place, great view and so peaceful , looking forward to come back soon."
+            },
+            {
+                "createdAt": "2016-12-25T05:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fb1f2",
+                    "fullname": "Jerome",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/71.jpg"
+                },
+                "txt": "Great place to stay and enjoy the whales view"
+            },
+            {
+                "createdAt": "2016-12-30T05:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3407e36c59e6164fbcf9",
+                    "fullname": "Chris",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/73.jpg"
+                },
+                "txt": "Everything was great, the waves put us to sleep every night and the deck/porch was very nice and relaxing.  Plenty of amenities for pina coladas and other fun island cocktails to make in the kitchen.  Along with cooking appliances to make some easy meals if you don't want to eat out every night.  Easy walk down to grass field and beach access right there.  Perfect for how many guest we had (5-6). Price was fair especially for the holiday week rates.  Left some extra body boards for future guests to enjoy.  Thank you Kathy for sharing your home.  Aloha "
+            },
+            {
+                "createdAt": "2017-01-02T05:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3406e36c59e6164fbbfa",
+                    "fullname": "Anne",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/74.jpg"
+                },
+                "txt": "Very clear communications, good sleeping arrangements for (4). Comfortable and clean place to stay."
+            },
+            {
+                "createdAt": "2017-01-05T05:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3405e36c59e6164fb64e",
+                    "fullname": "Tiffany",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/75.jpg"
+                },
+                "txt": "The condo was PERFECT for 4 people: myself, my husband, my mother and her sister. The view was beautiful, the kitchen was fantastically equipped, the condo community went very quiet at night and the lovely sounds of the ocean waves rocked you to sleep each night. We were there in January and it was quite pleasant all day, but I think during the hotter months the front bedroom could get warmer. All bedrooms had windows that would open and most of time there was a strong breeze blowing through the entire condo. The general location, central Maui, was perfect as well. Just an excellent place to vacation."
+            },
+            {
+                "createdAt": "2018-06-24T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3405e36c59e6164fb888",
+                    "fullname": "Lindsay",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/75.jpg"
+                },
+                "txt": "Great place! Would definitely book here again!"
+            },
+            {
+                "createdAt": "2018-08-30T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3407e36c59e6164fbf97",
+                    "fullname": "Ryan",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/75.jpg"
+                },
+                "txt": "Book this place.... seriously!"
+            }
+        ],
+        "imgUrls": [
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561338/casaBnb/071_wotcrb.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561344/casaBnb/073_avv23h.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561339/casaBnb/072_sxduam.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561339/casaBnb/074_e7orxi.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561339/casaBnb/070_p0r886.jpg"
+        ]
+    }
+
+
+    /* 17 */
+    {
+        "name": "2-Rooms Apartment in north of Tel Aviv",
+        "summary": "Spacious, sunny room in owner occupied house in the heart of Park Slope. Shared  bathroom with shower/bath tub. Steps away from restaurants/bars and shopping. Within walking distance of major subway lines, Prospect Park, BAM and Barclay Center.",
+        "interaction": "I am always available, either at home or on my cell phone.",
+        "houseRules": "",
+        "type": "Apartment",
+        "roomType": "Private room",
+        "bedType": "Real Bed",
+        "cancellationPolicy": "flexible",
+        "capacity": 2.0,
+        "bedrooms": 1.0,
+        "beds": 1.0,
+        "numOfReviews": 1.0,
+        "amenities": [
+            "Internet",
+            "Wifi",
+            "Air conditioning",
+            "Heating",
+            "Smoke detector",
+            "Carbon monoxide detector",
+            "First aid kit",
+            "Fire extinguisher",
+            "Shampoo",
+            "Lock on bedroom door",
+            "Hangers",
+            "Hair dryer",
+            "Iron"
+        ],
+        "host": {
+            "_id": "622f3407e36c59e6164fbe18",
+            "fullname": "Lisah",
+            "about": "",
+            "responseTime": "within an hour",
+            "imgUrl": "https://randomuser.me/api/portraits/women/71.jpg"
+        },
+        "loc": {
+            "country": "Israel",
+            "location": {
+                "lat": 32.084932,
+                "lan": 34.772445
+            },
+            "countryCode": "IL",
+            "city": "Tel Aviv"
+        },
+        "id": "11935301",
+        "bathrooms": 1.0,
+        "price": 85.0,
+        "securityDeposit": null,
+        "cleaningFee": null,
+        "extraPeople": 0.0,
+        "reviewScores": {
+            "accuracy": 10.0,
+            "cleanliness": 10.0,
+            "checkin": 10.0,
+            "communication": 10.0,
+            "location": 10.0,
+            "value": 10.0,
+            "rating": 100.0
+        },
+        "reviews": [{
+            "createdAt": "2016-06-24T04:00:00.000Z",
+            "rate": 4.0,
+            "by": {
+                "_id": "622f3405e36c59e6164fb74c",
+                "fullname": "Francesca",
+                "imgUrl": "https://randomuser.me/api/portraits/women/71.jpg"
+            },
+            "txt": "Lisa's house was beautiful and in an incredible location. The room was comfortable and immaculate. Lisa was a very relaxed and gracious host with lots of useful local knowledge.  I recommend her highly."
+        }],
+        "imgUrls": [
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561342/casaBnb/084_x1xxvx.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561342/casaBnb/081_eqat75.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561341/casaBnb/079_ek5azc.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561340/casaBnb/077_mjles6.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561347/casaBnb/080_pmmyuj.jpg"
+        ]
+    }
+
+    /* 18 */
+    {
+        "_id": ObjectId("62452a8e10295c27b8ff8a55"),
+        "name": "Beautiful Apartment on Tel Aviv's beach",
+        "summary": "Spacious, sunny room in owner occupied house in the heart of Park Slope. Shared  bathroom with shower/bath tub. Steps away from restaurants/bars and shopping. Within walking distance of major subway lines, Prospect Park, BAM and Barclay Center.",
+        "interaction": "I am always available, either at home or on my cell phone.",
+        "houseRules": "",
+        "type": "Apartment",
+        "roomType": "Private room",
+        "bedType": "Real Bed",
+        "cancellationPolicy": "flexible",
+        "capacity": 2.0,
+        "bedrooms": 1.0,
+        "beds": 1.0,
+        "numOfReviews": 1.0,
+        "amenities": [
+            "Internet",
+            "Wifi",
+            "Air conditioning",
+            "Heating",
+            "Smoke detector",
+            "Carbon monoxide detector",
+            "First aid kit",
+            "Fire extinguisher",
+            "Shampoo",
+            "Lock on bedroom door",
+            "Hangers",
+            "Hair dryer",
+            "Iron"
+        ],
+        "host": {
+            "_id": "622f3407e36c59e6164fbe18",
+            "fullname": "Lisah",
+            "about": "",
+            "responseTime": "within an hour",
+            "imgUrl": "https://randomuser.me/api/portraits/women/71.jpg"
+        },
+        "loc": {
+            "country": "Israel",
+            "location": {
+                "lat": 32.084932,
+                "lan": 34.772445
+            },
+            "countryCode": "IL",
+            "city": "Tel Aviv"
+        },
+        "id": "11935301",
+        "bathrooms": 1.0,
+        "price": 100.0,
+        "securityDeposit": null,
+        "cleaningFee": null,
+        "extraPeople": 0.0,
+        "reviewScores": {
+            "accuracy": 10.0,
+            "cleanliness": 10.0,
+            "checkin": 10.0,
+            "communication": 10.0,
+            "location": 10.0,
+            "value": 10.0,
+            "rating": 100.0
+        },
+        "reviews": [{
+            "createdAt": "2016-06-24T04:00:00.000Z",
+            "rate": 4.0,
+            "by": {
+                "_id": "622f3405e36c59e6164fb74c",
+                "fullname": "Francesca",
+                "imgUrl": "https://randomuser.me/api/portraits/women/71.jpg"
+            },
+            "txt": "Lisa's house was beautiful and in an incredible location. The room was comfortable and immaculate. Lisa was a very relaxed and gracious host with lots of useful local knowledge.  I recommend her highly."
+        }],
+        "imgUrls": [
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561339/casaBnb/076_fum6et.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561341/casaBnb/078_kihjny.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561341/casaBnb/079_ek5azc.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561340/casaBnb/077_mjles6.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561347/casaBnb/080_pmmyuj.jpg"
+        ]
+    }
+
+    /* 19 */
+    {
+        "_id": ObjectId("62452e6410295c27b8ff8a56"),
+        "name": "Apartamento en casco antiguo",
+        "summary": "Apartamento en el centro del casco antiguo de Barcelona, a 50 mts del mar, a 1 minuto de Las Ramblas, Borne, Plaza Real y Barceloneta.",
+        "interaction": "Me podréis localizar a cualquier hora del día. Os podré ayudar para que vuestra estancia sea lo mas cómoda posible.",
+        "houseRules": "- No hacer ruido a partir de la 10 pm. - La normativa del ayuntamiento de Barcelona obliga a formalizar contrato de alquiler - Contratación de limpieza obligatoria semanal de dos horas - Suministros (agua, luz y gas) se ha de pagar al anfitrión directamente y el coste es de     150€ mensuales - Pasadas las 22h se cobrara recargo de 35€ para hacer el check in",
+        "type": "Apartment",
+        "roomType": "Entire home/apt",
+        "bedType": "Real Bed",
+        "cancellationPolicy": "strict_14_with_grace_period",
+        "capacity": 4.0,
+        "bedrooms": 3.0,
+        "beds": 4.0,
+        "numOfReviews": 7.0,
+        "amenities": [
+            "TV",
+            "Internet",
+            "Wifi",
+            "Air conditioning",
+            "Kitchen",
+            "Paid parking off premises",
+            "Buzzer/wireless intercom",
+            "Heating",
+            "Family/kid friendly",
+            "Washer",
+            "Dryer",
+            "Smoke detector",
+            "Carbon monoxide detector",
+            "First aid kit",
+            "Safety card",
+            "Fire extinguisher",
+            "Essentials",
+            "Shampoo",
+            "24-hour check-in",
+            "Hangers",
+            "Hair dryer",
+            "Iron",
+            "Laptop friendly workspace",
+            "High chair",
+            "Crib",
+            "Room-darkening shades",
+            "Hot water",
+            "Bed linens",
+            "Extra pillows and blankets",
+            "Microwave",
+            "Coffee maker",
+            "Refrigerator",
+            "Dishwasher",
+            "Dishes and silverware",
+            "Cooking basics",
+            "Oven",
+            "Stove",
+            "Luggage dropoff allowed",
+            "Long term stays allowed",
+            "Cleaning before checkout",
+            "Wide doorway",
+            "Step-free access",
+            "Wide clearance to bed",
+            "Step-free access",
+            "Host greets you",
+            "Handheld shower head"
+        ],
+        "host": {
+            "_id": "622f3404e36c59e6164fb4b4",
+            "fullname": "Luis",
+            "location": "Barcelona, Catalonia, Spain",
+            "responseTime": "within a few hours",
+            "imgUrl": "https://a0.muscache.com/im/users/22076771/profile_pic/1415724202/original.jpg?aki_policy=profile_x_medium"
+        },
+        "loc": {
+            "street": "Barcelona, Catalunya, Spain",
+            "country": "Spain",
+            "location": {
+                "lan": 2.17877,
+                "lat": 41.37903
+            },
+            "countryCode": "ES",
+            "city": "Barcelona"
+        },
+        "bathrooms": 1.0,
+        "price": 55.0,
+        "securityDeposit": 500.0,
+        "cleaningFee": 80.0,
+        "extraPeople": 0.0,
+        "reviewScores": {
+            "accuracy": 9.0,
+            "cleanliness": 9.0,
+            "checkin": 10.0,
+            "communication": 10.0,
+            "location": 10.0,
+            "value": 9.0,
+            "rating": 93.0
+        },
+        "reviews": [{
+                "createdAt": "2016-06-01T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3404e36c59e6164fb3db",
+                    "fullname": "Tim",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/71.jpg"
+                },
+                "txt": "Amazing condo, great host. The perfect air BnB experience "
+            },
+            {
+                "createdAt": "2016-07-31T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3407e36c59e6164fbeae",
+                    "fullname": "Danny",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/71.jpg"
+                },
+                "txt": "We had a phenomenal time and full experience at this apartment. Luis is a wonderful host, an excellent guy and was overly helpful whenever he could lend a recommendation or helpful hand. The apartment itself is spacious, clean, a great place to live in a perfect location. You're in the heart of the Gothic neighborhood close to culture, architecture, supermarkets and restaurants. We spent two months here and enjoyed every minute of it. "
+            },
+            {
+                "createdAt": "2017-02-19T05:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3407e36c59e6164fbe8c",
+                    "fullname": "Artea",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/72.jpg"
+                },
+                "txt": "Muy buen piso, muy recomendable. El piso esta muy bien equipado y es muy acogedor. Bien situado. El dueño Luis es encantador, nos ha ayudado mucho y ha estado disponible todo el rato. Muy atento con nosotras."
+            },
+            {
+                "createdAt": "2017-09-01T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3403e36c59e6164fb058",
+                    "fullname": "Andrew",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/73.jpg"
+                },
+                "txt": "Great friendly Host in a clean and very spacious apartment. Good location - great stay."
+            },
+            {
+                "createdAt": "2017-10-27T04:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3404e36c59e6164fb4c6",
+                    "fullname": "Kar",
+                    "imgUrl": "https://randomuser.me/api/portraits/men/75.jpg"
+                },
+                "txt": "The Apartment is centrally located.  Its close to Las Ramblas and the beach.  The unit is updated and clean.  The bathroom and the kitchen have a small window opening to the outside.  The windows in the Living room open into the stairwell.  Two bedrooms have a small balcony opening up into the alleyway.  Mariatchi Bar is downstairs.  Its great to get a drink just downstairs but it can get a bit noisy at night on the weekends.  (Because the buildings are so close together, any normal conversation seems loud as the sound bounces off the buildings)  Overall, Luis has an awesome place and I would definitely come back next year when I visit Barcelona."
+            },
+            {
+                "createdAt": "2018-01-13T05:00:00.000Z",
+                "rate": 5.0,
+                "by": {
+                    "_id": "622f3404e36c59e6164fb3d0",
+                    "fullname": "Rosario",
+                    "imgUrl": "https://randomuser.me/api/portraits/women/77.jpg"
+                },
+                "txt": "Sobre todo q hay mucho ruido de noche y los colchones (Website hidden by Airbnb) calle de noche está muy fea pero no se mete nadie contigo pero si da miedo y hay mucho escándalo y gente bebida en la calle"
+            }
+        ],
+        "imgUrls": [
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561342/casaBnb/086_jhg29f.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561342/casaBnb/086_jhg29f.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561344/casaBnb/090_weikl5.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561344/casaBnb/089_sduadk.jpg",
+            "https://res.cloudinary.com/cajan-22/image/upload/v1648561344/casaBnb/090_weikl5.jpg"
+        ]
+    }

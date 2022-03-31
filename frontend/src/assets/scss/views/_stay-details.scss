@@ -64,28 +64,29 @@
 	}
 
 	.amenities-content {
-		
-
 		// width: 100%;
 		// height: 100%;
 		background-color: $white;
 		column-count: 2;
-		
+
 		// margin: 0;
 		.amenitie {
 			-webkit-column-break-inside: avoid;
 			width: 100%;
 			height: 50px;
-			.amenity-info {
-				// flex-direction: start;
-				// width: 100%;
-				p {
-					font-size: 18px;
-					font-family: 'Circular-Light';
-					color: #222222;
-					// margin: 10px 0 ;
-					// background-color:red;
-				}
+
+			.amenity-icon {
+				width: 20px;
+				height: 20px;
+				margin-right: 10px;
+			}
+
+			p {
+				font-size: 18px;
+				font-family: 'Circular-Light';
+				color: #222222;
+				// margin: 10px 0 ;
+				// background-color:red;
 			}
 		}
 	}
@@ -96,8 +97,10 @@
 		display: none;
 	}
 	.details-grid {
-		grid-template-columns: 100% 0%;
-		grid-template-rows: 65% 35%;
+		// grid-template-columns: 100% 0%;
+		// grid-template-rows: 65% 35%;
+		display: flex;
+		flex-direction: column;
 	}
 	.checkout-container {
 		display: none;

@@ -1,9 +1,33 @@
 .hero {
-	background-image: url("https://res.cloudinary.com/cajan-22/image/upload/v1648589544/casaBnb/web-assets/oso9kjuhpitdex9io0pg.jpg");
+	background-image: url('https://res.cloudinary.com/cajan-22/image/upload/v1648589544/casaBnb/web-assets/oso9kjuhpitdex9io0pg.jpg');
 	width: 100%;
 	height: 80vh;
-	// background-color: red;
 	background-size: cover;
+	position: relative;
+
+	.hero-phrase {
+		// font-family: 'Circular-Light';
+		// padding: 50vh 50vw 0 30vw;
+		height: 500px;
+		width:fit-content;
+		// position: absolute;
+		// transform: translate(-50%,-50%);
+		position: absolute;
+		bottom: -20%;
+		left: 12.2%;
+		// bottom:0;
+	
+		
+		.phrase-top{
+			position: absolute;
+			line-height:50px;
+			font-size: 70px;
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			font-family: 'Circular-Book';
+			font-size: 90px;
+		}
+
+	}
 }
 
 .popular {
@@ -20,10 +44,9 @@
 		padding-top: 50px;
 		padding-bottom: 50px;
 
-		li{
+		li {
 			justify-self: center;
 		}
-	
 
 		.popular-preview {
 			cursor: pointer;

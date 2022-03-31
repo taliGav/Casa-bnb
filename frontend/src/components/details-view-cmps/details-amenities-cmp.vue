@@ -1,6 +1,6 @@
 <template>
 	<div class="amenitie flex">
-        <!-- <img src="" alt=""> -->
+        <img :src="amenetieImage" alt="">
 		<p>{{ amenitie }}</p>
         <pre v-if = "amenitiesImgs">{{amenetiesImg}}</pre>
 	</div>
@@ -17,17 +17,22 @@ export default {
 	},
     data(){
         return{
-            amenetiesImgs:null
+            amenetiesImgs:null,
+            imgToShow: null,
         }
     },
     created(){
         this.amenetiesImgs = stayService.getAmenities()
-        console.log(this.amenetiesImgs);
+        console.log('images',this.amenetiesImgs);
+        this.imgToShow = this.amenetiesImgs.find((toShow) => toShow.svg === this.amenitie)
+        console.log(this.amenitie);
+        console.log('image to show',this.imgToShow);
     },
     computed:{
-        // amenitiesImages(){
-        //     const img = this.amenetiesImgs.find(img => img.name === this.amenitie);
-        //     console.log(img);
+        // amenitiesImage(){
+        //     const amenetieToShow = this.amenetiesImgs.find(toShow => toShow.name === this.amenetie);
+        //     console.log(amenetieToShow);
+        //     return amenetieToShow.svg
         // }
     }
 };
