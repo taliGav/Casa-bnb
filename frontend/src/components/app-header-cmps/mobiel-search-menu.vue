@@ -13,19 +13,18 @@
 			/>
 		</div>
 		<div class="mobile-filters">
-			<div class="mobile-guests-count flex align just">
-				<div class="mobile-date-start flex" @click="showDatePicker">
-					<span>Check in</span>
-					<p>{{ startDate }}</p>
-				</div>
-				<!-- <date-picker :mobileOpen = "datePickerMenu"></date-picker> -->
 				<!-- <el-date-picker
-					v-model="pickedDates"
+					v-model="dates"
 					type="daterange"
 					range-separator="To"
 					start-placeholder="Start date"
 					end-placeholder="End date"
 				/> -->
+			<div class="mobile-guests-count flex even">
+				<div class="mobile-date-start flex" @click="showDatePicker">
+					<span>Check in</span>
+					<p>{{ startDate }}</p>
+				</div>
 				<div class="guests-father relative" v-if="addGuestsMenu">
 					<add-guests-count
 						@addGuests="changeGuests"
@@ -36,6 +35,14 @@
 					<span>Check out</span>
 					<p>{{ endDate }}</p>
 				</div>
+				<!-- <date-picker :mobileOpen="datePickerMenu"></date-picker> -->
+				<!-- <el-date-picker
+					v-model="dates"
+					type="daterange"
+					start-placeholder="Start date"
+					end-placeholder="End date"
+					:default-time="defaultTime"
+				/> -->
 				<div class="mobile-search-guests" @click="addGuests">
 					<div class="guests-container">
 						<span>Guests</span>
@@ -57,38 +64,32 @@ export default {
 				destination: '',
 				guests: null,
 			},
-			pickedDates: null,
+			// dates: null,
 			addGuestsMenu: null,
 			datePickerMenu: false,
 			pickedDates: null,
 		};
 	},
 	methods: {
-		showDatePicker() {
-			this.$el.querySelector('.el-range-editor').click();
+		// showDatePicker() {
+		// 	// console.log('showing ');
+		// 	this.$el.querySelector('.el-range-editor').click();
+		// 	console.log();
+		// },
+		// openMobileCalender() {
+		// 	console.log('opening mobile', this.mobileOpen);
+		// 	this.$el.querySelector('.el-range-editor').click();
+		// 	window.document
+		// 		.querySelector('.el-popper')
+		// 		.classList.add('el-popper-mobile');
+		// 	window.document
+		// 		.querySelector('.el-picker-panel')
+		// 		.classList.add('el-picker-panel-mobile');
+		// },
+		setFilter(){
+
 		},
-			openMobileCalender() {
-			console.log('opening mobile', this.mobileOpen);
-			this.$el.querySelector('.el-range-editor').click();
-			window.document
-				.querySelector('.el-popper')
-				.classList.add('el-popper-mobile');
-			window.document
-				.querySelector('.el-picker-panel')
-				.classList.add('el-picker-panel-mobile');
-		},
-			closeMobileCalender() {
-			console.log('closing');
-			window.document
-				.querySelector('.el-popper')
-				.classList.remove('el-popper-mobile');
-			window.document
-				.querySelector('.el-picker-panel')
-				.classList.remove('el-picker-panel-mobile');
-			window.document
-				.querySelector('.el-popper')
-				.classList.remove('el-popper-order');
-		},
+
 		closeMobileMenu() {
 			this.$emit('closeMobileMenu');
 		},
@@ -111,8 +112,8 @@ export default {
 	},
 	computed: {
 		startDate() {
-			if (this.pickedDates) {
-				const startDate = new Date(this.pickedDates[0]);
+			if (this.dates) {
+				const startDate = new Date(this.dates[0]);
 				return (
 					new Intl.DateTimeFormat('en-US', { month: 'long' }).format(
 						startDate
@@ -125,8 +126,8 @@ export default {
 			}
 		},
 		endDate() {
-			if (this.pickedDates) {
-				const endDate = new Date(this.pickedDates[1]);
+			if (this.dates) {
+				const endDate = new Date(this.dates[1]);
 				return (
 					new Intl.DateTimeFormat('en-US', { month: 'long' }).format(endDate) +
 					' ' +

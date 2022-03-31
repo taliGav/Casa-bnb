@@ -6,6 +6,10 @@
 				<!-- <router-link></router-link> -->
 				<p>Explore</p>
 			</div>
+			<div class="mobile-footer-home-icon flex col align space" @click="goHome">
+				<span class="footer-home-icon">⌂</span>
+				<p>Home</p>
+			</div>
 			<div class="mobile-footer-icon flex col align space">
 				<img src="../assets/Images/logos/login.svg" alt="" />
 				<p>Log in</p>
@@ -24,6 +28,9 @@ export default {
 			// console.log('exploring');
 			this.$router.push({ path: '/stay/' });
 		},
+		goHome(){
+			this.$router.push({path: '/'})
+		}
 	},
 };
 </script>

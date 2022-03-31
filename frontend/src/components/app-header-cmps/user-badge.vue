@@ -21,14 +21,7 @@
 			<!-- src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1rfdGOYPCcbada6QNqTauI3LH-SpptOXVrA&usqp=CAU" -->
 		</div>
 		<!-- <div class="relative"> -->
-		<user-menu
-			@openSignupModal="openSignup"
-			:user="user"
-			v-if="isMenuOpen"
-			@closeMenu="closeMenu"
-			@openLogin="openLogin"
-			class="open-user-menu"
-		></user-menu>
+		<!-- </div> -->
 		<login-modal
 			v-if="isLoginModal"
 			@closeLogin="closeLogin"
@@ -39,7 +32,14 @@
 			@closeSignup="closeSignup"
 			@closeMenu="closeMenu"
 		/>
-		<!-- </div> -->
+		<user-menu
+			@openSignupModal="openSignup"
+			:user="user"
+			v-if="isMenuOpen"
+			@closeMenu="closeMenu"
+			@openLogin="openLogin"
+			class="open-user-menu"
+		></user-menu>
 	</section>
 </template>
 

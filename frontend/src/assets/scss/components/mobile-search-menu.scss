@@ -59,11 +59,11 @@
 
 		.mobile-date-start {
 			background-color: $white;
-			width: 25%;
+			width: 30%;
 			height: 64px;
 			border-radius: 32px 32px 32px 32px;
 			position: relative;
-            background-color: darken($white,3%);
+            // background-color: darken($white,3%);
 			span {
 				transform: translate(-50%, -50%);
 				position: absolute;
@@ -85,12 +85,12 @@
 
 		.mobile-date-end {
 			background-color: $white;
-			width: 25%;
+			width: 30%;
 			height: 64px;
 			border-radius: 32px 32px 32px 32px;
 			position: relative;
-            background-color: darken($white,3%);
-            margin: 10px;
+            // background-color: darken($white,3%);
+            // margin: 10px;
 			span {
 				transform: translate(-50%, -50%);
 				position: absolute;
@@ -111,11 +111,11 @@
 		}
 		.mobile-search-guests {
 			background-color: $white;
-			width: 25%;
+			width: 30%;
 			height: 64px;
 			border-radius: 32px 32px 32px 32px;
 			position: relative;
-            background-color: darken($white,3%);
+            // background-color: darken($white,3%);
 			span {
 				transform: translate(-50%, -50%);
 				position: absolute;
@@ -139,4 +139,11 @@
 
 .bottom-slide {
 	top: 0;
+}
+
+
+@media (min-width: 780px){
+	.mobile-search-menu{
+		display: none;
+	}
 }

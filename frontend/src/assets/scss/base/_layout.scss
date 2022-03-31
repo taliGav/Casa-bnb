@@ -6,7 +6,7 @@
 	//     @include layoutGTC($break-narrow);
 	// }
 
-	@include for-sm-layout {
+	@media (max-width:576px) {
 		@include layoutSmallGTC($small);
 	}
 	@include for-md-layout {
