@@ -1,5 +1,7 @@
 <template>
   <section class = "main-app">
+    <!-- <div class="filter-count">{{ stays.count }} results found <span v-if=""> 
+      in {{ filterBy.location }}</span></div> -->
 
       <ul class="stay-list">
         <li
