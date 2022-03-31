@@ -1,42 +1,50 @@
 <template>
-  <section v-if="stay" class="details-layout stay-details">
-    <details-header :stay="stay" />
-    <details-gallery :stay="stay" />
-    <div class="details-grid">
-      <div class="details-main-container full flex">
-        <div class="main-inner-container">
-          <details-host-main :stay="stay" />
-        </div>
-      </div>
-      <div class="checkout-container">
-        <details-checkout :stay="stay" />
-      </div>
-      <!-- <hr /> -->
-      <div class="amenities-container">
-        <div class="amenities-header flex">
-          <h2>What this place offers</h2>
-        </div>
+	<section v-if="stay" class="details-layout stay-details">
+		<details-header :stay="stay" />
+		<details-gallery :stay="stay" />
 
-        <div class="amenities-content">
-          <div
-            v-for="amenitie in amenities"
-            :key="amenitie"
-            class="amenitie flex"
-          >
-            <div class="amenitie-icon"></div>
-            <div class="amenitie-info flex align">
-              <p>{{ amenitie }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <details-reviews :stay="stay" />
+		<el-carousel class = 'details-carousel-item' :interval="5000" arrow="always">
+			<el-carousel-item  v-for="item in stay.imgUrls" :key="item">
+				<!-- <h3>{{ item }}</h3> -->
+				<img class= "details-carousel-img" :src="item" alt="">
+			</el-carousel-item>
+		</el-carousel>
 
-    <!-- <pre>{{ stay.amenities }}</pre> -->
-    <details-map :stay="stay" />
+		<div class="details-grid">
+			<div class="details-main-container full flex">
+				<div class="main-inner-container">
+					<details-host-main :stay="stay" />
+				</div>
+			</div>
+			<div class="checkout-container">
+				<details-checkout :stay="stay" />
+			</div>
+			<!-- <hr /> -->
+			<div class="amenities-container">
+				<div class="amenities-header flex">
+					<h2>What this place offers</h2>
+				</div>
 
-    <!-- <div v-if="user?.isAdmin" class="btn-group gap-1">
+				<div class="amenities-content">
+					<div
+						v-for="amenitie in amenities"
+						:key="amenitie"
+						class="amenitie flex"
+					>
+						<div class="amenitie-icon"></div>
+						<div class="amenitie-info flex align">
+							<p>{{ amenitie }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<details-reviews :stay="stay" />
+
+		<!-- <pre>{{ stay.amenities }}</pre> -->
+		<details-map :stay="stay" />
+
+		<!-- <div v-if="user?.isAdmin" class="btn-group gap-1">
       <button
         @click="$router.push(`/stay/edit/${stay._id}`)"
         class="btn btn-primary"
@@ -46,11 +54,11 @@
       <button @click="$router.push('/stay')" class="btn btn-secondary">
         go back
       </button> -->
-    <!-- <button @click="removeStay" class="btn btn-danger">delete stay</button> -->
-    <!-- </div> -->
-  </section>
+		<!-- <button @click="removeStay" class="btn btn-danger">delete stay</button> -->
+		<!-- </div> -->
+	</section>
 
-  <!-- <p class="clr-teal fw-bold">${{ stay.price }} /NIGHT</p> -->
+	<!-- <p class="clr-teal fw-bold">${{ stay.price }} /NIGHT</p> -->
 </template>
 
 <script>
@@ -61,7 +69,6 @@ import detailsCheckout from './../components/details-view-cmps/details-checkout-
 import detailsReviews from './../components/details-view-cmps/details-reviews-cmp.vue';
 import detailsMap from './../components/details-view-cmps/details-map-cmp.vue';
 import { stayService } from './../services/stay-service.js';
-
 
 export default {
 	components: {
@@ -83,7 +90,7 @@ export default {
 	},
 	async created() {
 		const { id } = this.$route.params;
-		console.log('stay-details',this.$route.params);
+		console.log('stay-details', this.$route.params);
 		this.stay = await this.$store.dispatch({ type: 'getStayById', stayId: id });
 		const user = this.$store.getters.user;
 		this.amenities = this.amenetiesForDispaly;
@@ -119,4 +126,20 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.details-carousel-img{
+	width: 100%;
+	border-radius: 12px;
+}
+
+.details-carousel-item{
+	border-radius: 12px;
+
+}
+.el-carousel__container{
+	border-radius: 12px;
+
+}
+
+
+</style>

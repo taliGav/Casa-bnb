@@ -24,14 +24,14 @@
 					<span>Check out</span>
 					<p>{{ endDate }}</p>
 				</div>
-					<div class="relative">
-						<!-- </add-guests-count> -->
-						<add-guests-count
-							v-if="addGuestsMenu"
-							:guests="filterBy.guests"
-							@addGuests="changeGuests"
-						/>
-					</div>
+				<div class="relative">
+					<!-- </add-guests-count> -->
+					<add-guests-count
+						v-if="addGuestsMenu"
+						:guests="filterBy.guests"
+						@addGuests="changeGuests"
+					/>
+				</div>
 				<div class="search-guests" @click="addGuests">
 					<div class="guests-container">
 						<span>Guests</span>
@@ -71,12 +71,12 @@ import addGuestsCount from './add-guests-count.vue';
 
 export default {
 	name: 'search',
-	props:{
-		isMobile:{
-			type:Boolean,
+	props: {
+		isMobile: {
+			type: Boolean,
 		},
-		screenSize:{
-			type:Object,
+		screenSize: {
+			type: Object,
 		},
 	},
 	data() {
@@ -147,21 +147,21 @@ export default {
 		},
 		showDatePicker() {
 			this.$el.querySelector('.el-range-editor').click();
-			
+
 			console.log('date picker search-bar', this.startDate);
 		},
 		openSearch() {
 			console.log(this.screenSize);
-			if(this.screenSize.isMediumSize){
-				this.doFilter()
-				return
+			if (this.screenSize.isMediumSize) {
+				this.doFilter();
+				return;
 			}
 			if (this.isSearchOpen) this.doFilter();
 			this.isSearchOpen = true;
 		},
 		focusSearch() {
 			this.$refs.input.focus();
-			if(this.screenSize.isMediumSize) return
+			if (this.screenSize.isMediumSize) return;
 			this.isSearchOpen = true;
 		},
 		clickCheck(ev) {
@@ -189,12 +189,12 @@ export default {
 		},
 		addDates() {
 			this.dateMenu = !this.dateMenu;
-			if(this.screenSize.isMediumSize) return
+			if (this.screenSize.isMediumSize) return;
 			this.isSearchOpen = true;
 		},
 		addGuests() {
 			this.addGuestsMenu = !this.addGuestsMenu;
-			if(this.screenSize.isMediumSize) return
+			if (this.screenSize.isMediumSize) return;
 			this.isSearchOpen = true;
 		},
 		changeGuests(num) {
