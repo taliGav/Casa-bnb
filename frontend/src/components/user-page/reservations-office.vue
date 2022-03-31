@@ -4,7 +4,7 @@
     <div v-if="orders" class="reservations-container main-app top-pad-small">
       <!-- <div class="container main-layout"> -->
       <div class="table-container">
-        <h2>Upcoming Reservations</h2>
+        <h2 class="table-title">Upcoming Reservations</h2>
         <ul class="responsive-table">
           <li class="table-header">
             <div class="col col-1">Status</div>

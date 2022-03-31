@@ -12,6 +12,7 @@
         </div>
       </div>
       <div class="col col-3">
+        <img :src="order.buyer.imgUrl" />
         <p>{{ order.buyer.fullname }}</p>
       </div>
       <div class="col col-3">

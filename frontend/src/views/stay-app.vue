@@ -2,8 +2,8 @@
   <section class="stay-app">
     <!-- <img v-if="isLoading" src="./../assets/img-upload-func/spin-load.gif" />
     <label v-else> -->
-      <stay-filter @setFilter="setFilter" :stays="stays" />
-      <stay-list :stays="stays" />
+    <stay-filter @setFilter="setFilter" :stays="stays" />
+    <stay-list :stays="stays" />
     <!-- </label> -->
   </section>
 </template>
