@@ -1,25 +1,30 @@
 <template>
-  <div v-if="orders" class="reservations-container main-app top-pad">
-    <div class="container main-layout">
-      <div class="table-container">
-        <h2>Upcoming Reservations</h2>
-        <ul class="responsive-table">
-          <li class="table-header">
-            <div class="col col-1">Status</div>
-            <div class="col col-2">Details</div>
-            <div class="col col-3">Guest</div>
-            <div class="col col-4">Actions</div>
-          </li>
+  <div>
+    <img v-if="isLoading" src="./../assets/img-upload-func/spin-load.gif" />
+    <div v-else-if="orders" class="reservations-container main-app top-pad">
+      <div class="container main-layout">
+        <div class="container main-layout">
+          <div class="table-container">
+            <h2>Upcoming Reservations</h2>
+            <ul class="responsive-table">
+              <li class="table-header">
+                <div class="col col-1">Status</div>
+                <div class="col col-2">Details</div>
+                <div class="col col-3">Guest</div>
+                <div class="col col-4">Actions</div>
+              </li>
 
-          <reservations-table
-            v-for="order in orders"
-            :key="order._id"
-            :order="order"
-            :user="user"
-            @changeStatus="changeStatus($event, order)"
-            @setTopic="openChat"
-          ></reservations-table>
-        </ul>
+              <reservations-table
+                v-for="order in orders"
+                :key="order._id"
+                :order="order"
+                :user="user"
+                @changeStatus="changeStatus($event, order)"
+                @setTopic="openChat"
+              ></reservations-table>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <chat-modal v-if="isChatOpen" :user="user" :topic="topic" />
@@ -33,6 +38,7 @@ export default {
 	name: 'reservations-office',
 	data() {
 		return {
+      isLoading: false,
 			user: null,
 			orders: null,
 			isChatOpen: false,

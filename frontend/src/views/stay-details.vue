@@ -18,14 +18,10 @@
         </div>
 
         <div class="amenities-content">
-          <div
-            v-for="amenitie in amenities"
-            :key="amenitie"
-            class="amenitie flex"
-          >
-            <div class="amenitie-icon"></div>
-            <div class="amenitie-info flex align">
-              <p>{{ amenitie }}</p>
+          <div v-for="amenity in amenities" :key="amenity" class="amenity flex">
+            <!-- <div class="amenity-icon">{{ amenityIcon }}</div> -->
+            <div class="amenity-info flex align">
+              <p>{{ amenity }}</p>
             </div>
           </div>
         </div>
@@ -85,6 +81,7 @@ export default {
 			user:null,
 			isChatOpen:false,
 			topic:'',
+      amenitiesMain: null,
 		};
 	},
 	async created() {
@@ -92,14 +89,15 @@ export default {
 		console.log('stay-details',this.$route.params);
 		this.stay = await this.$store.dispatch({ type: 'getStayById', stayId: id });
 		this.user = this.$store.getters.user;
+    this.amenitiesMain = this.$store.getters.amenities;
 		this.amenities = this.amenetiesForDispaly;
 		console.log(this.amenities);
 
-		// review-store
-		// await this.$store.dispatch({
-		//   type: "getReviews",
-		//   filterBy: { stayId: this.stay._id },
-		// });
+    // review-store
+    // await this.$store.dispatch({
+    //   type: "getReviews",
+    //   filterBy: { stayId: this.stay._id },
+    // });
 
 		// if (user) {
 		//   this.reviewToAdd = await reviewService.getEmptyReview();
@@ -114,6 +112,10 @@ export default {
 		amenetiesForDispaly() {
 			return this.stay.amenities.slice(0, 10);
 		},
+    amenityIcon() {
+		///// להוציא אמניטי מתוך אמניטי פור דיספליי ולתפוס בתוך אמניטי מיין את הרלוונטי ומשם לשלוף את האייקון
+      return this.amenity.svg;
+    },
 	},
 	methods: {
 		openChat(topic){

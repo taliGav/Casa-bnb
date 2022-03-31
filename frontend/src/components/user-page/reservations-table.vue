@@ -70,7 +70,7 @@ export default {
 			return humanDateFormat;
 		},
 		status() {
-			if (this.order.status === 'Panding') return { color: 'orange' };
+			if (this.order.status === 'Pending') return { color: 'orange' };
 			if (this.order.status === 'Accepted') return { color: '#3fb34f' };
 			if (this.order.status === 'Declined') return { color: '#992323' };
 		},

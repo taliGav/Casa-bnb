@@ -34,7 +34,6 @@
             <div class="Heating"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M16 0a5 5 0 0 1 4.995 4.783L21 5l.001 12.756.26.217a7.984 7.984 0 0 1 2.717 5.43l.017.304L24 24a8 8 0 1 1-13.251-6.036l.25-.209L11 5A5 5 0 0 1 15.563.019l.22-.014zm0 2a3 3 0 0 0-2.995 2.824L13 5v13.777l-.428.298a6 6 0 1 0 7.062.15l-.205-.15-.428-.298L19 11h-4V9h4V7h-4V5h4a3 3 0 0 0-3-3zm1 11v7.126A4.002 4.002 0 0 1 16 28a4 4 0 0 1-1-7.874V13zm-1 9a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path></svg></div>
 			
             "Family/kid friendly",
-
             <div class="Lock-on-bedroom-door"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M25 1a2 2 0 0 1 1.995 1.85L27 3l-.001 26H29v2H3v-2h1.999L5 3a2 2 0 0 1 1.85-1.995L7 1zm0 2H7l-.001 26h18zm-9 6a3 3 0 0 1 2.995 2.824L19 12l.001 2A5 5 0 1 1 13 14v-2a3 3 0 0 1 3-3zm0 6a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0-6a1 1 0 0 0-.993.883L15 12v1.1a5.023 5.023 0 0 1 2.001 0L17 12a1 1 0 0 0-1-1z"></path></svg></div>
 
 			"Suitable for events",
@@ -56,6 +55,8 @@
             <div class="Hangers"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M16 2a5 5 0 0 1 1.661 9.717 1.002 1.002 0 0 0-.653.816l-.008.126v.813l13.23 9.052a3 3 0 0 1 1.299 2.279l.006.197a3 3 0 0 1-3 3H3.465a3 3 0 0 1-1.694-5.476L15 13.472v-.813c0-1.211.724-2.285 1.816-2.757l.176-.07a3 3 0 1 0-3.987-3.008L13 7h-2a5 5 0 0 1 5-5zm0 13.211L2.9 24.175A1 1 0 0 0 3.465 26h25.07a1 1 0 0 0 .565-1.825z"></path></svg></div>
 
 			"Hair dryer",
+            <div class="Hair-dryer"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M14 27l-.005.2a4 4 0 0 1-3.789 3.795L10 31H4v-2h6l.15-.005a2 2 0 0 0 1.844-1.838L12 27zM10 1c.536 0 1.067.047 1.58.138l.38.077 17.448 3.64a2 2 0 0 1 1.585 1.792l.007.166v6.374a2 2 0 0 1-1.431 1.917l-.16.04-13.554 2.826 1.767 6.506a2 2 0 0 1-1.753 2.516l-.177.008H11.76a2 2 0 0 1-1.879-1.315l-.048-.15-1.88-6.769A9 9 0 0 1 10 1zm5.692 24l-1.799-6.621-1.806.378a8.998 8.998 0 0 1-1.663.233l-.331.008L11.76 25zM10 3a7 7 0 1 0 1.32 13.875l.331-.07L29 13.187V6.813L11.538 3.169A7.027 7.027 0 0 0 10 3zm0 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path></svg></div>
+
 			"Iron",
 			"Laptop friendly workspace",
 
@@ -110,4 +111,66 @@
 			"Hair dryer",
 			"translation missing: en.hosting_amenity_49",
 			"translation missing: en.hosting_amenity_50"
+		],
+        "amenities": [
+			"TV",
+			"Cable TV",
+			"Internet",
+			"Wifi",
+			"Air conditioning",
+			"Pool",
+			"Kitchen",
+			"Free parking on premises",
+			"Gym",
+			"Elevator",
+			"Hot tub",
+			"Family/kid friendly",
+			"Washer",
+			"Dryer",
+			"Smoke detector",
+			"Carbon monoxide detector",
+			"First aid kit",
+			"Safety card",
+			"Fire extinguisher",
+			"Essentials",
+			"Shampoo",
+			"Lock on bedroom door",
+			"24-hour check-in",
+			"Hangers",
+			"Hair dryer",
+			"Iron",
+			"Laptop friendly workspace",
+			"Self check-in",
+			"Building staff",
+			"Private entrance",
+			"Bathtub",
+            <div class="Bathtub"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M7.5 2a4.5 4.5 0 0 1 4.473 4H14v2H8V6h1.95a2.5 2.5 0 0 0-4.945.336L5 6.5V16h26v2h-2v5a5.001 5.001 0 0 1-3 4.584V30h-2v-2H8v2H6v-2.416a5.002 5.002 0 0 1-2.995-4.349L3 23v-5H1v-2h2V6.5A4.5 4.5 0 0 1 7.5 2zm19.499 16h-22L5 23a3 3 0 0 0 2.65 2.98l.174.015L8 26h16a3 3 0 0 0 2.995-2.824L27 23z"></path></svg></div>
+
+			"Baby bath",
+			"High chair",
+			"Children’s books and toys",
+			"Crib",
+			"Pack ’n Play/travel crib",
+			"Children’s dinnerware",
+			"Hot water",
+			"Bed linens",
+			"Extra pillows and blankets",
+			"Microwave",
+			"Coffee maker",
+			"Refrigerator",
+			"Dishwasher",
+			"Dishes and silverware",
+			"Cooking basics",
+			"Oven",
+			"Stove",
+			"BBQ grill",
+			"Patio or balcony",
+			"Beach essentials",
+			"Step-free access",
+			"Disabled parking spot",
+			"Step-free access",
+			"Step-free access",
+			"Step-free access",
+			"Beachfront",
+			"Pool with pool hoist"
 		],

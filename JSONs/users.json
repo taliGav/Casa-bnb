@@ -1,0 +1,68 @@
+{
+    "_id" : ObjectId("6241ae7f0927e9ee1531afc0"),
+    "fullname" : "Patty And Beckett",
+    "imgUrl" : "https://res.cloudinary.com/cajan-22/image/upload/v1648565026/casaBnb/users/c111_w2dod5.jpg",
+    "isAdmin" : false,
+    "username" : "patty",
+    "password" : "123"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("6241ae7f0927e9ee1531afc1"),
+    "fullname" : "Angel",
+    "imgUrl" : "https://randomuser.me/api/portraits/women/54.jpg",
+    "isAdmin" : false,
+    "username" : "angel",
+    "password" : "123"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("6241ae7f0927e9ee1531afc2"),
+    "fullname" : "Maria",
+    "imgUrl" : "https://randomuser.me/api/portraits/women/14.jpg",
+    "isAdmin" : false,
+    "username" : "maria",
+    "password" : "123"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("6241ae7f0927e9ee1531afc3"),
+    "fullname" : "Shaila & Alex",
+    "imgUrl" : "https://res.cloudinary.com/cajan-22/image/upload/v1648564925/casaBnb/users/c2-2_i4tvjd.jpg",
+    "isAdmin" : false,
+    "username" : "shaila",
+    "password" : "123"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("6241ae7f0927e9ee1531afc4"),
+    "fullname" : "Marián",
+    "imgUrl" : "https://randomuser.me/api/portraits/women/96.jpg",
+    "isAdmin" : false,
+    "username" : "marian",
+    "password" : "123"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("6241ae7f0927e9ee1531afc5"),
+    "fullname" : "Isabel",
+    "imgUrl" : "https://randomuser.me/api/portraits/women/37.jpg",
+    "isAdmin" : false,
+    "username" : "isabel",
+    "password" : "123"
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("6241ae7f0927e9ee1531afc6"),
+    "fullname" : "Kevin",
+    "imgUrl" : "https://randomuser.me/api/portraits/men/37.jpg",
+    "isAdmin" : false,
+    "username" : "Kevin",
+    "password" : "123"
+}

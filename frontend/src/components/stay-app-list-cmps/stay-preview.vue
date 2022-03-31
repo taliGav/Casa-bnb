@@ -50,7 +50,6 @@
 
 <script>
 import PreviewCarousel from "./preview-carousel.vue";
-
 // import ratingsReviews from "./reusable-cmps/ratings-reviews-cmp.vue";
 
 export default {
@@ -69,7 +68,8 @@ export default {
     avgRating() {
       let ratingSum = this.stay.reviews.reduce((acc, x) => acc + x.rate, 0);
       let avgRating = ratingSum / this.stay.reviews.length;
-      return avgRating;
+      if (Number.isInteger(avgRating)) return avgRating;
+      return parseFloat(avgRating).toPrecision(2);
     },
     reviewsCount() {
       return this.stay.reviews.length;
