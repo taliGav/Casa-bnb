@@ -63,4 +63,16 @@ export default {
   margin-top: 0;
   margin-left: 12px;
 }
+.irs-to{
+  background-color:black !important;
+}
+.irs-bar{
+  background-color:black !important;
+}
+.irs-form{
+  background-color:black !important;
+}
+
+
+
 </style>
