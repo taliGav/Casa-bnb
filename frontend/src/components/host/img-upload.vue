@@ -4,7 +4,7 @@
       <img src="./../../assets/img-upload-func/upload.png" alt="" />
       <input type="file" @change="onUploadImg" hidden />
     </label>
-    <img v-else src="./../../assets/img-upload-func/loader.gif" alt="" />
+    <img v-else src="./../../assets/img-upload-func/spin-load.gif" alt="" />
   </div>
 </template>
 

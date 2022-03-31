@@ -105,8 +105,8 @@ async function getEmptyOrder(order) {
     //   console.log('serv amenities', amenitiesToFilter);
 
     //   orders = orders.filter((order) => {
-    //     return amenitiesToFilter.every((amenitie) => {
-    //       return order.amenities.includes(amenitie);
+    //     return amenitiesToFilter.every((amenity) => {
+    //       return order.amenities.includes(amenity);
     //     });
     //   });
     // }

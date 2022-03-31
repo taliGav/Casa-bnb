@@ -18,14 +18,10 @@
         </div>
 
         <div class="amenities-content">
-          <div
-            v-for="amenitie in amenities"
-            :key="amenitie"
-            class="amenitie flex"
-          >
-            <div class="amenitie-icon"></div>
-            <div class="amenitie-info flex align">
-              <p>{{ amenitie }}</p>
+          <div v-for="amenity in amenities" :key="amenity" class="amenity flex">
+            <div class="amenity-icon">{{ amenityIcon }}</div>
+            <div class="amenity-info flex align">
+              <p>{{ amenity }}</p>
             </div>
           </div>
         </div>
@@ -54,68 +50,73 @@
 </template>
 
 <script>
-import detailsHeader from './../components/details-view-cmps/details-header-cmp.vue';
-import detailsGallery from './../components/details-view-cmps/details-gallery-cmp.vue';
-import detailsHostMain from './../components/details-view-cmps/details-host-main-cmp.vue';
-import detailsCheckout from './../components/details-view-cmps/details-checkout-cmp.vue';
-import detailsReviews from './../components/details-view-cmps/details-reviews-cmp.vue';
-import detailsMap from './../components/details-view-cmps/details-map-cmp.vue';
-import { stayService } from './../services/stay-service.js';
-
+import detailsHeader from "./../components/details-view-cmps/details-header-cmp.vue";
+import detailsGallery from "./../components/details-view-cmps/details-gallery-cmp.vue";
+import detailsHostMain from "./../components/details-view-cmps/details-host-main-cmp.vue";
+import detailsCheckout from "./../components/details-view-cmps/details-checkout-cmp.vue";
+import detailsReviews from "./../components/details-view-cmps/details-reviews-cmp.vue";
+import detailsMap from "./../components/details-view-cmps/details-map-cmp.vue";
+import { stayService } from "./../services/stay-service.js";
 
 export default {
-	components: {
-		detailsHeader,
-		detailsGallery,
-		detailsHostMain,
-		detailsCheckout,
-		detailsReviews,
-		detailsMap,
-	},
+  components: {
+    detailsHeader,
+    detailsGallery,
+    detailsHostMain,
+    detailsCheckout,
+    detailsReviews,
+    detailsMap,
+  },
 
-	name: 'stay-details',
-	data() {
-		return {
-			stay: null,
-			reviewToAdd: null,
-			amenities: null,
-		};
-	},
-	async created() {
-		const { id } = this.$route.params;
-		console.log('stay-details',this.$route.params);
-		this.stay = await this.$store.dispatch({ type: 'getStayById', stayId: id });
-		const user = this.$store.getters.user;
-		this.amenities = this.amenitiesForDispaly;
-		console.log(this.amenities);
+  name: "stay-details",
+  data() {
+    return {
+      stay: null,
+      reviewToAdd: null,
+      amenities: null,
+      amenitiesMain: null,
+    };
+  },
+  async created() {
+    const { id } = this.$route.params;
+    console.log("stay-details", this.$route.params);
+    this.stay = await this.$store.dispatch({ type: "getStayById", stayId: id });
+    const user = this.$store.getters.user;
+    this.amenitiesMain = this.$store.getters.amenities;
+    this.amenities = this.amenitiesForDispaly;
+    console.log(this.amenities);
 
-		// review-store
-		// await this.$store.dispatch({
-		//   type: "getReviews",
-		//   filterBy: { stayId: this.stay._id },
-		// });
+    // review-store
+    // await this.$store.dispatch({
+    //   type: "getReviews",
+    //   filterBy: { stayId: this.stay._id },
+    // });
 
-		// if (user) {
-		//   this.reviewToAdd = await reviewService.getEmptyReview();
-		//   this.reviewToAdd.userId = user._id;
-		//   this.reviewToAdd.stayId = this.stay._id;
-		// }
-	},
-	computed: {
-		user() {
-			// return this.$store.getters.user;
-		},
-		amenitiesForDispaly() {
-			return this.stay.amenities.slice(0, 10);
-		},
-	},
-	methods: {
-		// removeStay() {
-		//   this.$store.dispatch({ type: 'removeStay', stayId: this.stay._id }).then(() => {
-		//     this.$router.push('/stay')
-		//   })
-		// },
-	},
+    // if (user) {
+    //   this.reviewToAdd = await reviewService.getEmptyReview();
+    //   this.reviewToAdd.userId = user._id;
+    //   this.reviewToAdd.stayId = this.stay._id;
+    // }
+  },
+  computed: {
+    user() {
+      // return this.$store.getters.user;
+    },
+    amenitiesForDispaly() {
+      return this.stay.amenities.slice(0, 10);
+    },
+    amenityIcon() {
+		///// להוציא אמניטי מתוך אמניטי פור דיספליי ולתפוס בתוך אמניטי מיין את הרלוונטי ומשם לשלוף את האייקון
+      return this.amenity.svg;
+    },
+  },
+  methods: {
+    // removeStay() {
+    //   this.$store.dispatch({ type: 'removeStay', stayId: this.stay._id }).then(() => {
+    //     this.$router.push('/stay')
+    //   })
+    // },
+  },
 };
 </script>
 

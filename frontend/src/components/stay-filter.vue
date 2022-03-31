@@ -2,12 +2,12 @@
   <section class="stay-filter flex align">
     <button @click="togglePrice">price</button>
     <stay-filter-price v-if="openPrice" :stays="stays" @setPrice="setPrice" />
-    <div v-for="amenitie in lessAmenities" :key="amenitie">
+    <div v-for="amenity in lessAmenities" :key="amenity">
       <button
-        :class="{ 'active-btn': classes[amenitie] }"
-        @click="setAmenities(amenitie)"
+        :class="{ 'active-btn': classes[amenity] }"
+        @click="setAmenities(amenity)"
       >
-        {{ amenitie }}
+        {{ amenity }}
       </button>
     </div>
   </section>
@@ -69,21 +69,21 @@ export default {
 				},
 			});
       },
-    setAmenities(amenitie){
+    setAmenities(amenity){
       if(!this.filterBy.amenities){
-        this.filterBy.amenities=[amenitie]
+        this.filterBy.amenities=[amenity]
         this.doFilter()
         return
       }
-      const idx = this.filterBy.amenities.findIndex(am=>am===amenitie)
+      const idx = this.filterBy.amenities.findIndex(am=>am===amenity)
       if(idx===-1){
-        this.filterBy.amenities.push(amenitie)
+        this.filterBy.amenities.push(amenity)
       }
       else{
         this.filterBy.amenities.splice(idx, 1,)
       }
-      // this.classes[amenitie]= !this.classes[amenitie]
-      // console.log('classsss!!!!',this.classes[amenitie]);
+      // this.classes[amenity]= !this.classes[amenity]
+      // console.log('classsss!!!!',this.classes[amenity]);
       this.doFilter()
     },
     togglePrice(){
