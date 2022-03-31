@@ -20,12 +20,36 @@
 	.mobile-footer-icon {
 		height: 50px;
 
+		span{
+			font-size:36px;
+			margin: 0;
+			padding: 0;
+		}
 		&:hover {
 			cursor: pointer;
 		}
 	}
 	.mobile-icons-container {
-		width: 200px;
+		width: 300px;
+		position: relative;
+	}
+	
+	.mobile-footer-home-icon {
+		position: absolute;
+			height: 50px;
+			transform:translate(-50%,-50%);
+			top: 34%;
+			left: 50%;
+
+		span{
+			font-size:36px;
+			margin: 0;
+			padding: 0;
+			color: #cdc6c6;
+		}
+		&:hover {
+			cursor: pointer;
+		}
 	}
 }
 

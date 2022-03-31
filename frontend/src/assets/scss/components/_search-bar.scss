@@ -51,7 +51,7 @@
 .search-guests {
 	display: flex;
 	align-items: center;
-	width: 24%;
+	width: 20%;
 	height: 64px;
 	background-color: $white;
 	border-radius: 32px 32px 32px 32px;
@@ -104,12 +104,9 @@
 	transition: 0.05s;
 	cursor: pointer;
 
-	&:hover {
-		background-color: $theme-hover;
-	}
-
+	
 	&:hover  {
-		background-color: darken($white, 5%);
+		background-color: darken($theme-red, 15%);
 		cursor: pointer;
 	}
 	p {

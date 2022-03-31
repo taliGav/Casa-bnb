@@ -25,7 +25,7 @@
 			></small-search-bar>
 			<mobile-search-bar @click="mobileMenu"></mobile-search-bar>
 			<mobile-search-menu
-				@closeMobileMenu = "mobileMenu"
+				@closeMobileMenu="mobileMenu"
 				:class="{ 'bottom-slide': isMobileSearch }"
 			></mobile-search-menu>
 			<nav class="nav-bar flex just align space">
@@ -43,7 +43,7 @@
 				<user-badge></user-badge>
 			</nav>
 		</div>
-		<stay-search v-if="isOpen"></stay-search>
+		<stay-search v-if="isOpen" :screenSize="screenSize" ></stay-search>
 	</header>
 	<!-- </div> -->
 </template>
@@ -64,15 +64,22 @@ export default {
 			isSearchClicked: false,
 			isDetailsPage: false,
 			isMobileSearch: false,
+			screenSize:{
+				isMobileSize: false,
+				isMediumSize: false,
+			}
+
 		};
 	},
 	created() {
 		window.addEventListener('scroll', this.handleScroll);
+		window.addEventListener('resize', this.checkScreenSize);
 
 		// window.addEventListener("scroll", this.handleScroll);
 	},
 	destroyed() {
 		window.removeEventListener('scroll', this.handleScroll);
+		window.addEventListener('resize', this.checkScreenSize);
 	},
 	methods: {
 		handleScroll() {
@@ -94,7 +101,7 @@ export default {
 		},
 		checkPagePath() {
 			const stayPath = this.$route.path.substring(1, 5);
-			console.log(stayPath);
+
 			if (this.$route.path !== '/') {
 				this.isOpen = false;
 				this.colorsChange = true;
@@ -108,8 +115,16 @@ export default {
 			}
 		},
 		mobileMenu() {
-			console.log('openin search menu');
 			this.isMobileSearch = !this.isMobileSearch;
+		},
+		checkScreenSize(ev) {
+			const screenSize = ev.target.innerWidth;
+			console.log(ev.target.innerWidth);
+			if (screenSize < 992) this.screenSize.isMediumSize = true;
+			else this.screenSize.isMediumSize = false;
+			if (screenSize < 780) this.screenSize.isMobileSize = true;
+			else this.screenSize.isMobileSize = false;
+			console.log(this.screenSize);
 		},
 	},
 

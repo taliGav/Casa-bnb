@@ -1,61 +1,61 @@
 <template>
-  <section v-if="stay" class="details-checkout">
-    <div class="checkout-modal">
-      <div class="price-and-rate flex space">
-        <div class="price-per-night">
-          <span class="price">${{ stay.price }}</span
-          >&nbsp;
-          <span class="night">/&nbsp;night</span>
-        </div>
-        <ratings-reviews :stay="stay" />
-      </div>
-      <div class="dates-guests">
-        <div class="dates flex space" @click="openCalender">
-          <div class="check-in-container flex col just">
-            <div class="check-in-title title">CHECK-IN</div>
-            <div class="check-in-value">
-              <p>{{ startDate }}</p>
-            </div>
-          </div>
-          <div class="calender-checkout-container"></div>
-          <div class="check-out-container flex just col">
-            <div class="check-out-title title">CHECKOUT</div>
-            <div class="check-out-value">
-              <p>{{ endDate }}</p>
-            </div>
-          </div>
-        </div>
+	<section v-if="stay" class="details-checkout">
+		<div class="checkout-modal">
+			<div class="price-and-rate flex space">
+				<div class="price-per-night">
+					<span class="price">${{ stay.price }}</span
+					>&nbsp;
+					<span class="night">/&nbsp;night</span>
+				</div>
+				<ratings-reviews :stay="stay" />
+			</div>
+			<div class="dates-guests">
+				<div class="dates flex space" @click="openCalender">
+					<div class="check-in-container flex col just">
+						<div class="check-in-title title">CHECK-IN</div>
+						<div class="check-in-value">
+							<p>{{ startDate }}</p>
+						</div>
+					</div>
+					<div class="calender-checkout-container"></div>
+					<div class="check-out-container flex just col">
+						<div class="check-out-title title">CHECKOUT</div>
+						<div class="check-out-value">
+							<p>{{ endDate }}</p>
+						</div>
+					</div>
+				</div>
 
-        <div class="guests flex" @click.stop.prevent="openGuestsMenu">
-          <add-guests-count
-            v-if="openGuests"
-            @guests="guests"
-            @addGuests="addGuests"
-          ></add-guests-count>
-          <div id="date-container" class="relative">
-            <date-picker
-              :isOpen="isCalendar"
-              @orders="orderDates"
-            ></date-picker>
-          </div>
-          <div class="guests-container flex col just">
-            <div class="guests-title title">GUESTS</div>
-            <div class="guests-value flex">
-              <p>{{ guestsCount }} &nbsp;</p>
-              <p v-if="guestsNumber">guest</p>
-              <p v-else>guests</p>
-            </div>
-          </div>
-          <!-- <div class="relative">
+				<div class="guests flex" @click.stop.prevent="openGuestsMenu">
+					<add-guests-count
+						v-if="openGuests"
+						@guests="guests"
+						@addGuests="addGuests"
+					></add-guests-count>
+					<div class="guests-container flex col just">
+						<div class="guests-title title">GUESTS</div>
+						<div class="guests-value flex">
+							<p>{{ guestsCount }} &nbsp;</p>
+							<p v-if="guestsNumber">guest</p>
+							<p v-else>guests</p>
+						</div>
+					</div>
+					<!-- <div class="relative">
 
 					</div> -->
-        </div>
-      </div>
-      <div class="reserve-btn-cmp">
-        <reserve-btn @click="makeReservation" />
-      </div>
-    </div>
-  </section>
+					<div id="date-container" class="relative">
+						<date-picker
+							:isOpen="isCalendar"
+							@orders="orderDates"
+						></date-picker>
+					</div>
+				</div>
+			</div>
+			<div class="reserve-btn-cmp">
+				<reserve-btn @click="makeReservation" />
+			</div>
+		</div>
+	</section>
 </template>
 
 <script>
@@ -63,7 +63,7 @@ import datePicker from '../date-picker.vue';
 import ratingsReviews from './../reusable-cmps/ratings-reviews-cmp.vue';
 import reserveBtn from './../reusable-cmps/reserve-btn-cmp.vue';
 import addGuestsCount from '../add-guests-count.vue';
-import {socketService} from '../../services/socket.service';
+import { socketService } from '../../services/socket.service';
 
 export default {
 	components: {
@@ -86,7 +86,7 @@ export default {
 		};
 	},
 	created() {
-		socketService.emit('topic', this.stay.host._id)
+		socketService.emit('topic', this.stay.host._id);
 		window.addEventListener('click', this.closeGuests);
 		this.loggedUser = this.checkLoggedUser;
 	},
@@ -153,8 +153,11 @@ export default {
 				endDate: this.resirvationDates[1],
 				totalPrice: days * this.stay.price,
 			};
-			const completeOrder = await this.$store.dispatch({ type: 'addOrder', order: order });
-      		socketService.emit('new order', completeOrder)
+			const completeOrder = await this.$store.dispatch({
+				type: 'addOrder',
+				order: order,
+			});
+			socketService.emit('new order', completeOrder);
 
 			// var days = Math.floor(delta / 86400);
 		},
@@ -195,6 +198,6 @@ export default {
 
 <style>
 .calender-checkout-container {
-  /* position: relative; */
+	/* position: relative; */
 }
 </style>
