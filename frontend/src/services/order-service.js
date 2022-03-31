@@ -45,7 +45,7 @@ async function remove(id) {
 
 async function save(order) {
   console.log('add order serv',order);
-  order.status= order.status?order.status:"Panding"
+  order.status= order.status?order.status:"Pending"
   // var orderToSave = order._id ? order : await getEmptyOrder(order);
   return order._id
     ? await httpService.put(`${ENDPOINT}/${order._id}`, order)
@@ -105,8 +105,8 @@ async function getEmptyOrder(order) {
     //   console.log('serv amenities', amenitiesToFilter);
 
     //   orders = orders.filter((order) => {
-    //     return amenitiesToFilter.every((amenitie) => {
-    //       return order.amenities.includes(amenitie);
+    //     return amenitiesToFilter.every((amenity) => {
+    //       return order.amenities.includes(amenity);
     //     });
     //   });
     // }

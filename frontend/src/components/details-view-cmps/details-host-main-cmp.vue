@@ -9,9 +9,10 @@
           {{ stay.capacity }} guests · {{ stay.bedrooms }} bedroom ·
           {{ stay.beds }} bed · {{ stay.bathrooms }} bath
         </p>
+        <button @click="setTopic">Contact host</button>
       </div>
       <div class="host-img-container">
-          <img :src="hostImg" alt="" srcset="" />
+        <img :src="hostImg" alt="" srcset="" />
       </div>
     </div>
     <!-- <hr /> -->
@@ -99,14 +100,24 @@ export default {
     stay: Object,
   },
   data() {
-    return {};
+    return {
+      loggedUser: null,
+    };
   },
-  async created() {},
+  created() {
+    this.loggedUser = this.$store.getters.user;
+  },
   computed: {
     hostImg() {
       return this.stay.host.imgUrl;
     },
   },
-  methods: {},
+  methods: {
+    setTopic(){
+			const topic = this.stay.host._id + this.loggedUser._id 
+			console.log('set topic',topic);
+			this.$emit('setTopic',topic)
+		},
+  },
 };
 </script>

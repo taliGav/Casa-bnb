@@ -1,47 +1,51 @@
 <template>
   <section class="stay-app">
-    <stay-filter @setFilter="setFilter" :stays="stays" />
-    <stay-list :stays="stays" />
+    <!-- <img v-if="isLoading" src="./../assets/img-upload-func/spin-load.gif" />
+    <label v-else> -->
+      <stay-filter @setFilter="setFilter" :stays="stays" />
+      <stay-list :stays="stays" />
+    <!-- </label> -->
   </section>
 </template>
 
 <script>
-import stayList from '../components/stay-app-list-cmps/stay-list.vue'
-import stayFilter from '../components/stay-filter.vue'
+import stayList from "../components/stay-app-list-cmps/stay-list.vue";
+import stayFilter from "../components/stay-filter.vue";
 export default {
-  name: 'stay-app',
+  name: "stay-app",
   data() {
     return {
-      
-    }
+      isLoading: false,
+    };
   },
   created() {
-    this.setFilter()
-    
+    this.setFilter();
   },
   watch: {
-        '$route': 'setFilter'
-    },
+    $route: "setFilter",
+  },
   computed: {
     stays() {
-      return this.$store.getters.staysToShow
+      return this.$store.getters.staysToShow;
     },
-    
-    filterBy(){
-      return this.$route.query
-    }
+
+    filterBy() {
+      return this.$route.query;
+    },
   },
   methods: {
     async setFilter() {
-      await this.$store.commit({ type: 'setFilter', filterBy:this.filterBy });
-      this.$store.dispatch({ type: 'loadStays' })
+      // this.isLoading = true;
+      await this.$store.commit({ type: "setFilter", filterBy: this.filterBy });
+      // this.isLoading = false;
+      this.$store.dispatch({ type: "loadStays" });
     },
   },
   components: {
     stayList,
     stayFilter,
   },
-}
+};
 </script>
 
 <style></style>
