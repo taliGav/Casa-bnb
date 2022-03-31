@@ -19,12 +19,11 @@
       <div class="checkout-container">
         <details-checkout :stay="stay" />
       </div>
-      <!-- <hr /> -->
+
       <div class="amenities-container">
         <div class="amenities-header flex">
           <h2>What this place offers</h2>
         </div>
-
         <div class="amenities-content">
           <ul class="clean-list flex">
             <li v-for="(amenity, idx) in amenitiesForDisplay" :key="idx">
@@ -98,11 +97,11 @@ export default {
     this.stayAmenities = this.stay.amenities.slice(0, 10);
     console.log(this.stayAmenities);
 
-    // review-store
-    // await this.$store.dispatch({
-    //   type: "getReviews",
-    //   filterBy: { stayId: this.stay._id },
-    // });
+		// review-store
+		// await this.$store.dispatch({
+		//   type: "getReviews",
+		//   filterBy: { stayId: this.stay._id },
+		// });
 
     // if (user) {
     //   this.reviewToAdd = await reviewService.getEmptyReview();

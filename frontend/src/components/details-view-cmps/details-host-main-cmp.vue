@@ -114,7 +114,7 @@ export default {
   },
   methods: {
     setTopic(){
-			const topic = this.stay.host._id + this.loggedUser._id 
+			const topic = this.stay.host._id +'-'+ this.loggedUser._id 
 			console.log('set topic',topic);
 			this.$emit('setTopic',topic)
 		},

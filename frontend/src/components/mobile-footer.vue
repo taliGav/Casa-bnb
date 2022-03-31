@@ -1,6 +1,6 @@
 <template>
 	<div class="mobile-footer flex align just even">
-		<div class="mobile-icons-container flex space">
+		<div v-if="screenStatus" class="mobile-icons-container flex space">
 			<div class="mobile-footer-icon flex col align space" @click="explore">
 				<img src="../assets/Images/logos/search-icon-red.svg" alt="" />
 				<!-- <router-link></router-link> -->
@@ -15,22 +15,32 @@
 				<p>Log in</p>
 			</div>
 		</div>
-
+		<div class="mobile-order">
+			
+		</div>
 	</div>
 </template>
 <script>
-
 export default {
 	name: 'mobile-footer',
-
+	props: {
+		screenSize: {
+			type: Object,
+		},
+	},
 	methods: {
 		explore() {
-			// console.log('exploring');
 			this.$router.push({ path: '/stay/' });
 		},
-		goHome(){
-			this.$router.push({path: '/'})
-		}
+		goHome() {
+			this.$router.push({ path: '/' });
+		},
+	},
+	computed: {
+		screenStatus() {
+			if (this.screenSize?.path === 'stay') return false;
+			else return true;
+		},
 	},
 };
 </script>

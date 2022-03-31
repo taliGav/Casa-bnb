@@ -75,6 +75,7 @@
 		border-radius: 22px;
 		transition: 0.25s;
 		padding: 0 10px;
+		margin-right: 10px;
 		cursor: pointer;
 		a {
 			text-decoration: none;
@@ -131,7 +132,7 @@
 }
 
 
-@media (max-width: 720px) {
+@media (max-width: 780px) {
 	.logo-txt {
 		display: none;
 	}
@@ -142,10 +143,18 @@
 	.nav-bar{
 		// display: none;
 	}
+	.host-link{
+		display: none;
+	}
+
+	.explore-link{
+		display: none;
+		
+	}
 }
 
 
-@media (min-width: 720px) {
+@media (min-width: 780px) {
 	.logo-txt {
 		display: none;
 	}

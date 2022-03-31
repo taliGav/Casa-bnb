@@ -67,6 +67,7 @@ export default {
 			screenSize:{
 				isMobileSize: false,
 				isMediumSize: false,
+				path:null
 			}
 
 		};
@@ -101,7 +102,8 @@ export default {
 		},
 		checkPagePath() {
 			const stayPath = this.$route.path.substring(1, 5);
-
+			this.screenSize.path = stayPath
+			this.$emit('screenResize', this.screenSize);
 			if (this.$route.path !== '/') {
 				this.isOpen = false;
 				this.colorsChange = true;
@@ -119,12 +121,11 @@ export default {
 		},
 		checkScreenSize(ev) {
 			const screenSize = ev.target.innerWidth;
-			console.log(ev.target.innerWidth);
 			if (screenSize < 992) this.screenSize.isMediumSize = true;
 			else this.screenSize.isMediumSize = false;
 			if (screenSize < 780) this.screenSize.isMobileSize = true;
 			else this.screenSize.isMobileSize = false;
-			console.log(this.screenSize);
+			this.$emit('screenResize', this.screenSize);
 		},
 	},
 
