@@ -18,7 +18,7 @@
         <div class="row-btns">
           <button @click="changeStatus('Declined')">Decline</button>
           <button @click="changeStatus('Accepted')">Accept</button>
-          <button>Contact Guest</button>
+          <button @click="setTopic">Contact Guest</button>
         </div>
       </div>
     </li>
@@ -32,13 +32,21 @@ export default {
 		order: {
 			type: Object,
 		},
+		user: {
+			type: Object,
+		},
 	},
 	created() {
 	},
 	methods: {
 		changeStatus(status){
 				this.$emit("changeStatus", status)
-		}
+		},
+		setTopic(){
+			const topic = this.user._id + this.order.buyer._id
+			console.log('set topic',topic);
+			this.$emit('setTopic',topic)
+		},
 	},
 	computed: {
 		startDate() {

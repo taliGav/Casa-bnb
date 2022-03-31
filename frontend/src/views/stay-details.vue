@@ -5,7 +5,7 @@
     <div class="details-grid">
       <div class="details-main-container full flex">
         <div class="main-inner-container">
-          <details-host-main :stay="stay" />
+          <details-host-main @setTopic="openChat" :stay="stay" />
         </div>
       </div>
       <div class="checkout-container">
@@ -35,6 +35,7 @@
 
     <!-- <pre>{{ stay.amenities }}</pre> -->
     <details-map :stay="stay" />
+    <chat-modal v-if="isChatOpen" :user="user" :topic="topic" />
 
     <!-- <div v-if="user?.isAdmin" class="btn-group gap-1">
       <button
@@ -61,6 +62,7 @@ import detailsCheckout from './../components/details-view-cmps/details-checkout-
 import detailsReviews from './../components/details-view-cmps/details-reviews-cmp.vue';
 import detailsMap from './../components/details-view-cmps/details-map-cmp.vue';
 import { stayService } from './../services/stay-service.js';
+import chatModal from './../components/chat/chat-modal.vue'
 
 
 export default {
@@ -71,6 +73,7 @@ export default {
 		detailsCheckout,
 		detailsReviews,
 		detailsMap,
+		chatModal,
 	},
 
 	name: 'stay-details',
@@ -79,13 +82,16 @@ export default {
 			stay: null,
 			reviewToAdd: null,
 			amenities: null,
+			user:null,
+			isChatOpen:false,
+			topic:'',
 		};
 	},
 	async created() {
 		const { id } = this.$route.params;
 		console.log('stay-details',this.$route.params);
 		this.stay = await this.$store.dispatch({ type: 'getStayById', stayId: id });
-		const user = this.$store.getters.user;
+		this.user = this.$store.getters.user;
 		this.amenities = this.amenetiesForDispaly;
 		console.log(this.amenities);
 
@@ -103,18 +109,18 @@ export default {
 	},
 	computed: {
 		user() {
-			// return this.$store.getters.user;
+			return this.$store.getters.user;
 		},
 		amenetiesForDispaly() {
 			return this.stay.amenities.slice(0, 10);
 		},
 	},
 	methods: {
-		// removeStay() {
-		//   this.$store.dispatch({ type: 'removeStay', stayId: this.stay._id }).then(() => {
-		//     this.$router.push('/stay')
-		//   })
-		// },
+		openChat(topic){
+			console.log('open chat, topic:',topic);
+			this.topic = topic;
+			this.isChatOpen= true;
+		},
 	},
 };
 </script>

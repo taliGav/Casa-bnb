@@ -15,22 +15,28 @@
             v-for="order in orders"
             :key="order._id"
             :order="order"
+            :user="user"
             @changeStatus="changeStatus($event, order)"
+            @setTopic="openChat"
           ></reservations-table>
         </ul>
       </div>
     </div>
+    <chat-modal v-if="isChatOpen" :user="user" :topic="topic" />
   </div>
 </template>
 
 <script>
 import reservationsTable from './reservations-table.vue';
+import chatModal from '../chat/chat-modal.vue'
 export default {
 	name: 'reservations-office',
 	data() {
 		return {
 			user: null,
 			orders: null,
+			isChatOpen: false,
+			topic:'',
 		};
 	},
 	async created() {
@@ -58,6 +64,11 @@ export default {
 			console.log('socket add order',order);
 			this.$store.commit({ type: 'addOrder', order})
 		},
+		openChat(topic){
+			console.log('open chat, topic:',topic);
+			this.topic = topic;
+			this.isChatOpen= true;
+		}
 	},
 	computed: {
 		loggedUser() {
@@ -69,6 +80,7 @@ export default {
 	},
 	components: {
 		reservationsTable,
+		chatModal
 	},
 };
 </script>
