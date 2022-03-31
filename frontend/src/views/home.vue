@@ -2,11 +2,15 @@
   <section class="main-layout home full main-app">
     <!-- <img v-if="isLoading" src="./../assets/img-upload-func/spin-load.gif" />
     <label v-else class="hero full" > -->
-      <div class="hero full"></div>
-      <div>
-        <popular-dest-list :popularDest="popularDest" />
-        <popular-stays-list :popularStays="popularStays" />
-      </div>
+    <div class="hero full">
+      <div class="hero-phrase">
+        <span> It's your time <br />for a new adventure </span>
+        </div>
+    </div>
+    <div>
+      <popular-dest-list :popularDest="popularDest" />
+      <popular-stays-list :popularStays="popularStays" />
+    </div>
     <!-- </label> -->
   </section>
 </template>
@@ -43,5 +47,3 @@ export default {
   },
 };
 </script>
-
-<style></style>
