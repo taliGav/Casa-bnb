@@ -2,8 +2,7 @@
   <section class="stay-app">
     <!-- <img v-if="isLoading" src="./../assets/img-upload-func/spin-load.gif" />
     <label v-else> -->
-    <stay-filter @setFilter="setFilter" :stays="stays" />
-    <div class="filter-count">{{ stays.length }} in</div>
+    <stay-filter @setFilter="setFilter" :stays="stays" :filterBy="filterBy" />
     <!-- <div class="filter-count">{{ stays.count }} in {{ filterBy.location }}</div> -->
     <stay-list :stays="stays" />
     <!-- </label> -->
