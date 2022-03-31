@@ -1,5 +1,5 @@
 <template>
-  <div class="reservations-container main-app top-pad">
+  <div class="reservations-container main-app top-pad-small">
     <reservations-office />
     <!-- <add-stay /> -->
   </div>

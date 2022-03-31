@@ -3,7 +3,8 @@
     <div class="signup-modal">
       <ul>
         <li v-for="(msg, idx) in msgs" :key="idx">
-          <span>{{ msg.from }}:</span>{{ msg.txt }}
+          <img :src="msg.by.imgUrl" />
+          <span>{{ msg.by.fullname }}:</span>{{ msg.txt }}
         </li>
       </ul>
       <hr />
@@ -20,12 +21,21 @@
 export default {
 	name: 'reservations-office',
 	props: {
-    topic: Object,
+    topic: String,
     user: Object,
   },
 	data() {
 		return {
-			msg: {from: this.user.fullname, txt: ''},
+			msg: {
+      txt: '',
+      topic: this.topic,
+      by:{
+        _id: this.user._id,
+        fullname: this.user.fullname,
+        imgUrl: this.user.imgUrl,
+      },
+      isRead: false,
+      },
       		msgs: [],
 		};
 	},
@@ -38,17 +48,20 @@ export default {
     socketService.off('chat addMsg', this.addMsg)
     // socketService.terminate();
   },
+  computed:{
+
+  },
   methods: {
     addMsg(msg) {
       this.msgs.push(msg)
     },
-    sendMsg() {
+    async sendMsg() {
+      this.msg.createdAt= Date.now();
       console.log('Sending', this.msg);
-      socketService.emit('chat newMsg', this.msg)
-      // TODO: next line not needed after connecting to backend
-      // this.addMsg(this.msg)
-      // setTimeout(()=>this.addMsg({from: 'Dummy', txt: 'Yey'}), 2000)
-      this.msg = {from: this.user.fullname, txt: ''};
+      const msg = await this.$store.dispatch({type:"addMsg", msg:this.msg})
+      console.log('Sending got', msg);
+
+      socketService.emit('chat newMsg', msg)
     },
     changeTopic() {
       socketService.emit('chat topic', this.topic)

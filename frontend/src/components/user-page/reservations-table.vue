@@ -43,7 +43,7 @@ export default {
 				this.$emit("changeStatus", status)
 		},
 		setTopic(){
-			const topic = this.user._id + this.order.buyer._id
+			const topic = this.user._id +'-'+ this.order.buyer._id
 			console.log('set topic',topic);
 			this.$emit('setTopic',topic)
 		},
