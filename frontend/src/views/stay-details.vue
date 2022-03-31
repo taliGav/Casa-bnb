@@ -19,7 +19,7 @@
 
         <div class="amenities-content">
           <div v-for="amenity in amenities" :key="amenity" class="amenity flex">
-            <div class="amenity-icon">{{ amenityIcon }}</div>
+            <!-- <div class="amenity-icon">{{ amenityIcon }}</div> -->
             <div class="amenity-info flex align">
               <p>{{ amenity }}</p>
             </div>
