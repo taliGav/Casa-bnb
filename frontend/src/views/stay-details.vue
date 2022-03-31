@@ -3,10 +3,10 @@
 		<details-header :stay="stay" />
 		<details-gallery :stay="stay" />
 
-		<el-carousel class = 'details-carousel-item' :interval="5000" arrow="always">
-			<el-carousel-item  v-for="item in stay.imgUrls" :key="item">
+		<el-carousel class="details-carousel-item" :interval="5000" arrow="always">
+			<el-carousel-item v-for="item in stay.imgUrls" :key="item">
 				<!-- <h3>{{ item }}</h3> -->
-				<img class= "details-carousel-img" :src="item" alt="">
+				<img class="details-carousel-img" :src="item" alt="" />
 			</el-carousel-item>
 		</el-carousel>
 
@@ -24,18 +24,12 @@
 				<div class="amenities-header flex">
 					<h2>What this place offers</h2>
 				</div>
-
 				<div class="amenities-content">
-					<div
+					<details-amenities
 						v-for="amenitie in amenities"
 						:key="amenitie"
-						class="amenitie flex"
-					>
-						<div class="amenitie-icon"></div>
-						<div class="amenitie-info flex align">
-							<p>{{ amenitie }}</p>
-						</div>
-					</div>
+						:amenitie="amenitie"
+					></details-amenities>
 				</div>
 			</div>
 		</div>
@@ -69,7 +63,8 @@ import detailsCheckout from './../components/details-view-cmps/details-checkout-
 import detailsReviews from './../components/details-view-cmps/details-reviews-cmp.vue';
 import detailsMap from './../components/details-view-cmps/details-map-cmp.vue';
 import { stayService } from './../services/stay-service.js';
-import chatModal from './../components/chat/chat-modal.vue'
+import chatModal from './../components/chat/chat-modal.vue';
+import detailsAmenities from '../components/details-view-cmps/details-amenities-cmp.vue';
 
 export default {
 	components: {
@@ -80,6 +75,7 @@ export default {
 		detailsReviews,
 		detailsMap,
 		chatModal,
+		detailsAmenities,
 	},
 
 	name: 'stay-details',
@@ -88,26 +84,26 @@ export default {
 			stay: null,
 			reviewToAdd: null,
 			amenities: null,
-			user:null,
-			isChatOpen:false,
-			topic:'',
-      amenitiesMain: null,
+			user: null,
+			isChatOpen: false,
+			topic: '',
+			amenitiesMain: null,
 		};
 	},
 	async created() {
 		const { id } = this.$route.params;
-		console.log('stay-details', this.$route.params);
+		// console.log('stay-details', this.$route.params);
 		this.stay = await this.$store.dispatch({ type: 'getStayById', stayId: id });
 		this.user = this.$store.getters.user;
-    this.amenitiesMain = this.$store.getters.amenities;
+		this.amenitiesMain = this.$store.getters.amenities;
 		this.amenities = this.amenetiesForDispaly;
 		console.log(this.amenities);
 
-    // review-store
-    // await this.$store.dispatch({
-    //   type: "getReviews",
-    //   filterBy: { stayId: this.stay._id },
-    // });
+		// review-store
+		// await this.$store.dispatch({
+		//   type: "getReviews",
+		//   filterBy: { stayId: this.stay._id },
+		// });
 
 		// if (user) {
 		//   this.reviewToAdd = await reviewService.getEmptyReview();
@@ -122,35 +118,19 @@ export default {
 		amenetiesForDispaly() {
 			return this.stay.amenities.slice(0, 10);
 		},
-    amenityIcon() {
-		///// להוציא אמניטי מתוך אמניטי פור דיספליי ולתפוס בתוך אמניטי מיין את הרלוונטי ומשם לשלוף את האייקון
-      return this.amenity.svg;
-    },
+		amenityIcon() {
+			///// להוציא אמניטי מתוך אמניטי פור דיספליי ולתפוס בתוך אמניטי מיין את הרלוונטי ומשם לשלוף את האייקון
+			return this.amenity.svg;
+		},
 	},
 	methods: {
-		openChat(topic){
-			console.log('open chat, topic:',topic);
+		openChat(topic) {
+			console.log('open chat, topic:', topic);
 			this.topic = topic;
-			this.isChatOpen= true;
+			this.isChatOpen = true;
 		},
 	},
 };
 </script>
 
-<style>
-.details-carousel-img{
-	width: 100%;
-	border-radius: 12px;
-}
-
-.details-carousel-item{
-	border-radius: 12px;
-
-}
-.el-carousel__container{
-	border-radius: 12px;
-
-}
-
-
-</style>
+<style></style>

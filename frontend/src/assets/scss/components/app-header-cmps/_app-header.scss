@@ -131,7 +131,7 @@
 }
 
 
-@media (max-width: 720px) {
+@media (max-width: 780px) {
 	.logo-txt {
 		display: none;
 	}
@@ -142,10 +142,18 @@
 	.nav-bar{
 		// display: none;
 	}
+	.host-link{
+		display: none;
+	}
+
+	.explore-link{
+		display: none;
+		
+	}
 }
 
 
-@media (min-width: 720px) {
+@media (min-width: 780px) {
 	.logo-txt {
 		display: none;
 	}

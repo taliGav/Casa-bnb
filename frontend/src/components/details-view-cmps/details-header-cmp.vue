@@ -2,7 +2,7 @@
   <section v-if="stay" class="stay-details-header">
     <h1 class="details-header-name">{{ stay.name }}</h1>
 
-    <div class="details-sub-header flex space">
+    <div class="details-sub-header flex space wrap">
       <div class="details-sub-header-2 flex align">
         <ratings-reviews :stay="stay" />
         <span class="details-header-location">

@@ -1,8 +1,8 @@
 <template>
   <section class="main-layout flex col space">
-    <app-header />
+    <app-header @screenResize = "screenResize" />
     <router-view  />
-    <app-footer />
+    <app-footer :screenSize = "screenSize" />
   </section>
 </template>
 
@@ -14,8 +14,17 @@ export default {
   name: 'app',
   data() {
 		return {
+      screenSize: null
 		};
 	},
+  methods: {
+    screenResize(screenSize){
+      this.screenSize = screenSize;
+    }
+  },
+  computed:{
+   
+  },
   created() {
   },
   components: {

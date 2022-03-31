@@ -70,7 +70,6 @@ export default {
     loadStays({ commit, state }) {
       console.log('store filter', state.filterBy);
       stayService.query(state.filterBy).then((stays) => {
-        console.log('store', stays);
         commit({ type: 'setStays', stays });
       });
     },
