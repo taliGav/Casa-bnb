@@ -1,5 +1,5 @@
 <template>
-	<div class="mobile-footer flex align just even">
+	<div class="mobile-footer flex align just ">
 		<div v-if="screenStatus" class="mobile-icons-container flex space">
 			<div class="mobile-footer-icon flex col align space" @click="explore">
 				<img src="../assets/Images/logos/search-icon-red.svg" alt="" />

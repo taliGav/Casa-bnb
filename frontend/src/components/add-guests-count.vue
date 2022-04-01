@@ -1,12 +1,13 @@
 <template>
 	<section>
-		<div class="guests-input-modal flex aling just col space">
-			<div class="guests-details flex align just space">
+		<div class="guests-input-modal flex aling just col ">
+			<div class="guests-details flex align just space border-bot">
 				<div>
 					<span>Adults</span>
 					<p>Ages 13 or above</p>
 				</div>
 				<div class="guests-buttons flex space">
+					<!-- <div class = "guests-bottom-border"></div> -->
 					<button @click.stop.prevent="addAdult(-1)" class="btn-round">
 						-
 					</button>
@@ -17,8 +18,10 @@
 					</button>
 				</div>
 			</div>
-			<hr />
-			<div class="guests-details flex align just space">
+			<!-- <hr /> -->
+			<div class="guests-details flex align just space border-bot margin-top">
+
+					<!-- <div class = "guests-bottom-border"></div> -->
 				<div>
 					<span>Children</span>
 					<p>Ages 2-12</p>
@@ -34,8 +37,8 @@
 					</button>
 				</div>
 			</div>
-			<hr />
-			<div class="guests-details flex align just space">
+			<!-- <hr /> -->
+			<div class="guests-details flex align just space margin-top">
 				<div>
 					<span>Infants</span>
 					<p>Under 2</p>
