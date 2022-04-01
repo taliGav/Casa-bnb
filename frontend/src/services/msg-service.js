@@ -7,10 +7,11 @@ export const msgService = {
   addMsg,
   removeMsg,
   getEmptyMsg,
+  getChat,
 }
 
-async function query(filterBy) {
-  return await httpService.get(ENDPOINT, filterBy)
+async function query(topic) {
+  return await httpService.get(ENDPOINT, topic)
 }
 
 async function addMsg(msg) {
@@ -19,6 +20,10 @@ async function addMsg(msg) {
 
 async function removeMsg(msgId) {
   return await httpService.delete(`${ENDPOINT}/${msgId}`, msgId)
+}
+
+async function getChat(topic) {
+  return await httpService.get(`${ENDPOINT}/${topic}`)
 }
 
 function getEmptyMsg() {

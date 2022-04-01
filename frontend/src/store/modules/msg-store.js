@@ -42,5 +42,13 @@ export default {
                 console.log('err :>> ', err)
             }
         },
+        async getChat({ commit }, { topic }) {
+            try {
+                const chat = await msgService.getChat(topic);
+                return chat ;
+            } catch (err) {
+                console.log('err :>> ', err)
+            }
+        },
     },
 }
