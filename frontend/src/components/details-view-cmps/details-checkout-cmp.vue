@@ -9,6 +9,7 @@
 				</div>
 				<ratings-reviews :stay="stay" />
 			</div>
+			
 			<div class="dates-guests">
 				<div class="dates flex space" @click="openCalender">
 					<div class="check-in-container flex col just">
