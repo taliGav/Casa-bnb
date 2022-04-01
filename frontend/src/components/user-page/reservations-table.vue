@@ -13,16 +13,16 @@
 				<div
 					v-if="isPending"
 					:style="statusColor"
-					class=" reservation-status-sign"
+					class="reservation-status-sign"
 				>
 					<p>Pending</p>
 				</div>
 				<div
 					v-if="isDeclined"
 					:style="statusColor"
-					class=" reservation-status-sign"
+					class="reservation-status-sign"
 				>
-					<p class = "declined">Declined</p>
+					<p class="declined">Declined</p>
 				</div>
 			</div>
 			<!-- <div class="col col-1" :style="status">{{ order.status }}</div> -->
@@ -57,15 +57,23 @@
 					</div>
 					<div class="flex align">
 						<img src="../../assets/icons/Casabnb-Table_v1_12.png" />
-						<a @click="setTopic">Contact Guest</a>
+						<a @click="openChat">Contact Guest</a>
 					</div>
 				</div>
 			</div>
 		</li>
+		<chat-modal
+			@closeChat="isChatOpen = false"
+			v-if="isChatOpen"
+			:user="user"
+			:topic="topic"
+		/>
 	</section>
 	<!-- </div> -->
 </template>
+
 <script>
+import chatModal from '../chat/chat-modal.vue';
 export default {
 	name: 'reservation-table-li',
 	props: {
@@ -76,15 +84,34 @@ export default {
 			type: Object,
 		},
 	},
+	data() {
+		return {
+			isChatOpen: false,
+			topic: this.user._id + '-' + this.order.buyer._id,
+		};
+	},
 	created() {},
 	methods: {
 		changeStatus(status) {
 			this.$emit('changeStatus', status);
 		},
-		setTopic() {
-			const topic = this.user._id + '-' + this.order.buyer._id;
-			console.log('set topic', topic);
-			this.$emit('setTopic', topic);
+		// setTopic() {
+		// 	const topic = this.user._id + '-' + this.order.buyer._id;
+		// 	console.log('set topic', topic);
+		// 	this.$emit('setTopic', topic);
+		// },
+		async openChat() {
+			try {
+				const topic = this.user._id + '-' + this.order.buyer._id;
+				const chat = await this.$store.dispatch({
+					type: 'getChat',
+					topic: this.topic,
+				});
+				console.log('got chat', chat);
+				this.isChatOpen = true;
+			} catch (err) {
+				console.log('err :>> ', err);
+			}
 		},
 	},
 	computed: {
@@ -125,6 +152,9 @@ export default {
 		isDeclined() {
 			if (this.order.status === 'Declined') return true;
 		},
+	},
+	components: {
+		chatModal,
 	},
 };
 </script>

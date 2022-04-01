@@ -4,7 +4,35 @@ const logger = require('../../services/logger.service')
 module.exports = {
   getMsgs,
   addMsg,
+  getChat,
+  getAllChats,
   // deleteMsg,
+}
+
+async function getChat(req, res) {
+  try {
+    const topic = req.params
+    console.log('back get chat topic:', topic);
+    const chat = await msgService.query(topic)
+    // console.log('back get chat:', chat);
+    res.send(chat)
+  } catch (err) {
+    logger.error('Failed to get chat', err)
+    res.status(500).send({ err: 'Failed to get chat' })
+  }
+}
+
+async function getAllChats(req, res) {
+  try {
+    const userId = req.query[0]
+    console.log('back get chats userId:', typeof userId);
+    const chats = await msgService.queryAll(userId)
+    // console.log('back get chat:', chat);
+    res.send(chats)
+  } catch (err) {
+    logger.error('Failed to get chats', err)
+    res.status(500).send({ err: 'Failed to get chats' })
+  }
 }
 
 async function getMsgs(req, res) {
@@ -23,7 +51,6 @@ async function addMsg(req, res) {
     const msg = req.body
     console.log('msg crtl:',msg);
     const addedMsg = await msgService.addMsg(msg)
-    // const addedMsg = await orderService.getById(addedMsgId)
     res.send(addedMsg)
   } catch (err) {
     logger.error('Failed to add msg', err)

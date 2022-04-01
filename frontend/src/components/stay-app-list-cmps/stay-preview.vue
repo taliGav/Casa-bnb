@@ -50,7 +50,7 @@
 
 <script>
 import PreviewCarousel from './preview-carousel.vue';
-import ratingsReviews from "../reusable-cmps/ratings-reviews-cmp.vue";
+import ratingsReviews from '../reusable-cmps/ratings-reviews-cmp.vue';
 
 export default {
 	components: {
