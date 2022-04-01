@@ -3,8 +3,6 @@
     <!-- <img v-if="isLoading" src="./../assets/img-upload-func/spin-load.gif" />
     <label v-else> -->
     <stay-filter @setFilter="setFilter" :stays="stays" />
-    <div class="filter-count">{{ stays.length }} in</div>
-    <!-- <div class="filter-count">{{ stays.count }} in {{ filterBy.location }}</div> -->
     <stay-list :stays="stays" />
     <!-- </label> -->
   </section>
@@ -61,10 +59,8 @@ export default {
 </script>
 
 <style>
-
-.filter-count{
-  height:42px;
-  line-height:20px;
-
+.filter-count {
+  height: 42px;
+  line-height: 20px;
 }
 </style>

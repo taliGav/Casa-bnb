@@ -6,20 +6,22 @@ export default {
     },
     getters: {
         orders(state) {
+            // const orders = JSON.parse(JSON.stringify(state.orders))
+            // orders.sort((a, b) => b.createdAt - a.createdAt)
             return state.orders
         },
     },
     mutations: {
         setOrders(state, { orders }) {
-            state.orders = orders
+            state.orders = orders.sort((a, b) => b.createdAt - a.createdAt)
         },
         addOrder(state, { order }) {
-            state.orders.push(order)
+            state.orders.unshift(order)
         },
         saveOrder(state, { order }) {
             const idx = state.orders.findIndex((o) => o._id === order._id);
             if (idx !== -1) state.orders.splice(idx, 1, order);
-            else state.orders.push(order);
+            else state.orders.unshift(order);
         },
         removeOrder(state, { orderId }) {
             const idx = state.orders.findIndex((order) => order._id === orderId)

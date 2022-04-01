@@ -44,6 +44,7 @@ export default {
     else{
       this.filterBy.amenities=this.$route.query.amenities
     }
+    this.setFilter()
   },
   computed: {
     curFilterBy() {
@@ -58,6 +59,7 @@ export default {
       this.filterBy = this.curFilterBy
     },
     doFilter() {
+      
 			this.$router.push({
 				name: 'stay',
 				query: {

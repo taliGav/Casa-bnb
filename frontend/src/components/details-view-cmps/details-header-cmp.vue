@@ -7,7 +7,6 @@
         <ratings-reviews :stay="stay" />
         <span class="details-header-location">
           <span class="bullet">·</span>
-          google location
           <u> {{ stay.loc.city }}, {{ stay.loc.country }} </u>
         </span>
       </div>

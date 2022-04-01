@@ -1,19 +1,19 @@
 <template>
-	<section class="main-layout home full main-app">
-		<!-- <img v-if="isLoading" src="./../assets/img-upload-func/spin-load.gif" />
+  <section class="main-layout home full main-app">
+    <!-- <img v-if="isLoading" src="./../assets/img-upload-func/spin-load.gif" />
     <label v-else class="hero full" > -->
-		<div class="hero full">
-			<div class="hero-phrase">
-				<h2 class = "phrase-top">Mi casa su casa</h2>
+    <div class="hero full">
+      <div class="hero-phrase">
+        <h2 class="phrase-top">Mi casa su casa</h2>
         <!-- <h2 class = "phrase-bot">es su casa</h2> -->
-			</div>
-		</div>
-		<div>
-			<popular-dest-list :popularDest="popularDest" />
-			<popular-stays-list :popularStays="popularStays" />
-		</div>
-		<!-- </label> -->
-	</section>
+      </div>
+    </div>
+    <div>
+      <popular-dest-list :popularDest="popularDest" />
+      <popular-stays-list :popularStays="popularStays" />
+    </div>
+    <!-- </label> -->
+  </section>
 </template>
 
 <script>
