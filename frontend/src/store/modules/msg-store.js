@@ -3,15 +3,29 @@ import { msgService } from '../../services/msg-service'
 export default {
     state: {
         msgs: [],
+        chats:[],
+        curChat: 0,
     },
     getters: {
         msgs(state) {
             return state.msgs
         },
+        chats(state) {
+            return state.chats
+        },
+        chat(state) {
+            return state.chats[state.curChat]
+        },
     },
     mutations: {
         setMsgs(state, { msgs }) {
             state.msgs = msgs
+        },
+        setChats(state, { chats }) {
+            state.chats = chats
+        },
+        setCurChat(state, { topic }) {
+            state.curChat = state.chats.findIndex(ch => ch.topic === topic)
         },
         addMsg(state, { msg }) {
             state.msgs.push(msg)
@@ -46,6 +60,23 @@ export default {
             try {
                 const chat = await msgService.getChat(topic);
                 return chat ;
+            } catch (err) {
+                console.log('err :>> ', err)
+            }
+        },
+        async getAllChat({ commit }, { userId }) {
+            try {
+                const chats = await msgService.query(userId);
+                commit({ type: 'setChats', chats: chats })
+                return chats ;
+            } catch (err) {
+                console.log('err :>> ', err)
+            }
+        },
+        async setCurChat({ commit }, { topic }) {
+            try {
+                commit({ type: 'setCurChat', topic: topic })
+                return topic ;
             } catch (err) {
                 console.log('err :>> ', err)
             }

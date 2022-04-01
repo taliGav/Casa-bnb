@@ -5,6 +5,7 @@ module.exports = {
   getMsgs,
   addMsg,
   getChat,
+  getAllChats,
   // deleteMsg,
 }
 
@@ -18,6 +19,19 @@ async function getChat(req, res) {
   } catch (err) {
     logger.error('Failed to get chat', err)
     res.status(500).send({ err: 'Failed to get chat' })
+  }
+}
+
+async function getAllChats(req, res) {
+  try {
+    const userId = req.query[0]
+    console.log('back get chats userId:', typeof userId);
+    const chats = await msgService.queryAll(userId)
+    // console.log('back get chat:', chat);
+    res.send(chats)
+  } catch (err) {
+    logger.error('Failed to get chats', err)
+    res.status(500).send({ err: 'Failed to get chats' })
   }
 }
 

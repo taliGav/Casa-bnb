@@ -21,10 +21,16 @@
         <div class="row-btns">
           <button @click="changeStatus('Declined')">Decline</button>
           <button @click="changeStatus('Accepted')">Accept</button>
-          <button @click="setTopic">Contact Guest</button>
+          <button @click="openChat">Contact Guest</button>
         </div>
       </div>
     </li>
+    <chat-modal
+      @closeChat="isChatOpen = false"
+      v-if="isChatOpen"
+      :user="user"
+      :topic="topic"
+    />
   </section>
   <!-- </div> -->
 </template>
@@ -41,21 +47,28 @@ export default {
 			type: Object,
 		},
 	},
+	data() {
+		return {
+			isChatOpen: false,
+			topic:this.user._id +'-'+ this.order.buyer._id
+		};
+	},
 	created() {},
 	methods: {
 		changeStatus(status) {
 			this.$emit('changeStatus', status);
 		},
-		setTopic() {
-			const topic = this.user._id + '-' + this.order.buyer._id;
-			console.log('set topic', topic);
-			this.$emit('setTopic', topic);
-		},
+		// setTopic() {
+		// 	const topic = this.user._id + '-' + this.order.buyer._id;
+		// 	console.log('set topic', topic);
+		// 	this.$emit('setTopic', topic);
+		// },
 		async openChat() {
 			try{
 				const topic = this.user._id +'-'+ this.order.buyer._id;
-				const chat = await this.$store.dispatch({type: 'getChat', topic:topic});
+				const chat = await this.$store.dispatch({type: 'getChat', topic:this.topic});
 				console.log('got chat',chat);
+				this.isChatOpen = true;
 			}catch (err) {
                 console.log('err :>> ', err)
             }

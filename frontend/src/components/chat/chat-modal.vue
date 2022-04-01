@@ -1,6 +1,10 @@
 <template>
   <div class="login-modal-container">
     <div class="signup-modal">
+      <button @click="closeChat">x</button>
+      <div v-for="chat in allChats" :key="chat._id">
+        <chat-side-bar @setTopic="setTopic" :chat="chat" :user="user" />
+      </div>
       <ul>
         <li v-for="(msg, idx) in msgs" :key="idx">
           <img :src="msg.by.imgUrl" />
@@ -17,15 +21,16 @@
 </template>
 
 <script>
-
+import chatSideBar from './chat-side-bar.vue'
 export default {
-	name: 'reservations-office',
+	name: 'chat-modal',
 	props: {
     topic: String,
     user: Object,
   },
 	data() {
 		return {
+      chats:this.allChats,
 			msg: {
       txt: '',
       topic: this.topic,
@@ -40,7 +45,8 @@ export default {
 		};
 	},
 	created() {
-    // socketService.setup();
+    this.getChats()
+    console.log('chat modal chats:',this.chats);
     socketService.emit('chat topic', this.topic)
     socketService.on('chat addMsg', this.addMsg)
   },
@@ -49,9 +55,14 @@ export default {
     // socketService.terminate();
   },
   computed:{
-
+    allChats(){
+      return this.$store.getters.chats
+    },
   },
   methods: {
+    closeChat(){
+      this.$emit('closeChat')
+    },
     addMsg(msg) {
       this.msgs.push(msg)
     },
@@ -60,13 +71,20 @@ export default {
       console.log('Sending', this.msg);
       const msg = await this.$store.dispatch({type:"addMsg", msg:this.msg})
       console.log('Sending got', msg);
-
       socketService.emit('chat newMsg', msg)
     },
-    changeTopic() {
-      socketService.emit('chat topic', this.topic)
+    setTopic(topic) {
+      socketService.emit('chat topic', topic)
+    },
+    async getChats(){
+      const chats = await this.$store.dispatch({type:"getAllChat", userId:this.user._id})
+      console.log('chat modal chats:',chats);
+
     }
-  }
+  },
+  components: {
+		chatSideBar
+	},
 };
 </script>
 <style></style>

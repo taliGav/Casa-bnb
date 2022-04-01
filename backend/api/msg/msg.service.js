@@ -4,6 +4,7 @@ const userService = require('../user/user.service')
 
 module.exports = {
   query,
+  queryAll,
   addMsg,
   addChat,
   // remove,
@@ -23,7 +24,10 @@ async function query(topic) {
 
 async function queryAll(userId) {
   const collection = await dbService.getCollection('msg');
-  var chats = await collection.find({$or: [{user1:{_id:{$eq:userId}}},{user2:{_id:{$eq:userId}}}]}).toArray();
+  console.log('service all userId:',typeof userId);
+  var id= new ObjectId(userId);
+  console.log('user mongo id',id);
+  var chats = await collection.find({$or: [{"user1._id":{$eq:id}},{"user2._id":{$eq:id}}]}).toArray();
   console.log('msg service query find chats:',chats);
   return chats
 }

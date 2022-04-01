@@ -4,14 +4,19 @@ const ENDPOINT = 'msg'
 
 export const msgService = {
   query,
+  queryAll,
   addMsg,
   removeMsg,
   getEmptyMsg,
   getChat,
 }
 
-async function query(topic) {
-  return await httpService.get(ENDPOINT, topic)
+async function query(userId) {
+  return await httpService.get(`${ENDPOINT}` + '/', userId)
+}
+
+async function queryAll(userId) {
+  return await httpService.get(`${ENDPOINT}/${userId}`)
 }
 
 async function addMsg(msg) {
