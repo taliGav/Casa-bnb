@@ -2,26 +2,63 @@
   <!-- <div> -->
   <section>
     <li class="table-row" v-if="order">
-      <div class="col col-1" :style="status">{{ order.status }}</div>
+      <div class="col-1">
+        <div
+          v-if="isAccepted"
+          :style="statusColor"
+          class="reservation-status-sign"
+        >
+          <p>Accepted</p>
+        </div>
+        <div
+          v-if="isPending"
+          :style="statusColor"
+          class="col col-1 reservation-status-sign"
+        >
+          <p>Pending</p>
+        </div>
+        <div
+          v-if="isDeclined"
+          :style="statusColor"
+          class="col col-1 reservation-status-sign"
+        >
+          <p class="declined">Declined</p>
+        </div>
+      </div>
+      <!-- <div class="col col-1" :style="status">{{ order.status }}</div> -->
       <div class="col col-2">
-        <div class="details">
-          <p>Check in: {{ startDate }}</p>
-          <p>Check out: {{ endDate }}</p>
+        <div class="reservation-details">
+          <div class="reservation-dates flex align">
+            <p class="">Check in {{ startDate }}</p>
+            <img src="../../assets/icons/Casabnb-Table_v1_06.png" />
+            <p class="">Check out {{ endDate }}</p>
+          </div>
+
+          <!-- <p>Check out: {{ endDate }}</p> -->
           <p class="stay-name">{{ order.stay.name }}</p>
-          <p>${{ order.totalPrice }} total</p>
+          <p class="reservations-total-price">${{ order.totalPrice }} total</p>
         </div>
       </div>
       <div class="col col-3 flex">
         <div class="flex align just col start relative">
           <img :src="order.buyer.imgUrl" />
-          <p>{{ order.buyer.fullname }}</p>
+          <p class="reservation-guest-name">{{ order.buyer.fullname }}</p>
         </div>
       </div>
       <div class="col col-4">
         <div class="row-btns">
-          <button @click="changeStatus('Declined')">Decline</button>
-          <button @click="changeStatus('Accepted')">Accept</button>
-          <button @click="openChat">Contact Guest</button>
+          <div class="flex align">
+            <img src="../../assets/icons/Casabnb-Table_v1_03.png" />
+            <p @click="changeStatus('Declined')">Decline</p>
+          </div>
+          <div class="flex align">
+            <img src="../../assets/icons/Casabnb-Table_v1_10.png" />
+            <a @click="changeStatus('Accepted')">Accept</a>
+          </div>
+          <div class="flex align">
+            <img src="../../assets/icons/Casabnb-Table_v1_12.png" />
+            <a @click="openChat">Contact Guest</a>
+          </div>
         </div>
       </div>
     </li>
@@ -95,10 +132,22 @@ export default {
 				dateObject.getFullYear();
 			return humanDateFormat;
 		},
-		status() {
-			if (this.order.status === 'Pending') return { color: 'orange' };
-			if (this.order.status === 'Accepted') return { color: '#3fb34f' };
-			if (this.order.status === 'Declined') return { color: '#992323' };
+		statusColor() {
+			if (this.order.status === 'Pending')
+				return { backgroundColor: '#FCA000' };
+			if (this.order.status === 'Accepted')
+				return { backgroundColor: '#44CB57' };
+			if (this.order.status === 'Declined')
+				return { backgroundColor: '#F03030' };
+		},
+		isPending() {
+			if (this.order.status === 'Pending') return true;
+		},
+		isAccepted() {
+			if (this.order.status === 'Accepted') return true;
+		},
+		isDeclined() {
+			if (this.order.status === 'Declined') return true;
 		},
 	},
 	components: {
