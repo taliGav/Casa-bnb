@@ -13,14 +13,14 @@
 				<div
 					v-if="isPending"
 					:style="statusColor"
-					class="col col-1 reservation-status-sign"
+					class=" reservation-status-sign"
 				>
 					<p>Pending</p>
 				</div>
 				<div
 					v-if="isDeclined"
 					:style="statusColor"
-					class="col col-1 reservation-status-sign"
+					class=" reservation-status-sign"
 				>
 					<p class = "declined">Declined</p>
 				</div>

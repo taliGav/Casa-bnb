@@ -5,7 +5,7 @@
 			<preview-carousel :urls="this.stay.imgUrls" />
 		</div>
 		<div class="preview-data">
-			<ratings-reviews v-if="stay" :stay="stay" />
+			<!-- <ratings-reviews v-if="stay" :stay="stay" /> -->
 
 			<div class="rating">
 				<span class="span-main-prev-rating flex align">
@@ -50,11 +50,11 @@
 
 <script>
 import PreviewCarousel from './preview-carousel.vue';
-// import ratingsReviews from "./reusable-cmps/ratings-reviews-cmp.vue";
+import ratingsReviews from "../reusable-cmps/ratings-reviews-cmp.vue";
 
 export default {
 	components: {
-		// ratingsReviews,
+		ratingsReviews,
 		PreviewCarousel,
 	},
 	name: 'stay-preview',
