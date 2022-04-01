@@ -2,25 +2,31 @@
 	<div class="filter-container main-layout flex align just">
 		<form class="flex align just">
 			<div class="filter">
-				<div
-					class="search-container"
-					@click="focusSearch"
-					:style="{ width: isSearchOpen ? '25%' : '30%' }"
-				>
-					<span>Location</span>
-					<input
-						class="search-input"
-						v-model="filterBy.destination"
-						type="text"
-						placeholder="Where are you going?"
-						ref="input"
-					/>
+				<div class="search-container-outer"
+				:style="{ width: isSearchOpen ? '25%' : '30%' }">
+				<div class="border"></div>
+					<div
+						class="search-container"
+						@click="focusSearch"
+						
+					>
+						<span>Location</span>
+						<input
+							class="search-input"
+							v-model="filterBy.destination"
+							type="text"
+							placeholder="Where are you going?"
+							ref="input"
+						/>
+					</div>
 				</div>
 				<div class="date-start" @click="showDatePicker">
+					<div class="border"></div>
 					<span>Check in</span>
 					<p>{{ startDate }}</p>
 				</div>
 				<div class="date-end" @click="showDatePicker">
+					<div class="border"></div>
 					<span>Check out</span>
 					<p>{{ endDate }}</p>
 				</div>
