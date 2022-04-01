@@ -45,7 +45,7 @@
 				</div>
 			</div>
 		</div>
-		<details-reviews :stay="stay" />
+		<details-reviews v-if="stay" :stay="stay" />
 
 		<details-map :stay="stay" />
 
@@ -125,7 +125,7 @@ export default {
 		amenitiesForDisplay() {
 			//   console.log("amenitiesForDisplay", this.stay.amenities.slice(0, 10));
 			return this.stay.amenities.slice(0, 10);
-		}
+		},
 	},
 	methods: {
 		openChat(topic) {
@@ -133,17 +133,14 @@ export default {
 			this.topic = topic;
 			this.isChatOpen = true;
 		},
-				replaceByDefault(e) {
-
-	
+		replaceByDefault(e) {
 			e.target.src = `./src/assets/icons/amenities/other.svg`;
-		}
+		},
 	},
 };
 </script>
 
 <style>
-
 /* .details-carousel-img {
 	width: 100%;
 	border-radius: 12px;

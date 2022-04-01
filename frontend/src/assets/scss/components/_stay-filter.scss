@@ -32,12 +32,28 @@
         font-size: 12px;
         line-height: 16px;
         // width: 100% ;
+        
         width: max-content;
         &:hover {
             border: 1px solid rgb(0, 0, 0);
         }
     }
+    .price-btn-container{
+
+        img{
+            width: 10px;
+            height: 10px;
+            align-self: center;
+            justify-self: center;
+        }
+    }
 }
+
+.flip{
+    transform: rotate(180deg);
+    // background-color: red;
+}
+
 
 .price-modal {
     position: fixed;

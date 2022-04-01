@@ -2,8 +2,8 @@
 	<section class="price-modal">
 		<div class="slider">
 			<HistogramSlider
-				width="400"
-				:bar-height="80"
+				:width="400"
+				:bar-height="100"
 				:data="prices"
 				:min="0"
 				:max="maxPrice"
@@ -11,8 +11,8 @@
 				primaryColor="rgb(163, 163, 163)"
 				labelColor="rgb(151, 151, 151)"
 				barRadius="1"
-				barWidth="7"
-				forceEdges="true"
+				barGap="2"
+				barWidth="3"
 			/>
 		</div>
 		<hr />
