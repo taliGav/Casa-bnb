@@ -9,7 +9,7 @@
 				</div>
 				<ratings-reviews :stay="stay" />
 			</div>
-			
+
 			<div class="dates-guests">
 				<div class="dates flex space" @click="openCalender">
 					<div class="check-in-container flex col just">
@@ -26,37 +26,38 @@
 						</div>
 					</div>
 				</div>
-
-        <div class="guests flex" @click.stop.prevent="openGuestsMenu">
-          <add-guests-count
-            v-if="openGuests"
-            @guests="guests"
-            @addGuests="addGuests"
-          ></add-guests-count>
-          <div class="guests-container flex col just">
-            <div class="guests-title title">GUESTS</div>
-            <div class="guests-value flex">
-              <p>{{ guestsCount }} &nbsp;</p>
-              <p v-if="guestsNumber">guest</p>
-              <p v-else>guests</p>
-            </div>
-          </div>
-          <!-- <div class="relative">
+				<div class = "add-guests-contaner">
+					<div class="guests flex"  @click.stop="openGuestsMenu">
+						<add-guests-count
+							v-if="openGuests"
+							@guests="guests"
+							@addGuests="addGuests"
+						></add-guests-count>
+						<div class="guests-container flex col just">
+							<div class="guests-title title">GUESTS</div>
+							<div class="guests-value flex">
+								<p>{{ guestsCount }} &nbsp;</p>
+								<p v-if="guestsNumber">guest</p>
+								<p v-else>guests</p>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="relative">
 
 					</div> -->
-          <div id="date-container" class="relative">
-            <date-picker
-              :isOpen="isCalendar"
-              @orders="orderDates"
-            ></date-picker>
-          </div>
-        </div>
-      </div>
-      <div class="reserve-btn-cmp">
-        <reserve-btn @click="makeReservation" />
-      </div>
-    </div>
-  </section>
+					<div id="date-container" class="relative">
+						<date-picker
+							:isOpen="isCalendar"
+							@orders="orderDates"
+						></date-picker>
+					</div>
+				</div>
+			</div>
+			<div class="reserve-btn-cmp">
+				<reserve-btn @click="makeReservation" />
+			</div>
+		</div>
+	</section>
 </template>
 
 <script>
@@ -200,6 +201,6 @@ export default {
 
 <style>
 .calender-checkout-container {
-  /* position: relative; */
+	/* position: relative; */
 }
 </style>

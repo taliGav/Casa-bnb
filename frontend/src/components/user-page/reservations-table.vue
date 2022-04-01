@@ -11,19 +11,20 @@
           <p>${{ order.totalPrice }} total</p>
         </div>
       </div>
-      <div class="col col-3">
-        <img :src="order.buyer.imgUrl" />
-        <p>{{ order.buyer.fullname }}</p>
+      <div class="col col-3 flex">
+        <div class="flex align just col start relative">
+          <img :src="order.buyer.imgUrl" />
+          <p>{{ order.buyer.fullname }}</p>
+        </div>
       </div>
-      <div class="col col-3">
+      <div class="col col-4">
         <div class="row-btns">
           <button @click="changeStatus('Declined')">Decline</button>
           <button @click="changeStatus('Accepted')">Accept</button>
-          <button @click="openChat">Contact Guest</button>
+          <button @click="setTopic">Contact Guest</button>
         </div>
       </div>
     </li>
-    <chat-modal v-if="isChatOpen" :user="user" :topic="topic" />
   </section>
   <!-- </div> -->
 </template>
@@ -40,16 +41,15 @@ export default {
 			type: Object,
 		},
 	},
-	created() {
-	},
+	created() {},
 	methods: {
-		changeStatus(status){
-				this.$emit("changeStatus", status)
+		changeStatus(status) {
+			this.$emit('changeStatus', status);
 		},
-		setTopic(){
-			const topic = this.user._id +'-'+ this.order.buyer._id
-			console.log('set topic',topic);
-			this.$emit('setTopic',topic)
+		setTopic() {
+			const topic = this.user._id + '-' + this.order.buyer._id;
+			console.log('set topic', topic);
+			this.$emit('setTopic', topic);
 		},
 		async openChat() {
 			try{
