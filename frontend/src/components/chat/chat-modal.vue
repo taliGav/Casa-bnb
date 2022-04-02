@@ -1,9 +1,9 @@
 <template>
-  <div v-if="chats" class="chat-modal-container">
+  <div v-if="chats" class="chat-modal-container"  @click="closeChat">
     <div class="chat-modal">
       <div class="chat-sider-bar">
-        <button @click="closeChat">x</button>
-        <div class="chat-thumb" v-for="chat in allChats" :key="chat._id">
+        <!-- <button @click="closeChat">x</button> -->
+        <div class="chat-thumb flex align start" v-for="chat in allChats" :key="chat._id">
           <chat-side-bar @setTopic="setTopic" :chat="chat" :user="user" />
         </div>
       </div>
