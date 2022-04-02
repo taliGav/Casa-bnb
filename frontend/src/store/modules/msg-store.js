@@ -37,10 +37,14 @@ export default {
             state.chats[state.curChatIdx].msgs.push(msg)
         },
         saveMsg(state, { msg, topic }) {
-            const idx = state.chats.findIndex(ch => ch.topic === topic)
-            console.log('store saveMsg idx!!!!!!', msg);
-            state.chats[idx].msgs.push(msg);
-            console.log('store msgs!!!!!!!!!', state.chats[idx].msgs);
+            console.log('store save!!!:', msg, topic);
+            const chatIdx = state.chats.findIndex(ch => ch.topic === topic)
+            const msgIdx = state.chats[chatIdx].msgs.findIndex(m => m._id === msg._id)
+            console.log('store saveMsg idx!!!!!!', msgIdx);
+            if (msgIdx === -1) {
+                state.chats[chatIdx].msgs.push(msg);
+            }
+            // console.log('store msgs!!!!!!!!!', state.chats[idx].msgs);
         },
     },
     actions: {

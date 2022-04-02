@@ -24,7 +24,7 @@ export default {
    this.getOtherUser()
    console.log('other',this.otherUser);
   //  socketService.emit('chat topic', this.chat.topic);
-    // socketService.on('chat addMsg', this.addMsg);
+    socketService.on('notification', this.addMsg);
   },
   destroyed() {
     // socketService.off('chat addMsg');
@@ -55,9 +55,10 @@ export default {
    setTopic(){
      this.$emit('setTopic', this.chat.topic)
    },
-   addMsg(msg){
-     console.log('socketttttttt barrrrrrrr');
-      // this.$store.commit({ type: 'saveMsg', msg: msg,topic:this.chat.topic })
+   addMsg(data){
+     console.log('socketttttttt barrrrrrrr',data);
+      this.$store.commit({ type: 'saveMsg', msg: data.msg,topic:data.topic })
+    
    }
    
   }

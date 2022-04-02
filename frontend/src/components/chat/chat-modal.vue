@@ -82,8 +82,8 @@ export default {
       this.msg.createdAt= Date.now();
       console.log('Sending', this.msg);
       const msg = await this.$store.dispatch({type:"addMsg", msg:this.msg, topic:this.curTopic});
-      console.log('Sending got', msg);
-      socketService.emit('chat newMsg', msg);
+      console.log('Sending got', msg,this.curTopic);
+      socketService.emit('chat newMsg', {msg:msg, topic:this.curTopic});
       this.msg.txt='';
       this.updateLastSeen()
     },
