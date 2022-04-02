@@ -1,8 +1,8 @@
 <template>
-  <div v-if="chats" class="chat-modal-container"  @click="closeChat">
+  <div v-if="chats" class="chat-modal-container"  >
     <div class="chat-modal">
       <div class="chat-sider-bar">
-        <!-- <button @click="closeChat">x</button> -->
+        <button @click="closeChat">x</button>
         <div class="chat-thumb flex align start" v-for="chat in allChats" :key="chat._id">
           <chat-side-bar @setTopic="setTopic" :chat="chat" :user="user" />
         </div>
@@ -17,7 +17,7 @@
       </div>
       <div class="input">
         <form @submit.stop.prevent="sendMsg">
-          <input type="text" v-model="msg.txt" placeholder="Your msg" />
+          <input type="text" v-model="msg.txt" placeholder="Your message" />
           <button>
             <img
               src="https://cdn.iconscout.com/icon/free/png-256/arrow-circle-up-3609668-3014867.png"

@@ -1,9 +1,13 @@
 <template>
-	<div class="chat-thumbnail" v-if="otherUser">
-		<el-badge :value="notification" class="item">
+	<div class="chat-thumbnail flex align just" v-if="otherUser">
+		<el-badge :value="notification" class="item flex align just">
+      <div class = "flex align just">
 			<img class="chat-user-img" @click="setTopic" :src="otherUser.imgUrl" />
+			<p>{{ otherUser.fullname }}</p>
+      </div>
 		</el-badge>
 	</div>
+
 </template>
 
 <script>

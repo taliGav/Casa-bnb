@@ -9,6 +9,37 @@
 	height: 100%;
 	z-index: 100;
 
+	// border-radius:20px;
+
+	.chat-thumbnail {
+		// background-color: rgb(255, 0, 0);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+		padding-left: 30px;
+		// border: 0.5px solid rgb(209, 209, 209);
+	}
+
+	button {
+		background-color: white;
+		border: none;
+		width: 40px;
+		height: 40px;
+		font-size: 20px;
+		color: rgba(134, 134, 134, 0.815);
+		border-radius: 50%;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+p{
+	margin-left: 10px;
+}
+
+
 	.chat-modal {
 		display: grid;
 		grid-template-columns: 3fr 7fr;
@@ -19,8 +50,8 @@
 		;
 		gap: 10px 10px;
 		background-color: rgb(255, 255, 255);
-		width: 60%;
-		max-width: 570px;
+		min-width: 500px;
+		max-width: 700px;
 		height: 70%;
 		top: 50%;
 		left: 50%;
@@ -29,10 +60,33 @@
 		box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 28px !important;
 		border-radius: 12px;
 
+
+
+		.chat-side-bar {
+			height: 100%;
+			grid-area: side-bar;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			// background-color: red;
+			// border-right: 0.5 solid black;
+
+			// background-color: rgb(255, 0, 0);
+			button {
+				background-color: white;
+				border: none;
+			}
+
+		}
+
+
 		.main {
 			margin: 12px;
 			grid-area: main;
 			overflow: overlay;
+			border: 0.5px solid rgba(190, 189, 189, 0.671);
+			border-radius:10px;
 
 			ul {}
 
@@ -58,6 +112,17 @@
 
 		.input {
 			grid-area: input;
+			// padding: 9px 8px !important;
+			// // font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+			// font-size: 16px !important;
+			// line-height: 22px !important;
+			// // font-weight: 400 !important;
+			// // resize: none !important;
+			// // width: 50px !important;
+			// min-height: 40px !important;
+			// flex-grow: 1 !important;
+			// border-radius: 12px !important;
+			// max-height: 40px !important;
 
 			form {
 				display: flex;
@@ -65,27 +130,29 @@
 				align-items: center;
 
 				input {
-					-webkit-box-flex: 1 !important;
+					// -webkit-box-flex: 1 !important;
 					// color: inherit !important;
 					// display: block !important;
-					min-width: auto !important;
-					max-width: 100% !important;
+					// min-width: 300px !important;
+					// max-width: 100% !important;
 					// outline: none !important;
 					// border: 0px none !important;
-					margin: 0px 1px 0px 0px !important;
-					box-sizing: border-box !important;
+					// margin: 0px 1px 0px 0px !important;
+					// box-sizing: border-box !important;
 					// background-color: rgb(255, 255, 255) !important;
 					// appearance: none !important;
 					padding: 9px 8px !important;
 					// font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
 					font-size: 16px !important;
 					line-height: 22px !important;
-					font-weight: 400 !important;
-					resize: none !important;
-					width: 100% !important;
+					// font-weight: 400 !important;
+					// resize: none !important;
+					width: 95% !important;
 					min-height: 40px !important;
-					flex-grow: 1 !important;
-					border-radius: 20px !important;
+					margin-left: 12px;
+					border: 0.5px solid rgb(180, 177, 177) ;
+					// flex-grow: 1 !important;
+					border-radius: 10px !important;
 					max-height: 40px !important;
 				}
 
@@ -98,6 +165,7 @@
 					border-radius: 50%;
 					border: none;
 					padding: 0px;
+					margin-right: 5px;
 
 					img {
 						cursor: pointer;
@@ -115,17 +183,7 @@
 	}
 }
 
-.chat-side-bar {
-	height: 100%;
-	grid-area: side-bar;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	border-right: 0.5 solid black;
-	// background-color: rgb(255, 0, 0);
 
-}
 
 
 .chat-thumbnail {
@@ -133,9 +191,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 	16px;
-	padding-left: 10px;
-	
+	margin-bottom: 30px;
+	padding-left: 30px;
+	// border: 0.5px solid rgb(209, 209, 209);
 }
 
 .chat-user-img {
