@@ -27,7 +27,7 @@
 				<div class="amenities-content">
 					<!-- <ul class="clean-list flex"> -->
 					<div
-						class="amenitie flex align"
+						class="amenity flex align"
 						v-for="(amenity, idx) in amenitiesForDisplay"
 						:key="idx"
 					>
