@@ -39,8 +39,8 @@
 					<p class="reservations-total-price">${{ order.totalPrice }} total</p>
 				</div>
 			</div>
-			<div class="col col-3 flex">
-				<div class="flex align just col start relative">
+			<div class="col col-3 flex align start">
+				<div class="flex align just col">
 					<img :src="order.buyer.imgUrl" />
 					<p class="reservation-guest-name">{{ order.buyer.fullname }}</p>
 				</div>

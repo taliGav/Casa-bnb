@@ -1,30 +1,16 @@
 .container {
 	max-width: 1120px;
-	// margin-left: auto;
-	// margin-right: auto;
-	// padding-left: 10px;
-	// padding-right: 10px;
+
 
 }
 
-// h2 {
-// 	font-size: 26px;
-// 	font-family: 'Circular-Light';
-//     color: #ffffff;
-// 	margin: 20px 0;
-// 	padding-left: 30px;
-// 	text-align:left;
-// 	small {
-// 		font-size: 0.5em;
 small {
 	font-size: 0.5em;
 }
 
-// 	}
-// }
 .table-container {
-	// background-color: #ff385c;
-	border: 0.5px solid #cfcfcfaf;
+
+	border: 0.5px solid #cfcfcf7a;
 	border-radius: 12px;
 
 	.header-container {
@@ -32,29 +18,28 @@ small {
 		border-radius: 12px 12px 0 0;
 		background-color: #ff385c;
 
+		text-transform: capitalize;
+
+
 		.table-title {
 			font-size: 26px;
 			font-family: 'Circular-Light';
 			color: #ffffff;
 			padding: 25px;
-			// margin: 20px 0 20px -5px;
-			// padding-left: 30px;
-			// padding: 25px;
+
 			text-align: left;
 
 		}
 	}
 
-
-
 	.responsive-table {
-		// padding: 20px;
+
 		background-color: #fff;
 		border-radius: 0 0 12px 12px;
 		width: 100%;
 
 		li {
-			// border-radius: 5px;
+
 			padding: 10px;
 			display: flex;
 			height: max-content;
@@ -69,17 +54,16 @@ small {
 			letter-spacing: 0.03em;
 			padding-top: 15px;
 			color: #000000;
-				font-size: 14px;
-
-		
+			font-size: 14px;
 
 		}
 
 		.table-row {
 			background-color: #ffffff;
-			border-top: 1.5px solid rgb(206, 206, 206);
+			border-top: 1.5px solid rgba(206, 206, 206, 0.658);
+
 			.reservation-status-sign {
-				width: 120px;
+				width: 100px;
 				height: 23px;
 				color: #ffffff;
 				border-radius: 30px;
@@ -140,6 +124,7 @@ small {
 				.reservations-total-price {
 					font-size: 18px;
 					color: #FF5A78;
+					font-weight: bold;
 				}
 			}
 		}
@@ -167,13 +152,8 @@ small {
 
 		.col-1 {
 			flex-basis: 25%;
-			padding-left:50px;
-			// margin-left:30px;
-			// padding-left: 52px;
+			padding-left: 50px;
 
-			// .declined{
-			// 	margin-right: 50px;
-			// }
 		}
 
 		.col-2 {
@@ -182,7 +162,6 @@ small {
 
 		.col-3 {
 			flex-basis: 17%;
-			text-transform: capitalize;
 
 			img {
 				border-radius: 50%;
@@ -191,9 +170,10 @@ small {
 			}
 
 			p {
-				position: absolute;
-				bottom: -30px;
-				left: -19px;
+				margin-top: 5px;
+				// position: absolute;
+				// bottom: -30px;
+				// left: -19px;
 			}
 		}
 
@@ -233,6 +213,15 @@ small {
 				p {
 					text-align: center;
 				}
+			}
+
+			.col-1 {
+				// flex-basis: 25%;
+				// padding-left: 50px;
+				padding-left: 0;
+				justify-content: center;
+				align-items: center;
+
 			}
 
 

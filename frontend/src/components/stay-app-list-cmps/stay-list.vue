@@ -3,15 +3,20 @@
 		<!-- <div class="filter-count">{{ stays.count }} results found <span v-if=""> 
       in {{ filterBy.location }}</span></div> -->
 
-		<ul class="stay-list">
-			<li
-				v-for="stay in stays"
-				:key="stay._id"
-				@click="$router.push(`/stay/${stay._id}`)"
-			>
-				<stay-preview v-if="stay" :stay="stay" />
-			</li>
-		</ul>
+		<!-- <div class="stays-count"> -->
+		<!-- </div> -->
+		<div class="stay-list-container">
+			<p class = "stays-to-show" >{{ staysToShow }} Stays to show</p>
+			<ul class="stay-list">
+				<li
+					v-for="stay in stays"
+					:key="stay._id"
+					@click="$router.push(`/stay/${stay._id}`)"
+				>
+					<stay-preview v-if="stay" :stay="stay" />
+				</li>
+			</ul>
+		</div>
 	</section>
 </template>
 
@@ -25,6 +30,11 @@ export default {
 	},
 	components: {
 		stayPreview,
+	},
+	computed: {
+		staysToShow() {
+			return this.stays.length;
+		},
 	},
 };
 </script>

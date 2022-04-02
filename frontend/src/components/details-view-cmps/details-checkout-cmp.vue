@@ -26,8 +26,8 @@
 						</div>
 					</div>
 				</div>
-				<div class = "add-guests-contaner">
-					<div class="guests flex"  @click.stop="openGuestsMenu">
+				<div class="add-guests-contaner">
+					<div class="guests flex" @click.stop="openGuestsMenu">
 						<add-guests-count
 							v-if="openGuests"
 							@guests="guests"
@@ -56,6 +56,12 @@
 			<div class="reserve-btn-cmp">
 				<reserve-btn @click="makeReservation" />
 			</div>
+			<reservation-confirm
+				v-if="confirmationModal"
+				:order="orderConfirmDetails"
+				@confirmReservation="confirmReservation"
+				@closeConfirmationModal="closeConfirmationModal"
+			></reservation-confirm>
 		</div>
 	</section>
 </template>
@@ -66,6 +72,7 @@ import ratingsReviews from './../reusable-cmps/ratings-reviews-cmp.vue';
 import reserveBtn from './../reusable-cmps/reserve-btn-cmp.vue';
 import addGuestsCount from '../add-guests-count.vue';
 import { socketService } from '../../services/socket.service';
+import reservationConfirm from './reservation-confirm-modal.vue';
 
 export default {
 	components: {
@@ -73,6 +80,7 @@ export default {
 		reserveBtn,
 		datePicker,
 		addGuestsCount,
+		reservationConfirm,
 	},
 	name: 'details-checkout',
 	props: {
@@ -85,6 +93,8 @@ export default {
 			resirvationDates: null,
 			openGuests: false,
 			loggedUser: null,
+			orderConfirmDetails: null,
+			confirmationModal: false,
 		};
 	},
 	created() {
@@ -156,14 +166,36 @@ export default {
 				endDate: this.resirvationDates[1],
 				totalPrice: days * this.stay.price,
 			};
-			const completeOrder = await this.$store.dispatch({
-				type: 'addOrder',
-				order: order,
-			});
-			socketService.emit('new order', completeOrder);
+			this.orderConfirmDetails = order;
+			this.confirmationModal = true;
+			console.log(order);
+			// const completeOrder = await this.$store.dispatch({
+			// 	type: 'addOrder',
+			// 	order: order,
+			// });
+			// socketService.emit('new order', completeOrder);
 
 			// var days = Math.floor(delta / 86400);
 		},
+		async confirmReservation() {
+			console.log('confirming');
+
+			try {
+				const completeOrder = await this.$store.dispatch({
+					type: 'addOrder',
+					order: this.orderConfirmDetails,
+				});
+				socketService.emit('new order', completeOrder);
+			} catch (err) {
+				console.log('Error while making reservation', err);
+			}
+			this.confirmationModal = false;
+		},
+
+		closeConfirmationModal() {
+			this.confirmationModal = false;
+		},
+
 		addGuests(guest) {
 			// if (!guestsCount) this.guestsCount = 1;
 			if (this.guestsCount < 1.5 && guest < 0) return;
