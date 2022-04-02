@@ -17,31 +17,29 @@ small {
 		height: 81px;
 		border-radius: 12px 12px 0 0;
 		background-color: #ff385c;
-	
-			text-transform: capitalize;
-	
+
+		text-transform: capitalize;
+
 
 		.table-title {
 			font-size: 26px;
 			font-family: 'Circular-Light';
 			color: #ffffff;
 			padding: 25px;
-			
+
 			text-align: left;
 
 		}
 	}
 
-
-
 	.responsive-table {
-		
+
 		background-color: #fff;
 		border-radius: 0 0 12px 12px;
 		width: 100%;
 
 		li {
-			
+
 			padding: 10px;
 			display: flex;
 			height: max-content;
@@ -57,10 +55,6 @@ small {
 			padding-top: 15px;
 			color: #000000;
 			font-size: 14px;
-		
-
-
-
 
 		}
 
@@ -159,7 +153,7 @@ small {
 		.col-1 {
 			flex-basis: 25%;
 			padding-left: 50px;
-			
+
 		}
 
 		.col-2 {
@@ -168,7 +162,7 @@ small {
 
 		.col-3 {
 			flex-basis: 17%;
-			
+
 			img {
 				border-radius: 50%;
 				width: 50px;
@@ -220,13 +214,14 @@ small {
 					text-align: center;
 				}
 			}
+
 			.col-1 {
 				// flex-basis: 25%;
 				// padding-left: 50px;
 				padding-left: 0;
 				justify-content: center;
 				align-items: center;
-				
+
 			}
 
 

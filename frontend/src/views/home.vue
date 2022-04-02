@@ -12,6 +12,14 @@
       <popular-dest-list :popularDest="popularDest" />
       <popular-stays-list :popularStays="popularStays" />
     </div>
+	<div class="home-bottom-image">
+		<div class="home-bottom-phrase ">
+			<h2 class = "phrase-bot">Become a host!</h2>
+		</div>
+		<div class="become-a-host-btn flex align just">
+			<p>Learn more</p>
+		</div>
+	</div>
     <!-- </label> -->
   </section>
 </template>
