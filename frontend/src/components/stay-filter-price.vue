@@ -17,7 +17,7 @@
 		</div>
 		<hr />
 		<div class="price-modal-btns">
-			<button>clear</button>
+			<button class="clear-btn">clear</button>
 			<button @click="set">set</button>
 		</div>
 	</section>
