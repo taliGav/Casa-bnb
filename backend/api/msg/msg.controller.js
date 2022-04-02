@@ -6,13 +6,14 @@ module.exports = {
   addMsg,
   getChat,
   getAllChats,
+  updateLastSeen
   // deleteMsg,
 }
 
 async function getChat(req, res) {
   try {
     const topic = req.params
-    console.log('back get chat topic:', topic);
+    // console.log('back get chat topic:', topic);
     const chat = await msgService.query(topic)
     // console.log('back get chat:', chat);
     res.send(chat)
@@ -25,7 +26,7 @@ async function getChat(req, res) {
 async function getAllChats(req, res) {
   try {
     const userId = req.query[0]
-    console.log('back get chats userId:', typeof userId);
+    // console.log('back get chats userId:', typeof userId);
     const chats = await msgService.queryAll(userId)
     // console.log('back get chat:', chat);
     res.send(chats)
@@ -50,10 +51,26 @@ async function addMsg(req, res) {
   try {
     const msg = req.body.msg
     const topic = req.body.topic
-    console.log('add msg:',msg);
-    console.log('add topic:',topic);
+    // console.log('add msg:',msg);
+    // console.log('add topic:',topic);
     const addedMsg = await msgService.addMsg(msg, topic)
     res.send(addedMsg)
+  } catch (err) {
+    logger.error('Failed to add msg', err)
+    res.status(500).send({ err: 'Failed to add msg' })
+  }
+}
+
+async function updateLastSeen(req, res) {
+  try {
+    const userId = req.body.userId;
+    const topic = req.body.topic;
+    // console.log('update userId:',userId);
+    // console.log('update topic:',topic);
+    const updatedChat = await msgService.updateLastSeen(userId, topic)
+    // console.log('update topic:',updatedChat);
+
+    res.send(updatedChat)
   } catch (err) {
     logger.error('Failed to add msg', err)
     res.status(500).send({ err: 'Failed to add msg' })

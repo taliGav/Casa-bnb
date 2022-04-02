@@ -60,7 +60,7 @@ export default {
     socketService.on('chat addMsg', this.addMsg);
   },
   destroyed() {
-    socketService.off('chat addMsg', this.addMsg);
+    socketService.off('chat addMsg');
   },
   computed:{
     allChats(){
@@ -76,8 +76,7 @@ export default {
     },
     addMsg(msg) {
       console.log('socketttttttt');
-      this.$store.commit({ type: 'saveMsg', msg: msg })
-      // this.chats[this.curChatIdx].msgs.push(msg);
+      this.$store.commit({ type: 'saveMsg', msg: msg,topic:this.curTopic })
     },
     async sendMsg() {
       this.msg.createdAt= Date.now();
@@ -86,6 +85,7 @@ export default {
       console.log('Sending got', msg);
       socketService.emit('chat newMsg', msg);
       this.msg.txt='';
+      this.updateLastSeen()
     },
     setTopic(topic) {
       console.log('chat topic:',topic);
@@ -93,10 +93,17 @@ export default {
       this.$store.commit({ type: 'setCurChat', topic })
       console.log('chat chat:',this.curChatIdx);
       socketService.emit('chat topic', topic);
+      if(this.chats[this.curChatIdx].msgs.length){
+      this.updateLastSeen()
+      }
     },
     async getChats(){
       const chats = await this.$store.dispatch({type:"getAllChat", userId:this.user._id})
       this.$store.commit({ type: 'setCurChat', topic:this.curTopic })      
+    },
+    updateLastSeen(){
+      this.$store.dispatch({ type:'lastSeen', userId:this.user._id,topic:this.curTopic})
+
     }
   },
   components: {
