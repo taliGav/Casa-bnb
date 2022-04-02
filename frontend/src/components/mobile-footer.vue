@@ -48,16 +48,15 @@ export default {
 		};
 	},
 	async created() {
-		try {
-			this.loggedUser = await this.$store.getters.user;
-			console.log(this.loggedUser);
-			socketService.emit('topic', this.loggedUser._id);
-			socketService.on('add order', this.createNotification);
-			// console.log('');
-		} catch (err) {
-			console.log('got error getting a user', err);
-		}
-
+		// try {
+		// 	this.loggedUser = this.$store.getters.user;
+		// 	console.log(this.loggedUser);
+		// 	socketService.emit('topic', this.loggedUser._id);
+		// 	socketService.on('add order', this.createNotification);
+		// 	// console.log('');
+		// } catch (err) {
+		// 	console.log('got error getting a user', err);
+		// }
 		// console.log(this.loggedUser);
 		// if (this.loggedUser) {
 		// }
@@ -88,11 +87,22 @@ export default {
 		readNotification() {
 			this.notification = '';
 		},
+		setSocket() {
+			this.loggedUser = this.getUser;
+			if (!this.loggedUser) return;
+			console.log(this.getUser);
+			socketService.emit('topic', this.loggedUser._id);
+			socketService.on('add order', this.createNotification);
+			console.log('the socket has been set', this.loggedUser._id);
+		},
 	},
 	computed: {
 		screenStatus() {
 			if (this.screenSize?.path === 'stay') return false;
 			else return true;
+		},
+		getUser() {
+			return this.$store.getters.user;
 		},
 		// mobileMenu() {
 		// 	return { 'bottom-slide': this.isMobileMenu };
@@ -101,7 +111,9 @@ export default {
 	components: {
 		mobileMenu,
 	},
-	// watch:
+	watch: {
+		getUser: 'setSocket',
+	},
 };
 </script>
 <style></style>

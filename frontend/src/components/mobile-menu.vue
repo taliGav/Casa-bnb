@@ -9,7 +9,7 @@
 			<p>Wishlists</p>
 			<p @click="moveToListings">
 				Manage listings
-				<span class="notification-red" v-if="orderStatus">!!!</span>
+				<span class="notification-red" v-if="orderStatus">❗</span>
 			</p>
 			<!-- <p>Manage listings</p> -->
 			<p>Account</p>
