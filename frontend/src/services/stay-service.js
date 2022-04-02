@@ -107,28 +107,28 @@ const PopularDest = [
 
 const PopularStays = [
   {
-    "_id": "10006546",
+    "_id": "624179570927e9ee1531afba",
     name: "Ribeira Charming Duplex",
     "country": "United States",
-    imgUrl: "/src/assets/images/001.jpeg"
+    imgUrl: "https://res.cloudinary.com/cajan-22/image/upload/v1648561314/casaBnb/015_mgdifp.jpg"
   },
   {
-    "_id": "10006547",
-    name: "Belle chambre à côté Metro Papineau",
+    "_id": "624179570927e9ee1531afbb",
+    name: "Belle chambre",
     "country": "Canada",
-    imgUrl: "/src/assets/images/006.jpeg"
+    imgUrl: "https://res.cloudinary.com/cajan-22/image/upload/v1648561309/casaBnb/007_ippncu.jpg"
   },
   {
-    "_id": "10006548",
-    name: "M&M Space MM2  Apartamento no centro da cidade",
+    "_id": "624179570927e9ee1531afbc",
+    name: "Apartamento no centro",
     "country": "Portugal",
-    imgUrl: "/src/assets/images/011.jpeg"
+    imgUrl: "https://res.cloudinary.com/cajan-22/image/upload/v1648561305/casaBnb/002_vsafjd.jpg"
   },
   {
-    "_id": "10006531",
-    name: "Fresh and modern 1BR in Bed-Stuy",
+    "_id": "624179570927e9ee1531afbd",
+    name: "Modern 1BR in Bed-Stuy",
     "country": "United States",
-    imgUrl: "/src/assets/images/016.jpeg"
+    imgUrl: "https://res.cloudinary.com/cajan-22/image/upload/v1648561317/casaBnb/019_ccohaq.jpg"
   },
 ];
 

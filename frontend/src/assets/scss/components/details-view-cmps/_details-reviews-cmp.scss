@@ -30,8 +30,13 @@
 
         .preview-data {
             margin-bottom: 40px;
-            justify-content: stretch;
+            // justify-content: stretch;
+            // max-height: 200px;
+            text-overflow: none;
 
+            p{
+                text-overflow: none;
+            }
             .reviewer-dets {
                 margin-bottom: 12px;
 
@@ -44,6 +49,7 @@
 
                 .reviewer-name {
                     margin-left: 12px;
+                    padding: 7px 0;
 
                     p {
                         color: $gray-1;

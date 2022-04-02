@@ -1,0 +1,59 @@
+.reservation-confirm-modal {
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    max-width: 570px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 28px;
+    border-radius: 12px;
+    
+    .loading-icon{
+        width: 100px;
+        height: 100px;
+    }
+
+    h3{
+        color: black;
+    }
+    p{
+        margin: 10px;
+    }
+
+    span { 
+        font-weight: bold;
+    }
+
+    h3 {
+        margin: 20px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    button {
+        background: #f72359;
+        padding: 1em 2em;
+        border: none;
+        color: white;
+        font-size: 1.2em;
+        cursor: pointer;
+        outline: none;
+        overflow: hidden;
+        border-radius: 10px;
+        z-index: 200;
+        margin: 20px;
+        width: 150px;
+        
+        &:hover{
+            background-color:#f72358a4;
+        }
+    }
+    .confirm-btn {
+        background-color: rgb(22, 235, 22);
+        &:hover{
+            background-color: rgba(22, 235, 22, 0.712);
+        }
+    }
+}

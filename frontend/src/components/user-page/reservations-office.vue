@@ -9,10 +9,10 @@
         </div>
         <ul class="responsive-table">
           <li class="table-header">
-            <div class="col col-1">Status</div>
-            <div class="col col-2">Details</div>
-            <div class="col col-3">Guest</div>
-            <div class="col col-4">Actions</div>
+            <div class="col col-1">STATUS</div>
+            <div class="col col-2">DETAILS</div>
+            <div class="col col-3">GUEST</div>
+            <div class="col col-4">ACTIONS</div>
           </li>
 
           <reservations-table

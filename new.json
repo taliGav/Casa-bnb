@@ -1,0 +1,1566 @@
+[
+]
+
+/* 21 */
+{
+    "_id" : ObjectId("624573f110295c27b8ff8a58"),
+    "name" : "1 Stop fr. Manhattan! Private Suite,Landmark Block",
+    "summary" : "Private room, dedicated bath and a separate entrance. Totally renovated Queen Anne Historic Townhouse Home on a safe, Landmark Block. Only one stop from Midtown Manhattan! Enjoy the rear private Garden at breakfast time. Beautiful tree lined,quiet street. 4 subway lines ( E, M, 7 and G ) are one block away! Great restaurants, supermarket and cafes nearby.",
+    "type" : "Townhouse",
+    "imgUrls" : [ 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561314/casaBnb/015_mgdifp.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561314/casaBnb/014_eosj7f.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561313/casaBnb/011_cyeoqo.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561318/casaBnb/018_bfbhls.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561315/casaBnb/017_dba58z.jpg"
+    ],
+    "price" : 140.0,
+    "capacity" : 3.0,
+    "bedrooms" : 2.0,
+    "beds" : 4.0,
+    "bathrooms" : 2.0,
+    "amenities" : [ 
+        "TV", 
+        "Cable TV", 
+        "Internet", 
+        "Wifi", 
+        "Air conditioning", 
+        "Wheelchair accessible", 
+        "Pool", 
+        "Kitchen", 
+        "Free parking on premises", 
+        "Doorman", 
+        "Gym", 
+        "Elevator", 
+        "Hot tub", 
+        "Heating", 
+        "Family/kid friendly", 
+        "Suitable for events", 
+        "Washer", 
+        "Dryer", 
+        "Smoke detector", 
+        "Carbon monoxide detector", 
+        "First aid kit", 
+        "Safety card", 
+        "Fire extinguisher", 
+        "Essentials", 
+        "Shampoo", 
+        "24-hour check-in", 
+        "Hangers", 
+        "Hair dryer", 
+        "Iron", 
+        "Laptop friendly workspace", 
+        "Self check-in", 
+        "Building staff", 
+        "Private entrance", 
+        "Room-darkening shades", 
+        "Hot water", 
+        "Bed linens", 
+        "Extra pillows and blankets", 
+        "Ethernet connection", 
+        "Luggage dropoff allowed", 
+        "Long term stays allowed", 
+        "Ground floor access", 
+        "Wide hallway clearance", 
+        "Step-free access", 
+        "Wide doorway", 
+        "Flat path to front door", 
+        "Well-lit path to entrance", 
+        "Disabled parking spot", 
+        "Step-free access", 
+        "Wide doorway", 
+        "Wide clearance to bed", 
+        "Step-free access", 
+        "Wide doorway", 
+        "Step-free access", 
+        "Wide entryway", 
+        "Waterfront", 
+        "Beachfront"
+    ],
+    "host" : {
+        "_id" : "6241ae7f0927e9ee1531afc0",
+        "fullname" : "Patty And Beckett",
+        "imgUrl" : "https://res.cloudinary.com/cajan-22/image/upload/v1648565026/casaBnb/users/c111_w2dod5.jpg"
+    },
+    "loc" : {
+        "street" : "Queens, NY, United States",
+        "country" : "United States",
+        "location" : {
+            "lan" : -73.9474,
+            "lat" : 40.74771
+        },
+        "countryCode" : "US",
+        "city" : "New York"
+    },
+    "reviewScores" : {
+        "accuracy" : 9.0,
+        "cleanliness" : 10.0,
+        "checkin" : 10.0,
+        "communication" : 10.0,
+        "location" : 9.0,
+        "value" : 9.0,
+        "rating" : 90.0
+    },
+    "reviews" : [ 
+        {
+            "createdAt" : "2018-10-29T04:00:00.000Z",
+            "txt" : "Super clean! Great service",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "u101",
+                "fullname" : "Ludovino Moura",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/9.jpg"
+            }
+        }, 
+        {
+            "createdAt" : "2018-05-29T04:00:00.000Z",
+            "txt" : "Very helpful hosts. Cooked traditional...",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "u102",
+                "fullname" : "Jonans Pierre",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/93.jpg"
+            }
+        }, 
+        {
+            "createdAt" : "2018-05-29T04:00:00.000Z",
+            "txt" : "Great space, fabulous garden and very private.  My visiting inlaws stayed there and were very comfortable.  I would recommend to anyone.",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "u102",
+                "fullname" : "Jonans Pierre",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/96.jpg"
+            }
+        }
+    ],
+    "likedByUsers" : [ 
+        "mini-user"
+    ]
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("6245761310295c27b8ff8a59"),
+    "name" : "The most beautiful Townhouse in Manhattan!",
+    "summary" : "Private room, dedicated bath and a separate entrance. Totally renovated Queen Anne Historic Townhouse Home on a safe, Landmark Block. Only one stop from Midtown Manhattan! Enjoy the rear private Garden at breakfast time. Beautiful tree lined,quiet street. 4 subway lines ( E, M, 7 and G ) are one block away! Great restaurants, supermarket and cafes nearby.",
+    "type" : "Townhouse",
+    "imgUrls" : [ 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561344/casaBnb/089_sduadk.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561344/casaBnb/088_rwiwca.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561342/casaBnb/086_jhg29f.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561344/casaBnb/090_weikl5.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561346/casaBnb/096_lkl5t9.jpg"
+    ],
+    "price" : 140.0,
+    "capacity" : 3.0,
+    "bedrooms" : 2.0,
+    "beds" : 4.0,
+    "bathrooms" : 2.0,
+    "amenities" : [ 
+        "TV", 
+        "Cable TV", 
+        "Internet", 
+        "Wifi", 
+        "Extra pillows and blankets"
+    ],
+    "host" : {
+        "_id" : "6241ae7f0927e9ee1531afc0",
+        "fullname" : "Patty And Beckett",
+        "imgUrl" : "https://res.cloudinary.com/cajan-22/image/upload/v1648565026/casaBnb/users/c111_w2dod5.jpg"
+    },
+    "loc" : {
+        "street" : "Queens, NY, United States",
+        "country" : "United States",
+        "location" : {
+            "lan" : -73.9474,
+            "lat" : 40.74771
+        },
+        "countryCode" : "US",
+        "city" : "New York"
+    },
+    "reviewScores" : {
+        "accuracy" : 9.0,
+        "cleanliness" : 10.0,
+        "checkin" : 10.0,
+        "communication" : 10.0,
+        "location" : 9.0,
+        "value" : 9.0,
+        "rating" : 90.0
+    },
+    "reviews" : [ 
+        {
+            "createdAt" : "2018-10-29T04:00:00.000Z",
+            "txt" : "Super clean! Great service",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "u101",
+                "fullname" : "Ludovino Moura",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/9.jpg"
+            }
+        }, 
+        {
+            "createdAt" : "2018-05-29T04:00:00.000Z",
+            "txt" : "Very helpful hosts. Cooked traditional...",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "u102",
+                "fullname" : "Jonans Pierre",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/93.jpg"
+            }
+        }, 
+        {
+            "createdAt" : "2018-05-29T04:00:00.000Z",
+            "txt" : "Great space, fabulous garden and very private.  My visiting inlaws stayed there and were very comfortable.  I would recommend to anyone.",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "u102",
+                "fullname" : "Jonans Pierre",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/96.jpg"
+            }
+        }
+    ],
+    "likedByUsers" : [ 
+        "mini-user"
+    ]
+}
+
+/* 23 */
+{
+    "_id" : ObjectId("624577a110295c27b8ff8a5a"),
+    "name" : "Great apartment in Montreal's center",
+    "type" : "Condominium ",
+    "imgUrls" : [ 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561351/casaBnb/109_gkmw43.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561350/casaBnb/107_s3yrpm.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561349/casaBnb/108_c1bk27.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561349/casaBnb/106_no15l9.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561349/casaBnb/105_vbzzuj.jpg"
+    ],
+    "price" : 80.0,
+    "summary" : "Fantastic duplex apartment with three bedrooms, located in the historic area of Montreal!",
+    "capacity" : 5.0,
+    "bedrooms" : 2.0,
+    "beds" : 3.0,
+    "bathrooms" : 2.0,
+    "amenities" : [ 
+        "TV", 
+        "Kitchen", 
+        "Elevator", 
+        "Buzzer/wireless intercom", 
+        "Heating", 
+        "Family/kid friendly", 
+        "Washer", 
+        "Dryer", 
+        "Smoke detector", 
+        "Carbon monoxide detector", 
+        "Essentials", 
+        "Iron", 
+        "translation missing: en.hosting_amenity_50"
+    ],
+    "host" : {
+        "_id" : "6241ae7f0927e9ee1531afc1",
+        "fullname" : "Angel",
+        "imgUrl" : "https://randomuser.me/api/portraits/women/54.jpg"
+    },
+    "loc" : {
+        "street" : "Montréal, QC, Canada",
+        "country" : "Canada",
+        "location" : {
+            "lan" : -73.54985,
+            "lat" : 45.52797
+        },
+        "countryCode" : "CA",
+        "city" : "Montreal"
+    },
+    "reviewScores" : {
+        "accuracy" : 9.0,
+        "cleanliness" : 10.0,
+        "checkin" : 10.0,
+        "communication" : 10.0,
+        "location" : 9.0,
+        "value" : 9.0,
+        "rating" : 90.0
+    },
+    "reviews" : [ 
+        {
+            "createdAt" : "2016-07-07T04:00:00.000Z",
+            "txt" : "The place was great, as was the host! I would recommend staying here.",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "u103",
+                "fullname" : "May Lee",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/17.jpg"
+            }
+        }, 
+        {
+            "createdAt" : "2016-07-12T04:00:00.000Z",
+            "txt" : "J'ai adoré rester là. Très acceuillant.",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "u103",
+                "fullname" : "Adriana",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/19.jpg"
+            }
+        }, 
+        {
+            "createdAt" : "2016-08-02T04:00:00.000Z",
+            "txt" : "Angel was warm and welcoming and has a beautiful apartment. I'd recommend his place to anyone visiting downtown Montreal!",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "u103",
+                "fullname" : "Jeffery",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/84.jpg"
+            }
+        }
+    ],
+    "likedByUsers" : [ 
+        "mini-user"
+    ]
+}
+
+/* 24 */
+{
+    "_id" : ObjectId("624578ad10295c27b8ff8a5b"),
+    "name" : "Inner City Spacious Loft- City View",
+    "type" : "Loft",
+    "imgUrls" : [ 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561308/casaBnb/144_v5v7dz.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561351/casaBnb/120_cxbyfr.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561352/casaBnb/125_hp8otw.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561356/casaBnb/139_atda3o.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561355/casaBnb/136_hxganv.jpg"
+    ],
+    "price" : 187.0,
+    "summary" : "This beautiful, sunny loft room is on the top floor of a three storey free-standing terrace in Redfern. The room is very spacious, private, quiet and open. We are a family of 4 adults and will give you as much privacy or company as you would like.",
+    "capacity" : 2.0,
+    "bedrooms" : 1.0,
+    "beds" : 1.0,
+    "bathrooms" : 1.0,
+    "amenities" : [ 
+        "TV", 
+        "Cable TV", 
+        "Internet", 
+        "Air conditioning", 
+        "Free cancellation", 
+        "Kitchen", 
+        "Paid parking off premises", 
+        "Free street parking", 
+        "Buzzer/wireless intercom", 
+        "Family/kid friendly", 
+        "Washer", 
+        "Essentials", 
+        "Shampoo", 
+        "Lock on bedroom door", 
+        "24-hour check-in", 
+        "Hangers", 
+        "Hair dryer", 
+        "Iron", 
+        "Laptop friendly workspace", 
+        "Long term stays allowed", 
+        "Wide doorway", 
+        "Well-lit path to entrance", 
+        "Step-free access", 
+        "Wide doorway", 
+        "Accessible-height bed", 
+        "Step-free access", 
+        "Wide doorway", 
+        "Accessible-height toilet", 
+        "Step-free access", 
+        "Wide entryway", 
+        "Host greets you", 
+        "Handheld shower head", 
+        "Paid parking on premises", 
+        "Fixed grab bars for shower"
+    ],
+    "host" : {
+        "_id" : "6241ae7f0927e9ee1531afc2",
+        "fullname" : "Maria",
+        "imgUrl" : "https://randomuser.me/api/portraits/women/14.jpg"
+    },
+    "loc" : {
+        "street" : "Porto, Porto, Portugal",
+        "country" : "Portugal",
+        "location" : {
+            "lan" : -8.60154,
+            "lat" : 41.14834
+        },
+        "countryCode" : "PT",
+        "city" : "Porto"
+    },
+    "reviewScores" : {
+        "accuracy" : 9.0,
+        "cleanliness" : 10.0,
+        "checkin" : 10.0,
+        "communication" : 10.0,
+        "location" : 9.0,
+        "value" : 9.0,
+        "rating" : 90.0
+    },
+    "reviews" : [ 
+        {
+            "id" : "madeId",
+            "createdAt" : "2021-07-18T04:00:00.000Z",
+            "txt" : "Very helpful hosts. Cooked traditional...",
+            "rate" : 2.0,
+            "by" : {
+                "_id" : "u104",
+                "fullname" : "Jonas Pierre",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/93.jpg"
+            }
+        }, 
+        {
+            "id" : "madeId",
+            "createdAt" : "2021-08-10T04:00:00.000Z",
+            "txt" : "The place was great, as was the host! I would recommend staying here.",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "u103",
+                "fullname" : "Antonio Nguyen",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/40.jpg"
+            }
+        }, 
+        {
+            "createdAt" : "2013-05-27T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3402e36c59e6164fada7",
+                "fullname" : "Dirk",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/80.jpg"
+            },
+            "txt" : "Our stay at Maria and Alborto was fantastic. They are very friendly. Their house is spacious and in a quiet neighnourhood, though close enough for a walk to the city centre. They have a nice bathroom wit ha bath and a beautiful garden full of fruit trees, flowers and a o so nice hammock :)\r\nI would almost forget to say about the really good breakfast which is included. Could highly recommend.\r\n\r\nThanks again!\r\nDirk and Hilde"
+        }, 
+        {
+            "createdAt" : "2013-06-19T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3403e36c59e6164fb011",
+                "fullname" : "Fara",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/55.jpg"
+            },
+            "txt" : "Nous avons été très satisfaits de notre séjour chez Maria et Alberto. Ils sont juste adorables, au petit soin des invités. \r\nLa maison est très propre, lumineux et possède un jardin sympathique. Elle est 1000 fois mieux que sur les photos (je n'exagère pas :) )\r\n\r\nVous pouvez y aller les yeux fermés. Ils sont formidables.\r\n\r\nEncore un GRAND MERCI!!! "
+        }, 
+        {
+            "createdAt" : "2013-06-23T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbf8f",
+                "fullname" : "Charles",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/83.jpg"
+            },
+            "txt" : "Un séjour au top ! Maria et son mari ont été très accueillant ! Ils nous ont donné beaucoup de conseils pour notre séjour pour tout ce qui est lieux à visiter, bonnes adresses... \r\nLa maison est superbe, la salle de bain ultra spacieuse, le lit est spacieux et on y dort très bien. Le luxe : un petit déjeuner complet et vraiment bon dans un jardin très agréable ! \r\nUne superbe adresse pour visiter la magnifique ville de Porto ! \r\nCharles&Constance"
+        }, 
+        {
+            "createdAt" : "2013-06-24T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3404e36c59e6164fb5ae",
+                "fullname" : "Wee Sian",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/80.jpg"
+            },
+            "txt" : "Conveniently located near the Campanha station, easy for us travelling by train from porto to lisboa. Maria and her husband were extremely helpful!! They gave wonderful recommendations for things to do in porto and told us about the history and culture of portugal. Delicious and generous breakfast. clean and comfortable rooms and toilets. Maria even went the extra mile to get us pasteis de natas for breakfast simply because we enquired the day before on where we could find some in Porto. Highly recommended!!"
+        }
+    ],
+    "likedByUsers" : [ 
+        "mini-user"
+    ]
+}
+
+/* 25 */
+{
+    "_id" : ObjectId("6245795c10295c27b8ff8a5c"),
+    "name" : "Private Room with perfect location in Brooklyn",
+    "type" : "Apartment",
+    "imgUrls" : [ 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561353/casaBnb/128_gktxva.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561355/casaBnb/135_lb2613.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561354/casaBnb/133_bysqie.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561353/casaBnb/132_y3lebe.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561352/casaBnb/125_hp8otw.jpg"
+    ],
+    "price" : 133.0,
+    "summary" : "The house is the perfect choice for travelers who wants to discover and experience local side of Brooklyn.  The flat is fully equipped for your comfort.",
+    "capacity" : 2.0,
+    "bedrooms" : 1.0,
+    "beds" : 1.0,
+    "bathrooms" : 1.0,
+    "amenities" : [ 
+        "Internet", 
+        "Wifi", 
+        "Air conditioning", 
+        "Heating", 
+        "Family/kid friendly", 
+        "Smoke detector", 
+        "Carbon monoxide detector", 
+        "Fire extinguisher", 
+        "Essentials", 
+        "Shampoo", 
+        "24-hour check-in", 
+        "Hangers", 
+        "Hair dryer", 
+        "Iron", 
+        "Laptop friendly workspace", 
+        "translation missing: en.hosting_amenity_49", 
+        "Self check-in", 
+        "Lockbox"
+    ],
+    "host" : {
+        "_id" : "6241ae7f0927e9ee1531afc3",
+        "fullname" : "Shaila & Alex",
+        "imgUrl" : "https://res.cloudinary.com/cajan-22/image/upload/v1648564925/casaBnb/users/c2-2_i4tvjd.jpg"
+    },
+    "loc" : {
+        "street" : "Brooklyn, NY, United States",
+        "country" : "United States",
+        "location" : {
+            "lan" : -73.92922,
+            "lat" : 40.68683
+        },
+        "countryCode" : "US",
+        "city" : "New York"
+    },
+    "reviewScores" : {
+        "accuracy" : 9.0,
+        "cleanliness" : 10.0,
+        "checkin" : 10.0,
+        "communication" : 10.0,
+        "location" : 9.0,
+        "value" : 9.0,
+        "rating" : 90.0
+    },
+    "reviews" : [ 
+        {
+            "id" : "madeId",
+            "createdAt" : "2022-03-10T04:00:00.000Z",
+            "txt" : "Very helpful hosts. Cooked traditional...",
+            "rate" : 3.0,
+            "by" : {
+                "_id" : "u102",
+                "fullname" : "Wardenaar Hans",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/50.jpg"
+            }
+        }, 
+        {
+            "id" : "madeId",
+            "createdAt" : "2022-01-10T04:00:00.000Z",
+            "txt" : "The place was great, as was the host! I would recommend staying here.",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "u103",
+                "fullname" : "Mikkola Aapo",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/97.jpg"
+            }
+        }
+    ],
+    "likedByUsers" : [ 
+        "mini-user"
+    ]
+}
+
+/* 26 */
+{
+    "_id" : ObjectId("62457a7210295c27b8ff8a5d"),
+    "name" : "Room Close to LGA and 35 mins to Times Square",
+    "summary" : "A private small bedroom in a 2 BR 1BA apartment. There’s no living area as I converted to live in. The location is 2 minutes to Q33 bus stop, 5 minutes to 7 train station ( which directly takes you to Times Square in 35-40 minutes ).",
+    "interaction" : "I am great with communicating with my guest and making sure everyone is comfortable as possible. The apartment is yours to use but I am only a phone call away!",
+    "type" : "Apartment",
+    "price" : 70.0,
+    "imgUrls" : [ 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561315/casaBnb/148_jdaohd.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561305/casaBnb/142_vf1vhj.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561303/casaBnb/141_rnrona.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561303/casaBnb/140_ynf95i.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561311/casaBnb/151_exgx0v.jpg"
+    ],
+    "capacity" : 3.0,
+    "bedrooms" : 1.0,
+    "bathrooms" : 1.0,
+    "beds" : 1.0,
+    "numOfReviews" : 199.0,
+    "amenities" : [ 
+        "TV", 
+        "Wifi", 
+        "Air conditioning", 
+        "Kitchen", 
+        "Free street parking", 
+        "Heating", 
+        "Smoke detector", 
+        "Carbon monoxide detector", 
+        "Essentials", 
+        "Shampoo", 
+        "Lock on bedroom door", 
+        "Hangers", 
+        "Iron", 
+        "Laptop friendly workspace", 
+        "Private living room", 
+        "Hot water", 
+        "Bed linens", 
+        "Extra pillows and blankets", 
+        "Refrigerator", 
+        "Dishes and silverware", 
+        "Cooking basics", 
+        "Oven", 
+        "Stove", 
+        "Host greets you"
+    ],
+    "host" : {
+        "_id" : "622f3405e36c59e6164fb914",
+        "fullname" : "Kevin",
+        "location" : "New York, New York, United States",
+        "about" : "Welcome Everyone! Thank you for stopping by. \r\n\r\nI was born and raised in Manhattan and I am here to help  share the New York City Experience with others through Airbnb!  I am easy to connect with and very reachable and always willing to interact with people. \r\n\r\nI am big on cleanliness and hospitality. I strive on making Guests feel as comfortable as possible. \r\n\r\nI hope you would like to get a chance to visit my location and enjoy the hosting I provide. If you have any questions/ comments, feel free to contact me. \r\n",
+        "responseTime" : "within a few hours",
+        "imgUrl" : "https://randomuser.me/api/portraits/men/37.jpg"
+    },
+    "loc" : {
+        "street" : "New York, NY, United States",
+        "country" : "United States",
+        "location" : {
+            "lan" : -73.93955,
+            "lat" : 40.79733
+        },
+        "countryCode" : "US",
+        "city" : "New York"
+    },
+    "reviewScores" : {
+        "accuracy" : 9.0,
+        "cleanliness" : 10.0,
+        "checkin" : 10.0,
+        "communication" : 10.0,
+        "location" : 9.0,
+        "value" : 9.0,
+        "rating" : 90.0
+    },
+    "reviews" : [ 
+        {
+            "createdAt" : "2022-03-10T04:00:00.000Z",
+            "txt" : "Kevin was very welcoming and thorough with all information. The description of the property was accurate. It's also near the MTA if you want to get to another part of the city. Kevin got in touch before I arrived, and his brother was there to meet me and show me where everything was, which was great. Last but not least, he had provided a great information on the local area with recommendations for places to eat, etc., which I found really useful.\r\n",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3405e36c59e6164fb8b4",
+                "fullname" : "Christine",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/81.jpg"
+            }
+        }, 
+        {
+            "createdAt" : "2022-03-10T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbdb9",
+                "fullname" : "Hector",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/84.jpg"
+            },
+            "txt" : "Kevin was nice. And he was very responsive via text, which I appreciate. The listing is in East Harlem, which isn't for everyone. The area is not very posh, but, for me, it feels like home, so I tend to stay there whenever I go to New York. The listing description was accurate enough, with respect to the way the apartment looks. If you can't deal with noise at night, however, this might not be the place for you. The neighbors were surprisingly noisy in the wee hours of the night and virtually silent during the day. This apartment is close to the subway, which was very useful."
+        }, 
+        {
+            "createdAt" : "2021-12-10T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbdca",
+                "fullname" : "Jaime",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/51.jpg",
+                "id" : "37244180"
+            },
+            "txt" : "Kevin was very helpful and communicative during the whole time. The apartment is very nice, and within walking distance to the subway. Would definitely stay there again."
+        }, 
+        {
+            "createdAt" : "2021-11-10T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3402e36c59e6164fae69",
+                "fullname" : "Anan",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/53.jpg",
+                "id" : "30380132"
+            },
+            "txt" : "I had a wonderful stay at Kevin's apartment. The apartment is very close to the six train line. Everything in the apartment was spotless clean. I definitely recommend this apartment to others. Thank you Kevin for hosting me!"
+        }, 
+        {
+            "createdAt" : "2021-10-10T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbf23",
+                "fullname" : "Yamilis",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/35.jpg",
+                "id" : "5684819"
+            },
+            "txt" : "Kevin fue excelente anfitrión. Se mantuvo en contacto con nosotros y fue muy comprensivo aún cuando llegamos más tarde de la hora acordada para el check in porque nos perdimos en el subway. También fue muy comprensivo para acordar el check out de acuerdo a la hora que fue más conveniente para nosotros, aún cuando también se nos hizo tarde. Nos proveyó de un matress de aire para nuestra amiga que vino de M.A. y se quedó una noche con nosotros. El barrio nos pareció bien, no tuvimos ningún incidente. Muchos puertoriqueños y Dominicanos, así que nos sentimos como en casa. Todo fue muy cómodo y limpio. Los vecinos hicieron mucho ruido en las noches, pero no fue problema para nosotros. Una sugerencia sería poner un espejo de cuerpo completo en alguna parte del apartento. En resumen, el apartamento fue perfecto para nosotros, nos volveríamos a quedar y claro que lo recomendaría! Muchas Gracias Kevin por tu ayuda!"
+        }, 
+        {
+            "createdAt" : "2021-09-10T04:00:00.000Z",
+            "rate" : 3.0,
+            "by" : {
+                "_id" : "622f3405e36c59e6164fb6a4",
+                "fullname" : "Leonam",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/54.jpg",
+                "id" : "44604680"
+            },
+            "txt" : "Kevin was really thoughtful about everything. He gave me all information needed while staying on his house. The house was very clean."
+        }, 
+        {
+            "createdAt" : "2021-10-10T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fc063",
+                "fullname" : "Amy",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/36.jpg"
+            },
+            "txt" : "Kevin is a really nice host, flexible and very responsive. The apartment is a 4th-floor walk up, well-maintained and exactly as advertised in the listing. The apartment has all the basic things--it's especially nice to have a kitchen and comfy sofa. There's no TV and wifi, but you probably don't need it anyway since you are here to see New York city! It is just a short 5-min walk from the subway station, so very convenient. Street noise is not a problem although you can hear the neighbors at times (the kids next door can be noisy). East Harlem is a bustling Latino neighborhood with many local eateries and shops. The food selection is supposed to be great (too bad we didn't get to try any). There is a grocery store right outside the building. There're always locals hanging out in front but we were never bothered. All and all, a good choice if you are looking to stay in this part of the city."
+        }, 
+        {
+            "createdAt" : "2021-10-10T04:00:00.000Z",
+            "rate" : 5.0,
+            "txt" : "Kevin was an excellent host. Everything was absolutely as described. The apartment is lovely and very clean. There are numerous windows in every room and there is plenty of light! Would definitely stay again!",
+            "by" : {
+                "_id" : "622f3401e36c59e6164fab7d",
+                "fullname" : "Vlad",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/20.jpg"
+            }
+        }, 
+        {
+            "createdAt" : "2021-08-10T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbe7b",
+                "fullname" : "Derick",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/60.jpg"
+            },
+            "txt" : "Great experience, we enjoyed ourselves for the night we stayed, only issue really were the neighbors being loud all night made it hard to sleep."
+        }, 
+        {
+            "createdAt" : "2021-07-10T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbefb",
+                "fullname" : "Derek",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/50.jpg"
+            },
+            "txt" : "Kevin's place is exactly as other reviewers describe it:  nice and clean, spacious and very convenient as a base to explore and enjoy NYC. \r\n\r\nThe Neighborhood is definitely classic East Harlem.  Very real NYC vibe. Not a tourist area.  \r\n\r\nThe neighbors are noisy sometimes, so if you are a light sleeper, that could be a problem. But I didn't have any trouble. \r\n\r\nIt would have been nice to have wireless, but I didn't come to NYC to play online, so I didn't mind that too much.  \r\n\r\nKevin was a very nice, responsive host! "
+        }, 
+        {
+            "createdAt" : "2021-05-10T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3404e36c59e6164fb484",
+                "fullname" : "Shiann",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/37.jpg"
+            },
+            "txt" : "Kevin made my friend and I feel really welcomed. The apartment was very clean!"
+        }, 
+        {
+            "createdAt" : "2021-03-10T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3403e36c59e6164fb208",
+                "fullname" : "Stephanie",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/50.jpg"
+            },
+            "txt" : "Me and my husband stayed in the apartment this was our first time using this site and Kevin made us feel like we are regulars. We stayed one night and it was wonderful. Kevin contacted us right away and was really good with getting us whatever we need to stay there. The area is the only bad thing but when we went in the apartment you really forget about the outside."
+        }, 
+        {
+            "createdAt" : "2020-01-10T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3404e36c59e6164fb52c",
+                "fullname" : "Virginie",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/60.jpg"
+            },
+            "txt" : "Kevin is easy to get in touch with and waited for us to arrive Even if it was already late in the evening. He even asked if everything was fine during our stay.\nThe appartment is perfectly situated to visit Manhattan island. Just note the neighbours are noisy if it is important to you."
+        }, 
+        {
+            "createdAt" : "2019-08-10T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3405e36c59e6164fb803",
+                "fullname" : "Ada",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/61.jpg"
+            },
+            "txt" : "Kevin was absolutely wonderful. He was very responsive and communicative and I could tell he takes great pride in being an exceptional host. His place was exactly as described, as shown in the pictures and also very clean. The neighborhood is great and the room is a great price for someone looking to stay in the city and explore. It's right next to the trains, neighborhood gems but also commonly known stores for anyone who isn't familiar with the area. "
+        }, 
+        {
+            "createdAt" : "2019-06-10T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3406e36c59e6164fbc21",
+                "fullname" : "Fernando",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/51.jpg"
+            },
+            "txt" : "everything was correct , very good condition to this price"
+        }, 
+        {
+            "createdAt" : "2018-08-10T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbdfe",
+                "fullname" : "Francesca",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/52.jpg"
+            },
+            "txt" : "This is my first time using Airbnb. Kevin responded quickly to my inquiry about booking his apartment. Once booked he was very easy to reach via phone or text if I needed to. His one bedroom apartment was very clean and nicely furnished. It is central to a lot of restaurants and neighborhood shopping should you need something and a couple blocks from the subway and buses. Kevin was a great host. He was there to greet me, show me around the apartment and tell me a bit about the area. He also has maps and booklets about what to visit while in New York City. There is wifi in the apartment which is great. Kevin checked in with me just to make sure everything was ok during my trip. I had a wonderful stay at his apartment and would book it again! "
+        }, 
+        {
+            "createdAt" : "2018-07-10T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3404e36c59e6164fb4de",
+                "fullname" : "Alex",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/53.jpg"
+            },
+            "txt" : "Kevin was a phenomenal host, he was very accommodating about arrival and check out times and provided me with a ton of useful information to navigate the area and make my stay as pleasant as possible. The apartment is two blocks from the subway and easy to navigate from. I would definitely recommend staying at Kevin's for all those considering a trip to New York."
+        }, 
+        {
+            "createdAt" : "2018-06-10T04:00:00.000Z",
+            "rate" : 3.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbd08",
+                "fullname" : "Johanna",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/54.jpg"
+            },
+            "txt" : "The apartment is as described. Kevin is very pleasant and was kind to helped me bring my belongings to the apartment. The apartment is cozy in a great location. I will definitely be using this apartment again"
+        }, 
+        {
+            "createdAt" : "2018-03-10T04:00:00.000Z",
+            "rate" : 3.0,
+            "by" : {
+                "_id" : "622f3405e36c59e6164fb7a6",
+                "fullname" : "Bandele",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/70.jpg"
+            },
+            "txt" : "Kevin's a great guy, but if you're looking for a hotel-like experience, this is NOT it... This however, IS a genuine NYC experience. Noisy & inconsiderate neighbors, dirty streets, dangerous vibes... All in all your safe, and anyone you actually talk to will be cool... Kevin was also very considerate and did everything he could to add comfort to my stay, he even warned me of the noisy neighbors in advance... This place is good for people who already know NYC, and need an affordable, SHORT-TERM (like 1-2days), place to crash uptown..."
+        }, 
+        {
+            "createdAt" : "2018-02-10T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3405e36c59e6164fb80a",
+                "fullname" : "Bryan",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/71.jpg"
+            },
+            "txt" : "This place was cozy, comfortable and very clean. The AC was very helpful during the heat waves. Good shower and great WiFi connection as well."
+        }
+    ],
+    "likedByUsers" : [ 
+        "mini-user"
+    ]
+}
+
+/* 27 */
+{
+    "_id" : ObjectId("62457c0410295c27b8ff8a5e"),
+    "name" : "THE BEST APT in Barcelona",
+    "summary" : "Lit room with balcony. The apartment is in the center, just meters from the Palau de la Musica Catalana. Well connected, a few minutes from Las Ramblas and the Born. Very close to the beach and Ciutadella Park",
+    "interaction" : "Te proporcionaré sábanas y toallas, para que no te preocupes de traerlas tú.",
+    "houseRules" : "-Mantener el espacio limpio y recogido. -No está permitido invitar a gente al apartamento. -Respetar el descanso de los vecinos. -No hacer ruido en la escalera. Apelo al sentido común de los inquilinos para una convivencia relajada y fluída. No hay normas en la casa más allá de las que dicte el sentido común.",
+    "type" : "Apartment",
+    "capacity" : 2.0,
+    "bedrooms" : 1.0,
+    "beds" : 1.0,
+    "bathrooms" : 1.0,
+    "amenities" : [ 
+        "Free cancellation", 
+        "Wifi", 
+        "Kitchen", 
+        "Paid parking off premises", 
+        "Smoking allowed", 
+        "Heating", 
+        "Washer", 
+        "Bed linens", 
+        "Host greets you"
+    ],
+    "host" : {
+        "_id" : "6241ae7f0927e9ee1531afc5",
+        "fullname" : "Isabel",
+        "imgUrl" : "https://randomuser.me/api/portraits/women/37.jpg"
+    },
+    "loc" : {
+        "street" : "Barcelona, Catalonia, Spain",
+        "country" : "Spain",
+        "location" : {
+            "lan" : 2.17561,
+            "lat" : 41.38701
+        },
+        "countryCode" : "ES",
+        "city" : "Barcelona"
+    },
+    "price" : 40.0,
+    "securityDeposit" : null,
+    "cleaningFee" : 25.0,
+    "extraPeople" : 20.0,
+    "reviewScores" : {
+        "accuracy" : 9.0,
+        "cleanliness" : 10.0,
+        "checkin" : 10.0,
+        "communication" : 10.0,
+        "location" : 9.0,
+        "value" : 9.0,
+        "rating" : 90.0
+    },
+    "reviews" : [ 
+        {
+            "id" : "madeId",
+            "createdAt" : "January 2022",
+            "at" : "2016-02-24T05:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3405e36c59e6164fb95e",
+                "fullname" : "Pierre",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/93.jpg"
+            },
+            "txt" : "Una instancia muy céntrica en uno de estos edificios antiguos del Barri Gotic. No es poco haber conseguido estar en el centro de Barcelona en la misma semana del Mobile World Congress. Isabel es un encanto de anfitrión."
+        }, 
+        {
+            "id" : "madeId",
+            "createdAt" : "November 2021",
+            "rate" : 1.0,
+            "at" : "2016-03-24T04:00:00.000Z",
+            "by" : {
+                "_id" : "622f3403e36c59e6164fafa6",
+                "fullname" : "Isabelle",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/37.jpg",
+                "id" : "26247027"
+            },
+            "txt" : "The host canceled this reservation 2 days before arrival. This is an automated posting."
+        }, 
+        {
+            "id" : "madeId",
+            "rate" : 5.0,
+            "createdAt" : "November 2021",
+            "at" : "2016-04-07T04:00:00.000Z",
+            "by" : {
+                "_id" : "622f3406e36c59e6164fbaf2",
+                "fullname" : "Hélène",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/24.jpg",
+                "id" : "46103953"
+            },
+            "txt" : "Chambre très bien située et hôtesse très sympathique. Merci encore Isabel pour l'accueil !"
+        }, 
+        {
+            "id" : "madeId",
+            "createdAt" : "August 2021",
+            "rate" : 2.0,
+            "at" : "2016-04-13T04:00:00.000Z",
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbdc3",
+                "fullname" : "Daniel",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/53.jpg"
+            },
+            "txt" : "Sheets weren't clean... Shower has very low water pressure. Room is only good for sleeping. It's in a good location but that's about it. Isabel could've provided more information about what's around the house during check in... Overall just decent enough to sleep"
+        }, 
+        {
+            "id" : "madeId",
+            "createdAt" : "June 2021",
+            "rate" : 4.0,
+            "at" : "2016-04-25T04:00:00.000Z",
+            "by" : {
+                "_id" : "622f3401e36c59e6164fabad",
+                "fullname" : "Maria Isabel",
+                "imgUrl" : "https://robohash.org/60712702?set=set1"
+            },
+            "txt" : "Isabel est accueillante. L'appartement est charmant, correspond aux images. Très bien situé, à côté de Palau de la musica, dans un vieil immeuble plein de charme un peu désuet. Amateurs de confort et décor \"tendance\" s'abstenir. Chez Isabel on se trouve dans une authentique ambiance d'artiste. Merci beaucoup, je garderai le souvenir de cet accueil lié aux souvenirs de Barcelone."
+        }, 
+        {
+            "id" : "53206905",
+            "createdAt" : "April 2021",
+            "rate" : 4.0,
+            "at" : "2016-05-04T04:00:00.000Z",
+            "by" : {
+                "_id" : "622f3405e36c59e6164fb967",
+                "fullname" : "Aitana",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/69.jpg"
+            },
+            "txt" : "Es un piso con mucho encanto, muy tranquilo y en un lugar inmejorable. La anfitriona, Isabel, es amable y facilitadora. El piso es una construcción antigua, lo que le da un ambiente genial pero también hace que el agua de la ducha salga con poquísima presión y sea un poco incómodo a veces. A parte de esto, si tuviese que poner alguna queja sería la hora del chekout, ya que las diez de la mañana me parece un poco pronto. \r\nEn conjunto tuvimos una muy buena experiencia y repetiríamos sin duda."
+        }, 
+        {
+            "id" : "69740054",
+            "createdAt" : "August 2020",
+            "rate" : 5.0,
+            "at" : "2016-05-12T04:00:00.000Z",
+            "by" : {
+                "_id" : "622f3406e36c59e6164fbb88",
+                "fullname" : "Valentina",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/94.jpg"
+            },
+            "txt" : "Isabel was a wonderful host even if she was not there. She was in touch with me by mobile constantly. Thank you so much!\r\nThe house it's nice and was very clean and quite in the night.Perfect location. All you need for few days in Barcelona!"
+        }, 
+        {
+            "id" : "53581405",
+            "createdAt" : "May 2020",
+            "rate" : 5.0,
+            "at" : "2016-05-16T04:00:00.000Z",
+            "by" : {
+                "_id" : "622f3405e36c59e6164fb715",
+                "fullname" : "Jeremy",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/28.jpg"
+            },
+            "txt" : "Isabel's place was perfect. It was cozy, clean and quiet. She was a very gracious host and was always there to answer my questions about getting around Barcelona. "
+        }
+    ],
+    "imgUrls" : [ 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561354/casaBnb/134_kkjdak.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561316/casaBnb/149_x8dlxe.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561309/casaBnb/146_kxeu7z.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561355/casaBnb/136_hxganv.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561355/casaBnb/135_lb2613.jpg"
+    ],
+    "likedByUsers" : [ 
+        "mini-user"
+    ]
+}
+
+/* 28 */
+{
+    "_id" : ObjectId("62457dd110295c27b8ff8a5f"),
+    "name" : "Bright, Modern, Spacious Duplex Apt",
+    "summary" : "We recently updated this listing from a room to the full apartment! That means more privacy for our guests, and an even better experience. Please ask about the changes if you have questions! Astoria is 15 minutes from midtown via subway (N and Q lines near the 30th ave stop). Relax on the couch, enjoy the queen-sized bed, or do some work in the sunlight dinning room. There's no better place to rest up and recharge during your stay in NYC.",
+    "interaction" : "I am always available, either at home or on my cell phone.",
+    "houseRules" : "",
+    "type" : "Apartment",
+    "roomType" : "Private room",
+    "bedType" : "Real Bed",
+    "cancellationPolicy" : "flexible",
+    "capacity" : 2.0,
+    "bedrooms" : 1.0,
+    "beds" : 1.0,
+    "numOfReviews" : 1.0,
+    "amenities" : [ 
+        "Internet", 
+        "Wifi", 
+        "Air conditioning", 
+        "Free cancellation", 
+        "Heating", 
+        "Smoke detector", 
+        "Carbon monoxide detector", 
+        "First aid kit", 
+        "Fire extinguisher", 
+        "Shampoo", 
+        "Lock on bedroom door", 
+        "Hangers", 
+        "Hair dryer", 
+        "Iron"
+    ],
+    "host" : {
+        "_id" : "622f3407e36c59e6164fbe18",
+        "fullname" : "Gabriel",
+        "location" : "New York, New York, United States",
+        "about" : "",
+        "responseTime" : "within an hour",
+        "imgUrl" : "https://randomuser.me/api/portraits/men/71.jpg"
+    },
+    "loc" : {
+        "street" : "Queens, NY, United States",
+        "country" : "United States",
+        "location" : {
+            "lan" : -73.92117,
+            "lat" : 40.76964
+        },
+        "countryCode" : "US",
+        "city" : "New York"
+    },
+    "id" : "11935301",
+    "bathrooms" : 1.0,
+    "price" : 85.0,
+    "securityDeposit" : null,
+    "cleaningFee" : null,
+    "extraPeople" : 0.0,
+    "reviewScores" : {
+        "accuracy" : 10.0,
+        "cleanliness" : 10.0,
+        "checkin" : 10.0,
+        "communication" : 10.0,
+        "location" : 10.0,
+        "value" : 10.0,
+        "rating" : 100.0
+    },
+    "reviews" : [ 
+        {
+            "createdAt" : "2022-02-24T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3405e36c59e6164fb74c",
+                "fullname" : "Francesca",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/71.jpg"
+            },
+            "txt" : "I had the pleasure of being  Gabriel's first Airbnb customer. With that said I do not think it would matter if you were the first or the 61st, Gabriel and his Mother, Mirta made ever effort to make the stay an absolute pleasure. The space is private,quiet and very comfortable, with a separate private entrance.  The location is close to many good restaurants and the train. You have easy access to the city (train) as well as walking distance to all of Astoria. \r\nI would  highly recommend this site for 1 or two people. \r\nJerry "
+        }
+    ],
+    "imgUrls" : [ 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561315/casaBnb/148_jdaohd.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561305/casaBnb/142_vf1vhj.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561303/casaBnb/141_rnrona.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561309/casaBnb/146_kxeu7z.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561311/casaBnb/151_exgx0v.jpg"
+    ]
+}
+
+/* 29 */
+{
+    "_id" : ObjectId("6245801d10295c27b8ff8a60"),
+    "name" : "Cozy Chinatown studio apartment",
+    "summary" : "Neighborhood feels like old New York, the last authentic part of Manhattan. Our cozy studio apartment comfortably fits 2 ppl. 10 minute walk to LES, SoHo, TriBeca, South street seaport and great restaurants and bars nearby. Very close to B,D,F trains. A,C,E,4,5,6 also walking distance.",
+    "interaction" : "will pickup phone for any questions while staying at my place. & usually local to stop by if necessary.",
+    "houseRules" : "NO SMOKING INSIDE NO DISRESPECTING HOUSE SPACE.",
+    "type" : "Apartment",
+    "roomType" : "Entire home/apt",
+    "bedType" : "Real Bed",
+    "cancellationPolicy" : "flexible",
+    "capacity" : 4.0,
+    "bedrooms" : 2.0,
+    "beds" : 4.0,
+    "numOfReviews" : 94.0,
+    "amenities" : [ 
+        "TV", 
+        "Free cancellation", 
+        "Cable TV", 
+        "Internet", 
+        "Wifi", 
+        "Air conditioning", 
+        "Kitchen", 
+        "Smoking allowed", 
+        "Hot tub", 
+        "Buzzer/wireless intercom", 
+        "Heating", 
+        "Family/kid friendly", 
+        "Smoke detector", 
+        "Carbon monoxide detector"
+    ],
+    "host" : {
+        "_id" : "622f3405e36c59e6164fb9ad",
+        "fullname" : "Sal",
+        "location" : "US",
+        "about" : "",
+        "responseTime" : "within an hour",
+        "imgUrl" : "https://randomuser.me/api/portraits/women/40.jpg"
+    },
+    "loc" : {
+        "street" : "Brooklyn, NY, United States",
+        "country" : "United States",
+        "location" : {
+            "lan" : -73.94854,
+            "lat" : 40.70998
+        },
+        "countryCode" : "US",
+        "city" : "New York"
+    },
+    "bathrooms" : 1.0,
+    "price" : 250.0,
+    "securityDeposit" : 1000.0,
+    "cleaningFee" : null,
+    "extraPeople" : 0.0,
+    "reviewScores" : {
+        "accuracy" : 10.0,
+        "cleanliness" : 10.0,
+        "checkin" : 10.0,
+        "communication" : 10.0,
+        "location" : 10.0,
+        "value" : 10.0,
+        "rating" : 97.0
+    },
+    "reviews" : [ 
+        {
+            "createdAt" : "2016-03-23T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3402e36c59e6164facca",
+                "fullname" : "Franz",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/56.jpg"
+            },
+            "txt" : "The host canceled this reservation the day before arrival. This is an automated posting."
+        }, 
+        {
+            "createdAt" : "2016-05-09T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3403e36c59e6164faf76",
+                "fullname" : "Shanna",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/56.jpg"
+            },
+            "txt" : "Fantastic place. Clean and convenient to all of Williamsburg. My parents actually stayed here and the host was great to them, checking in all the time and making sure they had everything they needed. "
+        }, 
+        {
+            "createdAt" : "2016-05-15T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3404e36c59e6164fb2cc",
+                "fullname" : "Agustin",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/60.jpg"
+            },
+            "txt" : "Todo perfecto, ningun problema. Departamento muy lindo en una zona muy buena."
+        }, 
+        {
+            "createdAt" : "2016-05-20T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3404e36c59e6164fb2d9",
+                "fullname" : "Raymond",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/62.jpg"
+            },
+            "txt" : "everything nice and easy and good neighborhood too.\r\nI enjoyed my trim to NYC.\r\nThanks!"
+        }, 
+        {
+            "createdAt" : "2016-05-24T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3402e36c59e6164fac18",
+                "fullname" : "Robert",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/63.jpg"
+            },
+            "txt" : "Great apartment and backyard patio in a great location!!\nWalk to anything you could want in Willimsburg or a short subway or uber ride to NYC for everything else. Nicely updated apartment with easy on street parking and wonderful hosts and recommendations. Highly recommend!!"
+        }, 
+        {
+            "createdAt" : "2016-06-09T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbe19",
+                "fullname" : "Jack",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/64.jpg"
+            },
+            "txt" : "This place was awesome. Huge space in a perfect location close to bars and restaurants etc. The owner was very nice and accommodating. Took me a while to pick out an Air bnb in NYC because they were all too \"lived in\" this one didnt feel like i was invading somebody's home. Kind of like a two story hotel- i loved it. Also great backyard"
+        }, 
+        {
+            "createdAt" : "2016-06-11T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3402e36c59e6164fad2e",
+                "fullname" : "Nick",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/65.jpg"
+            },
+            "txt" : "Everything was wonderful! Sal was very easy to work with and made sure that we had a great stay. We had a great stay; I'll definitely be back soon!"
+        }, 
+        {
+            "createdAt" : "2016-07-29T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3405e36c59e6164fb6dc",
+                "fullname" : "Rocio",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/65.jpg"
+            },
+            "txt" : "neighborhood is pleasant and host was excellent"
+        }, 
+        {
+            "createdAt" : "2016-09-12T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbf07",
+                "fullname" : "Marek",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/66.jpg"
+            },
+            "txt" : "Great place for NY trip. Subway nearby. The host is on every call, very helpful. There was a plumbing problem during our stay, fixed immidetly by Sal. \nDefinitly can recomend the place"
+        }, 
+        {
+            "createdAt" : "2016-09-20T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3403e36c59e6164fb092",
+                "fullname" : "Eric",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/67.jpg"
+            },
+            "txt" : "The hosting was taken care of by Luis, who was fantastic and went out of his way to make me feel welcome.  He was terrific.  \r\n\r\nNeighborhood was good and the L train was easy to get to and the place was super clean."
+        }, 
+        {
+            "createdAt" : "2016-09-23T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3403e36c59e6164fb12b",
+                "fullname" : "Micheal",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/68.jpg"
+            },
+            "txt" : "The apartment is on the ground floor it's a 2BR-1B with a living room kitchen combo. One bedroom downstairs. It was very comfortable, newly remodeled, modern and Luis is a jewel (he even went so far as to go get us some canoli and sfoglitella from the best Italian bakery in Williamsbug when my Italian wife asked him about them). Fairly close to the L & M subway lines. Maybe 10 minutes to Union Square hub in Manhattan. \r\n\r\nHighly recommended. "
+        }, 
+        {
+            "createdAt" : "2016-09-25T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3402e36c59e6164fae81",
+                "fullname" : "Carolyn",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/68.jpg"
+            },
+            "txt" : "We had a great stay! The host was very flexible about check-in and check-out time, and made it clear he was available if we needed anything (we didn't.) Location was perfect, 5 minutes to L train into Manhattan, but on a quiet street. Spacious enough to sleep four friends very comfortably (two beds + two futon-style couches). We really enjoyed sitting out on the back patio as well. "
+        }, 
+        {
+            "createdAt" : "2016-10-03T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3404e36c59e6164fb40c",
+                "fullname" : "Stuart",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/69.jpg"
+            },
+            "txt" : "Sal was most helpful and reafy to help with anything.  The apartment is in a super location close to all Williamsburg smenities and the L line. I would recommrnd jt to anyone and would certainly stay there again if I had the chance."
+        }, 
+        {
+            "createdAt" : "2016-10-06T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3404e36c59e6164fb327",
+                "fullname" : "Martin",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/70.jpg"
+            },
+            "txt" : "The host was Great! Very helpful, even with my elderly father. My son lives nearby, so I knew it was a great neighborhood! Free bottled water and coffee was nice. Beautiful patio and the apartment was clean, beautifully furnished and so comfortable. I would definitely stay there again!,"
+        }, 
+        {
+            "createdAt" : "2016-10-14T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3405e36c59e6164fb779",
+                "fullname" : "Gianna",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/70.jpg"
+            },
+            "txt" : "Really good experience. We didn't spend much time hanging out in the apartment (though the patio was tempting) but it was close to friends, train, and plenty of good food. Will certainly book again!"
+        }, 
+        {
+            "createdAt" : "2016-10-23T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3405e36c59e6164fb762",
+                "fullname" : "Lene",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/71.jpg"
+            },
+            "txt" : "We arrived late at night, but Louis was waiting for us. He even showed us a place to buy dinner, although it was after midnight.\r\nThe neighbourhood is great and you can be in Manhattan in 20 minutes.\r\nThe appartemt was really nice and suited us well (2 adults and 2 teenagers). Louis was only a phone call away if we had questions and he popped by a few times to chek on us.\r\nWould definitely stay again."
+        }, 
+        {
+            "createdAt" : "2016-11-02T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbffb",
+                "fullname" : "Jacques",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/70.jpg"
+            },
+            "txt" : "Le duplex est parfaitement situé dans Brooklyn, à 5 minutes à pied du métro et du centre de Williamsburg, quartier le plus en vogue de Brooklyn. L'appartment n'est qu'à 15 minutes en métro du cœur de Manhattan.\nNous remercions tout particulièrement Luis pour son accueil et ses conseils."
+        }
+    ],
+    "imgUrls" : [ 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561318/casaBnb/021_ljsyum.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561315/casaBnb/016_jvfloz.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561317/casaBnb/019_ccohaq.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561315/casaBnb/017_dba58z.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561319/casaBnb/022_zezz3r.jpg"
+    ]
+}
+
+/* 30 */
+{
+    "_id" : ObjectId("6245832510295c27b8ff8a61"),
+    "name" : "Monte dos Burgos - Cosy Room",
+    "summary" : "The neighbourhood is a quiet, family residential area, 20 minutes by bus from the historic center of Porto and 20 minutes from the beach (Matosinhos - where you may eat very GOOD fish!). You will love to stay in a very spacious, familiar and bright room, where you can enjoy a large and flowery garden, comfortable kitchen and laundry with washer and dryer machine. My space is good for couples, solo adventures, and business travelers!",
+    "interaction" : "Our guests will be treated like friends and family",
+    "houseRules" : "Do not smoke at home and not make noise",
+    "type" : "House",
+    "roomType" : "Private room",
+    "bedType" : "Real Bed",
+    "cancellationPolicy" : "moderate",
+    "capacity" : 4.0,
+    "bedrooms" : 1.0,
+    "beds" : 3.0,
+    "numOfReviews" : 391.0,
+    "amenities" : [ 
+        "TV", 
+        "Wifi", 
+        "Free cancellation", 
+        "Kitchen", 
+        "Doorman", 
+        "Gym", 
+        "Breakfast", 
+        "Pets live on this property", 
+        "Cat(s)", 
+        "Indoor fireplace", 
+        "Family/kid friendly", 
+        "Suitable for events", 
+        "Washer", 
+        "First aid kit", 
+        "Safety card", 
+        "Fire extinguisher", 
+        "Essentials", 
+        "Lock on bedroom door", 
+        "24-hour check-in", 
+        "Hangers", 
+        "Hair dryer", 
+        "Laptop friendly workspace", 
+        "Private entrance"
+    ],
+    "host" : {
+        "_id" : "6241ae7f0927e9ee1531afc2",
+        "fullname" : "Patrícia Sousa Casimiro",
+        "location" : "Senhora da Hora, Porto, Portugal",
+        "about" : "Me and my husband are from Oporto,  we are yoga teachers and ayurvedic and bowl sound masseurs. We like contact and talk with interesting people and helping them to know better the Oporto city. We enjoy to go for a walk around  our city and  we like travel to know new cultures and peoples. ",
+        "responseTime" : "within an hour",
+        "thumbnailUrl" : "https://a0.muscache.com/im/pictures/87b9ccba-154a-4546-8cbe-8bdb25ddb36c.jpg?aki_policy=profile_small"
+    },
+    "loc" : {
+        "street" : "Porto, Porto, Portugal",
+        "country" : "Portugal",
+        "location" : {
+            "lan" : -8.59097,
+            "lat" : 41.1541
+        },
+        "countryCode" : "PT",
+        "city" : "Porto"
+    },
+    "bathrooms" : 2.0,
+    "price" : 25.0,
+    "securityDeposit" : null,
+    "cleaningFee" : 10.0,
+    "extraPeople" : 10.0,
+    "reviewScores" : {
+        "accuracy" : 10.0,
+        "cleanliness" : 10.0,
+        "checkin" : 10.0,
+        "communication" : 10.0,
+        "location" : 9.0,
+        "value" : 10.0,
+        "rating" : 97.0
+    },
+    "reviews" : [ 
+        {
+            "createdAt" : "2011-10-29T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbe6a",
+                "fullname" : "Mike",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/47.jpg"
+            },
+            "txt" : "We had a very lovely time with Patrícia and Alberto in their beautifull home in the Bom Fin area. We felt very welcome and A & A gave us a lot of usefu tips on what to do and see in Porto. They surprised us with a nice breakfast, the second day even in the garden.\r\nVery fine, trustworthy and fun to talk with people!"
+        }, 
+        {
+            "createdAt" : "2012-06-13T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3406e36c59e6164fbcad",
+                "fullname" : "Michael",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/48.jpg"
+            },
+            "txt" : "Patrícia and Alberto were very welcoming hosts and we really enjoyed our time at their beautiful place in Porto. They are helpful and kind and also prepared breakfast for us with fresh fruits from their wonderful garden."
+        }, 
+        {
+            "createdAt" : "2012-09-20T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3405e36c59e6164fb93f",
+                "fullname" : "David",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/49.jpg"
+            },
+            "txt" : "We really would like to put 6/5. We felt very very well welcomed by Maria and Alberto, who receive you in a charming house with caractere, originality and calm. \r\nTraveling with our little daughter (2 months) could have raised some issues, being hosted but I didn't at all."
+        }, 
+        {
+            "createdAt" : "2012-10-11T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3402e36c59e6164fae4c",
+                "fullname" : "Walid",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/50.jpg"
+            },
+            "txt" : "I had a great experience at Maria's home. Maria and Alberto are extremely nice people who will make you feel at home, are very helpful, considerate and are fun to be around.  "
+        }, 
+        {
+            "createdAt" : "2012-11-11T05:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3405e36c59e6164fb65d",
+                "fullname" : "Valeria",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/44.jpg"
+            },
+            "txt" : "Beautiful cosy house! Full of armony and with an outstanding decoration.  Maria and her Husband were extremly kind. They even took us to a restaurant and explained all the activities in oporto. 100% recommended, and is a great value for money opportunity  :)"
+        }, 
+        {
+            "createdAt" : "2013-03-30T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3402e36c59e6164fad19",
+                "fullname" : "Aminata",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/51.jpg"
+            },
+            "txt" : "We had a great time at Maria's, both her and her husband were really nice and made us feel just like at home. They gave us useful tips on what to see in Porto and how to get around which was very much appreciated. The room was very comfortable and the house was especially cozy and well located close to the metro and train station. My first airbnb experience was an amazing short stay thanks to both of them, definitely recommended!"
+        }, 
+        {
+            "createdAt" : "2013-04-14T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3403e36c59e6164fb17b",
+                "fullname" : "Matthias",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/51.jpg"
+            },
+            "txt" : "Maria and Alberto were the nicest and sweetest hosts ever. They invited us to an inspiring yoga class, were dedicated to help us discovering Porto and Alberto even took us to a great local restaurant.\r\nThe room (and the house and the garden) is beautiful, cozy, clean and silent.\r\nThis is the best place you can stay in Porto. We will definitely come back!\r\n\r\n"
+        }, 
+        {
+            "createdAt" : "2013-05-11T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3402e36c59e6164faca9",
+                "fullname" : "Karin",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/45.jpg"
+            },
+            "txt" : "If you are searching for a place tot stay near centre of Porto, I can recommend the place of Maria and Alberto.\r\n\r\nThe place is calm and lovely, has a very nice garden with you can use, a served breakfast every day, lovely, nice decorated room and even more lovely bathroom of your own. They have lots of tips what to visit in Porto and are always wiling to help."
+        }, 
+        {
+            "createdAt" : "2013-05-20T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3406e36c59e6164fbb94",
+                "fullname" : "David",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/56.jpg"
+            },
+            "txt" : "AMAZING room in an AMAZING house with AMAZING hosts. I had a great time at Maria's house. She offered me breakfast and her husband helped me during 45 minutes to circle the best locations in Porto on a map. I strongly recommend this place and the center of Porto is a 20 minute walk away. Very comfortable and truly memorable. Thanks for everything :)"
+        }, 
+        {
+            "createdAt" : "2013-05-22T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3404e36c59e6164fb2d0",
+                "fullname" : "María Paula",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/48.jpg"
+            },
+            "txt" : "Maria and Alberto are the best! they give you tips and make you a lovely breakfast, but most of all, they open up their house and live style to you. Very calm, elegant, simple and caring. Besides, they have the most beautiful garden that makes you breath and fall in love with the house. Great place, lovely people, osom shower and bed. Walking distance from everything. It was the perfect home to get to know Porto. "
+        }, 
+        {
+            "createdAt" : "2013-05-27T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3402e36c59e6164fada7",
+                "fullname" : "Dirk",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/80.jpg"
+            },
+            "txt" : "Our stay at Maria and Alborto was fantastic. They are very friendly. Their house is spacious and in a quiet neighnourhood, though close enough for a walk to the city centre. They have a nice bathroom wit ha bath and a beautiful garden full of fruit trees, flowers and a o so nice hammock :)\r\nI would almost forget to say about the really good breakfast which is included. Could highly recommend.\r\n\r\nThanks again!\r\nDirk and Hilde"
+        }, 
+        {
+            "createdAt" : "2013-06-19T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3403e36c59e6164fb011",
+                "fullname" : "Fara",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/55.jpg"
+            },
+            "txt" : "Nous avons été très satisfaits de notre séjour chez Maria et Alberto. Ils sont juste adorables, au petit soin des invités. \r\nLa maison est très propre, lumineux et possède un jardin sympathique. Elle est 1000 fois mieux que sur les photos (je n'exagère pas :) )\r\n\r\nVous pouvez y aller les yeux fermés. Ils sont formidables.\r\n\r\nEncore un GRAND MERCI!!! "
+        }, 
+        {
+            "createdAt" : "2013-06-23T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbf8f",
+                "fullname" : "Charles",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/83.jpg"
+            },
+            "txt" : "Un séjour au top ! Maria et son mari ont été très accueillant ! Ils nous ont donné beaucoup de conseils pour notre séjour pour tout ce qui est lieux à visiter, bonnes adresses... \r\nLa maison est superbe, la salle de bain ultra spacieuse, le lit est spacieux et on y dort très bien. Le luxe : un petit déjeuner complet et vraiment bon dans un jardin très agréable ! \r\nUne superbe adresse pour visiter la magnifique ville de Porto ! \r\nCharles&Constance"
+        }, 
+        {
+            "createdAt" : "2013-06-24T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3404e36c59e6164fb5ae",
+                "fullname" : "Wee Sian",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/80.jpg"
+            },
+            "txt" : "Conveniently located near the Campanha station, easy for us travelling by train from porto to lisboa. Maria and her husband were extremely helpful!! They gave wonderful recommendations for things to do in porto and told us about the history and culture of portugal. Delicious and generous breakfast. clean and comfortable rooms and toilets. Maria even went the extra mile to get us pasteis de natas for breakfast simply because we enquired the day before on where we could find some in Porto. Highly recommended!!"
+        }, 
+        {
+            "createdAt" : "2013-06-26T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3403e36c59e6164fb08f",
+                "fullname" : "Yvonne",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/81.jpg"
+            },
+            "txt" : "Maria & Alberto are such lovely and kind hosts!!! The house is very beautyful and cute furnished, the garden seems to be a small wellness oasis :). I enjoyed my stay in Porto so much and had a great time and fun at St.Johns Festival with lovely people. Definetely I recommend this wonderful place and I'm sure, I will come back!\r\nThank you so much! Yvonne"
+        }
+    ],
+    "imgUrls" : [ 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561321/casaBnb/029_j2gouq.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561318/casaBnb/021_ljsyum.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561319/casaBnb/022_zezz3r.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561321/casaBnb/028_cvocz6.jpg", 
+        "https://res.cloudinary.com/cajan-22/image/upload/v1648561326/casaBnb/039_nw4rrk.jpg"
+    ]
+}

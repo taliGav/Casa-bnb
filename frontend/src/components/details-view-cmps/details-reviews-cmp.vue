@@ -35,7 +35,7 @@
 		<div v-else class="reviews-list flex">
 			    <details-single-review
 				class="review flex col"
-				v-for="review in this.reviews" :key="review.id"
+				v-for="review in this.reviews.slice(0,6)" :key="review.id"
 				:stay="stay" :review="review" />
 				<!-- <button
           v-if="user?.isAdmin"
