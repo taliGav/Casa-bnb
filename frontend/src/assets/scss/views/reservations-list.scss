@@ -24,13 +24,16 @@ small {
 // }
 .table-container {
 	// background-color: #ff385c;
-	border: 0.5px solid #cfcfcfaf;
+	border: 0.5px solid #cfcfcf7a;
 	border-radius: 12px;
 
 	.header-container {
 		height: 81px;
 		border-radius: 12px 12px 0 0;
 		background-color: #ff385c;
+		// .col{
+			text-transform: capitalize;
+		// }
 
 		.table-title {
 			font-size: 26px;
@@ -54,7 +57,7 @@ small {
 		width: 100%;
 
 		li {
-			// border-radius: 5px;
+			
 			padding: 10px;
 			display: flex;
 			height: max-content;
@@ -69,17 +72,20 @@ small {
 			letter-spacing: 0.03em;
 			padding-top: 15px;
 			color: #000000;
-				font-size: 14px;
-
+			font-size: 14px;
 		
+
+
+
 
 		}
 
 		.table-row {
 			background-color: #ffffff;
-			border-top: 1.5px solid rgb(206, 206, 206);
+			border-top: 1.5px solid rgba(206, 206, 206, 0.658);
+
 			.reservation-status-sign {
-				width: 120px;
+				width: 100px;
 				height: 23px;
 				color: #ffffff;
 				border-radius: 30px;
@@ -140,6 +146,7 @@ small {
 				.reservations-total-price {
 					font-size: 18px;
 					color: #FF5A78;
+					font-weight: bold;
 				}
 			}
 		}
@@ -167,13 +174,8 @@ small {
 
 		.col-1 {
 			flex-basis: 25%;
-			padding-left:50px;
-			// margin-left:30px;
-			// padding-left: 52px;
-
-			// .declined{
-			// 	margin-right: 50px;
-			// }
+			padding-left: 50px;
+			
 		}
 
 		.col-2 {
@@ -182,8 +184,7 @@ small {
 
 		.col-3 {
 			flex-basis: 17%;
-			text-transform: capitalize;
-
+			
 			img {
 				border-radius: 50%;
 				width: 50px;
@@ -191,9 +192,10 @@ small {
 			}
 
 			p {
-				position: absolute;
-				bottom: -30px;
-				left: -19px;
+				margin-top: 5px;
+				// position: absolute;
+				// bottom: -30px;
+				// left: -19px;
 			}
 		}
 
