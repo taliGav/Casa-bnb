@@ -48,9 +48,11 @@ async function getMsgs(req, res) {
 
 async function addMsg(req, res) {
   try {
-    const msg = req.body
-    console.log('msg crtl:',msg);
-    const addedMsg = await msgService.addMsg(msg)
+    const msg = req.body.msg
+    const topic = req.body.topic
+    console.log('add msg:',msg);
+    console.log('add topic:',topic);
+    const addedMsg = await msgService.addMsg(msg, topic)
     res.send(addedMsg)
   } catch (err) {
     logger.error('Failed to add msg', err)

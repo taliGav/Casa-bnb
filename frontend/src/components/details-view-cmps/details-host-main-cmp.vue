@@ -9,7 +9,7 @@
           {{ stay.capacity }} guests · {{ stay.bedrooms }} bedroom ·
           {{ stay.beds }} bed · {{ stay.bathrooms }} bath
         </p>
-        <button @click="setTopic">Contact host</button>
+        <button @click="openChat">Contact host</button>
       </div>
       <div class="host-img-container">
         <img :src="hostImg" alt="" srcset="" />
@@ -89,12 +89,21 @@
     <div class="preview-stay-container">
       <p class="preview-stay-summary">{{ stay.summary }}</p>
     </div>
+    <chat-modal
+      @closeChat="isChatOpen = false"
+      v-if="isChatOpen"
+      :user="loggedUser"
+      :topic="topic"
+    />
   </section>
 </template>
 
 <script>
+import chatModal from '../chat/chat-modal.vue';
+
+
 export default {
-  components: {},
+  components: {chatModal},
   name: "stay-details-host-main",
   props: {
     stay: Object,
@@ -102,10 +111,13 @@ export default {
   data() {
     return {
       loggedUser: null,
+      topic: '',
+			isChatOpen: false,
     };
   },
   created() {
     this.loggedUser = this.$store.getters.user;
+    this.topic = this.stay.host._id +'-'+ this.loggedUser._id
   },
   computed: {
     hostImg() {
@@ -117,6 +129,15 @@ export default {
 			const topic = this.stay.host._id +'-'+ this.loggedUser._id 
 			console.log('set topic',topic);
 			this.$emit('setTopic',topic)
+		},
+    async openChat() {
+			try{
+				const chat = await this.$store.dispatch({type: 'getChat', topic:this.topic});
+				console.log('got chat',chat);
+				this.isChatOpen = true;
+			}catch (err) {
+                console.log('err :>> ', err)
+            }
 		},
   },
 };

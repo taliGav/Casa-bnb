@@ -1,24 +1,24 @@
 <template>
-	<section v-if="stay" class="details-layout stay-details">
-		<details-header :stay="stay" />
-		<details-gallery :stay="stay" />
+  <section v-if="stay" class="details-layout stay-details">
+    <details-header :stay="stay" />
+    <details-gallery :stay="stay" />
 
-		<el-carousel class="details-carousel-item" :interval="5000" arrow="always">
-			<el-carousel-item v-for="item in stay.imgUrls" :key="item">
-				<!-- <h3>{{ item }}</h3> -->
-				<img class="details-carousel-img" :src="item" alt="" />
-			</el-carousel-item>
-		</el-carousel>
+    <el-carousel class="details-carousel-item" :interval="5000" arrow="always">
+      <el-carousel-item v-for="item in stay.imgUrls" :key="item">
+        <!-- <h3>{{ item }}</h3> -->
+        <img class="details-carousel-img" :src="item" alt="" />
+      </el-carousel-item>
+    </el-carousel>
 
-		<div class="details-grid">
-			<div class="details-main-container full flex">
-				<div class="main-inner-container">
-					<details-host-main :stay="stay" />
-				</div>
-			</div>
-			<div class="checkout-container">
-				<details-checkout :stay="stay" />
-			</div>
+    <div class="details-grid">
+      <div class="details-main-container full flex">
+        <div class="main-inner-container">
+          <details-host-main :stay="stay" />
+        </div>
+      </div>
+      <div class="checkout-container">
+        <details-checkout :stay="stay" />
+      </div>
 
 			<div class="amenities-container">
 				<div class="amenities-header flex">
@@ -47,9 +47,9 @@
 		</div>
 		<details-reviews v-if="stay" :stay="stay" />
 
-		<details-map :stay="stay" />
+    <details-map :stay="stay" />
 
-		<!-- <div v-if="user?.isAdmin" class="btn-group gap-1">
+    <!-- <div v-if="user?.isAdmin" class="btn-group gap-1">
       <button
         @click="$router.push(`/stay/edit/${stay._id}`)"
         class="btn btn-primary"
@@ -59,11 +59,11 @@
       <button @click="$router.push('/stay')" class="btn btn-secondary">
         go back
       </button> -->
-		<!-- <button @click="removeStay" class="btn btn-danger">delete stay</button> -->
-		<!-- </div> -->
-	</section>
+    <!-- <button @click="removeStay" class="btn btn-danger">delete stay</button> -->
+    <!-- </div> -->
+  </section>
 
-	<!-- <p class="clr-teal fw-bold">${{ stay.price }} /NIGHT</p> -->
+  <!-- <p class="clr-teal fw-bold">${{ stay.price }} /NIGHT</p> -->
 </template>
 
 <script>
@@ -74,7 +74,6 @@ import detailsCheckout from './../components/details-view-cmps/details-checkout-
 import detailsReviews from './../components/details-view-cmps/details-reviews-cmp.vue';
 import detailsMap from './../components/details-view-cmps/details-map-cmp.vue';
 import { stayService } from './../services/stay-service.js';
-import chatModal from './../components/chat/chat-modal.vue';
 
 export default {
 	components: {
@@ -84,7 +83,6 @@ export default {
 		detailsCheckout,
 		detailsReviews,
 		detailsMap,
-		chatModal,
 	},
 
 	name: 'stay-details',
@@ -94,8 +92,6 @@ export default {
 			reviewToAdd: null,
 			stayAmenities: null,
 			user: null,
-			isChatOpen: false,
-			topic: '',
 		};
 	},
 	async created() {
@@ -128,11 +124,11 @@ export default {
 		},
 	},
 	methods: {
-		openChat(topic) {
-			console.log('open chat, topic:', topic);
-			this.topic = topic;
-			this.isChatOpen = true;
-		},
+		// openChat(topic) {
+		// 	console.log('open chat, topic:', topic);
+		// 	this.topic = topic;
+		// 	this.isChatOpen = true;
+		// },
 		replaceByDefault(e) {
 			e.target.src = `./src/assets/icons/amenities/other.svg`;
 		},
