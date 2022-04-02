@@ -1,6 +1,6 @@
 <template>
-  <div v-if="otherUser">
-    <img @click="setTopic" :src="otherUser.imgUrl" />
+  <div class="chat-thumbnail" v-if="otherUser">
+    <img class="chat-user-img" @click="setTopic" :src="otherUser.imgUrl" />
   </div>
 </template>
 

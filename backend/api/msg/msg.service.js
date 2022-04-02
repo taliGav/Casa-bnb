@@ -71,18 +71,12 @@ async function getById(chatId) {
   }
 }
 
-async function addMsg(msg) {
-  // const msgToAdd = {
-  //   userId: ObjectId(msg.userId),
-  //   toyId: ObjectId(msg.toyId),
-  //   content: msg.content,
-  //   rate: msg.rate,
-  // }
-
+async function addMsg(msg, topic) {
   const collection = await dbService.getCollection('msg')
-  const addedMsg = await collection.insertOne(msg)
-
-  msg._id = addedMsg.insertedId
+  msg._id = new ObjectId()
+  const addedMsg = await collection.update( {"topic":topic}, {$push:{"msgs":msg}} )
+  console.log('added msg:',msg);
+  // msg._id = addedMsg.insertedId
   return msg
 }
 
