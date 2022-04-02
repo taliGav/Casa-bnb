@@ -1,5 +1,6 @@
 .details-reviews-section {
     box-shadow: inset 0 -0.5px 0 0 rgb(199, 199, 199);
+
     .rating-reviews-section {
         padding-bottom: 32px;
         font-size: 22px;
@@ -15,6 +16,36 @@
             u {
                 text-decoration: none;
             }
+        }
+    }
+
+    .review-scores-section {
+        .details-reviews-scores {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px 40px;
+            padding-bottom: 24px;
+        }
+
+        .category-progress.el-progress--line {
+            padding: 0 8px;
+            margin-bottom: 15px;
+
+            // .el-progress {
+            //     width: 30%;
+            // }
+        }
+
+        p {
+            color: #222222;
+        }
+
+        .el-progress-bar__outer {
+            background-color: #dddddd !important;
+        }
+        .el-progress-bar__inner {
+            background-color: #222222 !important;
         }
     }
 
@@ -34,7 +65,7 @@
             // max-height: 200px;
             text-overflow: none;
 
-            p{
+            p {
                 text-overflow: none;
             }
             .reviewer-dets {

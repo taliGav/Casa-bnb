@@ -1,6 +1,7 @@
 <template>
 	<section v-if="stay" class="details-reviews-section">
 		<ratings-reviews class="rating-reviews-section" :stay="stay" />
+		<!-- <review-scores class="review-scores-section" :stay="stay"  :scores="stay.reviewScores"/> -->
 
 		<!-- <form v-if="reviewToAdd && user" @submit.prevent="addReview" class="form">
       <div class="form-control my-1">
@@ -50,6 +51,7 @@
 
 <script>
 import ratingsReviews from "./../reusable-cmps/ratings-reviews-cmp.vue";
+import reviewScores from "./details-review-scores-cmp.vue";
 import detailsSingleReview from "./details-single-review-cmp.vue";
 
 export default {
@@ -65,6 +67,7 @@ export default {
   },
   components: {
     ratingsReviews,
+    reviewScores,
     detailsSingleReview,
   },
   async created() {},
