@@ -27,7 +27,7 @@ export default {
     socketService.on('notification', this.addMsg);
   },
   destroyed() {
-    // socketService.off('chat addMsg');
+    socketService.off('notification');
    
   },
   computed:{
@@ -58,8 +58,7 @@ export default {
    addMsg(data){
      console.log('socketttttttt barrrrrrrr',data);
       this.$store.commit({ type: 'saveMsg', msg: data.msg,topic:data.topic })
-    
-   }
+   },
    
   }
 };
