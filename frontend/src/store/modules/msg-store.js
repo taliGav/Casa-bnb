@@ -3,7 +3,7 @@ import { msgService } from '../../services/msg-service'
 export default {
     state: {
         msgs: [],
-        chats:[],
+        chats: [],
         curChatIdx: 0,
     },
     getters: {
@@ -27,14 +27,24 @@ export default {
         setChats(state, { chats }) {
             state.chats = chats
         },
+        setChat(state, { chat }) {
+            state.chats[state.curChatIdx] = chat
+        },
         setCurChat(state, { topic }) {
             state.curChatIdx = state.chats.findIndex(ch => ch.topic === topic)
         },
         addMsg(state, { msg }) {
             state.chats[state.curChatIdx].msgs.push(msg)
         },
-        saveMsg(state, { msg }) {
-            state.chats[state.curChatIdx].msgs.push(msg);
+        saveMsg(state, { msg, topic }) {
+            console.log('store save!!!:', msg, topic);
+            const chatIdx = state.chats.findIndex(ch => ch.topic === topic)
+            const msgIdx = state.chats[chatIdx].msgs.findIndex(m => m._id === msg._id)
+            console.log('store saveMsg idx!!!!!!', msgIdx);
+            if (msgIdx === -1) {
+                state.chats[chatIdx].msgs.push(msg);
+            }
+            // console.log('store msgs!!!!!!!!!', state.chats[idx].msgs);
         },
     },
     actions: {
@@ -50,8 +60,8 @@ export default {
         async addMsg({ commit }, { msg, topic }) {
             try {
                 const addedMsg = await msgService.addMsg(msg, topic)
-                console.log('store add msg:',addedMsg);
-                commit({ type: 'saveMsg', msg: addedMsg })
+                console.log('store add msg:', addedMsg);
+                commit({ type: 'saveMsg', msg: addedMsg, topic: topic })
                 return addedMsg;
             } catch (err) {
                 console.log('err :>> ', err)
@@ -60,7 +70,7 @@ export default {
         async getChat({ commit }, { topic }) {
             try {
                 const chat = await msgService.getChat(topic);
-                return chat ;
+                return chat;
             } catch (err) {
                 console.log('err :>> ', err)
             }
@@ -69,7 +79,7 @@ export default {
             try {
                 const chats = await msgService.query(userId);
                 commit({ type: 'setChats', chats: chats })
-                return chats ;
+                return chats;
             } catch (err) {
                 console.log('err :>> ', err)
             }
@@ -77,7 +87,17 @@ export default {
         async setCurChat({ commit }, { topic }) {
             try {
                 commit({ type: 'setCurChat', topic: topic })
-                return topic ;
+                return topic;
+            } catch (err) {
+                console.log('err :>> ', err)
+            }
+        },
+        async lastSeen({ commit }, { userId, topic }) {
+            try {
+                const chat = await msgService.updateLastSeen(userId, topic)
+                console.log('store got updates chat:', chat);
+                commit({ type: 'setChat', chat: chat })
+                return chat;
             } catch (err) {
                 console.log('err :>> ', err)
             }

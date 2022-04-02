@@ -22,12 +22,17 @@ function connectSockets(http, session) {
             socket.join(topic)
             socket.myTopic = topic
         })
-        socket.on('chat newMsg', msg => {
+        socket.on('chat newMsg', data => {
+            console.log('new msg data:', data);
+            const msg = data.msg
+            const topic = data.topic
             console.log('Emitting Chat msg', msg);
             // emits to all sockets:
             // gIo.emit('chat addMsg', msg)
             // emits only to sockets in the same room
             socket.to(socket.myTopic).emit('chat addMsg', msg)
+            socket.broadcast.emit('notification', { msg: msg, topic: topic })
+            console.log('done');
         })
         socket.on('user-watch', userId => {
             socket.join('watching:' + userId)
