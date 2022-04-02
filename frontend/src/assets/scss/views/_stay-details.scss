@@ -11,8 +11,8 @@
 	grid-template-columns: 70% 30%;
 	grid-template-rows: 65% 35%;
 	grid-template-areas:
-		'details checkout'
-		'amenities checkout';
+		"details checkout"
+		"amenities checkout";
 
 	box-shadow: inset 0 -0.5px 0 0 rgb(199, 199, 199);
 	padding-bottom: 50px;
@@ -56,24 +56,23 @@
 	// grid-area: amenities;
 
 	h2 {
-		font-size: 24px;
-		font-family: 'Circular-Light';
+		font-size: 22px;
+		font-family: "Circular-Light";
 		font-weight: 700;
-		margin-bottom: 24px;
+		padding-bottom: 24px;
 		color: #222222;
 	}
 
 	.amenities-content {
-		// width: 100%;
-		// height: 100%;
+		padding-bottom: 16px;
 		background-color: $white;
+		width: 80%;
 		column-count: 2;
 
-		// margin: 0;
 		.amenity {
 			-webkit-column-break-inside: avoid;
 			width: 100%;
-			height: 50px;
+			height: 40px;
 
 			.amenity-icon {
 				width: 20px;
@@ -82,11 +81,8 @@
 			}
 
 			p {
-				font-size: 18px;
-				font-family: 'Circular-Light';
+				font-size: 16px;
 				color: #222222;
-				// margin: 10px 0 ;
-				// background-color:red;
 			}
 		}
 	}
