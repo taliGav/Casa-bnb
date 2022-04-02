@@ -1,0 +1,202 @@
+
+        {
+            "createdAt" : "2016-03-30T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3402e36c59e6164faec0",
+                "fullname" : "Lenny",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/18.jpg"
+            },
+            "txt" : "L'accès au logement est pratique. Il y a un parking à 10 mètres (20€ par jour).\r\nLa résidence est bien tenue. Deux ascenseurs pour accéder au 6ème étage. L'appartement est parfaitement silencieux, pas de bruit sur la rue.\r\nLe logement est idéal pour les groupes, il est propre, en très bon état. Deux jeux de clés sont à disposition. Je recommande vivement ce logement.\r\nPour se rendre en ville, il est situé à 15 minutes de sites à voir, les taxis passent dans la rue, tout est pratique.\r\nEnfin la terrasse est superbe, avec vue sur la tour AGBAR.\r\n\r\nMerci pour votre accueil, on revient bientôt!"
+        }, 
+        {
+            "createdAt" : "2016-04-05T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3403e36c59e6164fb082",
+                "fullname" : "Albe Birio",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/19.jpg"
+            },
+            "txt" : "The apartment is really amazing, in the city centre and with everything we needed. Regina was really helpful we our needs."
+        }, 
+        {
+            "createdAt" : "2016-04-17T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3402e36c59e6164faeeb",
+                "fullname" : "Daniel",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/12.jpg"
+            },
+            "txt" : "Great stay, very nice flat as described. Nice balcony and well located! Host was nice and easy to communicate to"
+        }, 
+        {
+            "createdAt" : "2016-04-30T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3402e36c59e6164fad11",
+                "fullname" : "Bram",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/14.jpg"
+            },
+            "txt" : "Everything was fine.\r\nApartment was clean.\r\nA couple useful items weren't available, like a trash can or a drying rack fro the dishes. But obviously thats an easy thing to buy.\r\nOverall a nice place.\r\n\r\nNothing to do with the host, but the walls are paper thin. You can hear what the neighbours are doing on every side of the flat."
+        }, 
+        {
+            "createdAt" : "2016-05-08T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbcec",
+                "fullname" : "Joel",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/17.jpg"
+            },
+            "txt" : "Bon accueil et appartement propre et conforme à la description"
+        }, 
+        {
+            "createdAt" : "2016-05-16T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3405e36c59e6164fb73f",
+                "fullname" : "Paul",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/18.jpg"
+            },
+            "txt" : "Superbe appartement! Un parking à deux pas qui nous a été d'une grande utilité. Regina est très accueillante, je recommande cet appartement. "
+        }, 
+        {
+            "createdAt" : "2016-05-23T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3406e36c59e6164fba01",
+                "fullname" : "Daniel",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/19.jpg"
+            },
+            "txt" : "We has a great time at Regina's place. The flat is clean and as shown on the pictures.\r\n"
+        }, 
+        {
+            "createdAt" : "2016-07-10T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3406e36c59e6164fbb75",
+                "fullname" : "Guowei",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/13.jpg"
+            },
+            "txt" : "The apartment and the location is good, but the service is not as good as expect. \n\nI have booked a pick-up service from the householder, but there are some problems happened about the plane causing the flight delayed. I have informed the householder at once. When we arrived at the airport, we could not find the driver waiting for us at the arrival with our name. Then, I tried to ask for the help from the householder to meet the driver at the airport. After almost one-hour waiting, we are refused by the driver to meet at the airport and He asked us to find his car at the park. How ridiculous! This service costs 20 euro each person but we cannot even have the right to be picked up. We were so angry and chose to take the taxi. At the same time, I texted the householder that we were tired of waiting for the driver and we were on the way to ur apartment by taxi.\n\nThe householder didn't tell me that I should phone another guy to tell him that we were on the way to the apartment until We arrived. What all she talked about were the money of the pick-up service. We spent another 45 minutes to wait for the guy to send the key. Again, when he came, he talked about the money. We asked for the service, but u did not provide it with us. How dare u to ask for the payment? Besides, do u know what? We are totally seven people, so this service should cost 140 euro totally. But two taxis only cost us 70 euro. The driver knows the guy and the householder. I doubt that they are on the business to play trick with me.\n\nBarcelona is a really nice city to travel, but this experience does make a bad impression on me. \n "
+        }, 
+        {
+            "createdAt" : "2016-07-16T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbf02",
+                "fullname" : "Glen",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/11.jpg"
+            },
+            "txt" : "The apartment has a good location convenient to metro and walking distance to Sagrada Familia and many good eating options. Spacious with a nice balcony. Air conditioning units are in the main hallway and the dining/living room, but the rooms are hard to cool down (it was hot when we were there). "
+        }, 
+        {
+            "createdAt" : "2016-07-23T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbd6b",
+                "fullname" : "Andrea",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/18.jpg"
+            },
+            "txt" : "Hola todo muy bien, excelente ubicacion y el trato my amable. El unico comentario es el de reparar la "
+        }, 
+        {
+            "createdAt" : "2016-07-29T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3402e36c59e6164fad90",
+                "fullname" : "Jacob",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/10.jpg"
+            },
+            "txt" : "What an amazing place to stay! It is a very roomy and comfortable place, that is in a great location. The deck area is amazing and we spent most of our time there just hanging out taking in the views. Reginan had great communication and made it very simple for us to arrive. If i ever go back to Barcelona, i would 100% stay here again! "
+        }, 
+        {
+            "createdAt" : "2016-08-08T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3403e36c59e6164fb0e3",
+                "fullname" : "Yuri",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/30.jpg"
+            },
+            "txt" : "Tutto andava molto bene ,l'appartamento corrispondeva esattamente alle foto del sito. Le stanze ed i bagni erano puliti , come pure la cucina. La terrazza era molto bella e la vista era apprezzabile. Oltre ai vari letti vi era anche la possibilità di dormire su un divano letto particolarmente comodo. L'aria condizionata funzionava e rinfrescava bene tutto l'appartamento. L'unico problemino c'è stato con la porta del bagno che è stato facile chiudere, ma non più riaprire, ma c'è stato subito un pronto intervento da parte dei responsabili dell'appartamento, che hanno aiutato ad uscire la persona che era rimasta chiusa all'interno. Salvo questo però Il quartiere era tranquillo , c'erano vari baretti attorno e anche dei piccoli centri commerciali ( di tipo alimentare ). Era in oltre possibile raggiungere a piedi vari bar dove potersi divertire. I taxi per arrivare nel centro della movida variano con i prezzi dai 5 ai 7 euro a corsa. La fermata della metro era a 5 min a piedi dall'appartamento. Dal centro partiva una navetta che portava direttamente all'aeroporto per soli 4 euro e 90. "
+        }, 
+        {
+            "createdAt" : "2016-08-28T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3406e36c59e6164fbc92",
+                "fullname" : "Anne-Sophie",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/19.jpg"
+            },
+            "txt" : "Regina is a really nice host and the apartment is perfect for big group due to its perfect location, 5 min drive or 15 min walk for the beach and near the perfect tourist places !\nI recommend 100% this clean and well decorated apartment !\n"
+        }, 
+        {
+            "createdAt" : "2016-09-19T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3405e36c59e6164fb647",
+                "fullname" : "Julie",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/23.jpg"
+            },
+            "txt" : "Regina was a great host- first she replied very quickly to my booking inquiry, and was always very responsive with queries/ messages.\r\nThe flat is HUGE and very well located, very modern and nicely decorated. Regina had organised someone to meet us on arrival so check in was easy. Check out was easy  llew as we just had to leave the flat at the agreed time. I would only say that the check out time of 11am is a bit early, especially for a city when you can have dinner quite late... although upon our request, Regina allowed us nicely to stay until 12pm.\r\nThey were two sets of keys which was very convenient for a big group. \r\nI have suggested to regina that it would be great to have a few more amenities provided such as toilet paper and coffee/tea for example, but overall we were very pleased with our stay at Regina's place. Thank you Regina!\r\n\r\n"
+        }, 
+        {
+            "createdAt" : "2016-09-23T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3403e36c59e6164fb09e",
+                "fullname" : "Manuel",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/9.jpg"
+            },
+            "txt" : "El departamento es fantástico y tiene una terraza bastante amplia para disfrutar. Tanto los anfitriones como Maks (el concierge) fueron muy amables y dispuestos a ayudar."
+        }, 
+        {
+            "createdAt" : "2016-10-21T04:00:00.000Z",
+            "rate" : 5.0,
+            "by" : {
+                "_id" : "622f3408e36c59e6164fc065",
+                "fullname" : "Maxim",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/79.jpg"
+            },
+            "txt" : "Very good location.\r\n\r\nReally close to all major attractions. Plenty of shops and restaurants nearby. ( BTW you can go to the sushi bar - 5 minutes walk - Kyoka II, with unlimited food. Menu in Spanish only :) )\r\n\r\nApartments are comfortable and clean. I think it should be really good for a family vacations.\r\n\r\nIMHO some minimal improvements must be made (broken shower hose support, etc) but it's truly minor. \r\n\r\nOverall - pleasant experience."
+        }, 
+        {
+            "createdAt" : "2016-10-24T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3401e36c59e6164fab87",
+                "fullname" : "Rebecca",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/79.jpg"
+            },
+            "txt" : "Regina's apartment was as listed on her profile - there was sufficient space for all 8 of us, and had all of the amenities listed on the page. It was a very good area. I would recommend anyone in a bigger group looking to stay in a central location. "
+        }, 
+        {
+            "createdAt" : "2016-10-31T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3407e36c59e6164fbfe5",
+                "fullname" : "Luke",
+                "imgUrl" : "https://randomuser.me/api/portraits/men/38.jpg"
+            },
+            "txt" : "Great apartment if you are a larger group and need more space. The bedrooms are all great and as described, plus having two bathrooms was good. The terrace is a fantastic bonus, with amazing views! "
+        }, 
+        {
+            "createdAt" : "2016-11-02T04:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3403e36c59e6164fafc3",
+                "fullname" : "Karla",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/38.jpg"
+            },
+            "txt" : "El apartamento es incluso mejor a como aparece en las fotos. La ubicación excelente. Queda cerca de todo y se puede ir caminando a diferentes puntos de interes como la sagrada familia y la marina o para los que prefieren el metro tiene cerca varias paradas de metro lo que resulta muy conveniente.  Lo recomendamos cien por ciento. Si volvemos a Barcelona definitivamente nos quedariamos nuevamente aqui."
+        }, 
+        {
+            "createdAt" : "2016-11-14T05:00:00.000Z",
+            "rate" : 4.0,
+            "by" : {
+                "_id" : "622f3403e36c59e6164faf4f",
+                "fullname" : "Katherine",
+                "imgUrl" : "https://randomuser.me/api/portraits/women/40.jpg"
+            },
+            "txt" : "We stayed here with 8 people for a fun weekend in Barcelona and this apartment was a great home base for us. The apartment is exactly what the pictures showed and Regina and Juan were great hosts. Location is a little bit out of the way if you want to be central but proximity to la Sagrada Familia was nice!"
+        },
+    ]
