@@ -1,5 +1,5 @@
 <template>
-	<el-badge value="new" class="item">
+	<!-- <el-badge value="new" class="item"> -->
 		<section class="relative">
 			<div @click="openUserBar" class="user-badge flex align just space">
 				<span class="badge-hamburger">☰</span>
@@ -42,7 +42,7 @@
 				class="open-user-menu"
 			></user-menu>
 		</section>
-	</el-badge>
+	<!-- </el-badge> -->
 </template>
 
 <script>

@@ -4,6 +4,7 @@
 	height: 80vh;
 	background-size: cover;
 	position: relative;
+	margin-bottom: 64px;
 
 	.hero-phrase {
 		// font-family: 'Circular-Light';
@@ -32,19 +33,22 @@
 }
 
 .popular {
-	padding-top: 96px;
+	// padding-top: 96px;
 	text-transform: capitalize;
 	font-family: airbnb-regular, sans-serif;
 	color: #222;
 	font-size: 33px;
 	font-weight: bold;
+	// margin-bottom: 64px;
+	p {
+		margin-bottom: 28px;
+		
+	}
 
 	.popular-list {
 		display: grid;
 		column-gap: 20px;
 		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-		padding-top: 50px;
-		padding-bottom: 50px;
 
 		li {
 			justify-self: center;
@@ -52,9 +56,10 @@
 
 		.popular-preview {
 			cursor: pointer;
-
+			margin-bottom: 64px;
 			p {
 				height: max-content;
+				margin: 5px;
 			}
 
 			font-size: 22px;
