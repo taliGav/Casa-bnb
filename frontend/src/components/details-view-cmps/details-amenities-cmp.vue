@@ -1,7 +1,7 @@
 <template>
-	<div class="amenitie flex">
+	<div class="amenity flex">
         <img :src="amenetieImage" alt="">
-		<p>{{ amenitie }}</p>
+		<p>{{ amenity }}</p>
         <pre v-if = "amenitiesImgs">{{amenetiesImg}}</pre>
 	</div>
 </template>
@@ -11,7 +11,7 @@ import { isThisQuarter } from 'date-fns';
 import { stayService } from '../../services/stay-service.js';
 export default {
 	props: {
-		amenitie: {
+		amenity: {
 			type: String,
 		},
 	},
@@ -24,8 +24,8 @@ export default {
     created(){
         this.amenetiesImgs = stayService.getAmenities()
         console.log('images',this.amenetiesImgs);
-        this.imgToShow = this.amenetiesImgs.find((toShow) => toShow.svg === this.amenitie)
-        console.log(this.amenitie);
+        this.imgToShow = this.amenetiesImgs.find((toShow) => toShow.svg === this.amenity)
+        console.log(this.amenity);
         console.log('image to show',this.imgToShow);
     },
     computed:{

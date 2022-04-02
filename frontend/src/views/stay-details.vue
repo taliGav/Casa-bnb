@@ -20,32 +20,32 @@
         <details-checkout :stay="stay" />
       </div>
 
-      <div class="amenities-container">
-        <div class="amenities-header flex">
-          <h2>What this place offers</h2>
-        </div>
-        <div class="amenities-content">
-          <!-- <ul class="clean-list flex"> -->
-          <div
-            class="amenitie flex align"
-            v-for="(amenity, idx) in amenitiesForDisplay"
-            :key="idx"
-          >
-            <img
-              class="amenity-icon"
-              :src="`./src/assets/icons/amenities/${amenity.replace(
-                /\s/g,
-                ''
-              )}.svg`"
-              @error="replaceByDefault"
-            />
-            <p>{{ amenity }}</p>
-          </div>
-          <!-- </ul> -->
-        </div>
-      </div>
-    </div>
-    <details-reviews v-if="stay" :stay="stay" />
+			<div class="amenities-container">
+				<div class="amenities-header flex">
+					<h2>What this place offers</h2>
+				</div>
+				<div class="amenities-content">
+					<!-- <ul class="clean-list flex"> -->
+					<div
+						class="amenity flex align"
+						v-for="(amenity, idx) in amenitiesForDisplay"
+						:key="idx"
+					>
+						<img
+							class="amenity-icon"
+							:src="`./src/assets/icons/amenities/${amenity.replace(
+								/\s/g,
+								''
+							)}.svg`"
+							@error="replaceByDefault"
+						/>
+						<p>{{ amenity }}</p>
+					</div>
+					<!-- </ul> -->
+				</div>
+			</div>
+		</div>
+		<details-reviews v-if="stay" :stay="stay" />
 
     <details-map :stay="stay" />
 
