@@ -18,7 +18,11 @@
       <div class="input">
         <form @submit.stop.prevent="sendMsg">
           <input type="text" v-model="msg.txt" placeholder="Your msg" />
-          <button>Send</button>
+          <button>
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-256/arrow-circle-up-3609668-3014867.png"
+            />
+          </button>
         </form>
       </div>
     </div>
