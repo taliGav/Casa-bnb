@@ -1,5 +1,5 @@
 <template>
-	<section class="mobile-search-menu flex col align">
+	<section class="mobile-menu flex col align">
 		<div class="mobile-search-container flex just align">
 			<div class="back-button flex align just" @click="closeMobileMenu">
 				<img src="../../assets/Images/logos/back-button.svg" alt="" />

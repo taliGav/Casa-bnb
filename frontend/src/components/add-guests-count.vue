@@ -76,7 +76,7 @@ export default {
 		};
 	},
 	created() {
-		this.adults = 0;
+		this.adults = 1;
 		this.children = 0;
 		this.infants = 0;
 	},

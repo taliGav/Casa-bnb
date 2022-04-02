@@ -87,7 +87,7 @@ export default {
 				await this.$store.dispatch({ type: 'login', cred: this.user });
 				console.log('Loged in successfully');
 			}catch (err){
-				console.log('Faled to login', err);
+				console.log('Failed to login', err);
 			}
 			this.$emit('closeLogin');
 			// this.$emit("updateUser");

@@ -42,9 +42,14 @@
 					</div>
 				</div>
 				<div class="reg-host-actions">
-					<div class="host-your-home-label info label" @click="goToListings">
-						<router-link to="/user">Manage listings</router-link>
-						<!-- <p>Manage listings</p> -->
+					<div
+						class="host-your-home-label info label"
+						@click="readNotification"
+					>
+						<router-link to="/user"
+							>Manage listings
+							<span v-if="notificationStatus">❗</span></router-link
+						>
 					</div>
 					<div class="host-your-home-label info label" @click="goToAccount">
 						<p>Account</p>
@@ -72,6 +77,9 @@ export default {
 		user: {
 			type: Object,
 		},
+		notification: {
+			type: String,
+		},
 	},
 	data() {
 		return {};
@@ -79,11 +87,6 @@ export default {
 	components: {},
 	created() {},
 	methods: {
-		// updateUser() {
-		//   console.log(" this.$store.getters.user", this.$store.getters.user);
-		//   if (this.$store.getters.user) this.isGuest = false;
-		//   // this.$store.getters.filterBy
-		// },
 		openLogin() {
 			this.$emit('openLogin');
 		},
@@ -96,17 +99,12 @@ export default {
 			console.log('logout');
 			await this.$store.dispatch({ type: 'logout' });
 			this.$emit('closeMenu');
-			//   this.isGuest = !this.isGuest;
-			//   console.log("this.isGuest", this.isGuest);
 		},
 		closeMenu() {
-			// const el = ev.target.className;
-			// console.log('el', el);
-			// if (el !== 'el menu-back-screen open-user-menu') {
 			this.$emit('closeMenu');
-			// }else{
-			// return
-			// }
+		},
+		readNotification() {
+			this.$emit('readNotification');
 		},
 	},
 	computed: {
@@ -114,6 +112,10 @@ export default {
 			if (this.isSignupModal || this.isLoginModal) {
 				return true;
 			}
+		},
+		notificationStatus() {
+			if (this.notification) return true;
+			else false;
 		},
 	},
 	mounted() {

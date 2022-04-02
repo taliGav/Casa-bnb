@@ -23,7 +23,7 @@
 				:isOpen="isOpen"
 				@openSearch="openSearch"
 			></small-search-bar>
-			<mobile-search-bar @click="mobileMenu"></mobile-search-bar>
+			<mobile-search-bar ></mobile-search-bar>
 			<mobile-search-menu
 				@closeMobileMenu="mobileMenu"
 				:class="{ 'bottom-slide': isMobileSearch }"
@@ -43,7 +43,7 @@
 				<user-badge></user-badge>
 			</nav>
 		</div>
-		<stay-search v-if="isOpen" :screenSize="screenSize" ></stay-search>
+		<stay-search v-if="isOpen" :screenSize="screenSize"></stay-search>
 	</header>
 	<!-- </div> -->
 </template>
@@ -64,12 +64,11 @@ export default {
 			isSearchClicked: false,
 			isDetailsPage: false,
 			isMobileSearch: false,
-			screenSize:{
+			screenSize: {
 				isMobileSize: false,
 				isMediumSize: false,
-				path:null
-			}
-
+				path: null,
+			},
 		};
 	},
 	created() {
@@ -102,7 +101,7 @@ export default {
 		},
 		checkPagePath() {
 			const stayPath = this.$route.path.substring(1, 5);
-			this.screenSize.path = stayPath
+			this.screenSize.path = stayPath;
 			this.$emit('screenResize', this.screenSize);
 			if (this.$route.path !== '/') {
 				this.isOpen = false;
@@ -123,9 +122,12 @@ export default {
 			const screenSize = ev.target.innerWidth;
 			if (screenSize < 992) this.screenSize.isMediumSize = true;
 			else this.screenSize.isMediumSize = false;
-			if (screenSize < 780) this.screenSize.isMobileSize = true;
-			else this.screenSize.isMobileSize = false;
-			this.$emit('screenResize', this.screenSize);
+			if (screenSize < 780) {
+				this.screenSize.isMobileSize = true;
+			} else {
+				this.screenSize.isMobileSize = false;
+				this.$emit('screenResize', this.screenSize);
+			}
 		},
 	},
 
