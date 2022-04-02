@@ -19,8 +19,8 @@ async function queryAll(userId) {
   return await httpService.get(`${ENDPOINT}/${userId}`)
 }
 
-async function addMsg(msg) {
-  return await httpService.post(ENDPOINT, msg)
+async function addMsg(msg, topic) {
+  return await httpService.post(ENDPOINT, {msg,topic})
 }
 
 async function removeMsg(msgId) {

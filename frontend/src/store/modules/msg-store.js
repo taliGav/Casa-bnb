@@ -4,7 +4,7 @@ export default {
     state: {
         msgs: [],
         chats:[],
-        curChat: 0,
+        curChatIdx: 0,
     },
     getters: {
         msgs(state) {
@@ -14,8 +14,11 @@ export default {
             return state.chats
         },
         chat(state) {
-            return state.chats[state.curChat]
+            return state.chats[state.curChatIdx]
         },
+        curChatIdx(state) {
+            return state.curChatIdx
+        }
     },
     mutations: {
         setMsgs(state, { msgs }) {
@@ -25,16 +28,13 @@ export default {
             state.chats = chats
         },
         setCurChat(state, { topic }) {
-            state.curChat = state.chats.findIndex(ch => ch.topic === topic)
+            state.curChatIdx = state.chats.findIndex(ch => ch.topic === topic)
         },
         addMsg(state, { msg }) {
-            state.msgs.push(msg)
+            state.chats[state.curChatIdx].msgs.push(msg)
         },
         saveMsg(state, { msg }) {
-            state.msgs.push(msg);
-            // const idx = state.msgs.findIndex((o) => o._id === msg._id);
-            // if (idx !== -1) state.msgs.splice(idx, 1, msg);
-            // else state.msgs.push(msg);
+            state.chats[state.curChatIdx].msgs.push(msg);
         },
     },
     actions: {
@@ -47,9 +47,10 @@ export default {
                 console.log('err :>> ', err)
             }
         },
-        async addMsg({ commit }, { msg }) {
+        async addMsg({ commit }, { msg, topic }) {
             try {
-                const addedMsg = await msgService.addMsg(msg)
+                const addedMsg = await msgService.addMsg(msg, topic)
+                console.log('store add msg:',addedMsg);
                 commit({ type: 'saveMsg', msg: addedMsg })
                 return addedMsg;
             } catch (err) {
