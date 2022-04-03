@@ -142,7 +142,7 @@ export default {
 				if (curUser.lastSeenMsg === lastMsgId) {
 					return;
 				}
-				this.notification = 'New Msg!';
+				this.notification = '!';
 				return;
 			});
 		},
