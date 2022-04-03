@@ -12,4 +12,7 @@
 </template>
 
 <script>
+export default{
+	name: 'reserve-btn'
+}
 </script>

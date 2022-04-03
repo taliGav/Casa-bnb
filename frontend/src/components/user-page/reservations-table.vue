@@ -28,7 +28,9 @@
 			<!-- <div class="col col-1" :style="status">{{ order.status }}</div> -->
 			<div class="col col-2">
 				<div class="reservation-details">
-						<p>Guests  {{order.guests}}</p>
+					<p>{{ createdAt }}</p>
+					<!-- <pre>{{order}}</pre> -->
+					<p>Guests {{ order.guests }}</p>
 					<div class="reservation-dates flex align">
 						<p class="">Check in {{ startDate }}</p>
 						<img src="../../assets/icons/Casabnb-Table_v1_06.png" />
@@ -37,7 +39,9 @@
 
 					<!-- <p>Check out: {{ endDate }}</p> -->
 					<p class="stay-name">{{ order.stay.name }}</p>
-					<p class="reservations-total-price">${{ order.totalPrice }} total</p>
+					<p class="reservations-total-price">
+						{{ toFixedPrice(order.totalPrice) }} total
+					</p>
 				</div>
 			</div>
 			<div class="col col-3 flex align start">
@@ -114,6 +118,11 @@ export default {
 				console.log('err :>> ', err);
 			}
 		},
+		toFixedPrice(price) {
+			const options = { style: 'currency', currency: 'USD' };
+			const numberFormat = new Intl.NumberFormat('en-US', options);
+			return numberFormat.format(price);
+		},
 	},
 	computed: {
 		startDate() {
@@ -152,6 +161,10 @@ export default {
 		},
 		isDeclined() {
 			if (this.order.status === 'Declined') return true;
+		},
+		createdAt() {
+			const date = new Date(this.order.createdAt);
+			return date.toLocaleString();
 		},
 	},
 	components: {

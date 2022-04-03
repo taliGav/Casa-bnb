@@ -13,8 +13,22 @@
     align-items: center;
     font-family: "Circular-Light";
     font-weight: 500;
-    line-height: 20px;
-    margin: 4px 0 0;
+    // line-height: 20px;
+
+    .details-header-location {
+      height: 10px;
+
+      .stay-location-name  {
+        font-family: 'Circular-Light';
+        font-family: 'Cereal-Book';
+        font-weight: 600;
+        // background-color: red;
+        padding: 0;
+        margin-top: 4px;
+      }
+    }
+
+    // margin: 4px 0 0;
   }
 
   .rating {
@@ -23,13 +37,8 @@
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-
-    u {
-      // font-family:  'Circular-Light';
-      // font-family:  'Cereal-Book';
-      font-weight: 600;
-    }
   }
+
 
   .ratings {
     align-items: center;

@@ -15,7 +15,8 @@
 				<h2>
 					<router-link :class="{ 'color-theme': colorsChange }" to="/">
 						<span class="logo-txt">casa</span>
-						<span class="casa-symbol">⌂</span><span class="logo-txt">bnb</span>
+						<span class="casa-symbol">⌂</span>
+						<span class="logo-txt">bnb</span>
 					</router-link>
 				</h2>
 			</div>
@@ -23,7 +24,7 @@
 				:isOpen="isOpen"
 				@openSearch="openSearch"
 			></small-search-bar>
-			<mobile-search-bar ></mobile-search-bar>
+			<mobile-search-bar></mobile-search-bar>
 			<mobile-search-menu
 				@closeMobileMenu="mobileMenu"
 				:class="{ 'bottom-slide': isMobileSearch }"
