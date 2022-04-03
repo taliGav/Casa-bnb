@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <img v-if="isLoading" src="../../assets/img-upload-func/Spin-load.gif" /> -->
-    <div v-if="orders" class="reservations-container main-app top-pad-small">
+    <div v-if="orders" class="reservations-container main-app">
       <!-- <div class="container main-layout"> -->
       <div class="table-container">
         <div class="header-container flex align">
