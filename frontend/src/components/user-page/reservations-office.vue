@@ -5,7 +5,7 @@
       <!-- <div class="container main-layout"> -->
       <div class="table-container">
         <div class="header-container flex align">
-          <h2 class="table-title">Upcoming Reservations</h2>
+          <h2 class="table-title">Reservations</h2>
         </div>
         <ul class="responsive-table">
           <li class="table-header">
