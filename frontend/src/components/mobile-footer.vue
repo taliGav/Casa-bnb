@@ -24,6 +24,7 @@
       :class="{ 'bottom-slide': isMobileMenu }"
       @closeMenu="closeMenu"
       :notification="notification"
+      :user="loggedUser"
       @readNotification="readNotification"
     ></mobile-menu>
     <div class="mobile-order"></div>
@@ -82,7 +83,7 @@ export default {
 		},
 		createNotification() {
 			console.log('creating notification', this.notification);
-			this.notification = 'New Order!';
+			this.notification = '!';
 			console.log('creating notification', this.notification);
 		},
 		readNotification() {
