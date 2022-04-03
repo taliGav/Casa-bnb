@@ -88,7 +88,7 @@ export default {
 	},
 	data() {
 		return {
-			guestsCount: 1,
+			guestsCount: 0,
 			isCalendar: false,
 			resirvationDates: null,
 			openGuests: false,
