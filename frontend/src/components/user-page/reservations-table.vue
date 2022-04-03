@@ -119,7 +119,11 @@ export default {
 			}
 		},
 		toFixedPrice(price) {
-			const options = { style: 'currency', currency: 'USD' };
+			const options = {
+				style: 'currency',
+				currency: 'USD',
+				minimumFractionDigits: 0,
+			};
 			const numberFormat = new Intl.NumberFormat('en-US', options);
 			return numberFormat.format(price);
 		},

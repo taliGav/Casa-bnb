@@ -112,7 +112,7 @@ export default {
 		},
 		createNotification() {
 			console.log('creating notification', this.user);
-			this.notification = 'New Order!';
+			this.notification = '!';
 		},
 		readNotification() {
 			this.notification = '';
