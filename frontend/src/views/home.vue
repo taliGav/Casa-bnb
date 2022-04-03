@@ -4,7 +4,7 @@
     <label v-else class="hero full" > -->
     <div class="hero full">
       <div class="hero-phrase">
-        <h2 class="phrase-top">Mi casa su casa</h2>
+        <!-- <h2 class="phrase-top">Mi casa su casa</h2> -->
         <!-- <h2 class = "phrase-bot">es su casa</h2> -->
       </div>
     </div>
