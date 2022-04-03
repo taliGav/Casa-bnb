@@ -83,13 +83,15 @@ function _buildCriteria(filterBy) {
     criteria.capacity = { $gte: +filterBy.guests }
   }
   if (filterBy.amenities) {
-    if (typeof (filterBy.amenities) === 'object')
-      var amenitiesToFilter = Object.values(filterBy.amenities);
-    else var amenitiesToFilter = filterBy.amenities;
-    if (typeof (amenitiesToFilter) === 'string') {
-      amenitiesToFilter = [amenitiesToFilter];
-    }
-    criteria.amenities = { $all: (amenitiesToFilter) }
+    console.log('stay criteria amenities:', filterBy.amenities);
+    criteria.amenities = { $all: (filterBy.amenities) }
+    // if (typeof (filterBy.amenities) === 'object')
+    //   var amenitiesToFilter = Object.values(filterBy.amenities);
+    // else var amenitiesToFilter = filterBy.amenities;
+    // if (typeof (amenitiesToFilter) === 'string') {
+    //   amenitiesToFilter = [amenitiesToFilter];
+    // }
+    // criteria.amenities = { $all: (amenitiesToFilter) }
   }
   if (filterBy.maxPrice && filterBy.minPrice) {
     criteria.price = { $lte: JSON.parse(filterBy.maxPrice), $gte: JSON.parse(filterBy.minPrice) }

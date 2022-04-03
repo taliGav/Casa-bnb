@@ -22,12 +22,12 @@ export default {
 		};
 	},
 	created() {
-   console.log('chat side bar chat:',this.chat);
-   this.getOtherUser()
-   console.log('other',this.otherUser);
-  //  socketService.emit('chat topic', this.chat.topic);
-    socketService.on('notification', this.addMsg);
-  },
+		console.log('chat side bar chat:',this.chat);
+		this.getOtherUser()
+		console.log('other',this.otherUser);
+		//  socketService.emit('chat topic', this.chat.topic);
+			socketService.on('notification', this.addMsg);
+  	},
   destroyed() {
     socketService.off('notification');
    

@@ -32,7 +32,11 @@ export default {
     },
 
     filterBy() {
-      return this.$route.query;
+      var filter = this.$route.query
+      if(typeof(filter.amenities)==="string"){
+        filter.amenities = filter.amenities.split(' ')
+      }
+      return filter;
     },
   },
   methods: {

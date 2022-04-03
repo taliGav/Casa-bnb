@@ -49,8 +49,8 @@ async function getMsgs(req, res) {
 
 async function addMsg(req, res) {
   try {
-    const msg = req.body.msg
-    const topic = req.body.topic
+    const { msg, topic } = req.body
+    // const topic = req.body.topic
     // console.log('add msg:',msg);
     // console.log('add topic:',topic);
     const addedMsg = await msgService.addMsg(msg, topic)
@@ -63,8 +63,8 @@ async function addMsg(req, res) {
 
 async function updateLastSeen(req, res) {
   try {
-    const userId = req.body.userId;
-    const topic = req.body.topic;
+    const { userId, topic } = req.body;
+    // const topic = req.body.topic;
     // console.log('update userId:',userId);
     // console.log('update topic:',topic);
     const updatedChat = await msgService.updateLastSeen(userId, topic)
