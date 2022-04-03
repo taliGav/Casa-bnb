@@ -7,6 +7,10 @@
 
     .stay-images-container {
         margin-bottom: 10px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     .preview-data {
