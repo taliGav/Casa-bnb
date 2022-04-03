@@ -1,33 +1,33 @@
 <template>
-	<div class="mobile-footer flex align just">
-		<div class="mobile-icons-container flex space">
-			<div class="mobile-footer-icon flex col align space" @click="explore">
-				<img src="../assets/Images/logos/search-icon-red.svg" alt="" />
-				<!-- <router-link></router-link> -->
-				<p>Explore</p>
-			</div>
-			<div class="mobile-footer-home-icon flex col align space" @click="goHome">
-				<span class="footer-home-icon">⌂</span>
-				<p>Home</p>
-			</div>
-			<el-badge :value="notification" class="item">
-				<div
-					class="mobile-footer-icon flex col align space"
-					@click="openUserMenu"
-				>
-					<img src="../assets/Images/logos/login.svg" alt="" />
-					<p>Menu</p>
-				</div>
-			</el-badge>
-		</div>
-		<mobile-menu
-			:class="{ 'bottom-slide': isMobileMenu }"
-			@closeMenu="closeMenu"
-			:notification="notification"
-			@readNotification="readNotification"
-		></mobile-menu>
-		<div class="mobile-order"></div>
-	</div>
+  <div class="mobile-footer flex align just">
+    <div class="mobile-icons-container flex space">
+      <div class="mobile-footer-icon flex col align space" @click="explore">
+        <img src="../assets/Images/logos/search-icon-red.svg" alt="" />
+        <!-- <router-link></router-link> -->
+        <p>Explore</p>
+      </div>
+      <div class="mobile-footer-home-icon flex col align space" @click="goHome">
+        <span class="footer-home-icon">⌂</span>
+        <p>Home</p>
+      </div>
+      <el-badge :value="notification" class="item">
+        <div
+          class="mobile-footer-icon flex col align space"
+          @click="openUserMenu"
+        >
+          <img src="../assets/Images/logos/login.svg" alt="" />
+          <p>Menu</p>
+        </div>
+      </el-badge>
+    </div>
+    <mobile-menu
+      :class="{ 'bottom-slide': isMobileMenu }"
+      @closeMenu="closeMenu"
+      :notification="notification"
+      @readNotification="readNotification"
+    ></mobile-menu>
+    <div class="mobile-order"></div>
+  </div>
 </template>
 <script>
 import mobileMenu from './mobile-menu.vue';
@@ -47,7 +47,8 @@ export default {
 			notification: '',
 		};
 	},
-	async created() {
+	created() {
+		this.setSocket()
 		// try {
 		// 	this.loggedUser = this.$store.getters.user;
 		// 	console.log(this.loggedUser);

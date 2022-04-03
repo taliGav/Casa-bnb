@@ -76,8 +76,6 @@ async function addMsg(msg, topic) {
   const collection = await dbService.getCollection('msg')
   msg._id = new ObjectId()
   const addedMsg = await collection.update({ "topic": topic }, { $push: { "msgs": msg } })
-  // console.log('added msg:', msg);
-  // msg._id = addedMsg.insertedId
   return msg
 }
 
