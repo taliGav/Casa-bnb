@@ -20,7 +20,6 @@ export default {
 		avgRating() {
 			let ratingSum = this.stay.reviews.reduce((acc, x) => acc + x.rate, 0);
 			let avgRating = ratingSum / this.stay.reviews.length;
-			if (Number.isInteger(avgRating)) return avgRating;
 			return parseFloat(avgRating).toPrecision(2);
 		},
 		reviewsCount() {

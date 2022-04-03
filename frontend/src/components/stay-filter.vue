@@ -2,7 +2,7 @@
 	<section class="stay-filter flex align">
 		<div class="price-btn-container">
 			<button class="" @click="togglePrice">
-				price
+				Price
 				<img
 					:class="{ flip: isClicked }"
 					src="../assets/icons/dropdown.png"
