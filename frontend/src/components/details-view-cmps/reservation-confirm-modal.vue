@@ -1,5 +1,12 @@
 <template>
 	<div class="reservation-confirm-modal flex col align just">
+		<!-- <div  @click="goBack">Back</button> -->
+		<img
+			class="closing-icon"
+			src="../../assets/icons/x-close.png"
+			@click="goBack"
+			alt=""
+		/>
 		<div v-if="orderStage" class="flex col just align">
 			<div class="reservations-confirm-info flex just col">
 				<h3>Reservation Details</h3>
@@ -9,18 +16,24 @@
 				<p><span>Total price </span> {{ order.totalPrice }}</p>
 			</div>
 			<!-- <pre>{{order}}</pre> -->
-			<div class="flex space">
-				<button class="confirm-btn" @click="confirmReservation">Confirm</button>
-				<button @click="goBack">Back</button>
-			</div>
+			<!-- <div class="flex space"> -->
+			<button class="red-btn confirm-btn" @click="confirmReservation">
+				Confirm
+			</button>
+			<!-- </div> -->
 		</div>
 		<img
 			v-if="isLoading"
 			class="loading-icon"
 			src="../../assets/icons/circle-red.gif"
-			alt=""
 		/>
-		<h3 v-if="isComplete">DONE!</h3>
+		<div v-if="isComplete" class="flex col align just">
+			<h3>Success</h3>
+			<p>Confirmation mail has been sent to you</p>
+			<button class="red-btn" @click="goBack">Continue</button>
+		</div>
+
+		<!-- <h3 v-if="isComplete">DONE!</h3> -->
 	</div>
 </template>
 <script>
@@ -30,6 +43,7 @@ export default {
 			type: Object,
 		},
 	},
+	components: {},
 	name: 'reservation-confirm-modal',
 	data() {
 		return {
@@ -51,15 +65,10 @@ export default {
 				this.isLoading = false;
 				this.isComplete = true;
 			}, 1000);
-			setTimeout(() => {
-				this.$emit('confirmReservation');
-			}, 1500);
-			setTimeout(() => {
-				this.isComplete = false;
-			}, 1700);
 		},
 		goBack() {
 			this.$emit('closeConfirmationModal');
+			this.isComplete = false;
 		},
 	},
 	computed: {
