@@ -12,13 +12,9 @@ module.exports = {
 
 async function query(filterBy) {
   try {
-    console.log('back stay serv filter:', filterBy);
     const criteria = _buildCriteria(filterBy)
-    // const criteria = {}
-    console.log('back stay serv criteria:', criteria);
     const collection = await dbService.getCollection('stay')
     var stays = await collection.find(criteria).toArray()
-    // console.log('back stay serv stays:', stays);
     return stays
   } catch (err) {
     logger.error('cannot find stays', err)
@@ -77,21 +73,13 @@ function _buildCriteria(filterBy) {
 
   if (filterBy.destination) {
     const regex = new RegExp(filterBy.destination, 'i');
-    criteria["loc.country"] = { $regex: regex }
+    criteria["loc.city"] = { $regex: regex }
   }
   if (filterBy.guests) {
     criteria.capacity = { $gte: +filterBy.guests }
   }
   if (filterBy.amenities) {
-    console.log('stay criteria amenities:', filterBy.amenities);
     criteria.amenities = { $all: (filterBy.amenities) }
-    // if (typeof (filterBy.amenities) === 'object')
-    //   var amenitiesToFilter = Object.values(filterBy.amenities);
-    // else var amenitiesToFilter = filterBy.amenities;
-    // if (typeof (amenitiesToFilter) === 'string') {
-    //   amenitiesToFilter = [amenitiesToFilter];
-    // }
-    // criteria.amenities = { $all: (amenitiesToFilter) }
   }
   if (filterBy.maxPrice && filterBy.minPrice) {
     criteria.price = { $lte: JSON.parse(filterBy.maxPrice), $gte: JSON.parse(filterBy.minPrice) }
