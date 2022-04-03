@@ -1,22 +1,24 @@
 <template>
-  <div class="chat-thumbnail" v-if="otherUser">
-    <el-badge :value="notification" class="item">
-      <img class="chat-user-img" @click="setTopic" :src="otherUser.imgUrl" />
+  <div class="chat-thumbnail flex align just" v-if="otherUser">
+    <el-badge :value="notification" class="item flex align just">
+      <div class="flex align just">
+        <img class="chat-user-img" @click="setTopic" :src="otherUser.imgUrl" />
+        <p>{{ otherUser.fullname }}</p>
+      </div>
     </el-badge>
   </div>
 </template>
 
 <script>
-
 export default {
 	name: 'chat-side-bar',
 	props: {
-    chat: Object,
-    user: Object,
-  },
+		chat: Object,
+		user: Object,
+	},
 	data() {
 		return {
-      otherUser: null
+			otherUser: null,
 		};
 	},
 	created() {
@@ -63,4 +65,3 @@ export default {
   }
 };
 </script>
-
