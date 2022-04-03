@@ -69,12 +69,9 @@ export default {
 			const { destination, guests, minPrice, maxPrice } = this.curFilterBy;
 			this.filterBy = { destination, guests, minPrice, maxPrice };
 			const amenities = this.curFilterBy.amenities;
-			console.log(this.filterBy);
 			if (amenities && typeof amenities === 'string') {
-				console.log('query', this.filterBy.amenities);
 				this.filterBy.amenities = [];
 				this.filterBy.amenities.push(amenities);
-				console.log('amenities processed', this.filterBy.amenities);
 			} else {
 				this.filterBy.amenities = amenities;
 			}
@@ -111,7 +108,6 @@ export default {
 				this.filterBy.amenities.splice(idx, 1);
 			}
 			this.classes[amenity] = !this.classes[amenity];
-			// console.log('classsss!!!!', this.classes[amenity]);
 			this.doFilter();
 		},
 		togglePrice() {

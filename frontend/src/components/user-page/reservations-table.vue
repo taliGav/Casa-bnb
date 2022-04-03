@@ -28,6 +28,7 @@
 			<!-- <div class="col col-1" :style="status">{{ order.status }}</div> -->
 			<div class="col col-2">
 				<div class="reservation-details">
+						<p>Guests  {{order.guests}}</p>
 					<div class="reservation-dates flex align">
 						<p class="">Check in {{ startDate }}</p>
 						<img src="../../assets/icons/Casabnb-Table_v1_06.png" />
