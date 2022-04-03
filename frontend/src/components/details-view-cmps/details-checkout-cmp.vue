@@ -73,6 +73,7 @@ import reserveBtn from './../reusable-cmps/reserve-btn-cmp.vue';
 import addGuestsCount from '../add-guests-count.vue';
 import { socketService } from '../../services/socket.service';
 import reservationConfirm from './reservation-confirm-modal.vue';
+import { l } from '../../../../backend/public/assets/vendor.43272143';
 
 export default {
 	components: {
@@ -88,7 +89,7 @@ export default {
 	},
 	data() {
 		return {
-			guestsCount: 0,
+			guestsCount: 1,
 			isCalendar: false,
 			resirvationDates: null,
 			openGuests: false,
@@ -168,7 +169,9 @@ export default {
 			};
 			this.orderConfirmDetails = order;
 			this.confirmationModal = true;
-			console.log(order);
+			this.resirvationDates = null;
+			this.guestsCount = 1;
+			// (this.reservationsDate = null), (this.guests = 1);
 			// const completeOrder = await this.$store.dispatch({
 			// 	type: 'addOrder',
 			// 	order: order,
@@ -178,6 +181,7 @@ export default {
 			// var days = Math.floor(delta / 86400);
 		},
 		async confirmReservation() {
+			(this.resirvationDates = null), (this.guestsCount = 1);
 			console.log('confirming');
 
 			try {
