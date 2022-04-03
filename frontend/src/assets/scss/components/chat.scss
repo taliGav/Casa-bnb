@@ -36,7 +36,10 @@
 	}
 
 p{
-	margin-left: 10px;
+	margin-left: 14px;
+	font-weight: bold;
+	font-size:12px;
+	color: $theme-red;
 }
 
 
@@ -90,39 +93,30 @@ p{
 
 			ul {}
 
+			li{
+				margin-left: 5px;
+				margin-top: 8px;
+				// border-bottom: 0.5px solid grey;
+			}
+			span{
+				// margin-left: 10px;
+				font-weight: bold;
+				color: black;
+				font-size:15px
+
+			}
 			img {
 				border-radius: 50%;
 				width: 30px;
 				height: 30px;
 			}
 
-			// ::-webkit-scrollbar {
-			// 	width: 10px;
-			// 	height: 10px;
-			//   }
-
-			//   ::-webkit-scrollbar-thumb {
-			// 	background: rgb(207, 20, 20);
-			//   }
-
-			//   ::-webkit-scrollbar-track {
-			// 	background: rgba(27, 218, 36, 0.2);
-			//   }
+	
 		}
 
 		.input {
 			grid-area: input;
-			// padding: 9px 8px !important;
-			// // font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
-			// font-size: 16px !important;
-			// line-height: 22px !important;
-			// // font-weight: 400 !important;
-			// // resize: none !important;
-			// // width: 50px !important;
-			// min-height: 40px !important;
-			// flex-grow: 1 !important;
-			// border-radius: 12px !important;
-			// max-height: 40px !important;
+			
 
 			form {
 				display: flex;
@@ -130,17 +124,7 @@ p{
 				align-items: center;
 
 				input {
-					// -webkit-box-flex: 1 !important;
-					// color: inherit !important;
-					// display: block !important;
-					// min-width: 300px !important;
-					// max-width: 100% !important;
-					// outline: none !important;
-					// border: 0px none !important;
-					// margin: 0px 1px 0px 0px !important;
-					// box-sizing: border-box !important;
-					// background-color: rgb(255, 255, 255) !important;
-					// appearance: none !important;
+			
 					padding: 9px 8px !important;
 					// font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
 					font-size: 16px !important;
@@ -193,6 +177,9 @@ p{
 	align-items: center;
 	margin-bottom: 30px;
 	padding-left: 30px;
+	&:hover{
+		cursor: pointer;
+	}
 	// border: 0.5px solid rgb(209, 209, 209);
 }
 

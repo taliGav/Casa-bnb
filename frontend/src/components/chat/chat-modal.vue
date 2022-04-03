@@ -10,7 +10,7 @@
       <div class="main">
         <ul>
           <li v-for="(msg, idx) in chats[this.curChatIdx].msgs" :key="idx">
-            <img :src="msg.by.imgUrl" />
+            <!-- <img :src="msg.by.imgUrl" /> -->
             <span>{{ msg.by.fullname }}:</span>{{ msg.txt }}
           </li>
         </ul>
