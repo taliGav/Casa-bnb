@@ -3,12 +3,12 @@
     <h1 class="details-header-name">{{ stay.name }}</h1>
 
     <div class="details-sub-header flex space wrap">
-      <div class="details-sub-header-2 flex align">
+      <div class="details-sub-header-2 flex align just">
         <ratings-reviews :stay="stay" />
-        <span class="details-header-location">
+        <div class="details-header-location flex align">
           <span class="bullet">·</span>
-          <u> {{ stay.loc.city }}, {{ stay.loc.country }} </u>
-        </span>
+          <p class = "stay-location-name"> {{ stay.loc.city }}, {{ stay.loc.country }} </p>
+        </div>
       </div>
 
       <div class="save-share flex">
