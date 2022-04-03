@@ -33,6 +33,7 @@ export default {
 
     filterBy() {
       var filter = this.$route.query
+      //when there is only 1 amenity
       if(typeof(filter.amenities)==="string"){
         filter.amenities = filter.amenities.split(' ')
       }
@@ -41,19 +42,9 @@ export default {
   },
   methods: {
     async setFilter() {
-      // this.isLoading = true;
       await this.$store.commit({ type: "setFilter", filterBy: this.filterBy });
-      // this.isLoading = false;
       this.$store.dispatch({ type: "loadStays" });
     },
-      // getStays() {
-      // this.stays = this.$store.getters.staysToShow;
-    // },
-
-      // getFilterBy() {
-      // this.stays = this.$route.query;
-    // },
-
   },
   components: {
     stayList,
