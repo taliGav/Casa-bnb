@@ -51,12 +51,18 @@
 				</div>
 			</div>
 			<div class="col col-4">
-				<div class="row-btns" v-if ="!isApproved">
-					<div class="accept flex align">
+				<div class="row-btns">
+					<div
+						class="accept flex align"
+						:class="{ 'action-clicked': isApproved }"
+					>
 						<img src="../../assets/icons/Casabnb-Table_v1_10.png" />
 						<a @click="changeStatus('Accepted')">Accept</a>
 					</div>
-					<div class="decline flex align">
+					<div
+						class="decline flex align"
+						:class="{ 'action-clicked': isDeclined }"
+					>
 						<img src="../../assets/icons/Casabnb-Table_v1_03.png" />
 						<p @click="changeStatus('Declined')">Decline</p>
 					</div>
@@ -88,11 +94,12 @@ export default {
 		user: {
 			type: Object,
 		},
-		data(){
-			return{
+		data() {
+			return {
 				isApproved: false,
-			}
-		}
+				isDeclined: false,
+			};
+		},
 	},
 	data() {
 		return {
@@ -103,9 +110,19 @@ export default {
 	created() {},
 	methods: {
 		changeStatus(status) {
+			if (status === 'Accepted') {
+				this.isApproved = true;
+				this.isDeclined = false;
+			}
+			if (status === 'Declined') {
+				this.isDeclined = true;
+				this.isApproved = false;
+				console.log('declined');
+			}
 			this.$emit('changeStatus', status);
-			this.isApproved = true;
+
 		},
+	
 		async openChat() {
 			try {
 				const topic = this.user._id + '-' + this.order.buyer._id;
@@ -177,4 +194,9 @@ export default {
 	},
 };
 </script>
-<style></style>
+<style>
+.action-clicked {
+	cursor: not-allowed;
+	opacity: 0.2;
+}
+</style>
