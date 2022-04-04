@@ -1,40 +1,40 @@
 <template>
-  <div class="reservation-confirm-modal flex col align just">
-    <!-- <div  @click="goBack">Back</button> -->
-    <img
-      class="closing-icon"
-      src="../../assets/icons/x-close.png"
-      @click="goBack"
-      alt=""
-    />
-    <div v-if="orderStage" class="flex col just align">
-      <div class="reservations-confirm-info flex just col">
-        <h3>Reservation Details</h3>
-        <p><span>Stay </span> {{ order.stay.name }}</p>
-        <p><span>Check in </span> {{ startDate }}</p>
-        <p><span>Check out </span> {{ endDate }}</p>
-        <p><span>Total price </span> {{ order.totalPrice }}</p>
-      </div>
-      <!-- <pre>{{order}}</pre> -->
-      <!-- <div class="flex space"> -->
-      <button class="red-btn confirm-btn" @click="confirmReservation">
-        Confirm
-      </button>
-      <!-- </div> -->
-    </div>
-    <img
-      v-if="isLoading"
-      class="loading-icon"
-      src="../../assets/icons/circle-red.gif"
-    />
-    <div v-if="isComplete" class="flex col align just">
-      <h3>Success</h3>
-      <p>Confirmation mail has been sent to you</p>
-      <button class="red-btn" @click="goBack">Continue</button>
-    </div>
+	<div class="reservation-confirm-modal flex col align just">
+		<!-- <div  @click="goBack">Back</button> -->
+		<img
+			class="closing-icon"
+			src="../../assets/icons/x-close.png"
+			@click="goBack"
+			alt=""
+		/>
+		<div v-if="orderStage" class="flex col just align">
+			<div class="reservations-confirm-info flex just col">
+				<h3>Reservation Details</h3>
+				<p><span>Stay </span> {{ order.stay.name }}</p>
+				<p><span>Check in </span> {{ startDate }}</p>
+				<p><span>Check out </span> {{ endDate }}</p>
+				<p><span>Total price </span>{{ toTotalPrice }}</p>
+			</div>
+			<!-- <pre>{{order}}</pre> -->
+			<!-- <div class="flex space"> -->
+			<button class="red-btn confirm-btn" @click="confirmReservation">
+				Confirm
+			</button>
+			<!-- </div> -->
+		</div>
+		<img
+			v-if="isLoading"
+			class="loading-icon"
+			src="../../assets/icons/circle-red.gif"
+		/>
+		<div v-if="isComplete" class="flex col align just">
+			<h3>Success</h3>
+			<p>Confirmation mail has been sent to you</p>
+			<button class="red-btn" @click="goBack">Continue</button>
+		</div>
 
-    <!-- <h3 v-if="isComplete">DONE!</h3> -->
-  </div>
+		<!-- <h3 v-if="isComplete">DONE!</h3> -->
+	</div>
 </template>
 <script>
 export default {
@@ -70,6 +70,15 @@ export default {
 			this.$emit('closeConfirmationModal');
 			this.isComplete = false;
 		},
+		toFixedPrice(price) {
+			const options = {
+				style: 'currency',
+				currency: 'USD',
+				minimumFractionDigits: 0,
+			};
+			const numberFormat = new Intl.NumberFormat('en-US', options);
+			return numberFormat.format(price);
+		},
 	},
 	computed: {
 		startDate() {
@@ -95,6 +104,15 @@ export default {
 		orderStage() {
 			if (this.isLoading || this.isComplete) return false;
 			else return true;
+		},
+		toTotalPrice() {
+			const options = {
+				style: 'currency',
+				currency: 'USD',
+				minimumFractionDigits: 0,
+			};
+			const numberFormat = new Intl.NumberFormat('en-US', options);
+			return numberFormat.format(this.order.totalPrice);
 		},
 	},
 };
