@@ -11,7 +11,7 @@
         <div class="map-container">
           <GMapMap
             :center="center"
-            :zoom="12"
+            :zoom="15"
             map-type-id="roadmap"
             style="width: 100%; height: 480px"
           >

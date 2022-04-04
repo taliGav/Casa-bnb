@@ -9,8 +9,8 @@
 		/>
 		<div v-if="orderStage" class="flex col just align">
 			<div class="reservations-confirm-info flex just col">
-				<h3>Reservation Details</h3>
-				<p><span>Stay </span> {{ order.stay.name }}</p>
+				<h3>Reservation summary</h3>
+				<h4> {{ order.stay.name }}</h4>
 				<p><span>Check in </span> {{ startDate }}</p>
 				<p><span>Check out </span> {{ endDate }}</p>
 				<p><span>Total price </span>{{ toTotalPrice }}</p>
@@ -29,7 +29,7 @@
 		/>
 		<div v-if="isComplete" class="flex col align just">
 			<h3>Success</h3>
-			<p>Confirmation mail has been sent to you</p>
+			<p>Your order was sent to the host for confirmation</p>
 			<button class="red-btn" @click="goBack">Continue</button>
 		</div>
 

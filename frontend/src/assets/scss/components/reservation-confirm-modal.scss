@@ -2,6 +2,7 @@
     box-sizing: content-box;
     background-color: rgb(255, 255, 255);
     width: 540px;
+    min-height: 210px;
     max-width: 570px;
     // height: 350px;
     top: 50%;
@@ -11,7 +12,9 @@
     box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 28px;
     border-radius: 12px;
     padding-bottom: 15px;
-
+h4{
+    margin:10px;
+}
 
     .closing-icon {
         position: absolute;
