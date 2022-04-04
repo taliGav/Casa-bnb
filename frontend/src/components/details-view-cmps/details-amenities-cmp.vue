@@ -1,9 +1,9 @@
 <template>
-	<div class="amenity flex">
-        <img :src="amenetieImage" alt="">
-		<p>{{ amenity }}</p>
-        <pre v-if = "amenitiesImgs">{{amenetiesImg}}</pre>
-	</div>
+  <div class="amenity flex">
+    <img :src="amenetieImage" alt="" />
+    <p>{{ amenity }}</p>
+    <pre v-if="amenitiesImgs">{{ amenetiesImg }}</pre>
+  </div>
 </template>
 <script>
 
