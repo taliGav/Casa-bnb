@@ -1,86 +1,86 @@
 <template>
-	<!-- <div> -->
-	<section>
-		<li class="table-row" v-if="order">
-			<div class="col-1">
-				<div
-					v-if="isAccepted"
-					:style="statusColor"
-					class="reservation-status-sign"
-				>
-					<p>Accepted</p>
-				</div>
-				<div
-					v-if="isPending"
-					:style="statusColor"
-					class="reservation-status-sign"
-				>
-					<p>Pending</p>
-				</div>
-				<div
-					v-if="isDeclined"
-					:style="statusColor"
-					class="reservation-status-sign"
-				>
-					<p class="declined">Declined</p>
-				</div>
-			</div>
-			<!-- <div class="col col-1" :style="status">{{ order.status }}</div> -->
-			<div class="col col-2">
-				<div class="reservation-details">
-					<p>{{ createdAt }}</p>
-					<!-- <pre>{{order}}</pre> -->
-					<p>Guests {{ order.guests }}</p>
-					<div class="reservation-dates flex align">
-						<p class="">Check in {{ startDate }}</p>
-						<img src="../../assets/icons/Casabnb-Table_v1_06.png" />
-						<p class="">Check out {{ endDate }}</p>
-					</div>
+  <!-- <div> -->
+  <section>
+    <li class="table-row" v-if="order">
+      <div class="col-1">
+        <div
+          v-if="isAccepted"
+          :style="statusColor"
+          class="reservation-status-sign"
+        >
+          <p>Accepted</p>
+        </div>
+        <div
+          v-if="isPending"
+          :style="statusColor"
+          class="reservation-status-sign"
+        >
+          <p>Pending</p>
+        </div>
+        <div
+          v-if="isDeclined"
+          :style="statusColor"
+          class="reservation-status-sign"
+        >
+          <p class="declined">Declined</p>
+        </div>
+        <p>{{ createdAt }}</p>
+      </div>
+      <!-- <div class="col col-1" :style="status">{{ order.status }}</div> -->
+      <div class="col col-2">
+        <div class="reservation-details">
+          <!-- <pre>{{order}}</pre> -->
 
-					<!-- <p>Check out: {{ endDate }}</p> -->
-					<p class="stay-name">{{ order.stay.name }}</p>
-					<p class="reservations-total-price">
-						{{ toFixedPrice(order.totalPrice) }} total
-					</p>
-				</div>
-			</div>
-			<div class="col col-3 flex align start">
-				<div class="flex align just col">
-					<img :src="order.buyer.imgUrl" />
-					<p class="reservation-guest-name">{{ order.buyer.fullname }}</p>
-				</div>
-			</div>
-			<div class="col col-4">
-				<div class="row-btns">
-					<div
-						class="accept flex align"
-						:class="{ 'action-clicked': isApproved }"
-					>
-						<img src="../../assets/icons/Casabnb-Table_v1_10.png" />
-						<a @click="changeStatus('Accepted')">Accept</a>
-					</div>
-					<div
-						class="decline flex align"
-						:class="{ 'action-clicked': isDeclined }"
-					>
-						<img src="../../assets/icons/Casabnb-Table_v1_03.png" />
-						<p @click="changeStatus('Declined')">Decline</p>
-					</div>
-					<div class="contact-guest flex align">
-						<img src="../../assets/icons/Casabnb-Table_v1_12.png" />
-						<a @click="openChat">Contact Guest</a>
-					</div>
-				</div>
-			</div>
-		</li>
-		<chat-modal
-			@closeChat="isChatOpen = false"
-			v-if="isChatOpen"
-			:user="user"
-			:topic="topic"
-		/>
-	</section>
-	<!-- </div> -->
+          <div class="reservation-dates">
+            <p class="">Check in {{ startDate }}</p>
+            <img src="../../assets/icons/Casabnb-Table_v1_06.png" />
+            <p class="">Check out {{ endDate }}</p>
+          </div>
+          <p>Guests {{ order.guests }}</p>
+          <!-- <p>Check out: {{ endDate }}</p> -->
+          <p class="stay-name">{{ order.stay.name }}</p>
+          <p class="reservations-total-price">
+            {{ toFixedPrice(order.totalPrice) }} total
+          </p>
+        </div>
+      </div>
+      <div class="col col-3 flex align start">
+        <div class="flex align just col">
+          <img :src="order.buyer.imgUrl" />
+          <p class="reservation-guest-name">{{ order.buyer.fullname }}</p>
+        </div>
+      </div>
+      <div class="col col-4">
+        <div class="row-btns">
+          <div
+            class="accept flex align"
+            :class="{ 'action-clicked': isApproved }"
+          >
+            <img src="../../assets/icons/Casabnb-Table_v1_10.png" />
+            <a @click="changeStatus('Accepted')">Accept</a>
+          </div>
+          <div
+            class="decline flex align"
+            :class="{ 'action-clicked': isDeclined }"
+          >
+            <img src="../../assets/icons/Casabnb-Table_v1_03.png" />
+            <p @click="changeStatus('Declined')">Decline</p>
+          </div>
+          <div class="contact-guest flex align">
+            <img src="../../assets/icons/Casabnb-Table_v1_12.png" />
+            <a @click="openChat">Contact Guest</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <chat-modal
+      @closeChat="isChatOpen = false"
+      v-if="isChatOpen"
+      :user="user"
+      :topic="topic"
+    />
+  </section>
+  <!-- </div> -->
 </template>
 
 <script>
@@ -186,7 +186,10 @@ export default {
 		},
 		createdAt() {
 			const date = new Date(this.order.createdAt);
-			return date.toLocaleString();
+			const humanDateFormat = date.getDate() +
+                "/" + (date.getMonth() + 1) +
+                "/" + date.getFullYear() +" "+date.getHours() +":" +date.getMinutes()
+            return humanDateFormat
 		},
 	},
 	components: {
@@ -196,7 +199,7 @@ export default {
 </script>
 <style>
 .action-clicked {
-	cursor: not-allowed;
-	opacity: 0.2;
+  cursor: not-allowed;
+  opacity: 0.2;
 }
 </style>
