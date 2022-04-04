@@ -181,7 +181,7 @@ export default {
 			// var days = Math.floor(delta / 86400);
 		},
 		async confirmReservation() {
-			(this.resirvationDates = null), (this.guestsCount = 1);
+			// (this.resirvationDates = null), (this.guestsCount = 1);
 			console.log('confirming');
 
 			try {
