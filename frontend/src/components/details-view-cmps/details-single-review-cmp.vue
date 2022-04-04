@@ -8,7 +8,7 @@
           <p>{{ reviewDate }}</p>
         </div>
       </div>
-      <p class="fw-600">{{ review.txt.substring(0,300)}} ...</p>
+      <p class="fw-600">{{ review.txt.substring(0, 300) }}</p>
     </div>
   </section>
 </template>
