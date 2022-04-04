@@ -9,15 +9,19 @@
 	@media (max-width:576px) {
 		@include layoutSmallGTC($small);
 	}
+
 	@include for-md-layout {
 		@include layoutSmallGTC($medium);
 	}
+
 	@include for-lg-layout {
 		@include layoutSmallGTC($large);
 	}
+
 	@include for-xl-layout {
 		@include layoutGTC($x-large);
 	}
+
 	// @include for-home-layout {
 	// 	@include layoutGTC($home-page-large);
 	// }
@@ -27,11 +31,11 @@
 	// 	margin: 0 auto;
 	// }
 
-	> * {
+	>* {
 		grid-column: 2;
 	}
 
-	> *.full {
+	>*.full {
 		grid-column: 1 / -1;
 	}
 
@@ -50,9 +54,11 @@
 	@include for-sm-layout {
 		@include layoutSmallGTC($small);
 	}
+
 	@include for-md-layout {
 		@include layoutSmallGTC($medium);
 	}
+
 	@include for-lg-layout {
 		@include layoutGTC($large);
 	}
