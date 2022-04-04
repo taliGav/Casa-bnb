@@ -51,7 +51,7 @@
 				</div>
 			</div>
 			<div class="col col-4">
-				<div class="row-btns">
+				<div class="row-btns" v-if ="!isApproved">
 					<div class="accept flex align">
 						<img src="../../assets/icons/Casabnb-Table_v1_10.png" />
 						<a @click="changeStatus('Accepted')">Accept</a>
@@ -88,6 +88,11 @@ export default {
 		user: {
 			type: Object,
 		},
+		data(){
+			return{
+				isApproved: false,
+			}
+		}
 	},
 	data() {
 		return {
@@ -99,6 +104,7 @@ export default {
 	methods: {
 		changeStatus(status) {
 			this.$emit('changeStatus', status);
+			this.isApproved = true;
 		},
 		async openChat() {
 			try {

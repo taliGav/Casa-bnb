@@ -6,7 +6,7 @@
 		<!-- <div class="stays-count"> -->
 		<!-- </div> -->
 		<div class="stay-list-container">
-			<p class = "stays-to-show" >Found {{ staysToShow }} stays </p>
+			<p class="stays-to-show">Found {{ staysToShow }} stays</p>
 			<ul class="stay-list">
 				<li
 					v-for="stay in stays"
@@ -34,6 +34,9 @@ export default {
 	computed: {
 		staysToShow() {
 			return this.stays.length;
+		},
+		getImamge(path) {
+			return;
 		},
 	},
 };
