@@ -194,7 +194,7 @@ export default {
 			} catch (err) {
 				console.log('Error while making reservation', err);
 			}
-			this.confirmationModal = false;
+			// this.confirmationModal = false;
 		},
 
 		closeConfirmationModal() {
