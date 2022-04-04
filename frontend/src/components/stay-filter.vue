@@ -1,5 +1,8 @@
 <template>
-	<section class="stay-filter flex align">
+
+<!-- <div class = 'main-layout'> -->
+	<section class=" stay-filter flex align ">
+
 		<div class="price-btn-container">
 			<button class="" @click="togglePrice">
 				Price
@@ -21,6 +24,7 @@
 			</button>
 		</div>
 	</section>
+<!-- </div> -->
 </template>
 
 <script>

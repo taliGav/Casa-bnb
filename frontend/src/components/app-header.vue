@@ -5,46 +5,51 @@
 		ref="header"
 		:class="{
 			visible: !isOpen,
-			'details-layout': isDetailsPage,
-			'main-layout': !isDetailsPage,
 		}"
 		:style="{ backgroundColor: searchStatus }"
 	>
-		<div class="header-content flex space">
-			<div class="logo flex align">
-				<h2>
-					<router-link :class="{ 'color-theme': colorsChange }" to="/">
-						<span class="logo-txt">casa</span>
-						<span class="casa-symbol">⌂</span>
-						<span class="logo-txt">bnb</span>
-					</router-link>
-				</h2>
+		<div
+			:class="{
+				'main-layout': screenSize.isHome,
+				'details-layout': !screenSize.isHome,
+			}"
+		>
+			<div class="header-content flex space">
+				<div class="logo flex align">
+					<h2>
+						<router-link :class="{ 'color-theme': colorsChange }" to="/">
+							<span class="logo-txt">casa</span>
+							<span class="casa-symbol">⌂</span>
+							<span class="logo-txt">bnb</span>
+						</router-link>
+					</h2>
+				</div>
+				<small-search-bar
+					:isOpen="isOpen"
+					@openSearch="openSearch"
+				></small-search-bar>
+				<mobile-search-bar></mobile-search-bar>
+				<mobile-search-menu
+					@closeMobileMenu="mobileMenu"
+					:class="{ 'bottom-slide': isMobileSearch }"
+				></mobile-search-menu>
+				<nav class="nav-bar flex just align space">
+					<div class="explore-link flex just align">
+						<router-link :class="{ 'color-black': colorsChange }" to="/stay"
+							>Explore</router-link
+						>
+					</div>
+					<div class="host-link flex just align">
+						<router-link :class="{ 'color-black': colorsChange }" to="/"
+							>Become a Host</router-link
+						>
+					</div>
+					<!-- <router-link></router-link> -->
+					<user-badge></user-badge>
+				</nav>
 			</div>
-			<small-search-bar
-				:isOpen="isOpen"
-				@openSearch="openSearch"
-			></small-search-bar>
-			<mobile-search-bar></mobile-search-bar>
-			<mobile-search-menu
-				@closeMobileMenu="mobileMenu"
-				:class="{ 'bottom-slide': isMobileSearch }"
-			></mobile-search-menu>
-			<nav class="nav-bar flex just align space">
-				<div class="explore-link flex just align">
-					<router-link :class="{ 'color-black': colorsChange }" to="/stay"
-						>Explore</router-link
-					>
-				</div>
-				<div class="host-link flex just align">
-					<router-link :class="{ 'color-black': colorsChange }" to="/"
-						>Become a Host</router-link
-					>
-				</div>
-				<!-- <router-link></router-link> -->
-				<user-badge></user-badge>
-			</nav>
+			<stay-search v-if="isOpen" :screenSize="screenSize"></stay-search>
 		</div>
-		<stay-search v-if="isOpen" :screenSize="screenSize"></stay-search>
 	</header>
 	<!-- </div> -->
 </template>
@@ -68,6 +73,7 @@ export default {
 			screenSize: {
 				isMobileSize: false,
 				isMediumSize: false,
+				isHome: true,
 				path: null,
 			},
 		};
@@ -107,14 +113,17 @@ export default {
 			if (this.$route.path !== '/') {
 				this.isOpen = false;
 				this.colorsChange = true;
-			} else if (stayPath === 'stay') {
+				this.screenSize.isHome = false;
 				this.isDetailsPage = true;
 			} else {
+				this.screenSize.isHome = true;
+
 				this.isOpen = true;
 				this.colorsChange = false;
 				this.isSearchClicked = false;
-				this.isDetailsPage = false;
+				// this.isDetailsPage = false;
 			}
+			this.$emit('currPath', this.$route.path);
 		},
 		mobileMenu() {
 			this.isMobileSearch = !this.isMobileSearch;

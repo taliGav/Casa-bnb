@@ -1,74 +1,74 @@
 <template>
-	<div class="filter-container main-layout flex align just">
-		<form class="flex align just">
-			<div class="filter">
-				<div class="search-container-outer"
-				:style="{ width: isSearchOpen ? '25%' : '30%' }">
-				<div class="border"></div>
+	<div>
+		<div class="filter-container">
+			<form class="flex align just">
+				<div class="filter">
 					<div
-						class="search-container"
-						@click="focusSearch"
-						
+						class="search-container-outer"
+						:style="{ width: isSearchOpen ? '25%' : '30%' }"
 					>
-						<span>Location</span>
-						<input
-							class="search-input"
-							v-model="filterBy.destination"
-							type="text"
-							placeholder="Where are you going?"
-							ref="input"
+						<div class="border"></div>
+						<div class="search-container" @click="focusSearch">
+							<span>Location</span>
+							<input
+								class="search-input"
+								v-model="filterBy.destination"
+								type="text"
+								placeholder="Where are you going?"
+								ref="input"
+							/>
+						</div>
+					</div>
+					<div class="date-start" @click="showDatePicker">
+						<div class="border"></div>
+						<span>Check in</span>
+						<p>{{ startDate }}</p>
+					</div>
+					<div class="date-end" @click="showDatePicker">
+						<div class="border"></div>
+						<span>Check out</span>
+						<p>{{ endDate }}</p>
+					</div>
+					<div class="relative">
+						<!-- </add-guests-count> -->
+						<add-guests-count
+							v-if="addGuestsMenu"
+							:guests="filterBy.guests"
+							@addGuests="changeGuests"
 						/>
 					</div>
-				</div>
-				<div class="date-start" @click="showDatePicker">
-					<div class="border"></div>
-					<span>Check in</span>
-					<p>{{ startDate }}</p>
-				</div>
-				<div class="date-end" @click="showDatePicker">
-					<div class="border"></div>
-					<span>Check out</span>
-					<p>{{ endDate }}</p>
-				</div>
-				<div class="relative">
-					<!-- </add-guests-count> -->
-					<add-guests-count
-						v-if="addGuestsMenu"
-						:guests="filterBy.guests"
-						@addGuests="changeGuests"
-					/>
-				</div>
-				<div class="search-guests" @click="addGuests">
-					<div class="guests-container">
-						<span>Guests</span>
-						<p v-if="!filterBy.guests">Add guests</p>
-						<p v-else>{{ filterBy.guests }}</p>
+					<div class="search-guests" @click="addGuests">
+						<div class="guests-container">
+							<span>Guests</span>
+							<p v-if="!filterBy.guests">Add guests</p>
+							<p v-else>{{ filterBy.guests }}</p>
+						</div>
+					</div>
+					<div
+						@click="openSearch"
+						class="search-btn-container"
+						:style="{ width: isSearchOpen ? '130px' : '50px' }"
+					>
+						<img src="../assets/Images/logos/search-icon.svg" alt="" />
+						<p
+							v-if="isSearchOpen"
+							:style="{ opacity: isSearchOpen ? '100%' : '0%' }"
+						>
+							Search
+						</p>
 					</div>
 				</div>
-				<div
-					@click="openSearch"
-					class="search-btn-container"
-					:style="{ width: isSearchOpen ? '130px' : '50px' }"
-				>
-					<img src="../assets/Images/logos/search-icon.svg" alt="" />
-					<p
-						v-if="isSearchOpen"
-						:style="{ opacity: isSearchOpen ? '100%' : '0%' }"
-					>
-						Search
-					</p>
-				</div>
-			</div>
-		</form>
-		<!-- <div id="picker"> -->
-		<el-date-picker
-			v-model="pickedDates"
-			type="daterange"
-			range-separator="To"
-			start-placeholder="Start date"
-			end-placeholder="End date"
-		/>
-		<!-- </div> -->
+			</form>
+			<!-- <div id="picker"> -->
+			<el-date-picker
+				v-model="pickedDates"
+				type="daterange"
+				range-separator="To"
+				start-placeholder="Start date"
+				end-placeholder="End date"
+			/>
+			<!-- </div> -->
+		</div>
 	</div>
 </template>
 

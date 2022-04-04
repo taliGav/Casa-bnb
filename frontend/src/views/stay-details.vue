@@ -1,5 +1,5 @@
 <template>
-	<section v-if="stay" class="details-layout stay-details">
+	<section v-if="stay" class=" stay-details">
 		<details-header :stay="stay" />
 		<details-gallery :stay="stay" />
 
