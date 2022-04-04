@@ -32,7 +32,7 @@
       <div class="last mobile-menu-list-btn">
         <p>Travel</p>
         <span>Trips</span>
-        <span>Wishlists</span>
+        <!-- <span>Wishlists</span> -->
       </div>
       <!-- <div class="mobile-menu-logout">
         <button>Log out</button>
