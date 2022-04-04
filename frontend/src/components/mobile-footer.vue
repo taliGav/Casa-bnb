@@ -49,7 +49,7 @@ export default {
 		};
 	},
 	created() {
-		this.setSocket()
+		this.setSocket();
 		// try {
 		// 	this.loggedUser = this.$store.getters.user;
 		// 	console.log(this.loggedUser);

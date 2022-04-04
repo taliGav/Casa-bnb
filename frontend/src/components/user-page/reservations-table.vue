@@ -52,15 +52,15 @@
 			</div>
 			<div class="col col-4">
 				<div class="row-btns">
-					<div class="flex align">
-						<img src="../../assets/icons/Casabnb-Table_v1_03.png" />
-						<p @click="changeStatus('Declined')">Decline</p>
-					</div>
-					<div class="flex align">
+					<div class="accept flex align">
 						<img src="../../assets/icons/Casabnb-Table_v1_10.png" />
 						<a @click="changeStatus('Accepted')">Accept</a>
 					</div>
-					<div class="flex align">
+					<div class="decline flex align">
+						<img src="../../assets/icons/Casabnb-Table_v1_03.png" />
+						<p @click="changeStatus('Declined')">Decline</p>
+					</div>
+					<div class="contact-guest flex align">
 						<img src="../../assets/icons/Casabnb-Table_v1_12.png" />
 						<a @click="openChat">Contact Guest</a>
 					</div>

@@ -1,32 +1,31 @@
 <template>
-  <div>
-    <!-- <img v-if="isLoading" src="../../assets/img-upload-func/Spin-load.gif" /> -->
-    <div v-if="orders" class="reservations-container main-app">
-      <!-- <div class="container main-layout"> -->
-      <div class="table-container">
-        <div class="header-container flex align">
-          <h2 class="table-title">Reservations</h2>
-        </div>
-        <ul class="responsive-table">
-          <li class="table-header">
-            <div class="col col-1">STATUS</div>
-            <div class="col col-2">DETAILS</div>
-            <div class="col col-3">GUEST</div>
-            <div class="col col-4">ACTIONS</div>
-          </li>
-
-          <reservations-table
-            v-for="order in orders"
-            :key="order._id"
-            :order="order"
-            :user="user"
-            @changeStatus="changeStatus($event, order)"
-          ></reservations-table>
-        </ul>
-      </div>
-    </div>
-    <!-- </div> -->
-  </div>
+	<div>
+		<!-- <img v-if="isLoading" src="../../assets/img-upload-func/Spin-load.gif" /> -->
+		<div v-if="orders" class="reservations-container  main-app ">
+			<!-- <div class="container main-layout"> -->
+			<div class="table-container">
+				<div class="header-container flex align">
+					<h2 class="table-title">Reservations</h2>
+				</div>
+				<ul class="responsive-table">
+					<li class="table-header">
+						<div class="col col-1">STATUS</div>
+						<div class="col col-2">DETAILS</div>
+						<div class="col col-3">GUEST</div>
+						<div class="col col-4">ACTIONS</div>
+					</li>
+					<reservations-table
+						v-for="order in orders"
+						:key="order._id"
+						:order="order"
+						:user="user"
+						@changeStatus="changeStatus($event, order)"
+					></reservations-table>
+				</ul>
+			</div>
+		</div>
+		<!-- </div> -->
+	</div>
 </template>
 
 <script>
