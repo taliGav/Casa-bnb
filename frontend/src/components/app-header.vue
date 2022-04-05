@@ -50,6 +50,8 @@
 			</div>
 			<stay-search v-if="isOpen" :screenSize="screenSize"></stay-search>
 		</div>
+							<!-- <span class="casa-symbol">⌂</span> -->
+
 	</header>
 	<!-- </div> -->
 </template>
